@@ -1,13 +1,19 @@
 ---
-title: #Required; "<verb> * <noun>"
-description: #Required; Keep the description within 100- and 165-characters including spaces.
-author: #Required; your GitHub user alias, with correct capitalization
-ms.author: #Required; microsoft alias of author
-ms.service: #Required; use the name-string related to slug in ms.product/ms.service
-ms.topic: how-to #Required; leave this attribute/value as-is
-ms.date: #Required; mm/dd/yyyy format
-
-#CustomerIntent: As a < type of user >, I want < what? > so that < why? >.
+title: MCC for Enterprise uninstall
+description: Microsoft Connected Cache for Enterprise. Learn about uninstall
+ms.service: windows-client
+ms.subservice: itpro-updates
+ms.topic: how-to
+manager: aaroncz
+ms.author: nidos
+author: doshnid
+ms.reviewer: mstewart
+ms.collection: tier3
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
+- ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-microsoft-connected-cache target=_blank>Microsoft Connected Cache for Enterprise</a>	
+ms.date: 06/03/2024
 ---
 
 <!--
