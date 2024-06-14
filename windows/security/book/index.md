@@ -28,6 +28,7 @@ To help businesses transform and thrive in a new era, we built Windows 11 to be 
 
 ### Security by design and security by default
 
+
 Windows 11 is designed with layers of security enabled by default, so you can focus on your work, not your security settings. **Out-of-the-box features such as credential safeguards, malware shields, and application protection led to a reported 58% drop in security incidents, including a 3.1x reduction in firmware attacks** <sup>[\[5\]](conclusion.md#footnote5)</sup>.
 
 In Windows 11, hardware and software work together to shrink the attack surface, protect system integrity, and shield valuable data. New and enhanced features are designed for security by default. For example, Win32 apps in isolation <sup>[\[6\]](conclusion.md#footnote6)</sup>, token protection <sup>[\[6\]](conclusion.md#footnote6)</sup>, and Microsoft Intune Endpoint Privilege Management <sup>[\[7\]](conclusion.md#footnote7)</sup> are some of the latest capabilities that help protect your organization and employees against attack. Windows Hello and Windows Hello for Business work with hardware-based features like TPM 2.0 and biometric scanners for credential protection and easier, secure sign-on. Existing security features like BitLocker encryption have also been enhanced to optimize both security and performance.
