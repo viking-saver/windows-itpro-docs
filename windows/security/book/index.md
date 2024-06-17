@@ -2,7 +2,7 @@
 title: Windows security book introduction
 description: Windows security book introduction
 ms.topic: overview
-ms.date: 04/09/2024
+ms.date: 06/17/2024
 ROBOTS:
 ---
 
@@ -11,7 +11,7 @@ ROBOTS:
 :::image type="content" source="images/cover.png" alt-text="Cover of the Windows 11 security book.":::
 
 ## Introduction
-Test
+
 Emerging technologies and evolving business trends bring new opportunities and challenges for organizations of all sizes. As technology and workstyles transform, so does the threat landscape with growing numbers of increasingly sophisticated attacks on organizations and employees.
 
 To thrive, organizations need security to work anywhere. [Microsoft's 2022 Work Trend Index](https://www.microsoft.com/security/blog/2022/04/05/new-security-features-for-windows-11-will-help-protect-hybrid-work/) shows *cybersecurity issues and risks* are top concerns for business decision-makers, who worry about issues like malware, stolen credentials, devices that lack security updates, and physical attacks on lost or stolen devices.
