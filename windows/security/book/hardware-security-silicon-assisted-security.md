@@ -24,6 +24,10 @@ Since more privileged VTLs can enforce their own memory protections, higher VTLs
 
 - [Virtualization-based security (VBS)](/windows-hardware/design/device-experiences/oem-vbs)
 
+Virtualization-based security Enclaves, a tool to allow developers to leverage VBS by building a secure enclave within their application, which lives in secure memory.
+
+Hypervisor-enforced Paging Translation (HVPT), overall security enhancement for the system. protects linear address translations from being tampered with
+
 Hypervisor-protected code integrity (HVCI), also called memory integrity, uses VBS to run Kernel Mode Code Integrity (KMCI) inside the secure VBS environment instead of the main Windows kernel. This helps prevent attacks that attempt to modify kernel-mode code for things like drivers. The KMCI checks that all kernel code is properly signed and hasn't been tampered with before it is allowed to run. HVCI ensures that only validated code can be executed in kernel mode. The hypervisor leverages processor virtualization extensions to enforce memory protections that prevent kernel-mode software from executing code that has not been first validated by the code integrity subsystem. HVCI protects against common attacks like WannaCry that rely on the ability to inject malicious code into the kernel. HVCI can prevent injection of malicious kernel-mode code even when drivers and other kernel-mode software have bugs.
 
 With new installs of Windows 11, OS support for VBS and HVCI is turned on by default for all devices that meet prerequisites.
