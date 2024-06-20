@@ -24,7 +24,7 @@ Since more privileged VTLs can enforce their own memory protections, higher VTLs
 
 - [Virtualization-based security (VBS)](/windows-hardware/design/device-experiences/oem-vbs)
 
-Virtualization-based security Enclaves, a tool to allow developers to leverage VBS by building a secure enclave within their application, which lives in secure memory.
+Virtualization-based security enclaves, a tool to allow developers to leverage VBS by building a secure enclave within their application, which lives in secure memory.
 
 Hypervisor-enforced Paging Translation (HVPT), overall security enhancement for the system. protects linear address translations from being tampered with
 
