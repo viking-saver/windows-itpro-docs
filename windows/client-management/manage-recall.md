@@ -3,11 +3,7 @@ title: Manage Recall for Windows clients
 description: Learn how to manage Recall for commercial environments using MDM and group policy. Learn about Recall features.
 ms.topic: how-to
 ms.subservice: windows-copilot
-<<<<<<< HEAD
-ms.date: 06/10/2024
-=======
 ms.date: 06/13/2024
->>>>>>> be66e0d390a2bd3ff7f8dc15bad31b9119d6c553
 ms.author: mstewart
 author: mestew
 ms.collection:
@@ -22,17 +18,18 @@ appliesto:
 <!--8908044-->
 >**Looking for consumer information?** See [Retrace your steps with Recall](https://support.microsoft.com/windows/retrace-your-steps-with-recall-aa03f8a0-a78b-4b3e-b0a1-2eb8ac48701c).
 
-Recall allows you to search across time to find the content you need. Just describe how you remember it, and Recall retrieves the moment you saw it. Recall takes snapshots of your screen and stores them in a timeline. Snapshots are taken every five seconds while content on the screen is different from the previous snapshot. Snapshots are locally stored and locally analyzed on your PC. Recall's analysis allows you to search for content, including both images and text, using natural language.
+Recall allows you to search across time to find the content you need. Just describe how you remember it, and Recall retrieves the moment you saw it. Windows periodically saves snapshots of your screen while the content on the screen is different from the previous snapshot. The snapshots of your screen are organized into a timeline. Snapshots are locally stored and locally analyzed on your PC. Recall's analysis allows you to search for content, including both images and text, using natural language.
 
 > [!NOTE]
 > Recall is coming soon through a post-launch Windows update. See [aka.ms/copilotpluspcs](https://aka.ms/copilotpluspcs). 
 
-When Recall opens the snapshot a user selected, it enables screenray, which runs on top of the saved snapshot. Screenray analyzes what's in the snapshot and allows users to interact with individual elements in the snapshot. For instance, users can copy text from the snapshot or send pictures from the snapshot to an app that supports `jpeg` files.
+When Recall opens the snapshot you selected, it enables screenray, which runs on top of the saved snapshot. Screenray analyzes what's in the snapshot and allows you to interact with individual elements in the snapshot. For instance, you can copy text from the snapshot or send pictures from the snapshot to an app that supports `jpeg` files.
 
 :::image type="content" source="images/8908044-recall.png" alt-text="Screenshot of Recall with search results displayed for a query about a restaurant that the user's friend sent them." lightbox="images/8908044-recall.png":::
 
 ## System requirements
-Recall has the following minimum system requirements:
+
+Recall has the following minimum hardware requirements:
 
 - A [Copilot+ PC](https://www.microsoft.com/windows/business/devices/copilot-plus-pcs#copilot-plus-pcs)
 - 16 GB RAM
@@ -40,6 +37,10 @@ Recall has the following minimum system requirements:
 - 256 GB storage capacity
   - To enable Recall, you need at least 50 GB of space free
   - Snapshot capture automatically pauses once the device has less than 25 GB of disk space
+
+Recall has the following software requirements:
+
+Recall takes advantage of just in time decryption protected by [Windows Hello Enhanced Sign-in Security (ESS)](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security). To allow Windows to take snapshots, and to launch and use Recall, users must authenticate using [Windows Hello](/windows/security/identity-protection/hello-for-business/). Users need to enroll into Windows Hello with at least one biometric sign-in option enabled, either facial recognition or a fingerprint. The user's search index database for Recall is also encrypted.
 
 ## Supported browsers
 
@@ -63,7 +64,11 @@ Organizations that aren't ready to use AI for historical analysis can disable it
 
 ## Limitations
 
-In two specific scenarios, Recall captures snapshots that include InPrivate windows, blocked apps, and blocked websites. If Recall gets launched, or the **Now** option is selected in Recall, then a snapshot is taken even when InPrivate windows, blocked apps, and blocked websites are displayed. However, Recall doesn't save these snapshots. If you choose to send the information from this snapshot to another app, a temp file is created in `C:\Users\[username]\AppData\Local\Temp` to share the content. The temporary file is deleted once the content is transferred over the app you selected to use.
+In two specific scenarios, Windows captures snapshots that include private browsing windows, blocked apps, and blocked websites. If Recall gets launched, or the **Now** option is selected in Recall, then a snapshot is taken even when private browsing windows, blocked apps, and blocked websites are displayed. However, Recall doesn't save these snapshots. If users choose to send the information from this snapshot to another app, a temp file is created to share the content in either: 
+- `C:\Users\[username]\AppData\Local\Temp` 
+- `C:\Users\{username}\AppData\Local\Packages\MicrosoftWindows.Client.AIX_cw5n1h2txyewy\TempState`
+
+The temporary file is deleted once the app is finished with the content.
 
 ## User controlled settings for Recall
 
