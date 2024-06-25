@@ -3,7 +3,7 @@ title: Manage Recall for Windows clients
 description: Learn how to manage Recall for commercial environments using MDM and group policy. Learn about Recall features.
 ms.topic: how-to
 ms.subservice: windows-copilot
-ms.date: 06/13/2024
+ms.date: 07/01/2024
 ms.author: mstewart
 author: mestew
 ms.collection:
@@ -23,7 +23,7 @@ Recall allows you to search across time to find the content you need. Just descr
 > [!NOTE]
 > Recall is coming soon through a post-launch Windows update. See [aka.ms/copilotpluspcs](https://aka.ms/copilotpluspcs). 
 
-When Recall opens the snapshot you selected, it enables screenray, which runs on top of the saved snapshot. Screenray analyzes what's in the snapshot and allows you to interact with individual elements in the snapshot. For instance, you can copy text from the snapshot or send pictures from the snapshot to an app that supports `jpeg` files.
+When Recall opens a snapshot you selected, it enables screenray, which runs on top of the saved snapshot. Screenray analyzes what's in the snapshot and allows you to interact with individual elements in the snapshot. For instance, you can copy text from the snapshot or send pictures from the snapshot to an app that supports `jpeg` files.
 
 :::image type="content" source="images/8908044-recall.png" alt-text="Screenshot of Recall with search results displayed for a query about a restaurant that the user's friend sent them." lightbox="images/8908044-recall.png":::
 
@@ -40,7 +40,7 @@ Recall has the following minimum hardware requirements:
 
 Recall has the following software requirements:
 
-Recall takes advantage of just in time decryption protected by [Windows Hello Enhanced Sign-in Security (ESS)](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security). To allow Windows to take snapshots, and to launch and use Recall, users must authenticate using [Windows Hello](/windows/security/identity-protection/hello-for-business/). Users need to enroll into Windows Hello with at least one biometric sign-in option enabled, either facial recognition or a fingerprint. The user's search index database for Recall is also encrypted.
+Recall takes advantage of just in time decryption protected by [Windows Hello Enhanced Sign-in Security (ESS)](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security). To allow Windows to take snapshots, and to launch and use Recall, users must authenticate using [Windows Hello](/windows/security/identity-protection/hello-for-business/). Users need to enroll into Windows Hello with at least one biometric sign-in option enabled, either facial recognition or a fingerprint. The user's search index database for Recall is also encrypted and BitLocker is enabled by default on Windows 11. Each time Recall is launched it requires the user to confirm their identity before it opens and before snapshots are accessed. 
 
 ## Supported browsers
 
@@ -55,7 +55,9 @@ Users need a supported browser for Recall to [filter websites](#user-controlled-
 
 ## Configure policies for Recall
 
-Organizations that aren't ready to use AI for historical analysis can disable it until they're ready with the **Turn off saving snapshots for Windows** policy. If snapshots were previously saved on a device, they'll be deleted when this policy is enabled. The following policy allows you to disable analysis of user content:
+Organizations that aren't ready to use AI for historical analysis can disable it until they're ready with the **Turn off saving snapshots for Windows** policy. If snapshots were previously saved on a device, they'll be deleted when this policy is enabled. Administrators can't enable saving snapshots on behalf of their users. The choice to enable saving snapshots requires individual user opt-in consent.
+
+The following policy allows you to disable analysis of user content:
 
 | &nbsp; | Setting  |
 |---|---|
@@ -74,6 +76,7 @@ The temporary file is deleted once the app is finished with the content.
 
 The following options are user controlled in Recall from the **Settings** > **Privacy & Security** > **Recall & Snapshots** page:
 
+- Allow Windows to save snapshots
 - Website filtering
 - App filtering
 - Storage allocation
