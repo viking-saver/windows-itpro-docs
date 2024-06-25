@@ -27,6 +27,8 @@ Windows has several critical processes to verify a user's identity. Verification
 
 To help keep these credentials safe, additional LSA protection will be enabled by default on new, enterprise-joined Windows 11 devices. By loading only trusted, signed code, LSA provides significant protection against credential theft. LSA protection also now supports configuration using Group Policy and modern device management.
 
+End users have the ability to manage their LSA protection state in the Windows Security Application under Device Security -> Core Isolation -> Local Security Authority protection. It’s important to note that the enterprise policy for LSA protection will take precedence over enablement on upgrade. This ensures a seamless transition and enhanced security for all users.
+
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
 - [Configuring additional LSA protection](/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection)
@@ -36,6 +38,8 @@ To help keep these credentials safe, additional LSA protection will be enabled b
 Enabled by default in Windows 11 Enterprise, Credential Guard uses hardware-backed, virtualization-based security (VBS) to protect against credential theft. With Credential Guard, the Local Security Authority (LSA) stores and protects Active Directory (AD) secrets in an isolated environment that isn't accessible to the rest of the operating system. LSA uses remote procedure calls to communicate with the isolated LSA process.
 
 By protecting the LSA process with virtualization-based security, Credential Guard shields systems from credential theft attack techniques like Pass-the-Hash or Pass-the-Ticket. It also helps prevent malware from accessing system secrets even if the process is running with admin privileges.
+
+Protections are now expanded to optionally include machine account passwords for Active Directory joined devices. Administrators can enable audit mode of this capability or enforcement using Credential Guard management policy.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
