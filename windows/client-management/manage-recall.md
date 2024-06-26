@@ -85,7 +85,7 @@ The following options are user controlled in Recall from the **Settings** > **Pr
     - Delete all snapshots
     - Delete snapshots within a specific time frame
 
-Windows won't save snapshots when certain applications are being used. The following apps are automatically excluded:
+Windows won't save snapshots when certain applications are being used. The following apps are automatically excluded:<!--9119193-->
 
 - [mstsc.exe](/windows-server/administration/windows-commands/mstsc)
 - [VMConnect.exe](/windows-server/virtualization/hyper-v/learn-more/hyper-v-virtual-machine-connect) (Remote desktop from the Microsoft Store is saved in snapshots)
