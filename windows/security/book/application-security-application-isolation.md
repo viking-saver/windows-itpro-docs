@@ -11,7 +11,7 @@ ms.date: 04/09/2024
 
 ## Win32 app isolation
 
-Win32 app isolation is a new security feature in public preview designed to be the default isolation standard on Windows clients. It's built on [AppContainer](/windows/win32/secauthz/implementing-an-appcontainer), and offers several added security features to help the Windows platform defend against attacks that leverage vulnerabilities in applications or third-party libraries. To isolate their apps, developers can update their applications using the tools provided by Microsoft.
+Win32 app isolation is a new security feature designed to be the default isolation standard on Windows clients. It's built on [AppContainer](/windows/win32/secauthz/implementing-an-appcontainer), and offers several added security features to help the Windows platform defend against attacks that leverage vulnerabilities in applications or third-party libraries. To isolate their apps, developers can update their applications using Visual Studio. 
 
 Win32 app isolation follows a two-step process. In the first step, the Win32 application is launched as a low-integrity process using AppContainer, which is recognized as a security boundary by Microsoft. Consequently, the process is limited to a specific set of Windows APIs by default and is unable to inject code into any process operating at a higher integrity level.
 
@@ -29,6 +29,8 @@ The first factor relates to implementing methods to manage access to files and p
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
 - [Win32 app isolation](https://github.com/microsoft/win32-app-isolation)
+- [Learn how to adop Win32 app isolation with Visual Studio](https://github.com/microsoft/win32-app-isolation/blob/main/docs/packaging/packaging-with-visual-studio.md)
+- [Sandboxing Python with Win32 app isolation](https://blogs.windows.com/windowsdeveloper/2024/03/06/sandboxing-python-with-win32-app-isolation/)
 
 ## Windows Sandbox
 
