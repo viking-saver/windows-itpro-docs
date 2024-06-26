@@ -85,6 +85,13 @@ The following options are user controlled in Recall from the **Settings** > **Pr
     - Delete all snapshots
     - Delete snapshots within a specific time frame
 
+Windows won't save snapshots when certain applications are being used. The following apps are automatically excluded:
+
+- [mstsc.exe](/windows-server/administration/windows-commands/mstsc)
+- [VMConnect.exe](/windows-server/virtualization/hyper-v/learn-more/hyper-v-virtual-machine-connect) (Remote desktop from the Microsoft Store is saved in snapshots)
+- [Azure Virtual Desktop (MSI)](/azure/virtual-desktop/users/connect-windows) (Azure Virtual Desktop apps from the Microsoft Store are saved in snapshots)
+- [remote applications integrated locally (RAIL)](/openspecs/windows_protocols/ms-rdperp/485e6f6d-2401-4a9c-9330-46454f0c5aba) windows
+
 
 ### Storage allocation
 
