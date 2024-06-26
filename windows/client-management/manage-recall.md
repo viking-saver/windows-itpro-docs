@@ -85,6 +85,8 @@ The following options are user controlled in Recall from the **Settings** > **Pr
     - Delete all snapshots
     - Delete snapshots within a specific time frame
 
+### Applications that are excluded from snapshots
+
 Windows won't save snapshots when certain applications are being used. The following apps are automatically excluded:<!--9119193-->
 
 - [mstsc.exe](/windows-server/administration/windows-commands/mstsc)
