@@ -74,6 +74,8 @@ The security baseline includes policies for:
 - Setting credential requirements for passwords and PINs
 - Restricting use of legacy technology
 
+The MDM security baseline has been enhanced with over 70 new settings which enable local user rights assignment, services management, and local security policies which were previously only available through Group Policy.  This enable adoption of pure MDM management and closer adherence to industry standard benchmarks for security. 
+
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
 - [MDM security baseline](/windows/security/threat-protection/windows-security-configuration-framework/windows-security-baselines)
