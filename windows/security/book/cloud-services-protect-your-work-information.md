@@ -264,7 +264,7 @@ There are several ways that OneDrive for work or school is protected at rest:
 
 ## MDM enrollment certificate attestation
 
-When a device is enrolled into device management, the administrator assumes that the device will enroll and receive appropriate policies to secure and manage the PC as they expect. In some circumstances, enrollment certificates can be removed by malicious actors and then used on unmanaged PCs to appear as though they are enrolled, but without the security and management policies the administrator intended. With MDM enrollment certificate attestation, the certificate and keys are bound to a specific machine through the use of the Trusted Platform Module (TPM) to ensure that they can't be lifted from one device and applied to another. This capability has existed for physical PCs since Windows 11 22H2 and is now being extended to Windows 11-based Cloud PCs and Azure Virtual Desktop VMs.
+When a device is enrolled into device management, the administrator assumes that the device will enroll and receive appropriate policies to secure and manage the PC as they expect. In some circumstances, enrollment certificates can be removed by malicious actors and then used on unmanaged PCs to appear as though they are enrolled, but without the security and management policies the administrator intended. With MDM enrollment certificate attestation, the certificate and keys are bound to a specific machine through the use of the Trusted Platform Module (TPM) to ensure that they can't be lifted from one device and applied to another.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
