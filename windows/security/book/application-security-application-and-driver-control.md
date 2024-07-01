@@ -19,6 +19,10 @@ Smart App Control prevents users from running malicious applications on Windows 
 Smart App Control builds on top of the same cloud-based AI used in App Control for Business to predict the safety of an application so that users can be confident that their applications are safe and reliable on their new Windows devices. Additionally, Smart App Control blocks unknown script files and macros from the web are blocked, greatly improving security for everyday users.
 Smart App Control will ship with new devices with Windows 11, version 22H2 installed.
 
+We have been making significant improvements to Smart App Control to increase the security, usability, and cloud intelligence response for apps in the Windows ecosystem. Users can get the latest and best experience with Smart App Control by keeping their PC up to date via Windows Update every month.
+
+Additionally, evaluation mode will start automatically enabling devices that the cloud AI model predicts will have a good experience with Smart App Control in the coming months, first starting with users in North America and eventually expanding to other regions. Note that enterprise-enrolled devices will still have Smart App Control disabled by default, and we recommend enterprises running line-of-business applications continue to leverage App Control for Business.
+
 Devices running previous versions of Windows 11 will have to be reset with a clean installation of Windows 11, version 22H2 to take advantage of this feature. Smart App Control will be disabled on devices enrolled in enterprise management. We suggest enterprises running line-of-business applications continue to leverage App Control for Business.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
