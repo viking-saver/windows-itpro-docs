@@ -44,16 +44,27 @@ Once Windows Sandbox is closed, nothing persists on the device. All the software
 - [Windows Sandbox is a new lightweight desktop environment tailored for safely
 running applications in isolation](https://techcommunity.microsoft.com/t5/windows-os-platform-blog/windows-sandbox/ba-p/301849)
 
-##Windows Subsystem for Linux (WSL) 
+## Windows Subsystem for Linux (WSL) 
 Windows Subsystem for Linux (WSL) is a feature of Windows that allows you to run a Linux environment on your Windows machine, without the need for a separate virtual machine or dual booting. WSL is designed to provide a seamless and productive experience for developers who want to use both Windows and Linux at the same time. In Ge, we added 3 networking security features and Intune/MDM integration in WSL on Windows 11 (SV2 and Ge) for Enterprises: 
-- Hyper-V Firewall: This new firewall setting is a network firewall solution that enables filtering of inbound and outbound traffic to/from WSL containers hosted by Windows.
+- **Hyper-V Firewall**: This new firewall setting is a network firewall solution that enables filtering of inbound and outbound traffic to/from WSL containers hosted by Windows.
+
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[Hyper-V Firewall](/windows/security/operating-system-security/network-security/windows-firewall/hyper-v-firewall)
 
-- [Hyper-V Firewall](windows/security/operating-system-security/network-security/windows-firewall/hyper-v-firewall)
+- **DNS Tunneling**: This new networking setting improves compatibility in different networking environments and makes use of virtualization features to obtain DNS information rather than a networking packet. 
 
-- DNS Tunneling: This new networking setting improves compatibility in different networking environments and makes use of virtualization features to obtain DNS information rather than a networking packet. 
-- Auto proxy: This new networking setting enforces WSL to use Windows' HTTP proxy information. Turn on when using a proxy on Windows, as it will make that proxy automatically apply to WSL distributions.
-- Intune/MDM setting in WSL: Microsoft Defender for Endpoint (MDE) now integrates with WSL, providing the ability to monitor what’s running inside of your WSL distros and report them to your online MDE dashboards.
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[DNS Tunneling](/windows/wsl/networking#dns-tunneling)
+
+- **Auto proxy**: This new networking setting enforces WSL to use Windows' HTTP proxy information. Turn on when using a proxy on Windows, as it will make that proxy automatically apply to WSL distributions.
+
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[Auto proxy](/windows/wsl/networking#auto-proxy)
+
+- **Intune/MDM setting in WSL**: Microsoft Defender for Endpoint (MDE) now integrates with WSL, providing the ability to monitor what’s running inside of your WSL distros and report them to your online MDE dashboards.
+
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[Intune/MDM setting in WSL](/windows/wsl/intune)
 
 
 ## App containers
