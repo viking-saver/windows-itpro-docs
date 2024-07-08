@@ -41,7 +41,7 @@ Microsoft Entra Private Access unlocks the ability to specify the fully qualifie
 ### Microsoft Entra Internet Access ###
 Microsoft Entra Internet Access provides an identity-centric Secure Web Gateway (SWG) solution for Software as a Service (SaaS) applications and other Internet traffic. It protects users, devices, and data from the Internet's wide threat landscape with best-in-class security controls and visibility through Traffic Logs.
 
-Both these features use a new Global Secure Access client for Windows, deployed on the desktop, that secure and control the feature. Note that both requires Microsoft Entra ID and Microsoft Entra Joined devices and refer to the deployment guide.
+Both these features use a new [Global Secure Access client for Windows](https://learn.microsoft.com/en-us/entra/global-secure-access/how-to-install-windows-client), deployed on the desktop, that secure and control the feature. Note that both requires Microsoft Entra ID and Microsoft Entra Joined devices and refer to the deployment guide.
 - [Microsoft's Security Service Edge Solution Deployment Guide for Microsoft Entra Private Access Proof of Concept](https://learn.microsoft.com/en-us/entra/architecture/sse-deployment-guide-private-access)
 https://learn.microsoft.com/en-us/entra/architecture/sse-deployment-guide-internet-access 
 - [Microsoft's Security Service Edge Solution Deployment Guide for Microsoft Entra Internet Access Proof of Concept](https://learn.microsoft.com/en-us/entra/architecture/sse-deployment-guide-internet-access)
