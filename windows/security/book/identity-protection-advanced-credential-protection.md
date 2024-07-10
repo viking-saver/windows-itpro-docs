@@ -37,7 +37,7 @@ End users have the ability to manage their LSA protection state in the Windows S
 
 Enabled by default in Windows 11 Enterprise, Credential Guard uses hardware-backed, virtualization-based security (VBS) to protect against credential theft. With Credential Guard, the Local Security Authority (LSA) stores and protects Active Directory (AD) secrets in an isolated environment that isn't accessible to the rest of the operating system. LSA uses remote procedure calls to communicate with the isolated LSA process.
 
-By protecting the LSA process with virtualization-based security, Credential Guard shields systems from credential theft attack techniques like Pass-the-Hash or Pass-the-Ticket. It also helps prevent malware from accessing system secrets even if the process is running with admin privileges.
+By protecting the LSA process with virtualization-based security, Credential Guard shields systems from user credential theft attack techniques like Pass-the-Hash or Pass-the-Ticket. It also helps prevent malware from accessing system secrets even if the process is running with admin privileges.
 
 Protections are now expanded to optionally include machine account passwords for Active Directory joined devices. Administrators can enable audit mode of this capability or enforcement using Credential Guard management policy.
 
@@ -54,6 +54,10 @@ Administrator credentials are highly privileged and must be protected. When Remo
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
 - [Remote Credential Guard - Windows Security | Microsoft Learn](/windows/security/identity-protection/remote-credential-guard?tabs=intune)
+
+## VBS Key Protection
+
+VBS key protection helps secure Windows keys using virtualization-based security (VBS). VBS uses the virtualization extension capability of the CPU to create an isolated runtime outside of the normal OS. When in use, VBS keys are isolated in a secure process, allowing key operations to occur without ever exposing the private key material outside of this space. At rest, private key material is encrypted by a TPM key which binds VBS keys to the device. Keys protected in this way cannot be dumped from process memory or exported in plain text from a user’s machine, preventing exfiltration attacks by any admin-level attacker.
 
 ## Token protection
 
