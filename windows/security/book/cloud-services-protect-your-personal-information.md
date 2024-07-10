@@ -35,7 +35,7 @@ When location services and Find my device settings are turned on, basic system s
 
 ## OneDrive for personal
 
-Microsoft OneDrive17 for personal provides additional security, backup, and restore options for important personal files. OneDrive stores and protects files in the cloud, allowing users to access them from laptops, desktops, and mobile devices. Plus, OneDrive provides an excellent solution for backing up folders. If a device is lost or stolen, the user can quickly recover all their important files from the cloud.
+Microsoft OneDrive <sup>[\[17\]](conclusion.md#footnote17)</sup> for personal provides additional security, backup, and restore options for important personal files. OneDrive stores and protects files in the cloud, allowing users to access them from laptops, desktops, and mobile devices. Plus, OneDrive provides an excellent solution for backing up folders. If a device is lost or stolen, the user can quickly recover all their important files from the cloud.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 

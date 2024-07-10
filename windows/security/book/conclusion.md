@@ -63,14 +63,14 @@ Enhanced:
 <sup><a name="footnote7"></a>7</sup> Requires Microsoft Entra ID and Microsoft Intune, or other modern device management solution product required; sold separately.\
 <sup><a name="footnote8"></a>8</sup> Commissioned study delivered by Forrester Consulting. "The Total Economic Impact&trade; of Windows 11 Pro Devices", December 2022. Note: quantified benefits reflect results over three years combined into a single composite organization that generates $1 billion in annual revenue, has 2,000 employees, refreshes hardware on a four-year cycle, and migrates the entirety of its workforce to Windows 11 devices.\
 <sup><a name="footnote9"></a>9</sup> Sold separately.\
-<sup><a name="footnote"></a>10</sup> Email encryption is supported on products such as Microsoft Exchange Server and Microsoft Exchange Online.\
-<sup><a name="footnote"></a>11</sup> Microsoft internal data.\
-<sup><a name="footnote"></a>12</sup> Microsoft Entra ID Basic is included with Microsoft Azure and Microsoft 365 subscriptions, and other commercial services subscriptions.\
-<sup><a name="footnote"></a>13</sup> Requires Microsoft Entra ID (formerly AAD) Premium; sold separately.\
-<sup><a name="footnote"></a>14</sup> Hardware dependent.\
-<sup><a name="footnote"></a>15</sup> Microsoft 365 E3 or E5 required; sold separately.\
-<sup><a name="footnote"></a>16</sup> The Total Economic Impact&trade; of Windows Pro Device, Forrester study commissioned by Microsoft, June 2020.\
-<sup><a name="footnote"></a>17</sup> All users with a Microsoft Account get 5GB of OneDrive storage free, and all Microsoft 365 subscriptions include 1TB of OneDrive storage. Additional OneDrive storage is sold separately.
+<sup><a name="footnote10"></a>10</sup> Email encryption is supported on products such as Microsoft Exchange Server and Microsoft Exchange Online.\
+<sup><a name="footnote11"></a>11</sup> Microsoft internal data.\
+<sup><a name="footnote12"></a>12</sup> Microsoft Entra ID Basic is included with Microsoft Azure and Microsoft 365 subscriptions, and other commercial services subscriptions.\
+<sup><a name="footnote13"></a>13</sup> Requires Microsoft Entra ID (formerly AAD) Premium; sold separately.\
+<sup><a name="footnote14"></a>14</sup> Hardware dependent.\
+<sup><a name="footnote15"></a>15</sup> Microsoft 365 E3 or E5 required; sold separately.\
+<sup><a name="footnote16"></a>16</sup> The Total Economic Impact&trade; of Windows Pro Device, Forrester study commissioned by Microsoft, June 2020.\
+<sup><a name="footnote17"></a>17</sup> All users with a Microsoft Account get 5GB of OneDrive storage free, and all Microsoft 365 subscriptions include 1TB of OneDrive storage. Additional OneDrive storage is sold separately.
 
 ---
 
