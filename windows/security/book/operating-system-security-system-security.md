@@ -31,7 +31,9 @@ For more information about these features and how they help prevent rootkits and
 
 Cryptography is designed to protect user and system data. The cryptography stack in Windows 11 extends from the chip to the cloud, enabling Windows, applications, and services to protect system and user secrets. For example, data can be encrypted so that only a specific reader with a unique key can read it. As a basis for data security, cryptography helps prevent anyone except the intended recipient from reading data, performs integrity checks to ensure data is free of tampering, and authenticates identity to ensure that communication is secure. Windows 11 cryptography is certified to meet the Federal Information Processing Standard (FIPS) 140. FIPS 140 certification ensures that US government-approved algorithms are correctly implemented.
 
-Learn more: FIPS 140 validation
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+
+- FIPS 140 validation
 
 Windows cryptographic modules provide low-level primitives such as:
 
@@ -43,7 +45,9 @@ Windows cryptographic modules provide low-level primitives such as:
 
 Application developers can use these cryptographic modules to perform low-level cryptographic operations (Bcrypt), key storage operations (NCrypt), protect static data (DPAPI), and securely share secrets (DPAPI-NG).
 
-Learn more: Cryptography and certificate management
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+
+- Cryptography and certificate management
 
 Developers can access the modules on Windows through the Cryptography Next Generation API (CNG), which is powered by Microsoft's open-source cryptographic library, SymCrypt. SymCrypt supports complete transparency through its open-source code. In addition, SymCrypt offers performance optimization for cryptographic operations by taking advantage of assembly and hardware acceleration when available.
 
@@ -75,7 +79,9 @@ A summary of the steps involved in attestation and Zero-Trust on a Windows devic
 - The TPM is verified by using the keys or cryptographic material available on the chipset with an Azure Certificate Service
 - The above information is sent to the Azure Attestation Service to verify that the device is in a trusted state.
 
-Learn more: Control the health of Windows devices
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+
+- [Control the health of Windows devices](/windows/security/operating-system-security/system-security/protect-high-value-assets-by-controlling-the-health-of-windows-10-based-devices)
 
 ## Windows security policy settings and auditing
 
