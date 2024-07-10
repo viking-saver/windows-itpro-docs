@@ -77,10 +77,10 @@ System Management Mode (SMM) isolation is an execution mode in x86-based process
 - [Dynamic Root of Trust measure and SMM isolation](https://www.microsoft.com/security/blog/2020/09/01/force-firmware-code-to-be-measured-and-attested-by-secure-launch-on-windows-10/)
 - [Secured-core PC firmware protection](/windows-hardware/design/device-experiences/oem-highly-secure-11)
 
-## Secured-core configuration lock
+### Secured-core PC configuration lock
 
-In many organizations, IT administrators enforce policies on their corporate devices to protect the OS and keep devices in a compliant state by preventing users from changing configurations and creating configuration drift. Configuration drift occurs when users with local admin rights change settings and put the device out of sync with security policies. Devices in a non-compliant state can be vulnerable until the next sync, when configuration is reset with the mobile device management (MDM) solution. Secured-core configuration lock (config lock) is a Secured-core PC (SCPC) feature that prevents users from making unwanted changes to security settings. With config lock, the OS monitors the registry keys that are supported and reverts to the IT-desired SCPC state in seconds after detecting a drift.
+In many organizations, IT administrators enforce policies on their corporate devices to protect the OS and keep devices in a compliant state by preventing users from changing configurations and creating configuration drift. Configuration drift occurs when users with local admin rights change settings and put the device out of sync with security policies. Devices in a non-compliant state can be vulnerable until the next sync, when configuration is reset with the mobile device management (MDM) solution. Secured-core PC configuration lock is a Secured-core PC (SCPC) feature that prevents users from making unwanted changes to security settings. With config lock, the OS monitors the registry keys that are supported and reverts to the IT-desired SCPC state in seconds after detecting a drift.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
-- [Windows 11 with config lock](/windows/client-management/mdm/config-lock)
+- [Secured-core PC configuration lock](/windows/client-management/mdm/config-lock)
