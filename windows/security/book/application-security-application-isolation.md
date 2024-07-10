@@ -55,10 +55,10 @@ Windows Subsystem for Linux (WSL) is a feature of Windows that allows you to run
 - **Intune/MDM setting in WSL**: Microsoft Defender for Endpoint (MDE) now integrates with WSL, providing the ability to monitor what’s running inside of your WSL distros and report them to your online MDE dashboards.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
-[Hyper-V Firewall](/windows/security/operating-system-security/network-security/windows-firewall/hyper-v-firewall)
-[DNS Tunneling](/windows/wsl/networking#dns-tunneling)
-[Auto proxy](/windows/wsl/networking#auto-proxy)
-[Intune/MDM setting in WSL](/windows/wsl/intune)
+- [Hyper-V Firewall](/windows/security/operating-system-security/network-security/windows-firewall/hyper-v-firewall)
+- [DNS Tunneling](/windows/wsl/networking#dns-tunneling)
+- [Auto proxy](/windows/wsl/networking#auto-proxy)
+- [Intune/MDM setting in WSL](/windows/wsl/intune)
 
 
 ## App containers
