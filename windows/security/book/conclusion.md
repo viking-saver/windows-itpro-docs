@@ -6,8 +6,6 @@ ms.date: 06/17/2024
 ---
 
 # Conclusion
-
-
 We will continue to bring you new features to protect against evolving threats, simplify management, and securely enable new workstyles. With Windows 11 devices, organizations of all sizes can benefit from the security and performance to thrive anywhere.
 
 :::image type="content" source="images/chip-to-cloud.png" alt-text="Diagram of chip-to-cloud containing a list of security features." lightbox="images/chip-to-cloud.png" border="false":::

@@ -11,7 +11,7 @@ ms.date: 04/09/2024
 
 ## Win32 app isolation
 
-Win32 app isolation is a new security feature in public preview designed to be the default isolation standard on Windows clients. It's built on [AppContainer](/windows/win32/secauthz/implementing-an-appcontainer), and offers several added security features to help the Windows platform defend against attacks that leverage vulnerabilities in applications or third-party libraries. To isolate their apps, developers can update their applications using the tools provided by Microsoft.
+Win32 app isolation is a new security feature designed to be the default isolation standard on Windows clients. It's built on [AppContainer](/windows/win32/secauthz/implementing-an-appcontainer), and offers several added security features to help the Windows platform defend against attacks that leverage vulnerabilities in applications or third-party libraries. To isolate their apps, developers can update their applications using Visual Studio. 
 
 Win32 app isolation follows a two-step process. In the first step, the Win32 application is launched as a low-integrity process using AppContainer, which is recognized as a security boundary by Microsoft. Consequently, the process is limited to a specific set of Windows APIs by default and is unable to inject code into any process operating at a higher integrity level.
 
@@ -29,6 +29,8 @@ The first factor relates to implementing methods to manage access to files and p
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
 - [Win32 app isolation](https://github.com/microsoft/win32-app-isolation)
+- [Learn how to adop Win32 app isolation with Visual Studio](https://github.com/microsoft/win32-app-isolation/blob/main/docs/packaging/packaging-with-visual-studio.md)
+- [Sandboxing Python with Win32 app isolation](https://blogs.windows.com/windowsdeveloper/2024/03/06/sandboxing-python-with-win32-app-isolation/)
 
 ## Windows Sandbox
 
@@ -42,6 +44,23 @@ Once Windows Sandbox is closed, nothing persists on the device. All the software
 - [Windows Sandbox is a new lightweight desktop environment tailored for safely
 running applications in isolation](https://techcommunity.microsoft.com/t5/windows-os-platform-blog/windows-sandbox/ba-p/301849)
 
+## Windows Subsystem for Linux (WSL) 
+Windows Subsystem for Linux (WSL) is a feature of Windows that allows you to run a Linux environment on your Windows machine, without the need for a separate virtual machine or dual booting. WSL is designed to provide a seamless and productive experience for developers who want to use both Windows and Linux at the same time. In Ge, we added 3 networking security features and Intune/MDM integration in WSL on Windows 11 (SV2 and Ge) for Enterprises: 
+- **Hyper-V Firewall**: This new firewall setting is a network firewall solution that enables filtering of inbound and outbound traffic to/from WSL containers hosted by Windows.
+
+- **DNS Tunneling**: This new networking setting improves compatibility in different networking environments and makes use of virtualization features to obtain DNS information rather than a networking packet. 
+
+- **Auto proxy**: This new networking setting enforces WSL to use Windows' HTTP proxy information. Turn on when using a proxy on Windows, as it will make that proxy automatically apply to WSL distributions.
+
+- **Intune/MDM setting in WSL**: Microsoft Defender for Endpoint (MDE) now integrates with WSL, providing the ability to monitor what’s running inside of your WSL distros and report them to your online MDE dashboards.
+
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+- [Hyper-V Firewall](/windows/security/operating-system-security/network-security/windows-firewall/hyper-v-firewall)
+- [DNS Tunneling](/windows/wsl/networking#dns-tunneling)
+- [Auto proxy](/windows/wsl/networking#auto-proxy)
+- [Intune/MDM setting in WSL](/windows/wsl/intune)
+
+
 ## App containers
 
 In addition to Windows Sandbox for Win32 apps, Universal Windows Platform (UWP) applications run in Windows containers known as *app containers*. App containers act as process and resource isolation boundaries, but unlike Docker containers, these are special containers designed to run Windows applications.
@@ -51,3 +70,4 @@ Processes that run in app containers operate at a low integrity level, meaning t
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
 - [Windows and app container](/windows/apps/windows-app-sdk/migrate-to-windows-app-sdk/feature-mapping-table?source=recommendations)
+

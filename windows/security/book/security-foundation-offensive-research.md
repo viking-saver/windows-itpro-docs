@@ -17,13 +17,6 @@ The Microsoft Security Development Lifecycle (SDL) introduces security best prac
 
 A range of tools and techniques - such as threat modeling, static analysis, fuzz testing, and code quality checks - enable continued security value to be embedded into Windows by every engineer on the team from day one. Through the SDL practices, Microsoft engineers are continuously provided with actionable and up-to-date methods to improve development workflows and overall product security before the code has been released.
 
-Microsoft is dedicated to working with the community and our customers to continuously improve and tune our platform and products to help defend against the dynamic and sophisticated threat landscape. Project OneFuzz - an extensible fuzz testing framework used by Microsoft Edge, Windows, and teams across Microsoft - is now available to developers around the world through GitHub as an open-source tool.
-
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
-
-- [Project OneFuzz framework, an open source developer tool to find and fix bugs at scale](https://www.microsoft.com/security/blog/2020/09/15/microsoft-onefuzz-framework-open-source-developer-tool-fix-bugs/)
-- [OneFuzz on GitHub](https://github.com/microsoft/onefuzz)
-
 ## Microsoft Offensive Research and Security Engineering
 
 [Microsoft Offensive Research and Security Engineering](https://github.com/microsoft/WindowsAppSDK-Samples?msclkid=1a6280c6c73d11ecab82868efae04e5c) performs targeted design reviews, audits, and deep penetration testing of Windows features using Microsoft's open-source OneFuzz platform as part of their development and testing cycle.
