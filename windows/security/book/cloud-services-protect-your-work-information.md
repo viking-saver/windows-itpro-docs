@@ -36,21 +36,25 @@ In combination with Microsoft Intune, Microsoft Entra ID offers powerful securit
 Every Windows device has a built-in local administrator account that must be secured and protected to mitigate any Pass-the-Hash (PtH) and lateral traversal attacks. Many customers have been using our standalone, on-premises Windows Local Administrator Password Solution (LAPS) to manage their domain-joined Windows machines. We heard from many customers that LAPS support was needed as they modernized their Windows environment to join directly to Microsoft Entra ID.
 
 ### Microsoft Entra Private Access ###
+
 Microsoft Entra Private Access unlocks the ability to specify the fully qualified domain names (FQDNs) and IP addresses that you consider private or internal, so you can manage how your organization accesses them. With Private Access, you can modernize how your organization's users access private apps and resources. Remote workers don't need to use a VPN to access these resources if they have the Global Secure Access Client installed. The client quietly and seamlessly connects them to the resources they need. 
-Note that Microsoft Entra Private Access requires Microsoft Entra ID and Microsoft Entra Joined devices and for deployment, refer to [Microsoft's Security Service Edge Solution Deployment Guide for Microsoft Entra Private Access Proof of Concept](https://learn.microsoft.com/en-us/entra/architecture/sse-deployment-guide-private-access).
+
+Note that Microsoft Entra Private Access requires Microsoft Entra ID and Microsoft Entra Joined devices and for deployment, refer to [Microsoft's Security Service Edge Solution Deployment Guide for Microsoft Entra Private Access Proof of Concept](/entra/architecture/sse-deployment-guide-private-access).
 
 ### Microsoft Entra Internet Access ###
-Microsoft Entra Internet Access provides an identity-centric Secure Web Gateway (SWG) solution for Software as a Service (SaaS) applications and other Internet traffic. It protects users, devices, and data from the Internet's wide threat landscape with best-in-class security controls and visibility through Traffic Logs. 
-Note that Microsoft Entra Private Access requires Microsoft Entra ID and Microsoft Entra Joined devices and for deployment, refer to [Microsoft's Security Service Edge Solution Deployment Guide for Microsoft Entra Internet Access Proof of Concept](https://learn.microsoft.com/en-us/entra/architecture/sse-deployment-guide-internet-access).
 
-Both these features use a new [Global Secure Access client for Windows](https://learn.microsoft.com/en-us/entra/global-secure-access/how-to-install-windows-client), deployed on the desktop, that secure and control the feature. 
+Microsoft Entra Internet Access provides an identity-centric Secure Web Gateway (SWG) solution for Software as a Service (SaaS) applications and other Internet traffic. It protects users, devices, and data from the Internet's wide threat landscape with best-in-class security controls and visibility through Traffic Logs. 
+
+Note that Microsoft Entra Private Access requires Microsoft Entra ID and Microsoft Entra Joined devices and for deployment, refer to [Microsoft's Security Service Edge Solution Deployment Guide for Microsoft Entra Internet Access Proof of Concept](/entra/architecture/sse-deployment-guide-internet-access).
+
+Both these features use a new [Global Secure Access client for Windows](/entra/global-secure-access/how-to-install-windows-client), deployed on the desktop, that secure and control the feature. 
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
 - [Windows Local Administrator Password Solution with Microsoft Entra (Azure AD)](https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/introducing-windows-local-administrator-password-solution-with/ba-p/1942487)
 - [Microsoft Entra plans and pricing](https://www.microsoft.com/security/business/microsoft-entra-pricing?rtc=1)
-- [Microsoft Entra Private Access](https://learn.microsoft.com/en-us/entra/global-secure-access/concept-private-access)
-- [Microsoft Entra Internet Access for all apps](https://learn.microsoft.com/en-us/entra/global-secure-access/concept-private-access)
+- [Microsoft Entra Private Access](/entra/global-secure-access/concept-private-access)
+- [Microsoft Entra Internet Access for all apps](/entra/global-secure-access/concept-private-access)
 
 ## Modern device management through (MDM)
 
