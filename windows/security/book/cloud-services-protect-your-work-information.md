@@ -144,7 +144,8 @@ Windows 11 supports the Remote Wipe configuration service provider (CSP) so that
 - Reset the device and clean the drive
 - Reset the device but persist user accounts and data
 
-Learn More: [Remote Wipe CSP](/windows/client-management/mdm/remotewipe-csp)
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[Remote Wipe CSP](/windows/client-management/mdm/remotewipe-csp)
 
 ## Microsoft Azure Attestation Service
 
