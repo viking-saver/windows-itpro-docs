@@ -15,7 +15,7 @@ The Microsoft Security Development Lifecycle (SDL) introduces security best prac
 
 ## OneFuzz service
 
-A range of tools and techniques - such as threat modeling, static analysis, fuzz testing, and code quality checks - enable continued security value to be embedded into Windows by every engineer on the team from day one. Through the SDL practices, Microsoft engineers are continuously provided with actionable and up-to-date methods to improve development workflows and overall product security before the code has been released.
+A range of tools and techniques - such as threat modeling, static analysis, fuzz testing, and code quality checks - enable continued security value to be embedded into Windows by every engineer on the team from day one. Through the SDL practices, Microsoft engineers are continuously provided with actionable and up-to-date methods to improve development workflows and overall product security before the code is released.
 
 ## Microsoft Offensive Research and Security Engineering
 
@@ -27,7 +27,7 @@ As part of our secure development process, the Microsoft Windows Insider Preview
 
 The goal of the Windows Insider Preview bounty program is to uncover significant vulnerabilities that have a direct and demonstrable impact on the security of customers using the latest version of Windows.
 
-Through this collaboration with researchers across the globe, our teams identify critical vulnerabilities that were not previously found during development and quick fix the issues before releasing our final Windows.
+Through this collaboration with researchers across the globe, our teams identify critical vulnerabilities and quickly fix the issues before releasing our final Windows.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
