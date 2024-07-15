@@ -102,6 +102,8 @@ Privacy is top of mind and more important than ever. Customers want to have grea
 
 Users can also take advantage of more granular settings to easily enable and disable differentiated presence sensing features like wake on approach, lock on leave, and adaptive dimming. We are also supporting developers with new APIs for presence sensing for thirdparty applications. Third-party applications can now access user presence information on devices with modern presence sensors.
 
+Newer presence sensors can support multi-person detection making them able to detect people looking at your screen and with Privacy Screen Dim intelligently dim it to warn you.
+
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
 - [Presence sensing](/windows-hardware/design/device-experiences/sensors-presence-sensing)
