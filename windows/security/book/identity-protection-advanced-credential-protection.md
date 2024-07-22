@@ -13,7 +13,7 @@ In addition to adopting passwordless sign-in, organizations can strengthen secur
 
 ## Enhanced phishing protection with Microsoft Defender SmartScreen
 
-As malware protection and other safeguards evolve, cybercriminals look for new ways to circumvent security measures. Phishing has emerged as a leading threat, with apps and websites designed to steal credentials by tricking people into voluntarily entering passwords. As a result, many organizations are transitioning to the ease and security of passwordless sign-in with Windows Hello or Windows Hello for Business.
+As malware protection and other safeguards evolve, cybercriminals look for new ways to circumvent security measures. Phishing is a leading threat, with apps and websites designed to steal credentials by tricking people into voluntarily entering passwords. As a result, many organizations are transitioning to the ease and security of passwordless sign-in with Windows Hello or Windows Hello for Business.
 
 However, people who are still using passwords can also benefit from powerful credential protection in Windows 11. Microsoft Defender SmartScreen now includes enhanced phishing protection to automatically detect when a user's Microsoft password is entered into any app or website. Windows then identifies if the app or site is securely authenticating to Microsoft and warns if the credentials are at risk. Because the user is alerted at the moment of potential credential theft, they can take preemptive action before the password is used against them or their organization.
 
@@ -25,9 +25,9 @@ However, people who are still using passwords can also benefit from powerful cre
 
 Windows has several critical processes to verify a user's identity. Verification processes include Local Security Authority (LSA), which is responsible for authenticating users and verifying Windows sign-ins. LSA handles tokens and credentials that are used for single sign-on to a Microsoft account and Azure services.
 
-To help keep these credentials safe, additional LSA protection will be enabled by default on new, enterprise-joined Windows 11 devices. By loading only trusted, signed code, LSA provides significant protection against credential theft. LSA protection also now supports configuration using Group Policy and modern device management.
+To help keep these credentials safe, more LSA protection is enabled by default on new, enterprise-joined Windows 11 devices. By loading only trusted, signed code, LSA provides significant protection against credential theft. LSA protection also now supports configuration using Group Policy and modern device management.
 
-End users have the ability to manage their LSA protection state in the Windows Security Application under Device Security -> Core Isolation -> Local Security Authority protection. It’s important to note that the enterprise policy for LSA protection will take precedence over enablement on upgrade. This ensures a seamless transition and enhanced security for all users.
+End users have the ability to manage their LSA protection state in the Windows Security Application under Device Security -> Core Isolation -> Local Security Authority protection. It's important to note that the enterprise policy for LSA protection will take precedence over enablement on upgrade. This ensures a seamless transition and enhanced security for all users.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
@@ -35,9 +35,9 @@ End users have the ability to manage their LSA protection state in the Windows S
 
 ## Credential Guard
 
-Enabled by default in Windows 11 Enterprise, Credential Guard uses hardware-backed, virtualization-based security (VBS) to protect against credential theft. With Credential Guard, the Local Security Authority (LSA) stores and protects Active Directory (AD) secrets in an isolated environment that isn't accessible to the rest of the operating system. LSA uses remote procedure calls to communicate with the isolated LSA process.
+Credential Guard uses hardware-backed, Virtualization-based security (VBS) to protect against credential theft. With Credential Guard, the Local Security Authority (LSA) stores and protects Active Directory (AD) secrets in an isolated environment that isn't accessible to the rest of the operating system. LSA uses remote procedure calls to communicate with the isolated LSA process.
 
-By protecting the LSA process with virtualization-based security, Credential Guard shields systems from user credential theft attack techniques like Pass-the-Hash or Pass-the-Ticket. It also helps prevent malware from accessing system secrets even if the process is running with admin privileges.
+By protecting the LSA process with Virtualization-based security, Credential Guard shields systems from user credential theft attack techniques like Pass-the-Hash or Pass-the-Ticket. It also helps prevent malware from accessing system secrets even if the process is running with admin privileges.
 
 Protections are now expanded to optionally include machine account passwords for Active Directory joined devices. Administrators can enable audit mode of this capability or enforcement using Credential Guard management policy.
 
@@ -57,7 +57,7 @@ Administrator credentials are highly privileged and must be protected. When Remo
 
 ## VBS Key Protection
 
-VBS key protection enables developers to secure cryptographic keys using virtualization-based security (VBS). VBS uses the virtualization extension capability of the CPU to create an isolated runtime outside of the normal OS. When in use, VBS keys are isolated in a secure process, allowing key operations to occur without ever exposing the private key material outside of this space. At rest, private key material is encrypted by a TPM key which binds VBS keys to the device. Keys protected in this way cannot be dumped from process memory or exported in plain text from a user’s machine, preventing exfiltration attacks by any admin-level attacker.
+VBS key protection enables developers to secure cryptographic keys using Virtualization-based security (VBS). VBS uses the virtualization extension capability of the CPU to create an isolated runtime outside of the normal OS. When in use, VBS keys are isolated in a secure process, allowing key operations to occur without ever exposing the private key material outside of this space. At rest, private key material is encrypted by a TPM key, which binds VBS keys to the device. Keys protected in this way can't be dumped from process memory or exported in plain text from a user's machine, preventing exfiltration attacks by any admin-level attacker.
 
 ## Token protection
 
@@ -77,9 +77,9 @@ At the inaugural Microsoft Secure event in March 2023, we announced the public p
 
 ## Account lockout policies
 
-New devices with Windows 11 installed will have account lockout policies that are secure by default. These policies will mitigate brute-force attacks such as hackers attempting to access Windows devices via the Remote Desktop Protocol (RDP).
+New devices with Windows 11 installed will have account lockout policies that are secure by default. These policies mitigate brute-force attacks such as hackers attempting to access Windows devices via the Remote Desktop Protocol (RDP).
 
-The account lockout threshold policy is now set to 10 failed sign-in attempts by default, with the account lockout duration set to 10 minutes. The Allow Administrator account lockout is now enabled by default. The Reset account lockout counter after is now set to 10 minutes by default as well.
+The account lockout threshold policy is now set to 10 failed sign-in attempts by default, with the account lockout duration set to 10 minutes. The *Allow Administrator account lockout* is now enabled by default. The Reset account lockout counter after is now set to 10 minutes by default as well.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
@@ -95,7 +95,7 @@ IT administrators can refine the application and management of access to:
 
 - Protect a greater number and variety of network resources from misuse
 - Provision users to access resources in a manner that is consistent with organizational policies and the requirements of their jobs. Organizations can implement the principle of least-privilege access, which asserts that users should be granted access only to the data and operations they require to perform their jobs
-- Update users' ability to access resources on a regular basis as an organization's policies change or as users' jobs change
+- Update users' ability to access resourcesregularly, as an organization's policies change or as users' jobs change
 - Support evolving workplace needs, including access from hybrid or remote locations, or from a rapidly expanding array of devices, including tablets and mobile phones
 - Identify and resolve access issues when legitimate users are unable to access resources that they need to perform their jobs
 

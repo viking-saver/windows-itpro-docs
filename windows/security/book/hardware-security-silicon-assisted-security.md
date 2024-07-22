@@ -24,7 +24,7 @@ Since more privileged virtual trust levels (VTLs) can enforce their own memory p
 
 - [Virtualization-based security (VBS)](/windows-hardware/design/device-experiences/oem-vbs)
 
-A [**Virtualization-based security enclave**](https://learn.microsoft.com/en-us/windows/win32/trusted-execution/vbs-enclaves), is a software-based trusted execution environment (TEE) inside a host application. VBS enclaves enable developers to leverage VBS to protect their application's secrets from admin-level attacks. VBS enclaves are available on Windows 10 onwards on both x64 and ARM64.
+A [**Virtualization-based security enclave**](/windows/win32/trusted-execution/vbs-enclaves), is a software-based trusted execution environment (TEE) inside a host application. VBS enclaves enable developers to leverage VBS to protect their application's secrets from admin-level attacks. VBS enclaves are available on Windows 10 onwards on both x64 and ARM64.
 
 **Hypervisor-enforced Paging Translation (HVPT)** is an overall security enhancement for the system. HVPT protects linear address translations from being tampered with, to protect sensitive system structures from write-what-where attacks. HVPT will be available on x64 machines as of Fall 2024.
 

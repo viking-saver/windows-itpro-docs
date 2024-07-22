@@ -73,9 +73,9 @@ The Windows kernel is the most privileged software and is therefore a compelling
 
 ## Trusted signing
 
-It is a Microsoft fully managed end-to-end signing solution that simplifies the signing process and empowers 3rd party developers to easily build and distribute applications. This feature is currently in public preview and is part of Microsoft’s commitment to an open, inclusive, and secure ecosystem.
+It is a Microsoft fully managed end-to-end signing solution that simplifies the signing process and empowers 3rd party developers to easily build and distribute applications. This feature is currently in public preview and is part of Microsoft's commitment to an open, inclusive, and secure ecosystem.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
-- [What is Trusted Signing](https://learn.microsoft.com/en-us/azure/trusted-signing/overview)
+- [What is Trusted Signing](/azure/trusted-signing/overview)
 - [Public Preview Blog](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/trusted-signing-is-in-public-preview/ba-p/4103457)
