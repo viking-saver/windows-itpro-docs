@@ -15,7 +15,7 @@ Passwords are inconvenient to use and prime targets for cybercriminals - and the
 
 Too often, passwords are weak, stolen, or forgotten. Organizations are moving toward passwordless sign-in to reduce the risk of breaches, lower the cost of managing passwords, and improve productivity and satisfaction for their employees and customers. Microsoft is committed to helping customers move toward a secure, passwordless future with Windows Hello, a cornerstone of Windows security and identity protection.
 
-[Windows Hello](/windows/security/identity-protection/hello-for-business/passwordless-strategy) can enable passwordless sign-in using biometric or PIN verification and provides built-in support for the FIDO2 passwordless industry standard. As a result, people no longer need to carry external hardware like a security key for authentication.
+Windows Hello can enable passwordless sign-in using biometric or PIN verification and provides built-in support for the FIDO2 passwordless industry standard. As a result, people no longer need to carry external hardware like a security key for authentication.
 
 The secure, convenient sign-in experience can augment or replace passwords with a stronger authentication model based on a PIN or biometric data such as facial or fingerprint recognition secured by the Trusted Platform Module (TPM). Step-by-step guidance makes setup easy.
 
@@ -25,15 +25,23 @@ PIN and biometric data stay on the device and cannot be stored or accessed exter
 
 Windows Hello can authenticate users to a Microsoft account (MSA), identity provider services, or the relying parties that also implement the FIDO2 or WebAuthn standards.
 
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+
+- [Configure Windows Hello][LINK-1]
+
 ## Windows Hello for Business
 
 Windows Hello for Business extends Windows Hello to work with an organization's Active Directory and Microsoft Entra ID accounts. It provides single sign-on access to work or school resources such as OneDrive for Business, work email, and other business apps. Windows Hello for Business also give IT admins the ability to manage PIN and other sign-in requirements for devices connecting to work or school resources.
 
-## Windows Hello for Business Passwordless
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+
+- [Windows Hello for Business overview][LINK-2]
+
+## Windows passwordless experience
 
 Windows 11 devices with Windows Hello for Business can protect user identities by removing the need to use passwords from day one.
 
-IT can now set a policy for Microsoft Entra ID joined machines so users no longer see the option to enter a password when accessing company resources.12 Once the policy is set, passwords are removed from the Windows user experience, both for device unlock as well as in-session authentication scenarios via CredUI. However, passwords are not eliminated from the identity directory yet. Users are expected to navigate through their core authentication scenarios using strong, phish-resistant, possession-based credentials like Windows Hello for Business and FIDO2 security keys. If necessary, users can leverage passwordless recovery mechanisms such as Windows Hello for Business PIN reset or Web Sign-in.
+IT can now set a policy for Microsoft Entra ID joined machines so users no longer see the option to enter a password when accessing company resources<sup>[\[12\]](conclusion.md#footnote12)</sup>. Once the policy is set, passwords are removed from the Windows user experience, both for device unlock as well as in-session authentication scenarios via CredUI. However, passwords are not eliminated from the identity directory yet. Users are expected to navigate through their core authentication scenarios using strong, phish-resistant, possession-based credentials like Windows Hello for Business and FIDO2 security keys. If necessary, users can leverage passwordless recovery mechanisms such as Windows Hello for Business PIN reset or Web Sign-in.
 
 During a device's lifecycle, a password may only need to be used once during the provisioning process. After that, people can use a PIN, face, or fingerprint to unlock credentials and sign into the device.
 
@@ -44,13 +52,13 @@ Provisioning methods include:
 
 Windows Hello for Business replaces the username and password by combining a security key or certificate with a PIN or biometric data and then mapping the credentials to a user account during setup. There are multiple ways to deploy Windows Hello for Business depending on an organization's needs. Organizations that rely on certificates typically use on-premises public key infrastructure (PKI) to support authentication through Certificate Trust. Organizations using key trust deployment require root-of-trust provided by certificates on domain controllers.
 
-Organizations with hybrid scenarios can eliminate the need for on-premises domain controllers and simplify passwordless adoption by using Windows Hello for Business cloud Kerberos trust.13 This solution uses security keys and replaces on-premises domain controllers with a cloud-based root-of-trust. As a result, organizations can take advantage of Windows Hello for Business and deploy passwordless security keys with minimal additional setup or infrastructure.
+Organizations with hybrid scenarios can eliminate the need for on-premises domain controllers and simplify passwordless adoption by using Windows Hello for Business cloud Kerberos trus<sup>[\[13\]](conclusion.md#footnote13)</sup>. This solution uses security keys and replaces on-premises domain controllers with a cloud-based root-of-trust. As a result, organizations can take advantage of Windows Hello for Business and deploy passwordless security keys with minimal additional setup or infrastructure.
 
 Users will authenticate directly with Microsoft Entra ID, helping speed access to on- premises applications and other resources.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
-- [Windows Hello for Business overview](/windows/security/identity-protection/hello-for-business/)
+- [Windows passwordless experience][LINK-3]
 
 ## Windows Hello PIN
 
@@ -101,8 +109,6 @@ Windows presence sensing combines presence detection sensors with Windows Hello 
 Privacy is top of mind and more important than ever. Customers want to have greater transparency and control over the use of their information. We are pleased to announce new app privacy settings that enable users to allow or block access to their presence sensor information. Users can decide on these settings during the initial Windows 11 setup.
 
 Users can also take advantage of more granular settings to easily enable and disable differentiated presence sensing features like wake on approach, lock on leave, and adaptive dimming. We are also supporting developers with new APIs for presence sensing for thirdparty applications. Third-party applications can now access user presence information on devices with modern presence sensors.
-
-Newer presence sensors can support multi-person detection making them able to detect people looking at your screen and with Privacy Screen Dim intelligently dim it to warn you.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
@@ -172,3 +178,10 @@ Windows 11 supports federated sign-in with external education identity managemen
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
 - [Configure federated sign-in for Windows devices](/education/windows/federated-sign-in)
+
+
+<!--links-->
+
+[LINK-1]: https://support.microsoft.com/windows/dae28983-8242-bb2a-d3d1-87c9d265a5f0
+[LINK-2]: /windows/security/identity-protection/hello-for-business
+[LINK-3]: /windows/security/identity-protection/passwordless-experience
