@@ -19,7 +19,7 @@ However, people who are still using passwords can also benefit from powerful cre
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
-- [Enhanced phishing protection in Microsoft Defender SmartScreen](/windows/security/operating-system-security/virus-and-threat-protection/microsoft-defender-smartscreen/enhanced-phishing-protection)
+- [Enhanced phishing protection in Microsoft Defender SmartScreen][LINK-1]
 
 ## Local Security Authority (LSA) protection
 
@@ -31,7 +31,7 @@ End users have the ability to manage their LSA protection state in the Windows S
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
-- [Configuring additional LSA protection](/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection)
+- [Configuring additional LSA protection][LINK-2]
 
 ## Credential Guard
 
@@ -43,7 +43,7 @@ Protections are now expanded to optionally include machine account passwords for
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
-- [Protect derived domain credentials with Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard)
+- [Protect derived domain credentials with Credential Guard][LINK-3]
 
 ## Remote Credential Guard
 
@@ -53,7 +53,7 @@ Administrator credentials are highly privileged and must be protected. When Remo
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
-- [Remote Credential Guard - Windows Security | Microsoft Learn](/windows/security/identity-protection/remote-credential-guard?tabs=intune)
+- [Remote Credential Guard][LINK-4]
 
 ## VBS Key Protection
 
@@ -65,15 +65,11 @@ Token protection attempts to reduce attacks using Microsoft Entra ID token theft
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
-- [Token protection in Entra ID Conditional Access](/azure/active-directory/conditional-access/concept-token-protection)
+- [Token protection in Entra ID Conditional Access][LINK-5]
 
-## Sign-in session token protection policy
+### Sign-in session token protection policy
 
 At the inaugural Microsoft Secure event in March 2023, we announced the public preview of token protection for sign-ins. This feature allows applications and services to cryptographically bind security tokens to the device, restricting attackers' ability to impersonate users on a different device if tokens are stolen.
-
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
-
-- [Conditional Access: Token protection (preview)](/azure/active-directory/conditional-access/concept-token-protection)
 
 ## Account lockout policies
 
@@ -83,7 +79,7 @@ The account lockout threshold policy is now set to 10 failed sign-in attempts by
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
-- [Account lockout policy](/windows/security/threat-protection/security-policy-settings/account-lockout-policy)
+- [Account lockout policy][LINK-6]
 
 ## Access management and control
 
@@ -95,10 +91,20 @@ IT administrators can refine the application and management of access to:
 
 - Protect a greater number and variety of network resources from misuse
 - Provision users to access resources in a manner that is consistent with organizational policies and the requirements of their jobs. Organizations can implement the principle of least-privilege access, which asserts that users should be granted access only to the data and operations they require to perform their jobs
-- Update users' ability to access resourcesregularly, as an organization's policies change or as users' jobs change
+- Update users' ability to access resources regularly, as an organization's policies change or as users' jobs change
 - Support evolving workplace needs, including access from hybrid or remote locations, or from a rapidly expanding array of devices, including tablets and mobile phones
 - Identify and resolve access issues when legitimate users are unable to access resources that they need to perform their jobs
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
-- [Access control](/windows/security/identity-protection/access-control/access-control)
+- [Access control][LINK-7]
+
+<!--links-->
+
+[LINK-1]: /windows/security/operating-system-security/virus-and-threat-protection/microsoft-defender-smartscreen/enhanced-phishing-protection
+[LINK-2]: /windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection
+[LINK-3]: /windows/security/identity-protection/credential-guard
+[LINK-4]: /windows/security/identity-protection/remote-credential-guard
+[LINK-5]: /azure/active-directory/conditional-access/concept-token-protection
+[LINK-6]: /windows/security/threat-protection/security-policy-settings/account-lockout-policy
+[LINK-7]: /windows/security/identity-protection/access-control/access-control
