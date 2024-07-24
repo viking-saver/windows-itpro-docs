@@ -41,9 +41,9 @@ Windows Hello for Business extends Windows Hello to work with an organization's 
 
 Windows 11 devices with Windows Hello for Business can protect user identities by removing the need to use passwords from day one.
 
-IT can now set a policy for Microsoft Entra ID joined machines so users no longer see the option to enter a password when accessing company resources<sup>[\[12\]](conclusion.md#footnote12)</sup>. Once the policy is set, passwords are removed from the Windows user experience, both for device unlock and in-session authentication scenarios via CredUI. However, passwords aren't eliminated from the identity directory yet. Users are expected to navigate through their core authentication scenarios using strong, phish-resistant, possession-based credentials like Windows Hello for Business and FIDO2 security keys. If necessary, users can leverage passwordless recovery mechanisms such as Windows Hello for Business PIN reset or Web Sign-in.
+IT can now set a policy for Microsoft Entra ID joined machines so users no longer see the option to enter a password when accessing company resources<sup>[\[12\]](conclusion.md#footnote12)</sup>. Once the policy is set, passwords are removed from the Windows user experience, both for device unlock and in-session authentication scenarios via CredUI. However, passwords aren't eliminated from the identity directory yet. Users are expected to navigate through their core authentication scenarios using strong, phish-resistant, possession-based credentials like Windows Hello for Business and FIDO2 security keys. If necessary, users can use passwordless recovery mechanisms such as Windows Hello for Business PIN reset or Web Sign-in.
 
-During a device's lifecycle, a password may only need to be used once during the provisioning process. After that, people can use a PIN, face, or fingerprint to unlock credentials and sign into the device.
+During a device's lifecycle, a password might only need to be used once during the provisioning process. After that, people can use a PIN, face, or fingerprint to unlock credentials and sign into the device.
 
 Provisioning methods include:
 
@@ -54,7 +54,7 @@ Windows Hello for Business replaces the username and password by combining a sec
 
 Organizations with hybrid scenarios can eliminate the need for on-premises domain controllers and simplify passwordless adoption by using Windows Hello for Business cloud Kerberos trust<sup>[\[13\]](conclusion.md#footnote13)</sup>. This solution uses security keys and replaces on-premises domain controllers with a cloud-based root-of-trust. As a result, organizations can take advantage of Windows Hello for Business and deploy passwordless security keys with minimal additional setup or infrastructure.
 
-Users will authenticate directly with Microsoft Entra ID, helping speed access to on-premises applications and other resources.
+Users authenticate directly with Microsoft Entra ID, helping speed access to on-premises applications and other resources.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
@@ -133,9 +133,9 @@ Windows 11 can also use passkeys from external FIDO2 security keys for authentic
 
 Windows 11 makes it much harder for hackers who exploit stolen passwords via phishing attacks by empowering users to replace passwords with passkeys. Passkeys are the cross-platform future of secure sign-in. Microsoft and other technology leaders are supporting passkeys across their platforms and services.
 
-A passkey is a unique, unguessable cryptographic secret that is securely stored on the device. Instead of using a username and password to sign in to a website or application, Windows 11 users can create and use a passkey from Windows Hello, an external security provider, or their mobile device.
+A passkey is a unique, unguessable cryptographic secret that is securely stored on the device. Instead of using a username and password to sign in to a website or application, Windows 11 users can create and use a passkey with Windows Hello, an external security provider, or their mobile device.
 
-Passkeys on Windows 11 are protected by Windows Hello or Windows Hello for Business. This enables users to sign in to the site or app using their face, fingerprint, or device PIN. Passkeys on Windows work in any browser or app that supports them for sign in. Users can manage passkeys on their device on Windows 11 account settings.
+Passkeys on Windows 11 are protected by Windows Hello or Windows Hello for Business. This enables users to sign in to the site or app using their face, fingerprint, or device PIN. Passkeys on Windows work in any browsers or apps that support them for sign in. Users can manage passkeys on their device on Windows 11 account settings.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
@@ -143,9 +143,9 @@ Passkeys on Windows 11 are protected by Windows Hello or Windows Hello for Busin
 
 ## Microsoft Authenticator
 
-The Microsoft Authenticator app, which runs on iOS and Android devices, helps keep Windows 11 users secure and productive. Microsoft Authenticator can be used to bootstrap Windows Hello for Business, which removes the need for a password to get started on Windows 11.
+The Microsoft Authenticator app, which runs on iOS and Android devices, helps keeping Windows 11 users secure and productive. Microsoft Authenticator can be used to bootstrap Windows Hello for Business, which removes the need for a password to get started on Windows 11.
 
-Microsoft Authenticator also enables easy, secure sign-in for all online accounts using multifactor authentication, passwordless phone sign-in, or password autofill. The accounts in the Authenticator app are secured with a public/private key pair in hardware-backed storage such as the Keychain in iOS and Keystore on Android. IT admins can leverage different tools to nudge their users to set up the Authenticator app, provide them with extra context about where the authentication is coming from, and ensure that they're actively using it.
+Microsoft Authenticator also enables easy, secure sign-in for all online accounts using multifactor authentication, passwordless phone sign-in, or password autofill. The accounts in the Authenticator app are secured with a public/private key pair in hardware-backed storage such as the Keychain in iOS and Keystore on Android. IT admins can use different tools to nudge their users to set up the Authenticator app, provide them with extra context about where the authentication is coming from, and ensure that they're actively using it.
 
 Individual users can back up their credentials to the cloud by enabling the encrypted backup option in settings. They can also see their sign-in history and security settings for Microsoft personal, work, or school accounts.
 
@@ -159,9 +159,9 @@ Using this secure app for authentication and authorization enables people to be 
 
 Organizations also have the option of using smart cards, an authentication method that predates biometric authentication. Smart cards are tamper-resistant, portable storage devices that can enhance Windows security when authenticating users, signing code, securing e-mail, and signing in with Windows domain accounts.
 
-**Smart cards provide:**
+Smart cards provide:
 
-- Ease of use in scenarios such as healthcare where employees need to sign in and out quickly without using their hands or when sharing a workstation
+- Ease of use in scenarios such as healthcare, where users need to sign in and out quickly without using their hands or when sharing a workstation
 - Isolation of security-critical computations that involve authentication, digital signatures, and key exchange from other parts of the computer. These computations are performed on the smart card
 - Portability of credentials and other private information between computers at work, home, or on the road
 
