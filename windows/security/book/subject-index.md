@@ -7,6 +7,22 @@ ms.date: 06/17/2024
 
 # Subject index
 
+- [Assigned Access](operating-system-security-system-security.md#assigned-access)
+- [Certificates](operating-system-security-system-security.md#certificates)
+- [Code signing and integrity](operating-system-security-system-security.md#code-signing-and-integrity)
+- [Config Refresh](operating-system-security-system-security.md#config-refresh)
+- [Cryptography](operating-system-security-system-security.md#cryptography)
+- [Device health attestation](operating-system-security-system-security.md#device-health-attestation)
+- [Hardware-enforced stack protection](hardware-security-silicon-assisted-security.md#hardware-enforced-stack-protection)
+- [Kernel Direct Memory Access (DMA) protection](hardware-security-silicon-assisted-security.md#kernel-direct-memory-access-dma-protection)
+- [Microsoft Pluton security processor](hardware-security-hardware-root-of-trust.md#microsoft-pluton-security-processor)
+- [Secured kernel](hardware-security-silicon-assisted-security.md#secured-kernel)
+- [Secured-core PC](hardware-security-silicon-assisted-security.md#secured-core-pc)
+- [Trusted Boot (Secure Boot + Measured Boot)](operating-system-security-system-security.md#trusted-boot-secure-boot--measured-boot)
+- [Trusted Platform Module (TPM)](hardware-security-hardware-root-of-trust.md#trusted-platform-module-tpm)
+- [Windows security policy settings and auditing](operating-system-security-system-security.md#windows-security-policy-settings-and-auditing)
+- [Windows security settings](operating-system-security-system-security.md#windows-security-settings)
+
 - 5G and eSIM
 - Access management and control
 - Account lockout policies
