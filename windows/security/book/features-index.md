@@ -1,6 +1,6 @@
 ---
-title: Subject index
-description: Windows security book subject index.
+title: Features index
+description: Windows security book features index.
 ms.topic: overview
 ms.date: 06/17/2024
 ---
