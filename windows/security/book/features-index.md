@@ -5,7 +5,7 @@ ms.topic: overview
 ms.date: 06/17/2024
 ---
 
-# Subject index
+# Features index
 
 - [Assigned Access](operating-system-security-system-security.md#assigned-access)
 - [Certificates](operating-system-security-system-security.md#certificates)
