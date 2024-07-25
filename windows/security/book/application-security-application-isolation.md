@@ -7,7 +7,7 @@ ms.date: 04/09/2024
 
 # Application isolation
 
-:::image type="content" source="images/application-security.png" alt-text="Diagram of containing a list of application security features." lightbox="images/application-security.png" border="false":::
+:::image type="content" source="images/application-security.png" alt-text="Diagram containing a list of application security features." lightbox="images/application-security.png" border="false":::
 
 ## Win32 app isolation
 

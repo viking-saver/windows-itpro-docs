@@ -7,7 +7,7 @@ ms.date: 04/09/2024
 
 # Offensive research
 
-:::image type="content" source="images/security-foundation.png" alt-text="Diagram of containing a list of security features." lightbox="images/security-foundation.png" border="false":::
+:::image type="content" source="images/security-foundation.png" alt-text="Diagram containing a list of security features." lightbox="images/security-foundation.png" border="false":::
 
 ## Microsoft Security Development Lifecycle (SDL)
 

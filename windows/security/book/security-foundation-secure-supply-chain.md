@@ -7,7 +7,7 @@ ms.date: 04/09/2024
 
 # Secure supply chain
 
-:::image type="content" source="images/security-foundation.png" alt-text="Diagram of containing a list of security features." lightbox="images/security-foundation.png" border="false":::
+:::image type="content" source="images/security-foundation.png" alt-text="Diagram containing a list of security features." lightbox="images/security-foundation.png" border="false":::
 
 The end-to-end Windows 11 supply chain is complex. It extends from the entire development process, to components such as chips, firmware, drivers, operating system, and apps from other organizations, manufacturing, and security updates. Microsoft invests significantly in Windows 11 supply chain security, and the security of features and components. In 2021, the United States issued an executive order on enhancing the nation's cybersecurity. The executive order, along with various attacks like SolarWinds and WannaCry, elevated the urgency and importance of ensuring a secure supply chain.
 

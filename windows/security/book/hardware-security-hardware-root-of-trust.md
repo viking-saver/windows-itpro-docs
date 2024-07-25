@@ -7,7 +7,7 @@ ms.date: 04/09/2024
 
 # Hardware root-of-trust
 
-:::image type="content" source="images/hardware.png" alt-text="Diagram of containing a list of security features." lightbox="images/hardware.png" border="false":::
+:::image type="content" source="images/hardware.png" alt-text="Diagram containing a list of security features." lightbox="images/hardware.png" border="false":::
 
 ## Trusted Platform Module (TPM)
 

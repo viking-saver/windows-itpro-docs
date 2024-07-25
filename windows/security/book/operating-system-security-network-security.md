@@ -7,7 +7,7 @@ ms.date: 04/09/2024
 
 # Network security
 
-:::image type="content" source="images/operating-system.png" alt-text="Diagram of containing a list of security features." lightbox="images/operating-system.png" border="false":::
+:::image type="content" source="images/operating-system.png" alt-text="Diagram containing a list of security features." lightbox="images/operating-system.png" border="false":::
 
 Windows 11 raises the bar for network security, offering comprehensive protection to help people work with confidence from almost anywhere. To help reduce an organization's attack
 surface, network protection in Windows prevents people from accessing dangerous IP addresses and domains that may host phishing scams, exploits, and other malicious content.

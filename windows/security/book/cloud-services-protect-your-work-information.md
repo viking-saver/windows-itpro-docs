@@ -7,7 +7,7 @@ ms.date: 04/09/2024
 
 # Protect your work information
 
-:::image type="content" source="images/cloud-security.png" alt-text="Diagram of containing a list of security features for cloud security." lightbox="images/cloud-security.png" border="false":::
+:::image type="content" source="images/cloud-security.png" alt-text="Diagram containing a list of security features for cloud security." lightbox="images/cloud-security.png" border="false":::
 
 ## Microsoft Entra ID
 
@@ -37,17 +37,17 @@ Every Windows device has a built-in local administrator account that must be sec
 
 ### Microsoft Entra Private Access ###
 
-Microsoft Entra Private Access unlocks the ability to specify the fully qualified domain names (FQDNs) and IP addresses that you consider private or internal, so you can manage how your organization accesses them. With Private Access, you can modernize how your organization's users access private apps and resources. Remote workers don't need to use a VPN to access these resources if they have the Global Secure Access Client installed. The client quietly and seamlessly connects them to the resources they need. 
+Microsoft Entra Private Access unlocks the ability to specify the fully qualified domain names (FQDNs) and IP addresses that you consider private or internal, so you can manage how your organization accesses them. With Private Access, you can modernize how your organization's users access private apps and resources. Remote workers don't need to use a VPN to access these resources if they have the Global Secure Access Client installed. The client quietly and seamlessly connects them to the resources they need.
 
 Note that Microsoft Entra Private Access requires Microsoft Entra ID and Microsoft Entra Joined devices and for deployment, refer to [Microsoft's Security Service Edge Solution Deployment Guide for Microsoft Entra Private Access Proof of Concept](/entra/architecture/sse-deployment-guide-private-access).
 
 ### Microsoft Entra Internet Access ###
 
-Microsoft Entra Internet Access provides an identity-centric Secure Web Gateway (SWG) solution for Software as a Service (SaaS) applications and other Internet traffic. It protects users, devices, and data from the Internet's wide threat landscape with best-in-class security controls and visibility through Traffic Logs. 
+Microsoft Entra Internet Access provides an identity-centric Secure Web Gateway (SWG) solution for Software as a Service (SaaS) applications and other Internet traffic. It protects users, devices, and data from the Internet's wide threat landscape with best-in-class security controls and visibility through Traffic Logs.
 
 Note that Microsoft Entra Private Access requires Microsoft Entra ID and Microsoft Entra Joined devices and for deployment, refer to [Microsoft's Security Service Edge Solution Deployment Guide for Microsoft Entra Internet Access Proof of Concept](/entra/architecture/sse-deployment-guide-internet-access).
 
-Both these features use a new [Global Secure Access client for Windows](/entra/global-secure-access/how-to-install-windows-client), deployed on the desktop, that secure and control the feature. 
+Both these features use a new [Global Secure Access client for Windows](/entra/global-secure-access/how-to-install-windows-client), deployed on the desktop, that secure and control the feature.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
@@ -90,7 +90,7 @@ The security baseline includes policies for:
 - Setting credential requirements for passwords and PINs
 - Restricting use of legacy technology
 
-The MDM security baseline has been enhanced with over 70 new settings which enable local user rights assignment, services management, and local security policies which were previously only available through Group Policy.  This enable adoption of pure MDM management and closer adherence to industry standard benchmarks for security. 
+The MDM security baseline has been enhanced with over 70 new settings which enable local user rights assignment, services management, and local security policies which were previously only available through Group Policy.  This enable adoption of pure MDM management and closer adherence to industry standard benchmarks for security.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 

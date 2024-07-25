@@ -7,7 +7,7 @@ ms.date: 04/09/2024
 
 # Protect your personal information
 
-:::image type="content" source="images/cloud-security.png" alt-text="Diagram of containing a list of security features for cloud security." lightbox="images/cloud-security.png" border="false":::
+:::image type="content" source="images/cloud-security.png" alt-text="Diagram containing a list of security features for cloud security." lightbox="images/cloud-security.png" border="false":::
 
 ## Microsoft Account
 

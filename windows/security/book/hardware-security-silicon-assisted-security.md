@@ -7,7 +7,7 @@ ms.date: 04/09/2024
 
 # Silicon assisted security
 
-:::image type="content" source="images/hardware.png" alt-text="Diagram of containing a list of security features." lightbox="images/hardware.png" border="false":::
+:::image type="content" source="images/hardware.png" alt-text="Diagram containing a list of security features." lightbox="images/hardware.png" border="false":::
 
 In addition to a modern hardware root-of-trust, there are multiple capabilities in the latest chips that harden the operating system against threats. These capabilities protect the boot process, safeguard the integrity of memory, isolate security-sensitive compute logic, and more.
 

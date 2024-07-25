@@ -7,7 +7,7 @@ ms.date: 04/09/2024
 
 # System security
 
-:::image type="content" source="images/operating-system.png" alt-text="Diagram of containing a list of security features." lightbox="images/operating-system.png" border="false":::
+:::image type="content" source="images/operating-system.png" alt-text="Diagram containing a list of security features." lightbox="images/operating-system.png" border="false":::
 
 ## Trusted Boot (Secure Boot + Measured Boot)
 

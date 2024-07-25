@@ -7,7 +7,7 @@ ms.date: 04/09/2024
 
 # Advanced credential protection
 
-:::image type="content" source="images/identity-protection.png" alt-text="Diagram of containing a list of security features." lightbox="images/identity-protection.png" border="false":::
+:::image type="content" source="images/identity-protection.png" alt-text="Diagram containing a list of security features." lightbox="images/identity-protection.png" border="false":::
 
 In addition to adopting passwordless sign-in, organizations can strengthen security for user and domain credentials in Windows 11 with Credential Guard and Remote Credential Guard.
 

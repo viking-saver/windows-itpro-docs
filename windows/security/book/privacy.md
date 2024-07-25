@@ -9,7 +9,7 @@ ms.date: 04/09/2024
 
 :::image type="content" source="images/privacy-cover.png" alt-text="Cover of the privacy chapter." border="false":::
 
-:::image type="content" source="images/privacy-on.png" alt-text="Diagram of containing a list of security features." lightbox="images/privacy.png" border="false":::
+:::image type="content" source="images/privacy-on.png" alt-text="Diagram containing a list of security features." lightbox="images/privacy.png" border="false":::
 
 [Privacy: Your data, powering your experiences, controlled by you](https://privacy.microsoft.com/).
 

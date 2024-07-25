@@ -15,4 +15,4 @@ Every component of the Windows 11 technology stack, from chip-to-cloud, is purpo
 
 With Windows 11, organizations can improve productivity and gain intuitive new experiences without compromising security.
 
-:::image type="content" source="images/security-foundation-on.png" alt-text="Diagram of containing a list of security features." lightbox="images/security-foundation.png" border="false":::
+:::image type="content" source="images/security-foundation-on.png" alt-text="Diagram containing a list of security features." lightbox="images/security-foundation.png" border="false":::
