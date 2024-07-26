@@ -46,7 +46,7 @@ Microsoft Entra Internet Access provides an identity-centric Secure Web Gateway 
 > [!Note] 
 > Both Microsoft Entra Private Access and Microsoft Entra Internet Access requires Microsoft Entra ID and Microsoft Entra Joined devices and for deployment, refer to [Microsoft's Security Service Edge Solution Deployment Guide for Microsoft Entra Internet Access Proof of Concept](/entra/architecture/sse-deployment-guide-internet-access).
 
-> Both these features use a new [Global Secure Access client for Windows](/entra/global-secure-access/how-to-install-windows-client), deployed on the desktop, that secure and control the feature.
+Both these features use a new [Global Secure Access client for Windows](/entra/global-secure-access/how-to-install-windows-client), deployed on the desktop, that secure and control the feature.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
