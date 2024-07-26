@@ -53,7 +53,7 @@ Both these features use a new [Global Secure Access client for Windows](/entra/g
 - [Windows Local Administrator Password Solution with Microsoft Entra (Azure AD)](https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/introducing-windows-local-administrator-password-solution-with/ba-p/1942487)
 - [Microsoft Entra plans and pricing](https://www.microsoft.com/security/business/microsoft-entra-pricing?rtc=1)
 - [Microsoft Entra Private Access](/entra/global-secure-access/concept-private-access)
-- [Microsoft Entra Internet Access for all apps](/entra/global-secure-access/concept-private-access)
+- [Microsoft Entra Internet Access](/entra/global-secure-access/concept-internet-access)
 
 ## Modern device management through (MDM)
 
