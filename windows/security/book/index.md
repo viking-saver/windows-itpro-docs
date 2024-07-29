@@ -43,11 +43,11 @@ Help keep business data secure and employees productive with robust safeguards a
 
 ### End-to-end protection with modern management
 
-Increase protection and efficiency with Windows 11 and chip-to-cloud security. Microsoft offers comprehensive cloud services for identity, storage, and access management. In addition, Microsoft also provides the tools needed to attest that Windows 11 devices connecting to your network or accessing your data and resources are trustworthy. You can also enforce compliance and conditional access with modern device management (MDM) solutions such as Microsoft Intune and Microsoft Entra ID. Security by default not only enables people to work securely anywhere, but it also simplifies IT. A streamlined, chip-to-cloud security solution based on Windows 11, improves productivity for IT and security teams by a reported 25% <sup>[\[8\]](conclusion.md#footnote8)</sup>.
+Increase protection and efficiency with Windows 11 and chip-to-cloud security. Microsoft offers comprehensive cloud services for identity, storage, and access management. Microsoft provides the tools needed to attest that Windows 11 devices connecting to your network or accessing your data and resources are trustworthy. You can enforce compliance and conditional access with modern device management (MDM) solutions such as Microsoft Intune and Microsoft Entra ID. Security by default not only enables people to work securely anywhere, but it also simplifies IT. A streamlined, chip-to-cloud security solution based on Windows 11, improves productivity for IT and security teams by a reported 25% <sup>[\[8\]](conclusion.md#footnote8)</sup>.
 
 ## Security by design and default
 
-In Windows 11, hardware and software work together to protect sensitive data from the core of your PC all the way to the cloud. Comprehensive protection helps keep your organization secure, no matter where people work. This simple diagram shows the layers of protection in Windows 11, while each chapter provides a layer-by-layer deep dive into features.
+In Windows 11, hardware and software work together to protect sensitive data from the core of the device all the way to the cloud. Comprehensive protection helps keep organizations secure, no matter where people work. The following diagram shows the layers of protection in Windows 11, while each chapter provides a layer-by-layer deep dive into features.
 
 :::image type="content" source="images/chip-to-cloud.png" alt-text="Diagram of chip-to-cloud containing a list of security features." lightbox="images/chip-to-cloud.png" border="false":::
 
