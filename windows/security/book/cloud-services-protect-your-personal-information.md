@@ -17,7 +17,7 @@ You can even go passwordless with your Microsoft Account by removing the passwor
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
-- [What is a Microsoft account?](https://support.microsoft.com/topic/4a7c48e9-ff5a-e9c6-5a5c-1a57d66c3bfa)
+- [What is a Microsoft account?][LINK-1]
 
 ## User reauthentication before password disablement
 
@@ -31,28 +31,29 @@ When location services and Find my device settings are turned on, basic system s
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
-- [How to set up, find, and lock a lost Windows device using a Microsoft Account](https://support.microsoft.com/topic/890bf25e-b8ba-d3fe-8253-e98a12f26316)
+- [How to set up, find, and lock a lost Windows device using a Microsoft Account][LINK-2]
 
 ## OneDrive for personal
 
 Microsoft OneDrive <sup>[\[17\]](conclusion.md#footnote17)</sup> for personal provides additional security, backup, and restore options for important personal files. OneDrive stores and protects files in the cloud, allowing users to access them from laptops, desktops, and mobile devices. Plus, OneDrive provides an excellent solution for backing up folders. If a device is lost or stolen, the user can quickly recover all their important files from the cloud.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
-
-- [OneDrive](/onedrive/plan-onedrive-enterprise)
-
 In the event of a ransomware attack, OneDrive can enable recovery. And if backups are configured in OneDrive, users have additional options to mitigate and recover from a ransomware attack.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
+- [OneDrive](/onedrive/plan-onedrive-enterprise)
 - [How to recover from a ransomware attack using Microsoft 365](/microsoft-365/security/office-365-security/recover-from-ransomware)
-
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
-
-- [How to restore from OneDrive](https://support.microsoft.com/topic/fa231298-759d-41cf-bcd0-25ac53eb8a15)
+- [How to restore from OneDrive][LINK-3]
 
 ## OneDrive Personal Vault
 
 OneDrive Personal Vault<sup>[\[9\]](conclusion.md#footnote9)</sup> also provides protection for the most important or sensitive files and photos without sacrificing the convenience of anywhere access. Protect digital copies of important documents in OneDrive Personal Vault. Files will be secured by identity verification yet are still easily accessible across devices.
 
-Learn how to [set up a Personal Vault](https://support.microsoft.com/topic/6540ef37-e9bf-4121-a773-56f98dce78c4) with a strong authentication method or a second step of identity verification, such as fingerprint, face, PIN, or a code sent via email or SMS.
+Learn how to [set up a Personal Vault][LINK-4] with a strong authentication method or a second step of identity verification, such as fingerprint, face, PIN, or a code sent via email or SMS.
+
+<!--links-->
+
+[LINK-1]: https://support.microsoft.com/topic/4a7c48e9-ff5a-e9c6-5a5c-1a57d66c3bfa
+[LINK-2]: https://support.microsoft.com/topic/890bf25e-b8ba-d3fe-8253-e98a12f26316
+[LINK-3]: https://support.microsoft.com/topic/fa231298-759d-41cf-bcd0-25ac53eb8a15
+[LINK-4]: https://support.microsoft.com/topic/6540ef37-e9bf-4121-a773-56f98dce78c4
