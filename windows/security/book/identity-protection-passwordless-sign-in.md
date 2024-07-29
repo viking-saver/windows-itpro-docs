@@ -183,14 +183,14 @@ Windows 11 supports federated sign-in with external education identity managemen
 
 <!--links-->
 
-[LINK-1]: https://support.microsoft.com/windows/dae28983-8242-bb2a-d3d1-87c9d265a5f0
+[LINK-1]: https://support.microsoft.com/topic/dae28983-8242-bb2a-d3d1-87c9d265a5f0
 [LINK-2]: /windows/security/identity-protection/hello-for-business
 [LINK-3]: /windows/security/identity-protection/passwordless-experience
 [LINK-4]: /windows-hardware/design/device-experiences/windows-hello-biometric-requirements
 [LINK-5]: /windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security
 [LINK-6]: /windows/security/identity-protection/hello-for-business/feature-multifactor-unlock
 [LINK-7]: /windows-hardware/design/device-experiences/sensors-presence-sensing
-[LINK-8]: https://support.microsoft.com/windows/82285c93-440c-4e15-9081-c9e38c1290bb
+[LINK-8]: https://support.microsoft.com/topic/82285c93-440c-4e15-9081-c9e38c1290bb
 [LINK-9]: /azure/active-directory/authentication/howto-authentication-passwordless-security-key
 [LINK-10]: https://fidoalliance.org/passkeys
 [LINK-11]: /entra/identity/authentication/concept-authentication-authenticator-app

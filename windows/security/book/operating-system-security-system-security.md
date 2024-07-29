@@ -131,5 +131,5 @@ Visibility and awareness of device security and health are key to any action tak
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
-- [Windows security settings](https://support.microsoft.com/windows/stay-protected-with-windows-security-2ae0363d-0ada-c064-8b56-6a39afb6a963)
+- [Windows security settings](https://support.microsoft.com/topic/2ae0363d-0ada-c064-8b56-6a39afb6a963)
 - [Windows Security](../operating-system-security/system-security/windows-defender-security-center/windows-defender-security-center.md)

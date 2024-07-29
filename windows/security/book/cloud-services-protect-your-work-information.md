@@ -278,7 +278,7 @@ There are several ways that OneDrive for work or school is protected at rest:
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
-- [How OneDrive safeguards data in the cloud](https://support.microsoft.com/office/how-onedrive-safeguards-your-data-in-the-cloud-23c6ea94-3608-48d7-8bf0-80e142edd1e1)
+- [How OneDrive safeguards data in the cloud](https://support.microsoft.com/topic/23c6ea94-3608-48d7-8bf0-80e142edd1e1)
 
 ## MDM enrollment certificate attestation
 

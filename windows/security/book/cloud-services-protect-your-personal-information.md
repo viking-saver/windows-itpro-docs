@@ -17,7 +17,7 @@ You can even go passwordless with your Microsoft Account by removing the passwor
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
-- [What is a Microsoft account?](https://support.microsoft.com/windows/what-is-a-microsoft-account-4a7c48e9-ff5a-e9c6-5a5c-1a57d66c3bfa)
+- [What is a Microsoft account?](https://support.microsoft.com/topic/4a7c48e9-ff5a-e9c6-5a5c-1a57d66c3bfa)
 
 ## User reauthentication before password disablement
 
@@ -31,7 +31,7 @@ When location services and Find my device settings are turned on, basic system s
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
-- [How to set up, find, and lock a lost Windows device using a Microsoft Account](https://support.microsoft.com/account-billing/find-and-lock-a-lost-windows-device-890bf25e-b8ba-d3fe-8253-e98a12f26316)
+- [How to set up, find, and lock a lost Windows device using a Microsoft Account](https://support.microsoft.com/topic/890bf25e-b8ba-d3fe-8253-e98a12f26316)
 
 ## OneDrive for personal
 
@@ -49,10 +49,10 @@ In the event of a ransomware attack, OneDrive can enable recovery. And if backup
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
-- [How to restore from OneDrive](https://support.microsoft.com/office/restore-your-onedrive-fa231298-759d-41cf-bcd0-25ac53eb8a15)
+- [How to restore from OneDrive](https://support.microsoft.com/topic/fa231298-759d-41cf-bcd0-25ac53eb8a15)
 
 ## OneDrive Personal Vault
 
 OneDrive Personal Vault<sup>[\[9\]](conclusion.md#footnote9)</sup> also provides protection for the most important or sensitive files and photos without sacrificing the convenience of anywhere access. Protect digital copies of important documents in OneDrive Personal Vault. Files will be secured by identity verification yet are still easily accessible across devices.
 
-Learn how to [set up a Personal Vault](https://support.microsoft.com/office/protect-your-onedrive-files-in-personal-vault-6540ef37-e9bf-4121-a773-56f98dce78c4) with a strong authentication method or a second step of identity verification, such as fingerprint, face, PIN, or a code sent via email or SMS.
+Learn how to [set up a Personal Vault](https://support.microsoft.com/topic/6540ef37-e9bf-4121-a773-56f98dce78c4) with a strong authentication method or a second step of identity verification, such as fingerprint, face, PIN, or a code sent via email or SMS.
