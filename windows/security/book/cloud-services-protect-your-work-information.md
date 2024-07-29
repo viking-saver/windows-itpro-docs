@@ -39,13 +39,12 @@ Every Windows device has a built-in local administrator account that must be sec
 
 Microsoft Entra Private Access unlocks the ability to specify the fully qualified domain names (FQDNs) and IP addresses that you consider private or internal, so you can manage how your organization accesses them. With Private Access, you can modernize how your organization's users access private apps and resources. Remote workers don't need to use a VPN to access these resources if they have the Global Secure Access Client installed. The client quietly and seamlessly connects them to the resources they need.
 
-Note that Microsoft Entra Private Access requires Microsoft Entra ID and Microsoft Entra Joined devices and for deployment, refer to [Microsoft's Security Service Edge Solution Deployment Guide for Microsoft Entra Private Access Proof of Concept](/entra/architecture/sse-deployment-guide-private-access).
-
 ### Microsoft Entra Internet Access ###
 
 Microsoft Entra Internet Access provides an identity-centric Secure Web Gateway (SWG) solution for Software as a Service (SaaS) applications and other Internet traffic. It protects users, devices, and data from the Internet's wide threat landscape with best-in-class security controls and visibility through Traffic Logs.
 
-Note that Microsoft Entra Private Access requires Microsoft Entra ID and Microsoft Entra Joined devices and for deployment, refer to [Microsoft's Security Service Edge Solution Deployment Guide for Microsoft Entra Internet Access Proof of Concept](/entra/architecture/sse-deployment-guide-internet-access).
+> [!Note] 
+> Both Microsoft Entra Private Access and Microsoft Entra Internet Access requires Microsoft Entra ID and Microsoft Entra Joined devices and for deployment, refer to [Microsoft's Security Service Edge Solution Deployment Guide for Microsoft Entra Internet Access Proof of Concept](/entra/architecture/sse-deployment-guide-internet-access).
 
 Both these features use a new [Global Secure Access client for Windows](/entra/global-secure-access/how-to-install-windows-client), deployed on the desktop, that secure and control the feature.
 
@@ -54,7 +53,7 @@ Both these features use a new [Global Secure Access client for Windows](/entra/g
 - [Windows Local Administrator Password Solution with Microsoft Entra (Azure AD)](https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/introducing-windows-local-administrator-password-solution-with/ba-p/1942487)
 - [Microsoft Entra plans and pricing](https://www.microsoft.com/security/business/microsoft-entra-pricing?rtc=1)
 - [Microsoft Entra Private Access](/entra/global-secure-access/concept-private-access)
-- [Microsoft Entra Internet Access for all apps](/entra/global-secure-access/concept-private-access)
+- [Microsoft Entra Internet Access](/entra/global-secure-access/concept-internet-access)
 
 ## Modern device management through (MDM)
 
