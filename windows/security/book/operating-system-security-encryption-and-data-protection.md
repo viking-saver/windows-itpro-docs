@@ -31,6 +31,8 @@ BitLocker To Go refers to BitLocker Drive Encryption on removable data drives. B
 
 Device Encryption is consumer-level device encryption that can't be managed. Device Encryption is turned on by default for devices with the right hardware components (for example, TPM 2.0, UEFI Secure Boot, Hardware Security Test Interface, and Modern Standby). However, for a commercial scenario, it's possible for commercial customers to disable Device Encryption in favor of BitLocker Drive Encryption. BitLocker Drive Encryption is manageable through MDM.
 
+:::image type="content" source="images/device-encryption.png" alt-text="Screenshot of Settings - device encryption.":::
+
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
 - [Device encryption](../operating-system-security/data-protection/bitlocker/index.md#device-encryption)
