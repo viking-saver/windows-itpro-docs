@@ -107,9 +107,9 @@ All auditing categories are disabled when Windows is first installed. Before ena
 - [Security policy settings](/windows/security/threat-protection/security-policy-settings/security-policy-settings)
 - [Security auditing](/windows/security/threat-protection/auditing/security-auditing-overview)
 
-## Assigned Access
+## Assigned Access and Shell Launcher (kiosk mode)
 
-With Assigned Access, Windows devices restrict functionality to pre-selected applications depending on the user and keep individual identities separate, which is ideal for public-facing or shared devices. Configuring a device in Kiosk Mode is a straightforward process. You can do this locally on the device or remotely using modern device management.
+With Assigned Access, Windows devices restrict functionality to pre-selected applications depending on the user and keep individual identities separate, which is ideal for public-facing or shared devices. Configuring a device as a kiosk is a straightforward process. You can do this locally on the device or remotely using mobile device management.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 

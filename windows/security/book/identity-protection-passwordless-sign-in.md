@@ -78,7 +78,7 @@ If a peripheral camera is attached to the device after enrollment, that camera w
 
 - [Windows Hello biometric requirements][LINK-4]
 
-## Windows Hello Enhanced Sign-in Security
+## Enhanced Sign-in Security (ESS)
 
 Windows Hello biometrics also supports Enhanced Sign-in Security, which uses specialized hardware and software components to raise the security bar even higher for biometric sign-in.
 

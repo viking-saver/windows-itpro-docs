@@ -54,7 +54,7 @@ Encrypted hard drives enable:
 
 - [Encrypted hard drive](../operating-system-security/data-protection/encrypted-hard-drive.md)
 
-## Personal data encryption
+## Personal data encryption (PDE)
 
 Personal Data Encryption refers to a new user authenticated encryption mechanism used to protect user content. Windows Hello for Business is the modern user authentication mechanism, which is used with PDE. Windows Hello for Business, either with PIN or biometrics (face or fingerprint), is used to protect the container, which houses the encryption keys used by Personal Data Encryption (PDE). When the user logs in (either after bootup or unlocking after a lock screen), the container gets authenticated to release the keys in the container to decrypt user content.
 
