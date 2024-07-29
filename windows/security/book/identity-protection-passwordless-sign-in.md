@@ -145,7 +145,7 @@ Passkeys on Windows 11 are protected by Windows Hello or Windows Hello for Busin
 
 The Microsoft Authenticator app, which runs on iOS and Android devices, helps keeping Windows 11 users secure and productive. Microsoft Authenticator can be used to bootstrap Windows Hello for Business, which removes the need for a password to get started on Windows 11.
 
-Microsoft Authenticator also enables easy, secure sign-in for all online accounts using multifactor authentication, passwordless phone sign-in, or password autofill. The accounts in the Authenticator app are secured with a public/private key pair in hardware-backed storage such as the Keychain in iOS and Keystore on Android. IT admins can use different tools to nudge their users to set up the Authenticator app, provide them with extra context about where the authentication is coming from, and ensure that they're actively using it.
+Microsoft Authenticator also enables easy, secure sign-in for all online accounts using multifactor authentication, passwordless phone sign-in, phishing-resistant authentication (passkeys), or password autofill. The accounts in the Authenticator app are secured with a public/private key pair in hardware-backed storage such as the Keychain in iOS and Keystore on Android. IT admins can use different tools to nudge their users to set up the Authenticator app, provide them with extra context about where the authentication is coming from, and ensure that they're actively using it.
 
 Individual users can back up their credentials to the cloud by enabling the encrypted backup option in settings. They can also see their sign-in history and security settings for Microsoft personal, work, or school accounts.
 
@@ -154,6 +154,7 @@ Using this secure app for authentication and authorization enables people to be 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
 - [Authentication methods in Microsoft Entra ID - Microsoft Authenticator app][LINK-11]
+- [Public preview: Expanding passkey support in Microsoft Entra ID][https://techcommunity.microsoft.com/t5/microsoft-entra-blog/public-preview-expanding-passkey-support-in-microsoft-entra-id/ba-p/4062702]
 
 ## Smart cards for Windows service
 
