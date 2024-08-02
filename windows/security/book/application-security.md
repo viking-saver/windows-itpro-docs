@@ -15,4 +15,3 @@ Cybercriminals can take advantage of poorly secured applications to access valua
 
 In addition, organizations can control which applications run on their devices with App Control for Business (previously called Windows Defender Application Control - WDAC).
 
-test
