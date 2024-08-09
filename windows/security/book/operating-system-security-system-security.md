@@ -29,6 +29,7 @@ For more information about these features and how they help prevent rootkits and
 
 ## Cryptography
 
+*AABHA can you update content here?*
 Cryptography is designed to protect user and system data. The cryptography stack in Windows 11 extends from the chip to the cloud, enabling Windows, applications, and services to protect system and user secrets. For example, data can be encrypted so that only a specific reader with a unique key can read it. As a basis for data security, cryptography helps prevent anyone except the intended recipient from reading data, performs integrity checks to ensure data is free of tampering, and authenticates identity to ensure that communication is secure. Windows 11 cryptography is certified to meet the Federal Information Processing Standard (FIPS) 140. FIPS 140 certification ensures that US government-approved algorithms are correctly implemented.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
