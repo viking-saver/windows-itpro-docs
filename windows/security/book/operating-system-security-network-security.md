@@ -95,6 +95,10 @@ Windows 11 makes the Windows Firewall easier to analyze and debug. IPSec behavio
 Admins can now configure additional settings through the Firewall and Firewall Rule policy templates in the Endpoint Security node in Microsoft Intune<sup>[\[9\]](conclusion.md#footnote9)</sup>, leveraging the platform
 support from the Firewall configuration service provider (CSP) and applying these settings to Windows endpoints.
 
+Firewall  rule configuration with Package Family Name (PFN) is a new security feature introduced with the 22H2 release of Windows 11.  PFN based rules enforced on an app will include processes request by the app to run on its behalf.
+Currently FW rules can be set on UWP apps with packageSID. However, the processes requested by the app can have different SID and hence the rules applied to the app can be bypassed. The new PFN condition feature ensures the FW rule is uniformly applied to a package and its associated processes.
+
+
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
 - [Windows Firewall overview](../operating-system-security/network-security/windows-firewall/index.md)
