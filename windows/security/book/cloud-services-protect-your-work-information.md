@@ -167,11 +167,15 @@ Once this verification is complete, the attestation service returns a signed rep
 
 The service that was known as Windows Update for Business deployment service has been woven into Windows Autopatch, offering a more coherent experience while simplifying the update experience. 
 The new interface is a unified dashboard conveniently organized into four main sections to help you make update management more efficient: 
-1.	Update policies: Control updating timing and methods.
-2.	Update groups: Categorize your devices into tailored update rings.
-3.	Update status: Keep track of update compliance, progression, and current status.
-4.	Update reports: Analyze performance and troubleshoot.
-Learn more: To be added??
+- Update policies: Control updating timing and methods.
+- Update groups: Categorize your devices into tailored update rings.
+- Update status: Keep track of update compliance, progression, and current status.
+- Update reports: Analyze performance and troubleshoot.
+
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+
+Add link??
+
 OLD below:
 The Windows Update for Business deployment service, a core component of the Windows Update for Business product family, is a cloud-based solution that transforms the way update management is handled. Complementing existing [Windows Update for Business](/windows/deployment/update/waas-manage-updates-wufb) policies and [Windows Update for Business reports](/windows/deployment/update/wufb-reports-overview), the service provides control over the approval, scheduling, and safeguarding of updates - delivered straight from Windows Update to managed devices.
 
@@ -185,17 +189,19 @@ For an in-depth understanding of this service, including its benefits and prereq
 
 ## Windows Autopatch
 
-Cybercriminals often target outdated or unpatched software to gain access to networks. Keeping endpoints up to date is critical in closing existing vulnerabilities, but planning, monitoring, and reporting on update compliance can take IT resources away from other important tasks.
+Cybercriminals commonly exploit obsolete or unpatched software to infiltrate networks. It is essential to maintain current updates to seal security gaps, though the process of planning, tracking, and compliance reporting may divert IT resources from other critical work. 
 
-Available as part of Windows Enterprise E3 and E5, Windows Autopatch automates update management for Windows, drivers, firmware, Microsoft 365, Edge, and Teams apps. The service can even manage the upgrade to Windows 11. While the service is designed to be simple by default, admins can customize the service to reflect their business organization with Autopatch groups. This allows custom content or deployment schedules to be applied to different populations of devices.
+Available as part of Windows Enterprise E3 and E5, Windows Autopatch is the cloud service that helps you protect against evolving threats and vulnerabilities with timely update deployment. Windows Autopatch streamlines security, stability and feature updates for Windows Enterprise, enhancing both security and productivity throughout your company. 
+
+The service is built for ease of use and gives IT administrators the option to tailor it to meet the unique needs of their business with Autopatch groups. This feature allows you to customize deployments based on needs or critical business processes without extra costs or unplanned disruptions. For example, you may decide to delay rollout of updates for the finance team to mitigate risk of disruptions at the end of a quarter.
+
+From a technical standpoint, the service utilizes Microsoft Intune policies and your current Intune Update rings. The services’s use of your rings allows you to take advantage of Windows Autopatch reporting and device readiness without having to redeploy or modify your existing update configurations. The deployment of your Intune policies to enrolled tenants and continuously monitoring of those policies by Autopatch means that you can easily identify and resolve any conflicts. 
+
+Comprehensive reporting is available via a summary dashboard displaying quality status and trends, and a reliability report. The reliability score is derived from stop error codes observed on managed devices, enabling improved insights about potential impacts of updates on devices.
 
 From a technical standpoint, Windows Autopatch configures the policies and deployment service of Windows Update for Business to deliver updates, all within Microsoft Intune.<sup>[\[9\]](conclusion.md#footnote9)</sup> The results for IT admins: up-to-date endpoints and detailed reports to demonstrate compliance or help identify issues. The goal is to help IT teams be more secure and update more efficiently with less effort.
 
-There's a lot more to learn about Windows Autopatch:
-
-- This [Forrester study](https://aka.ms/AutopatchProductivity) commissioned by Microsoft, analyzes the impact of Windows Autopatch on real customers
-- [IT pro blogs](https://aka.ms/MoreAboutAutopatch) provide updates and background on Autopatch features and the future of the service
-- The [Windows Autopatch community](https://aka.ms/AutopatchCommunity) allows IT professionals to get answers to questions from their peers and the Autopatch team
+There’s a lot more to learn about Windows Autopatch: this [Forrester Consulting Total Economic Impact™ Study] (https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RW10vlw) commissioned by Microsoft features insights from customers talking about the impact deploying Windows Autopatch has had on their organization. You can also find out more about updates to Autopatch features and the future of the service in the regularly published [IT pro blogs](https://aka.ms/MoreAboutAutopatch). The [Autopatch Community] (https://aka.ms/AutopatchCommunity) allows IT professionals to get answers to questions from their peers and the Autopatch team.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
