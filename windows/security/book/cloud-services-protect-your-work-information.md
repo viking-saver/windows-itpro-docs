@@ -167,6 +167,7 @@ Once this verification is complete, the attestation service returns a signed rep
 
 The service that was known as Windows Update for Business deployment service has been woven into Windows Autopatch, offering a more coherent experience while simplifying the update experience. 
 The new interface is a unified dashboard conveniently organized into four main sections to help you make update management more efficient: 
+
 - Update policies: Control updating timing and methods.
 - Update groups: Categorize your devices into tailored update rings.
 - Update status: Keep track of update compliance, progression, and current status.
@@ -175,17 +176,6 @@ The new interface is a unified dashboard conveniently organized into four main s
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
 Add link??
-
-OLD below:
-The Windows Update for Business deployment service, a core component of the Windows Update for Business product family, is a cloud-based solution that transforms the way update management is handled. Complementing existing [Windows Update for Business](/windows/deployment/update/waas-manage-updates-wufb) policies and [Windows Update for Business reports](/windows/deployment/update/wufb-reports-overview), the service provides control over the approval, scheduling, and safeguarding of updates - delivered straight from Windows Update to managed devices.
-
-The Windows Update for Business deployment service powers Windows Update management via Microsoft Intune<sup>[\[9\]](conclusion.md#footnote9)</sup> and Autopatch. The deployment services currently allows the management of [drivers and firmware](/graph/windowsupdates-manage-driver-update), expedited [quality updates](/graph/windowsupdates-deploy-expedited-update) and [feature updates](/graph/windowsupdates-deploy-update).
-
-For an in-depth understanding of this service, including its benefits and prerequisites for use, practical guides on specific capabilities, Microsoft Graph training, and a behind-the-scenes look at how the deployment service functions, read [here](/windows/deployment/update/waas-manage-updates-wufb)[.](/windows/deployment/update/waas-manage-updates-wufb)
-
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
-
-- [Windows Update for Business - Windows Deployment](/windows/deployment/update/waas-manage-updates-wufb)
 
 ## Windows Autopatch
 
