@@ -203,19 +203,17 @@ There's a lot more to learn about Windows Autopatch:
 
 ## Windows Autopilot and zero-touch deployment
 
-Traditionally, IT professionals spend significant time building and customizing images that will later be deployed to devices. Windows Autopilot introduces a new approach with a collection of technologies used to set up and preconfigure new devices, getting them ready for productive use and ensuring they are delivered locked down and compliant with corporate security policies.
+Traditionally, IT professionals spend significant time building and customizing images that will later be deployed to devices. If you’re purchasing new devices or managing device refresh cycles for employees, you can use Windows Autopilot to set up and preconfigure new devices, getting them ready for productive use. Autopilot helps you ensure your devices are delivered locked down and compliant with corporate security policies. The solution can also be used to reset, repurpose, and recover devices with zero touch by your IT team and no infrastructure to manage, enhancing efficiency with a process that’s both easy and simple.
 
-- From a user perspective, it only takes a few simple operations to get their device ready for use
-- From an IT professional perspective, the only interaction required from the end user is to connect to a network and verify their credentials. Setup is automated after that point
+With Windows Autopilot, there’s no need to reimage or manually set-up devices before giving them to your employees. Your hardware vendor can ship them, ready to go, straight to your employees. From a user perspective, they turn their device on, go online, and Windows Autopilot delivers apps and settings. 
 
 Windows Autopilot enables you to:
 
 - Automatically join devices to Microsoft Entra ID<sup>[\[9\]](conclusion.md#footnote9)</sup> or Active Directory via hybrid Microsoft Entra ID Join. For more information about the differences between these two join options, see [Introduction to device management in Microsoft Entra ID](/azure/active-directory/device-management-introduction).
-- Auto-enroll devices into MDM services such as Microsoft Intune (requires an Microsoft Entra ID Premium subscription for configuration)
-- Automatic upgrade to Enterprise Edition if required
-- Restrict administrator account creation
-- Create and auto-assign devices to configuration groups based on a device's profile
-- Customize Out of Box Experience (OOBE) content specific to the organization
+- Auto-enroll devices into MDM services such as Microsoft Intune (requires an Microsoft Entra ID Premium subscription for configuration).
+- Change the edition of Windows being used to support advanced features (e.g., upgrading to Windows 11 Enterprise). 
+- Create and auto-assignment of devices to configuration groups based on a device’s profile.
+- Customization of the out-of-box experience (OOBE) content specific to the organization. 
 
 Existing devices can also be quickly prepared for a new user with [Windows Autopilot Reset](/mem/autopilot/windows-autopilot-reset). The reset capability is also useful in break/fix scenarios to quickly bring a device back to a business-ready state.
 
@@ -231,9 +229,11 @@ Windows Autopatch simplifies update management with automated quality, security 
 
 Windows Autopatch configures Windows Update for Business policies and deployment services, ensuring up-to-date endpoints and detailed compliance reports for IT admins. Administrators can customize these configurations to align with their organization's structure, allowing tailored deployment schedules and content for different device populations. Ultimately, automating the update management process enhances security and operational efficiency by ensuring that endpoints remain current while providing detailed compliance reports to IT admins. 
 
-Explore more about Windows Autopatch through [Forrester study](/AutopatchProductivity) commissioned by Microsoft, regular updates on the  [IT pro blogs](https://aka.ms/MoreAboutAutopatch) , and [Windows Autopatch community](https://aka.ms/AutopatchCommunity) resources offering insights and support. 
+Explore more about Windows Autopatch through [Forrester study](https://aka.ms/AutopatchProductivity) commissioned by Microsoft, regular updates on the  [IT pro blogs](https://aka.ms/MoreAboutAutopatch) , and [Windows Autopatch community](https://aka.ms/AutopatchCommunity) resources offering insights and support. 
 
-Learn more: - [Windows Autopatch documentation](https://aka.ms/Autopatchdocs)
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+
+- [Windows Autopatch documentation](https://aka.ms/Autopatchdocs)
 
 ## Enterprise State Roaming with Azure
 
