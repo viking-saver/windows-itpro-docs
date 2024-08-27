@@ -176,7 +176,7 @@ The new interface is a unified dashboard conveniently organized into four main s
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
 - [Windows updates API overview](/graph/windowsupdates-concept-overview)
-- [API reference docs](/api/resources/windowsupdates-azureaddevice?view=graph-rest-beta)
+- [API reference docs](/graph/api/resources/windowsupdates-azureaddevice?view=graph-rest-beta)
 
 ## Windows Autopatch
 
