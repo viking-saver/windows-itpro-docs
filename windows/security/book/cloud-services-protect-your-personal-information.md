@@ -15,6 +15,10 @@ Your Microsoft Account (MSA) gives you access to Microsoft products and services
 
 You can even go passwordless with your Microsoft Account by removing the password from your MSA and using the Microsoft Authenticator app on your mobile Android or iOS phone.
 
+- Windows Re-authentication upon updating settings for 'If you've been away, when should Windows require you to sign in again: When users seek to disable their password for unlocking when away via Windows Settings, they will be prompted to re-authenticate with their account and password.
+
+- Windows Re-authentication upon disabling password for device restarts: When users try to enable this setting, they are re-authenticated with their account and password. Upon successful authentication, the password is disabled for future device restarts. 
+
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
 - [What is a Microsoft account?][LINK-1]
