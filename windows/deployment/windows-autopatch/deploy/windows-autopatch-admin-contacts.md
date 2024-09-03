@@ -1,9 +1,9 @@
 ---
 title: Add and verify admin contacts
 description: This article explains how to add and verify admin contacts
-ms.date: 09/15/2023
+ms.date: 07/08/2024
 ms.service: windows-client
-ms.subservice: itpro-updates
+ms.subservice: autopatch
 ms.topic: how-to
 ms.localizationpriority: medium
 author: tiaraquan
