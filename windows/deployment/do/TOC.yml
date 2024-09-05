@@ -57,6 +57,8 @@
             href: mcc-ent-configure-provision-windows.md
         - name: Verify cache node functionality
           href: mcc-ent-verify-cache-node.md
+        - name: Monitor cache node
+          href: mcc-ent-monitor-cache.md
         - name: Uninstalling cache node
           href: mcc-ent-unintall-cache-node.md
         - name: Using CLI to create and manage cache nodes
@@ -67,8 +69,10 @@
           href: mcc-ent-faq.md
         - name: Support and troubleshooting
           href: mcc-ent-support-and-troubleshooting.md
-      - name: MCC for Enterprise and Education (early preview)
-        href: mcc-ent-private-preview.md        
+        - name: MCC for Enterprise and Education (early preview)
+          href: mcc-ent-private-preview.md
+      - name: Release notes
+        href: mcc-ent-release-notes.md        
     - name: MCC for ISPs
       items:
       - name: MCC for ISPs Overview
