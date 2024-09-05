@@ -38,13 +38,7 @@
       - name: MCC for Enterprise and Education Overview
         href: mcc-ent-edu-overview.md
       - name: Requirements
-        href: mcc-enterprise-prerequisites.md
-      - name: Deploy Microsoft Connected Cache
-        href: mcc-enterprise-deploy.md
-      - name: Update or uninstall MCC
-        href: mcc-enterprise-update-uninstall.md
-      - name: Appendix
-        href: mcc-enterprise-appendix.md
+        href: mcc-ent-prerequisites.md
       - name: How-to guides
         items:
         - name: Create MCC resource and cache node
@@ -60,13 +54,15 @@
         - name: Monitor cache node
           href: mcc-ent-monitor-cache.md
         - name: Uninstalling cache node
-          href: mcc-ent-unintall-cache-node.md
+          href: mcc-ent-uninstall-cache-node.md
         - name: Using CLI to create and manage cache nodes
-          href: mcc-ent-manage-cache-using-CLI.md        
+          href: mcc-ent-manage-cache-using-CLI.md  
+        - name: Update MCC
+          href: mcc-ent-update-cache.md     
       - name: Resources
         items:
         - name: Frequent Asked Questions
-          href: mcc-ent-faq.md
+          href: mcc-ent-faq.yml
         - name: Support and troubleshooting
           href: mcc-ent-support-and-troubleshooting.md
         - name: MCC for Enterprise and Education (early preview)
