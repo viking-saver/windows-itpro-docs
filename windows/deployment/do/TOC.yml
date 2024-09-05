@@ -49,6 +49,8 @@
             href: mcc-ent-configure-provision-linux.md
           - name: Configure and provision cache node on Windows
             href: mcc-ent-configure-provision-windows.md
+        - name: Using CLI to create and manage cache nodes
+          href: mcc-ent-manage-cache-using-CLI.md 
         - name: Verify cache node functionality
           href: mcc-ent-verify-cache-node.md
         - name: Monitor cache node
@@ -56,9 +58,7 @@
         - name: Update MCC
           href: mcc-ent-update-cache.md 
         - name: Uninstalling cache node
-          href: mcc-ent-uninstall-cache-node.md
-        - name: Using CLI to create and manage cache nodes
-          href: mcc-ent-manage-cache-using-CLI.md      
+          href: mcc-ent-uninstall-cache-node.md     
       - name: Resources
         items:
         - name: Frequent Asked Questions
