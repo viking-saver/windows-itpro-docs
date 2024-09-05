@@ -53,12 +53,12 @@
           href: mcc-ent-verify-cache-node.md
         - name: Monitor cache node
           href: mcc-ent-monitor-cache.md
+        - name: Update MCC
+          href: mcc-ent-update-cache.md 
         - name: Uninstalling cache node
           href: mcc-ent-uninstall-cache-node.md
         - name: Using CLI to create and manage cache nodes
-          href: mcc-ent-manage-cache-using-CLI.md  
-        - name: Update MCC
-          href: mcc-ent-update-cache.md     
+          href: mcc-ent-manage-cache-using-CLI.md      
       - name: Resources
         items:
         - name: Frequent Asked Questions
