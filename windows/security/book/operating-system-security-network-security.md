@@ -42,7 +42,7 @@ Legacy protocol versions TLS 1.0 and 1.1 are officially deprecated and are now d
 
 - [TLS/SSL overview (Schannel SSP)](/windows-server/security/tls/tls-ssl-schannel-ssp-overview)
 - [TLS 1.0 and TLS 1.1 soon to be disabled in Windows](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/tls-1-0-and-tls-1-1-soon-to-be-disabled-in-windows/bc-p/3894928/emcs_t/S2h8ZW1haWx8dG9waWNfc3Vic2NyaXB0aW9ufExMM0hCN0VURDk3OU9OfDM4OTQ5Mjh8U1VCU0NSSVBUSU9OU3xoSw#M6180)
-- [TLS 1.0 and TLS 1.1 deprecation in Windows](https://learn.microsoft.com/en-us/windows/win32/secauthn/tls-10-11-deprecation-in-windows?tabs=registry-editor)
+- [TLS 1.0 and TLS 1.1 deprecation in Windows](/windows/win32/secauthn/tls-10-11-deprecation-in-windows?tabs=registry-editor)
 
 ## Domain Name System (DNS) security
 

@@ -176,7 +176,7 @@ The new interface is a unified dashboard conveniently organized into four main s
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
 - [Windows updates API overview](/graph/windowsupdates-concept-overview)
-- [API reference docs](/graph/api/resources/windowsupdates-azureaddevice?view=graph-rest-beta)
+- [API reference docs](/graph/api/resources/windowsupdates-azureaddevice)
 
 ## Windows Autopatch
 
@@ -186,13 +186,13 @@ Available as part of Windows Enterprise E3 and E5, Windows Autopatch is the clou
 
 The service is built for ease of use and gives IT administrators the option to tailor it to meet the unique needs of their business with Autopatch groups. This feature allows you to customize deployments based on needs or critical business processes without extra costs or unplanned disruptions. For example, you may decide to delay rollout of updates for the finance team to mitigate risk of disruptions at the end of a quarter.
 
-From a technical standpoint, the service utilizes Microsoft Intune policies and your current Intune Update rings. The services’s use of your rings allows you to take advantage of Windows Autopatch reporting and device readiness without having to redeploy or modify your existing update configurations. The deployment of your Intune policies to enrolled tenants and continuously monitoring of those policies by Autopatch means that you can easily identify and resolve any conflicts.
+From a technical standpoint, the service utilizes Microsoft Intune policies and your current Intune Update rings. The services's use of your rings allows you to take advantage of Windows Autopatch reporting and device readiness without having to redeploy or modify your existing update configurations. The deployment of your Intune policies to enrolled tenants and continuously monitoring of those policies by Autopatch means that you can easily identify and resolve any conflicts.
 
 Comprehensive reporting is available via a summary dashboard displaying quality status and trends, and a reliability report. The reliability score is derived from stop error codes observed on managed devices, enabling improved insights about potential impacts of updates on devices.
 
 From a technical standpoint, Windows Autopatch configures the policies and deployment service of Windows Update for Business to deliver updates, all within Microsoft Intune.<sup>[\[9\]](conclusion.md#footnote9)</sup> The results for IT admins: up-to-date endpoints and detailed reports to demonstrate compliance or help identify issues. The goal is to help IT teams be more secure and update more efficiently with less effort.
 
-There’s a lot more to learn about Windows Autopatch: this [Forrester Consulting Total Economic Impact™ Study](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RW10vlw) commissioned by Microsoft features insights from customers talking about the impact deploying Windows Autopatch has had on their organization. You can also find out more about updates to Autopatch features and the future of the service in the regularly published [IT pro blogs](https://aka.ms/MoreAboutAutopatch). and [Windows Autopatch community](https://aka.ms/AutopatchCommunity) allows IT professionals to get answers to questions from their peers and the Autopatch team.
+There's a lot more to learn about Windows Autopatch: this [Forrester Consulting Total Economic Impact&trade; Study](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RW10vlw) commissioned by Microsoft features insights from customers talking about the impact deploying Windows Autopatch has had on their organization. You can also find out more about updates to Autopatch features and the future of the service in the regularly published [IT pro blogs](https://aka.ms/MoreAboutAutopatch). and [Windows Autopatch community](https://aka.ms/AutopatchCommunity) allows IT professionals to get answers to questions from their peers and the Autopatch team.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
@@ -200,16 +200,16 @@ There’s a lot more to learn about Windows Autopatch: this [Forrester Consultin
 
 ## Windows Autopilot and zero-touch deployment
 
-Traditionally, IT professionals spend significant time building and customizing images that will later be deployed to devices. If you’re purchasing new devices or managing device refresh cycles for employees, you can use Windows Autopilot to set up and preconfigure new devices, getting them ready for productive use. Autopilot helps you ensure your devices are delivered locked down and compliant with corporate security policies. The solution can also be used to reset, repurpose, and recover devices with zero touch by your IT team and no infrastructure to manage, enhancing efficiency with a process that’s both easy and simple.
+Traditionally, IT professionals spend significant time building and customizing images that will later be deployed to devices. If you're purchasing new devices or managing device refresh cycles for employees, you can use Windows Autopilot to set up and preconfigure new devices, getting them ready for productive use. Autopilot helps you ensure your devices are delivered locked down and compliant with corporate security policies. The solution can also be used to reset, repurpose, and recover devices with zero touch by your IT team and no infrastructure to manage, enhancing efficiency with a process that's both easy and simple.
 
-With Windows Autopilot, there’s no need to reimage or manually set-up devices before giving them to your employees. Your hardware vendor can ship them, ready to go, straight to your employees. From a user perspective, they turn their device on, go online, and Windows Autopilot delivers apps and settings.
+With Windows Autopilot, there's no need to reimage or manually set-up devices before giving them to your employees. Your hardware vendor can ship them, ready to go, straight to your employees. From a user perspective, they turn their device on, go online, and Windows Autopilot delivers apps and settings.
 
 Windows Autopilot enables you to:
 
 - Automatically join devices to Microsoft Entra ID<sup>[\[9\]](conclusion.md#footnote9)</sup> or Active Directory via hybrid Microsoft Entra ID Join. For more information about the differences between these two join options, see [Introduction to device management in Microsoft Entra ID](/azure/active-directory/device-management-introduction).
 - Auto-enroll devices into MDM services such as Microsoft Intune (requires an Microsoft Entra ID Premium subscription for configuration).
 - Change the edition of Windows being used to support advanced features (e.g., upgrading to Windows 11 Enterprise).
-- Create and auto-assignment of devices to configuration groups based on a device’s profile.
+- Create and auto-assignment of devices to configuration groups based on a device's profile.
 - Customization of the out-of-box experience (OOBE) content specific to the organization.
 
 Existing devices can also be quickly prepared for a new user with [Windows Autopilot Reset](/mem/autopilot/windows-autopilot-reset). The reset capability is also useful in break/fix scenarios to quickly bring a device back to a business-ready state.
