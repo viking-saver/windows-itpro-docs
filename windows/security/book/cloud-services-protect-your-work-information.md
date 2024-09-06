@@ -2,7 +2,7 @@
 title: Cloud services - Protect your work information
 description: Windows 11 security book - Cloud services chapter - Protect your work information.
 ms.topic: overview
-ms.date: 04/09/2024
+ms.date: 09/06/2024
 ---
 
 # Protect your work information
@@ -165,8 +165,8 @@ Once this verification is complete, the attestation service returns a signed rep
 
 ## Windows Update for Business deployment service
 
-The service that was known as Windows Update for Business deployment service has been woven into Windows Autopatch, offering a more coherent experience while simplifying the update experience. 
-The new interface is a unified dashboard conveniently organized into four main sections to help you make update management more efficient: 
+The service that was known as Windows Update for Business deployment service has been woven into Windows Autopatch, offering a more coherent experience while simplifying the update experience.
+The new interface is a unified dashboard conveniently organized into four main sections to help you make update management more efficient:
 
 - Update policies: Control updating timing and methods.
 - Update groups: Categorize your devices into tailored update rings.
@@ -180,13 +180,13 @@ The new interface is a unified dashboard conveniently organized into four main s
 
 ## Windows Autopatch
 
-Cybercriminals commonly exploit obsolete or unpatched software to infiltrate networks. It is essential to maintain current updates to seal security gaps, though the process of planning, tracking, and compliance reporting may divert IT resources from other critical work. 
+Cybercriminals commonly exploit obsolete or unpatched software to infiltrate networks. It is essential to maintain current updates to seal security gaps, though the process of planning, tracking, and compliance reporting may divert IT resources from other critical work.
 
-Available as part of Windows Enterprise E3 and E5, Windows Autopatch is the cloud service that helps you protect against evolving threats and vulnerabilities with timely update deployment. Windows Autopatch streamlines security, stability and feature updates for Windows Enterprise, enhancing both security and productivity throughout your company. 
+Available as part of Windows Enterprise E3 and E5, Windows Autopatch is the cloud service that helps you protect against evolving threats and vulnerabilities with timely update deployment. Windows Autopatch streamlines security, stability and feature updates for Windows Enterprise, enhancing both security and productivity throughout your company.
 
 The service is built for ease of use and gives IT administrators the option to tailor it to meet the unique needs of their business with Autopatch groups. This feature allows you to customize deployments based on needs or critical business processes without extra costs or unplanned disruptions. For example, you may decide to delay rollout of updates for the finance team to mitigate risk of disruptions at the end of a quarter.
 
-From a technical standpoint, the service utilizes Microsoft Intune policies and your current Intune Update rings. The services’s use of your rings allows you to take advantage of Windows Autopatch reporting and device readiness without having to redeploy or modify your existing update configurations. The deployment of your Intune policies to enrolled tenants and continuously monitoring of those policies by Autopatch means that you can easily identify and resolve any conflicts. 
+From a technical standpoint, the service utilizes Microsoft Intune policies and your current Intune Update rings. The services’s use of your rings allows you to take advantage of Windows Autopatch reporting and device readiness without having to redeploy or modify your existing update configurations. The deployment of your Intune policies to enrolled tenants and continuously monitoring of those policies by Autopatch means that you can easily identify and resolve any conflicts.
 
 Comprehensive reporting is available via a summary dashboard displaying quality status and trends, and a reliability report. The reliability score is derived from stop error codes observed on managed devices, enabling improved insights about potential impacts of updates on devices.
 
@@ -202,15 +202,15 @@ There’s a lot more to learn about Windows Autopatch: this [Forrester Consultin
 
 Traditionally, IT professionals spend significant time building and customizing images that will later be deployed to devices. If you’re purchasing new devices or managing device refresh cycles for employees, you can use Windows Autopilot to set up and preconfigure new devices, getting them ready for productive use. Autopilot helps you ensure your devices are delivered locked down and compliant with corporate security policies. The solution can also be used to reset, repurpose, and recover devices with zero touch by your IT team and no infrastructure to manage, enhancing efficiency with a process that’s both easy and simple.
 
-With Windows Autopilot, there’s no need to reimage or manually set-up devices before giving them to your employees. Your hardware vendor can ship them, ready to go, straight to your employees. From a user perspective, they turn their device on, go online, and Windows Autopilot delivers apps and settings. 
+With Windows Autopilot, there’s no need to reimage or manually set-up devices before giving them to your employees. Your hardware vendor can ship them, ready to go, straight to your employees. From a user perspective, they turn their device on, go online, and Windows Autopilot delivers apps and settings.
 
 Windows Autopilot enables you to:
 
 - Automatically join devices to Microsoft Entra ID<sup>[\[9\]](conclusion.md#footnote9)</sup> or Active Directory via hybrid Microsoft Entra ID Join. For more information about the differences between these two join options, see [Introduction to device management in Microsoft Entra ID](/azure/active-directory/device-management-introduction).
 - Auto-enroll devices into MDM services such as Microsoft Intune (requires an Microsoft Entra ID Premium subscription for configuration).
-- Change the edition of Windows being used to support advanced features (e.g., upgrading to Windows 11 Enterprise). 
+- Change the edition of Windows being used to support advanced features (e.g., upgrading to Windows 11 Enterprise).
 - Create and auto-assignment of devices to configuration groups based on a device’s profile.
-- Customization of the out-of-box experience (OOBE) content specific to the organization. 
+- Customization of the out-of-box experience (OOBE) content specific to the organization.
 
 Existing devices can also be quickly prepared for a new user with [Windows Autopilot Reset](/mem/autopilot/windows-autopilot-reset). The reset capability is also useful in break/fix scenarios to quickly bring a device back to a business-ready state.
 
@@ -218,15 +218,15 @@ Existing devices can also be quickly prepared for a new user with [Windows Autop
 
 - [Windows Autopilot](https://aka.ms/WindowsAutopilot)
 
-## Windows Update Management 
+## Windows Update Management
 
-Cybercriminals often target outdated or unpatched software to gain access to networks. Keeping endpoints up to date is critical in closing existing vulnerabilities, but planning, monitoring, and reporting on update compliance can take IT resources away from other important tasks. Windows Autopatch provides enterprise-level organizations with a cloud-native approach to updating the OS, an integral tool for reducing your attack surface by driving up patch compliance rates. 
+Cybercriminals often target outdated or unpatched software to gain access to networks. Keeping endpoints up to date is critical in closing existing vulnerabilities, but planning, monitoring, and reporting on update compliance can take IT resources away from other important tasks. Windows Autopatch provides enterprise-level organizations with a cloud-native approach to updating the OS, an integral tool for reducing your attack surface by driving up patch compliance rates.
 
-Windows Autopatch simplifies update management with automated quality, security and feature updates for Windows devices, Microsoft 365 apps, Teams, and Edge. By leveraging Windows Autopatch to simplify your endpoint management, you can secure your endpoints with timely update deployments while at the same time giving your IT team more time to focus on high-value contributions to the business, and while maximizing the value from your Windows Enterprise subscription. 
+Windows Autopatch simplifies update management with automated quality, security and feature updates for Windows devices, Microsoft 365 apps, Teams, and Edge. By leveraging Windows Autopatch to simplify your endpoint management, you can secure your endpoints with timely update deployments while at the same time giving your IT team more time to focus on high-value contributions to the business, and while maximizing the value from your Windows Enterprise subscription.
 
-Windows Autopatch configures Windows Update for Business policies and deployment services, ensuring up-to-date endpoints and detailed compliance reports for IT admins. Administrators can customize these configurations to align with their organization's structure, allowing tailored deployment schedules and content for different device populations. Ultimately, automating the update management process enhances security and operational efficiency by ensuring that endpoints remain current while providing detailed compliance reports to IT admins. 
+Windows Autopatch configures Windows Update for Business policies and deployment services, ensuring up-to-date endpoints and detailed compliance reports for IT admins. Administrators can customize these configurations to align with their organization's structure, allowing tailored deployment schedules and content for different device populations. Ultimately, automating the update management process enhances security and operational efficiency by ensuring that endpoints remain current while providing detailed compliance reports to IT admins.
 
-Explore more about Windows Autopatch through [Forrester study](https://aka.ms/AutopatchProductivity) commissioned by Microsoft, regular updates on the  [IT pro blogs](https://aka.ms/MoreAboutAutopatch) , and [Windows Autopatch community](https://aka.ms/AutopatchCommunity) resources offering insights and support. 
+Explore more about Windows Autopatch through [Forrester study](https://aka.ms/AutopatchProductivity) commissioned by Microsoft, regular updates on the  [IT pro blogs](https://aka.ms/MoreAboutAutopatch) , and [Windows Autopatch community](https://aka.ms/AutopatchCommunity) resources offering insights and support.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 

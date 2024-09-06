@@ -2,7 +2,7 @@
 title: Security foundation
 description: Windows 11 security book - Security foundation chapter.
 ms.topic: overview
-ms.date: 04/09/2024
+ms.date: 09/06/2024
 ---
 
 # Security foundation
