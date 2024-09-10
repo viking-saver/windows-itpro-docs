@@ -20,7 +20,6 @@ New:
 - Passkey
 - Sign-in Session Token Protection
 - Windows Local Administrator Password Solution (LAPS) (public preview)
-- Microsoft Intune Suite Endpoint Privilège Management (EPM)
 - Microsoft Intune Suite Endpoint Privilege Management (EPM)
 
 Enhanced:
