@@ -302,4 +302,4 @@ When a device is enrolled into device management, the administrator assumes that
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
-- [Configuration Service Provider - Windows Client Management](/windows/client-management/mdm/)
+- [Windows enrollment attestation](/mem/intune/enrollment/windows-enrollment-attestation)
