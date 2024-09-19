@@ -214,7 +214,8 @@ Cache node for Windows
 
 
 Proxy settings
-You can choose to enable or disable proxy settings on your cache node. 
+You can choose to enable or disable proxy settings on your cache node.
+
 <br>
 
 [!IMPORTANT]

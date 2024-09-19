@@ -28,9 +28,10 @@ Create a Resource group
 An Azure resource group is a logical container into which Azure resources are deployed and managed. 
 
 To create a resource group, use az group create.
-Open Cloud Shell
-az group create --name myrg --location westus
 
+```azurecli-interactive
+az group create --name myrg --location westus
+```
 
 Once the resource group is created, you will need to create a Microsoft Connected Cache for Enterprise resource.
 
@@ -39,8 +40,10 @@ Create a MCC resource
 A MCC resource is a resource under which cache nodes can be created.
 
 To create a mcc resource, use az mcc ent resource create
-Open Cloud Shell
+
+```azurecli-interactive
 az mcc ent resource create --mcc-resource-name mymccresource --resource-group myrg
+```
 
 In the output, look for operationStatus. operationStatus = Succeeded indicates that our services have successfully started creating MCC resource.
 The next step is to create a cache node under this resource.
@@ -49,8 +52,9 @@ The next step is to create a cache node under this resource.
 Create a cache node
 To create a cache node, use az mcc ent node create
 
-Open Cloud Shell
+```azurecli-interactive
 az mcc ent node create --cache-node-name mycachenode --mcc-resource-name mymccresource --resource-group myrg --host-os linux
+```
 
 In the output, look for operationStatus. operationStatus = Succeeded indicates that our services have successfully started creating cache node.
 
@@ -58,8 +62,10 @@ In the output, look for operationStatus. operationStatus = Succeeded indicates t
 Confirm cache node creation
 Before you can start configuring your cache node, you need to confirm that cache node creation has been successful. 
 To confirm cache node creation, use az mcc ent node show
-Open Cloud Shell
+
+```azurecli-interactive
 az mcc ent node show --cache-node-name mycachenode --mcc-resource-name mymccresource --resource-group myrg  
+```
 
 In the output look for cacheNodeState. If cacheNodeState = Not Configured, you can continue with cache node configuration.
 If cacheNodeState = Registration in Progress, then the cache node is still in process of being created. Please wait for a minute or two more and run the command again.
@@ -72,9 +78,10 @@ To configure your cache node, use az mcc ent node update
 
 Ex: configure linux cache node, proxy, slow
 
-Open Cloud Shell
+```azurecli-interactive
 az mcc ent node update --cache-node-name mycachenode --mcc-resource-name mymccresource --resource-group myrg
 --cache-drive "[{physical-path:/cachenode/drive1,size-in-gb:50},{physical-path:/cachenode/drive2,size-in-gb:51}]" --proxy enabled --proxy-host "abc.xyz" --proxy-port 80  --auto-update-day 2 --auto-update-time 15:33 --auto-update-week 3 --auto-update-ring slow
+```
 
 Note: If your cache node is a Windows cache node, the physical path of the cache drive must be “C:\mccwsl01”. 
 In the output, look for operationStatus. operationStatus = Succeeded indicates that our services have successfully updated the cache node.
@@ -87,8 +94,9 @@ Get provisioning details for the cache node
 Now that you have configured the cache node, the next step is to provision the cache node on the server. To provision the cache node, you will need to create a provisioning script with relevant information.
 To get the relevant information for provisioning script, use az mcc ent node get-provisioning-details
 
-Open Cloud Shell
+```azurecli-interactive
 az mcc ent node get-provisioning-details --cache-node-name mycachenode --mcc-resource-name mymccresource --resource-group myrg
+```
 
 In the output, please save the values for cacheNodeId, customerKey, mccResourceId, registrationKey. These values are needed to create the provisioning script.
 
