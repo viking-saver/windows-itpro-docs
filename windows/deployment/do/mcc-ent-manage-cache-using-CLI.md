@@ -16,117 +16,137 @@ appliesto:
 ms.date: 06/03/2024
 ---
 
-<!--
-Remove all the comments in this template before you sign-off or merge to the main branch.
+This article outlines how to create, configure and provision your Microsoft Connected Cache for Enterprise cache nodes using Azure CLI. 
+ 
+Please ensure that you have:
+  · How to install the Azure CLI | Microsoft Learn
+  · Installed the MCC extension.
 
-This template provides the basic structure of a How-to article pattern. See the
-[instructions - How-to](../level4/article-how-to-guide.md) in the pattern library.
+The first step is to create a resource group if you don't already have one.
 
-You can provide feedback about this template at: https://aka.ms/patterns-feedback
+Create a Resource group
+An Azure resource group is a logical container into which Azure resources are deployed and managed. 
 
-How-to is a procedure-based article pattern that show the user how to complete a task in their own environment. A task is a work activity that has a definite beginning and ending, is observable, consist of two or more definite steps, and leads to a product, service, or decision.
+To create a resource group, use az group create.
+Open Cloud Shell
+az group create --name myrg --location westus
 
--->
 
-<!-- 1. H1 -----------------------------------------------------------------------------
+Once the resource group is created, you will need to create a Microsoft Connected Cache for Enterprise resource.
 
-Required: Use a "<verb> * <noun>" format for your H1. Pick an H1 that clearly conveys the task the user will complete.
 
-For example: "Migrate data from regular tables to ledger tables" or "Create a new Azure SQL Database".
+Create a MCC resource
+A MCC resource is a resource under which cache nodes can be created.
 
-* Include only a single H1 in the article.
-* Don't start with a gerund.
-* Don't include "Tutorial" in the H1.
+To create a mcc resource, use az mcc ent resource create
+Open Cloud Shell
+az mcc ent resource create --mcc-resource-name mymccresource --resource-group myrg
 
--->
+In the output, look for operationStatus. operationStatus = Succeeded indicates that our services have successfully started creating MCC resource.
+The next step is to create a cache node under this resource.
 
-# "<verb> * <noun>"
-TODO: Add your heading
 
-<!-- 2. Introductory paragraph ----------------------------------------------------------
+Create a cache node
+To create a cache node, use az mcc ent node create
 
-Required: Lead with a light intro that describes, in customer-friendly language, what the customer will do. Answer the fundamental “why would I want to do this?” question. Keep it short.
+Open Cloud Shell
+az mcc ent node create --cache-node-name mycachenode --mcc-resource-name mymccresource --resource-group myrg --host-os linux
 
-Readers should have a clear idea of what they will do in this article after reading the introduction.
+In the output, look for operationStatus. operationStatus = Succeeded indicates that our services have successfully started creating cache node.
 
-* Introduction immediately follows the H1 text.
-* Introduction section should be between 1-3 paragraphs.
-* Don't use a bulleted list of article H2 sections.
 
-Example: In this article, you will migrate your user databases from IBM Db2 to SQL Server by using SQL Server Migration Assistant (SSMA) for Db2.
+Confirm cache node creation
+Before you can start configuring your cache node, you need to confirm that cache node creation has been successful. 
+To confirm cache node creation, use az mcc ent node show
+Open Cloud Shell
+az mcc ent node show --cache-node-name mycachenode --mcc-resource-name mymccresource --resource-group myrg  
 
--->
+In the output look for cacheNodeState. If cacheNodeState = Not Configured, you can continue with cache node configuration.
+If cacheNodeState = Registration in Progress, then the cache node is still in process of being created. Please wait for a minute or two more and run the command again.
 
-TODO: Add your introductory paragraph
+Once the cache node has been created successfully, you can now configure the cache node.
 
-<!---Avoid notes, tips, and important boxes. Readers tend to skip over them. Better to put that info directly into the article text.
 
--->
+Configure cache node
+To configure your cache node, use az mcc ent node update
 
-<!-- 3. Prerequisites --------------------------------------------------------------------
+Ex: configure linux cache node, proxy, slow
 
-Required: Make Prerequisites the first H2 after the H1. 
+Open Cloud Shell
+az mcc ent node update --cache-node-name mycachenode --mcc-resource-name mymccresource --resource-group myrg
+--cache-drive "[{physical-path:/cachenode/drive1,size-in-gb:50},{physical-path:/cachenode/drive2,size-in-gb:51}]" --proxy enabled --proxy-host "abc.xyz" --proxy-port 80  --auto-update-day 2 --auto-update-time 15:33 --auto-update-week 3 --auto-update-ring slow
 
-* Provide a bulleted list of items that the user needs.
-* Omit any preliminary text to the list.
-* If there aren't any prerequisites, list "None" in plain text, not as a bulleted item.
+Note: If your cache node is a Windows cache node, the physical path of the cache drive must be “C:\mccwsl01”. 
+In the output, look for operationStatus. operationStatus = Succeeded indicates that our services have successfully updated the cache node.
+Please save values for physicalPath, sizeInGb, proxyPort, proxyHostName as these values will be needed to create the provisioning script.
 
--->
+Note: proxy info changes, required to provision cache node.
 
-## Prerequisites
 
-TODO: List the prerequisites
+Get provisioning details for the cache node
+Now that you have configured the cache node, the next step is to provision the cache node on the server. To provision the cache node, you will need to create a provisioning script with relevant information.
+To get the relevant information for provisioning script, use az mcc ent node get-provisioning-details
 
-<!-- 4. Task H2s ------------------------------------------------------------------------------
+Open Cloud Shell
+az mcc ent node get-provisioning-details --cache-node-name mycachenode --mcc-resource-name mymccresource --resource-group myrg
 
-Required: Multiple procedures should be organized in H2 level sections. A section contains a major grouping of steps that help users complete a task. Each section is represented as an H2 in the article.
+In the output, please save the values for cacheNodeId, customerKey, mccResourceId, registrationKey. These values are needed to create the provisioning script.
 
-For portal-based procedures, minimize bullets and numbering.
+Provisioning cache node
 
-* Each H2 should be a major step in the task.
-* Phrase each H2 title as "<verb> * <noun>" to describe what they'll do in the step.
-* Don't start with a gerund.
-* Don't number the H2s.
-* Begin each H2 with a brief explanation for context.
-* Provide a ordered list of procedural steps.
-* Provide a code block, diagram, or screenshot if appropriate
-* An image, code block, or other graphical element comes after numbered step it illustrates.
-* If necessary, optional groups of steps can be added into a section.
-* If necessary, alternative groups of steps can be added into a section.
+Provisioning cache node on Linux host os:
+Before you provision your cache node on Linux machine, please make sure you have completed the requisites listed here: Host machine requirements
 
--->
+Use the link below to download and unzip the provisioning package on the server and run the below script to provision your cache node. 
 
-## "\<verb\> * \<noun\>"
-TODO: Add introduction sentence(s)
-[Include a sentence or two to explain only what is needed to complete the procedure.]
-TODO: Add ordered list of procedure steps
-1. Step 1
-1. Step 2
-1. Step 3
+Important
+Note: before you execute the script,  please make sure you change access permissions by running sudo chmod +x provisionmcc.sh
 
-## "\<verb\> * \<noun\>"
-TODO: Add introduction sentence(s)
-[Include a sentence or two to explain only what is needed to complete the procedure.]
-TODO: Add ordered list of procedure steps
-1. Step 1
-1. Step 2
-1. Step 3
+Note: Please replace the sample values with the values that you saved in the above steps.
 
-## "\<verb\> * \<noun\>"
-TODO: Add introduction sentence(s)
-[Include a sentence or two to explain only what is needed to complete the procedure.]
-TODO: Add ordered list of procedure steps
-1. Step 1
-1. Step 2
-1. Step 3
+Important
+'shoulduseproxy' parameter is required, whether or not your network uses proxy to access internet.
 
-<!-- 5. Next step/Related content------------------------------------------------------------------------
 
-Optional: You have two options for manually curated links in this pattern: Next step and Related content. You don't have to use either, but don't use both.
-  - For Next step, provide one link to the next step in a sequence. Use the blue box format
-  - For Related content provide 1-3 links. Include some context so the customer can determine why they would click the link. Add a context sentence for the following links.
+https://aka.ms/MCC-Ent-InstallScript-Linux
 
--->
+   
+Provisioning script:
+sudo ./provisionmcc.sh customerid="enter mccResourceId here" cachenodeid=" enter cacheNodeId here " customerkey=" enter customerKey here " registrationkey="enter registrationKey here" drivepathandsizeingb="enter physicalPath value,enter sizeInGb value here" shoulduseproxy="true" proxyurl=http://enter proxy hostname:enter port
+
+
+
+Provisioning cache node on Windows host os:
+
+Before you provision your cache node on Windows, please make sure you have completed the requisites listed here: Host machine requirements
+
+Please download and unzip the provisioning package on the server and run the below script to provision your cache node.
+Note: Please replace the sample values with the values that you saved in the above steps.
+
+Important
+'shoulduseproxy' parameter is required, whether or not your network uses proxy to access internet.
+
+
+https://aka.ms/MCC-Ent-InstallScript-WSL
+
+If you are using a gmsa account:
+./provisionmcconwsl.ps1 -installationFolder c:\mccwsl01 -customerid enter mccResourceId here -cachenodeid enter cacheNodeId here -customerkey enter customerKey here -registrationkey enter registration key -cacheDrives "/var/mcc,enter drive size"  -shouldUseProxy $true -proxyurl " http://enter proxy host name:enter port"  -mccRunTimeAccount $User
+
+
+If you are using local user account or domain user account:
+./provisionmcconwsl.ps1 -installationFolder c:\mccwsl01 -customerid enter mccResourceId here -cachenodeid enter cacheNodeId here -customerkey enter customerKey here -registrationkey enter registration key -cacheDrives "/var/mcc,enter drive size"  -shouldUseProxy $true -proxyurl " http://enter proxy host name:enter port"  -mccRunTimeAccount $User -mccLocalAccountCredential $myLocalAccountCredential 
+
+
+
+
+
+To verify cache node functionality, please see: Verify cache node functionality
+
+
+Sample script:
+Below is a pseudo code that shows how the above can be scripted for bulk creation and configuration of cache node.
+
+
 
 ## Next step
 
