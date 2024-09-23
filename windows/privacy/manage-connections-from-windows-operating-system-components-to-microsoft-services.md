@@ -7,7 +7,7 @@ ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
 manager: laurawi
-ms.date: 03/07/2016
+ms.date: 06/27/2024
 ms.topic: reference
 ---
 
@@ -425,7 +425,7 @@ To turn off Insider Preview builds for Windows 10 and Windows 11:
 ### <a href="" id="bkmk-ie"></a>8. Internet Explorer
 
 > [!NOTE]
-> When attempting to use Internet Explorer on any edition of Windows Server be aware there are restrictions enforced by [Enhanced Security Configuration (ESC)](/troubleshoot/browsers/enhanced-security-configuration-faq). The following Group Policies and Registry Keys are for user interactive scenarios rather than the typical idle traffic scenario. Find the Internet Explorer Group Policy objects under **Computer Configuration > Administrative Templates > Windows Components > Internet Explorer** and make these settings:
+> When attempting to use Internet Explorer on any edition of Windows Server be aware there are restrictions enforced by [Enhanced Security Configuration (ESC)](/previous-versions/troubleshoot/browsers/security-privacy/enhanced-security-configuration-faq). The following Group Policies and Registry Keys are for user interactive scenarios rather than the typical idle traffic scenario. Find the Internet Explorer Group Policy objects under **Computer Configuration > Administrative Templates > Windows Components > Internet Explorer** and make these settings:
 
 | Policy                                               | Description                                                                                         |
 |------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
@@ -536,6 +536,9 @@ To turn off Live Tiles:
 - Create a REG_DWORD registry setting named **NoCloudApplicationNotification** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\CurrentVersion\\PushNotifications** with a **value of 1 (one)**
 
 ### <a href="" id="bkmk-mailsync"></a>11. Mail synchronization
+
+> [!NOTE]
+> The Mail app and mail synchronization aren't available on Windows Server.
 
 To turn off mail synchronization for Microsoft Accounts that are configured on a device:
 
@@ -1607,7 +1610,7 @@ You can disable Teredo by using Group Policy or by using the netsh.exe command. 
 
   -or-
 
-- Create a new REG_SZ registry setting named **Teredo_State** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\TCPIP\\v6Transition** with a value of **Disabled**.
+- Create a new REG_SZ registry setting named **Teredo_State** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\TCPIP\\v6Transition** with a value of `Disabled`.
 
 
 ### <a href="" id="bkmk-wifisense"></a>23. Wi-Fi Sense
