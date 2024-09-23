@@ -42,6 +42,9 @@ Enhanced:
 - Universal Print
 - Lockout policies for local admin
 - Enhanced Phishing protection
+- Windows Presence sensing
+- Credential guard
+- Local Security Authority
 
 ## Document revision history
 
