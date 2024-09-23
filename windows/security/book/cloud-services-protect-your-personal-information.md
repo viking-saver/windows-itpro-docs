@@ -15,9 +15,9 @@ Your Microsoft Account (MSA) gives you access to Microsoft products and services
 
 You can even go passwordless with your Microsoft Account by removing the password from your MSA and using the Microsoft Authenticator app on your mobile Android or iOS phone.
 
-- Windows Re-authentication upon updating settings for 'If you've been away, when should Windows require you to sign in again: When users seek to disable their password for unlocking when away via Windows Settings, they will be prompted to re-authenticate with their account and password.
+- Windows Reauthentication upon updating settings for 'If you've been away, when should Windows require you to sign in again: When users seek to disable their password for unlocking when away via Windows Settings, they'll be prompted to reauthenticate with their account and password.
 
-- Windows Re-authentication upon disabling password for device restarts: When users try to enable this setting, they are re-authenticated with their account and password. Upon successful authentication, the password is disabled for future device restarts.
+- Windows Reauthentication upon disabling password for device restarts: When users try to enable this setting, they're reauthenticated with their account and password. Upon successful authentication, the password is disabled for future device restarts.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
@@ -25,7 +25,7 @@ You can even go passwordless with your Microsoft Account by removing the passwor
 
 ## User reauthentication before password disablement
 
-Windows provides greater flexibility for users to balance ease of use with security. Users can choose the interval that the machine remains idle before it automatically signs the user out. To avoid a security breach and prevent users from accidentally making settings changes, Windows reauthenticates the user before they are allowed to change the setting to not sign out the user even after the device remains idle indefinitely.
+Windows provides greater flexibility for users to balance ease of use with security. Users can choose the interval that the machine remains idle before it automatically signs out the user. To avoid a security breach and prevent users from accidentally making settings changes, Windows reauthenticates the user before they're allowed to change the setting to not sign out the user even after the device remains idle indefinitely.
 
 This setting is available on the Sign-in options page in Settings and is available on Windows 11 and onward for MSA users worldwide.
 
@@ -39,7 +39,7 @@ When location services and Find my device settings are turned on, basic system s
 
 ## OneDrive for personal
 
-Microsoft OneDrive <sup>[\[17\]](conclusion.md#footnote17)</sup> for personal provides additional security, backup, and restore options for important personal files. OneDrive stores and protects files in the cloud, allowing users to access them from laptops, desktops, and mobile devices. Plus, OneDrive provides an excellent solution for backing up folders. If a device is lost or stolen, the user can quickly recover all their important files from the cloud.
+Microsoft OneDrive <sup>[\[17\]](conclusion.md#footnote17)</sup> for personal provides more security, backup, and restore options for important personal files. OneDrive stores and protects files in the cloud, allowing users to access them from laptops, desktops, and mobile devices. Plus, OneDrive provides an excellent solution for backing up folders. If a device is lost or stolen, the user can quickly recover all their important files from the cloud.
 
 In the event of a ransomware attack, OneDrive can enable recovery. And if backups are configured in OneDrive, users have additional options to mitigate and recover from a ransomware attack.
 
