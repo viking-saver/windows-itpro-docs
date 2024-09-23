@@ -3,7 +3,7 @@ title: Manage Recall for Windows clients
 description: Learn how to manage Recall for commercial environments using MDM and group policy. Learn about Recall features.
 ms.topic: how-to
 ms.subservice: windows-copilot
-ms.date: 07/01/2024
+ms.date: 09/23/2024
 ms.author: mstewart
 author: mestew
 ms.collection:
