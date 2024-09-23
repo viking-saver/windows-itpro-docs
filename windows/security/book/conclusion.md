@@ -45,6 +45,7 @@ Enhanced:
 - Windows Presence sensing
 - Credential guard
 - Local Security Authority
+- Microsoft Authenticator
 
 ## Document revision history
 
