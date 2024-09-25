@@ -35,9 +35,9 @@ For more information on sizing and OS requirements, please visit [Host OS Requir
 
   * Use the Bash environment in [Azure Cloud Shell](../cloud-shell/quickstart.md).
 
-
+<!--
     :::image type="content" source="images/mcc-isp-provision-cache-node-numbered.png" alt-text="Screenshot of the Azure portal depicting the cache node configuration page of a cache node. This screenshot shows all of the fields you can choose to configure the cache node." lightbox="./images/mcc-isp-provision-cache-node-numbered.png":::  
-
+-->
 
   * Or, if you prefer to run CLI reference commands locally, [install the Azure CLI](/cli/azure/install-azure-cli)
 
