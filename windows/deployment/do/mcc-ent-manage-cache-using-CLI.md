@@ -34,7 +34,7 @@ This article outlines how to create, configure and provision your Microsoft Conn
 The first step is to create a resource group if you don't already have one.
 An Azure resource group is a logical container into which Azure resources are deployed and managed.
 
-To create a resource group, use [az group create](/cli/azure/group?view=azure-cli-latest#az-group-create).
+To create a resource group, use [az group create](/cli/azure/group#az-group-create).
 <br>
 
 ```azurecli-interactive
