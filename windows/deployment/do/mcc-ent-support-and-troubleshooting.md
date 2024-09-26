@@ -16,64 +16,14 @@ appliesto:
 ms.date: 06/03/2024
 ---
 
-<!--
-Remove all the comments in this template before you sign-off or merge to the main branch.
 
-This template provides the basic structure of a How-to article pattern. See the
-[instructions - How-to](../level4/article-how-to-guide.md) in the pattern library.
 
-You can provide feedback about this template at: https://aka.ms/patterns-feedback
+## Steps to obtain an Azure subscription ID
 
-How-to is a procedure-based article pattern that show the user how to complete a task in their own environment. A task is a work activity that has a definite beginning and ending, is observable, consist of two or more definite steps, and leads to a product, service, or decision.
+<!--Using include file, get-azure-subscription.md, do/mcc-isp.md for shared content-->
+[!INCLUDE [Get Azure subscription](includes/get-azure-subscription.md)]
 
--->
 
-<!-- 1. H1 -----------------------------------------------------------------------------
-
-Required: Use a "<verb> * <noun>" format for your H1. Pick an H1 that clearly conveys the task the user will complete.
-
-For example: "Migrate data from regular tables to ledger tables" or "Create a new Azure SQL Database".
-
-* Include only a single H1 in the article.
-* Don't start with a gerund.
-* Don't include "Tutorial" in the H1.
-
--->
-
-# "<verb> * <noun>"
-TODO: Add your heading
-
-<!-- 2. Introductory paragraph ----------------------------------------------------------
-
-Required: Lead with a light intro that describes, in customer-friendly language, what the customer will do. Answer the fundamental “why would I want to do this?” question. Keep it short.
-
-Readers should have a clear idea of what they will do in this article after reading the introduction.
-
-* Introduction immediately follows the H1 text.
-* Introduction section should be between 1-3 paragraphs.
-* Don't use a bulleted list of article H2 sections.
-
-Example: In this article, you will migrate your user databases from IBM Db2 to SQL Server by using SQL Server Migration Assistant (SSMA) for Db2.
-
--->
-
-TODO: Add your introductory paragraph
-
-<!---Avoid notes, tips, and important boxes. Readers tend to skip over them. Better to put that info directly into the article text.
-
--->
-
-<!-- 3. Prerequisites --------------------------------------------------------------------
-
-Required: Make Prerequisites the first H2 after the H1. 
-
-* Provide a bulleted list of items that the user needs.
-* Omit any preliminary text to the list.
-* If there aren't any prerequisites, list "None" in plain text, not as a bulleted item.
-
--->
-
-## Prerequisites
 
 TODO: List the prerequisites
 

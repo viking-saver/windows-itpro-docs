@@ -16,100 +16,28 @@ appliesto:
 ms.date: 06/03/2024
 ---
 
-<!--
-Remove all the comments in this template before you sign-off or merge to the 
-main branch.
 
-This template provides the basic structure of a Overview article pattern. See the [instructions - Overview](../level4/article-overview.md) in the pattern library.
+# Microsoft Connected Cache for Enterprise and Education (early preview)
 
-You can provide feedback about this template at: https://aka.ms/patterns-feedback
+> [!NOTE]
+> Microsoft Connected Cache for Enterprise and Education is now in public preview.
+> To know more about the program, visit [MCC program overview](mcc-ent-edu-overview.md).
 
-Overview is an article pattern that covers two aspects of a product or service:
+<br>
 
-* What is it?
-* What is it used for?
+Microsoft Connected Cache for Enterprise and Education is now in public preview. To get started, visit [Create MCC resource and cache node](mcc-ent-create-resource-and-cache.md)
 
-An Overview article talks about the product or service from a technical point of view. It's not intended to define the benefits or value proposition. That just duplicates marketing.
+>[!IMPORTANT]
+> If you are using the early preview version on MCC, please uninstall and delete the early preview cache node and the associated MCC resource and create a new one. To create a new MCC resource, visit [Create MCC resource and cache node](mcc-ent-create-resource-and-cache.md)
 
-<!-- 1. H1 -----------------------------------------------------------------------------
+<br>
+## Enterprise requirements for MCC
 
-Required: This is the primary heading at the top of the article.
+1. **Azure subscription**: MCC management portal is hosted within Azure and is used to create the Connected Cache [Azure resource](/azure/cloud-adoption-framework/govern/resource-consistency/resource-access-management) and IoT Hub resource. Both are free services.
 
-Use the format "What is <service>?" 
+    Your Azure subscription ID is first used to provision MCC services, and enable access to the preview. The MCC server requirement for an Azure subscription costs you nothing. If you don't have an Azure subscription already, you can create an Azure [pay-as-you-go](https://azure.microsoft.com/offers/ms-azr-0003p/) account, which requires a credit card for verification purposes. For more information, see the [Azure Free Account FAQ](https://azure.microsoft.com/free/free-account-faq/).
 
-You can also use this in the TOC if your service name doesn’t cause the phrase to wrap.
-
--->
-
-# What is <product/service>? 
-TODO: Add your heading
-
-<!-- 2. Introductory paragraph ----------------------------------------------------------
-
-Required: Lead with a light intro that describes what the article covers. Answer the fundamental “why would I want to know this?” question. Keep it short.
-
-Many services add artwork or videos below the Introduction.
-
--->
-
-[Introductory paragraph]
-TODO: Add your introductory paragraph
-
-<!---Avoid notes, tips, and important boxes. Readers tend to skip over them. Better to put that info
-directly into the article text.
-
---->
-
-<!-- 3. H2s (Article body)------------------------------------------------------------ 
-
-Required: The article body should discuss the features that answer the "Why should I care?" question with a bit more depth.
-
-Give each H2 a heading that sets expectations for the content that follows. 
-Follow the H2 headings with a sentence about how the section contributes to the whole.
-Add images, code blocks, or other graphical elements after the information it illustrates.
-
-* Call out any basic requirements and dependencies.
-* Call out limitations or overhead.
-* Don't catalog every feature. Some might only need to be mentioned as available, without any discussion.
-* Give each H2 a heading that sets expectations for the content that follows.
-* Follow the H2 headings with a sentence about how the section contributes to the whole.
-* Images, code blocks, or other graphical elements come after the text block it illustrates.
-Don't number H2s.
-
--->
-
-## [Section 1 heading]
-TODO: add your content
-
-## [Section 2 heading]
-TODO: add your content
-
-## [Section n heading]
-TODO: add your content
-
-<!-- 4. Next step/Related content ------------------------------------------------------------------------ 
-
-Optional: You have two options for manually curated links in this pattern: Next step and Related content. You don't have to use either, but don't use both.
-  - For Next step, provide one link to the next step in a sequence. Use the blue box format
-  - For Related content provide 1-3 links. Include some context so the customer can determine why they would click the link. Add a context sentence for the following links.
-
--->
-
-## Next step
-
-TODO: Add your next step link(s)
-
-> [!div class="nextstepaction"]
-> [Write concepts](article-concept.md)
-
-<!-- OR -->
-
-## Related content
-
-TODO: Add your next step link(s)
-
-- [Write concepts](article-concept.md)
-
-<!--
-Remove all the comments in this template before you sign-off or merge to the main branch.
--->
+    The resources used for the preview and in the future when this product is ready for production will be free to you, like other caching solutions.
+1. **Hardware to host MCC**: The recommended configuration serves approximately 35,000 managed devices, downloading a 2-GB payload in 24-hour timeframe at a sustained rate of 6.5 Gbps.<br>
+For more information, visit [Hardware Requirments](mcc-ent-prerequisites.md)
+  
