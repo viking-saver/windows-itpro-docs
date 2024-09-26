@@ -59,7 +59,7 @@ For more information on sizing and OS requirements, please visit [Host OS Requir
 
     * Install Azure CLI extension **mcc** by following the instructions [here](/cli/azure/azure-cli-extensions-overview#how-to-install-extensions).
 
-    * Resource group under which an MCC resource can be created. Use the [az group create](/cli/azure/group?view=azure-cli-latest#az-group-create) command to create a new Resource group if you don't already have one.
+    * Resource group under which an MCC resource can be created. Use the [az group create](/cli/azure/group#az-group-create) command to create a new Resource group if you don't already have one.
 
 #### Create MCC resource
 Replace the following placeholders with your own information:
