@@ -23,9 +23,25 @@ This article outlines how to create and configure your Microsoft Connected Cache
 ## Prerequisites
 1. **Azure Pay-As-You-Go subscription**: Microsoft Connected Cache is a completely free-of-charge service hosted in Azure. You'll need to have a Pay-As-You-Go subscription in order to onboard to our service. To create a subscription, go to [Pay-As-You-Go subscription page](https://azure.microsoft.com/offers/ms-azr-0003p/).
 2. **Hardware to host MCC**: The recommended configuration serves approximately 35,000 managed devices, downloading a 2-GB payload in 24-hour timeframe at a sustained rate of 6.5 Gbps.
-For more information on sizing and OS requirements, please visit [Host OS Requirement]()
+For more information on sizing and OS requirements, please visit [Host OS Requirement](mcc-ent-prerequisites.md)
 
 ## Create MCC resource
+
+# [Azure portal](#tab/portal)
+
+1. In the [Azure portal](https://portal.azure.com), select **Create a Resource** and search for "Microsoft Connected Cache for Enterprise and Education".
+<!--
+    :::image type="content" source="images/mcc-isp-provision-cache-node-numbered.png" alt-text="Screenshot of the Azure portal depicting the cache node configuration page of a cache node. This screenshot shows all of the fields you can choose to configure the cache node." lightbox="./images/mcc-isp-provision-cache-node-numbered.png":::  
+-->
+
+1. Select Microsoft Connected Cache for Enterprise resource. When prompted, choose the subscription, resource group, and location for the resource. Also, enter a name for the resource and click Review + Create.
+<!--
+    :::image type="content" source="images/mcc-isp-provision-cache-node-numbered.png" alt-text="Screenshot of the Azure portal depicting the cache node configuration page of a cache node. This screenshot shows all of the fields you can choose to configure the cache node." lightbox="./images/mcc-isp-provision-cache-node-numbered.png":::  
+-->
+1. After a few moments, you'll see a "Validation successful" message, indicating you can move onto the next step and select Create.
+
+1. The creation of the resource may take a few minutes. After a successful creation, you'll see a Deployment complete page as below. Select Go to resource to create cache nodes.
+
 
 # [Azure CLI](#tab/cli)
 
@@ -33,11 +49,7 @@ For more information on sizing and OS requirements, please visit [Host OS Requir
 
 * An Azure CLI environment:
 
-  * Use the Bash environment in [Azure Cloud Shell](../cloud-shell/quickstart.md).
-
-<!--
-    :::image type="content" source="images/mcc-isp-provision-cache-node-numbered.png" alt-text="Screenshot of the Azure portal depicting the cache node configuration page of a cache node. This screenshot shows all of the fields you can choose to configure the cache node." lightbox="./images/mcc-isp-provision-cache-node-numbered.png":::  
--->
+  * Use the Bash environment in [Azure Cloud Shell](/azure/cloud-shell/get-started/classic).
 
   * Or, if you prefer to run CLI reference commands locally, [install the Azure CLI](/cli/azure/install-azure-cli)
 
@@ -45,10 +57,11 @@ For more information on sizing and OS requirements, please visit [Host OS Requir
 
     * Run [az version](/cli/azure/reference-index#az-version) to find the version and dependent libraries that are installed. To upgrade to the latest version, run [az upgrade](/cli/azure/reference-index#az-upgrade).
 
-    * Install Azure CLI extension **mcc** by following the instructions [here](https://learn.microsoft.com/en-us/cli/azure/azure-cli-extensions-overview#how-to-install-extensions).
+    * Install Azure CLI extension **mcc** by following the instructions [here](/cli/azure/azure-cli-extensions-overview#how-to-install-extensions).
 
-    * Resource group under which an MCC resource can be created. Use the [az group create](https://learn.microsoft.com/en-us/cli/azure/group?view=azure-cli-latest#az-group-create) command to create a new Resource group if you don't already have one.
+    * Resource group under which an MCC resource can be created. Use the [az group create](/cli/azure/group?view=azure-cli-latest#az-group-create) command to create a new Resource group if you don't already have one.
 
+#### Create MCC resource
 Replace the following placeholders with your own information:
 * *\<resource-group>*: An existing resource group in your subscription.
 * *\<mcc-resource-name>*: A name for your Microsoft Connected Cache for Enterprise resource.
@@ -58,19 +71,24 @@ Replace the following placeholders with your own information:
 az mcc ent resource create --mcc-resource-name <mymccresource> --resource-group <myrg> --location <region>
 ```
 
-# [Azure portal](#tab/portal)
-
-1. In the [Azure portal](https://portal.azure.com), select **Create a Resource** and search for "Microsoft Connected Cache for Enterprise and Education".
-
-1. Select Microsoft Connected Cache for Enterprise resource. When prompted, choose the subscription, resource group, and location for the resource. Also, enter a name for the resource and click Review + Create.
-
-1. After a few moments, you'll see a "Validation successful" message, indicating you can move onto the next step and select Create.
-
-1. The creation of the resource may take a few minutes. After a successful creation, you'll see a Deployment complete page as below. Select Go to resource to create cache nodes.
-
 ---
 
 ## Create cache node
+
+# [Azure portal](#tab/portal)
+
+  1. Open Azure portal and navigate to the Microsoft Connected Cache for Enterprise resource that you created.
+  1. Under Cache Node Management, click on Cache Nodes and then on + Create Cache Node.
+  <!--
+    :::image type="content" source="images/mcc-isp-provision-cache-node-numbered.png" alt-text="Screenshot of the Azure portal depicting the cache node configuration page of a cache node. This screenshot shows all of the fields you can choose to configure the cache node." lightbox="./images/mcc-isp-provision-cache-node-numbered.png":::  
+    -->
+  1. Provide a name for your cache node and select the host OS you plan to deploy the cache node on and click create. Please note, cache node names have to be unique under the Microsoft Connected Cache resource.
+  <!--
+    :::image type="content" source="images/mcc-isp-provision-cache-node-numbered.png" alt-text="Screenshot of the Azure portal depicting the cache node configuration page of a cache node. This screenshot shows all of the fields you can choose to configure the cache node." lightbox="./images/mcc-isp-provision-cache-node-numbered.png":::  
+    -->
+  The creation of cache node may take a few minutes. Please click Refresh to see your recently created cache node.
+Once the status changes to **Not Configured**, you can now configure your cache node.
+
 
 # [Azure CLI](#tab/cli)
 
@@ -94,28 +112,27 @@ az mcc ent node create --cache-node-name <mycachenode> --mcc-resource-name <mymc
 >```azurecli-interactive
 >az mcc ent node show --cache-node-name <mycachenode> --mcc-resource-name <mymccresource> --resource-group <myrg>  
 >```
+>In the output look for cacheNodeState. If cacheNodeState = Not Configured, you can continue with cache node configuration.
+>If cacheNodeState = Registration in Progress, then the cache node is still in process of being created. Please wait for a minute or two more and run the command again.
+
 
 <!-- `code blah blah`
 -->
 
-In the output look for cacheNodeState. If cacheNodeState = Not Configured, you can continue with cache node configuration.
-If cacheNodeState = Registration in Progress, then the cache node is still in process of being created. Please wait for a minute or two more and run the command again.
 
-# [Azure portal](#tab/portal)
-
-  1. Open Azure portal and navigate to the Microsoft Connected Cache for Enterprise resource that you created.
-  1. Under Cache Node Management, click on Cache Nodes and then on + Create Cache Node.
-  1. Provide a name for your cache node and select the host OS you plan to deploy the cache node on and click create. Please note, cache node names have to be unique under the Microsoft Connected Cache resource.
-  The creation of cache node may take a few minutes. Please click Refresh to see your recently created cache node.
-Once the status changes to Not Configured, you can now configure your cache node.
 
 ---
 
-### Configure cache node
+## Configure cache node
+
+# [Azure portal](#tab/portal)
+Please enter required values to configure your cache node. To learn more about the definitions of each field, review the Configuration fields at the bottom of this article.
+Don't forget to click save after adding configuration information.
+
 
 # [Azure CLI](#tab/cli)
 
-Use the command below to configure cache node for **Linux** host os
+Use the command below to configure cache node for **Linux** host OS
 
 Replace the following placeholders with your own information:
 * *\<resource-group>*: An existing resource group in your subscription.
@@ -145,7 +162,7 @@ az mcc ent node update --cache-node-name <mycachenode> --mcc-resource-name <mymc
 <br>
 <br>
 
-Use the command below to configure cache node for **Windows** host os
+Use the command below to configure cache node for **Windows** host OS
 
 Replace the following placeholders with your own information:
 * *\<resource-group>*: An existing resource group in your subscription.
@@ -173,9 +190,7 @@ az mcc ent node update --cache-node-name <mycachenode> --mcc-resource-name <mymc
 --cache-drive "[{physical-path:/var/mcc,size-in-gb:<size of cache drive>}]" --proxy <enabled> --proxy-host <"proxy host name"> --proxy-port <proxy port>  --auto-update-day <day of week> --auto-update-time <time of day> --auto-update-week <week of month> --auto-update-ring <update ring>
 ```
 
-# [Azure portal](#tab/portal)
-Please enter required values to configure your cache node. To learn more about the definitions of each field, review the Configuration fields at the bottom of this article.
-Don't forget to click save after adding configuration information.
+
 
 ---
 
@@ -183,14 +198,19 @@ Don't forget to click save after adding configuration information.
 The next step is to provision the cache node on the server.
 
 # [Azure portal](#tab/portal)
-To provision MCC on **Windows** host machine, please visit: Provision Windows cache node
+To provision MCC on **Windows** host machine, see [Provision Windows cache node](mcc-ent-configure-provision-windows.md)
+
 <br>
-To provision MCC on **Linux** host machine, please visit: Provision Linux cache node
+
+To provision MCC on **Linux** host machine, see [Provision Linux cache node](mcc-ent-configure-provision-linux.md)
 
 # [Azure CLI](#tab/cli/)
-To provision cache node using Azure CLI, please visit: Bulk management of cache nodes
+To provision cache node using Azure CLI, see [Bulk management of cache nodes](mcc-ent-manage-cache-using-CLI.md)
 
 ---
+<br>
+<br>
+
 
 ### General configuration fields
 
@@ -201,10 +221,10 @@ To provision cache node using Azure CLI, please visit: Bulk management of cache 
 
 ### Storage fields
 
-<br>
 
- >[!Important]
->Cache node for Linux
+##### Cache node for Linux
+
+>[!Important]
 >All cache drives must have full read/write permissions set or the cache node will not function. For example, in a terminal you can run: sudo chmod 777 /path/to/cachedrivefolder
 <br>
 
@@ -214,7 +234,7 @@ To provision cache node using Azure CLI, please visit: Bulk management of cache 
 |**Cache drive size in gigabytes**|	Integer in GB| 	Set the size of each drive configured for the cache node. Minimum cache drive size is 50 GB.|
 
 
-Cache node for Windows
+##### Cache node for Windows
 
 | Field Name	|Expected Value	 |Description|
 |---|---|---|
@@ -222,7 +242,8 @@ Cache node for Windows
 |**Cache drive size in gigabytes**|	Integer in GB|	Set the size of each drive configured for the cache node. Minimum cache drive size is 50 GB. |
 
 
-Proxy settings
+#### Proxy settings
+<br>
 You can choose to enable or disable proxy settings on your cache node.
 
 <br>
