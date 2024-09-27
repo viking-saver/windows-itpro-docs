@@ -39,10 +39,14 @@
         href: mcc-ent-edu-overview.md
       - name: Requirements
         href: mcc-enterprise-prerequisites.md
-      - name: Deploy Microsoft Connected Cache
-        href: mcc-enterprise-deploy.md
-      - name: Update or uninstall MCC
-        href: mcc-enterprise-update-uninstall.md
+      - name: Deploy Microsoft Connected Cache to Windows
+        href: mcc-enterprise-deploy-windows.md
+      - name: Deploy Microsoft Connected Cache to Linux
+        href: mcc-enterprise-deploy-linux.md
+      - name: Verify cache node functionality
+        href: mcc-enterprise-verify-functionality.md
+      - name: Uninstall MCC
+        href: mcc-enterprise-uninstall.md
       - name: Appendix
         href: mcc-enterprise-appendix.md
     - name: MCC for ISPs

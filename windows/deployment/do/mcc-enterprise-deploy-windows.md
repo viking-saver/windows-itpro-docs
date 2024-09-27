@@ -1,0 +1,44 @@
+---
+title: Deploy cache software to a Windows host machine
+description: How to deploy Microsoft Connected Cache for Enterprise and Education cache software to a Windows host machine.
+author: chrisjlin
+ms.author: lichris
+manager: naengler
+ms.service: windows-client
+ms.subservice: itpro-updates
+ms.topic: how-to
+ms.date: 09/27/2024
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-microsoft-connected-cache target=_blank>Microsoft Connected Cache for Enterprise and Education</a>	
+---
+
+# Deploy your Connected Cache to a Windows host machine
+
+This article describes how to deploy Microsoft Connected Cache for Enterprise and Education (MCCE) caching software to a Windows host machine.
+
+Deploying MCCE to a Windows host machine relies on [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/about) being installed under a [Group Managed Service Account (gMSA)](https://learn.microsoft.com/en-us/windows-server/security/group-managed-service-accounts/getting-started-with-group-managed-service-accounts) or [Local User Account](https://support.microsoft.com/en-us/windows/create-a-local-user-or-administrator-account-in-windows-20de74e0-ac7f-3502-a866-32915af2a34d) to isolate execution of the WSL-Microsoft Connected Cache distribution from the other users on the machine. This helps prevent tampering with both the WSL-MCC process and the cached content that is hosted on the disk.
+
+Before deploying MCCE to a Windows host machine, ensure that the host machine meets all [requirements](mcc-enterprise-prerequisites.md) and you have [created and configured your MCC Azure resource](https://aka.ms/mccent-create-resources).
+
+## Steps to deploy MCCE to Windows
+
+1. Within the Azure Portal, navigate to the "Provisioning" tab of your cache node and copy the provisioning command.
+1. Download the provisioning package using the button at the top of the Cache Node Configuration page and extract the package onto the host machine.
+1. Open a PowerShell windows *as administrator* on the host machine, then change directory to the extracted provisioning package.
+1. Set the Execution Policy to "Unrestricted" to allow the provisoning scripts to run.
+1. Create a `$User` environment variable containing the username of the account you intend to designate as the MCC runtime account. For gMSAs, the value should be formatted as `"Domain\Username$"`. For Local User accounts, `$User` should be formatted as `"LocalMachineName\Username"`.
+    - If you are using a Local User account as the MCCE runtime account, you will also need to create a [PS Credential Object](https://learn.microsoft.com/en-us/dotnet/api/system.management.automation.pscredential?view=powershellsdk-7.4.0) named `$myLocalAccountCredential`.
+1. Run the provisioning command on the host machine.
+
+## Next step
+
+> [!div class="nextstepaction"]
+> [Verify cache node functionality](mcc-enterprise-verify-functionality.md)
+
+<!-- OR -->
+
+## Related content
+
+- [Deploy to a Linux host machine](mcc-enterprise-deploy-linux.md)
+- [Uninstall MCCE](mcc-enterprise-uninstall.md)
