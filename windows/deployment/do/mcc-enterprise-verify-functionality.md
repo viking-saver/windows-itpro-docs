@@ -18,7 +18,7 @@ appliesto:
 
 This article describes how to verify that a Microsoft Connected Cache for Enterprise and Education (MCCE) cache node is functioning correctly.
 
-This should be done after deploying MCCE caching software to a [Windows](mcc-enterprise-deploy-windows.md) or [Linux](mcc-enterprise-deploy-linux.md) host machine.
+These steps should be taken after deploying MCCE caching software to a [Windows](mcc-enterprise-deploy-windows.md) or [Linux](mcc-enterprise-deploy-linux.md) host machine.
 
 ## Steps to verify functionality of MCCE cache node
 
@@ -30,13 +30,13 @@ This should be done after deploying MCCE caching software to a [Windows](mcc-ent
 
     If successful, there should be an HTTP response with StatusCode 200.
 
-1. To verify that the MCCE cache node can be reached by Windows clients in your network, visit the following address from a web browser on a Windows client device:
+1. To verify that Windows clients in your network can reach the MCCE cache node, visit the following address from a web browser on a Windows client device:
 
     `http://[HostMachine-IP-address]/filestreamingservice/files/7bc846e0-af9c-49be-a03d-bb04428c9bb5/Microsoft.png?cacheHostOrigin=dl.delivery.mp.microsoft.com`
 
     If successful, the Windows client device should begin to download a small image file from the MCCE cache node.
 
-1. To check how much content an individual Windows client has pulled from a MCCE cache node, open the [Delivery Optimization activity monitor](https://learn.microsoft.com/en-us/microsoft-365-apps/updates/delivery-optimization#viewing-data-about-the-use-of-delivery-optimization) on the Windows client device.
+1. To check how much content an individual Windows client has pulled from an MCCE cache node, open the [Delivery Optimization activity monitor](https://learn.microsoft.com/en-us/microsoft-365-apps/updates/delivery-optimization#viewing-data-about-the-use-of-delivery-optimization) on the Windows client device.
 
     You should see a donut chart titled Download Statistics. If the Windows client has pulled content from the cache node, you'll see a segment of the donut labeled "From Microsoft cache server".
 

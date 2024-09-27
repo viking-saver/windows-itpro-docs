@@ -19,13 +19,13 @@ This article details the requirements and recommendations for using Microsoft Co
 
 ## Licensing requirements
 
-- **Valid Azure subscription**: To use the Microsoft Connected Cache for Enterprise and Education (MCCE) service, you will need a valid Azure subscription that can be used to provision the necessary [Azure resources](/azure/cloud-adoption-framework/govern/resource-consistency/resource-access-management).
+- **Valid Azure subscription**: To use the Microsoft Connected Cache for Enterprise and Education (MCCE) service, you'll need a valid Azure subscription that can be used to provision the necessary [Azure resources](/azure/cloud-adoption-framework/govern/resource-consistency/resource-access-management).
 
     If you don't have an Azure subscription already, you can create an Azure [pay-as-you-go](https://azure.microsoft.com/offers/ms-azr-0003p/) account, which requires a credit card for verification purposes. For more information, see the [Azure Free Account FAQ](https://azure.microsoft.com/free/free-account-faq/).
 
-    The resources used for the public preview and in the future when this product is ready for production will be free to you, like other caching solutions.
+    The Azure resources used for MCCE will be free to you during this public preview.
 
-- **E3/E5 or A3/A5 license**: Your organization must have one of the following license subscriptions for each device that downloads content from a MCCE cache node.
+- **E3/E5 or A3/A5 license**: Your organization must have one of the following license subscriptions for each device that downloads content from an MCCE cache node.
 
     - [Windows Enterprise E3 or E5](https://learn.microsoft.com/en-us/windows/whats-new/windows-licensing#windows-11-enterprise), included in [Microsoft 365 F3, E3, or E5](https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft365-plans-and-pricing?msockid=32c407b43d5968050f2b13443c746916)
     - Windows Education A3 or A5, included in [Microsoft 365 A3 or A5](https://www.microsoft.com/en-us/education/products/microsoft-365?msockid=32c407b43d5968050f2b13443c746916#Education-plans)
@@ -37,10 +37,10 @@ This article details the requirements and recommendations for using Microsoft Co
 
 ### General requirements
 
-- Any previous installations of MCC must be [uninstalled](mcc-enterprise-update-uninstall.md) prior to installing the latest version of MCC.
+- Any previous installations of MCC must be [uninstalled](mcc-enterprise-update-uninstall.md) before installing the latest version of MCC.
 - [These listed endpoints](delivery-optimization-endpoints.md) must be reachable by the host machine.
-- There must be no other services / applications utilizing port 80 on the host machine (e.g. ConfigManager, Distribution Point)
-- There must be at least 4 GB of free memory on the host machine.
+- The host machine must have no other services / applications utilizing port 80 (for example, ConfigManager or Distribution Point).
+- The host machine must have at least 4 GB of free memory.
 
 ### Additional requirements for Windows host machines
 
@@ -55,14 +55,14 @@ This article details the requirements and recommendations for using Microsoft Co
 - The Linux host machine must be using one of the following Operating Systems:
 
     - Ubuntu 20.04
-    - Red Hat Enterprise Linux 8.* or 9.*
+    - Red Hat Enterprise Linux (RHEL) 8.* or 9.*
         - If using RHEL, the default container engine (Podman) must be replaced with [Moby](https://github.com/moby/moby#readme)
 
 ### Networking recommendations for host machines
 
 - Multiple network interface cards (NICs) on a single MCC instance aren't supported.
 - 1 Gbps NIC is the minimum speed recommended but any NIC is supported.
-- For best performance, NIC and BIOS should support SR-IOV.
+- The NIC and BIOS should support SR-IOV for best performance.
 
 ### Host machine sizing recommendations
 

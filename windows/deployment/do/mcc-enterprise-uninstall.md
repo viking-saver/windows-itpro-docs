@@ -16,7 +16,7 @@ ms.date: 09/27/2024
 
 # Uninstall MCCE caching software from a host machine
 
-This article describes how to uninstall Microsoft Connected Cache for Enterprise and Education (MCCE) caching software from a host machine. This should be done after deleting the cache node in the Azure Portal.
+This article describes how to uninstall Microsoft Connected Cache for Enterprise and Education (MCCE) caching software from a host machine. These steps should be taken after deleting the cache node in the Azure portal.
 
 ## Steps to uninstall MCCE from a Windows host machine
 
@@ -25,11 +25,11 @@ This article describes how to uninstall Microsoft Connected Cache for Enterprise
 
 ## Steps to uninstall MCCE from a Linux host machine
 
-The `uninstallmcc.sh` script within the provisioning package will uninstall the MCCE caching software and all related components, including:
+The `uninstallmcc.sh` script within the provisioning package uninstalls the MCCE caching software and all related components, including:
 
 - IoT Edge
-- Edge Agent
-- Edge Hub
+- IoT Edge Agent
+- IoT Edge Hub
 - MCC
 - Moby CLI
 - Moby engine
