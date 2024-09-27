@@ -13,7 +13,7 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-microsoft-connected-cache target=_blank>Microsoft Connected Cache for Enterprise and Education</a>	
 ---
 
-# Deploy your Connected Cache to a Windows host machine
+# Deploy MCCE cache node to a Windows host machine
 
 This article describes how to deploy Microsoft Connected Cache for Enterprise and Education (MCCE) caching software to a Windows host machine.
 
@@ -21,7 +21,7 @@ Deploying MCCE to a Windows host machine requires designating a [Group Managed S
 
 Before deploying MCCE to a Windows host machine, ensure that the host machine meets all [requirements](mcc-enterprise-prerequisites.md), and that you have [created and configured your MCC Azure resource](https://aka.ms/mccent-create-resources).
 
-## Steps to deploy MCCE to Windows
+## Steps to deploy MCCE cache node to Windows
 
 1. Within the Azure portal, navigate to the "Provisioning" tab of your cache node and copy the provisioning command.
 1. Download the provisioning package using the button at the top of the Cache Node Configuration page and extract the package onto the host machine.

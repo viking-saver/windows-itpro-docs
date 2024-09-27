@@ -195,17 +195,17 @@ az mcc ent node update --cache-node-name <mycachenode> --mcc-resource-name <mymc
 ---
 
 ## Next step
-The next step is to provision the cache node on the server.
+The next step is to deploy the cache node to the host machine.
 
 # [Azure portal](#tab/portal)
-To provision MCC on **Windows** host machine, see [Provision Windows cache node](mcc-ent-configure-provision-windows.md)
+To deploy the cache node to a **Windows** host machine, see [Deploy cache node to Windows](mcc-ent-deploy-to-windows.md)
 
 <br>
 
-To provision MCC on **Linux** host machine, see [Provision Linux cache node](mcc-ent-configure-provision-linux.md)
+To deploy the cache node to a **Linux** host machine, see [Deploy cache node to Linux](mcc-ent-deploy-to-linux.md)
 
 # [Azure CLI](#tab/cli/)
-To provision cache node using Azure CLI, see [Bulk management of cache nodes](mcc-ent-manage-cache-using-CLI.md)
+To deploy cache nodes using Azure CLI, see [Bulk management of cache nodes](mcc-ent-manage-cache-using-CLI.md)
 
 ---
 <br>
