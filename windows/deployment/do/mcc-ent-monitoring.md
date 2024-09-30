@@ -28,11 +28,11 @@ The Cache Node Summary box on your Azure portal
 
 | Metric | Description |
 | --- | --- |
-| Healthy nodes | The MCCE service will periodically request heartbeat messages from your MCC node to determine if it is functioning as expected. |
-| Unhealthy nodes | If the cache node does not respond, it will be labeled as unhealthy. |
-| Max in | The maximum egress (in Mb/sec.) that your node has pulled in at any given time. This statistic is not dependent on the time filter near the charts. |
+| Healthy nodes | The MCCE service will periodically request heartbeat messages from your MCC node to determine if it's functioning as expected. |
+| Unhealthy nodes | If the cache node doesn't respond, it is labeled as unhealthy. |
+| Max in | The maximum egress (in Mb/sec.) that your node has pulled in at any given time. This statistic isn't dependent on the time filter near the charts. |
 | Max out | The minimum egress (in Mb/sec.) that your node has pushed out at any given time. |
-| Average in | The average ingress (in Mb/sec.) that your node has pulled in over its lifetime. This statistic is not dependent on the time filter near the charts. |
+| Average in | The average ingress (in Mb/sec.) that your node has pulled in over its lifetime. This statistic isn't dependent on the time filter near the charts. |
 | Average out | The average egress (in Mb/sec.) that your node has pushed out over its lifetime. |
 | Cache efficiency | The percentage of all requests that your MCC node receives that are ultimately delivered by your MCC node. An effective node is generally expected to have an efficiency >95%. |
 
@@ -40,7 +40,7 @@ The Cache Node Summary box on your Azure portal
 
 ### Filters
 
-- Will only filter the data shown in the 2 charts, scalable from 1 hour to 30 days
+- Will only filter the data shown in the two charts, scalable from 1 hour to 30 days
 - Can view data by individual cache nodes or the average of all your active MCC nodes.
 
 ### Outbound traffic

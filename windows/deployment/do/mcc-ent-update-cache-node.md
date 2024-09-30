@@ -15,13 +15,15 @@ ms.date: 09/27/2024
 ---
 # Configure container update frequency for Microsoft Connected Cache for Enterprise and Education (MCCE)
 
-Microsoft Connected Cache for Enterprise and Education (MCCE) caching software requires periodic updates to maintain security, performance, and reliability. Microsoft silently deploys MCCE updates to your cache nodes based on the Update Ring setting you configure for each cache node.
+Microsoft Connected Cache for Enterprise and Education (MCCE) caching software is deployed to host machines as a container. The container OS and any software component within the container will need to be updated for security vulnerabilities or quality issues, or performance improvements required to successfully operate the caching software. These Microsoft-published container updates are called "MCCE updates" in this article.
+
+Microsoft silently deploys MCCE updates to your cache nodes based on the Update Ring setting you configure for each cache node.
 
 ## Update rings
 
-MCCE cache nodes can be configured to either the "Fast" or "Slow" update ring. If configured to update as part of the Fast ring, the cache node will be silently updated by Microsoft soon after the update is made available. If configured to update as part of the Slow ring, the cache node will be silently updated by Microsoft within 5 weeks of the update becoming available.
+MCCE cache nodes can be configured to either the "Fast" or "Slow" update ring. If configured to update as part of the Fast ring, the cache node will be silently updated by Microsoft soon after the update is made available. If configured to update as part of the Slow ring, the cache node is silently updated by Microsoft within five weeks of the update becoming available.
 
-In other words, configuring cache nodes to update as part of the Slow ring provides users with the option to delay the update process until they have validated that the latest MCCE update works within their environment. For example, a user could configure a test cache node to update as part of the Fast ring and validate that clients can successfully interact with the test cache node after the latest MCCE update has been applied. This builds confidence that service will not be interrupted when the production cache nodes are updated as part of the Slow ring.
+In other words, configuring cache nodes to update as part of the Slow ring provides users with the option to delay the update process until they have validated that the latest MCCE update works within their environment. For example, a user could configure a test cache node to update as part of the Fast ring and validate that clients can successfully interact with the test cache node after the latest MCCE update has been applied. This builds confidence that service won't be interrupted when the production cache nodes are updated as part of the Slow ring.
 
 ### Update ring options
 
@@ -29,23 +31,21 @@ In other words, configuring cache nodes to update as part of the Slow ring provi
 All MCCE cache nodes are configured to update as part of the Fast ring by default. MCCE cache nodes in the Fast ring will be updated soon after an update is made available. Microsoft will silently update cache nodes at a time of day when update traffic is likely to be minimal, such as 3:00 AM (local time) on Saturday.
 
 #### Slow Ring
-Configuring a MCCE cache node to update as part of the Slow ring provides users with the option to delay MCCE software updates until the update can be validated. There are three settings that will control when MCCE updates will be applied to MCCE cache nodes. All update ring settings can be managed from the Azure portal or through Azure CLI.
+Configuring an MCCE cache node to update as part of the Slow ring provides users with the option to delay MCCE software updates until the update can be validated. There are three settings that control when MCCE updates will be applied to MCCE cache nodes. All update ring settings can be managed from the Azure portal or through Azure CLI.
 
 | Setting | Description |
 | --- | --- |
-| Week of the month | 1st to 4th week can be selected. There are three to four months in a year that could have a 5th week. In the event that there is a 5th week, the update could be applied during that 5th week if the day of the week falls near the last day of the month.|
+| Week of the month | 1st to 4th week can be selected. There are three to four months in a year that could have a 5th week. If there's a 5th week, the update could be applied during that 5th week if the day of the week falls near the last day of the month.|
 | Day of the week | Monday through Sunday can be selected. |
 | Time of day | Time of day is based on UTC and a 24 hour clock. |
 
 ## Update process
 
-When Microsoft publishes an MCCE update, the MCCE service attempts to update all MCCE cache nodes based on their Update Ring membership. If a cache node cannot complete the silent MCCE update within 6 hours of starting, an error message is surfaced in the Azure portal.
+When Microsoft publishes an MCCE update, the MCCE service attempts to update all MCCE cache nodes based on their Update Ring membership. If a cache node can't complete the silent MCCE update within 6 hours of starting, an error message is surfaced in the Azure portal.
 
 ## Update terminology, criteria, and SLA
 
-Microsoft Connected Cache is a container and the container OS and any software component within the container will need to be updated for security vulnerabilities or quality issues, or performance improvements required to successfully operate the caching software.
-
-Microsoft Connected cache updates will not be shipped on a set cadence but will rather release updates periodically based on the need.
+MCCE updates will be released based on need instead of on a set cadence.
 
 | Update type | Criteria and SLA |
 | --- | --- |
