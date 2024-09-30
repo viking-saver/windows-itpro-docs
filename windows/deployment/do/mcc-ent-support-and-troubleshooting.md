@@ -38,7 +38,7 @@ For example: "Migrate data from regular tables to ledger tables" or "Create a ne
 
 -->
 
-# "<verb> * <noun>"
+# "verb * noun"
 TODO: Add your heading
 
 <!-- 2. Introductory paragraph ----------------------------------------------------------

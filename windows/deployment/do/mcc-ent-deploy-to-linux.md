@@ -17,7 +17,7 @@ appliesto:
 
 This article describes how to deploy Microsoft Connected Cache for Enterprise and Education (MCCE) caching software to a Linux host machine.
 
-Before deploying MCCE to a Linux host machine, ensure that the host machine meets all [requirements](mcc-enterprise-prerequisites.md), and that you have [created and configured your MCC Azure resource](https://aka.ms/mccent-create-resources).
+Before deploying MCCE to a Linux host machine, ensure that the host machine meets all [requirements](mcc-ent-prerequisites.md), and that you have [created and configured your MCC Azure resource](https://aka.ms/mccent-create-resources).
 
 ## Steps to deploy MCCE cache node to Linux
 

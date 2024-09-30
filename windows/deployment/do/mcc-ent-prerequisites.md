@@ -27,8 +27,8 @@ This article details the requirements and recommendations for using Microsoft Co
 
 - **E3/E5 or A3/A5 license**: Your organization must have one of the following license subscriptions for each device that downloads content from an MCCE cache node.
 
-    - [Windows Enterprise E3 or E5](https://learn.microsoft.com/en-us/windows/whats-new/windows-licensing#windows-11-enterprise), included in [Microsoft 365 F3, E3, or E5](https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft365-plans-and-pricing?msockid=32c407b43d5968050f2b13443c746916)
-    - Windows Education A3 or A5, included in [Microsoft 365 A3 or A5](https://www.microsoft.com/en-us/education/products/microsoft-365?msockid=32c407b43d5968050f2b13443c746916#Education-plans)
+    - [Windows Enterprise E3 or E5](https://learn.microsoft.com/windows/whats-new/windows-licensing#windows-11-enterprise), included in [Microsoft 365 F3, E3, or E5](https://www.microsoft.com/microsoft-365/enterprise/microsoft365-plans-and-pricing?msockid=32c407b43d5968050f2b13443c746916)
+    - Windows Education A3 or A5, included in [Microsoft 365 A3 or A5](https://www.microsoft.com/education/products/microsoft-365?msockid=32c407b43d5968050f2b13443c746916#Education-plans)
 
 ## Cache node host machine requirements
 
@@ -37,7 +37,7 @@ This article details the requirements and recommendations for using Microsoft Co
 
 ### General requirements
 
-- Any previous installations of MCC must be [uninstalled](mcc-enterprise-update-uninstall.md) before installing the latest version of MCC.
+- Any previous installations of MCC must be [uninstalled](mcc-ent-uninstall-cache-node.md) before installing the latest version of MCC.
 - [These listed endpoints](delivery-optimization-endpoints.md) must be reachable by the host machine.
 - The host machine must have no other services / applications utilizing port 80 (for example, ConfigManager or Distribution Point).
 - The host machine must have at least 4 GB of free memory.
@@ -45,10 +45,10 @@ This article details the requirements and recommendations for using Microsoft Co
 ### Additional requirements for Windows host machines
 
 - The Windows host machine must be using Windows 11 or Windows Server 2022 with the Latest Cumulative Update (LCU) applied.
-    - Windows 11 must have [OS Build 22631.3296](https://support.microsoft.com/en-us/topic/march-12-2024-kb5035853-os-builds-22621-3296-and-22631-3296-a69ac07f-e893-4d16-bbe1-554b7d9dd39b) or later
-    - Windows Server 2022 must have [OS Build 20348.2227](https://support.microsoft.com/en-us/topic/january-9-2024-kb5034129-os-build-20348-2227-6958a36f-efaf-4ef5-a576-c5931072a89a) or later
+    - Windows 11 must have [OS Build 22631.3296](https://support.microsoft.com/topic/march-12-2024-kb5035853-os-builds-22621-3296-and-22631-3296-a69ac07f-e893-4d16-bbe1-554b7d9dd39b) or later
+    - Windows Server 2022 must have [OS Build 20348.2227](https://support.microsoft.com/topic/january-9-2024-kb5034129-os-build-20348-2227-6958a36f-efaf-4ef5-a576-c5931072a89a) or later
 - The Windows host machine must support nested virtualization.
-- The Windows host machine must have [WSL2 installed](https://learn.microsoft.com/en-us/windows/wsl/install#install-wsl-command).
+- The Windows host machine must have [WSL2 installed](https://learn.microsoft.com/windows/wsl/install#install-wsl-command).
 
 ### Additional requirements for Linux host machines
 
