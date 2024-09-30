@@ -1,6 +1,6 @@
 ---
-title: MCC for Enterprise manage cache nodes using CLI
-description: Microsoft Connected Cache for Enterprise. Learn about managing cache nodes using CLI
+title: Manage MCCE cache nodes using CLI
+description: Details on how to manage Microsoft Connected Cache for Enterprise (MCCE) cache nodes via Azure CLI commands.
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: how-to

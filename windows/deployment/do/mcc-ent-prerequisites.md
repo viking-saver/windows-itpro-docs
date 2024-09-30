@@ -1,6 +1,6 @@
 ---
-title: Requirements for MCC for Enterprise and Education
-description: Overview of prerequisites and recommendations for using Microsoft Connected Cache for Enterprise and Education (MCCE).
+title: MCCE prerequisites
+description: Details of prerequisites and recommendations for using Microsoft Connected Cache for Enterprise and Education (MCCE).
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: conceptual
@@ -67,7 +67,7 @@ This article details the requirements and recommendations for using Microsoft Co
 ### Host machine sizing recommendations
 
 | Component  | Branch Office / Small Enterprise | Large Enterprise |
-| -- | --- | --- |
+| --- | --- | --- |
 | OS|  Windows Server 2022 <br> Windows 11 (Pro or Enterprise) | Same |
 |NIC | 1 Gbps | 5 Gbps |
 |Disk | SSD <br>1 drive <br>50 GB each  |SSD <br>1 drive <br>200 GB each  |

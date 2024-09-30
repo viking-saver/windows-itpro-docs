@@ -1,55 +1,55 @@
 ---
-title: Uninstall MCC for Enterprise and Education
-description: Details on how to uninstall Microsoft Connected Cache (MCC) for Enterprise and Education for your environment.
+title: Update MCCE cache nodes
+description: Details on how Microsoft Connected Cache for Enterprise and Education (MCCE) cache nodes are updated by Microsoft.
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: how-to
-ms.author: carmenf
-author: cmknox
-manager: aaroncz
-ms.reviewer: mstewart
-ms.collection:
-  - tier3
-  - must-keep
+ms.author: andyriv
+author: chrisjlin
+manager: naengler
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
+- ✅ Supported Linux distributions
 - ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-microsoft-connected-cache target=_blank>Microsoft Connected Cache for Enterprise and Education</a> 
-ms.date: 05/23/2024
+ms.date: 09/27/2024
 ---
+# Configure container update frequency for Microsoft Connected Cache for Enterprise and Education (MCCE)
 
-<!-- Customers will no longer update the private preview and instead install public preview
-# Update or uninstall Microsoft Connected Cache for Enterprise and Education
+Microsoft Connected Cache for Enterprise and Education (MCCE) caching software requires periodic updates to maintain security, performance, and reliability. Microsoft silently deploys MCCE updates to your cache nodes based on the Update Ring setting you configure for each cache node.
 
-Throughout the preview phase, we'll send you security and feature updates for MCC. Follow these steps to perform the update.
+## Update rings
 
-## Update MCC
+MCCE cache nodes can be configured to either the "Fast" or "Slow" update ring. If configured to update as part of the Fast ring, the cache node will be silently updated by Microsoft soon after the update is made available. If configured to update as part of the Slow ring, the cache node will be silently updated by Microsoft within 5 weeks of the update becoming available.
 
-Run the following command with the **arguments** we provided in the email to update your MCC:
+In other words, configuring cache nodes to update as part of the Slow ring provides users with the option to delay the update process until they have validated that the latest MCCE update works within their environment. For example, a user could configure a test cache node to update as part of the Fast ring and validate that clients can successfully interact with the test cache node after the latest MCCE update has been applied. This builds confidence that service will not be interrupted when the production cache nodes are updated as part of the Slow ring.
 
-```powershell
-# .\updatemcc.ps1 version="**\<VERSION\>**" tenantid="**\<TENANTID\>**" customerid="**\<CUSTOMERID\>**" cachenodeid="**\<CACHENODEID\>**" customerkey="**\<CUSTOMERKEY\>**"
-```
+### Update ring options
 
-For example:
+#### Fast Ring
+All MCCE cache nodes are configured to update as part of the Fast ring by default. MCCE cache nodes in the Fast ring will be updated soon after an update is made available. Microsoft will silently update cache nodes at a time of day when update traffic is likely to be minimal, such as 3:00 AM (local time) on Saturday.
 
-```powershell
-# .\updatemcc.ps1 version="msconnectedcacheprod.azurecr.io/mcc/linux/iot/mcc-ubuntu-iot-amd64:1.2.1.659" tenantid="799a999aa-99a1-99aa-99aa-9a9aa099db99" customerid="99a999aa-99a1-99aa-99aa-9aaa9aaa0saa" cachenodeid=" aa99aaaa-999a-9aas-99aa99daaa99 " customerkey="a99d999a-aaaa-aa99-0999aaaa99a"
-```
--->
-# Uninstall MCC
+#### Slow Ring
+Configuring a MCCE cache node to update as part of the Slow ring provides users with the option to delay MCCE software updates until the update can be validated. There are three settings that will control when MCCE updates will be applied to MCCE cache nodes. All update ring settings can be managed from the Azure portal or through Azure CLI.
 
-Contact the MCC Team before uninstalling to let us know if you're facing issues.
+| Setting | Description |
+| --- | --- |
+| Week of the month | 1st to 4th week can be selected. There are three to four months in a year that could have a 5th week. In the event that there is a 5th week, the update could be applied during that 5th week if the day of the week falls near the last day of the month.|
+| Day of the week | Monday through Sunday can be selected. |
+| Time of day | Time of day is based on UTC and a 24 hour clock. |
 
-This script removes the following items:
+## Update process
 
-1. EFLOW + Linux VM
-1. IoT Edge
-1. Edge Agent
-1. Edge Hub
-1. MCC
-1. Moby CLI
-1. Moby Engine
+When Microsoft publishes an MCCE update, the MCCE service attempts to update all MCCE cache nodes based on their Update Ring membership. If a cache node cannot complete the silent MCCE update within 6 hours of starting, an error message is surfaced in the Azure portal.
 
-To delete MCC, go to Control Panel \> Uninstall a program \> Select Azure IoT
-Edge LTS \> Uninstall
+## Update terminology, criteria, and SLA
+
+Microsoft Connected Cache is a container and the container OS and any software component within the container will need to be updated for security vulnerabilities or quality issues, or performance improvements required to successfully operate the caching software.
+
+Microsoft Connected cache updates will not be shipped on a set cadence but will rather release updates periodically based on the need.
+
+| Update type | Criteria and SLA |
+| --- | --- |
+| Security | Security updates are the highest priority and will be released based on the severity rating of the vulnerability. [Critical and High](https://nvd.nist.gov/vuln-metrics/cvss) vulnerabilities will be released by Microsoft within 60 days of discovery. [Medium and Low](https://nvd.nist.gov/vuln-metrics/cvss) vulnerabilities will be released by Microsoft within 120 days |
+| Quality | Quality updates fix a specific problem and addresses a noncritical, non-security-related bug. Quality updates could include performance fixes for a specific problem or changes related to cache efficiency or maximum egress for example. Quality updates will be released along with security updates or when necessary to ensure proper functioning of the Microsoft Connected Cache software. |
+
+For information on all released Microsoft Connected Cache updates see the [MCCE release notes](mcc-ent-release-notes.md).

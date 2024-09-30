@@ -1,6 +1,6 @@
 ---
-title: MCC for Enterprise early preview
-description: Microsoft Connected Cache for Enterprise early preview.
+title: MCCE early preview
+description: Details on Microsoft Connected Cache for Enterprise (MCCE) early preview.
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: how-to

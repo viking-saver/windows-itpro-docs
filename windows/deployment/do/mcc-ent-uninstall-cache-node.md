@@ -1,5 +1,5 @@
 ---
-title: Uninstall MCC for Enterprise and Education
+title: Uninstall MCCE cache nodes
 description: Details on how to uninstall Microsoft Connected Cache for Enterprise and Education (MCCE) from a host machine.
 ms.service: windows-client
 ms.subservice: itpro-updates

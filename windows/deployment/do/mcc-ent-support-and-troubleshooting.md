@@ -1,19 +1,17 @@
 ---
-title: MCC for Enterprise support and troubleshooting
-description: Microsoft Connected Cache for Enterprise. Learn about support and troubleshooting
+title: MCCE support and troubleshooting
+description: Details on how to troubleshoot and seek support for Microsoft Connected Cache for Enterprise (MCCE).
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: how-to
-manager: aaroncz
+manager: naengler
 ms.author: nidos
 author: doshnid
-ms.reviewer: mstewart
-ms.collection: tier3
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
+- ✅ Supported Linux distributions
 - ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-microsoft-connected-cache target=_blank>Microsoft Connected Cache for Enterprise</a>	
-ms.date: 06/03/2024
+ms.date: 09/27/2024
 ---
 
 <!--

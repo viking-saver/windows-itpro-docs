@@ -1,6 +1,6 @@
 ---
-title: Verify cache node functionality
-description: How to verify functionality of a Microsoft Connected Cache for Enterprise and Education cache node.
+title: Verify MCCE cache node functionality
+description: Details on how to verify functionality of Microsoft Connected Cache for Enterprise and Education (MCCE) cache nodes.
 author: chrisjlin
 ms.author: lichris
 manager: naengler
@@ -42,5 +42,5 @@ These steps should be taken after deploying MCCE caching software to a [Windows]
 
 ## Related content
 
-- [Monitor cache node usage](mcc-enterprise-monitoring.md)
-- [Troubleshoot cache node](mcc-enterprise-support-troubleshoot.md)
+- [Monitor cache node usage](mcc-ent-monitoring.md)
+- [Troubleshoot cache node](mcc-ent-support-and-troubleshooting.md)

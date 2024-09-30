@@ -1,6 +1,6 @@
 ---
-title: MCC for Enterprise and Education Release Notes
-description: Release Notes for Microsoft Connected Cache (MCC) for Enterprise and Education.
+title: MCCE Release Notes
+description: Release Notes for Microsoft Connected Cache for Enterprise and Education (MCCE).
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: conceptual

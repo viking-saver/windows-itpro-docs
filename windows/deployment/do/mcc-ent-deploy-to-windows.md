@@ -1,6 +1,6 @@
 ---
-title: Deploy cache software to a Windows host machine
-description: How to deploy Microsoft Connected Cache for Enterprise and Education cache software to a Windows host machine.
+title: Deploy MCCE cache software to a Windows host machine
+description: Details on how to deploy Microsoft Connected Cache for Enterprise and Education (MCCE) cache software to a Windows host machine.
 author: chrisjlin
 ms.author: lichris
 manager: naengler
@@ -34,11 +34,11 @@ Before deploying MCCE to a Windows host machine, ensure that the host machine me
 ## Next step
 
 > [!div class="nextstepaction"]
-> [Verify cache node functionality](mcc-enterprise-verify-functionality.md)
+> [Verify cache node functionality](mcc-ent-verify-cache-node.md)
 
 <!-- OR -->
 
 ## Related content
 
-- [Deploy to a Linux host machine](mcc-enterprise-deploy-linux.md)
-- [Uninstall MCCE](mcc-enterprise-uninstall.md)
+- [Deploy to a Linux host machine](mcc-ent-deploy-to-linux.md)
+- [Uninstall MCCE](mcc-ent-uninstall-cache-node.md)

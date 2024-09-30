@@ -1,6 +1,6 @@
 ---
-title: Deploy cache software to a Linux host machine
-description: How to deploy Microsoft Connected Cache for Enterprise and Education cache software to a Linux host machine.
+title: Deploy MCCE cache software to a Linux host machine
+description: Details on how to deploy Microsoft Connected Cache for Enterprise and Education (MCCE) cache software to a Linux host machine.
 author: chrisjlin
 ms.author: lichris
 manager: naengler
@@ -30,9 +30,9 @@ Before deploying MCCE to a Linux host machine, ensure that the host machine meet
 ## Next step
 
 > [!div class="nextstepaction"]
-> [Verify cache node functionality](mcc-enterprise-verify-functionality.md)
+> [Verify cache node functionality](mcc-ent-verify-cache-node.md)
 
 ## Related content
 
-- [Deploy to a Windows host machine](mcc-enterprise-deploy-windows.md)
-- [Uninstall MCCE](mcc-enterprise-uninstall.md)
+- [Deploy to a Windows host machine](mcc-ent-deploy-to-windows.md)
+- [Uninstall MCCE](mcc-ent-uninstall-cache-node.md)
