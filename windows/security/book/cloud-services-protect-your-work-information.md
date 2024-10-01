@@ -95,6 +95,14 @@ The MDM security baseline has been enhanced with over 70 new settings which enab
 
 - [MDM security baseline](/windows/security/threat-protection/windows-security-configuration-framework/windows-security-baselines)
 
+## MDM enrollment certificate attestation
+
+When a device is enrolled into device management, the administrator assumes that the device will enroll and receive appropriate policies to secure and manage the PC as they expect. In some circumstances, enrollment certificates can be removed by malicious actors and then used on unmanaged PCs to appear as though they are enrolled, but without the security and management policies the administrator intended. With MDM enrollment certificate attestation, the certificate and keys are bound to a specific machine through the use of the Trusted Platform Module (TPM) to ensure that they can't be lifted from one device and applied to another.
+
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+
+- [Windows enrollment attestation](/mem/intune/enrollment/windows-enrollment-attestation)
+
 ## Microsoft Intune
 
 Microsoft Intune15 is a comprehensive endpoint management solution that helps secure, deploy, and manage users, apps, and devices. Intune brings together technologies like Microsoft Configuration Manager and Windows Autopilot to simplify provisioning, configuration management, and software updates across the organization.
@@ -298,10 +306,4 @@ There are several ways that OneDrive for work or school is protected at rest:
 
 - [How OneDrive safeguards data in the cloud](https://support.microsoft.com/topic/23c6ea94-3608-48d7-8bf0-80e142edd1e1)
 
-## MDM enrollment certificate attestation
 
-When a device is enrolled into device management, the administrator assumes that the device will enroll and receive appropriate policies to secure and manage the PC as they expect. In some circumstances, enrollment certificates can be removed by malicious actors and then used on unmanaged PCs to appear as though they are enrolled, but without the security and management policies the administrator intended. With MDM enrollment certificate attestation, the certificate and keys are bound to a specific machine through the use of the Trusted Platform Module (TPM) to ensure that they can't be lifted from one device and applied to another.
-
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
-
-- [Windows enrollment attestation](/mem/intune/enrollment/windows-enrollment-attestation)
