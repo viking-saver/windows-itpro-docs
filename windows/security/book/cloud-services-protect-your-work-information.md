@@ -13,7 +13,7 @@ ms.date: 09/06/2024
 
 Microsoft Entra ID is a comprehensive cloud-based identity management solution that helps enable secure access to applications, networks, and other resources and guard against threats. Microsoft Entra ID can also be used with Windows Autopilot for zero-touch provisioning of devices preconfigured with corporate security policies.
 
-Organizations can deploy Microsoft Entra ID joined devices to enable access to both cloud and on-premises apps and resources. Access to resources can be controlled based on the Microsoft Entra ID account and Conditional Access policies applied to the device. For the most seamless and delightful end to end single sign-on (SSO) experience, we recommend users configure Windows Hello for Business during the out of box experience for easy passwordless sign-in to Entra ID . 
+Organizations can deploy Microsoft Entra ID joined devices to enable access to both cloud and on-premises apps and resources. Access to resources can be controlled based on the Microsoft Entra ID account and Conditional Access policies applied to the device. For the most seamless and delightful end to end single sign-on (SSO) experience, we recommend users configure Windows Hello for Business during the out of box experience for easy passwordless sign-in to Entra ID .
 
 For people wanting to connect to Entra on their personal devices, they can do so by using Workplace Join or Add Account – this action registers that users personal device with Microsoft Entra ID and helps- also called Workplace joined - IT admins can support users in bring your own device (BYOD) or mobile device scenarios. Credentials are authenticated and bound to the joined device and cannot be copied to another device without explicit reverification.
 
@@ -107,11 +107,11 @@ When a device is enrolled into device management, the administrator assumes that
 
 ## Microsoft Intune
 
-Microsoft Intune15 is a comprehensive endpoint management solution that helps secure, deploy, and manage users, apps, and devices. Intune brings together technologies like Microsoft Configuration Manager and Windows Autopilot to simplify provisioning, configuration management, and software updates across the organization.
+Microsoft Intune <sup>[\[15\]](conclusion.md#footnote15)</sup> is a comprehensive endpoint management solution that helps secure, deploy, and manage users, apps, and devices. Intune brings together technologies like Microsoft Configuration Manager and Windows Autopilot to simplify provisioning, configuration management, and software updates across the organization.
 
 Intune works with Microsoft Entra ID to manage security features and processes, including multifactor authentication.
 
-Organizations can cut costs while securing and managing remote PCs through the cloud in compliance with company policies.16 For example, organizations save time and money by provisioning preconfigured devices to remote employees using Windows Autopilot for zerotouch deployment.
+Organizations can cut costs while securing and managing remote PCs through the cloud in compliance with company policies <sup>[\[15\]](conclusion.md#footnote16)</sup>. For example, organizations save time and money by provisioning preconfigured devices to remote employees using Windows Autopilot for zerotouch deployment.
 
 Windows 11 enables IT professionals to move to the cloud while consistently enforcing security policies. Windows 11 provides expanded support for Group Policy administrative templates (ADMX-backed policies) in MDM solutions like Microsoft Intune, enabling IT professionals to easily apply the same security policies to both on-premises and remote devices.
 
@@ -142,8 +142,6 @@ Finally, Config Refresh helps organizations move to cloud from on-premises by pr
 Microsoft Intune also has policies and settings to configure and manage the flow of operating system updates to devices, working with WUfB and WUfB-DS and giving admins great control over their deployments
 
 With Intune, organizations can also extend MAM App Config, MAM App Protection, and App Protection Conditional Access capabilities to Windows. This enables people to access protected organizational content without having the device managed by IT. The first application to support MAM for Windows is Microsoft Edge.
-
-
 
 ## Remote Wipe
 

@@ -72,7 +72,7 @@ Enhanced:
 <sup><a name="footnote9"></a>9</sup> Sold separately.\
 <sup><a name="footnote10"></a>10</sup> Email encryption is supported on products such as Microsoft Exchange Server and Microsoft Exchange Online.\
 <sup><a name="footnote11"></a>11</sup> Microsoft internal data.\
-<sup><a name="footnote12"></a>12</sup> Microsoft Entra ID Basic is included with Microsoft Azure and Microsoft 365 subscriptions, and other commercial services subscriptions.\
+<sup><a name="footnote12"></a>12</sup> Microsoft Entra ID Basic is included with Microsoft Azure and Microsoft 365 subscriptions, and other commercial services subscriptions.\git add .
 <sup><a name="footnote13"></a>13</sup> Requires Microsoft Entra ID (formerly AAD) Premium; sold separately.\
 <sup><a name="footnote14"></a>14</sup> Hardware dependent.\
 <sup><a name="footnote15"></a>15</sup> Microsoft 365 E3 or E5 required; sold separately.\
