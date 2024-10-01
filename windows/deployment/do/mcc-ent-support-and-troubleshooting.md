@@ -54,7 +54,7 @@ Example: In this article, you will migrate your user databases from IBM Db2 to S
 
 -->
 
-This article contains instructions on how to troubleshoot different issues you may encounter while using MCCE. These issues are categorized by the task in which they may be encountered. For example, this next section covers troubleshooting [MCC Azure resource creation](mcc-ent-create-resource-and-cache).
+This article contains instructions on how to troubleshoot different issues you may encounter while using MCCE. These issues are categorized by the task in which they may be encountered. For example, this next section covers troubleshooting [MCC Azure resource creation](mcc-ent-create-resource-and-cache.md).
 
 ## Troubleshooting Azure resource creation
 
