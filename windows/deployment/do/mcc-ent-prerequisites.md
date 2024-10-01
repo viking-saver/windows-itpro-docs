@@ -32,9 +32,6 @@ This article details the requirements and recommendations for using Microsoft Co
 
 ## Cache node host machine requirements
 
-   > [!NOTE]
-   > If you'd like to install your cache node on VMWare, see the [Appendix](mcc-enterprise-appendix.md) for a few additional configurations.
-
 ### General requirements
 
 - Any previous installations of MCC must be [uninstalled](mcc-ent-uninstall-cache-node.md) before installing the latest version of MCC.

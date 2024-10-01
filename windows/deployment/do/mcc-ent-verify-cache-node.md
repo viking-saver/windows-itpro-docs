@@ -18,7 +18,7 @@ appliesto:
 
 This article describes how to verify that a Microsoft Connected Cache for Enterprise and Education (MCCE) cache node is functioning correctly.
 
-These steps should be taken after deploying MCCE caching software to a [Windows](mcc-enterprise-deploy-windows.md) or [Linux](mcc-enterprise-deploy-linux.md) host machine.
+These steps should be taken after deploying MCCE caching software to a [Windows](mcc-ent-deploy-to-windows.md) or [Linux](mcc-ent-deploy-to-linux.md) host machine.
 
 ## Steps to verify functionality of MCCE cache node
 
@@ -36,7 +36,7 @@ These steps should be taken after deploying MCCE caching software to a [Windows]
 
     If successful, the Windows client device should begin to download a small image file from the MCCE cache node.
 
-1. To check how much content an individual Windows client has pulled from an MCCE cache node, open the [Delivery Optimization activity monitor](https://learn.microsoft.com/en-us/microsoft-365-apps/updates/delivery-optimization#viewing-data-about-the-use-of-delivery-optimization) on the Windows client device.
+1. To check how much content an individual Windows client has pulled from an MCCE cache node, open the [Delivery Optimization activity monitor](https://learn.microsoft.com/microsoft-365-apps/updates/delivery-optimization#viewing-data-about-the-use-of-delivery-optimization) on the Windows client device.
 
     You should see a donut chart titled Download Statistics. If the Windows client has pulled content from the cache node, you'll see a segment of the donut labeled "From Microsoft cache server".
 
