@@ -29,7 +29,7 @@ With enhanced phishing protection in Windows 11, SmartScreen also alerts people 
 
 Because Windows 11 comes with these enhancements already built in and enabled, users have extra security from the moment they turn on their device.
 
-The app and browser control section contains information and settings for Microsoft Defender SmartScreen. IT administrators and IT pros can get configuration guidance in the [Microsoft Defender SmartScreen documentation library](/windows/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview).
+The app and browser control section contains information and settings for Microsoft Defender SmartScreen. IT administrators and IT pros can get configuration guidance in the [Microsoft Defender SmartScreen documentation library](/windows/security/operating-system-security/virus-and-threat-protection/microsoft-defender-smartscreen/).
 
 ## Microsoft Defender Antivirus
 
