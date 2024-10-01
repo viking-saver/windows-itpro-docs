@@ -13,10 +13,9 @@ ms.date: 09/06/2024
 
 Your Microsoft Account (MSA) gives you access to Microsoft products and services with just one login, allowing you to manage everything all in one place. Keep tabs on your subscriptions and order history, update your privacy and security settings, track the health and safety of your devices, and get rewards. Everything stays with you in the cloud, across devices, and between OS ecosystems, including iOS and Android.
 
-You can even go passwordless with your Microsoft Account by removing the password from your MSA and using the Microsoft Authenticator app on your mobile Android or iOS phone.
+You can even go passwordless with your Microsoft Account by removing the password from your MSA and using the Microsoft Authenticator app on your Android or iOS device.
 
-- Windows Reauthentication upon updating settings for 'If you've been away, when should Windows require you to sign in again: When users seek to disable their password for unlocking when away via Windows Settings, they'll be prompted to reauthenticate with their account and password.
-
+- Windows Reauthentication upon updating settings for **If you've been away, when should Windows require you to sign in again**. When users seek to disable their password for unlocking when away via Windows Settings, they'll be prompted to reauthenticate with their account and password.
 - Windows Reauthentication upon disabling password for device restarts: When users try to enable this setting, they're reauthenticated with their account and password. Upon successful authentication, the password is disabled for future device restarts.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
