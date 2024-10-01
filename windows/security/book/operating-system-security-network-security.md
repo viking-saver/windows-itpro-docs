@@ -23,26 +23,14 @@ In enterprise environments, network protection works best with Microsoft Defende
 
 ## Transport Layer Security (TLS)
 
-Transport Layer Security (TLS) is the internet's most deployed security protocol, encrypting data in transit to provide a secure communication channel between two endpoints. Windows defaults to the latest protocol versions and strong cipher suites unless policies are in effect to limit them. There are many extensions available, such as client authentication for enhanced server security and session resumption for improved application performance.
-
-We have now added support for certificate transparency policy in certificate chain validation. This provides additional protection from trusting mis-issued certificates that have not yet been revoked. When paired with CT log monitoring, it can replace the need for certificate pinning for a domain owner.
-Additionally, we have disallowed RSA certificates with keys <2048 bits within the Microsoft 3rd party trusted root store for stronger security by default.
-
-TLS 1.3 is the latest version of the protocol and is enabled by default starting with Windows 11 and Windows Server 2022. TLS 1.3 eliminates obsolete cryptographic algorithms, enhances security over older versions, and encrypts as much of the TLS handshake as possible. The handshake is more performant, with one fewer round trip per connection on average, and supports only five strong cipher suites, which provide perfect forward secrecy and reduced operational risk.
-TLS 1.3 now includes ephemeral key reuse, which improves performance (especially for high-load TLS servers) and brings it on par with TLS 1.2. The reuse time is 30 seconds by default, but is configurable. We also added the ability to enable/disable specific signature schemes (such as RSA-PSS) per-SNI binding.
-
-Customers using TLS 1.3 (or Windows components that support it, including HTTP.SYS, WinInet, .NET, MsQuic, and more) will get enhanced privacy and lower latencies for their encrypted online connections. Note that if either the client or server does not support TLS 1.3, Windows will fall back to TLS 1.2.
-
-Legacy protocol versions TLS 1.0 and 1.1 are officially deprecated and are now disabled by default in Azure Host 2024, but remain enabled in Windows server and client. We are planning to continue this deprecation in RS_prerelease starting July 2024. Organizations and application developers are strongly encouraged to begin to identify and remove code dependencies on TLS 1.0/1.1 if they have not done so already.
-
-
+Transport Layer Security (TLS) is a popular security protocol, encrypting data in transit to help provide a more secure communication channel between two endpoints. Windows enables the latest protocol versions and strong cipher suites by default and offers a full suite of extensions such as client authentication for enhanced server security, or session resumption for improved application performance. TLS 1.3 is the latest version of the protocol and is enabled by default in Windows. This version helps to eliminate obsolete cryptographic algorithms, enhance security over older versions, and aim to encrypt as much of the TLS handshake as possible. The handshake is more performant with one fewer round trip per connection on average and supports only strong cipher suites which provide perfect forward secrecy and less operational risk. Using TLS 1.3 will provide more privacy and lower latencies for encrypted online connections. Note that if the client or server application on either side of the connection does not support TLS 1.3, the connection will fall back to TLS 1.2. Windows uses the latest Datagram Transport Layer Security (DTLS) 1.2 for UDP communications. 
 
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
 - [TLS/SSL overview (Schannel SSP)](/windows-server/security/tls/tls-ssl-schannel-ssp-overview)
 - [TLS 1.0 and TLS 1.1 soon to be disabled in Windows](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/tls-1-0-and-tls-1-1-soon-to-be-disabled-in-windows/bc-p/3894928/emcs_t/S2h8ZW1haWx8dG9waWNfc3Vic2NyaXB0aW9ufExMM0hCN0VURDk3OU9OfDM4OTQ5Mjh8U1VCU0NSSVBUSU9OU3xoSw#M6180)
-- [TLS 1.0 and TLS 1.1 deprecation in Windows](/windows/win32/secauthn/tls-10-11-deprecation-in-windows?tabs=registry-editor)
+
 
 ## Domain Name System (DNS) security
 
