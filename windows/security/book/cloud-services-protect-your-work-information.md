@@ -11,9 +11,11 @@ ms.date: 09/06/2024
 
 ## Microsoft Entra ID
 
-Microsoft Entra ID, formerly Azure Active Directory is a comprehensive cloud-based identity management solution that helps enable secure access to applications, networks, and other resources and guard against threats. Microsoft Entra ID can also be used with Windows Autopilot for zero-touch provisioning of devices preconfigured with corporate security policies.
+Microsoft Entra ID is a comprehensive cloud-based identity management solution that helps enable secure access to applications, networks, and other resources and guard against threats. Microsoft Entra ID can also be used with Windows Autopilot for zero-touch provisioning of devices preconfigured with corporate security policies.
 
-Organizations can deploy Microsoft Entra ID joined devices to enable access to both cloud and on-premises apps and resources. Access to resources can be controlled based on the Microsoft Entra ID account and Conditional Access policies applied to the device. By registering devices with Microsoft Entra ID - also called Workplace joined - IT admins can support users in bring your own device (BYOD) or mobile device scenarios. Credentials are authenticated and bound to the joined device and cannot be copied to another device without explicit reverification.
+Organizations can deploy Microsoft Entra ID joined devices to enable access to both cloud and on-premises apps and resources. Access to resources can be controlled based on the Microsoft Entra ID account and Conditional Access policies applied to the device. For the most seamless and delightful end to end single sign-on (SSO) experience, we recommend users configure Windows Hello for Business during the out of box experience for easy passwordless sign-in to Entra ID . 
+
+For people wanting to connect to Entra on their personal devices, they can do so by using Workplace Join or Add Account – this action registers that users personal device with Microsoft Entra ID and helps- also called Workplace joined - IT admins can support users in bring your own device (BYOD) or mobile device scenarios. Credentials are authenticated and bound to the joined device and cannot be copied to another device without explicit reverification.
 
 To provide more security and control for IT and a seamless experience for end users, Microsoft Entra ID works with apps and services, including on-premises software and thousands of software-as-a-service (SaaS) applications. Microsoft Entra ID protections include single sign-on, multifactor authentication, conditional access policies, identity protection, identity governance, and privileged identity management.
 
@@ -95,6 +97,14 @@ The MDM security baseline has been enhanced with over 70 new settings which enab
 
 - [MDM security baseline](/windows/security/threat-protection/windows-security-configuration-framework/windows-security-baselines)
 
+## MDM enrollment certificate attestation
+
+When a device is enrolled into device management, the administrator assumes that the device will enroll and receive appropriate policies to secure and manage the PC as they expect. In some circumstances, enrollment certificates can be removed by malicious actors and then used on unmanaged PCs to appear as though they are enrolled, but without the security and management policies the administrator intended. With MDM enrollment certificate attestation, the certificate and keys are bound to a specific machine through the use of the Trusted Platform Module (TPM) to ensure that they can't be lifted from one device and applied to another.
+
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+
+- [Windows enrollment attestation](/mem/intune/enrollment/windows-enrollment-attestation)
+
 ## Microsoft Intune
 
 Microsoft Intune15 is a comprehensive endpoint management solution that helps secure, deploy, and manage users, apps, and devices. Intune brings together technologies like Microsoft Configuration Manager and Windows Autopilot to simplify provisioning, configuration management, and software updates across the organization.
@@ -105,6 +115,10 @@ Organizations can cut costs while securing and managing remote PCs through the c
 
 Windows 11 enables IT professionals to move to the cloud while consistently enforcing security policies. Windows 11 provides expanded support for Group Policy administrative templates (ADMX-backed policies) in MDM solutions like Microsoft Intune, enabling IT professionals to easily apply the same security policies to both on-premises and remote devices.
 
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+
+- [What is Microsoft Intune](/mem/intune/fundamentals/what-is-intune)
+
 ### Endpoint Privilege Management (EPM)
 
 Intune Endpoint Privilege Management supports organizations' Zero Trust journeys by helping them achieve a broad user base running with least privilege, while still permitting users to run tasks allowed by the organization to remain productive.
@@ -112,6 +126,10 @@ Intune Endpoint Privilege Management supports organizations' Zero Trust journeys
 ### Local Administrator Password (LAPs)
 
 Local Administrator Password solution was a key consideration for many customers when deciding to make the transition from on-premises to cloud-managed devices using Intune. With LAPS (available in preview), organizations can automatically manage and back up the password of a local administrator account on Microsoft Entra ID joined or hybrid Microsoft Entra ID joined devices.
+
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+
+- [Windows LAPS overview](/windows-server/identity/laps/laps-overview)
 
 ### Mobile Application Management (MAM)
 
@@ -121,17 +139,11 @@ Customers have asked for App Control for Business (previously called Windows Def
 
 Finally, Config Refresh helps organizations move to cloud from on-premises by protecting against settings deviating from the admin's intent.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
-
-- [Windows LAPS overview](/windows-server/identity/laps/laps-overview)
-
 Microsoft Intune also has policies and settings to configure and manage the flow of operating system updates to devices, working with WUfB and WUfB-DS and giving admins great control over their deployments
 
 With Intune, organizations can also extend MAM App Config, MAM App Protection, and App Protection Conditional Access capabilities to Windows. This enables people to access protected organizational content without having the device managed by IT. The first application to support MAM for Windows is Microsoft Edge.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
-- [What is Microsoft Intune](/mem/intune/fundamentals/what-is-intune)
 
 ## Remote Wipe
 
@@ -296,10 +308,4 @@ There are several ways that OneDrive for work or school is protected at rest:
 
 - [How OneDrive safeguards data in the cloud](https://support.microsoft.com/topic/23c6ea94-3608-48d7-8bf0-80e142edd1e1)
 
-## MDM enrollment certificate attestation
 
-When a device is enrolled into device management, the administrator assumes that the device will enroll and receive appropriate policies to secure and manage the PC as they expect. In some circumstances, enrollment certificates can be removed by malicious actors and then used on unmanaged PCs to appear as though they are enrolled, but without the security and management policies the administrator intended. With MDM enrollment certificate attestation, the certificate and keys are bound to a specific machine through the use of the Trusted Platform Module (TPM) to ensure that they can't be lifted from one device and applied to another.
-
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
-
-- [Windows enrollment attestation](/mem/intune/enrollment/windows-enrollment-attestation)
