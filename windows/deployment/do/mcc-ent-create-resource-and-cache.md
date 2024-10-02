@@ -14,16 +14,16 @@ appliesto:
 ms.date: 06/03/2024
 ---
 
-# Create MCCE Azure resource and cache nodes
+# Create Microsoft Connected Cache Azure resource and cache nodes
 
-This article outlines how to create and configure your Microsoft Connected Cache for Enterprise and Education (MCCE) cache nodes. The creation and configuration of your cache node takes place in Azure. The deployment of your cache node requires downloading and running an OS-specific provisioning package on your host machine.
+This article outlines how to create and configure your Microsoft Connected Cache for Enterprise and Education (MCC) cache nodes. The creation and configuration of your cache node takes place in Azure. The deployment of your cache node requires downloading and running an OS-specific provisioning package on your host machine.
 
 ## Prerequisites
 1. **Azure Pay-As-You-Go subscription**: Microsoft Connected Cache is a free-of-charge service hosted in Azure. You'll need a pay-as-you-go Azure subscription in order to onboard to our service. To create a subscription, go to [pay-as-you-go subscription page](https://azure.microsoft.com/offers/ms-azr-0003p/).
 2. **Hardware to host MCC**: The recommended configuration serves approximately 35,000 managed devices, downloading a 2-GB payload in 24-hour timeframe at a sustained rate of 6.5 Gbps.
 For more information on sizing and OS requirements, see [the prerequisites for using MCCE](mcc-ent-prerequisites.md).
 
-## Create MCCE Azure resource
+## Create MCC Azure resource
 
 # [Azure portal](#tab/portal)
 
@@ -59,7 +59,7 @@ For more information on sizing and OS requirements, see [the prerequisites for u
 
     * Resource group under which an MCC resource can be created. Use the [az group create](/cli/azure/group#az-group-create) command to create a new Resource group if you don't already have one.
 
-#### Create MCCE Azure resource
+#### Create MCC Azure resource
 Replace the following placeholders with your own information:
 * *\<resource-group>*: An existing resource group in your subscription.
 * *\<mcc-resource-name>*: A name for your Microsoft Connected Cache for Enterprise resource.
@@ -71,7 +71,7 @@ az mcc ent resource create --mcc-resource-name <mymccresource> --resource-group 
 
 ---
 
-## Create MCCE cache node
+## Create cache node
 
 # [Azure portal](#tab/portal)
 
@@ -110,25 +110,25 @@ az mcc ent node create --cache-node-name <mycachenode> --mcc-resource-name <mymc
 >```azurecli-interactive
 >az mcc ent node show --cache-node-name <mycachenode> --mcc-resource-name <mymccresource> --resource-group <myrg>  
 >```
->In the output look for cacheNodeState. If cacheNodeState = Not Configured, you can continue with cache node configuration.
->If cacheNodeState = Registration in Progress, then the cache node is still in process of being created. Please wait for a minute or two more and run the command again.
+>In the output look for cacheNodeState. If ***cacheNodeState = Not Configured***, you can continue with cache node configuration.
+>If ***cacheNodeState = Registration in Progress***, then the cache node is still in process of being created. Please wait for a minute or two more and run the command again.
 
 
 <!-- `code blah blah`
 -->
 
-
-
 ---
 
-## Configure MCCE cache node
+## Configure cache node
 
 # [Azure portal](#tab/portal)
-Enter required values to configure your cache node. To learn more about the definitions of each field, review the Configuration fields at the bottom of this article.
+Enter required values to configure your cache node. To learn more about the definitions of each field, review the [Configuration](#general-configuration-fields) fields at the bottom of this article.
 Don't forget to select save after adding configuration information.
 
 
 # [Azure CLI](#tab/cli)
+
+# [Linux host OS](#tab/cli/linux)
 
 Use the following command to configure cache node for deployment to a **Linux** host machine.
 
@@ -139,12 +139,12 @@ Replace the following placeholders with your own information:
 * *\<physical-path>*: The cache drive path. You can add upto nine cache drives.
 * *\<size-in-gb>*: The size of cache drive. Must be at least 50 Gb.
 * *\<proxy>*: If proxy needs to be enabled or not.<br>
-  Accepted values: enabled, disabled
+  Accepted values: enabled, disabled.<br>
   If proxy is set to enabled, you must provide proxy host and proxy port information
 * *\<proxy-host>*: The proxy host name or ip address
 * *\<proxy-port>*: Proxy port
 * *\<auto-update-ring>*: Update ring the cache node should have.<br>
-  Accepted values: slow, fast.
+  Accepted values: slow, fast.<br>
   If update ring is set to slow, you must provide the day of week, time of day and week of month the cache node should be updated.
 * *\<auto-update-day>*: The day of the week cache node should be updated. Week starts from Monday.<br>
   Accepted values: 1,2,3,4,5,6,7
@@ -160,6 +160,8 @@ az mcc ent node update --cache-node-name <mycachenode> --mcc-resource-name <mymc
 <br>
 <br>
 
+# [Windows host OS](#tab/cli/windows)
+
 Use the following command to configure cache node for deployment to a **Windows** host machine.
 
 Replace the following placeholders with your own information:
@@ -170,12 +172,12 @@ Replace the following placeholders with your own information:
   Accepted value: /var/mcc
 * *\<size-in-gb>*: The size of cache drive. Must be at least 50 Gb.
 * *\<proxy>*: If proxy needs to be enabled or not.<br>
-  Accepted values: enabled, disabled
+  Accepted values: enabled, disabled.<br>
   If proxy is set to enabled, you must provide proxy host and proxy port information
 * *\<proxy-host>*: The proxy host name or ip address
 * *\<proxy-port>*: Proxy port
 * *\<auto-update-ring>*: Update ring the cache node should have.<br>
-  Accepted values: slow, fast.
+  Accepted values: slow, fast.<br>
   If update ring is set to slow, you must provide the day of week, time of day and week of month the cache node should be updated.
 * *\<auto-update-day>*: The day of the week cache node should be updated. Week starts from Monday.<br>
   Accepted values: 1,2,3,4,5,6,7
