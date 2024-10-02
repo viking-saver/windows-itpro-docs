@@ -41,9 +41,9 @@ With attackers targeting employees and their devices, organizations need stronge
 
 Help keep business data secure and employees productive with robust safeguards and control for applications. Windows 11 has multiple layers of application security that shield critical data and code integrity. Application protection, privacy controls, and least-privilege principles enable developers to build in security by design. This integrated security protects against breaches and malware, helps keep data private, and gives IT administrators the controls they need. As a result, organizations and regulators can be confident that critical data is protected.
 
-### End-to-end protection with modern management
+### End-to-end protection with cloud-native management
 
-Increase protection and efficiency with Windows 11 and chip-to-cloud security. Microsoft offers comprehensive cloud services for identity, storage, and access management. Microsoft provides the tools needed to attest that Windows 11 devices connecting to your network or accessing your data and resources are trustworthy. You can enforce compliance and conditional access with modern device management (MDM) solutions such as Microsoft Intune and Microsoft Entra ID. Security by default not only enables people to work securely anywhere, but it also simplifies IT. A streamlined, chip-to-cloud security solution based on Windows 11, improves productivity for IT and security teams by a reported 25% <sup>[\[8\]](conclusion.md#footnote8)</sup>.
+Increase protection and efficiency with Windows 11 and chip-to-cloud security. Microsoft offers comprehensive cloud services for identity, storage, and access management. Microsoft provides the tools needed to attest that Windows 11 devices connecting to your network or accessing your data and resources are trustworthy. You can enforce compliance and conditional access with management solutions such as Microsoft Intune and cloud-based identity with Microsoft Entra ID. Security by default not only enables people to work securely anywhere, but it also simplifies IT. A streamlined, chip-to-cloud security solution based on Windows 11, improves productivity for IT and security teams by a reported 25% <sup>[\[8\]](conclusion.md#footnote8)</sup>.
 
 ## Security by design and default
 
