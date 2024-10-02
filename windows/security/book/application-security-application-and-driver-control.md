@@ -47,8 +47,7 @@ Customers can use some built-in options for App Control for Business or upload t
 
 User Account Control (UAC) helps prevent malware from damaging a PC and enables organizations to deploy a better-managed desktop. With UAC, apps and tasks always run in the security context of a non-administrator account unless an administrator specifically authorizes administrator-level access to the system. UAC can block the automatic installation of unauthorized apps and prevent inadvertent changes to system settings.
 
-Organizations can use a modern device management (MDM) solution like Microsoft Intune<sup>[\[9\]](conclusion.md#footnote9)</sup> to remotely configure UAC settings. Organizations without MDM can change settings directly
-on the device.
+Organizations can use a device management solution like Microsoft Intune<sup>[\[9\]](conclusion.md#footnote9)</sup> to remotely configure UAC settings. For those without such a solution, settings can be adjusted directly on the device.
 
 Enabling UAC helps prevent malware from altering PC settings and potentially gaining access to networks and sensitive data. UAC can also block the automatic installation of unauthorized
 apps and prevent inadvertent changes to system settings.

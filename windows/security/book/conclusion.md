@@ -67,7 +67,7 @@ Enhanced:
 <sup><a name="footnote4"></a>4</sup> Based on Monthly Active Device data. "Earnings Release FY23 Q3" - Microsoft, April 2023.\
 <sup><a name="footnote5"></a>5</sup> Windows 11 results are in comparison with Windows 10 devices. "Windows 11 Survey Report," Techaisle, February 2022.\
 <sup><a name="footnote6"></a>6</sup> Requires developer enablement.\
-<sup><a name="footnote7"></a>7</sup> Requires Microsoft Entra ID and Microsoft Intune, or other modern device management solution product required; sold separately.\
+<sup><a name="footnote7"></a>7</sup> Requires Microsoft Entra ID and Microsoft Intune, or other device management solution product required; sold separately.\
 <sup><a name="footnote8"></a>8</sup> Commissioned study delivered by Forrester Consulting. "The Total Economic Impact&trade; of Windows 11 Pro Devices", December 2022. Note: quantified benefits reflect results over three years combined into a single composite organization that generates $1 billion in annual revenue, has 2,000 employees, refreshes hardware on a four-year cycle, and migrates the entirety of its workforce to Windows 11 devices.\
 <sup><a name="footnote9"></a>9</sup> Sold separately.\
 <sup><a name="footnote10"></a>10</sup> Email encryption is supported on products such as Microsoft Exchange Server and Microsoft Exchange Online.\

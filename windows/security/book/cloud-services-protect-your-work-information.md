@@ -57,9 +57,9 @@ Both these features use a new [Global Secure Access client for Windows](/entra/g
 - [Microsoft Entra Private Access](/entra/global-secure-access/concept-private-access)
 - [Microsoft Entra Internet Access](/entra/global-secure-access/concept-internet-access)
 
-## Modern device management through MDM
+## Cloud-native management
 
-Windows 11 supports modern device management through mobile device management (MDM) protocols so that IT professionals can manage company security policies and business applications without compromising user privacy on corporate or employee-owned devices. With MDM solutions like Microsoft Intune<sup>[\[9\]](conclusion.md#footnote9)</sup>, IT can manage Windows 11 using industry standard protocols. To simplify setup for users, management features are built directly into Windows, eliminating the need for a separate MDM client.
+Microsoft recommends cloud-based device management so that IT professionals can manage company security policies and business applications without compromising user privacy on corporate or employee-owned devices. With cloud-native device management solutions like Microsoft Intune<sup>[\[9\]](conclusion.md#footnote9)</sup>, IT can manage Windows 11 using industry standard protocols. To simplify setup for users, management features are built directly into Windows, eliminating the need for a separate device management client.
 
 Windows 11 built-in management features include:
 
