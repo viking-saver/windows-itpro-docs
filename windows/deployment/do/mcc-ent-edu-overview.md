@@ -1,6 +1,6 @@
 ---
-title: MCCE Overview
-description: Overview, supported scenarios, and content types for Microsoft Connected Cache for Enterprise and Education (MCCE).
+title: MCC Overview
+description: Overview, supported scenarios, and content types for Microsoft Connected Cache for Enterprise and Education (MCC).
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: conceptual

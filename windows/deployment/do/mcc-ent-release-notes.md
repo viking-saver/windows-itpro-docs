@@ -1,6 +1,6 @@
 ---
-title: MCCE Release Notes
-description: Release Notes for Microsoft Connected Cache for Enterprise and Education (MCCE).
+title: MCC Release Notes
+description: Release Notes for Microsoft Connected Cache for Enterprise and Education (MCC).
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: conceptual
@@ -14,9 +14,9 @@ appliesto:
 ms.date: 09/27/2024
 ---
 
-# Release Notes for Microsoft Connected Cache for Enterprise and Education (MCCE)
+# Release Notes for Microsoft Connected Cache for Enterprise and Education (MCC)
 
-This article contains details about the latest releases of MCCE. Since MCCE is a Preview service, some releases may contain breaking changes that will be highlighted as such.
+This article contains details about the latest releases of MCC. Since MCC is a Preview service, some releases may contain breaking changes that will be highlighted as such.
 
 ## Release v0.1.0 (Public Preview launch)
 
@@ -33,8 +33,8 @@ This article contains details about the latest releases of MCCE. Since MCCE is a
 - Added support for creating both Windows-hosted and Linux-hosted cache nodes under the same MCC Azure resource
 - Added Azure CLI support for programmatic creation and management of MCC Azure resources and cache nodes
 - Added support for unauthenticated proxy and cloud proxy integration
-- Added ability to set each cache node's Update Ring to govern cadence of MCCE container updates
+- Added ability to set each cache node's Update Ring to govern cadence of MCC container updates
 
 ## Related content
 
-- [Overview of MCCE](mcc-ent-edu-overview.md)
+- [Overview of MCC](mcc-ent-edu-overview.md)

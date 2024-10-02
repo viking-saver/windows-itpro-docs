@@ -1,6 +1,6 @@
 ---
-title: Manage MCCE cache nodes using CLI
-description: Details on how to manage Microsoft Connected Cache for Enterprise (MCCE) cache nodes via Azure CLI commands.
+title: Manage MCC cache nodes using CLI
+description: Details on how to manage Microsoft Connected Cache for Enterprise (MCC) cache nodes via Azure CLI commands.
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: how-to
@@ -20,7 +20,7 @@ ms.date: 06/03/2024
 
 <br>
 
-This article outlines how to create, configure, and deploy Microsoft Connected Cache for Enterprise (MCCE) cache nodes using Azure CLI.
+This article outlines how to create, configure, and deploy Microsoft Connected Cache for Enterprise (MCC) cache nodes using Azure CLI.
 
  
 ## Prerequisites:
@@ -44,10 +44,10 @@ az group create --name myrg --location westus
 Once the resource group is created, you'll need to create a Microsoft Connected Cache for Enterprise resource.
 
 
-### 2. Create an MCCE Azure resource
-An MCCE Azure resource is a top-level Azure resource under which cache nodes can be created.
+### 2. Create an MCC Azure resource
+An MCC Azure resource is a top-level Azure resource under which cache nodes can be created.
 
-To create an MCCE Azure resource, use `az mcc ent resource create`
+To create an MCC Azure resource, use `az mcc ent resource create`
 
 ```azurecli-interactive
 az mcc ent resource create --mcc-resource-name mymccresource --resource-group myrg

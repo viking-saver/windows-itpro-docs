@@ -1,6 +1,6 @@
 ---
-title: Deploy MCCE cache software to a Linux host machine
-description: Details on how to deploy Microsoft Connected Cache for Enterprise and Education (MCCE) cache software to a Linux host machine.
+title: Deploy MCC cache software to a Linux host machine
+description: Details on how to deploy Microsoft Connected Cache for Enterprise and Education (MCC) cache software to a Linux host machine.
 author: chrisjlin
 ms.author: lichris
 manager: naengler
@@ -13,13 +13,13 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-microsoft-connected-cache target=_blank>Microsoft Connected Cache for Enterprise and Education</a>	
 ---
 
-# Deploy MCCE cache node to a Linux host machine
+# Deploy Microsoft Connected Cache caching software to a Linux host machine
 
-This article describes how to deploy Microsoft Connected Cache for Enterprise and Education (MCCE) caching software to a Linux host machine.
+This article describes how to deploy Microsoft Connected Cache for Enterprise and Education (MCC) caching software to a Linux host machine.
 
-Before deploying MCCE to a Linux host machine, ensure that the host machine meets all [requirements](mcc-ent-prerequisites.md), and that you have [created and configured your MCC Azure resource](https://aka.ms/mccent-create-resources).
+Before deploying MCC to a Linux host machine, ensure that the host machine meets all [requirements](mcc-ent-prerequisites.md), and that you have [created and configured your MCC Azure resource and cache node](mcc-ent-create-resource-and-cache.md).
 
-## Steps to deploy MCCE cache node to Linux
+## Steps to deploy MCC cache node to Linux
 
 # [Azure portal](#tab/portal)
 
@@ -38,7 +38,7 @@ To deploy a cache node programmatically, you'll need to use Azure CLI to get the
     az mcc ent node get-provisioning-details --cache-node-name mycachenode --mcc-resource-name mymccresource --resource-group myrg
     ```
 1. Save the resulting output. These values will be passed as parameters within the provisioning command.
-1. Download and extract the [MCCE provisioning package for Linux](https://aka.ms/MCC-Ent-InstallScript-Linux) to your host machine.
+1. Download and extract the [MCC provisioning package for Linux](https://aka.ms/MCC-Ent-InstallScript-Linux) to your host machine.
 1. Open a command line window *as administrator* on the host machine, then change directory to the extracted provisioning package.
 1. Set access permissions to allow the `provisionmcc.sh` script within the provisioning package directory to execute.
 1. Replace the values in the following provisioning command before running it on the host machine.
@@ -55,4 +55,4 @@ sudo ./provisionmcc.sh customerid="enter mccResourceId here" cachenodeid=" enter
 ## Related content
 
 - [Deploy to a Windows host machine](mcc-ent-deploy-to-windows.md)
-- [Uninstall MCCE](mcc-ent-uninstall-cache-node.md)
+- [Uninstall MCC](mcc-ent-uninstall-cache-node.md)
