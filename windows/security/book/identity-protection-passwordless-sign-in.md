@@ -108,6 +108,8 @@ Windows presence sensing<sup>[\[14\]](conclusion.md#footnote14)</sup> provides a
 
 Windows presence sensing combines presence detection sensors with Windows Hello facial recognition to sign the user in hands-free and automatically locks the device when the user leaves. With adaptive dimming, the PC dims the screen when the user looks away on compatible devices with presence sensors. It's also easier than ever to configure presence sensors on devices, with easy enablement in the out-of-the-box experience and new links in Settings to help find presence sensing features. Device manufacturers can customize and build extensions for the presence sensor.
 
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+
 ### Developer APIs and app privacy support for presence sensing
 
 Privacy is top of mind and more important than ever. Customers want to have greater transparency and control over the use of their information. We're pleased to announce new app privacy settings that enable users to allow or block access to their presence sensor information. Users can decide on these settings during the initial Windows 11 setup.
@@ -119,15 +121,11 @@ Users can also take advantage of more granular settings to easily enable and dis
 - [Presence sensing][LINK-7]
 - [Manage presence sensing settings in Windows 11][LINK-8]
 
-## FIDO support
+## FIDO2 support
 
 The FIDO Alliance, the Fast Identity Online industry standards body, was established to promote authentication technologies and standards that reduce reliance on passwords. FIDO Alliance and World Wide Web Consortium (W3C) have worked together to define the Client to Authenticator Protocol (CTAP2) and Web Authentication (WebAuthn) specifications, which are the industry standard for providing strong, phishing-resistant, user friendly, and privacy preserving authentication across the web and apps. FIDO standards and certifications are becoming recognized as the leading standard for creating secure authentication solutions across enterprises, governments, and consumer markets.
 
 Windows 11 can also use passkeys from external FIDO2 security keys for authentication alongside or in addition to Windows Hello and Windows Hello for Business, which is also a FIDO2-certified passwordless solution. As a result, Windows 11 can be used as a FIDO authenticator for many popular identity management services.
-
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
-
-- [Passwordless security key sign-in][LINK-9]
 
 ### Passkeys
 
@@ -139,7 +137,8 @@ Passkeys on Windows 11 are protected by Windows Hello or Windows Hello for Busin
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
-- [Passkeys][LINK-10]
+- [Support for passkeys in Windows][LINK-10]
+- [Enable passkeys (FIDO2) for your organization][LINK-9]
 
 ## Microsoft Authenticator
 
@@ -154,7 +153,6 @@ Using this secure app for authentication and authorization enables people to be 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
 - [Authentication methods in Microsoft Entra ID - Microsoft Authenticator app][LINK-11]
-- [Public preview: Expanding passkey support in Microsoft Entra ID][https://techcommunity.microsoft.com/t5/microsoft-entra-blog/public-preview-expanding-passkey-support-in-microsoft-entra-id/ba-p/4062702]
 
 ## Smart cards for Windows service
 
@@ -192,8 +190,8 @@ Windows 11 supports federated sign-in with external education identity managemen
 [LINK-6]: /windows/security/identity-protection/hello-for-business/feature-multifactor-unlock
 [LINK-7]: /windows-hardware/design/device-experiences/sensors-presence-sensing
 [LINK-8]: https://support.microsoft.com/topic/82285c93-440c-4e15-9081-c9e38c1290bb
-[LINK-9]: /azure/active-directory/authentication/howto-authentication-passwordless-security-key
-[LINK-10]: https://fidoalliance.org/passkeys
+[LINK-9]: /entra/identity/authentication/how-to-enable-passkey-fido2
+[LINK-10]: /windows/security/identity-protection/passkeys
 [LINK-11]: /entra/identity/authentication/concept-authentication-authenticator-app
 [LINK-12]: /windows/security/identity-protection/smart-cards/smart-card-windows-smart-card-technical-reference
 [LINK-13]: /education/windows/federated-sign-in
