@@ -136,79 +136,51 @@ az mcc ent node get-provisioning-details --cache-node-name mycachenode --mcc-res
 
 Save the resulting values for cacheNodeId, customerKey, mccResourceId, registrationKey. These GUIDs are needed to create the provisioning script.
 
-### 7. Deploy cache node
-<br>
+### Example script:
+Below is a pseudocode example of how to script bulk creation and configuration of an MCC Azure resource and five MCC cache nodes.
 
-#### Deploy cache node to Linux host machine
-Before you deploy your cache node to a Linux host machine, make sure you have met the prerequisites listed here: [Host machine requirements](mcc-ent-prerequisites.md)
+<!--# [Bash](#tab/bash)
 
-Use the following link to download and extract the Linux-compatible MCCE provisioning package onto the host machine.
+:::code language="azurecli" source="~/azure_cli_scripts/azure-cli/create-azure-resources-at-scale/bash/create-azure-resources-at-scale.sh" id="step4":::
 
-[Download MCCE provisioning package for Linux host machine](https://aka.ms/MCC-Ent-InstallScript-Linux)
+In your console output, are you missing the last row in your CSV file?  This can be caused by a missing line continuation character after the last line. Add a blank line at the end of your CSV file to fix the issue.
 
-<br>
+# [PowerShell](#tab/powershell)
 
->[!IMPORTANT]
->Before you execute the provisioning command, make sure you change directory to the extracted provisioning package and set the script execution permissions by running the command below.
-```azurepowershell-interactive
-sudo chmod +x provisionmcc.sh
+:::code language="azurecli" source="~/azure_cli_scripts/azure-cli/create-azure-resources-at-scale/powershell/create-azure-resources-at-scale.ps1" id="step4":::
+
+-->
+
+# [PowerShell](#tab/powershell)
+
+```powershell
+#Define variables
+$mccResourceName = "demo-01"
+$cacheNodeName = "demo-node"
+$cacheNodeOperatingSystem = "Windows"
+$resourceGroup = "myRG"
+$resourceLocation = "westus"
+$cacheNodesToCreate = 5
+$proxyHost = "yourProxyHost.com"
+$proxyPort = "8080"
+
+#Create MCC Azure resource
+az mcc ent resource create --mcc-resource-name $mccResourceName --location $resourceLocation --resource-group $resourceGroup
+
+#Create 5 cache nodes
+for ($cacheNodeNumber = 1; $cacheNodeNumber -le $cacheNodesToCreate; $cacheNodeNumber++) {
+    $iteratedCacheNodeName = $cacheNodeName + "-" + $cacheNodeNumber
+    
+    #Create cache node
+    az mcc ent node create --cache-node-name $iteratedCacheNodeName --mcc-resource-name $mccResourceName --host-os $cacheNodeOperatingSystem --resource-group $resourceGroup
+
+    #Configure cache node
+    az mcc ent node update --cache-node-name $iteratedCacheNodeName --mcc-resource-name $mccResourceName --resource-group $resourceGroup --cache-drive  "[{physical-path:/var/mcc,size-in-gb:50}]" --proxy enabled --proxy-host $proxyHost --proxy-port $proxyPort
+}
 ```
-
-Replace the values in the following provisioning command before running it.<br>
-
-```azurepowershell-interactive
-sudo ./provisionmcc.sh customerid="enter mccResourceId here" cachenodeid=" enter cacheNodeId here " customerkey=" enter customerKey here " registrationkey="enter registrationKey here" drivepathandsizeingb="enter physicalPath value,enter sizeInGb value here" shoulduseproxy="true" proxyurl=http://enter proxy hostname:enter port
-```
-<br>
-
->[!IMPORTANT]
->'shoulduseproxy' parameter is required, whether or not your network uses proxy to access internet.
-
-#### Deploy cache node to Windows host machine
-
-Before you deploy your cache node to a Windows host machine, make sure you have met the prerequisites listed here: [Host machine requirements](mcc-ent-prerequisites.md)
-
-Use the following link to download and extract the Windows-compatible MCCE provisioning package onto the host machine.
-[Download MCCE provisioning package for Windows host machine](https://aka.ms/MCC-Ent-InstallScript-WSL)
-<br>
-
->[!IMPORTANT]
->Before you execute the provisioning command, make sure you change directory to the extracted provisioning package and set the script execution permissions by running the command below.
-```azurepowershell-interactive
-Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process
-```
-
-If you're using a **Group Managed Service Account**, replace the values in the following provisioning command before running it.<br>
-
-```powershell-interactive
-./provisionmcconwsl.ps1 -installationFolder c:\mccwsl01 -customerid enter mccResourceId here -cachenodeid enter cacheNodeId here -customerkey enter customerKey here -registrationkey enter registration key -cacheDrives "/var/mcc,enter drive size"  -shouldUseProxy $true -proxyurl " http://enter proxy host name:enter port"  -mccRunTimeAccount $User
-```
-
-<br>
-
->[!IMPORTANT]
->'shoulduseproxy' parameter is required, whether or not your network uses proxy to access internet.
-
-If you're using **Local User account** or **Domain User account**, replace the values in the following provisioning command before running it.<br>
-
-```powershell-interactive
-./provisionmcconwsl.ps1 -installationFolder c:\mccwsl01 -customerid enter mccResourceId here -cachenodeid enter cacheNodeId here -customerkey enter customerKey here -registrationkey enter registration key -cacheDrives "/var/mcc,enter drive size"  -shouldUseProxy $true -proxyurl " http://enter proxy host name:enter port"  -mccRunTimeAccount $User -mccLocalAccountCredential $myLocalAccountCredential 
-```
-
-<br>
-
->[!IMPORTANT]
->'shoulduseproxy' parameter is required, whether or not your network uses proxy to access internet.
-
 
 ## Next step
 
-To verify cache node functionality, see [Verify cache node functionality](mcc-ent-verify-cache-node.md)
-
-
-<br>
-<br>
-
-### Sample script:
-Below is a pseudo code that shows how the above can be scripted for bulk creation and configuration of cache node.
-
+> [!div class="nextstepaction"]
+> [Deploy cache node to Linux host machine](mcc-ent-deploy-to-Linux.md)
+> [Deploy cache node to Windows host machine](mcc-ent-deploy-to-Windows.md)
