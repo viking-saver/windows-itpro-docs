@@ -29,6 +29,24 @@ Windows Hello can authenticate users to a Microsoft account (MSA), identity prov
 
 - [Configure Windows Hello][LINK-1]
 
+### Windows Hello PIN
+
+The Windows Hello PIN, which can only be entered by someone with physical access to the device, can be used for strong multifactor authentication. The PIN is protected by the TPM and, like biometric data, never leaves the device. When a user enters their PIN, an authentication key is unlocked and used to sign a request sent to the authenticating server.
+
+The TPM protects against threats including PIN brute-force attacks on lost or stolen devices. After too many incorrect guesses, the device locks. IT admins can set security policies for PINs, such as complexity, length, and expiration requirements.
+
+### Windows Hello biometric
+
+Windows Hello biometric sign-in enhances both security and productivity with a quick, convenient sign-in experience. There's no need to enter a password every time when a face or fingerprint is the credential.
+
+Windows devices that support biometric hardware such as fingerprint or facial recognition cameras integrate directly with Windows Hello, enabling access to Windows client resources and services. Biometric readers for both face and fingerprint must comply with Windows Hello biometric requirements. Windows Hello facial recognition is designed to only authenticate from trusted cameras used at the time of enrollment.
+
+If a peripheral camera is attached to the device after enrollment, that camera will only be allowed for facial authentication after it has been validated by signing in with the internal camera. For additional security, external cameras can be disabled for use with Windows Hello facial recognition.
+
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+
+- [Windows Hello biometric requirements][LINK-4]
+
 ## Windows Hello for Business
 
 Windows Hello for Business extends Windows Hello to work with an organization's Active Directory and Microsoft Entra ID accounts. It provides single sign-on access to work or school resources such as OneDrive, work email, and other business apps. Windows Hello for Business also give IT admins the ability to manage PIN and other sign-in requirements for devices connecting to work or school resources.
@@ -37,7 +55,17 @@ Windows Hello for Business extends Windows Hello to work with an organization's 
 
 - [Windows Hello for Business overview][LINK-2]
 
-## Windows passwordless experience
+### Windows Hello for Business multi-factor unlock
+
+For organizations that need an extra layer of sign-in security, multi-factor unlock enables IT admins to configure Windows by requiring a combination of two unique trusted signals to sign in. Trusted signal examples include a PIN or biometric data (face or fingerprint) combined with either a PIN, Bluetooth, IP configuration, or Wi-Fi.
+
+Multi-factor unlock is useful for organizations who need to prevent information workers from sharing credentials or need to comply with regulatory requirements for a two-factor authentication policy.
+
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+
+- [Multi-factor unlock][LINK-6]
+
+### Windows passwordless experience
 
 Windows 11 devices with Windows Hello for Business can protect user identities by removing the need to use passwords from day one.
 
@@ -60,24 +88,6 @@ Users authenticate directly with Microsoft Entra ID, helping speed access to on-
 
 - [Windows passwordless experience][LINK-3]
 
-## Windows Hello PIN
-
-The Windows Hello PIN, which can only be entered by someone with physical access to the device, can be used for strong multifactor authentication. The PIN is protected by the TPM and, like biometric data, never leaves the device. When a user enters their PIN, an authentication key is unlocked and used to sign a request sent to the authenticating server.
-
-The TPM protects against threats including PIN brute-force attacks on lost or stolen devices. After too many incorrect guesses, the device locks. IT admins can set security policies for PINs, such as complexity, length, and expiration requirements.
-
-## Windows Hello biometric
-
-Windows Hello biometric sign-in enhances both security and productivity with a quick, convenient sign-in experience. There's no need to enter a password every time when a face or fingerprint is the credential.
-
-Windows devices that support biometric hardware such as fingerprint or facial recognition cameras integrate directly with Windows Hello, enabling access to Windows client resources and services. Biometric readers for both face and fingerprint must comply with Windows Hello biometric requirements. Windows Hello facial recognition is designed to only authenticate from trusted cameras used at the time of enrollment.
-
-If a peripheral camera is attached to the device after enrollment, that camera will only be allowed for facial authentication after it has been validated by signing in with the internal camera. For additional security, external cameras can be disabled for use with Windows Hello facial recognition.
-
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
-
-- [Windows Hello biometric requirements][LINK-4]
-
 ## Enhanced Sign-in Security (ESS)
 
 Windows Hello biometrics also supports Enhanced Sign-in Security, which uses specialized hardware and software components to raise the security bar even higher for biometric sign-in.
@@ -91,16 +101,6 @@ Enhanced Sign-in Security is configured by device manufacturers during the manuf
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
 - [Windows Hello Enhanced Sign-in Security][LINK-5]
-
-## Windows Hello for Business multi-factor unlock
-
-For organizations that need an extra layer of sign-in security, multi-factor unlock enables IT admins to configure Windows by requiring a combination of two unique trusted signals to sign in. Trusted signal examples include a PIN or biometric data (face or fingerprint) combined with either a PIN, Bluetooth, IP configuration, or Wi-Fi.
-
-Multi-factor unlock is useful for organizations who need to prevent information workers from sharing credentials or need to comply with regulatory requirements for a two-factor authentication policy.
-
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
-
-- [Multi-factor unlock][LINK-6]
 
 ## Windows presence sensing
 
@@ -129,7 +129,7 @@ Windows 11 can also use passkeys from external FIDO2 security keys for authentic
 
 - [Passwordless security key sign-in][LINK-9]
 
-## Passkeys
+### Passkeys
 
 Windows 11 makes it much harder for hackers who exploit stolen passwords via phishing attacks by empowering users to replace passwords with passkeys. Passkeys are the cross-platform future of secure sign-in. Microsoft and other technology leaders are supporting passkeys across their platforms and services.
 
