@@ -36,7 +36,7 @@ These steps should be taken after deploying MCCE caching software to a [Windows]
 
     If successful, the Windows client device should begin to download a small image file from the MCCE cache node.
 
-1. To check how much content an individual Windows client has pulled from an MCCE cache node, open the [Delivery Optimization activity monitor](https://learn.microsoft.com/microsoft-365-apps/updates/delivery-optimization#viewing-data-about-the-use-of-delivery-optimization) on the Windows client device.
+1. To check how much content an individual Windows client has pulled from an MCCE cache node, open the [Delivery Optimization activity monitor](/microsoft-365-apps/updates/delivery-optimization#viewing-data-about-the-use-of-delivery-optimization) on the Windows client device.
 
     You should see a donut chart titled Download Statistics. If the Windows client has pulled content from the cache node, you'll see a segment of the donut labeled "From Microsoft cache server".
 
