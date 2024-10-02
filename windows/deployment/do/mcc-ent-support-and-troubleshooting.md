@@ -1,19 +1,17 @@
 ---
-title: MCC for Enterprise support and troubleshooting
-description: Microsoft Connected Cache for Enterprise. Learn about support and troubleshooting
+title: MCCE support and troubleshooting
+description: Details on how to troubleshoot and seek support for Microsoft Connected Cache for Enterprise (MCCE).
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: how-to
-manager: aaroncz
-ms.author: nidos
-author: doshnid
-ms.reviewer: mstewart
-ms.collection: tier3
+manager: naengler
+ms.author: lichris
+author: chrisjlin
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
+- ✅ Supported Linux distributions
 - ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-microsoft-connected-cache target=_blank>Microsoft Connected Cache for Enterprise</a>	
-ms.date: 06/03/2024
+ms.date: 09/27/2024
 ---
 
 
@@ -24,6 +22,7 @@ ms.date: 06/03/2024
 [!INCLUDE [Get Azure subscription](includes/get-azure-subscription.md)]
 
 
+<<<<<<< HEAD
 
 TODO: List the prerequisites
 
@@ -47,25 +46,65 @@ For portal-based procedures, minimize bullets and numbering.
 -->
 
 ## "\<verb\> * \<noun\>"
+=======
+<!-- 1. H1 -----------------------------------------------------------------------------
+
+Required: Use a "<verb> * <noun>" format for your H1. Pick an H1 that clearly conveys the task the user will complete.
+
+For example: "Migrate data from regular tables to ledger tables" or "Create a new Azure SQL Database".
+
+* Include only a single H1 in the article.
+* Don't start with a gerund.
+* Don't include "Tutorial" in the H1.
+
+-->
+
+# Troubleshoot Microsoft Connected Cache for Enterprise and Education (MCCE)
+
+<!-- 2. Introductory paragraph ----------------------------------------------------------
+
+Required: Lead with a light intro that describes, in customer-friendly language, what the customer will do. Answer the fundamental “why would I want to do this?” question. Keep it short.
+
+Readers should have a clear idea of what they will do in this article after reading the introduction.
+
+* Introduction immediately follows the H1 text.
+* Introduction section should be between 1-3 paragraphs.
+* Don't use a bulleted list of article H2 sections.
+
+Example: In this article, you will migrate your user databases from IBM Db2 to SQL Server by using SQL Server Migration Assistant (SSMA) for Db2.
+
+-->
+
+This article contains instructions on how to troubleshoot different issues you may encounter while using MCCE. These issues are categorized by the task in which they may be encountered. For example, this next section covers troubleshooting [MCC Azure resource creation](mcc-ent-create-resource-and-cache.md).
+
+## Troubleshooting Azure resource creation
+
+MCC Azure resource creation can be initiated using either the Azure portal or the Azure CLI command set. If you're encountering an error during resource creation, check that you have the necessary RPaaS permissions and have filled out all required fields.
+
+## Troubleshooting cache node creation
+>>>>>>> baff7906fe02b76b4a3649d7e6c3acdac9534e66
 TODO: Add introduction sentence(s)
 [Include a sentence or two to explain only what is needed to complete the procedure.]
 TODO: Add ordered list of procedure steps
+
 1. Step 1
 1. Step 2
 1. Step 3
 
-## "\<verb\> * \<noun\>"
+## Troubleshooting cache node deployment
 TODO: Add introduction sentence(s)
 [Include a sentence or two to explain only what is needed to complete the procedure.]
 TODO: Add ordered list of procedure steps
+
 1. Step 1
 1. Step 2
 1. Step 3
 
-## "\<verb\> * \<noun\>"
+## Troubleshooting cache node monitoring
 TODO: Add introduction sentence(s)
 [Include a sentence or two to explain only what is needed to complete the procedure.]
 TODO: Add ordered list of procedure steps
+
 1. Step 1
 1. Step 2
 1. Step 3
@@ -78,22 +117,6 @@ Optional: You have two options for manually curated links in this pattern: Next 
 
 -->
 
-## Next step
+## Filing a support request
 
-TODO: Add your next step link(s)
-
-> [!div class="nextstepaction"]
-> [Write concepts](article-concept.md)
-
-<!-- OR -->
-
-## Related content
-
-TODO: Add your next step link(s)
-
-- [Write concepts](article-concept.md)
-
-<!--
-Remove all the comments in this template before you sign-off or merge to the main branch.
--->
-
+TODO: Add steps for filling out a CSS ticket.

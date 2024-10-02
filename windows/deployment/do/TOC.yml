@@ -45,19 +45,19 @@
           href: mcc-ent-create-resource-and-cache.md
         - name: Configure, provision and deploy cache node
           items:
-          - name: Configure and provision cache node on Linux
-            href: mcc-ent-configure-provision-linux.md
-          - name: Configure and provision cache node on Windows
-            href: mcc-ent-configure-provision-windows.md
+          - name: Deploy MCC to Linux
+            href: mcc-ent-deploy-to-linux.md
+          - name: Deploy MCC to Windows
+            href: mcc-ent-deploy-to-windows.md
         - name: Using CLI to create and manage cache nodes
           href: mcc-ent-manage-cache-using-CLI.md 
         - name: Verify cache node functionality
           href: mcc-ent-verify-cache-node.md
         - name: Monitor cache node
-          href: mcc-ent-monitor-cache.md
+          href: mcc-ent-monitoring.md
         - name: Update MCC
-          href: mcc-ent-update-cache.md 
-        - name: Uninstalling cache node
+          href: mcc-ent-update-cache-node.md 
+        - name: Uninstall cache node
           href: mcc-ent-uninstall-cache-node.md     
       - name: Resources
         items:
