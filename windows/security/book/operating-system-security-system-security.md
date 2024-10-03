@@ -139,9 +139,24 @@ With Assigned Access, Windows devices restrict functionality to pre-selected app
 
 ## Windows Protected Print
 
-In late 2023, we launched Windows Protected Print Mode to build a more modern and secure print system that maximizes compatibility and puts users first. This will be the default print mode in the future.
+Windows protected print mode is exclusively built to provide a more modern and secure print system that maximizes compatibility and puts users first. It simplifies the printing experience by allowing PCs exclusively print using the Windows modern print stack.
+
+Enabling Windows protected print mode is highly recommended.  
+
+The benefits of Windows protected print mode include:
+
+- Increased PC security.
+
+- Simplified and consistent printing experience, regardless of PC architecture.
+
+- Removes the need to manage print drivers  
+
+Windows protected print mode is designed to work with Mopria certified printers only. Many existing printers are already compatible.  For more information, see [Windows protected print mode device compatibility] (/windows-hardware/drivers/print/windows-protected-print-mode?branch=main#windows-protected-print-mode-device-compatibility) 
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
--[New Windows 11 features strengthen security to address evolving cyberthreat landscape] (https://www.microsoft.com/en-us/security/blog/2024/05/20/new-windows-11-features-strengthen-security-to-address-evolving-cyberthreat-landscape/)
+- [Windows protected print mode] (/en-us/windows-hardware/drivers/print/windows-protected-print-mode?branch=main)
+
+-[New Windows 11 features strengthen security to address evolving cyberthreat landscape] (https://www.microsoft.com/en-us/security/blog/2024/05/20 new-windows-11-features-strengthen-security-to-address-evolving-cyberthreat-landscape/)
+
 -[A new, modern, and secure print experience from Windows] (https://techcommunity.microsoft.com/t5/security-compliance-and-identity/a-new-modern-and-secure-print-experience-from-windows/ba-p/4002645)
