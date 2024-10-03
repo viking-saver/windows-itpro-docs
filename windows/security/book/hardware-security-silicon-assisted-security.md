@@ -26,6 +26,8 @@ With new installs of Windows 11, OS support for VBS and HVCI is turned on by def
 
 **Hypervisor-enforced Paging Translation (HVPT)** is an overall security enhancement for the system. HVPT protects linear address translations from being tampered with, to protect sensitive system structures from write-what-where attacks. HVPT will be available on x64 machines as of Fall 2024.
 
+### Virtualization-based security enclave
+
 A **Virtualization-based security enclave** is a software-based trusted execution environment (TEE) inside a host application. VBS enclaves enable developers to use VBS to protect their application's secrets from admin-level attacks. VBS enclaves are available on Windows 10 onwards on both x64 and ARM64.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
