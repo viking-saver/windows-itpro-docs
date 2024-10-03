@@ -155,14 +155,14 @@ In your console output, are you missing the last row in your CSV file?  This can
 
 ```powershell
 #Define variables
-$mccResourceName = "demo-03"
+$mccResourceName = "myMCCResource"
 $cacheNodeName = "demo-node"
 $cacheNodeOperatingSystem = "Windows"
-$resourceGroup = "lichris-test"
+$resourceGroup = "myRG"
 $resourceLocation = "westus"
 $cacheNodesToCreate = 2
-$proxyHost = "104.42.135.96"
-$proxyPort = "3128"
+$proxyHost = "myProxy.com
+$proxyPort = "8080"
 $waitTime = 3
 
 #Create MCC Az resource
