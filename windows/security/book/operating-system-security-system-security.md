@@ -153,5 +153,5 @@ Windows protected print mode is designed to work with Mopria certified printers 
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
-- [Windows protected print mode] (/windows-hardware/drivers/print/windows-protected-print-mode)
+- [Windows protected print mode] (/windows-hardware/drivers/print/modern-print-platform)
 - [A new, modern, and secure print experience from Windows](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/a-new-modern-and-secure-print-experience-from-windows/ba-p/4002645)
