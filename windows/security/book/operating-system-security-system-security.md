@@ -91,7 +91,7 @@ Security policy settings are a critical part of your overall security strategy. 
 - Whether to record a user or group's actions in the event log
 - Membership in a group
 
-Security auditing is one of the most powerful tools that you can use to maintain the integrity of your network and assets. Auditing can help identify attacks, network vulnerabilities, and attacks against high-value targets. You can specify categories of security-related events to create an audit policy tailored to the needs of your organization using MDM policy or Group policy.
+Security auditing is one of the most powerful tools that you can use to maintain the integrity of your network and assets. Auditing can help identify attacks, network vulnerabilities, and attacks against high-value targets. You can specify categories of security-related events to create an audit policy tailored to the needs of your organization using configuration service providers (CSP) or group policies.
 
 All auditing categories are disabled when Windows is first installed. Before enabling them, follow these steps to create an effective security auditing policy:
 
@@ -119,15 +119,17 @@ Visibility and awareness of device security and health are key to any action tak
 
 ## Config Refresh
 
-With traditional Group Policy, policies were refreshed on a PC when a user signed in and every 90 minutes by default. Administrators could adjust that timing to be shorter to ensure that the PC's policies were compliant with the management settings set by IT.
+With traditional Group Policy, policy settings are refreshed on a PC when a user signs in and every 90 minutes by default. Administrators can adjust that timing to be shorter to ensure that the policy settings are compliant with the management settings set by IT.
 
-By contrast, with an MDM solution like Microsoft Intune<sup>[\[9\]](conclusion.md#footnote9)</sup>, policies are refreshed when a user signs in and then at eight-hour intervals by default. But as more available group policies were implemented through MDM, one remaining gap was the longer period between the reapplication of a changed policy.
+By contrast, with a device management solution like Microsoft Intune<sup>[\[9\]](conclusion.md#footnote9)</sup>, policies are refreshed when a user signs in and then at eight-hours interval by default. But policy settings are migrated from GPO to a device management solution, one remaining gap is the longer period between the reapplication of a changed policy.
 
-Config Refresh allows settings in the Policy configuration service provider (CSP) that drift due to misconfiguration, registry edits, or malicious software on a PC to be reset to the value the administrator intended every 90 minutes by default. It is configurable to refresh every 30 minutes if desired. The Policy CSP covers hundreds of settings that were traditionally set with Group Policy and are now set through MDM.
+Config Refresh allows settings in the Policy configuration service provider (CSP) that drift due to misconfiguration, registry edits, or malicious software on a PC to be reset to the value the administrator intended every 90 minutes by default. It's configurable to refresh every 30 minutes if desired. The Policy CSP covers hundreds of settings that were traditionally set with Group Policy and are now set through Mobile Device Management (MDM) protocols.
 
-Config Refresh can also be *paused* for a configurable period of time, after which it will be reenabled. This is to support scenarios where a helpdesk technician might need to reconfigure a PC for troubleshooting purposes. It can also be resumed at any time by an administrator.
+Config Refresh can also be paused for a configurable period of time, after which it will be reenabled. This is to support scenarios where a helpdesk technician might need to reconfigure a device for troubleshooting purposes. It can also be resumed at any time by an administrator.
+
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+
 - [Config Refresh](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/intro-to-config-refresh-a-refreshingly-new-mdm-feature/ba-p/4176921#:~:text=With%20Config%20Refresh,%20you%20can%20now)
-
 
 ## Kiosk mode (Assigned Access and Shell Launcher)
 
@@ -141,7 +143,7 @@ With Assigned Access, Windows devices restrict functionality to pre-selected app
 
 Windows protected print mode is exclusively built to provide a more modern and secure print system that maximizes compatibility and puts users first. It simplifies the printing experience by allowing PCs exclusively print using the Windows modern print stack.
 
-Enabling Windows protected print mode is highly recommended.  
+Enabling Windows protected print mode is highly recommended.
 
 The benefits of Windows protected print mode include:
 
@@ -149,9 +151,9 @@ The benefits of Windows protected print mode include:
 
 - Simplified and consistent printing experience, regardless of PC architecture.
 
-- Removes the need to manage print drivers  
+- Removes the need to manage print drivers
 
-Windows protected print mode is designed to work with Mopria certified printers only. Many existing printers are already compatible.  
+Windows protected print mode is designed to work with Mopria certified printers only. Many existing printers are already compatible.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 

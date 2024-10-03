@@ -25,12 +25,10 @@ In enterprise environments, network protection works best with Microsoft Defende
 
 Transport Layer Security (TLS) is a popular security protocol, encrypting data in transit to help provide a more secure communication channel between two endpoints. Windows enables the latest protocol versions and strong cipher suites by default and offers a full suite of extensions such as client authentication for enhanced server security, or session resumption for improved application performance. TLS 1.3 is the latest version of the protocol and is enabled by default in Windows. This version helps to eliminate obsolete cryptographic algorithms, enhance security over older versions, and aim to encrypt as much of the TLS handshake as possible. The handshake is more performant with one fewer round trip per connection on average and supports only strong cipher suites which provide perfect forward secrecy and less operational risk. Using TLS 1.3 will provide more privacy and lower latencies for encrypted online connections. Note that if the client or server application on either side of the connection does not support TLS 1.3, the connection will fall back to TLS 1.2. Windows uses the latest Datagram Transport Layer Security (DTLS) 1.2 for UDP communications.
 
-
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
 - [TLS/SSL overview (Schannel SSP)](/windows-server/security/tls/tls-ssl-schannel-ssp-overview)
 - [TLS 1.0 and TLS 1.1 soon to be disabled in Windows](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/tls-1-0-and-tls-1-1-soon-to-be-disabled-in-windows/bc-p/3894928/emcs_t/S2h8ZW1haWx8dG9waWNfc3Vic2NyaXB0aW9ufExMM0hCN0VURDk3OU9OfDM4OTQ5Mjh8U1VCU0NSSVBUSU9OU3xoSw#M6180)
-
 
 ## Domain Name System (DNS) security
 
@@ -46,7 +44,11 @@ Support for DNS encryption integrates with existing Windows DNS configurations s
 
 The number of Bluetooth devices connected to Windows 11 continues to increase. Windows users connect their Bluetooth headsets, mice, keyboards, and other accessories and improve their day-to-day PC experience by enjoying streaming, productivity, and gaming. Windows supports all standard Bluetooth pairing protocols, including classic and LE Secure connections, secure simple pairing, and classic and LE legacy pairing. Windows also implements host-based LE privacy. Windows updates help users stay current with OS and driver security features in accordance with the Bluetooth Special Interest Group (SIG) and Standard Vulnerability Reports, as well as issues beyond those required by the Bluetooth core industry standards. Microsoft strongly recommends that Bluetooth accessories' firmware and software are kept up to date.
 
-IT-managed environments have a number of [Bluetooth policies](/windows/client-management/mdm/policy-csp-bluetooth) (MDM, Group Policy, and PowerShell) that can be managed through MDM tools such as Microsoft Intune<sup>[\[9\]](conclusion.md#footnote9)</sup>. You can configure Windows to use Bluetooth technology while supporting the security needs of your organization. For example, you can allow input and audio while blocking file transfer, force encryption standards, limit Windows discoverability, or even disable Bluetooth entirely for the most sensitive environments.
+IT-managed environments have a number policy settings available via configuration service providers, group policy, and PowerShell. These settings can be managed through device management solutions like Microsoft Intune<sup>[\[9\]](conclusion.md#footnote9)</sup>. You can configure Windows to use Bluetooth technology while supporting the security needs of your organization. For example, you can allow input and audio while blocking file transfer, force encryption standards, limit Windows discoverability, or even disable Bluetooth entirely for the most sensitive environments.
+
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+
+- [Policy CSP - Bluetooth](/windows/client-management/mdm/policy-csp-bluetooth)
 
 ## Securing Wi-Fi connections
 
@@ -85,7 +87,6 @@ support from the Firewall configuration service provider (CSP) and applying thes
 
 Firewall  rule configuration with Package Family Name (PFN) is a new security feature introduced with the 22H2 release of Windows 11.  PFN based rules enforced on an app will include processes request by the app to run on its behalf.
 Currently FW rules can be set on UWP apps with packageSID. However, the processes requested by the app can have different SID and hence the rules applied to the app can be bypassed. The new PFN condition feature ensures the FW rule is uniformly applied to a package and its associated processes.
-
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
@@ -135,10 +136,6 @@ SMB alternative ports: You can use the SMB client to connect to alternative IANA
 SMB Firewall changes: The built-in firewall rules doesn't contain the SMB NetBIOS ports anymore. If you need to use an SMB1 server for legacy compatibility reasons, you must manually reconfigure the firewall to open those ports. This change brings SMB firewall rules more in line with the standard behavior for the Windows Server File Server role. Administrators can reconfigure the rules to restore the legacy ports.
 
 SMB auditing improvements: SMB now supports auditing use of SMB over QUIC, missing third party support for encryption, and missing third party support for signing. These all operate at the SMB server and SMB client level.
-
-
-
-
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 

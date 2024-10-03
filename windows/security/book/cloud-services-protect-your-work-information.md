@@ -72,7 +72,7 @@ Windows 11 built-in management features include:
 
 ## Microsoft security baselines
 
-Every organization faces security threats. However, different organizations can be concerned with different types of security threats. For example, an e-commerce company may focus on protecting its internet-facing web apps, while a hospital may focus on protecting confidential patient information. The one thing that all organizations have in common is a need to keep their apps and devices secure. These devices must be compliant with the security standards (or security baselines) defined by the organization.
+Every organization faces security threats. However, different organizations can be concerned with different types of security threats. For example, an e-commerce company might focus on protecting its internet-facing web apps, while a hospital on confidential patient information. The one thing that all organizations have in common is a need to keep their apps and devices secure. These devices must be compliant with the security standards (or security baselines) defined by the organization.
 
 A security baseline is a group of Microsoft-recommended configuration settings that explains their security implications. These settings are based on feedback from Microsoft security engineering teams, product groups, partners, and customers.
 
@@ -80,7 +80,7 @@ A security baseline is a group of Microsoft-recommended configuration settings t
 
 - [Windows security baselines you can deploy with Microsoft Intune](/mem/intune/protect/security-baselines)
 
-## MDM security baseline
+### MDM security baseline
 
 Windows 11 can be configured with Microsoft's MDM security baseline backed by ADMX policies, which functions like the Microsoft GP-based security baseline. The security baseline enables IT administrators to easily address security concerns and compliance needs for modern cloud-managed devices.
 
@@ -91,7 +91,7 @@ The security baseline includes policies for:
 - Setting credential requirements for passwords and PINs
 - Restricting use of legacy technology
 
-The MDM security baseline has been enhanced with over 70 new settings which enable local user rights assignment, services management, and local security policies which were previously only available through Group Policy.  This enable adoption of pure MDM management and closer adherence to industry standard benchmarks for security.
+The MDM security baseline has been enhanced with over 70 new settings which enable local user rights assignment, services management, and local security policies which were previously only available through Group Policy.  This enables the adoption of cloud-based device management solutions and closer adherence to industry standard benchmarks for security.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
@@ -107,13 +107,13 @@ When a device is enrolled into device management, the administrator assumes that
 
 ## Microsoft Intune
 
-Microsoft Intune <sup>[\[15\]](conclusion.md#footnote15)</sup> is a comprehensive endpoint management solution that helps secure, deploy, and manage users, apps, and devices. Intune brings together technologies like Microsoft Configuration Manager and Windows Autopilot to simplify provisioning, configuration management, and software updates across the organization.
+Microsoft Intune<sup>[\[15\]](conclusion.md#footnote15)</sup> is a comprehensive endpoint management solution that helps secure, deploy, and manage users, apps, and devices. Intune brings together technologies like Microsoft Configuration Manager and Windows Autopilot to simplify provisioning, configuration management, and software updates across the organization.
 
-Intune works with Microsoft Entra ID to manage security features and processes, including multifactor authentication.
+Intune works with Microsoft Entra ID to manage security features and processes, including multifactor authentication and conditional access.
 
-Organizations can cut costs while securing and managing remote PCs through the cloud in compliance with company policies <sup>[\[15\]](conclusion.md#footnote16)</sup>. For example, organizations save time and money by provisioning preconfigured devices to remote employees using Windows Autopilot for zerotouch deployment.
+Organizations can cut costs while securing and managing remote devices through the cloud in compliance with company policies<sup>[\[15\]](conclusion.md#footnote16)</sup>. For example, organizations can save time and money by provisioning preconfigured devices to remote employees using Windows Autopilot.
 
-Windows 11 enables IT professionals to move to the cloud while consistently enforcing security policies. Windows 11 provides expanded support for Group Policy administrative templates (ADMX-backed policies) in MDM solutions like Microsoft Intune, enabling IT professionals to easily apply the same security policies to both on-premises and remote devices.
+Windows 11 enables IT professionals to move to the cloud while consistently enforcing security policies. Windows 11 provides expanded support for group policy administrative templates (ADMX-backed policies) in cloud-native device management solutions like Microsoft Intune, enabling IT professionals to easily apply the same security policies to both on-premises and remote devices.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 

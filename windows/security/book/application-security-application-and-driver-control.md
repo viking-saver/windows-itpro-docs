@@ -14,16 +14,15 @@ capabilities to build in security from the ground up to protect against breaches
 
 ## Smart App Control
 
-Smart App Control prevents users from running malicious applications on Windows devices by blocking untrusted or unsigned applications. Smart App Control goes beyond previous built-in browser protections by adding another layer of security that is woven directly into the core of the OS at the process level. Using AI, our new Smart App Control only allows processes to run if they are predicted to be safe based on existing and new intelligence updated daily.
+Smart App Control prevents users from running malicious applications by blocking untrusted or unsigned applications. Smart App Control goes beyond previous built-in browser protections by adding another layer of security that is woven directly into the core of the OS at the process level. Using AI, Smart App Control only allows processes to run if they're predicted to be safe based on existing and new intelligence updated daily.
 
-Smart App Control builds on top of the same cloud-based AI used in App Control for Business to predict the safety of an application so that users can be confident that their applications are safe and reliable on their new Windows devices. Additionally, Smart App Control blocks unknown script files and macros from the web are blocked, greatly improving security for everyday users.
-Smart App Control will ship with new devices with Windows 11, version 22H2 installed.
+Smart App Control builds on top of the same cloud-based AI used in App Control for Business to predict the safety of an application so that users can be confident that their applications are safe and reliable on their new Windows devices. Additionally, Smart App Control blocks unknown script files and macros from the web, greatly improving security for everyday users.
 
-We have been making significant improvements to Smart App Control to increase the security, usability, and cloud intelligence response for apps in the Windows ecosystem. Users can get the latest and best experience with Smart App Control by keeping their PC up to date via Windows Update every month.
+We've been making significant improvements to Smart App Control to increase the security, usability, and cloud intelligence response for apps in the Windows ecosystem. Users can get the latest and best experience with Smart App Control by keeping their PC up to date via Windows Update every month.
 
-Additionally, evaluation mode will start automatically enabling devices that the cloud AI model predicts will have a good experience with Smart App Control in the coming months, first starting with users in North America and eventually expanding to other regions. Note that enterprise-enrolled devices will still have Smart App Control disabled by default, and we recommend enterprises running line-of-business applications continue to leverage App Control for Business.
+Additionally, evaluation mode starts automatically enabling devices that the cloud AI model predicts will have a good experience with Smart App Control in the coming months, first starting with users in North America and eventually expanding to other regions. Note that enterprise-enrolled devices have Smart App Control disabled by default, and we recommend enterprises running line-of-business applications continue to leverage App Control for Business.
 
-Devices running previous versions of Windows 11 will have to be reset with a clean installation of Windows 11, version 22H2 to take advantage of this feature. Smart App Control will be disabled on devices enrolled in enterprise management. We suggest enterprises running line-of-business applications continue to leverage App Control for Business.
+Devices running previous versions of Windows 11, version 22H2 must be reset with a clean installation of Windows 11 to take advantage of this feature.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
@@ -54,7 +53,7 @@ apps and prevent inadvertent changes to system settings.
 
 Users with standard accounts, or those using administrative accounts with UAC enabled, run most programs with limited access rights. This includes the Windows shell and any apps started from the shell, such as Windows Explorer, a web browser, productivity suite, graphics programs, or games.
 
-Some apps require additional permissions and will not work properly (or at all) when running with limited permissions. When an app needs to run with more than standard user rights, UAC allows users to run apps with a "full" administrator token (with administrative groups and privileges) instead of their default user access token. Users continue to operate in the standard user security context while enabling certain executables to run with elevated privileges if needed.
+Some apps require more permissions and won't work properly (or at all) when running with limited permissions. When an app needs to run with more than standard user rights, UAC allows users to run apps with a *full* administrator token (with administrative groups and privileges) instead of their default user access token. Users continue to operate in the standard user security context while enabling certain executables to run with elevated privileges if needed.
 
 :::image type="content" source="images/uac-settings.png" alt-text="Screenshot of the UAC settings." border="false":::
 

@@ -38,7 +38,7 @@ When location services and Find my device settings are turned on, basic system s
 
 ## OneDrive for personal
 
-Microsoft OneDrive <sup>[\[17\]](conclusion.md#footnote17)</sup> for personal provides more security, backup, and restore options for important personal files. OneDrive stores and protects files in the cloud, allowing users to access them from laptops, desktops, and mobile devices. Plus, OneDrive provides an excellent solution for backing up folders. If a device is lost or stolen, the user can quickly recover all their important files from the cloud.
+Microsoft OneDrive<sup>[\[17\]](conclusion.md#footnote17)</sup> for personal provides more security, backup, and restore options for important personal files. OneDrive stores and protects files in the cloud, allowing users to access them from laptops, desktops, and mobile devices. Plus, OneDrive provides an excellent solution for backing up folders. If a device is lost or stolen, the user can quickly recover all their important files from the cloud.
 
 In the event of a ransomware attack, OneDrive can enable recovery. And if backups are configured in OneDrive, users have additional options to mitigate and recover from a ransomware attack.
 
@@ -50,7 +50,7 @@ In the event of a ransomware attack, OneDrive can enable recovery. And if backup
 
 ## OneDrive Personal Vault
 
-OneDrive Personal Vault<sup>[\[9\]](conclusion.md#footnote9)</sup> also provides protection for the most important or sensitive files and photos without sacrificing the convenience of anywhere access. Protect digital copies of important documents in OneDrive Personal Vault. Files will be secured by identity verification yet are still easily accessible across devices.
+OneDrive Personal Vault also provides protection for the most important or sensitive files and photos without sacrificing the convenience of anywhere access. Protect digital copies of important documents in OneDrive Personal Vault. Files will be secured by identity verification yet are still easily accessible across devices.
 
 Learn how to [set up a Personal Vault][LINK-4] with a strong authentication method or a second step of identity verification, such as fingerprint, face, PIN, or a code sent via email or SMS.
 

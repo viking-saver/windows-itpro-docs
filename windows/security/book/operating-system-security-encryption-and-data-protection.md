@@ -13,7 +13,7 @@ When people travel with their PCs, their confidential information travels with t
 
 ## BitLocker
 
-BitLocker Drive Encryption is a data protection feature that integrates with the operating system and addresses the threats of data theft or exposure from lost, stolen, or inappropriately decommissioned computers. BitLocker uses the AES algorithm in XTS or CBC mode of operation with 128-bit or 256-bit key length to encrypt data on the volume. Cloud storage on Microsoft OneDrive or Azure<sup>[\[9\]](conclusion.md#footnote9)</sup> can be used to save recovery key content. BitLocker can be managed by any MDM solution such as Microsoft Intune<sup>[\[6\]](conclusion.md#footnote6)</sup> using a configuration service provider (CSP)<sup>[\[9\]](conclusion.md#footnote9)</sup>. BitLocker provides encryption for the OS, fixed data, and removable data drives (BitLocker To Go), using technologies like Hardware Security Test Interface (HSTI), Modern Standby, UEFI Secure Boot, and TPM. 
+BitLocker is a data protection feature that integrates with the operating system and addresses the threats of data theft or exposure from lost, stolen, or inappropriately decommissioned devices. BitLocker uses the AES algorithm in XTS or CBC mode of operation with 128-bit or 256-bit key length to encrypt data on the volume. Cloud storage on Microsoft OneDrive or Azure<sup>[\[9\]](conclusion.md#footnote9)</sup> can be used to save recovery key content. BitLocker can be managed by a device management solution like Microsoft Intune<sup>[\[6\]](conclusion.md#footnote6)</sup> using a configuration service provider (CSP)<sup>[\[9\]](conclusion.md#footnote9)</sup>. BitLocker provides encryption for the OS, fixed data, and removable data drives (BitLocker To Go), using technologies like Hardware Security Test Interface (HSTI), Modern Standby, UEFI Secure Boot, and TPM.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
@@ -29,9 +29,7 @@ BitLocker To Go refers to BitLocker Drive Encryption on removable data drives. B
 
 ## Device Encryption
 
-Device Encryption is consumer-level device encryption that can't be managed. Device Encryption is turned on by default for devices with the right hardware components (for example, TPM 2.0, UEFI Secure Boot, Hardware Security Test Interface, and Modern Standby). However, for a commercial scenario, it's possible for commercial customers to disable Device Encryption in favor of BitLocker Drive Encryption. BitLocker Drive Encryption is manageable through MDM.
-
-:::image type="content" source="images/device-encryption.png" alt-text="Screenshot of Settings - device encryption.":::
+Device Encryption is consumer-level device encryption that can't be managed. Device Encryption is turned on by default for devices with the right hardware components (for example, TPM 2.0, UEFI Secure Boot, Hardware Security Test Interface, and Modern Standby). However, for a commercial scenario, it's possible for organizations to disable Device Encryption in favor of BitLocker.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
@@ -39,7 +37,7 @@ Device Encryption is consumer-level device encryption that can't be managed. Dev
 
 ## Encrypted hard drive
 
-*Encrypted hard drives* are a class of hard drives that are self-encrypted at the hardware level. They allow for full-disk hardware encryption and are transparent to the user. These drives combine the security and management benefits provided by BitLocker Drive Encryption, with the power of self-encrypting drives.
+Encrypted hard drives are a class of hard drives that are self-encrypted at the hardware level. They allow for full-disk hardware encryption and are transparent to the user. These drives combine the security and management benefits provided by BitLocker Drive Encryption, with the power of self-encrypting drives.
 
 By offloading the cryptographic operations to hardware, encrypted hard drives increase BitLocker performance and reduce CPU usage and power consumption. Because encrypted hard drives encrypt data quickly, BitLocker deployment can be expanded across enterprise devices with little to no impact on productivity.
 
@@ -56,9 +54,9 @@ Encrypted hard drives enable:
 
 ## Personal data encryption (PDE)
 
-Personal Data Encryption refers to a new user authenticated encryption mechanism used to protect user content. Windows Hello for Business is the modern user authentication mechanism, which is used with PDE. Windows Hello for Business, either with PIN or biometrics (face or fingerprint), is used to protect the container, which houses the encryption keys used by Personal Data Encryption (PDE). When the user logs in (either after bootup or unlocking after a lock screen), the container gets authenticated to release the keys in the container to decrypt user content.
+Personal Data Encryption refers to a user authenticated encryption mechanism used to protect user content. Windows Hello for Business is the modern user authentication mechanism used with PDE. Windows Hello for Business, either with PIN or biometrics (face or fingerprint), is used to protect the container, which houses the encryption keys used by Personal Data Encryption (PDE). When the user logs in (either after bootup or unlocking after a lock screen), the container gets authenticated to release the keys in the container to decrypt user content.
 
-With the first release of PDE (Windows 11, version 22H2), the PDE API was available, which when adopted by applications can protect data under the purview of the applications. With the next Windows platform release, PDE for Folders will be released. This feature doesn't require updates to any applications, and protects the contents in the Known Windows Folders from bootup until first sign-in. 
+With the first release of PDE (Windows 11, version 22H2), the PDE API was available, which when adopted by applications can protect data under the purview of the applications. With the next Windows platform release, PDE for Folders will be released. This feature doesn't require updates to any applications, and protects the contents in the Known Windows Folders from bootup until first sign-in.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
@@ -66,7 +64,7 @@ With the first release of PDE (Windows 11, version 22H2), the PDE API was availa
 
 ## Email encryption
 
-Email encryption enables users to encrypt outgoing email messages and attachments so that only intended recipients with a digital identification (ID) - also called a certificate - can read them.10 Users can digitally sign a message, which verifies the identity of the sender and ensures the message hasn't been tampered with.
+Email encryption enables users to encrypt outgoing email messages and attachments so that only intended recipients with a digital identification (ID) - also called a certificate - can read them<sup>[\[10\]](conclusion.md#footnote10)</sup>. Users can digitally sign a message, which verifies the identity of the sender and ensures the message hasn't been tampered with.
 
 These encrypted messages can be sent by a user to people within their organization and external contacts who have proper encryption certificates.
 
