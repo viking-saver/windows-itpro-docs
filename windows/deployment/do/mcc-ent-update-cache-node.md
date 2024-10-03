@@ -27,6 +27,9 @@ In other words, configuring cache nodes to update as part of the Slow ring provi
 
 ### Update ring options
 
+>[!IMPORTANT]
+>In the event of a critical security patch, Microsoft may elect to initiate an MCC update to your cache node as soon as possible (even if the cache node has been set to the Slow Ring).
+
 #### Fast Ring
 All MCC cache nodes are configured to update as part of the Fast ring by default. MCC cache nodes in the Fast ring will be updated soon after an update is made available. Microsoft will silently update cache nodes at a time of day when update traffic is likely to be minimal, such as 3:00 AM (local time) on Saturday.
 
