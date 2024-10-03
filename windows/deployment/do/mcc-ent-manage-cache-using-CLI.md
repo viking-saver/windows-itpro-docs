@@ -155,24 +155,38 @@ In your console output, are you missing the last row in your CSV file?  This can
 
 ```powershell
 #Define variables
-$mccResourceName = "demo-01"
+$mccResourceName = "demo-03"
 $cacheNodeName = "demo-node"
 $cacheNodeOperatingSystem = "Windows"
-$resourceGroup = "myRG"
+$resourceGroup = "lichris-test"
 $resourceLocation = "westus"
-$cacheNodesToCreate = 5
-$proxyHost = "yourProxyHost.com"
-$proxyPort = "8080"
+$cacheNodesToCreate = 2
+$proxyHost = "104.42.135.96"
+$proxyPort = "3128"
+$waitTime = 3
 
-#Create MCC Azure resource
+#Create MCC Az resource
 az mcc ent resource create --mcc-resource-name $mccResourceName --location $resourceLocation --resource-group $resourceGroup
 
-#Create 5 cache nodes
+#Loop through $cacheNodesToCreate iterations
 for ($cacheNodeNumber = 1; $cacheNodeNumber -le $cacheNodesToCreate; $cacheNodeNumber++) {
     $iteratedCacheNodeName = $cacheNodeName + "-" + $cacheNodeNumber
     
     #Create cache node
     az mcc ent node create --cache-node-name $iteratedCacheNodeName --mcc-resource-name $mccResourceName --host-os $cacheNodeOperatingSystem --resource-group $resourceGroup
+
+    #Get cache node state
+    $cacheNodeState = $(az mcc ent node show --cache-node-name $iteratedCacheNodeName --mcc-resource-name $mccResourceName --resource-group $resourceGroup --query "cacheNodeState") | ConvertFrom-Json
+
+    $howLong = 0
+    #Wait until cache node state returns "Not Configured"
+    while ($cacheNodeState -ne "Not Configured") {
+        Write-Output "Waiting for cache node creation to complete...$howLong seconds"
+        Start-Sleep -Seconds $waitTime
+        $howLong += $waitTime
+    
+        $cacheNodeState = $(az mcc ent node show --cache-node-name $iteratedCacheNodeName --mcc-resource-name $mccResourceName --resource-group $resourceGroup --query "cacheNodeState") | ConvertFrom-Json
+    }
 
     #Configure cache node
     az mcc ent node update --cache-node-name $iteratedCacheNodeName --mcc-resource-name $mccResourceName --resource-group $resourceGroup --cache-drive  "[{physical-path:/var/mcc,size-in-gb:50}]" --proxy enabled --proxy-host $proxyHost --proxy-port $proxyPort
