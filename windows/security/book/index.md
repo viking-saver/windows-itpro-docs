@@ -21,15 +21,17 @@ At Microsoft, we work hard to help organizations evolve and stay agile while pro
 
 Businesses worldwide are moving toward [secure-by-design and secure-by-default strategies][LINK-3]. With these models, organizations choose products from manufacturers that consider security as a business requirement, not just a technical feature. With a secure-by-default strategy, businesses can proactively reduce risk and exposure to threats across their organization because products are shipped with security features already built-in and enabled.
 
-To help businesses transform and thrive in a new era, we built Windows 11 to be secure by design and secure by default. Windows 11 devices arrive with more security features enabled out of the box. In contrast, Windows 10 devices came with many safeguards turned off unless enabled by IT or users. The default security provided by Windows 11 elevates protection without needing to configure settings. In addition, Windows 11 devices increase malware resistance without impacting performance<sup>[\[3\]](conclusion.md#footnote3)</sup>. Windows 11 is the most secure Windows ever, built in deep partnership with original equipment manufacturers (OEMs) and silicon manufacturers. Discover why organizations of all sizes, including 90% of Fortune 500 companies, are taking advantage of the powerful default protection of Windows 11<sup>[\[4\]](conclusion.md#footnote4)</sup>.
+To help businesses transform and thrive in a new era, we built Windows 11 to be secure by design and secure by default. Windows 11 devices arrive with more security features enabled out of the box. In contrast, Windows 10 devices came with many safeguards turned off unless enabled by IT or users. The default security provided by Windows 11 elevates protection without needing to configure settings. In addition, Windows 11 devices increase malware resistance without impacting performance<sup>[\[3\]](conclusion.md#footnote3)</sup>. Windows 11 is the most secure Windows ever, built in deep partnership with original equipment manufacturers (OEMs) and silicon manufacturers.
+
+Discover why organizations of all sizes, including 90% of Fortune 500 companies, are taking advantage of the powerful default protection of Windows 11<sup>[\[4\]](conclusion.md#footnote4)</sup>.
 
 ## Security priorities and benefits
 
 ### Security by design and security by default
 
-## Feature overview
-
 Windows 11 is designed with layers of security enabled by default, so you can focus on your work, not your security settings. **Out-of-the-box features such as credential safeguards, malware shields, and application protection led to a reported 58% drop in security incidents, including a 3.1x reduction in firmware attacks**<sup>[\[5\]](conclusion.md#footnote5)</sup>.
+
+### Feature overview
 
 In Windows 11, hardware and software work together to shrink the attack surface, protect system integrity, and shield valuable data. New and enhanced features are designed for security by default. For example, Win32 apps in isolation<sup>[\[6\]](conclusion.md#footnote6)</sup>, token protection<sup>[\[6\]](conclusion.md#footnote6)</sup>, and Microsoft Intune Endpoint Privilege Management<sup>[\[7\]](conclusion.md#footnote7)</sup> are some of the latest capabilities that help protect your organization and users against attack. Windows Hello and Windows Hello for Business work with hardware-based features like Trusted Platform Module (TPM) 2.0 and biometric scanners for credential protection and easier, secure sign-on. Existing security features like BitLocker encryption are enhanced to optimize both security and performance.
 
@@ -44,8 +46,6 @@ Help keep business data secure and employees productive with robust safeguards a
 ### End-to-end protection with cloud-native management
 
 Increase protection and efficiency with Windows 11 and chip-to-cloud security. Microsoft offers comprehensive cloud services for identity, storage, and access management. Microsoft provides the tools needed to attest that Windows 11 devices connecting to your network or accessing your data and resources are trustworthy. You can enforce compliance and conditional access with management solutions such as Microsoft Intune and cloud-based identity with Microsoft Entra ID. Security by default not only enables people to work securely anywhere, but it also simplifies IT. A streamlined, chip-to-cloud security solution based on Windows 11, improves productivity for IT and security teams by a reported 25%<sup>[\[8\]](conclusion.md#footnote8)</sup>.
-
-## Security by design and default
 
 In Windows 11, hardware and software work together to protect sensitive data from the core of the device all the way to the cloud. Comprehensive protection helps keep organizations secure, no matter where people work. The following diagram shows the layers of protection in Windows 11, while each chapter provides a layer-by-layer deep dive into features.
 
