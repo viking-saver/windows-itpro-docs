@@ -20,7 +20,7 @@ ms.date: 06/03/2024
 
 <br>
 
-This article outlines how to create, configure, and deploy Microsoft Connected Cache for Enterprise (MCCE) cache nodes using Azure CLI.
+This article outlines how to create, configure, and deploy Microsoft Connected Cache for Enterprise (MCC) cache nodes using Azure CLI.
 
  
 ## Prerequisites:
@@ -44,10 +44,10 @@ az group create --name myrg --location westus
 Once the resource group is created, you'll need to create a Microsoft Connected Cache for Enterprise resource.
 
 
-### 2. Create an MCCE Azure resource
-An MCCE Azure resource is a top-level Azure resource under which cache nodes can be created.
+### 2. Create an Azure resource
+An MCC Azure resource is a top-level Azure resource under which cache nodes can be created.
 
-To create an MCCE Azure resource, use `az mcc ent resource create`
+To create an MCC Azure resource, use `az mcc ent resource create`
 
 ```azurecli-interactive
 az mcc ent resource create --mcc-resource-name mymccresource --resource-group myrg
@@ -108,19 +108,9 @@ az mcc ent node update --cache-node-name <mycachenode> --mcc-resource-name <mymc
 ```
 
 >[!Note]
->For a cache node that is to be deployed on Windows host OS, the physical path of the cache drive must be **/var/mcc**.
-<br>
-
->[!NOTE]
->Proxy info changes, required to provision cache node.
-<br>
-
->[!IMPORTANT]
->In the output, look for operationStatus. **operationStatus = Succeeded** indicates that our services have successfully updated the cache node.
-<br>
-
->[!IMPORTANT]
->Please save values for physicalPath, sizeInGb, proxyPort, proxyHostName as these values will be needed to create the provisioning script.
+>* For a cache node that is to be deployed on Windows host OS, the physical path of the cache drive <u>must</u> be **/var/mcc**.<br>
+>* In the output, look for operationStatus. **operationStatus = Succeeded** indicates that our services have successfully updated the cache node. You will also see that cacheNodeState will show "Not Provisioned". <br>
+>* Please save values for <u>physicalPath, sizeInGb, proxyPort, proxyHostName</u> as these values will be needed to construct the provisioning script.
 
 
 <br>
@@ -136,70 +126,34 @@ az mcc ent node get-provisioning-details --cache-node-name mycachenode --mcc-res
 
 Save the resulting values for cacheNodeId, customerKey, mccResourceId, registrationKey. These GUIDs are needed to create the provisioning script.
 
-### 7. Deploy cache node
 <br>
+
+### 7. Deploy cache node
+
 
 #### Deploy cache node to Linux host machine
 Before you deploy your cache node to a Linux host machine, make sure you have met the prerequisites listed here: [Host machine requirements](mcc-ent-prerequisites.md)
 
 Use the following link to download and extract the Linux-compatible MCCE provisioning package onto the host machine.
 
-[Download MCCE provisioning package for Linux host machine](https://aka.ms/MCC-Ent-InstallScript-Linux)
+[Download MCC provisioning package for Linux host machine](https://aka.ms/MCC-Ent-InstallScript-Linux)
 
 <br>
 
->[!IMPORTANT]
->Before you execute the provisioning command, make sure you change directory to the extracted provisioning package and set the script execution permissions by running the command below.
-```azurepowershell-interactive
-sudo chmod +x provisionmcc.sh
-```
-
-Replace the values in the following provisioning command before running it.<br>
-
-```azurepowershell-interactive
-sudo ./provisionmcc.sh customerid="enter mccResourceId here" cachenodeid=" enter cacheNodeId here " customerkey=" enter customerKey here " registrationkey="enter registrationKey here" drivepathandsizeingb="enter physicalPath value,enter sizeInGb value here" shoulduseproxy="true" proxyurl=http://enter proxy hostname:enter port
-```
+To deploy the cache node to a **Linux** host machine, see [Deploy cache node to Linux](mcc-ent-deploy-to-linux.md)
 <br>
-
->[!IMPORTANT]
->'shoulduseproxy' parameter is required, whether or not your network uses proxy to access internet.
 
 #### Deploy cache node to Windows host machine
 
 Before you deploy your cache node to a Windows host machine, make sure you have met the prerequisites listed here: [Host machine requirements](mcc-ent-prerequisites.md)
 
 Use the following link to download and extract the Windows-compatible MCCE provisioning package onto the host machine.
-[Download MCCE provisioning package for Windows host machine](https://aka.ms/MCC-Ent-InstallScript-WSL)
+[Download MCC provisioning package for Windows host machine](https://aka.ms/MCC-Ent-InstallScript-WSL)
 <br>
 
->[!IMPORTANT]
->Before you execute the provisioning command, make sure you change directory to the extracted provisioning package and set the script execution permissions by running the command below.
-```azurepowershell-interactive
-Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process
-```
-
-If you're using a **Group Managed Service Account**, replace the values in the following provisioning command before running it.<br>
-
-```powershell-interactive
-./provisionmcconwsl.ps1 -installationFolder c:\mccwsl01 -customerid enter mccResourceId here -cachenodeid enter cacheNodeId here -customerkey enter customerKey here -registrationkey enter registration key -cacheDrives "/var/mcc,enter drive size"  -shouldUseProxy $true -proxyurl " http://enter proxy host name:enter port"  -mccRunTimeAccount $User
-```
+To deploy the cache node to a **Windows** host machine, see [Deploy cache node to Windows](mcc-ent-deploy-to-windows.md)
 
 <br>
-
->[!IMPORTANT]
->'shoulduseproxy' parameter is required, whether or not your network uses proxy to access internet.
-
-If you're using **Local User account** or **Domain User account**, replace the values in the following provisioning command before running it.<br>
-
-```powershell-interactive
-./provisionmcconwsl.ps1 -installationFolder c:\mccwsl01 -customerid enter mccResourceId here -cachenodeid enter cacheNodeId here -customerkey enter customerKey here -registrationkey enter registration key -cacheDrives "/var/mcc,enter drive size"  -shouldUseProxy $true -proxyurl " http://enter proxy host name:enter port"  -mccRunTimeAccount $User -mccLocalAccountCredential $myLocalAccountCredential 
-```
-
-<br>
-
->[!IMPORTANT]
->'shoulduseproxy' parameter is required, whether or not your network uses proxy to access internet.
-
 
 ## Next step
 

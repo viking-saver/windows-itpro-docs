@@ -21,7 +21,7 @@ This article outlines how to create and configure your Microsoft Connected Cache
 ## Prerequisites
 1. **Azure Pay-As-You-Go subscription**: Microsoft Connected Cache is a free-of-charge service hosted in Azure. You'll need a pay-as-you-go Azure subscription in order to onboard to our service. To create a subscription, go to [pay-as-you-go subscription page](https://azure.microsoft.com/offers/ms-azr-0003p/).
 2. **Hardware to host MCC**: The recommended configuration serves approximately 35,000 managed devices, downloading a 2-GB payload in 24-hour timeframe at a sustained rate of 6.5 Gbps.
-For more information on sizing and OS requirements, see [the prerequisites for using MCCE](mcc-ent-prerequisites.md).
+For more information on sizing and OS requirements, see [the prerequisites for using MCC for Enterprise and Education](mcc-ent-prerequisites.md).
 
 ## Create MCC Azure resource
 
@@ -60,6 +60,7 @@ For more information on sizing and OS requirements, see [the prerequisites for u
     * Resource group under which an MCC resource can be created. Use the [az group create](/cli/azure/group#az-group-create) command to create a new Resource group if you don't already have one.
 
 #### Create MCC Azure resource
+
 Replace the following placeholders with your own information:
 * *\<resource-group>*: An existing resource group in your subscription.
 * *\<mcc-resource-name>*: A name for your Microsoft Connected Cache for Enterprise resource.
@@ -85,7 +86,8 @@ az mcc ent resource create --mcc-resource-name <mymccresource> --resource-group 
     :::image type="content" source="images/mcc-isp-provision-cache-node-numbered.png" alt-text="Screenshot of the Azure portal depicting the cache node configuration page of a cache node. This screenshot shows all of the fields you can choose to configure the cache node." lightbox="./images/mcc-isp-provision-cache-node-numbered.png":::  
     -->
   The creation of cache node might take a few minutes. Select Refresh to see your recently created cache node.
-Once the status changes to **Not Configured**, you can now configure your cache node.
+Once the cache node state changes to **Not Configured**, you can now configure your cache node.<br>
+To know more about different cache node state, see [Cache node states](#cache-node-states).
 
 
 # [Azure CLI](#tab/cli)
@@ -112,10 +114,7 @@ az mcc ent node create --cache-node-name <mycachenode> --mcc-resource-name <mymc
 >```
 >In the output look for cacheNodeState. If ***cacheNodeState = Not Configured***, you can continue with cache node configuration.
 >If ***cacheNodeState = Registration in Progress***, then the cache node is still in process of being created. Please wait for a minute or two more and run the command again.
-
-
-<!-- `code blah blah`
--->
+>To know more about different cache node state, see [Cache node states](#cache-node-states).
 
 ---
 
@@ -200,7 +199,7 @@ To deploy the cache node to a **Windows** host machine, see [Deploy cache node t
 To deploy the cache node to a **Linux** host machine, see [Deploy cache node to Linux](mcc-ent-deploy-to-linux.md)
 
 ### [Azure CLI](#tab/cli/)
-To deploy cache nodes using Azure CLI, see [Bulk management of cache nodes](mcc-ent-manage-cache-using-CLI.md)
+To deploy cache nodes using Azure CLI, see [Manage cache nodes using CLI](mcc-ent-manage-cache-using-CLI.md)
 
 ---
 <br>
@@ -247,3 +246,16 @@ You can choose to enable or disable proxy settings on your cache node.
 |---|---|---|
 |**Proxy host name**|	String or number|	Proxy host name or address|
 |**Proxy port**|	Integer|	Proxy port
+
+<br>
+
+##### Cache node states
+| Cache node state |Description|
+|---|---|
+|Creation in progress| Cache node is being created|
+|Registration in progress| Cache node is being registered|
+|Not configured| Cache node is ready to be configured|
+|Not provisioned| Cache node is ready to be provisioned on host machine|
+|Healthy| Cache node phoning home|
+|Unhealthy| Cache node has stopped phoning home|
+|Never phoned home| Cache node has provisioned but has never phoned home|

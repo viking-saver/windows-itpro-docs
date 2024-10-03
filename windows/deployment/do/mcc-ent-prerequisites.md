@@ -23,11 +23,6 @@ This article details the requirements and recommendations for using Microsoft Co
 
     If you don't have an Azure subscription already, you can create an Azure [pay-as-you-go](https://azure.microsoft.com/offers/ms-azr-0003p/) account, which requires a credit card for verification purposes. For more information, see the [Azure Free Account FAQ](https://azure.microsoft.com/free/free-account-faq/).
 
-<<<<<<< HEAD
-    The resources used for the preview and in the future when this product is ready for production will be free to you, like other caching solutions.
-1. **Hardware to host MCC**: The recommended configuration serves approximately 35,000 managed devices, downloading a 2-GB payload in 24-hour timeframe at a sustained rate of 6.5 Gbps.
-  
-=======
     The Azure resources used for MCCE will be free to you during this public preview.
 
 - **E3/E5 or A3/A5 license**: Your organization must have one of the following license subscriptions for each device that downloads content from an MCCE cache node.
@@ -75,4 +70,3 @@ This article details the requirements and recommendations for using Microsoft Co
 |Disk | SSD <br>1 drive <br>50 GB each  |SSD <br>1 drive <br>200 GB each  |
 |Memory | 4 GB | 8 GB |
 |Cores | 4 | 8  |
->>>>>>> baff7906fe02b76b4a3649d7e6c3acdac9534e66
