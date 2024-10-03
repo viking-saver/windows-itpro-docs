@@ -140,9 +140,9 @@ Replace the following placeholders with your own information:
 * *\<size-in-gb>*: The size of cache drive. Must be at least 50 Gb.
 * *\<proxy>*: If proxy needs to be enabled or not.<br>
   Accepted values: enabled, disabled
-  If proxy is set to enabled, you must provide proxy host and proxy port information
-* *\<proxy-host>*: The proxy host name or ip address
-* *\<proxy-port>*: Proxy port
+  Proxy should be set to enabled if the cache node will need to pass through a network proxy to download content. The provided proxy will also be used during deployment of the MCC cache node to your host machine.
+* *\<proxy-host>*: The proxy host name or ip address. Required if proxy is set to enabled.
+* *\<proxy-port>*: Proxy port number. Required if proxy is set to enabled.
 * *\<auto-update-ring>*: Update ring the cache node should have.<br>
   Accepted values: slow, fast.
   If update ring is set to slow, you must provide the day of week, time of day and week of month the cache node should be updated.
@@ -171,9 +171,9 @@ Replace the following placeholders with your own information:
 * *\<size-in-gb>*: The size of cache drive. Must be at least 50 Gb.
 * *\<proxy>*: If proxy needs to be enabled or not.<br>
   Accepted values: enabled, disabled
-  If proxy is set to enabled, you must provide proxy host and proxy port information
-* *\<proxy-host>*: The proxy host name or ip address
-* *\<proxy-port>*: Proxy port
+  Proxy should be set to enabled if the cache node will need to pass through a network proxy to download content. The provided proxy will also be used during deployment of the MCC cache node to your host machine.
+* *\<proxy-host>*: The proxy host name or ip address. Required if proxy is set to enabled.
+* *\<proxy-port>*: Proxy port number. Required if proxy is set to enabled.
 * *\<auto-update-ring>*: Update ring the cache node should have.<br>
   Accepted values: slow, fast.
   If update ring is set to slow, you must provide the day of week, time of day and week of month the cache node should be updated.
@@ -234,12 +234,12 @@ To deploy cache nodes using Azure CLI, see [Bulk management of cache nodes](mcc-
 
 #### Proxy settings
 <br>
-You can choose to enable or disable proxy settings on your cache node.
+You can choose to enable or disable proxy settings on your cache node. Proxy should be set to enabled if the cache node will need to pass through a network proxy to download content. The provided proxy will also be used during deployment of the MCC cache node to your host machine.
 
 <br>
 
 >[!IMPORTANT]
->Enabling or disabling the proxy settings after your cache node has been deployed will require running the provisioning script again. This will ensure that proxy changes are in effect on the cache node. 
+>Enabling or disabling the proxy settings after your cache node has been deployed will require running the provisioning script on the host machine again. This will ensure that proxy changes are in effect on the cache node. 
 
 | Field Name	|Expected Value	 |Description|
 |---|---|---|
