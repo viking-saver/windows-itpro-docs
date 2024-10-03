@@ -13,13 +13,13 @@ appliesto:
 ms.date: 09/27/2024
 ---
 
-# Microsoft Connected Cache for Enterprise and Education Requirements (Public Preview)
+# Microsoft Connected Cache for Enterprise and Education Requirements
 
-This article details the requirements and recommendations for using Microsoft Connected Cache for Enterprise and Education (MCCE).
+This article details the requirements and recommendations for using Microsoft Connected Cache for Enterprise and Education (MCC).
 
 ## Licensing requirements
 
-- **Valid Azure subscription**: To use the Microsoft Connected Cache for Enterprise and Education (MCCE) service, you'll need a valid Azure subscription that can be used to provision the necessary [Azure resources](/azure/cloud-adoption-framework/govern/resource-consistency/resource-access-management).
+- **Valid Azure subscription**: To use the Microsoft Connected Cache for Enterprise and Education (MCC) service, you'll need a valid Azure subscription that can be used to provision the necessary [Azure resources](/azure/cloud-adoption-framework/govern/resource-consistency/resource-access-management).
 
     If you don't have an Azure subscription already, you can create an Azure [pay-as-you-go](https://azure.microsoft.com/offers/ms-azr-0003p/) account, which requires a credit card for verification purposes. For more information, see the [Azure Free Account FAQ](https://azure.microsoft.com/free/free-account-faq/).
 

@@ -14,15 +14,15 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-microsoft-connected-cache target=_blank>Microsoft Connected Cache for Enterprise and Education</a>	
 ---
 
-# Verify MCCE cache node functionality
+# Verify MCC cache node functionality
 
-This article describes how to verify that a Microsoft Connected Cache for Enterprise and Education (MCCE) cache node is functioning correctly.
+This article describes how to verify that a Microsoft Connected Cache for Enterprise and Education (MCC) cache node is functioning correctly.
 
 These steps should be taken after deploying MCCE caching software to a [Windows](mcc-ent-deploy-to-windows.md) or [Linux](mcc-ent-deploy-to-linux.md) host machine.
 
 ## Steps to verify functionality of MCCE cache node
 
-1. To verify that the MCCE container on the host machine is running and reachable, run the following command from the host machine:
+1. To verify that the MCC container on the host machine is running and reachable, run the following command from the host machine:
 
     ```powershell
     wget http://localhost/filestreamingservice/files/7bc846e0-af9c-49be-a03d-bb04428c9bb5/Microsoft.png?cacheHostOrigin=dl.delivery.mp.microsoft.com
@@ -30,13 +30,13 @@ These steps should be taken after deploying MCCE caching software to a [Windows]
 
     If successful, there should be an HTTP response with StatusCode 200.
 
-1. To verify that Windows clients in your network can reach the MCCE cache node, visit the following address from a web browser on a Windows client device:
+1. To verify that Windows clients in your network can reach the MCC cache node, visit the following address from a web browser on a Windows client device:
 
     `http://[HostMachine-IP-address]/filestreamingservice/files/7bc846e0-af9c-49be-a03d-bb04428c9bb5/Microsoft.png?cacheHostOrigin=dl.delivery.mp.microsoft.com`
 
     If successful, the Windows client device should begin to download a small image file from the MCCE cache node.
 
-1. To check how much content an individual Windows client has pulled from an MCCE cache node, open the [Delivery Optimization activity monitor](/microsoft-365-apps/updates/delivery-optimization#viewing-data-about-the-use-of-delivery-optimization) on the Windows client device.
+1. To check how much content an individual Windows client has pulled from an MCC cache node, open the [Delivery Optimization activity monitor](/microsoft-365-apps/updates/delivery-optimization#viewing-data-about-the-use-of-delivery-optimization) on the Windows client device.
 
     You should see a donut chart titled Download Statistics. If the Windows client has pulled content from the cache node, you'll see a segment of the donut labeled "From Microsoft cache server".
 

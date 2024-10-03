@@ -25,7 +25,13 @@ This article outlines how to create, configure, and deploy Microsoft Connected C
  
 ## Prerequisites:
 1. **Install Azure CLI**: [How to install the Azure CLI](/cli/azure/install-azure-cli)
-1. **Install MCC extension**: [Install the MCC extension.](/cli/azure/azure-cli-extensions-overview#how-to-install-extensions)
+1. **Install MCC extension**: Install MCC extension via the command below
+
+```azurecli-interactive
+az extension add --name mcc
+```
+
+To learn more about installting extensions, visit [Install the MCC extension.](/cli/azure/azure-cli-extensions-overview#how-to-install-extensions)
 
 <br>
 <br>
@@ -67,7 +73,7 @@ The next step is to create a cache node under this resource.
 To create a cache node, use `az mcc ent node create`
 
 ```azurecli-interactive
-az mcc ent node create --cache-node-name mycachenode --mcc-resource-name mymccresource --resource-group myrg --host-os linux
+az mcc ent node create --cache-node-name mycachenode --mcc-resource-name mymccresource --resource-group myrg --host-os <linux or windows>
 ```
 
 <br>

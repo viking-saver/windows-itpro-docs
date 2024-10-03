@@ -14,9 +14,9 @@ appliesto:
 ms.date: 09/04/2024
 ---
 
-# Monitor MCCE cache node usage
+# Monitor MCC cache node usage
 
-Tracking the status and performance of your MCCE cache node is essential to making sure that you're getting the most out of the service.
+Tracking the status and performance of your MCC cache node is essential to making sure that you're getting the most out of the service.
 
 <!-- Add standard metrics
 
@@ -28,7 +28,7 @@ The Cache Node Summary box on your Azure portal
 
 | Metric | Description |
 | --- | --- |
-| Healthy nodes | The MCCE service will periodically request heartbeat messages from your MCC node to determine if it's functioning as expected. |
+| Healthy nodes | The MCC service will periodically request heartbeat messages from your MCC node to determine if it's functioning as expected. |
 | Unhealthy nodes | If the cache node doesn't respond, it is labeled as unhealthy. |
 | Max in | The maximum egress (in Mb/sec.) that your node has pulled in at any given time. This statistic isn't dependent on the time filter near the charts. |
 | Max out | The minimum egress (in Mb/sec.) that your node has pushed out at any given time. |
@@ -49,7 +49,7 @@ The Cache Node Summary box on your Azure portal
 
 ### Volume by Content Type
 
-- The volume of content that your MCCE cache node is distributing, broken down by the hostname used to download said content
+- The volume of content that your MCC cache node is distributing, broken down by the hostname used to download said content
 
 ## Additional metrics
 

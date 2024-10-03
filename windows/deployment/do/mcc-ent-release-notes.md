@@ -14,9 +14,9 @@ appliesto:
 ms.date: 09/27/2024
 ---
 
-# Release Notes for Microsoft Connected Cache for Enterprise and Education (MCCE)
+# Release Notes for Microsoft Connected Cache for Enterprise and Education (MCC)
 
-This article contains details about the latest releases of MCCE. Since MCCE is a Preview service, some releases may contain breaking changes that will be highlighted as such.
+This article contains details about the latest releases of MCC. Since MCC is a Preview service, some releases may contain breaking changes that will be highlighted as such.
 
 ## Release v0.1.0 (Public Preview launch)
 
@@ -37,4 +37,4 @@ This article contains details about the latest releases of MCCE. Since MCCE is a
 
 ## Related content
 
-- [Overview of MCCE](mcc-ent-edu-overview.md)
+- [Overview of MCC](mcc-ent-edu-overview.md)
