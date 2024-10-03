@@ -50,7 +50,7 @@ IT-managed environments have a number policy settings available via configuratio
 
 - [Policy CSP - Bluetooth](/windows/client-management/mdm/policy-csp-bluetooth)
 
-## Securing Wi-Fi connections
+## Wi-Fi connections
 
 Windows Wi-Fi supports industry-standard authentication and encryption methods when connecting to Wi-Fi networks. WPA (Wi-Fi Protected Access) is a security standard defined by the Wi-Fi Alliance (WFA) to provide sophisticated data encryption and better user authentication.
 
