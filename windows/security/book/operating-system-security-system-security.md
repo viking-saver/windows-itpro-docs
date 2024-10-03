@@ -129,7 +129,7 @@ Config Refresh can also be paused for a configurable period of time, after which
 
 - [Config Refresh](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/intro-to-config-refresh-a-refreshingly-new-mdm-feature/ba-p/4176921#:~:text=With%20Config%20Refresh,%20you%20can%20now)
 
-## Kiosk mode (Assigned Access and Shell Launcher)
+## Kiosk mode 
 
 With Assigned Access, Windows devices restrict functionality to pre-selected applications depending on the user and keep individual identities separate, which is ideal for public-facing or shared devices. Configuring a device as a kiosk is a straightforward process. You can do this locally on the device or remotely using mobile device management.
 
@@ -137,7 +137,7 @@ With Assigned Access, Windows devices restrict functionality to pre-selected app
 
 - [Windows kiosks and restricted user experiences](/windows/configuration/assigned-access)
 
-## Windows Protected Print
+## Windows protected print
 
 Windows protected print mode is exclusively built to provide a more modern and secure print system that maximizes compatibility and puts users first. It simplifies the printing experience by allowing PCs exclusively print using the Windows modern print stack.
 
@@ -153,5 +153,5 @@ Windows protected print mode is designed to work with Mopria certified printers 
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
-- [Windows protected print mode] (/windows-hardware/drivers/print/windows-protected-print-mode)
-- [A new, modern, and secure print experience from Windows](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/a-new-modern-and-secure-print-experience-from-windows/ba-p/4002645)
+- [Windows protected print mode](/windows-hardware/drivers/print/modern-print-platform)
+- [New, modern, and secure print experience from Windows](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/a-new-modern-and-secure-print-experience-from-windows/ba-p/4002645)
