@@ -137,7 +137,7 @@ az mcc ent node get-provisioning-details --cache-node-name mycachenode --mcc-res
 Save the resulting values for cacheNodeId, customerKey, mccResourceId, registrationKey. These GUIDs are needed to create the provisioning script.
 
 ### Example script:
-Below is a pseudocode example of how to script bulk creation and configuration of an MCC Azure resource and five MCC cache nodes.
+Below is a pseudocode example of how to script bulk creation and configuration of an MCC Azure resource and multiple MCC cache nodes.
 
 <!--# [Bash](#tab/bash)
 
@@ -161,7 +161,7 @@ $cacheNodeOperatingSystem = "Windows"
 $resourceGroup = "myRG"
 $resourceLocation = "westus"
 $cacheNodesToCreate = 2
-$proxyHost = "myProxy.com
+$proxyHost = "myProxy.com"
 $proxyPort = "8080"
 $waitTime = 3
 
