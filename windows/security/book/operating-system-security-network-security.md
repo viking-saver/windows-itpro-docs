@@ -116,22 +116,7 @@ Server Message Block (SMB) and file services are the most common Windows workloa
 
 Windows 11 introduced significant security updates to meet today's threats, including AES-256 SMB encryption, accelerated SMB signing, Remote Directory Memory Access (RDMA) network encryption, and SMB over QUIC for untrusted networks. Windows 11, version 24H2, adds far more security options, including required SMB signing by default, NTLM blocking, authentication rate limiting, and many others. Windows 11 24H2 is the state of the art for SMB security for organizations worldwide.
 
-The following table details SMB file services improvements in Windows 11, version 24H2.
-
-|Area|Details|
-|-|-|
-|**Signing**|Signing prevents data tampering and relay attacks to malicious servers.<br><br>Signing is now required by default for all SMB outbound and inbound connections.|
-|**NTLM blocking**|Blocking NTLM authentication prevents bad actors from tricking clients into sending NTLM requests to malicious servers, counteracting brute force, cracking, and pass-the-hash attacks.<br><br>The SMB client now supports blocking NTLM authentication for remote outbound connections.|
-|**Authentication rate limiter**|The SMB server now throttles brute force authentication attacks with a rate limiter. These attacks bombard the SMB server with multiple usernames and password-guesses and the frequency can range from dozens to thousands of attempts per second.|
-|**Guest authentication**|Windows 11 Pro no longer allows SMB client guest connections or guest fallback to an SMB server by default. This makes Windows 11 Pro operating like Windows Enterprise, Education, and Pro for Workstation editions. Guest logons don't require passwords and don't support standard security features like signing and encryption.|
-|**SMB over QUIC client access control**| SMB over QUIC client access control restricts which clients can access servers.<br><br>These allow and blocklists for devices to connect to the file server and gives organizations more protection without altering the end user experience. <br><br>**Note:** SMB over QUIC is available in Windows Server 2022 Datacenter: Azure Edition and on all editions of Windows Server 2025.|
-|**Protocols management**|You can now specify the SMB protocols used, blocking older, less secure, versions from connecting to the server. For example, you can specify connection to only use SMB 3.1.1, the most secure dialect of the protocol.|
-|**Encryption**|SMB encryption provides end-to-end encryption of SMB data, protecting it from eavesdropping occurrences on internal networks.<br><br>The SMB client now supports requiring encryption of all outbound SMB connections. Encryption of all outbound SMB client connections enforces the highest level of network security. Unlike SMB signing, encryption isn't required by default.|
-|**Remote Mailslots deprecation**|Remote Mailslots are now deprecated and disabled by default for SMB and DCLocator usage with Active Directory. The Remote Mailslot protocol is a dated, simple, unreliable, insecure IPC method first introduced in MS DOS.|
-|**Alternative ports**|You can now connect to SMB using alternative TCP, QUIC, and RDMA ports. In Windows Server 2025, you can configure SMB over QUIC to listen on an alternative port.|
-|**Firewall changes**|The built-in firewall rules doesn't contain the SMB NetBIOS ports anymore, increasing the security of SMB and Windows.|
-|**Auditing improvements**| SMB now supports auditing use of SMB over QUIC, missing third party support for encryption, and missing third party support for signing.|
-
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
+- [Server Message Block (SMB) protocol changes in Windows 11, version 24H2](../../whats-new/whats-new-windows-11-version-24h2.md#server-message-block-smb-protocol-changes)
 - [File sharing using the SMB 3 protocol](/windows-server/storage/file-server/file-server-smb-overview)
