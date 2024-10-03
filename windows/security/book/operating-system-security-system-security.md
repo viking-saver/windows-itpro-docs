@@ -151,7 +151,7 @@ The benefits of Windows protected print mode include:
 
 - Removes the need to manage print drivers  
 
-Windows protected print mode is designed to work with Mopria certified printers only. Many existing printers are already compatible.  For more information, refer to [Windows protected print mode device compatibility] (/windows-hardware/drivers/print/windows-protected-print-mode) 
+Windows protected print mode is designed to work with Mopria certified printers only. Many existing printers are already compatible.  
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
