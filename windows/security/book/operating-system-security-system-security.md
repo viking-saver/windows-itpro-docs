@@ -129,7 +129,7 @@ Config Refresh can also be paused for a configurable period of time, after which
 
 - [Config Refresh](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/intro-to-config-refresh-a-refreshingly-new-mdm-feature/ba-p/4176921#:~:text=With%20Config%20Refresh,%20you%20can%20now)
 
-## Kiosk mode 
+## Kiosk mode
 
 With Assigned Access, Windows devices restrict functionality to pre-selected applications depending on the user and keep individual identities separate, which is ideal for public-facing or shared devices. Configuring a device as a kiosk is a straightforward process. You can do this locally on the device or remotely using mobile device management.
 

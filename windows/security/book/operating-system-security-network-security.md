@@ -118,5 +118,5 @@ Windows 11 introduced significant security updates to meet today's threats, incl
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
-- [Server Message Block (SMB) protocol changes in Windows 11, version 24H2](../../whats-new/whats-new-windows-11-version-24h2.md#server-message-block-smb-protocol-changes)
+- [Server Message Block (SMB) protocol changes in Windows 11, version 24H2](/windows/whats-new/whats-new-windows-11-version-24h2#server-message-block-smb-protocol-changes)
 - [File sharing using the SMB 3 protocol](/windows-server/storage/file-server/file-server-smb-overview)
