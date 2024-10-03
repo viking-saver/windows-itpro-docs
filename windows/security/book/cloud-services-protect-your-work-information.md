@@ -123,6 +123,10 @@ Windows 11 enables IT professionals to move to the cloud while consistently enfo
 
 Intune Endpoint Privilege Management supports organizations' Zero Trust journeys by helping them achieve a broad user base running with least privilege, while still permitting users to run tasks allowed by the organization to remain productive.
 
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+
+- [Endpoint Privilege Management](/mem/intune/protect/epm-overview?formCode=MG0AV3)
+
 ### Local Administrator Password (LAPs)
 
 Local Administrator Password solution was a key consideration for many customers when deciding to make the transition from on-premises to cloud-managed devices using Intune. With LAPS (available in preview), organizations can automatically manage and back up the password of a local administrator account on Microsoft Entra ID joined or hybrid Microsoft Entra ID joined devices.
@@ -142,6 +146,10 @@ Finally, Config Refresh helps organizations move to cloud from on-premises by pr
 Microsoft Intune also has policies and settings to configure and manage the flow of operating system updates to devices, working with WUfB and WUfB-DS and giving admins great control over their deployments
 
 With Intune, organizations can also extend MAM App Config, MAM App Protection, and App Protection Conditional Access capabilities to Windows. This enables people to access protected organizational content without having the device managed by IT. The first application to support MAM for Windows is Microsoft Edge.
+
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+
+- [Data protection for Windows MAM](/mem/intune/apps/protect-mam-windows?formCode=MG0AV3)
 
 ## Remote Wipe
 
