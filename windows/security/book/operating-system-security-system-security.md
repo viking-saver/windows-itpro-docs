@@ -106,8 +106,6 @@ All auditing categories are disabled when Windows is first installed. Before ena
 - [Security policy settings](/windows/security/threat-protection/security-policy-settings/security-policy-settings)
 - [Security auditing](/windows/security/threat-protection/auditing/security-auditing-overview)
 
-
-
 ## Windows security settings
 
 Visibility and awareness of device security and health are key to any action taken. The Windows built-in security settings provide an at-a-glance view of the security status and health of your device. These insights help you identify issues and act to make sure you're protected. You can quickly see the status of your virus and threat protection, firewall and network security, device security controls, and more.
@@ -147,10 +145,8 @@ Enabling Windows protected print mode is highly recommended.
 
 The benefits of Windows protected print mode include:
 
-- Increased PC security.
-
-- Simplified and consistent printing experience, regardless of PC architecture.
-
+- Increased PC security
+- Simplified and consistent printing experience, regardless of PC architecture
 - Removes the need to manage print drivers
 
 Windows protected print mode is designed to work with Mopria certified printers only. Many existing printers are already compatible.
@@ -158,5 +154,4 @@ Windows protected print mode is designed to work with Mopria certified printers 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
 - [Windows protected print mode] (/windows-hardware/drivers/print/windows-protected-print-mode)
-
 - [A new, modern, and secure print experience from Windows](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/a-new-modern-and-secure-print-experience-from-windows/ba-p/4002645)
