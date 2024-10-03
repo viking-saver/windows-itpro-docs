@@ -136,3 +136,12 @@ With Assigned Access, Windows devices restrict functionality to pre-selected app
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
 - [Windows kiosks and restricted user experiences](/windows/configuration/assigned-access)
+
+## Windows Protected Print
+
+In late 2023, we launched Windows Protected Print Mode to build a more modern and secure print system that maximizes compatibility and puts users first. This will be the default print mode in the future.
+
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+
+-[New Windows 11 features strengthen security to address evolving cyberthreat landscape] (https://www.microsoft.com/en-us/security/blog/2024/05/20/new-windows-11-features-strengthen-security-to-address-evolving-cyberthreat-landscape/)
+-[A new, modern, and secure print experience from Windows] (https://techcommunity.microsoft.com/t5/security-compliance-and-identity/a-new-modern-and-secure-print-experience-from-windows/ba-p/4002645)
