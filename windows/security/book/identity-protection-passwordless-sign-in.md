@@ -168,13 +168,21 @@ When a password is used to sign in to a domain account, Windows uses the Kerbero
 
 - [Smart Card technical reference][LINK-12]
 
-## Federated sign-in
+## Web sign-in
 
-Windows 11 supports federated sign-in with external education identity management services. For students unable to type easily or remember complex passwords, this capability enables secure sign-in through methods like QR codes or pictures. Additionally, we have added shared device support. It allows multiple students (one at a time) to use the device throughout the school day.
+With the support of web sign-in, users can sign in without a password using the Microsoft Authenticator app or a Temporary Access Pass (TAP). Web sign in also enables federated sign in with a SAML-P identity provider.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
 - [Configure federated sign-in for Windows devices][LINK-13]
+
+## Federated sign-in
+
+Windows 11 supports federated sign-in with external education identity management services. For students unable to type easily or remember complex passwords, this capability enables secure sign-in through methods like QR codes or pictures. Additionally, we have added shared device support. It allows multiple students to use the device throughout the school day.
+
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+
+- [Configure federated sign-in for Windows devices][LINK-14]
 
 <!--links-->
 
@@ -190,4 +198,5 @@ Windows 11 supports federated sign-in with external education identity managemen
 [LINK-10]: /windows/security/identity-protection/passkeys
 [LINK-11]: /entra/identity/authentication/concept-authentication-authenticator-app
 [LINK-12]: /windows/security/identity-protection/smart-cards/smart-card-windows-smart-card-technical-reference
-[LINK-13]: /education/windows/federated-sign-in
+[LINK-13]: /windows/security/identity-protection/web-sign-in
+[LINK-14]: /education/windows/federated-sign-in
