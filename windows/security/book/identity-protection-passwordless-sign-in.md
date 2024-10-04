@@ -108,19 +108,13 @@ Windows presence sensing<sup>[\[14\]](conclusion.md#footnote14)</sup> provides a
 
 Windows presence sensing combines presence detection sensors with Windows Hello facial recognition to sign the user in hands-free and automatically locks the device when the user leaves. With adaptive dimming, the PC dims the screen when the user looks away on compatible devices with presence sensors. It's also easier than ever to configure presence sensors on devices, with easy enablement in the out-of-the-box experience and new links in Settings to help find presence sensing features. Device manufacturers can customize and build extensions for the presence sensor.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
-
-- [Presence sensing][LINK-7]
-
-### Developer APIs and app privacy support for presence sensing
-
-Privacy is top of mind and more important than ever. Customers want to have greater transparency and control over the use of their information. We're pleased to announce new app privacy settings that enable users to allow or block access to their presence sensor information. Users can decide on these settings during the initial Windows 11 setup.
+Privacy is top of mind and more important than ever. Customers want to have greater transparency and control over the use of their information. The new app privacy settings enable users to allow or block access to their presence sensor information. Users can decide on these settings during the initial Windows 11 setup.
 
 Users can also take advantage of more granular settings to easily enable and disable differentiated presence sensing features like wake on approach, lock on leave, and adaptive dimming. We're also supporting developers with new APIs for presence sensing for third-party applications. Third-party applications can now access user presence information on devices with modern presence sensors.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
-
+- [Presence sensing][LINK-7]
 - [Manage presence sensing settings in Windows 11][LINK-8]
 
 ## FIDO2 support
