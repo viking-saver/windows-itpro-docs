@@ -84,7 +84,7 @@ Microsoft Intune<sup>[\[15\]](conclusion.md#footnote15)</sup> is a comprehensive
 
 Intune works with Microsoft Entra ID to manage security features and processes, including multifactor authentication and conditional access.
 
-Organizations can cut costs while securing and managing remote devices through the cloud in compliance with company policies<sup>[\[15\]](conclusion.md#footnote16)</sup>. For example, organizations can save time and money by provisioning preconfigured devices to remote employees using Windows Autopilot.
+Organizations can cut costs while securing and managing remote devices through the cloud in compliance with company policies<sup>[\[16\]](conclusion.md#footnote16)</sup>. For example, organizations can save time and money by provisioning preconfigured devices to remote employees using Windows Autopilot.
 
 Windows 11 enables IT professionals to move to the cloud while consistently enforcing security policies. Windows 11 provides expanded support for group policy administrative templates (ADMX-backed policies) in cloud-native device management solutions like Microsoft Intune, enabling IT professionals to easily apply the same security policies to both on-premises and remote devices.
 

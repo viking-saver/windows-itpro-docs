@@ -56,7 +56,7 @@ Once Windows Sandbox is closed, nothing persists on the device. All the software
 
 ## Windows Subsystem for Linux (WSL)
 
-With Windows Subsystem for Linux (WSL) you can run a Linux environment on your Windows device, without the need for a separate virtual machine or dual booting. WSL is designed to provide a seamless and productive experience for developers who want to use both Windows and Linux at the same time. In Ge, we added three networking security features and Intune/MDM integration in WSL on Windows 11 (SV2 and Ge) for Enterprises:
+With Windows Subsystem for Linux (WSL) you can run a Linux environment on your Windows device, without the need for a separate virtual machine or dual booting. WSL is designed to provide a seamless and productive experience for developers who want to use both Windows and Linux at the same time. In 24H2, we added three networking security features and Intune/MDM integration in WSL on Windows 11:
 
 - **Hyper-V Firewall**: This new firewall setting is a network firewall solution that enables filtering of inbound and outbound traffic to/from WSL containers hosted by Windows
 - **DNS Tunneling**: This new networking setting improves compatibility in different networking environments and makes use of virtualization features to obtain DNS information rather than a networking packet
