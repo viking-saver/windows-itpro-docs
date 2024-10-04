@@ -95,7 +95,7 @@ Multi-factor unlock is useful for organizations who need to prevent information 
 
 Windows 11 devices with Windows Hello for Business can protect user identities by removing the need to use passwords from day one.
 
-IT can configure a policy setting for Microsoft Entra ID joined machines so users no longer see the option to enter a password when accessing company resources<sup>[\[12\]](conclusion.md#footnote12)</sup>. Once the policy is configured, passwords are removed from the Windows user experience, both for device unlock and in-session authentication scenarios via CredUI. However, passwords aren't eliminated from the identity directory yet. Users are expected to navigate through their core authentication scenarios using strong, phish-resistant, possession-based credentials like Windows Hello for Business and FIDO2 security keys. If necessary, users can use passwordless recovery mechanisms such as Microsoft PIN reset service or web sign-in.
+IT can configure a policy setting for Microsoft Entra ID joined machines so users no longer see the option to enter a password when accessing company resources<sup>[\[12\]](conclusion.md#footnote12)</sup>. Once the policy is configured, passwords are removed from the Windows user experience, both for device unlock and in-session authentication scenarios. However, passwords aren't eliminated from the identity directory yet. Users are expected to navigate through their core authentication scenarios using strong, phish-resistant, possession-based credentials like Windows Hello for Business and FIDO2 security keys. If necessary, users can use passwordless recovery mechanisms such as Microsoft PIN reset service or web sign-in.
 
 Users authenticate directly with Microsoft Entra ID, helping speed access to on-premises applications and other resources.
 
@@ -150,6 +150,22 @@ Using this secure app for authentication and authorization enables people to be 
 
 - [Authentication methods in Microsoft Entra ID - Microsoft Authenticator app][LINK-11]
 
+## Web sign-in
+
+With the support of web sign-in, users can sign in without a password using the Microsoft Authenticator app or a Temporary Access Pass (TAP). Web sign in also enables federated sign in with a SAML-P identity provider.
+
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+
+- [Web sign-in for Windows][LINK-13]
+
+## Federated sign-in
+
+Windows 11 supports federated sign-in with external education identity management services. For students unable to type easily or remember complex passwords, this capability enables secure sign-in through methods like QR codes or pictures.
+
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+
+- [Configure federated sign-in for Windows devices][LINK-14]
+
 ## Smart cards for Windows service
 
 Organizations can also opt for smart cards, an authentication method that existed before biometric authentication. These tamper-resistant, portable storage devices enhance Windows security by authenticating users, signing code, securing e-mails, and signing in with Windows domain accounts.
@@ -167,22 +183,6 @@ When a password is used to sign in to a domain account, Windows uses the Kerbero
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
 - [Smart Card technical reference][LINK-12]
-
-## Web sign-in
-
-With the support of web sign-in, users can sign in without a password using the Microsoft Authenticator app or a Temporary Access Pass (TAP). Web sign in also enables federated sign in with a SAML-P identity provider.
-
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
-
-- [Web sign-in for Windows][LINK-13]
-
-## Federated sign-in
-
-Windows 11 supports federated sign-in with external education identity management services. For students unable to type easily or remember complex passwords, this capability enables secure sign-in through methods like QR codes or pictures.
-
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
-
-- [Configure federated sign-in for Windows devices][LINK-14]
 
 <!--links-->
 
