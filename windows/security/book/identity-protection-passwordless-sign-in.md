@@ -9,11 +9,11 @@ ms.date: 09/06/2024
 
 :::image type="content" source="images/identity-protection.png" alt-text="Diagram containing a list of security features." lightbox="images/identity-protection.png" border="false":::
 
-Passwords are inconvenient to use and prime targets for cybercriminals - and they've been an important part of digital security for years. That changes with the passwordless protection available with Windows 11. After a secure authorization process, credentials are protected behind layers of hardware and software security, giving users secure, passwordless access to their apps and cloud services.
+Passwords are a fundamental part of digital security, but they're often inconvenient and vulnerable to cyberattacks. With Windows 11, users can enjoy passwordless protection, which offers a more secure and user-friendly alternative. After a secure authorization process, credentials are safeguarded by multiple layers of hardware and software security, providing users with seamless, passwordless access to their apps and cloud services.
 
 ## Windows Hello
 
-Too often, passwords are weak, stolen, or forgotten. Organizations are moving toward passwordless sign-in to reduce the risk of breaches, lower the cost of managing passwords, and improve productivity and satisfaction for their employees and customers. Microsoft is committed to helping customers move toward a secure, passwordless future with Windows Hello, a cornerstone of Windows security and identity protection.
+Too often, passwords are weak, stolen, or forgotten. Organizations are moving toward passwordless sign-in to reduce the risk of breaches, lower the cost of managing passwords, and improve productivity and satisfaction for their employees and customers. Microsoft is committed to helping organizations move toward a secure, passwordless future with Windows Hello, a cornerstone of Windows security and identity protection.
 
 Windows Hello can enable passwordless sign-in using biometric or PIN verification and provides built-in support for the FIDO2 passwordless industry standard. As a result, people no longer need to carry external hardware like a security key for authentication.
 
@@ -41,7 +41,7 @@ Windows Hello biometric sign-in enhances both security and productivity with a q
 
 Windows devices that support biometric hardware such as fingerprint or facial recognition cameras integrate directly with Windows Hello, enabling access to Windows client resources and services. Biometric readers for both face and fingerprint must comply with Windows Hello biometric requirements. Windows Hello facial recognition is designed to only authenticate from trusted cameras used at the time of enrollment.
 
-If a peripheral camera is attached to the device after enrollment, that camera will only be allowed for facial authentication after it has been validated by signing in with the internal camera. For additional security, external cameras can be disabled for use with Windows Hello facial recognition.
+If a peripheral camera is attached to the device after enrollment, that camera is allowed for facial authentication after it's validated by signing in with the internal camera. For more security, external cameras can be disabled for use with Windows Hello facial recognition.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
@@ -95,7 +95,7 @@ Provisioning methods include:
 
 Windows Hello for Business replaces the username and password by combining a security key or certificate with a PIN or biometric data and then mapping the credentials to a user account during setup. There are multiple ways to deploy Windows Hello for Business depending on an organization's needs. Organizations that rely on certificates typically use on-premises public key infrastructure (PKI) to support authentication through Certificate Trust. Organizations using key trust deployment require root-of-trust provided by certificates on domain controllers.
 
-Organizations with hybrid scenarios can eliminate the need for on-premises domain controllers and simplify passwordless adoption by using Windows Hello for Business cloud Kerberos trust<sup>[\[13\]](conclusion.md#footnote13)</sup>. This solution uses security keys and replaces on-premises domain controllers with a cloud-based root-of-trust. As a result, organizations can take advantage of Windows Hello for Business and deploy passwordless security keys with minimal additional setup or infrastructure.
+Organizations with hybrid scenarios can eliminate the need for on-premises domain controllers and simplify passwordless adoption by using Windows Hello for Business cloud Kerberos trust<sup>[\[13\]](conclusion.md#footnote13)</sup>. This solution uses security keys and replaces on-premises domain controllers with a cloud-based root-of-trust. As a result, organizations can take advantage of Windows Hello for Business and deploy security keys with minimal extra setup or infrastructure.
 
 Users authenticate directly with Microsoft Entra ID, helping speed access to on-premises applications and other resources.
 
@@ -109,7 +109,7 @@ Windows Hello biometrics also supports Enhanced Sign-in Security, which uses spe
 
 Enhanced Sign-in Security biometrics uses Virtualization-based security (VBS) and the TPM to isolate user authentication processes and data and secure the pathway by which the information is communicated.
 
-These specialized components protect against a class of attacks that includes biometric sample injection, replay, and tampering. For example, fingerprint readers must implement Secure Device Connection Protocol, which uses key negotiation and a Microsoft-issued certificate to protect and securely store user authentication data. For facial recognition, components such as the Secure Devices (SDEV) table and process isolation with trustlets help prevent additional attack classes.
+These specialized components protect against a class of attacks that includes biometric sample injection, replay, and tampering. For example, fingerprint readers must implement Secure Device Connection Protocol, which uses key negotiation and a Microsoft-issued certificate to protect and securely store user authentication data. For facial recognition, components such as the Secure Devices (SDEV) table and process isolation with trustlets help prevent more attack classes.
 
 Enhanced Sign-in Security is configured by device manufacturers during the manufacturing process and is most typically supported in Secured-core PCs. For facial recognition, Enhanced Sign-in Security is supported by specific silicon and camera combinations -  check with the specific device manufacturer. Fingerprint authentication is available across all processor types. Reach out to specific OEMs for support details.
 
@@ -152,7 +152,7 @@ Using this secure app for authentication and authorization enables people to be 
 
 ## Smart cards for Windows service
 
-Organizations also have the option of using smart cards, an authentication method that predates biometric authentication. Smart cards are tamper-resistant, portable storage devices that can enhance Windows security when authenticating users, signing code, securing e-mail, and signing in with Windows domain accounts.
+Organizations can also opt for smart cards, an authentication method that existed before biometric authentication. These tamper-resistant, portable storage devices enhance Windows security by authenticating users, signing code, securing e-mails, and signing in with Windows domain accounts.
 
 Smart cards provide:
 
@@ -174,11 +174,11 @@ With the support of web sign-in, users can sign in without a password using the 
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
-- [Configure federated sign-in for Windows devices][LINK-13]
+- [Web sign-in for Windows][LINK-13]
 
 ## Federated sign-in
 
-Windows 11 supports federated sign-in with external education identity management services. For students unable to type easily or remember complex passwords, this capability enables secure sign-in through methods like QR codes or pictures. Additionally, we have added shared device support. It allows multiple students to use the device throughout the school day.
+Windows 11 supports federated sign-in with external education identity management services. For students unable to type easily or remember complex passwords, this capability enables secure sign-in through methods like QR codes or pictures.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
