@@ -81,6 +81,16 @@ Organizations with hybrid scenarios can eliminate the need for on-premises domai
 
 - [Windows Hello for Business overview][LINK-2]
 
+### PIN reset
+
+The Microsoft PIN Reset Service allows users to reset their forgotten Windows Hello PINs without requiring re-enrollment. After registering the service in the Microsoft Entra ID tenant, the capability must be enabled on the Windwos devices using group policy or a device management solution like Microsoft Intune.
+
+Users can initiate a PIN reset from the Windows lock screen or from the sign-in options in Settings. The process involves authenticating and completing multifactor authentication to reset the PIN.
+
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+
+- [PIN reset][LINK-15]
+
 ### Windows Hello for Business multi-factor unlock
 
 For organizations that need an extra layer of sign-in security, multi-factor unlock enables IT admins to configure Windows by requiring a combination of two unique trusted signals to sign in. Trusted signal examples include a PIN or biometric data (face or fingerprint) combined with either a PIN, Bluetooth, IP configuration, or Wi-Fi.
@@ -200,3 +210,4 @@ When a password is used to sign in to a domain account, Windows uses the Kerbero
 [LINK-12]: /windows/security/identity-protection/smart-cards/smart-card-windows-smart-card-technical-reference
 [LINK-13]: /windows/security/identity-protection/web-sign-in
 [LINK-14]: /education/windows/federated-sign-in
+[LINK-15]: /windows/security/identity-protection/hello-for-business/pin-reset
