@@ -66,6 +66,17 @@ Users can also take advantage of more granular settings to easily enable and dis
 
 Windows Hello for Business extends Windows Hello to work with an organization's Active Directory and Microsoft Entra ID accounts. It provides single sign-on access to work or school resources such as OneDrive, work email, and other business apps. Windows Hello for Business also give IT admins the ability to manage PIN and other sign-in requirements for devices connecting to work or school resources.
 
+During a device's lifecycle, a password might only need to be used once during the provisioning process. After that, people can use a PIN, face, or fingerprint to unlock credentials and sign into the device.
+
+Provisioning methods include:
+
+- Temporary Access Pass (TAP), a time-limited passcode with strong authentication requirements issued through Microsoft Entra ID
+- Existing multifactor authentication with Microsoft Entra ID, including the Microsoft Authenticator app
+
+Windows Hello for Business replaces the username and password by combining a security key or certificate with a PIN or biometric data and then mapping the credentials to a user account during setup. There are multiple ways to deploy Windows Hello for Business depending on an organization's needs. Organizations that rely on certificates typically use on-premises public key infrastructure (PKI) to support authentication through Certificate Trust. Organizations using key trust deployment require root-of-trust provided by certificates on domain controllers.
+
+Organizations with hybrid scenarios can eliminate the need for on-premises domain controllers and simplify passwordless adoption by using Windows Hello for Business cloud Kerberos trust<sup>[\[13\]](conclusion.md#footnote13)</sup>. This solution uses security keys and replaces on-premises domain controllers with a cloud-based root-of-trust. As a result, organizations can take advantage of Windows Hello for Business and deploy security keys with minimal extra setup or infrastructure.
+
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
 - [Windows Hello for Business overview][LINK-2]
@@ -84,18 +95,7 @@ Multi-factor unlock is useful for organizations who need to prevent information 
 
 Windows 11 devices with Windows Hello for Business can protect user identities by removing the need to use passwords from day one.
 
-IT can now set a policy for Microsoft Entra ID joined machines so users no longer see the option to enter a password when accessing company resources<sup>[\[12\]](conclusion.md#footnote12)</sup>. Once the policy is set, passwords are removed from the Windows user experience, both for device unlock and in-session authentication scenarios via CredUI. However, passwords aren't eliminated from the identity directory yet. Users are expected to navigate through their core authentication scenarios using strong, phish-resistant, possession-based credentials like Windows Hello for Business and FIDO2 security keys. If necessary, users can use passwordless recovery mechanisms such as Microsoft PIN reset service or Web Sign-in.
-
-During a device's lifecycle, a password might only need to be used once during the provisioning process. After that, people can use a PIN, face, or fingerprint to unlock credentials and sign into the device.
-
-Provisioning methods include:
-
-- Temporary Access Pass (TAP), a time-limited passcode with strong authentication requirements issued through Microsoft Entra ID
-- Existing multifactor authentication with Microsoft Entra ID, including authentication methods like the Microsoft Authenticator app
-
-Windows Hello for Business replaces the username and password by combining a security key or certificate with a PIN or biometric data and then mapping the credentials to a user account during setup. There are multiple ways to deploy Windows Hello for Business depending on an organization's needs. Organizations that rely on certificates typically use on-premises public key infrastructure (PKI) to support authentication through Certificate Trust. Organizations using key trust deployment require root-of-trust provided by certificates on domain controllers.
-
-Organizations with hybrid scenarios can eliminate the need for on-premises domain controllers and simplify passwordless adoption by using Windows Hello for Business cloud Kerberos trust<sup>[\[13\]](conclusion.md#footnote13)</sup>. This solution uses security keys and replaces on-premises domain controllers with a cloud-based root-of-trust. As a result, organizations can take advantage of Windows Hello for Business and deploy security keys with minimal extra setup or infrastructure.
+IT can configure a policy setting for Microsoft Entra ID joined machines so users no longer see the option to enter a password when accessing company resources<sup>[\[12\]](conclusion.md#footnote12)</sup>. Once the policy is configured, passwords are removed from the Windows user experience, both for device unlock and in-session authentication scenarios via CredUI. However, passwords aren't eliminated from the identity directory yet. Users are expected to navigate through their core authentication scenarios using strong, phish-resistant, possession-based credentials like Windows Hello for Business and FIDO2 security keys. If necessary, users can use passwordless recovery mechanisms such as Microsoft PIN reset service or web sign-in.
 
 Users authenticate directly with Microsoft Entra ID, helping speed access to on-premises applications and other resources.
 
