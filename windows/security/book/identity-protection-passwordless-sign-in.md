@@ -47,6 +47,21 @@ If a peripheral camera is attached to the device after enrollment, that camera w
 
 - [Windows Hello biometric requirements][LINK-4]
 
+## Windows presence sensing
+
+Windows presence sensing<sup>[\[14\]](conclusion.md#footnote14)</sup> provides another layer of data security protection for hybrid workers. Windows 11 devices can intelligently adapt to a user's presence to help them stay secure and productive, whether they're working at home, the office, or a public environment.
+
+Windows presence sensing combines presence detection sensors with Windows Hello facial recognition to sign the user in hands-free and automatically locks the device when the user leaves. With adaptive dimming, the PC dims the screen when the user looks away on compatible devices with presence sensors. It's also easier than ever to configure presence sensors on devices, with easy enablement in the out-of-the-box experience and new links in Settings to help find presence sensing features. Device manufacturers can customize and build extensions for the presence sensor.
+
+Privacy is top of mind and more important than ever. Customers want to have greater transparency and control over the use of their information. The new app privacy settings enable users to allow or block access to their presence sensor information. Users can decide on these settings during the initial Windows 11 setup.
+
+Users can also take advantage of more granular settings to easily enable and disable differentiated presence sensing features like wake on approach, lock on leave, and adaptive dimming. We're also supporting developers with new APIs for presence sensing for third-party applications. Third-party applications can now access user presence information on devices with modern presence sensors.
+
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+
+- [Presence sensing][LINK-7]
+- [Manage presence sensing settings in Windows 11][LINK-8]
+
 ## Windows Hello for Business
 
 Windows Hello for Business extends Windows Hello to work with an organization's Active Directory and Microsoft Entra ID accounts. It provides single sign-on access to work or school resources such as OneDrive, work email, and other business apps. Windows Hello for Business also give IT admins the ability to manage PIN and other sign-in requirements for devices connecting to work or school resources.
@@ -101,21 +116,6 @@ Enhanced Sign-in Security is configured by device manufacturers during the manuf
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
 - [Windows Hello Enhanced Sign-in Security][LINK-5]
-
-## Windows presence sensing
-
-Windows presence sensing<sup>[\[14\]](conclusion.md#footnote14)</sup> provides another layer of data security protection for hybrid workers. Windows 11 devices can intelligently adapt to a user's presence to help them stay secure and productive, whether they're working at home, the office, or a public environment.
-
-Windows presence sensing combines presence detection sensors with Windows Hello facial recognition to sign the user in hands-free and automatically locks the device when the user leaves. With adaptive dimming, the PC dims the screen when the user looks away on compatible devices with presence sensors. It's also easier than ever to configure presence sensors on devices, with easy enablement in the out-of-the-box experience and new links in Settings to help find presence sensing features. Device manufacturers can customize and build extensions for the presence sensor.
-
-Privacy is top of mind and more important than ever. Customers want to have greater transparency and control over the use of their information. The new app privacy settings enable users to allow or block access to their presence sensor information. Users can decide on these settings during the initial Windows 11 setup.
-
-Users can also take advantage of more granular settings to easily enable and disable differentiated presence sensing features like wake on approach, lock on leave, and adaptive dimming. We're also supporting developers with new APIs for presence sensing for third-party applications. Third-party applications can now access user presence information on devices with modern presence sensors.
-
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
-
-- [Presence sensing][LINK-7]
-- [Manage presence sensing settings in Windows 11][LINK-8]
 
 ## FIDO2 support
 
