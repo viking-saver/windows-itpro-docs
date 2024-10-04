@@ -110,6 +110,8 @@ Windows presence sensing combines presence detection sensors with Windows Hello 
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
+- [Presence sensing][LINK-7]
+
 ### Developer APIs and app privacy support for presence sensing
 
 Privacy is top of mind and more important than ever. Customers want to have greater transparency and control over the use of their information. We're pleased to announce new app privacy settings that enable users to allow or block access to their presence sensor information. Users can decide on these settings during the initial Windows 11 setup.
@@ -118,7 +120,7 @@ Users can also take advantage of more granular settings to easily enable and dis
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
-- [Presence sensing][LINK-7]
+
 - [Manage presence sensing settings in Windows 11][LINK-8]
 
 ## FIDO2 support
