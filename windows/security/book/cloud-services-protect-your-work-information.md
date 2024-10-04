@@ -57,6 +57,14 @@ Both these features use a new [Global Secure Access client for Windows](/entra/g
 - [Microsoft Entra Private Access](/entra/global-secure-access/concept-private-access)
 - [Microsoft Entra Internet Access](/entra/global-secure-access/concept-internet-access)
 
+### Enterprise State Roaming
+
+Available to any organization with a Microsoft Entra ID Premium<sup>[\[9\]](conclusion.md#footnote9)</sup> `license, Enterprise State Roaming provides users with a unified Windows Settings experience across their Windows devices and reduces the time needed for configuring a new device.
+
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+
+- [Enterprise State Roaming in Microsoft Entra ID](/entra/identity/devices/enterprise-state-roaming-enable)
+
 ## Cloud-native management
 
 Microsoft recommends cloud-based device management so that IT professionals can manage company security policies and business applications without compromising user privacy on corporate or employee-owned devices. With cloud-native device management solutions like Microsoft Intune<sup>[\[9\]](conclusion.md#footnote9)</sup>, IT can manage Windows 11 using industry standard protocols. To simplify setup for users, management features are built directly into Windows, eliminating the need for a separate device management client.
@@ -69,6 +77,60 @@ Windows 11 built-in management features include:
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
 - [Mobile device management overview](/windows/client-management/mdm-overview)
+
+## Microsoft Intune
+
+Microsoft Intune<sup>[\[15\]](conclusion.md#footnote15)</sup> is a comprehensive cloud-native endpoint management solution that helps secure, deploy, and manage users, apps, and devices. Intune brings together technologies like Microsoft Configuration Manager and Windows Autopilot to simplify provisioning, configuration management, and software updates across the organization.
+
+Intune works with Microsoft Entra ID to manage security features and processes, including multifactor authentication and conditional access.
+
+Organizations can cut costs while securing and managing remote devices through the cloud in compliance with company policies<sup>[\[15\]](conclusion.md#footnote16)</sup>. For example, organizations can save time and money by provisioning preconfigured devices to remote employees using Windows Autopilot.
+
+Windows 11 enables IT professionals to move to the cloud while consistently enforcing security policies. Windows 11 provides expanded support for group policy administrative templates (ADMX-backed policies) in cloud-native device management solutions like Microsoft Intune, enabling IT professionals to easily apply the same security policies to both on-premises and remote devices.
+
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+
+- [What is Microsoft Intune](/mem/intune/fundamentals/what-is-intune)
+
+### Endpoint Privilege Management (EPM)
+
+Intune Endpoint Privilege Management supports organizations' Zero Trust journeys by helping them achieve a broad user base running with least privilege, while still permitting users to run tasks allowed by the organization to remain productive.
+
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+
+- [Endpoint Privilege Management](/mem/intune/protect/epm-overview?formCode=MG0AV3)
+
+### Mobile Application Management (MAM)
+
+With Intune, organizations can also extend MAM App Config, MAM App Protection, and App Protection Conditional Access capabilities to Windows. This enables people to access protected organizational content without having the device managed by IT. The first application to support MAM for Windows is Microsoft Edge.
+
+Customers have asked for App Control for Business (previously called Windows Defender Application Control) to manage Installer support for a long time. Now customers will be able to enable allowlisting of Win32 apps within their enterprise to proactively reduce the number of malware infections.
+
+Finally, Config Refresh helps organizations move to cloud from on-premises by protecting against settings deviating from the admin's intent.
+
+Microsoft Intune also has policies and settings to configure and manage the flow of operating system updates to devices, working with WUfB and WUfB-DS and giving admins great control over their deployments
+
+With Intune, organizations can also extend MAM App Config, MAM App Protection, and App Protection Conditional Access capabilities to Windows. This enables people to access protected organizational content without having the device managed by IT. The first application to support MAM for Windows is Microsoft Edge.
+
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+
+- [Data protection for Windows MAM](/mem/intune/apps/protect-mam-windows?formCode=MG0AV3)
+
+## MDM enrollment certificate attestation
+
+When a device is enrolled into device management, the administrator assumes that the device will enroll and receive appropriate policies to secure and manage the PC as they expect. In some circumstances, enrollment certificates can be removed by malicious actors and then used on unmanaged PCs to appear as though they are enrolled, but without the security and management policies the administrator intended. With MDM enrollment certificate attestation, the certificate and keys are bound to a specific machine through the use of the Trusted Platform Module (TPM) to ensure that they can't be lifted from one device and applied to another.
+
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+
+- [Windows enrollment attestation](/mem/intune/enrollment/windows-enrollment-attestation)
+
+## Local Administrator Password (LAPs)
+
+Local Administrator Password solution was a key consideration for many customers when deciding to make the transition from on-premises to cloud-managed devices using Intune. With LAPS, organizations can automatically manage and back up the password of a local administrator account on Microsoft Entra ID joined or hybrid Microsoft Entra ID joined devices.
+
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+
+- [Windows LAPS overview](/windows-server/identity/laps/laps-overview)
 
 ## Microsoft security baselines
 
@@ -97,60 +159,6 @@ The security baseline has been enhanced with over 70 new settings, enabling loca
 
 - [Intune security baseline overview](/mem/intune/protect/security-baselines)
 - [List of the settings in the Windows security baseline in Intune](/mem/intune/protect/security-baseline-settings-mdm-all)
-
-## MDM enrollment certificate attestation
-
-When a device is enrolled into device management, the administrator assumes that the device will enroll and receive appropriate policies to secure and manage the PC as they expect. In some circumstances, enrollment certificates can be removed by malicious actors and then used on unmanaged PCs to appear as though they are enrolled, but without the security and management policies the administrator intended. With MDM enrollment certificate attestation, the certificate and keys are bound to a specific machine through the use of the Trusted Platform Module (TPM) to ensure that they can't be lifted from one device and applied to another.
-
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
-
-- [Windows enrollment attestation](/mem/intune/enrollment/windows-enrollment-attestation)
-
-## Microsoft Intune
-
-Microsoft Intune<sup>[\[15\]](conclusion.md#footnote15)</sup> is a comprehensive endpoint management solution that helps secure, deploy, and manage users, apps, and devices. Intune brings together technologies like Microsoft Configuration Manager and Windows Autopilot to simplify provisioning, configuration management, and software updates across the organization.
-
-Intune works with Microsoft Entra ID to manage security features and processes, including multifactor authentication and conditional access.
-
-Organizations can cut costs while securing and managing remote devices through the cloud in compliance with company policies<sup>[\[15\]](conclusion.md#footnote16)</sup>. For example, organizations can save time and money by provisioning preconfigured devices to remote employees using Windows Autopilot.
-
-Windows 11 enables IT professionals to move to the cloud while consistently enforcing security policies. Windows 11 provides expanded support for group policy administrative templates (ADMX-backed policies) in cloud-native device management solutions like Microsoft Intune, enabling IT professionals to easily apply the same security policies to both on-premises and remote devices.
-
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
-
-- [What is Microsoft Intune](/mem/intune/fundamentals/what-is-intune)
-
-### Endpoint Privilege Management (EPM)
-
-Intune Endpoint Privilege Management supports organizations' Zero Trust journeys by helping them achieve a broad user base running with least privilege, while still permitting users to run tasks allowed by the organization to remain productive.
-
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
-
-- [Endpoint Privilege Management](/mem/intune/protect/epm-overview?formCode=MG0AV3)
-
-### Local Administrator Password (LAPs)
-
-Local Administrator Password solution was a key consideration for many customers when deciding to make the transition from on-premises to cloud-managed devices using Intune. With LAPS (available in preview), organizations can automatically manage and back up the password of a local administrator account on Microsoft Entra ID joined or hybrid Microsoft Entra ID joined devices.
-
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
-
-- [Windows LAPS overview](/windows-server/identity/laps/laps-overview)
-
-### Mobile Application Management (MAM)
-
-With Intune, organizations can also extend MAM App Config, MAM App Protection, and App Protection Conditional Access capabilities to Windows. This enables people to access protected organizational content without having the device managed by IT. The first application to support MAM for Windows is Microsoft Edge.
-
-Customers have asked for App Control for Business (previously called Windows Defender Application Control) to manage Installer support for a long time. Now customers will be able to enable allowlisting of Win32 apps within their enterprise to proactively reduce the number of malware infections.
-
-Finally, Config Refresh helps organizations move to cloud from on-premises by protecting against settings deviating from the admin's intent.
-
-Microsoft Intune also has policies and settings to configure and manage the flow of operating system updates to devices, working with WUfB and WUfB-DS and giving admins great control over their deployments
-
-With Intune, organizations can also extend MAM App Config, MAM App Protection, and App Protection Conditional Access capabilities to Windows. This enables people to access protected organizational content without having the device managed by IT. The first application to support MAM for Windows is Microsoft Edge.
-
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
-
-- [Data protection for Windows MAM](/mem/intune/apps/protect-mam-windows?formCode=MG0AV3)
 
 ## Remote Wipe
 
@@ -250,14 +258,6 @@ Explore more about Windows Autopatch through [Forrester study](https://aka.ms/Au
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
 - [Windows Autopatch documentation](https://aka.ms/Autopatchdocs)
-
-## Enterprise State Roaming with Azure
-
-Available to any organization with a Microsoft Entra ID Premium<sup>[\[9\]](conclusion.md#footnote9)</sup> or Enterprise Mobility + Security (EMS)<sup>[\[9\]](conclusion.md#footnote9)</sup> license, Enterprise State Roaming provides users with a unified Windows Settings experience across their Windows devices and reduces the time needed for configuring a new device.
-
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
-
-- [Enterprise State Roaming FAQ](/azure/active-directory/devices/enterprise-state-roaming-faqs)
 
 ## Universal Print
 
