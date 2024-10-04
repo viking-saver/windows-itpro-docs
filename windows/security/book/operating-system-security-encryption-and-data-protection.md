@@ -54,7 +54,7 @@ Encrypted hard drives enable:
 
 ## Personal data encryption (PDE)
 
-Personal Data Encryption refers to a user authenticated encryption mechanism used to protect user content. Windows Hello for Business is the modern user authentication mechanism used with PDE. Windows Hello for Business, either with PIN or biometrics (face or fingerprint), is used to protect the container, which houses the encryption keys used by Personal Data Encryption (PDE). When the user logs in (either after bootup or unlocking after a lock screen), the container gets authenticated to release the keys in the container to decrypt user content.
+Personal Data Encryption refers to a user authenticated encryption mechanism used to protect user content. Windows Hello for Business is the multi-factor authentication mechanism used with PDE. Windows Hello for Business, either with PIN, face, or fingerprint, is used to protect the container, which houses the encryption keys used by Personal Data Encryption (PDE). When the user logs in (either after bootup or unlocking after a lock screen), the container gets authenticated to release the keys in the container to decrypt user content.
 
 With the first release of PDE (Windows 11, version 22H2), the PDE API was available, which when adopted by applications can protect data under the purview of the applications. With the next Windows platform release, PDE for Folders will be released. This feature doesn't require updates to any applications, and protects the contents in the Known Windows Folders from bootup until first sign-in.
 

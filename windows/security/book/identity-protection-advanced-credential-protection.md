@@ -92,7 +92,7 @@ IT administrators can refine the application and management of access to:
 - Protect a greater number and variety of network resources from misuse
 - Provision users to access resources in a manner that is consistent with organizational policies and the requirements of their jobs. Organizations can implement the principle of least-privilege access, which asserts that users should be granted access only to the data and operations they require to perform their jobs
 - Update users' ability to access resources regularly, as an organization's policies change or as users' jobs change
-- Support evolving workplace needs, including access from hybrid or remote locations, or from a rapidly expanding array of devices, including tablets and mobile phones
+- Support evolving workplace needs, including access from hybrid or remote locations, or from a rapidly expanding array of devices, including tablets and phones
 - Identify and resolve access issues when legitimate users are unable to access resources that they need to perform their jobs
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**

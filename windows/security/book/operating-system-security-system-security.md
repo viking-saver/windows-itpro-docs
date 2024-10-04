@@ -117,11 +117,11 @@ Visibility and awareness of device security and health are key to any action tak
 
 ## Config Refresh
 
-With traditional Group Policy, policy settings are refreshed on a PC when a user signs in and every 90 minutes by default. Administrators can adjust that timing to be shorter to ensure that the policy settings are compliant with the management settings set by IT.
+With traditional group policy, policy settings are refreshed on a PC when a user signs in and every 90 minutes by default. Administrators can adjust that timing to be shorter to ensure that the policy settings are compliant with the management settings set by IT.
 
 By contrast, with a device management solution like Microsoft Intune<sup>[\[9\]](conclusion.md#footnote9)</sup>, policies are refreshed when a user signs in and then at eight-hours interval by default. But policy settings are migrated from GPO to a device management solution, one remaining gap is the longer period between the reapplication of a changed policy.
 
-Config Refresh allows settings in the Policy configuration service provider (CSP) that drift due to misconfiguration, registry edits, or malicious software on a PC to be reset to the value the administrator intended every 90 minutes by default. It's configurable to refresh every 30 minutes if desired. The Policy CSP covers hundreds of settings that were traditionally set with Group Policy and are now set through Mobile Device Management (MDM) protocols.
+Config Refresh allows settings in the Policy configuration service provider (CSP) that drift due to misconfiguration, registry edits, or malicious software on a PC to be reset to the value the administrator intended every 90 minutes by default. It's configurable to refresh every 30 minutes if desired. The Policy CSP covers hundreds of settings that were traditionally set with group policy and are now set through Mobile Device Management (MDM) protocols.
 
 Config Refresh can also be paused for a configurable period of time, after which it will be reenabled. This is to support scenarios where a helpdesk technician might need to reconfigure a device for troubleshooting purposes. It can also be resumed at any time by an administrator.
 
@@ -131,7 +131,7 @@ Config Refresh can also be paused for a configurable period of time, after which
 
 ## Kiosk mode
 
-With Assigned Access, Windows devices restrict functionality to pre-selected applications depending on the user and keep individual identities separate, which is ideal for public-facing or shared devices. Configuring a device as a kiosk is a straightforward process. You can do this locally on the device or remotely using mobile device management.
+With Assigned Access and Shell Launcher, you can configure Windows to restrict functionality to pre-selected applications. These features are ideal for public-facing or shared devices like kiosks. Configuring a device as a kiosk is straightforward and can be done locally on the device or through a cloud-based device management solution like Microsoft Intune.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 

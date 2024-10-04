@@ -15,7 +15,7 @@ Microsoft Entra ID is a comprehensive cloud-based identity management solution t
 
 Organizations can deploy Microsoft Entra ID joined devices to enable access to both cloud and on-premises apps and resources. Access to resources can be controlled based on the Microsoft Entra ID account and Conditional Access policies applied to the device. For the most seamless and delightful end to end single sign-on (SSO) experience, we recommend users configure Windows Hello for Business during the out of box experience for easy passwordless sign-in to Entra ID .
 
-For people wanting to connect to Entra on their personal devices, they can do so by using Workplace Join or Add Account – this action registers that users personal device with Microsoft Entra ID and helps- also called Workplace joined - IT admins can support users in bring your own device (BYOD) or mobile device scenarios. Credentials are authenticated and bound to the joined device and cannot be copied to another device without explicit reverification.
+For people wanting to connect to Microsoft Entra on their personal devices, they can do so by using *workplace join* or *add account*.  These two actions registers that user's personal device with Microsoft Entra ID, allowing IT admins to support users in bring your own device (BYOD) scenarios. Credentials are authenticated and bound to the joined device, and cannot be copied to another device without explicit reverification.
 
 To provide more security and control for IT and a seamless experience for end users, Microsoft Entra ID works with apps and services, including on-premises software and thousands of software-as-a-service (SaaS) applications. Microsoft Entra ID protections include single sign-on, multifactor authentication, conditional access policies, identity protection, identity governance, and privileged identity management.
 
@@ -78,24 +78,25 @@ A security baseline is a group of Microsoft-recommended configuration settings t
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
-- [Windows security baselines you can deploy with Microsoft Intune](/mem/intune/protect/security-baselines)
+- [Security baselines](/windows/security/operating-system-security/device-management/windows-security-configuration-framework/windows-security-baselines)
 
-### MDM security baseline
+### Security baseline for cloud-based device management solutions
 
-Windows 11 can be configured with Microsoft's MDM security baseline backed by ADMX policies, which functions like the Microsoft GP-based security baseline. The security baseline enables IT administrators to easily address security concerns and compliance needs for modern cloud-managed devices.
+Windows 11 can be configured with Microsoft's security baseline, designed for cloud-based device management solutions like Microsoft Intune. These security baselines function similarly to group policy-based ones and can be easily integrated into existing device management tools.
 
 The security baseline includes policies for:
 
-- Microsoft inbox security technology such as BitLocker, Microsoft Defender SmartScreen, virtualization-based security, Exploit Guard, Microsoft Defender Antivirus, and Windows Firewall
+- Microsoft inbox security technologies such as BitLocker, Microsoft Defender SmartScreen, virtualization-based security, Exploit Guard, Microsoft Defender Antivirus, and Windows Firewall
 - Restricting remote access to devices
 - Setting credential requirements for passwords and PINs
-- Restricting use of legacy technology
+- Restricting the use of legacy technology
 
-The MDM security baseline has been enhanced with over 70 new settings which enable local user rights assignment, services management, and local security policies which were previously only available through Group Policy.  This enables the adoption of cloud-based device management solutions and closer adherence to industry standard benchmarks for security.
+The security baseline has been enhanced with over 70 new settings, enabling local user rights assignment, services management, and local security policies that were previously only available through group policy. This enhancement facilitates the adoption of cloud-based device management solutions and ensures closer adherence to industry-standard security benchmarks.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
-- [MDM security baseline](/windows/security/threat-protection/windows-security-configuration-framework/windows-security-baselines)
+- [Intune security baseline overview](/mem/intune/protect/security-baselines)
+- [List of the settings in the Windows security baseline in Intune](/mem/intune/protect/security-baseline-settings-mdm-all)
 
 ## MDM enrollment certificate attestation
 

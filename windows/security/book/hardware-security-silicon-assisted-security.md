@@ -79,7 +79,9 @@ System Management Mode (SMM) isolation is an execution mode in x86-based process
 
 ### Configuration lock
 
-In many organizations, IT administrators enforce policies on their corporate devices to protect the OS and keep devices in a compliant state by preventing users from changing configurations and creating configuration drift. Configuration drift occurs when users with local admin rights change settings and put the device out of sync with security policies. Devices in a noncompliant state can be vulnerable until the next sync, when configuration is reset with the mobile device management (MDM) solution. Secured-core PC configuration lock is a Secured-core PC (SCPC) feature that prevents users from making unwanted changes to security settings. With config lock, the OS monitors the registry keys that are supported and reverts to the IT-desired SCPC state in seconds after detecting a drift.
+In many organizations, IT administrators enforce policies on their corporate devices to protect the OS and keep devices in a compliant state by preventing users from changing configurations and creating configuration drift. Configuration drift occurs when users with local admin rights change settings and put the device out of sync with security policies. Devices in a noncompliant state can be vulnerable until the next sync, when configuration is reset with the device management solution.
+
+Configuration lock is a Secured-core PC (SCPC) feature that prevents users from making unwanted changes to security settings. With configuration lock, Windows monitors supported registry keys and reverts to the IT-desired SCPC state in seconds after detecting a drift.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
