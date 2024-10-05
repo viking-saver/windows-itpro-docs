@@ -37,16 +37,16 @@ A **Virtualization-based security enclave** is a software-based trusted executio
 - [Hypervisor-protected Code Integrity (HVCI)](/windows/security/hardware-security/enable-virtualization-based-protection-of-code-integrity)
 - [Virtualization-based security enclave](/windows/win32/trusted-execution/vbs-enclaves)
 
-## Hardware-enforced stack protection
+### Hardware-enforced stack protection
 
-Hardware-enforced stack protection integrates software and hardware for a modern defense against cyberthreats like memory corruption and zero-day exploits. Based on Control- flow Enforcement Technology (CET) from Intel and AMD Shadow Stacks, hardware-enforced stack protection is designed to protect against exploit techniques that try to hijack return addresses on the stack.
+Hardware-enforced stack protection integrates software and hardware for a modern defense against cyberthreats like memory corruption and zero-day exploits. Based on Control-flow Enforcement Technology (CET) from Intel and AMD Shadow Stacks, hardware-enforced stack protection is designed to protect against exploit techniques that try to hijack return addresses on the stack.
 
 Application code includes a program processing stack that hackers seek to corrupt or disrupt in a type of attack called *stack smashing*. When defenses like executable space protection began thwarting such attacks, hackers turned to new methods like return-oriented programming. Return-oriented programming, a form of advanced stack smashing, can bypass defenses, hijack the data stack, and ultimately force a device to perform harmful operations. To guard against these control-flow hijacking attacks, the Windows kernel creates a separate *shadow stack* for return addresses. Windows 11 extends stack protection capabilities to provide both user mode and kernel mode support.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
 - [Understanding Hardware-enforced Stack Protection](https://techcommunity.microsoft.com/t5/windows-os-platform-blog/understanding-hardware-enforced-stack-protection/ba-p/1247815)
-- [Developer Guidance for Hardware-enforced Stack Protection](https://techcommunity.microsoft.com/t5/windows-kernel-internals/developer-guidance-for-hardware-enforced-stack-protection/ba-p/2163340)
+- [Developer Guidance for hardware-enforced stack protection](https://techcommunity.microsoft.com/t5/windows-kernel-internals/developer-guidance-for-hardware-enforced-stack-protection/ba-p/2163340)
 
 ## Kernel Direct Memory Access (DMA) protection
 
@@ -66,22 +66,25 @@ Secured-core PCs provide multiple layers of robust protection against hardware a
 
 Thousands of PC vendors produce numerous device models with diverse UEFI firmware components, which in turn creates an incredibly large number of SRTM signatures and measurements at bootup. Because these signatures and measurements are inherently trusted by Secure Boot, it can be challenging to constrain trust to only what is needed to boot on any specific device. Traditionally, blocklists and allowlists were the two main techniques used to constrain trust, and they continue to expand if devices rely only on SRTM measurements.
 
-In Secured-core PCs, [System Guard Secure Launch](/windows/security/hardware-security/system-guard-secure-launch-and-smm-protection) protects bootup with a technology known as the Dynamic Root of Trust for Measurement (DRTM). With DRTM, the system initially follows the normal UEFI Secure Boot process. However, before launching, the system enters a hardware-controlled trusted state that forces the CPU down a hardware-secured code path. If a malware rootkit or bootkit bypasses UEFI Secure Boot and resides in memory, DRTM prevents it from accessing secrets and critical code protected by the Virtualization-based security environment. [Firmware Attack Surface Reduction (FASR) technology](/windows-hardware/drivers/bringup/firmware-attack-surface-reduction) can be used instead of DRTM on supported devices, such as Microsoft Surface.
+### Dynamic Root of Trust for Measurement (DRTM)
 
-System Management Mode (SMM) isolation is an execution mode in x86-based processors that runs at a higher effective privilege than the hypervisor. SMM complements the protections provided by DRTM by helping to reduce the attack surface. Relying on capabilities provided by silicon providers like Intel and AMD, SMM isolation enforces policies that implement restrictions such as preventing SMM code from accessing OS memory. The SMM isolation policy is included as part of the DRTM measurements that can be sent to a verifier like Microsoft Azure Remote Attestation.
+In Secured-core PCs, System Guard Secure Launch protects bootup with a technology known as the *Dynamic Root of Trust for Measurement (DRTM)*. With DRTM, the system initially follows the normal UEFI Secure Boot process. However, before launching, the system enters a hardware-controlled trusted state that forces the CPU down a hardware-secured code path. If a malware rootkit or bootkit bypasses UEFI Secure Boot and resides in memory, DRTM prevents it from accessing secrets and critical code protected by the Virtualization-based security environment. Firmware Attack Surface Reduction (FASR) technology can be used instead of DRTM on supported devices, such as Microsoft Surface.
+
+System Management Mode (SMM) isolation is an execution mode in x86-based processors that runs at a higher effective privilege than the hypervisor. SMM complements the protections provided by DRTM by helping to reduce the attack surface. Relying on capab ilities provided by silicon providers like Intel and AMD, SMM isolation enforces policies that implement restrictions such as preventing SMM code from accessing OS memory. The SMM isolation policy is included as part of the DRTM measurements that can be sent to a verifier like Microsoft Azure Remote Attestation.
 
 :::image type="content" source="images/secure-launch.png" alt-text="Diagram of secure launch components." lightbox="images/secure-launch.png" border="false":::
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
-- [Dynamic Root of Trust measure and SMM isolation](https://www.microsoft.com/security/blog/2020/09/01/force-firmware-code-to-be-measured-and-attested-by-secure-launch-on-windows-10/)
-- [Secured-core PC firmware protection](/windows-hardware/design/device-experiences/oem-highly-secure-11)
+- [System Guard Secure Launch](/windows/security/hardware-security/system-guard-secure-launch-and-smm-protection)
+- [Firmware Attack Surface Reduction](/windows-hardware/drivers/bringup/firmware-attack-surface-reduction)
+- [Windows 11 Secured-core PCs](/windows-hardware/design/device-experiences/oem-highly-secure-11)
 
 ### Configuration lock
 
 In many organizations, IT administrators enforce policies on their corporate devices to protect the OS and keep devices in a compliant state by preventing users from changing configurations and creating configuration drift. Configuration drift occurs when users with local admin rights change settings and put the device out of sync with security policies. Devices in a noncompliant state can be vulnerable until the next sync, when configuration is reset with the device management solution.
 
-Configuration lock is a Secured-core PC (SCPC) feature that prevents users from making unwanted changes to security settings. With configuration lock, Windows monitors supported registry keys and reverts to the IT-desired SCPC state in seconds after detecting a drift.
+Configuration lock is a Secured-core PC feature that prevents users from making unwanted changes to security settings. With configuration lock, Windows monitors supported registry keys and reverts to the IT-desired Secured-core PC's state in seconds after detecting a drift.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
