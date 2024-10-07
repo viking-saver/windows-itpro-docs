@@ -1,6 +1,6 @@
 ---
-title: Uninstall MCCE cache nodes
-description: Details on how to uninstall Microsoft Connected Cache for Enterprise and Education (MCCE) from a host machine.
+title: Uninstall MCC cache nodes
+description: Details on how to uninstall Microsoft Connected Cache for Enterprise and Education (MCC) from a host machine.
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: how-to
@@ -14,18 +14,18 @@ appliesto:
 ms.date: 09/27/2024
 ---
 
-# Uninstall MCCE caching software from a host machine
+# Uninstall MCC caching software from a host machine
 
-This article describes how to uninstall Microsoft Connected Cache for Enterprise and Education (MCCE) caching software from a host machine. These steps should be taken after deleting the cache node in the Azure portal.
+This article describes how to uninstall Microsoft Connected Cache for Enterprise and Education (MCC) caching software from a host machine. These steps should be taken after deleting the cache node in the Azure portal.
 
-## Steps to uninstall MCCE from a Windows host machine
+## Steps to uninstall MCC from a Windows host machine
 
 1. Launch a PowerShell window *as administrator* and navigate to the MCC installation directory (C:\mcconwsl01 by default)
 1. Run the `uninstallmcconwsl.ps1` script
 
-## Steps to uninstall MCCE from a Linux host machine
+## Steps to uninstall MCC from a Linux host machine
 
-The `uninstallmcc.sh` script within the provisioning package uninstalls the MCCE caching software and all related components, including:
+The `uninstallmcc.sh` script within the provisioning package uninstalls the MCC caching software and all related components, including:
 
 - IoT Edge
 - IoT Edge Agent

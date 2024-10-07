@@ -1,6 +1,6 @@
 ---
-title: MCCE support and troubleshooting
-description: Details on how to troubleshoot and seek support for Microsoft Connected Cache for Enterprise (MCCE).
+title: MCC support and troubleshooting
+description: Details on how to troubleshoot and seek support for Microsoft Connected Cache for Enterprise (MCC).
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: how-to
@@ -38,7 +38,7 @@ For example: "Migrate data from regular tables to ledger tables" or "Create a ne
 
 -->
 
-# Troubleshoot Microsoft Connected Cache for Enterprise and Education (MCCE)
+# Troubleshoot Microsoft Connected Cache for Enterprise and Education (MCC)
 
 <!-- 2. Introductory paragraph ----------------------------------------------------------
 
@@ -54,7 +54,7 @@ Example: In this article, you will migrate your user databases from IBM Db2 to S
 
 -->
 
-This article contains instructions on how to troubleshoot different issues you may encounter while using MCCE. These issues are categorized by the task in which they may be encountered. For example, this next section covers troubleshooting [MCC Azure resource creation](mcc-ent-create-resource-and-cache.md).
+This article contains instructions on how to troubleshoot different issues you may encounter while using MCC. These issues are categorized by the task in which they may be encountered. For example, this next section covers troubleshooting [MCC Azure resource creation](mcc-ent-create-resource-and-cache.md).
 
 ## Troubleshooting Azure resource creation
 

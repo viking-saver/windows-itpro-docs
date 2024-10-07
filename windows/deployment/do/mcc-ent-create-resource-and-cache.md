@@ -1,6 +1,6 @@
 ---
-title: Create and configure MCCE cache nodes
-description: Details on how to create and configure Microsoft Connected Cache for Enterprise and Education (MCCE) cache nodes.
+title: Create and configure MCC cache nodes
+description: Details on how to create and configure Microsoft Connected Cache for Enterprise and Education (MCC) cache nodes.
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: how-to
@@ -14,16 +14,16 @@ appliesto:
 ms.date: 06/03/2024
 ---
 
-# Create MCCE Azure resource and cache nodes
+# Create Microsoft Connected Cache Azure resource and cache nodes
 
-This article outlines how to create and configure your Microsoft Connected Cache for Enterprise and Education (MCCE) cache nodes. The creation and configuration of your cache node takes place in Azure. The deployment of your cache node requires downloading and running an OS-specific provisioning package on your host machine.
+This article outlines how to create and configure your Microsoft Connected Cache for Enterprise and Education (MCC) cache nodes. The creation and configuration of your cache node takes place in Azure. The deployment of your cache node requires downloading and running an OS-specific provisioning package on your host machine.
 
 ## Prerequisites
 1. **Azure Pay-As-You-Go subscription**: Microsoft Connected Cache is a free-of-charge service hosted in Azure. You'll need a pay-as-you-go Azure subscription in order to onboard to our service. To create a subscription, go to [pay-as-you-go subscription page](https://azure.microsoft.com/offers/ms-azr-0003p/).
 2. **Hardware to host MCC**: The recommended configuration serves approximately 35,000 managed devices, downloading a 2-GB payload in 24-hour timeframe at a sustained rate of 6.5 Gbps.
-For more information on sizing and OS requirements, see [the prerequisites for using MCCE](mcc-ent-prerequisites.md).
+For more information on sizing and OS requirements, see [the prerequisites for using MCC](mcc-ent-prerequisites.md).
 
-## Create MCCE Azure resource
+## Create MCC Azure resource
 
 # [Azure portal](#tab/portal)
 
@@ -59,7 +59,7 @@ For more information on sizing and OS requirements, see [the prerequisites for u
 
     * Resource group under which an MCC resource can be created. Use the [az group create](/cli/azure/group#az-group-create) command to create a new Resource group if you don't already have one.
 
-#### Create MCCE Azure resource
+#### Create MCC Azure resource
 Replace the following placeholders with your own information:
 * *\<resource-group>*: An existing resource group in your subscription.
 * *\<mcc-resource-name>*: A name for your Microsoft Connected Cache for Enterprise resource.
@@ -71,7 +71,7 @@ az mcc ent resource create --mcc-resource-name <mymccresource> --resource-group 
 
 ---
 
-## Create MCCE cache node
+## Create MCC cache node
 
 # [Azure portal](#tab/portal)
 
@@ -121,7 +121,7 @@ az mcc ent node create --cache-node-name <mycachenode> --mcc-resource-name <mymc
 
 ---
 
-## Configure MCCE cache node
+## Configure MCC cache node
 
 # [Azure portal](#tab/portal)
 Enter required values to configure your cache node. To learn more about the definitions of each field, review the Configuration fields at the bottom of this article.
@@ -140,9 +140,9 @@ Replace the following placeholders with your own information:
 * *\<size-in-gb>*: The size of cache drive. Must be at least 50 Gb.
 * *\<proxy>*: If proxy needs to be enabled or not.<br>
   Accepted values: enabled, disabled
-  If proxy is set to enabled, you must provide proxy host and proxy port information
-* *\<proxy-host>*: The proxy host name or ip address
-* *\<proxy-port>*: Proxy port
+  Proxy should be set to enabled if the cache node will need to pass through a network proxy to download content. The provided proxy will also be used during deployment of the MCC cache node to your host machine.
+* *\<proxy-host>*: The proxy host name or ip address. Required if proxy is set to enabled.
+* *\<proxy-port>*: Proxy port number. Required if proxy is set to enabled.
 * *\<auto-update-ring>*: Update ring the cache node should have.<br>
   Accepted values: slow, fast.
   If update ring is set to slow, you must provide the day of week, time of day and week of month the cache node should be updated.
@@ -171,9 +171,9 @@ Replace the following placeholders with your own information:
 * *\<size-in-gb>*: The size of cache drive. Must be at least 50 Gb.
 * *\<proxy>*: If proxy needs to be enabled or not.<br>
   Accepted values: enabled, disabled
-  If proxy is set to enabled, you must provide proxy host and proxy port information
-* *\<proxy-host>*: The proxy host name or ip address
-* *\<proxy-port>*: Proxy port
+  Proxy should be set to enabled if the cache node will need to pass through a network proxy to download content. The provided proxy will also be used during deployment of the MCC cache node to your host machine.
+* *\<proxy-host>*: The proxy host name or ip address. Required if proxy is set to enabled.
+* *\<proxy-port>*: Proxy port number. Required if proxy is set to enabled.
 * *\<auto-update-ring>*: Update ring the cache node should have.<br>
   Accepted values: slow, fast.
   If update ring is set to slow, you must provide the day of week, time of day and week of month the cache node should be updated.
@@ -234,12 +234,12 @@ To deploy cache nodes using Azure CLI, see [Bulk management of cache nodes](mcc-
 
 #### Proxy settings
 <br>
-You can choose to enable or disable proxy settings on your cache node.
+You can choose to enable or disable proxy settings on your cache node. Proxy should be set to enabled if the cache node will need to pass through a network proxy to download content. The provided proxy will also be used during deployment of the MCC cache node to your host machine.
 
 <br>
 
 >[!IMPORTANT]
->Enabling or disabling the proxy settings after your cache node has been deployed will require running the provisioning script again. This will ensure that proxy changes are in effect on the cache node. 
+>Enabling or disabling the proxy settings after your cache node has been deployed will require running the provisioning script on the host machine again. This will ensure that proxy changes are in effect on the cache node. 
 
 | Field Name	|Expected Value	 |Description|
 |---|---|---|
