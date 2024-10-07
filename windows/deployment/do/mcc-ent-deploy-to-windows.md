@@ -46,7 +46,7 @@ To deploy a cache node programmatically, you'll need to use Azure CLI to get the
 1. Open a PowerShell window *as administrator* on the host machine, then change directory to the extracted provisioning package.
 1. Set the Execution Policy to "Unrestricted" to allow the provisioning scripts to run.
 1. Create a `$User` environment variable containing the username of the account you intend to designate as the MCC runtime account. For gMSAs, the value should be formatted as `"Domain\Username$"`. For Local User accounts, `$User` should be formatted as `"LocalMachineName\Username"`.
-    - If you're using a Local User account as the MCC runtime account, you'll also need to create a [PSCredential Object](https://learn.microsoft.com/dotnet/api/system.management.automation.pscredential?view=powershellsdk-7.4.0&preserve-view=true) named `$myLocalAccountCredential`.
+    - If you're using a Local User account as the MCC runtime account, you'll also need to create a [PSCredential Object](/dotnet/api/system.management.automation.pscredential) named `$myLocalAccountCredential`.
 1. Replace the values in the following provisioning command before running it on the host machine. Note that `-mccLocalAccountCredential $myLocalAccountCredential` is only needed if you are using a Local User account as the MCC runtime account.
 
 ```powershell-interactive
