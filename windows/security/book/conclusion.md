@@ -1,11 +1,12 @@
 ---
 title: Conclusion
-description: Conclusion
+description: Windows 11 security book conclusion.
 ms.topic: overview
 ms.date: 09/06/2024
 ---
 
 # Conclusion
+
 We will continue to bring you new features to protect against evolving threats, simplify management, and securely enable new workstyles. With Windows 11 devices, organizations of all sizes can benefit from the security and performance to thrive anywhere.
 
 :::image type="content" source="images/chip-to-cloud.png" alt-text="Diagram of chip-to-cloud containing a list of security features." lightbox="images/chip-to-cloud.png" border="false":::
@@ -14,38 +15,33 @@ We will continue to bring you new features to protect against evolving threats, 
 
 New:
 
-- Config Refresh
-- 5G and eSIM
-- Win32 apps in isolation (public preview)
-- Passkey
-- Sign-in Session Token Protection
-- Windows Local Administrator Password Solution (LAPS) (public preview)
-- Microsoft Intune Suite Endpoint Privilege Management (EPM)
-- VBS enclaves
-- Hypervisor-enforced paging translation (HVPT)
-- VBS key protection
-- Trusted signing
+- [Config Refresh](operating-system-security-system-security.md#config-refresh)
+- [Trusted signing](application-security-application-and-driver-control.md#trusted-signing)
+- [VBS Key Protection](identity-protection-advanced-credential-protection.md#vbs-key-protection)
+- [Virtualization-based security enclave](hardware-security-silicon-assisted-security.md#virtualization-based-security-enclave)
+- [Win32 app isolation](application-security-application-isolation.md#win32-app-isolation)
 
 Enhanced:
 
-- Hardware security user experience
+- Application Control for Business
 - BitLocker to go
+- Credential guard
 - Device encryption
-- Windows Firewall
+- Enhanced Phishing protection
+- Enhanced Sign-in security (ESS)
+- Hardware security user experience
+- Local Security Authority
+- Lockout policies for local admin
+- Microsoft Authenticator
+- Presence Detection
 - Server Message Block direct
 - Smart App Control (SAC) going into Enforcement mode
-- Application Control for Business
-- Enhanced Sign-in security (ESS)
-- Windows Hello for Business
-- Presence Detection
-- Wake on approach, lock on leave
 - Universal Print
-- Lockout policies for local admin
-- Enhanced Phishing protection
+- Wake on approach, lock on leave
+- Windows Firewall
+- Windows Hello for Business
+- Windows Local Administrator Password Solution (LAPS)
 - Windows Presence sensing
-- Credential guard
-- Local Security Authority
-- Microsoft Authenticator
 
 ## Document revision history
 
@@ -56,8 +52,9 @@ Enhanced:
 |April 2022| Added Upcoming features section.|
 | September 2022| Updates with Windows 11 2022 Update features and enhancements.|
 |April 2023| Minor edits and updates to edition availability.|
-|September 2023| Updates with Windows 11 2023 Update features and enhancement.|
+|September 2023| Updates with Windows 11 2023 Update features and enhancements.|
 |May 2024| Move form PDF format to web format.|
+|November 2024| Updates with Windows 11 2024 Update features and enhancements.|
 
 ## Endnotes
 
