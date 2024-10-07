@@ -88,13 +88,13 @@ For more information, see [Microsoft Defender SmartScreen overview](/windows/sec
 
 Microsoft Defender Antivirus in Windows 10 uses a multi-pronged approach to improve anti-malware:
 
+- **Tamper proofing** helps guard Microsoft Defender Antivirus itself against malware attacks. For example, Microsoft Defender Antivirus uses Protected Processes, which prevents untrusted processes from attempting to tamper with Microsoft Defender Antivirus components, its registry keys, and so on. ([Protected Processes](#protected-processes) is described later in this topic.)
+
 - **Cloud-delivered protection** helps detect and block new malware within seconds, even if the malware has never been seen before. The service, available as of Windows 10, version 1703, uses distributed resources and machine learning to deliver protection to endpoints at a rate that is far faster than traditional signature updates.
 
-- **Rich local context** improves how malware is identified. Windows 10 informs Microsoft Defender Antivirus not only about content like files and processes but also where the content came from, where it has been stored, and more. The information about source and history enables Microsoft Defender Antivirus to apply different levels of scrutiny to different content.
+- **Rich local context** improves how malware is identified. Windows 11 informs Microsoft Defender Antivirus not only about content like files and processes but also where the content came from, where it has been stored, and more. The information about source and history enables Microsoft Defender Antivirus to apply different levels of scrutiny to different content.
 
 - **Extensive global sensors** help keep Microsoft Defender Antivirus current and aware of even the newest malware. This up-to-date status is accomplished in two ways: by collecting the rich local context data from end points and by centrally analyzing that data.
-
-- **Tamper proofing** helps guard Microsoft Defender Antivirus itself against malware attacks. For example, Microsoft Defender Antivirus uses Protected Processes, which prevents untrusted processes from attempting to tamper with Microsoft Defender Antivirus components, its registry keys, and so on. ([Protected Processes](#protected-processes) is described later in this topic.)
 
 - **Enterprise-level features** give IT pros the tools and configuration options necessary to make Microsoft Defender Antivirus an enterprise-class anti-malware solution.
 
