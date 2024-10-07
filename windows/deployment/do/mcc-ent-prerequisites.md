@@ -1,6 +1,6 @@
 ---
-title: MCCE prerequisites
-description: Details of prerequisites and recommendations for using Microsoft Connected Cache for Enterprise and Education (MCCE).
+title: MCC prerequisites
+description: Details of prerequisites and recommendations for using Microsoft Connected Cache for Enterprise and Education (MCC).
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: conceptual
@@ -23,9 +23,9 @@ This article details the requirements and recommendations for using Microsoft Co
 
     If you don't have an Azure subscription already, you can create an Azure [pay-as-you-go](https://azure.microsoft.com/offers/ms-azr-0003p/) account, which requires a credit card for verification purposes. For more information, see the [Azure Free Account FAQ](https://azure.microsoft.com/free/free-account-faq/).
 
-    The Azure resources used for MCCE will be free to you during this public preview.
+    The Azure resources used for MCC will be free to you during this public preview.
 
-- **E3/E5 or A3/A5 license**: Your organization must have one of the following license subscriptions for each device that downloads content from an MCCE cache node.
+- **E3/E5 or A3/A5 license**: Your organization must have one of the following license subscriptions for each device that downloads content from an MCC cache node.
 
     - [Windows Enterprise E3 or E5](/windows/whats-new/windows-licensing#windows-11-enterprise), included in [Microsoft 365 F3, E3, or E5](https://www.microsoft.com/microsoft-365/enterprise/microsoft365-plans-and-pricing?msockid=32c407b43d5968050f2b13443c746916)
     - Windows Education A3 or A5, included in [Microsoft 365 A3 or A5](https://www.microsoft.com/education/products/microsoft-365?msockid=32c407b43d5968050f2b13443c746916#Education-plans)

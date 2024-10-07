@@ -1,6 +1,6 @@
 ---
-title: Monitor usage of MCCE cache nodes
-description: Details on how to monitor the usage of Microsoft Connected Cache for Enterprise (MCCE) cache nodes.
+title: Monitor usage of MCC cache nodes
+description: Details on how to monitor the usage of Microsoft Connected Cache for Enterprise (MCC) cache nodes.
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: how-to
@@ -14,7 +14,7 @@ appliesto:
 ms.date: 09/04/2024
 ---
 
-# Monitor MCC cache node usage
+# Monitor Microsoft Connected Cache cache node usage
 
 Tracking the status and performance of your MCC cache node is essential to making sure that you're getting the most out of the service.
 

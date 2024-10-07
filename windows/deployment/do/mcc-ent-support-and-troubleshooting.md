@@ -1,6 +1,6 @@
 ---
-title: MCCE support and troubleshooting
-description: Details on how to troubleshoot and seek support for Microsoft Connected Cache for Enterprise (MCCE).
+title: MCC support and troubleshooting
+description: Details on how to troubleshoot and seek support for Microsoft Connected Cache for Enterprise (MCC).
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: how-to
@@ -22,12 +22,10 @@ ms.date: 09/27/2024
 
 This article contains instructions on how to troubleshoot different issues you may encounter while using MCC. These issues are categorized by the task in which they may be encountered. For example, this next section covers troubleshooting [MCC Azure resource creation](mcc-ent-create-resource-and-cache.md).
 
-
 ## Steps to obtain an Azure subscription ID
 
 <!--Using include file, get-azure-subscription.md, do/mcc-isp.md for shared content-->
 [!INCLUDE [Get Azure subscription](includes/get-azure-subscription.md)]
-
 
 ## Troubleshooting Azure resource creation
 

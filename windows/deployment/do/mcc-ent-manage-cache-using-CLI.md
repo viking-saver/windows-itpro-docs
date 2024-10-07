@@ -1,6 +1,6 @@
 ---
-title: Manage MCCE cache nodes using CLI
-description: Details on how to manage Microsoft Connected Cache for Enterprise (MCCE) cache nodes via Azure CLI commands.
+title: Manage MCC cache nodes using CLI
+description: Details on how to manage Microsoft Connected Cache for Enterprise (MCC) cache nodes via Azure CLI commands.
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: how-to
@@ -37,6 +37,7 @@ To learn more about installting extensions, visit [Install the MCC extension.](/
 <br>
 
 ### 1. Create a Resource group
+
 The first step is to create a resource group if you don't already have one.
 An Azure resource group is a logical container into which Azure resources are deployed and managed.
 
@@ -49,8 +50,8 @@ az group create --name myrg --location westus
 
 Once the resource group is created, you'll need to create a Microsoft Connected Cache for Enterprise resource.
 
+### 2. Create an MCC Azure resource
 
-### 2. Create an Azure resource
 An MCC Azure resource is a top-level Azure resource under which cache nodes can be created.
 
 To create an MCC Azure resource, use `az mcc ent resource create`
@@ -70,6 +71,7 @@ The next step is to create a cache node under this resource.
 
 
 ### 3. Create a cache node
+
 To create a cache node, use `az mcc ent node create`
 
 ```azurecli-interactive
@@ -84,6 +86,7 @@ az mcc ent node create --cache-node-name mycachenode --mcc-resource-name mymccre
 <br>
 
 ### 4. Confirm cache node creation
+
 Before you can start configuring your cache node, you need to confirm that the cache node was successfully created.
 
 To confirm cache node creation, use `az mcc ent node show`
@@ -104,6 +107,7 @@ Once successful cache node creation is confirmed, you can proceed to configure t
 
 
 ### 5. Configure cache node
+
 To configure your cache node, use `az mcc ent node update`
 
 The below example configures a Linux cache node with proxy enabled:
@@ -122,6 +126,7 @@ az mcc ent node update --cache-node-name <mycachenode> --mcc-resource-name <mymc
 <br>
 
 ### 6. Get provisioning details for the cache node
+
 After successfully configuring the cache node, the next step is to deploy the cache node to a host machine. To deploy the cache node, you'll need to create a provisioning script with relevant information.
 
 To get the relevant information for provisioning script, use `az mcc ent node get-provisioning-details`
@@ -132,43 +137,66 @@ az mcc ent node get-provisioning-details --cache-node-name mycachenode --mcc-res
 
 Save the resulting values for cacheNodeId, customerKey, mccResourceId, registrationKey. These GUIDs are needed to create the provisioning script.
 
-<br>
+### Example script:
 
-### 7. Deploy cache node
+Below is a pseudocode example of how to script bulk creation and configuration of an MCC Azure resource and multiple MCC cache nodes.
 
+<!--# [Bash](#tab/bash)
 
-#### Deploy cache node to Linux host machine
-Before you deploy your cache node to a Linux host machine, make sure you have met the prerequisites listed here: [Host machine requirements](mcc-ent-prerequisites.md)
+:::code language="azurecli" source="~/azure_cli_scripts/azure-cli/create-azure-resources-at-scale/bash/create-azure-resources-at-scale.sh" id="step4":::
 
-Use the following link to download and extract the Linux-compatible MCCE provisioning package onto the host machine.
+In your console output, are you missing the last row in your CSV file?  This can be caused by a missing line continuation character after the last line. Add a blank line at the end of your CSV file to fix the issue.
 
-[Download MCC provisioning package for Linux host machine](https://aka.ms/MCC-Ent-InstallScript-Linux)
+# [PowerShell](#tab/powershell)
 
-<br>
+:::code language="azurecli" source="~/azure_cli_scripts/azure-cli/create-azure-resources-at-scale/powershell/create-azure-resources-at-scale.ps1" id="step4":::
 
-To deploy the cache node to a **Linux** host machine, see [Deploy cache node to Linux](mcc-ent-deploy-to-linux.md)
-<br>
+-->
 
-#### Deploy cache node to Windows host machine
+# [PowerShell](#tab/powershell)
 
-Before you deploy your cache node to a Windows host machine, make sure you have met the prerequisites listed here: [Host machine requirements](mcc-ent-prerequisites.md)
+```powershell
+#Define variables
+$mccResourceName = "myMCCResource"
+$cacheNodeName = "demo-node"
+$cacheNodeOperatingSystem = "Windows"
+$resourceGroup = "myRG"
+$resourceLocation = "westus"
+$cacheNodesToCreate = 2
+$proxyHost = "myProxy.com"
+$proxyPort = "8080"
+$waitTime = 3
 
-Use the following link to download and extract the Windows-compatible MCCE provisioning package onto the host machine.
-[Download MCC provisioning package for Windows host machine](https://aka.ms/MCC-Ent-InstallScript-WSL)
-<br>
+#Create MCC Az resource
+az mcc ent resource create --mcc-resource-name $mccResourceName --location $resourceLocation --resource-group $resourceGroup
 
-To deploy the cache node to a **Windows** host machine, see [Deploy cache node to Windows](mcc-ent-deploy-to-windows.md)
+#Loop through $cacheNodesToCreate iterations
+for ($cacheNodeNumber = 1; $cacheNodeNumber -le $cacheNodesToCreate; $cacheNodeNumber++) {
+    $iteratedCacheNodeName = $cacheNodeName + "-" + $cacheNodeNumber
+    
+    #Create cache node
+    az mcc ent node create --cache-node-name $iteratedCacheNodeName --mcc-resource-name $mccResourceName --host-os $cacheNodeOperatingSystem --resource-group $resourceGroup
 
-<br>
+    #Get cache node state
+    $cacheNodeState = $(az mcc ent node show --cache-node-name $iteratedCacheNodeName --mcc-resource-name $mccResourceName --resource-group $resourceGroup --query "cacheNodeState") | ConvertFrom-Json
+
+    $howLong = 0
+    #Wait until cache node state returns "Not Configured"
+    while ($cacheNodeState -ne "Not Configured") {
+        Write-Output "Waiting for cache node creation to complete...$howLong seconds"
+        Start-Sleep -Seconds $waitTime
+        $howLong += $waitTime
+    
+        $cacheNodeState = $(az mcc ent node show --cache-node-name $iteratedCacheNodeName --mcc-resource-name $mccResourceName --resource-group $resourceGroup --query "cacheNodeState") | ConvertFrom-Json
+    }
+
+    #Configure cache node
+    az mcc ent node update --cache-node-name $iteratedCacheNodeName --mcc-resource-name $mccResourceName --resource-group $resourceGroup --cache-drive  "[{physical-path:/var/mcc,size-in-gb:50}]" --proxy enabled --proxy-host $proxyHost --proxy-port $proxyPort
+}
+```
 
 ## Next step
 
-To verify cache node functionality, see [Verify cache node functionality](mcc-ent-verify-cache-node.md)
-
-
-<br>
-<br>
-
-### Sample script:
-Below is a pseudo code that shows how the above can be scripted for bulk creation and configuration of cache node.
-
+> [!div class="nextstepaction"]
+> [Deploy cache node to Linux host machine](mcc-ent-deploy-to-Linux.md)
+> [Deploy cache node to Windows host machine](mcc-ent-deploy-to-Windows.md)
