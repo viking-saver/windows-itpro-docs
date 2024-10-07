@@ -11,16 +11,6 @@ ms.date: 09/06/2024
 
 In addition to adopting passwordless sign-in, organizations can strengthen security for user and domain credentials in Windows 11 with Credential Guard and Remote Credential Guard.
 
-## Enhanced phishing protection with Microsoft Defender SmartScreen
-
-As malware protection and other safeguards evolve, cybercriminals look for new ways to circumvent security measures. Phishing is a leading threat, with apps and websites designed to steal credentials by tricking people into voluntarily entering passwords. As a result, many organizations are transitioning to the ease and security of passwordless sign-in with Windows Hello or Windows Hello for Business.
-
-However, people who are still using passwords can also benefit from powerful credential protection in Windows 11. Microsoft Defender SmartScreen now includes enhanced phishing protection to automatically detect when a user's Microsoft password is entered into any app or website. Windows then identifies if the app or site is securely authenticating to Microsoft and warns if the credentials are at risk. Because the user is alerted at the moment of potential credential theft, they can take preemptive action before the password is used against them or their organization.
-
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
-
-- [Enhanced phishing protection in Microsoft Defender SmartScreen][LINK-1]
-
 ## Local Security Authority (LSA) protection
 
 Windows has several critical processes to verify a user's identity. Verification processes include Local Security Authority (LSA), which is responsible for authenticating users and verifying Windows sign-ins. LSA handles tokens and credentials that are used for single sign-on to a Microsoft account and Azure services.
@@ -101,7 +91,6 @@ IT administrators can refine the application and management of access to:
 
 <!--links-->
 
-[LINK-1]: /windows/security/operating-system-security/virus-and-threat-protection/microsoft-defender-smartscreen/enhanced-phishing-protection
 [LINK-2]: /windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection
 [LINK-3]: /windows/security/identity-protection/credential-guard
 [LINK-4]: /windows/security/identity-protection/remote-credential-guard

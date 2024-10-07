@@ -91,9 +91,9 @@ Users can initiate a PIN reset from the Windows lock screen or from the sign-in 
 
 - [PIN reset][LINK-15]
 
-### Windows Hello for Business multi-factor unlock
+### Multi-factor unlock
 
-For organizations that need an extra layer of sign-in security, multi-factor unlock enables IT admins to configure Windows by requiring a combination of two unique trusted signals to sign in. Trusted signal examples include a PIN or biometric data (face or fingerprint) combined with either a PIN, Bluetooth, IP configuration, or Wi-Fi.
+For organizations that need an extra layer of sign-in security, multi-factor unlock enables IT admins to configure Windows to require a combination of two unique trusted signals to sign in. Trusted signal examples include a PIN or biometric data (face or fingerprint) combined with either a PIN, Bluetooth, IP configuration, or Wi-Fi.
 
 Multi-factor unlock is useful for organizations who need to prevent information workers from sharing credentials or need to comply with regulatory requirements for a two-factor authentication policy.
 
@@ -103,9 +103,9 @@ Multi-factor unlock is useful for organizations who need to prevent information 
 
 ### Windows passwordless experience
 
-Windows 11 devices with Windows Hello for Business can protect user identities by removing the need to use passwords from day one.
+**Windows Hello for Business now support a fully passwordless experience.**
 
-IT can configure a policy setting for Microsoft Entra ID joined machines so users no longer see the option to enter a password when accessing company resources<sup>[\[12\]](conclusion.md#footnote12)</sup>. Once the policy is configured, passwords are removed from the Windows user experience, both for device unlock and in-session authentication scenarios. However, passwords aren't eliminated from the identity directory yet. Users are expected to navigate through their core authentication scenarios using strong, phish-resistant, possession-based credentials like Windows Hello for Business and FIDO2 security keys. If necessary, users can use passwordless recovery mechanisms such as Microsoft PIN reset service or web sign-in.
+IT admins can configure a policy on Microsoft Entra ID joined machines so users no longer see the option to enter a password when accessing company resources<sup>[\[12\]](conclusion.md#footnote12)</sup>. Once the policy is configured, passwords are removed from the Windows user experience, both for device unlock and in-session authentication scenarios. However, passwords aren't eliminated from the identity directory yet. Users are expected to navigate through their core authentication scenarios using strong, phish-resistant, possession-based credentials like Windows Hello for Business and FIDO2 security keys. If necessary, users can use passwordless recovery mechanisms such as Microsoft PIN reset service or web sign-in.
 
 Users authenticate directly with Microsoft Entra ID, helping speed access to on-premises applications and other resources.
 
@@ -115,7 +115,7 @@ Users authenticate directly with Microsoft Entra ID, helping speed access to on-
 
 ## Enhanced Sign-in Security (ESS)
 
-Windows Hello biometrics also supports Enhanced Sign-in Security, which uses specialized hardware and software components to raise the security bar even higher for biometric sign-in.
+Windows Hello supports Enhanced Sign-in Security, which uses specialized hardware and software components to raise the security bar even higher for biometric sign-in.
 
 Enhanced Sign-in Security biometrics uses Virtualization-based security (VBS) and the TPM to isolate user authentication processes and data and secure the pathway by which the information is communicated.
 
@@ -176,7 +176,7 @@ Windows 11 supports federated sign-in with external education identity managemen
 
 - [Configure federated sign-in for Windows devices][LINK-14]
 
-## Smart cards for Windows service
+## Smart cards
 
 Organizations can also opt for smart cards, an authentication method that existed before biometric authentication. These tamper-resistant, portable storage devices enhance Windows security by authenticating users, signing code, securing e-mails, and signing in with Windows domain accounts.
 
@@ -193,6 +193,16 @@ When a password is used to sign in to a domain account, Windows uses the Kerbero
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
 - [Smart Card technical reference][LINK-12]
+
+## Enhanced phishing protection with Microsoft Defender SmartScreen
+
+As malware protection and other safeguards evolve, cybercriminals look for new ways to circumvent security measures. Phishing is a leading threat, with apps and websites designed to steal credentials by tricking people into voluntarily entering passwords. As a result, many organizations are transitioning to the ease and security of passwordless sign-in with Windows Hello or Windows Hello for Business.
+
+We know that people are in different parts of their passwordless journey. To help on that journey for people still using passwords, Windows 11 offers powerful credential protection. Microsoft Defender SmartScreen now includes enhanced phishing protection to automatically detect when a user's Microsoft password is entered into any app or website. Windows then identifies if the app or site is securely authenticating to Microsoft and warns if the credentials are at risk. Because the user is alerted at the moment of potential credential theft, they can take preemptive action before the password is used against them or their organization.
+
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+
+- [Enhanced phishing protection in Microsoft Defender SmartScreen][LINK-16]
 
 <!--links-->
 
@@ -211,3 +221,4 @@ When a password is used to sign in to a domain account, Windows uses the Kerbero
 [LINK-13]: /windows/security/identity-protection/web-sign-in
 [LINK-14]: /education/windows/federated-sign-in
 [LINK-15]: /windows/security/identity-protection/hello-for-business/pin-reset
+[LINK-16]: /windows/security/operating-system-security/virus-and-threat-protection/microsoft-defender-smartscreen/enhanced-phishing-protection
