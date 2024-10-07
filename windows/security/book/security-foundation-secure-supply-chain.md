@@ -63,4 +63,7 @@ Traditionally, the task of code signing posed challenges due to the complex step
 
 Developers can design highly secure applications that benefit from the latest Windows 11 safeguards using the Windows App SDK. The SDK provides a unified set of APIs and tools for developing secure desktop apps for Windows 11 and Windows 10. To help create apps that are up to date and protected, the SDK follows the same security standards, protocols, and compliance as the core Windows operating system.
 
-If you're a developer, you can find security best practices and information at [Windows application development - best practices](/windows/security/threat-protection/windows-platform-common-criteria#security-and-privacy). You can get started with [Windows App SDK samples on GitHub](/windows/security/threat-protection/fips-140-validation#windows-app-sdk-samples). For an example of the continuous security process in action with the Windows App SDK, see the [most recent release](https://insider.windows.com/#version-11).
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+
+- [Windows application development - best practices](/windows/apps/get-started/best-practices)
+- [Windows App SDK samples on GitHub](https://github.com/microsoft/WindowsAppSDK-Samples)
