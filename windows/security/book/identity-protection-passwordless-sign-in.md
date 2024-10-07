@@ -37,11 +37,11 @@ The TPM protects against threats including PIN brute-force attacks on lost or st
 
 ### Windows Hello biometric
 
-Windows Hello biometric sign-in enhances both security and productivity with a quick, convenient sign-in experience. There's no need to enter a password every time when a face or fingerprint is the credential.
+Windows Hello biometric sign-in enhances both security and productivity with a quick and convenient sign-in experience. There's no need to enter your PIN; simply use your biometric data for an easy and delightful sign-in.
 
-Windows devices that support biometric hardware such as fingerprint or facial recognition cameras integrate directly with Windows Hello, enabling access to Windows client resources and services. Biometric readers for both face and fingerprint must comply with Windows Hello biometric requirements. Windows Hello facial recognition is designed to only authenticate from trusted cameras used at the time of enrollment.
+Windows devices that support biometric hardware, such as fingerprint or facial recognition cameras, integrate directly with Windows Hello, enabling access to Windows client resources and services. Biometric readers for both face and fingerprint must comply with Windows Hello biometric requirements. Windows Hello facial recognition is designed to authenticate only from trusted cameras used at the time of enrollment.
 
-If a peripheral camera is attached to the device after enrollment, that camera is allowed for facial authentication after it's validated by signing in with the internal camera. For more security, external cameras can be disabled for use with Windows Hello facial recognition.
+If a peripheral camera is attached to the device after enrollment, it can be used for facial authentication once validated by signing in with the internal camera. For added security, external cameras can be disabled for use with Windows Hello facial recognition.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
@@ -66,10 +66,11 @@ Users can also take advantage of more granular settings to easily enable and dis
 
 Windows Hello for Business extends Windows Hello to work with an organization's Active Directory and Microsoft Entra ID accounts. It provides single sign-on access to work or school resources such as OneDrive, work email, and other business apps. Windows Hello for Business also give IT admins the ability to manage PIN and other sign-in requirements for devices connecting to work or school resources.
 
-During a device's lifecycle, a password might only need to be used once during the provisioning process. After that, people can use a PIN, face, or fingerprint to unlock credentials and sign into the device.
+After Windows Hello for Business is provisioned, users can use a PIN, face, or fingerprint to unlock credentials and sign into their Windows device.
 
 Provisioning methods include:
 
+- Passkeys (preview), which provide a seamless way for users to authenticate to Microsoft Entra ID without entering a username or password
 - Temporary Access Pass (TAP), a time-limited passcode with strong authentication requirements issued through Microsoft Entra ID
 - Existing multifactor authentication with Microsoft Entra ID, including the Microsoft Authenticator app
 
@@ -80,6 +81,7 @@ Organizations with hybrid scenarios can eliminate the need for on-premises domai
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
 - [Windows Hello for Business overview][LINK-2]
+- [Enable passkeys (FIDO2) for your organization][LINK-9]
 
 ### PIN reset
 
