@@ -150,7 +150,7 @@ Passkeys on Windows 11 are protected by Windows Hello or Windows Hello for Busin
 
 ## Microsoft Authenticator
 
-The Microsoft Authenticator app, which runs on iOS and Android devices, helps keeping Windows 11 users secure and productive. Microsoft Authenticator can be set up on Windows Hello for Business, which removes the need for a password to get started on Windows 11.
+The Microsoft Authenticator app, which runs on iOS and Android devices, helps keeping Windows 11 users secure and productive. Microsoft Authenticator with Entra Passkeys can be used as a phish-resistant method to bootstrap Windows Hello for Business.
 
 Microsoft Authenticator also enables easy, secure sign-in for all online accounts using multifactor authentication, passwordless phone sign-in, phishing-resistant authentication (passkeys), or password autofill. The accounts in the Authenticator app are secured with a public/private key pair in hardware-backed storage such as the Keychain in iOS and Keystore on Android. IT admins can use different tools to nudge their users to set up the Authenticator app, provide them with extra context about where the authentication is coming from, and ensure that they're actively using it.
 
