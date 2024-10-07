@@ -136,6 +136,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "windows/deployment/do/mcc-ent-update-cache.md",
+      "redirect_url": "/windows/deployment/do/mcc-ent-uninstall-cache-node",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows/deployment/planning/act-technical-reference.md",
       "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/compatibility/compatibility-administrator-users-guide",
       "redirect_document_id": false
