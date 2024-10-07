@@ -13,7 +13,7 @@ appliesto:
 ms.date: 09/27/2024
 ---
 
-# Microsoft Connected Cache for Enterprise and Education Requirements (Public Preview)
+# Microsoft Connected Cache for Enterprise and Education Requirements
 
 This article details the requirements and recommendations for using Microsoft Connected Cache for Enterprise and Education (MCC).
 

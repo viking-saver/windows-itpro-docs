@@ -25,12 +25,19 @@ This article outlines how to create, configure, and deploy Microsoft Connected C
  
 ## Prerequisites:
 1. **Install Azure CLI**: [How to install the Azure CLI](/cli/azure/install-azure-cli)
-1. **Install MCC extension**: [Install the MCC extension.](/cli/azure/azure-cli-extensions-overview#how-to-install-extensions)
+1. **Install MCC extension**: Install MCC extension via the command below
+
+```azurecli-interactive
+az extension add --name mcc
+```
+
+To learn more about installting extensions, visit [Install the MCC extension.](/cli/azure/azure-cli-extensions-overview#how-to-install-extensions)
 
 <br>
 <br>
 
 ### 1. Create a Resource group
+
 The first step is to create a resource group if you don't already have one.
 An Azure resource group is a logical container into which Azure resources are deployed and managed.
 
@@ -43,8 +50,8 @@ az group create --name myrg --location westus
 
 Once the resource group is created, you'll need to create a Microsoft Connected Cache for Enterprise resource.
 
-
 ### 2. Create an MCC Azure resource
+
 An MCC Azure resource is a top-level Azure resource under which cache nodes can be created.
 
 To create an MCC Azure resource, use `az mcc ent resource create`
@@ -64,10 +71,11 @@ The next step is to create a cache node under this resource.
 
 
 ### 3. Create a cache node
+
 To create a cache node, use `az mcc ent node create`
 
 ```azurecli-interactive
-az mcc ent node create --cache-node-name mycachenode --mcc-resource-name mymccresource --resource-group myrg --host-os linux
+az mcc ent node create --cache-node-name mycachenode --mcc-resource-name mymccresource --resource-group myrg --host-os <linux or windows>
 ```
 
 <br>
@@ -78,6 +86,7 @@ az mcc ent node create --cache-node-name mycachenode --mcc-resource-name mymccre
 <br>
 
 ### 4. Confirm cache node creation
+
 Before you can start configuring your cache node, you need to confirm that the cache node was successfully created.
 
 To confirm cache node creation, use `az mcc ent node show`
@@ -98,6 +107,7 @@ Once successful cache node creation is confirmed, you can proceed to configure t
 
 
 ### 5. Configure cache node
+
 To configure your cache node, use `az mcc ent node update`
 
 The below example configures a Linux cache node with proxy enabled:
@@ -108,24 +118,15 @@ az mcc ent node update --cache-node-name <mycachenode> --mcc-resource-name <mymc
 ```
 
 >[!Note]
->For a cache node that is to be deployed on Windows host OS, the physical path of the cache drive must be **/var/mcc**.
-<br>
-
->[!NOTE]
->Proxy info changes, required to provision cache node.
-<br>
-
->[!IMPORTANT]
->In the output, look for operationStatus. **operationStatus = Succeeded** indicates that our services have successfully updated the cache node.
-<br>
-
->[!IMPORTANT]
->Please save values for physicalPath, sizeInGb, proxyPort, proxyHostName as these values will be needed to create the provisioning script.
+>* For a cache node that is to be deployed on Windows host OS, the physical path of the cache drive <u>must</u> be **/var/mcc**.<br>
+>* In the output, look for operationStatus. **operationStatus = Succeeded** indicates that our services have successfully updated the cache node. You will also see that cacheNodeState will show "Not Provisioned". <br>
+>* Please save values for <u>physicalPath, sizeInGb, proxyPort, proxyHostName</u> as these values will be needed to construct the provisioning script.
 
 
 <br>
 
 ### 6. Get provisioning details for the cache node
+
 After successfully configuring the cache node, the next step is to deploy the cache node to a host machine. To deploy the cache node, you'll need to create a provisioning script with relevant information.
 
 To get the relevant information for provisioning script, use `az mcc ent node get-provisioning-details`
@@ -137,6 +138,7 @@ az mcc ent node get-provisioning-details --cache-node-name mycachenode --mcc-res
 Save the resulting values for cacheNodeId, customerKey, mccResourceId, registrationKey. These GUIDs are needed to create the provisioning script.
 
 ### Example script:
+
 Below is a pseudocode example of how to script bulk creation and configuration of an MCC Azure resource and multiple MCC cache nodes.
 
 <!--# [Bash](#tab/bash)
