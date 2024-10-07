@@ -25,7 +25,7 @@ SmartScreen also determines whether a downloaded app or app installer is potenti
 - Checking downloaded files against a list of reported malicious software sites and programs known to be unsafe. If it finds a match, SmartScreen warns that the file might be malicious
 - Checking downloaded files against a list of well-known files. If the file is of a dangerous type and not well-known, SmartScreen displays a caution alert
 
-With enhanced phishing protection in Windows 11, SmartScreen also alerts people when they are entering their Microsoft credentials into a potentially risky location, regardless of which application or browser is used. IT can customize which notifications appear through Microsoft Intune<sup>[\[9\]](conclusion.md#footnote9)</sup>. This protection runs in audit mode by default, giving IT admins full control to make decisions around policy creation and enforcement.
+With enhanced phishing protection in Windows 11, SmartScreen also alerts people when they're entering their Microsoft credentials into a potentially risky location, regardless of which application or browser is used. IT can customize which notifications appear through Microsoft Intune<sup>[\[9\]](conclusion.md#footnote9)</sup>. This protection runs in audit mode by default, giving IT admins full control to make decisions around policy creation and enforcement.
 
 Because Windows 11 comes with these enhancements already built in and enabled, users have extra security from the moment they turn on their device.
 
@@ -35,7 +35,7 @@ The app and browser control section contains information and settings for Micros
 
 While Microsoft Defender Smartscreen works with Microsoft Edge, for third-party browsers and processes, Windows 11 has Network protection that protects against phishing scams, malware websites, and the downloading of potentially malicious files.
 
-When using Network Protection with Microsoft Defender for Endpoint, you will be able to use Indicators of Compromise to block specific URL's and/or ip addresses.  
+When using Network Protection with Microsoft Defender for Endpoint, you'll be able to use Indicators of Compromise to block specific URL's and/or ip addresses.
 Also integrates with Microsoft Defender for Cloud Apps to block unsactioned web apps in your organization.  Allow or block access to websites based on category with Microsoft Defender for Endpoint's Web Content Filtering.
 
 [Network Protection library](/defender-endpoint/network-protection)
@@ -49,7 +49,7 @@ With tamper protection, malware is prevented from taking actions such as:
 
 - Disabling real-time protection
 - Turning off behavior monitoring
-- Disabling antivirus protection, such as Scan all downloaded files and attachments (aka IOfficeAntivirus (IOAV)) 
+- Disabling antivirus protection, such as Scan all downloaded files and attachments (IOfficeAntivirus (IOAV))
 - Disabling cloud-delivered protection
 - Removing security intelligence updates
 - Disabling automatic actions on detected threats
@@ -63,9 +63,9 @@ With tamper protection, malware is prevented from taking actions such as:
 
 ## Microsoft Defender Antivirus
 
-Microsoft Defender Antivirus is a next-generation protection solution included in all versions of Windows 10 and Windows 11. From the moment you turn on Windows, Microsoft Defender Antivirus continually monitors for malware, viruses, and security threats. In addition to real-time protection, updates are downloaded automatically to help keep your device safe and protect it from threats. If you have another antivirus app installed and turned on, Microsoft Defender Antivirus will turn off automatically. If you uninstall the other app, Microsoft Defender Antivirus will turn back on.
+Microsoft Defender Antivirus is a next-generation protection solution included in all versions of Windows 10 and Windows 11. From the moment you turn on Windows, Microsoft Defender Antivirus continually monitors for malware, viruses, and security threats. In addition to real-time protection, updates are downloaded automatically to help keep your device safe and protect it from threats. If you have another antivirus app installed and turned on, Microsoft Defender Antivirus turns off automatically. If you uninstall the other app, Microsoft Defender Antivirus turns back on.
 
-Microsoft Defender Antivirus includes real-time, behavior-based, and heuristic antivirus protection. This combination of always-on content scanning, file and process behavior monitoring, and other heuristics effectively prevents security threats. Microsoft Defender Antivirus continually scans for malware and threats and also detects and blocks potentially unwanted applications (PUA), applications deemed to negatively impact your device but are not considered malware.
+Microsoft Defender Antivirus includes real-time, behavior-based, and heuristic antivirus protection. This combination of always-on content scanning, file and process behavior monitoring, and other heuristics effectively prevents security threats. Microsoft Defender Antivirus continually scans for malware and threats and also detects and blocks potentially unwanted applications (PUA), applications deemed to negatively impact your device but aren't considered malware.
 
 Microsoft Defender Antivirus always-on protection is integrated with cloud-delivered protection, which helps ensure near-instant detection and blocking of new and emerging threats. This combination of local and cloud-delivered technologies including advanced memory scanning, behavior monitoring, and machine learning, provides award-winning protection at home and at work.
 
@@ -96,7 +96,7 @@ network, and firewall.
 
 You can protect your valuable information in specific folders by managing app access to them. Only trusted apps can access protected folders, which are specified when controlled folder access is configured. Typically, commonly used folders, such as those used for documents, pictures, and downloads, are included in the list of controlled folders.
 
-Controlled folder access works with a list of trusted apps. Apps that are included in the list of trusted software work as expected. Apps that are not included in the trusted list are prevented from making any changes to files inside protected folders.
+Controlled folder access works with a list of trusted apps. Apps that are included in the list of trusted software work as expected. Apps that aren't included in the trusted list are prevented from making any changes to files inside protected folders.
 
 Controlled folder access helps protect user's valuable data from malicious apps and threats such as ransomware.
 
@@ -131,9 +131,9 @@ Exploit protection automatically applies several exploit mitigation techniques t
 
 When a mitigation is encountered on the device, a notification will be displayed from the Action Center. You can customize the notification with your company details and contact information. You can also enable the rules individually to customize which techniques the feature monitors.
 
-You can use audit mode to evaluate how exploit protection would impact your organization if it were enabled.  And go thru safe deployment practices (SDP). 
+You can use audit mode to evaluate how exploit protection would impact your organization if it were enabled. And go through safe deployment practices (SDP).
 
-Windows 11 provides configuration options for exploit protection. You can prevent users from modifying these specific options with [MDM such as Microsoft Intune](/windows/client-management/mdm-overview) or Group Policy.
+Windows 11 provides configuration options for exploit protection. You can prevent users from modifying these specific options with device management solutions like Microsoft Intune or group policy.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
