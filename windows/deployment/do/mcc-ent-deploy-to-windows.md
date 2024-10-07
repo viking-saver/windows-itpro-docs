@@ -30,28 +30,34 @@ Before deploying MCC to a Windows host machine, ensure that the host machine mee
 1. Open a PowerShell window *as administrator* on the host machine, then change directory to the extracted provisioning package.
 1. Set the Execution Policy to "Unrestricted" to allow the provisioning scripts to run.
 1. Create a `$User` environment variable containing the username of the account you intend to designate as the MCC runtime account. For gMSAs, the value should be formatted as `"Domain\Username$"`. For Local User accounts, `$User` should be formatted as `"LocalMachineName\Username"`.
-    - If you're using a Local User account as the MCC runtime account, you'll also need to create a [PSCredential Object](/dotnet/api/system.management.automation.pscredential) named `$myLocalAccountCredential`.
+
+   If you're using a Local User account as the MCC runtime account, you'll also need to create a [PSCredential Object](/dotnet/api/system.management.automation.pscredential) named `$myLocalAccountCredential`.
+
 1. Run the provisioning command on the host machine.
 
 # [Azure CLI](#tab/cli)
 
 To deploy a cache node programmatically, you'll need to use Azure CLI to get the cache node's provisioning details and then run the provisioning command on the host machine.
 
-1. To get the cache node's provisioning details, use `az mcc ent node get-provisioning-details`
-    ```azurecli-interactive
-    az mcc ent node get-provisioning-details --cache-node-name mycachenode --mcc-resource-name mymccresource --resource-group myrg
-    ```
+1. To get the cache node's provisioning details, use `az mcc ent node get-provisioning-details`.
+
+   ```azurecli-interactive
+   az mcc ent node get-provisioning-details --cache-node-name mycachenode --mcc-resource-name mymccresource --resource-group myrg
+   ```
+
 1. Save the resulting output. These values will be passed as parameters within the provisioning command.
 1. Download and extract the [MCC provisioning package for Windows](https://aka.ms/MCC-Ent-InstallScript-WSL) to your host machine.
 1. Open a PowerShell window *as administrator* on the host machine, then change directory to the extracted provisioning package.
 1. Set the Execution Policy to "Unrestricted" to allow the provisioning scripts to run.
 1. Create a `$User` environment variable containing the username of the account you intend to designate as the MCC runtime account. For gMSAs, the value should be formatted as `"Domain\Username$"`. For Local User accounts, `$User` should be formatted as `"LocalMachineName\Username"`.
-    - If you're using a Local User account as the MCC runtime account, you'll also need to create a [PSCredential Object](/dotnet/api/system.management.automation.pscredential) named `$myLocalAccountCredential`.
+
+   If you're using a Local User account as the MCC runtime account, you'll also need to create a [PSCredential Object](/dotnet/api/system.management.automation.pscredential) named `$myLocalAccountCredential`.
+
 1. Replace the values in the following provisioning command before running it on the host machine. Note that `-mccLocalAccountCredential $myLocalAccountCredential` is only needed if you are using a Local User account as the MCC runtime account.
 
-```powershell-interactive
-./provisionmcconwsl.ps1 -installationFolder c:\mccwsl01 -customerid [enter mccResourceId here] -cachenodeid [enter cacheNodeId here] -customerkey [enter customerKey here] -registrationkey [enter registration key] -cacheDrives "/var/mcc,enter drive size"  -shouldUseProxy [enter true if present, enter false if not] -proxyurl "http://[enter proxy host name]:[enter port]"  -mccRunTimeAccount $User -mccLocalAccountCredential $myLocalAccountCredential 
-```
+   ```powershell-interactive
+   ./provisionmcconwsl.ps1 -installationFolder c:\mccwsl01 -customerid [enter mccResourceId here] -cachenodeid [enter cacheNodeId here] -customerkey [enter customerKey here] -registrationkey [enter registration key] -cacheDrives "/var/mcc,enter drive size"  -shouldUseProxy [enter true if present, enter false if not] -proxyurl "http://[enter proxy host name]:[enter port]"  -mccRunTimeAccount $User -mccLocalAccountCredential $myLocalAccountCredential
+   ```
 
 ## Next step
 
