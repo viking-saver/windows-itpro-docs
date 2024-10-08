@@ -37,6 +37,11 @@ In combination with Microsoft Intune, Microsoft Entra ID offers powerful securit
 
 Every Windows device has a built-in local administrator account that must be secured and protected to mitigate any Pass-the-Hash (PtH) and lateral traversal attacks. Many customers have been using our standalone, on-premises Windows Local Administrator Password Solution (LAPS) to manage their domain-joined Windows machines. We heard from many customers that LAPS support was needed as they modernized their Windows environment to join directly to Microsoft Entra ID.
 
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+
+- [Microsoft Entra ID documentation](/entra)
+- [Microsoft Entra plans and pricing](https://www.microsoft.com/security/business/microsoft-entra-pricing?rtc=1)
+
 ### Microsoft Entra Private Access
 
 Microsoft Entra Private Access provides organizations the ability to manage and give users access to private or internal fully qualified domain names (FQDNs) and IP addresses. With Private Access, you can modernize how your organization's users access private apps and resources. Remote workers don't need to use a VPN to access these resources if they have the Global Secure Access Client installed. The client quietly and seamlessly connects them to the resources they need.
@@ -45,17 +50,20 @@ Microsoft Entra Private Access provides organizations the ability to manage and 
 
 Microsoft Entra Internet Access provides an identity-centric Secure Web Gateway (SWG) solution for Software as a Service (SaaS) applications and other Internet traffic. It protects users, devices, and data from the Internet's wide threat landscape with best-in-class security controls and visibility through Traffic Logs.
 
-> [!NOTE]
-> Both Microsoft Entra Private Access and Microsoft Entra Internet Access requires Microsoft Entra ID and Microsoft Entra Joined devices and for deployment, refer to [Microsoft's Security Service Edge Solution Deployment Guide for Microsoft Entra Internet Access Proof of Concept](/entra/architecture/sse-deployment-guide-internet-access).
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
-Both these features use a new [Global Secure Access client for Windows](/entra/global-secure-access/how-to-install-windows-client), deployed on the desktop, that secure and control the feature.
+- [Microsoft Entra Internet Access](/entra/global-secure-access/concept-internet-access)
+
+> [!NOTE]
+> Both Microsoft Entra Private Access and Microsoft Entra Internet Access requires Microsoft Entra ID and Microsoft Entra Joined devices and for deployment.
+
+Both Microsoft Entra Private Access and Microsoft Entra Internet Access use the *Global Secure Access client for Windows*, which secures and controls the features.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
-- [Windows Local Administrator Password Solution with Microsoft Entra (Azure AD)](https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/introducing-windows-local-administrator-password-solution-with/ba-p/1942487)
-- [Microsoft Entra plans and pricing](https://www.microsoft.com/security/business/microsoft-entra-pricing?rtc=1)
 - [Microsoft Entra Private Access](/entra/global-secure-access/concept-private-access)
-- [Microsoft Entra Internet Access](/entra/global-secure-access/concept-internet-access)
+- [Microsoft's Security Service Edge Solution Deployment Guide for Microsoft Entra Internet Access Proof of Concept](/entra/architecture/sse-deployment-guide-internet-access)
+- [Global Secure Access client for Windows](/entra/global-secure-access/how-to-install-windows-client)
 
 ### Enterprise State Roaming
 
@@ -65,7 +73,23 @@ Available to any organization with a Microsoft Entra ID Premium<sup>[\[9\]](conc
 
 - [Enterprise State Roaming in Microsoft Entra ID](/entra/identity/devices/enterprise-state-roaming-enable)
 
-## Cloud-native management
+## Microsoft Azure Attestation Service
+
+Remote attestation helps ensure that devices are compliant with security policies and are operating in a trusted state before they are allowed to access resources. Microsoft Intune<sup>[\[9\]](conclusion.md#footnote9)</sup> integrates with [Microsoft Azure Attestation Service](/azure/attestation/overview) to review Windows device health comprehensively and connect this information with Microsoft Entra ID<sup>[\[9\]](conclusion.md#footnote9)</sup> Conditional Access.
+
+**Attestation policies are configured in the Microsoft Azure Attestation Service which can then:**
+
+- Verify the integrity of evidence provided by the Windows Attestation component by validating the signature and ensuring the Platform Configuration Registers (PCRs) match the values recomputed by replaying the measured boot log
+- Verify that the TPM has a valid Attestation Identity Key issued by the authenticated TPM
+- Verify that security features are in the expected states
+
+Once this verification is complete, the attestation service returns a signed report with the security features state to the relying party - such as Microsoft Intune - to assess the trustworthiness of the platform relative to the admin-configured device compliance specifications. Conditional access is then granted or denied based on the device's compliance.
+
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+
+- [Azure Attestation overview](/azure/attestation/overview)
+
+## Cloud-native device management
 
 Microsoft recommends cloud-based device management so that IT professionals can manage company security policies and business applications without compromising user privacy on corporate or employee-owned devices. With cloud-native device management solutions like Microsoft Intune<sup>[\[9\]](conclusion.md#footnote9)</sup>, IT can manage Windows 11 using industry standard protocols. To simplify setup for users, management features are built directly into Windows, eliminating the need for a separate device management client.
 
@@ -91,6 +115,16 @@ Windows 11 supports the Remote Wipe configuration service provider (CSP) so that
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
 - [Remote wipe CSP](/windows/client-management/mdm/remotewipe-csp)
+
+## Microsoft security baselines
+
+Every organization faces security threats. However, different organizations can be concerned with different types of security threats. For example, an e-commerce company might focus on protecting its internet-facing web apps, while a hospital on confidential patient information. The one thing that all organizations have in common is a need to keep their apps and devices secure. These devices must be compliant with the security standards (or security baselines) defined by the organization.
+
+A security baseline is a group of Microsoft-recommended configuration settings that explains their security implications. These settings are based on feedback from Microsoft security engineering teams, product groups, partners, and customers.
+
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+
+- [Security baselines](/windows/security/operating-system-security/device-management/windows-security-configuration-framework/windows-security-baselines)
 
 ## Microsoft Intune
 
@@ -140,24 +174,6 @@ With Intune, organizations can also extend MAM App Config, MAM App Protection, a
 
 - [Data protection for Windows MAM](/mem/intune/apps/protect-mam-windows?formCode=MG0AV3)
 
-## Local Administrator Password (LAPs)
-
-Local Administrator Password solution was a key consideration for many customers when deciding to make the transition from on-premises to cloud-managed devices using Intune. With LAPS, organizations can automatically manage and back up the password of a local administrator account on Microsoft Entra ID joined or hybrid Microsoft Entra ID joined devices.
-
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
-
-- [Windows LAPS overview](/windows-server/identity/laps/laps-overview)
-
-## Microsoft security baselines
-
-Every organization faces security threats. However, different organizations can be concerned with different types of security threats. For example, an e-commerce company might focus on protecting its internet-facing web apps, while a hospital on confidential patient information. The one thing that all organizations have in common is a need to keep their apps and devices secure. These devices must be compliant with the security standards (or security baselines) defined by the organization.
-
-A security baseline is a group of Microsoft-recommended configuration settings that explains their security implications. These settings are based on feedback from Microsoft security engineering teams, product groups, partners, and customers.
-
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
-
-- [Security baselines](/windows/security/operating-system-security/device-management/windows-security-configuration-framework/windows-security-baselines)
-
 ### Security baseline for cloud-based device management solutions
 
 Windows 11 can be configured with Microsoft's security baseline, designed for cloud-based device management solutions like Microsoft Intune. These security baselines function similarly to group policy-based ones and can be easily integrated into existing device management tools.
@@ -176,70 +192,26 @@ The security baseline has been enhanced with over 70 new settings, enabling loca
 - [Intune security baseline overview](/mem/intune/protect/security-baselines)
 - [List of the settings in the Windows security baseline in Intune](/mem/intune/protect/security-baseline-settings-mdm-all)
 
-## Microsoft Azure Attestation Service
+## Local Administrator Password (LAPs)
 
-Remote attestation helps ensure that devices are compliant with security policies and are operating in a trusted state before they are allowed to access resources. Microsoft Intune<sup>[\[9\]](conclusion.md#footnote9)</sup> integrates with [Microsoft Azure Attestation Service](/azure/attestation/overview) to review Windows device health comprehensively and connect this information with Microsoft Entra ID<sup>[\[9\]](conclusion.md#footnote9)</sup> Conditional Access.
-
-**Attestation policies are configured in the Microsoft Azure Attestation Service which can then:**
-
-- Verify the integrity of evidence provided by the Windows Attestation component by validating the signature and ensuring the Platform Configuration Registers (PCRs) match the values recomputed by replaying the measured boot log
-- Verify that the TPM has a valid Attestation Identity Key issued by the authenticated TPM
-- Verify that security features are in the expected states
-
-Once this verification is complete, the attestation service returns a signed report with the security features state to the relying party - such as Microsoft Intune - to assess the trustworthiness of the platform relative to the admin-configured device compliance specifications. Conditional access is then granted or denied based on the device's compliance.
+Local Administrator Password solution was a key consideration for many customers when deciding to make the transition from on-premises to cloud-managed devices using Intune. With LAPS, organizations can automatically manage and back up the password of a local administrator account on Microsoft Entra ID joined or Microsoft Entra hybrid joined devices.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
-- [Azure Attestation overview](/azure/attestation/overview)
-
-## Windows Update for Business deployment service
-
-The service that was known as Windows Update for Business deployment service has been woven into Windows Autopatch, offering a more coherent experience while simplifying the update experience.
-The new interface is a unified dashboard conveniently organized into four main sections to help you make update management more efficient:
-
-- Update policies: Control updating timing and methods.
-- Update groups: Categorize your devices into tailored update rings.
-- Update status: Keep track of update compliance, progression, and current status.
-- Update reports: Analyze performance and troubleshoot.
-
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
-
-- [Windows updates API overview](/graph/windowsupdates-concept-overview)
-- [API reference docs](/graph/api/resources/windowsupdates-azureaddevice)
-
-## Windows Autopatch
-
-Cybercriminals commonly exploit obsolete or unpatched software to infiltrate networks. It is essential to maintain current updates to seal security gaps, though the process of planning, tracking, and compliance reporting may divert IT resources from other critical work.
-
-Available as part of Windows Enterprise E3 and E5, Windows Autopatch is the cloud service that helps you protect against evolving threats and vulnerabilities with timely update deployment. Windows Autopatch streamlines security, stability and feature updates for Windows Enterprise, enhancing both security and productivity throughout your company.
-
-The service is built for ease of use and gives IT administrators the option to tailor it to meet the unique needs of their business with Autopatch groups. This feature allows you to customize deployments based on needs or critical business processes without extra costs or unplanned disruptions. For example, you may decide to delay rollout of updates for the finance team to mitigate risk of disruptions at the end of a quarter.
-
-From a technical standpoint, the service utilizes Microsoft Intune policies and your current Intune Update rings. The services's use of your rings allows you to take advantage of Windows Autopatch reporting and device readiness without having to redeploy or modify your existing update configurations. The deployment of your Intune policies to enrolled tenants and continuously monitoring of those policies by Autopatch means that you can easily identify and resolve any conflicts.
-
-Comprehensive reporting is available via a summary dashboard displaying quality status and trends, and a reliability report. The reliability score is derived from stop error codes observed on managed devices, enabling improved insights about potential impacts of updates on devices.
-
-From a technical standpoint, Windows Autopatch configures the policies and deployment service of Windows Update for Business to deliver updates, all within Microsoft Intune.<sup>[\[9\]](conclusion.md#footnote9)</sup> The results for IT admins: up-to-date endpoints and detailed reports to demonstrate compliance or help identify issues. The goal is to help IT teams be more secure and update more efficiently with less effort.
-
-There's a lot more to learn about Windows Autopatch: this [Forrester Consulting Total Economic Impact&trade; Study](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RW10vlw) commissioned by Microsoft features insights from customers talking about the impact deploying Windows Autopatch has had on their organization. You can also find out more about updates to Autopatch features and the future of the service in the regularly published [IT pro blogs](https://aka.ms/MoreAboutAutopatch). and [Windows Autopatch community](https://aka.ms/AutopatchCommunity) allows IT professionals to get answers to questions from their peers and the Autopatch team.
-
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
-
-- [Windows Autopatch documentation](https://aka.ms/Autopatchdocs)
+- [Windows LAPS overview](/windows-server/identity/laps/laps-overview)
 
 ## Windows Autopilot
 
-Traditionally, IT professionals spend significant time building and customizing images that will later be deployed to devices. If you're purchasing new devices or managing device refresh cycles for employees, you can use Windows Autopilot to set up and preconfigure new devices, getting them ready for productive use. Autopilot helps you ensure your devices are delivered locked down and compliant with corporate security policies. The solution can also be used to reset, repurpose, and recover devices with zero touch by your IT team and no infrastructure to manage, enhancing efficiency with a process that's both easy and simple.
+Traditionally, IT professionals spend significant time building and customizing images that will later be deployed to devices. If you're purchasing new devices or managing device refresh cycles, you can use Windows Autopilot to set up and preconfigure new devices, getting them ready for productive use. Autopilot helps you ensure your devices are delivered locked down and compliant with corporate security policies. The solution can also be used to reset, repurpose, and recover devices with zero touch by your IT team and no infrastructure to manage, enhancing efficiency with a process that's both easy and simple.
 
-With Windows Autopilot, there's no need to reimage or manually set-up devices before giving them to your employees. Your hardware vendor can ship them, ready to go, straight to your employees. From a user perspective, they turn their device on, go online, and Windows Autopilot delivers apps and settings.
+With Windows Autopilot, there's no need to reimage or manually set-up devices before giving them to the users. Your hardware vendor can ship them, ready to go, directly to the users. From a user perspective, they turn their device on, go online, and Windows Autopilot delivers apps and settings.
 
 Windows Autopilot enables you to:
 
-- Automatically join devices to Microsoft Entra ID<sup>[\[9\]](conclusion.md#footnote9)</sup> or Active Directory via hybrid Microsoft Entra ID Join. For more information about the differences between these two join options, see [Introduction to device management in Microsoft Entra ID](/azure/active-directory/device-management-introduction).
-- Auto-enroll devices into MDM services such as Microsoft Intune (requires an Microsoft Entra ID Premium subscription for configuration).
-- Change the edition of Windows being used to support advanced features (e.g., upgrading to Windows 11 Enterprise).
-- Create and auto-assignment of devices to configuration groups based on a device's profile.
-- Customization of the out-of-box experience (OOBE) content specific to the organization.
+- Automatically join devices to Microsoft Entra ID or Active Directory via Microsoft Entra hybrid join
+- Auto-enroll devices into a device management solution like Microsoft Intune (requires an Microsoft Entra ID Premium subscription for configuration)
+- Create and auto-assignment of devices to configuration groups based on a device's profile
+- Customize of the out-of-box experience (OOBE) content specific to your organization
 
 Existing devices can also be quickly prepared for a new user with [Windows Autopilot Reset](/mem/autopilot/windows-autopilot-reset). The reset capability is also useful in break/fix scenarios to quickly bring a device back to a business-ready state.
 
@@ -247,19 +219,46 @@ Existing devices can also be quickly prepared for a new user with [Windows Autop
 
 - [Windows Autopilot](https://aka.ms/WindowsAutopilot)
 
-## Windows Update Management
+## Windows Update for Business
 
-Cybercriminals often target outdated or unpatched software to gain access to networks. Keeping endpoints up to date is critical in closing existing vulnerabilities, but planning, monitoring, and reporting on update compliance can take IT resources away from other important tasks. Windows Autopatch provides enterprise-level organizations with a cloud-native approach to updating the OS, an integral tool for reducing your attack surface by driving up patch compliance rates.
+Windows Update for Business empowers IT administrators to ensure that their organization's Windows client devices are consistently up to date with the latest security updates and features. By directly connecting these systems to the Windows Update service, administrators can maintain a high level of security and functionality.
 
-Windows Autopatch simplifies update management with automated quality, security and feature updates for Windows devices, Microsoft 365 apps, Teams, and Edge. By leveraging Windows Autopatch to simplify your endpoint management, you can secure your endpoints with timely update deployments while at the same time giving your IT team more time to focus on high-value contributions to the business, and while maximizing the value from your Windows Enterprise subscription.
+Administrators can utilize group policy or a device management solution like Microsoft Intune, to configure Windows Update for Business settings. These settings control the timing and manner in which updates are applied, allowing for thorough reliability and performance testing on a subset of devices before deploying updates across the entire organization.
 
-Windows Autopatch configures Windows Update for Business policies and deployment services, ensuring up-to-date endpoints and detailed compliance reports for IT admins. Administrators can customize these configurations to align with their organization's structure, allowing tailored deployment schedules and content for different device populations. Ultimately, automating the update management process enhances security and operational efficiency by ensuring that endpoints remain current while providing detailed compliance reports to IT admins.
-
-Explore more about Windows Autopatch through [Forrester study](https://aka.ms/AutopatchProductivity) commissioned by Microsoft, regular updates on the  [IT pro blogs](https://aka.ms/MoreAboutAutopatch) , and [Windows Autopatch community](https://aka.ms/AutopatchCommunity) resources offering insights and support.
+This approach not only provides control over the update process but also ensures a seamless and positive update experience for all users within the organization. By using Windows Update for Business, organizations can achieve a more secure and efficient operational environment.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
-- [Windows Autopatch documentation](https://aka.ms/Autopatchdocs)
+- [Windows Update for Business documentation](/windows/deployment/update/waas-manage-updates-wufb)
+
+## Windows Autopatch
+
+Cybercriminals commonly exploit obsolete or unpatched software to infiltrate networks. It's essential to maintain current updates to seal security gaps. Windows Autopatch is a cloud service that automates Windows, Microsoft 365 Apps for enterprise, Microsoft Edge, and Microsoft Teams updates to improve security and productivity across your organization. Autopatch helps you minimize the involvement of your scarce IT resources in the planning and deployment of updates so your IT Admins can focus on other activities and tasks.
+
+There's a lot more to learn about Windows Autopatch: this [Forrester Consulting Total Economic Impact&trade; Study](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RW10vlw) commissioned by Microsoft, features insights from customers who deployed Windows Autopatch and its impact on their organizations. You can also find out more information about new Autopatch features and the future of the service in the regularly published [Windows IT Pro Blog](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/bg-p/Windows-ITPro-blog/label-name/Windows%20Autopatch) and [Windowes Autopatch community](https://techcommunity.microsoft.com/t5/windows-autopatch/bd-p/Windows-Autopatch).
+
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+
+- [Windows Autopatch documentation](/windows/deployment/windows-autopatch/)
+
+## OneDrive for work or school
+
+Data in OneDrive for work or school is protected both in transit and at rest.
+
+When data transits either into the service from clients or between datacenters, it's protected using transport layer security (TLS) encryption. OneDrive only permits secure access.
+
+Authenticated connections are not allowed over HTTP and instead redirect to HTTPS.
+
+There are several ways that OneDrive for work or school is protected at rest:
+
+- Physical protection: Microsoft understands the importance of protecting customer data and is committed to securing the datacenters that contain it. Microsoft datacenters are designed, built, and operated to strictly limit physical access to the areas where customer data is stored. Physical security at datacenters is in alignment with the defense-in-depth principle. Multiple security measures are implemented to reduce the risk of unauthorized users accessing data and other datacenter resources. Learn more [here](/compliance/assurance/assurance-datacenter-physical-access-security)
+- Network protection: The networks and identities are isolated from the corporate network. Firewalls limit traffic into the environment from unauthorized locations
+- Application security: Engineers who build features follow the security development lifecycle. Automated and manual analyses help identify possible vulnerabilities. The [Microsoft Security Response Center](https://technet.microsoft.com/security/dn440717.aspx) helps triage incoming vulnerability reports and evaluate mitigations. Through the [Microsoft Cloud Bug Bounty Terms](https://technet.microsoft.com/dn800983), people across the world can earn money by reporting vulnerabilities
+- Content protection: Each file is encrypted at rest with a unique AES-256 key. These unique keys are encrypted with a set of master keys that are stored in Azure Key Vault
+
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+
+- [How OneDrive safeguards data in the cloud](https://support.microsoft.com/topic/23c6ea94-3608-48d7-8bf0-80e142edd1e1)
 
 ## Universal Print
 
@@ -297,22 +296,3 @@ For customers who want to stay on Print Servers, we recommend using the Microsof
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
 - [Print support app design guide](/windows-hardware/drivers/devapps/print-support-app-design-guide)
-
-## OneDrive for work or school
-
-Data in OneDrive for work or school is protected both in transit and at rest.
-
-When data transits either into the service from clients or between datacenters, it's protected using transport layer security (TLS) encryption. OneDrive only permits secure access.
-
-Authenticated connections are not allowed over HTTP and instead redirect to HTTPS.
-
-There are several ways that OneDrive for work or school is protected at rest:
-
-- Physical protection: Microsoft understands the importance of protecting customer data and is committed to securing the datacenters that contain it. Microsoft datacenters are designed, built, and operated to strictly limit physical access to the areas where customer data is stored. Physical security at datacenters is in alignment with the defense-in-depth principle. Multiple security measures are implemented to reduce the risk of unauthorized users accessing data and other datacenter resources. Learn more [here](/compliance/assurance/assurance-datacenter-physical-access-security)
-- Network protection: The networks and identities are isolated from the corporate network. Firewalls limit traffic into the environment from unauthorized locations
-- Application security: Engineers who build features follow the security development lifecycle. Automated and manual analyses help identify possible vulnerabilities. The [Microsoft Security Response Center](https://technet.microsoft.com/security/dn440717.aspx) helps triage incoming vulnerability reports and evaluate mitigations. Through the [Microsoft Cloud Bug Bounty Terms](https://technet.microsoft.com/dn800983), people across the world can earn money by reporting vulnerabilities
-- Content protection: Each file is encrypted at rest with a unique AES-256 key. These unique keys are encrypted with a set of master keys that are stored in Azure Key Vault
-
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
-
-- [How OneDrive safeguards data in the cloud](https://support.microsoft.com/topic/23c6ea94-3608-48d7-8bf0-80e142edd1e1)
