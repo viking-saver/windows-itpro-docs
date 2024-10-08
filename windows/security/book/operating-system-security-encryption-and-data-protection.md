@@ -64,8 +64,14 @@ With the first release of PDE (Windows 11, version 22H2), the PDE API was availa
 
 ## Email encryption
 
-Email encryption enables users to encrypt outgoing email messages and attachments so that only intended recipients with a digital identification (ID) - also called a certificate - can read them<sup>[\[10\]](conclusion.md#footnote10)</sup>. Users can digitally sign a message, which verifies the identity of the sender and ensures the message hasn't been tampered with.
+Email encryption allows users to secure email messages and attachments so that only the intended recipients with a digital identification (ID), or certificate, can read them<sup>[\[10\]](conclusion.md#footnote10)</sup>. Users can also *digitally sign* a message, which verifies the sender's identity and ensures the message hasn't been tampered with.
 
-These encrypted messages can be sent by a user to people within their organization and external contacts who have proper encryption certificates.
+The new Outlook app included in Windows 11 supports various types of email encryption, including Microsoft Purview Message Encryption, S/MIME, and Information Rights Management (IRM).
 
-However, recipients using Windows 11 Mail app can only read encrypted messages if the message is received on their Exchange account and they have corresponding decryption keys. Encrypted messages can be read only by recipients who have a certificate. If an encrypted message is sent to recipients whose encryption certificates aren't available, the app asks you to remove these recipients before sending the email.
+When using Secure/Multipurpose Internet Mail Extensions (S/MIME), users can send encrypted messages to people within their organization and to external contacts who have the proper encryption certificates. Recipients can only read encrypted messages if they have the corresponding decryption keys. If an encrypted message is sent to recipients whose encryption certificates aren't available, Outlook asks you to remove these recipients before sending the email.
+
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+
+- [S/MIME for message signing and encryption in Exchange Online](/exchange/security-and-compliance/smime-exo/smime-exo)
+- [Get started with the new Outlook for Windows](https://support.microsoft.com/topic/656bb8d9-5a60-49b2-a98b-ba7822bc7627)
+- [Email encryption](/purview/email-encryption)

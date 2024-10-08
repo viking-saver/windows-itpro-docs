@@ -78,6 +78,20 @@ Windows 11 built-in management features include:
 
 - [Mobile device management overview](/windows/client-management/mdm-overview)
 
+### Remote wipe
+
+When a device is lost or stolen, IT administrators might want to remotely wipe data stored in memory and hard disks. A helpdesk agent might also want to reset devices to fix issues encountered by remote workers. A remote wipe can also be used to prepare a previously used device for a new user.
+
+Windows 11 supports the Remote Wipe configuration service provider (CSP) so that device management solutions can remotely initiate any of the following operations:
+
+- Reset the device and remove user accounts and data
+- Reset the device and clean the drive
+- Reset the device but persist user accounts and data
+
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+
+- [Remote wipe CSP](/windows/client-management/mdm/remotewipe-csp)
+
 ## Microsoft Intune
 
 Microsoft Intune<sup>[\[15\]](conclusion.md#footnote15)</sup> is a comprehensive cloud-native endpoint management solution that helps secure, deploy, and manage users, apps, and devices. Intune brings together technologies like Microsoft Configuration Manager and Windows Autopilot to simplify provisioning, configuration management, and software updates across the organization.
@@ -91,6 +105,16 @@ Windows 11 enables IT professionals to move to the cloud while consistently enfo
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
 - [What is Microsoft Intune](/mem/intune/fundamentals/what-is-intune)
+
+### Windows enrollment attestation
+
+When a device enrolls into device management, the administrator expects it to receive the appropriate policies to secure and manage the PC. However, in some cases, malicious actors can remove enrollment certificates and use them on unmanaged PCs, making them appear enrolled but without the intended security and management policies.
+
+With Windows enrollment attestation, Microsoft Entra and Microsoft Intune certificates are bound to a device using the Trusted Platform Module (TPM). This ensures that the certificates cannot be transferred from one device to another, maintaining the integrity of the enrollment process.
+
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+
+- [Windows enrollment attestation](/mem/intune/enrollment/windows-enrollment-attestation)
 
 ### Endpoint Privilege Management (EPM)
 
@@ -115,14 +139,6 @@ With Intune, organizations can also extend MAM App Config, MAM App Protection, a
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
 - [Data protection for Windows MAM](/mem/intune/apps/protect-mam-windows?formCode=MG0AV3)
-
-## MDM enrollment certificate attestation
-
-When a device is enrolled into device management, the administrator assumes that the device will enroll and receive appropriate policies to secure and manage the PC as they expect. In some circumstances, enrollment certificates can be removed by malicious actors and then used on unmanaged PCs to appear as though they are enrolled, but without the security and management policies the administrator intended. With MDM enrollment certificate attestation, the certificate and keys are bound to a specific machine through the use of the Trusted Platform Module (TPM) to ensure that they can't be lifted from one device and applied to another.
-
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
-
-- [Windows enrollment attestation](/mem/intune/enrollment/windows-enrollment-attestation)
 
 ## Local Administrator Password (LAPs)
 
@@ -159,20 +175,6 @@ The security baseline has been enhanced with over 70 new settings, enabling loca
 
 - [Intune security baseline overview](/mem/intune/protect/security-baselines)
 - [List of the settings in the Windows security baseline in Intune](/mem/intune/protect/security-baseline-settings-mdm-all)
-
-## Remote Wipe
-
-When a device is lost or stolen, IT administrators might want to remotely wipe data stored in memory and hard disks. A helpdesk agent might also want to reset devices to fix issues encountered by remote workers. A remote wipe can also be used to prepare a previously used device for a new user.
-
-Windows 11 supports the Remote Wipe configuration service provider (CSP) so that MDM Solutions<sup>[\[9\]](conclusion.md#footnote9)</sup> can remotely initiate any of the following operations:
-
-- Reset the device and remove user accounts and data
-- Reset the device and clean the drive
-- Reset the device but persist user accounts and data
-
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
-
-- [Remote Wipe CSP](/windows/client-management/mdm/remotewipe-csp)
 
 ## Microsoft Azure Attestation Service
 
@@ -225,7 +227,7 @@ There's a lot more to learn about Windows Autopatch: this [Forrester Consulting 
 
 - [Windows Autopatch documentation](https://aka.ms/Autopatchdocs)
 
-## Windows Autopilot and zero-touch deployment
+## Windows Autopilot
 
 Traditionally, IT professionals spend significant time building and customizing images that will later be deployed to devices. If you're purchasing new devices or managing device refresh cycles for employees, you can use Windows Autopilot to set up and preconfigure new devices, getting them ready for productive use. Autopilot helps you ensure your devices are delivered locked down and compliant with corporate security policies. The solution can also be used to reset, repurpose, and recover devices with zero touch by your IT team and no infrastructure to manage, enhancing efficiency with a process that's both easy and simple.
 
