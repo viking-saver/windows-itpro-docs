@@ -24,8 +24,6 @@ Since more privileged virtual trust levels (VTLs) can enforce their own memory p
 
 With new installs of Windows 11, OS support for VBS and HVCI is turned on by default for all devices that meet prerequisites.
 
-**Hypervisor-enforced Paging Translation (HVPT)** is an overall security enhancement for the system. HVPT protects linear address translations from being tampered with, to protect sensitive system structures from write-what-where attacks. HVPT will be available on x64 machines as of Fall 2024.
-
 ### Virtualization-based security enclave
 
 A **Virtualization-based security enclave** is a software-based trusted execution environment (TEE) inside a host application. VBS enclaves enable developers to use VBS to protect their application's secrets from admin-level attacks. VBS enclaves are available on Windows 10 onwards on both x64 and ARM64.
@@ -42,6 +40,8 @@ A **Virtualization-based security enclave** is a software-based trusted executio
 Hardware-enforced stack protection integrates software and hardware for a modern defense against cyberthreats like memory corruption and zero-day exploits. Based on Control-flow Enforcement Technology (CET) from Intel and AMD Shadow Stacks, hardware-enforced stack protection is designed to protect against exploit techniques that try to hijack return addresses on the stack.
 
 Application code includes a program processing stack that hackers seek to corrupt or disrupt in a type of attack called *stack smashing*. When defenses like executable space protection began thwarting such attacks, hackers turned to new methods like return-oriented programming. Return-oriented programming, a form of advanced stack smashing, can bypass defenses, hijack the data stack, and ultimately force a device to perform harmful operations. To guard against these control-flow hijacking attacks, the Windows kernel creates a separate *shadow stack* for return addresses. Windows 11 extends stack protection capabilities to provide both user mode and kernel mode support.
+
+**Hypervisor-enforced Paging Translation (HVPT)** is an overall security enhancement for the system. HVPT protects linear address translations from being tampered with, to protect sensitive system structures from write-what-where attacks. HVPT will be available on x64 machines as of Fall 2024.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
