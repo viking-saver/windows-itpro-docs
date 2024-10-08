@@ -63,9 +63,14 @@ With Windows Subsystem for Linux (WSL) you can run a Linux environment on your W
 - **Auto proxy**: This new networking setting enforces WSL to use Windows' HTTP proxy information. Turn on when using a proxy on Windows, as it makes that proxy automatically apply to WSL distributions
 - **Intune/MDM setting in WSL**: Microsoft Defender for Endpoint (MDE) now integrates with WSL, providing the ability to monitor what's running inside of your WSL distros and report them to your online MDE dashboards
 
+## Virtualization-based security enclave
+
+A **Virtualization-based security enclave** is a software-based trusted execution environment (TEE) inside a host application. VBS enclaves enable developers to use VBS to protect their application's secrets from admin-level attacks. VBS enclaves are available on Windows 10 onwards on both x64 and ARM64.
+
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
 - [Hyper-V Firewall](/windows/security/operating-system-security/network-security/windows-firewall/hyper-v-firewall)
 - [DNS Tunneling](/windows/wsl/networking#dns-tunneling)
 - [Auto proxy](/windows/wsl/networking#auto-proxy)
 - [Intune/MDM setting in WSL](/windows/wsl/intune)
+- [Virtualization-based security enclave](/windows/win32/trusted-execution/vbs-enclaves)

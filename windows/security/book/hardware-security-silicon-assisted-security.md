@@ -24,16 +24,11 @@ Since more privileged virtual trust levels (VTLs) can enforce their own memory p
 
 With new installs of Windows 11, OS support for VBS and HVCI is turned on by default for all devices that meet prerequisites.
 
-### Virtualization-based security enclave
-
-A **Virtualization-based security enclave** is a software-based trusted execution environment (TEE) inside a host application. VBS enclaves enable developers to use VBS to protect their application's secrets from admin-level attacks. VBS enclaves are available on Windows 10 onwards on both x64 and ARM64.
-
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
 - [Virtualization-based security (VBS)](/windows-hardware/design/device-experiences/oem-vbs)
 - [Enable virtualization-based protection of code integrity](../hardware-security/enable-virtualization-based-protection-of-code-integrity.md)
 - [Hypervisor-protected Code Integrity (HVCI)](/windows/security/hardware-security/enable-virtualization-based-protection-of-code-integrity)
-- [Virtualization-based security enclave](/windows/win32/trusted-execution/vbs-enclaves)
 
 ### Hardware-enforced stack protection
 
