@@ -42,6 +42,6 @@ Through this collaboration with researchers across the globe, our teams identify
 <!--links-->
 
 [LINK-1]: https://news.microsoft.com/source/features/innovation/morse-microsoft-offensive-research-security-engineering
-[LINK-2]: (https://www.microsoft.com/security/blog/author/microsoft-offensive-research-security-engineering-team)
+[LINK-2]: https://www.microsoft.com/security/blog/author/microsoft-offensive-research-security-engineering-team
 [LINK-3]: /windows-insider/get-started
 [LINK-4]: https://www.microsoft.com/msrc/bounty
