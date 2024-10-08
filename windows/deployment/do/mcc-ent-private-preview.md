@@ -18,7 +18,7 @@ If you participated in the MCC early preview, thank you for your collaboration a
 
 To continue using MCC, we strongly recommend that you upgrade your existing cache nodes to the Public Preview release. Cache nodes created and deployed during early preview should still function but can no longer be managed or monitored remotely via the MCC Azure service.
 
-As such, we strongly recommend you [recreate your existing cache nodes in Azure](mcc-ent-create-resource-and-cache.md) and then [redeploy the MCC caching software to your host machines](mcc-ent-deploy-to-windows.md) using the latest OS-specific installer. You don't need to re-create your MCC Azure resource.
+As such, we strongly recommend you [recreate your existing resources in Azure](mcc-ent-create-resource-and-cache.md) and then [redeploy the MCC caching software to your host machines](mcc-ent-deploy-to-windows.md) using the latest OS-specific installer.
 
 ## Next step
 

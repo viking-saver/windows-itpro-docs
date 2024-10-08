@@ -135,7 +135,10 @@ To get the relevant information for provisioning script, use `az mcc ent node ge
 az mcc ent node get-provisioning-details --cache-node-name mycachenode --mcc-resource-name mymccresource --resource-group myrg
 ```
 
-Save the resulting values for cacheNodeId, customerKey, mccResourceId, registrationKey. These GUIDs are needed to create the provisioning script.
+>[!IMPORTANT]
+>* Save the resulting values for cacheNodeId, customerKey, mccResourceId, registrationKey. These GUIDs are needed to create the provisioning script.
+>* In the output look for cacheNodeState. If **cacheNodeState = Not Provisioned**, you can continue with cache node provisioning.
+>* If **cacheNodeState = Not Configured**, then the cache node has not been configured. Please configure the cache node before provisioning.
 
 ### Example script:
 
@@ -197,6 +200,10 @@ for ($cacheNodeNumber = 1; $cacheNodeNumber -le $cacheNodesToCreate; $cacheNodeN
 
 ## Next step
 
-> [!div class="nextstepaction"]
-> [Deploy cache node to Linux host machine](mcc-ent-deploy-to-Linux.md)
-> [Deploy cache node to Windows host machine](mcc-ent-deploy-to-Windows.md)
+To deploy the cache node to a **Windows** host machine, see 
+>[!div class="nextstepaction"]
+>[Deploy cache node to Windows](mcc-ent-deploy-to-windows.md)
+
+To deploy the cache node to a **Linux** host machine, see 
+>[!div class="nextstepaction"]
+>[Deploy cache node to Linux](mcc-ent-deploy-to-linux.md)

@@ -36,9 +36,7 @@ For more information on sizing and OS requirements, see [the prerequisites for u
 -->
 
 1. Select the Microsoft Connected Cache for Enterprise resource. When prompted, choose the subscription, resource group, and location for the resource. Then enter a name for the resource and select Review + Create.
-<!--
-    :::image type="content" source="images/mcc-isp-provision-cache-node-numbered.png" alt-text="Screenshot of the Azure portal depicting the cache node configuration page of a cache node. This screenshot shows all of the fields you can choose to configure the cache node." lightbox="./images/mcc-isp-provision-cache-node-numbered.png":::  
--->
+
 1. After a few moments, you'll see a "Validation successful" message, indicating you can move onto the next step and select Create.
 
 1. The creation of the resource might take a few minutes. After a successful creation, you'll see a Deployment complete page as below. Select Go to resource to create cache nodes.
@@ -79,11 +77,9 @@ az mcc ent resource create --mcc-resource-name <mymccresource> --resource-group 
 
 # [Azure portal](#tab/portal)
 
-  1. Open Azure portal and navigate to the Microsoft Connected Cache for Enterprise resource that you created.
-  1. Under Cache Node Management, select on Cache Nodes and then on + Create Cache Node.
-  <!--
-    :::image type="content" source="images/mcc-isp-provision-cache-node-numbered.png" alt-text="Screenshot of the Azure portal depicting the cache node configuration page of a cache node. This screenshot shows all of the fields you can choose to configure the cache node." lightbox="./images/mcc-isp-provision-cache-node-numbered.png":::  
-    -->
+  1. Open Azure portal and navigate to the Microsoft Connected Cache for Enterprise resource that you created.<br>
+  1. Under Cache Node Management, select on Cache Nodes and then on + Create Cache Node.<br>
+  
   1. Provide a name for your cache node and select the host OS you plan to deploy the cache node on and select create. Note, cache node names have to be unique under the Microsoft Connected Cache resource.
   <!--
     :::image type="content" source="images/mcc-isp-provision-cache-node-numbered.png" alt-text="Screenshot of the Azure portal depicting the cache node configuration page of a cache node. This screenshot shows all of the fields you can choose to configure the cache node." lightbox="./images/mcc-isp-provision-cache-node-numbered.png":::  
@@ -199,12 +195,18 @@ az mcc ent node update --cache-node-name <mycachenode> --mcc-resource-name <mymc
 ## Next step
 
 ### [Azure portal](#tab/portal)
-To deploy the cache node to a **Windows** host machine, see [Deploy cache node to Windows](mcc-ent-deploy-to-windows.md)
+To deploy the cache node to a **Windows** host machine, see 
+>[!div class="nextstepaction"]
+>[Deploy cache node to Windows](mcc-ent-deploy-to-windows.md)
 
-To deploy the cache node to a **Linux** host machine, see [Deploy cache node to Linux](mcc-ent-deploy-to-linux.md)
+To deploy the cache node to a **Linux** host machine, see 
+>[!div class="nextstepaction"]
+>[Deploy cache node to Linux](mcc-ent-deploy-to-linux.md)
 
 ### [Azure CLI](#tab/cli/)
-To deploy cache nodes using Azure CLI, see [Manage cache nodes using CLI](mcc-ent-manage-cache-using-CLI.md)
+To deploy cache nodes using Azure CLI, see 
+>[!div class="nextstepaction"]
+>[Manage cache nodes using CLI](mcc-ent-manage-cache-using-CLI.md)
 
 ---
 <br>

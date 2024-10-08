@@ -75,6 +75,11 @@ See [Host machine requirements](mcc-ent-prerequisites.md) for complete details.
 
 ## How it works
 
+The following diagram displays an overview of how MCC functions:<br>
+
+:::image type="content" source="./images/mcc_ent_publicpreview.png" alt-text="Diagram displaying the components of MCC." lightbox="./images/mcc_ent_publicpreview.png":::
+
+
 1. The Azure management portal for Microsoft Connected Cache or CLI are used to create cache nodes, configure deployments, including unauthenticated proxy settings.
 1. Prepare Windows or Linux devices. If deploying to Windows devices, prepare accounts - gMSA, local user account, domain account. Deploy to Windows or Linux devices using scripts.
 1. The Microsoft Connected Cache container is deployed to the device using Azure IoT Edge container management services and the cache server begins reporting status and metrics to Delivery Optimization services.
@@ -83,7 +88,8 @@ See [Host machine requirements](mcc-ent-prerequisites.md) for complete details.
 1. Devices can fallback to CDN if cache server is unavailable for any reason or use Delivery Optimization delay fallback to http (CDN )settings to prefer the local cache server.
 Customers can view data regarding Microsoft Connected Cache downloads on management portal and Windows Update for Business reports
 
-The following diagram displays an overview of how MCC functions:
- <!--
-:::image type="content" source="./images/waas-mcc-diag-overview.png" alt-text="Diagram displaying the components of MCC." lightbox="./images/waas-mcc-diag-overview.png":::
- -->
+
+## Next step
+
+>[!div class="nextstepaction"]
+>[Create MCC Azure resources](mcc-ent-create-resource-and-cache.md)
