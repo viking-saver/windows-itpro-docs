@@ -124,8 +124,9 @@ Enter required values to configure your cache node. To learn more about the defi
 Don't forget to select save after adding configuration information.
 
 
-# [Azure CLI for MCC on Linux](#tab/linux)
+# [Azure CLI](#tab/cli)
 
+### Configure Linux MCC
 Use the following command to configure cache node for deployment to a **Linux** host machine.
 
 Replace the following placeholders with your own information:
@@ -157,8 +158,7 @@ az mcc ent node update --cache-node-name <mycachenode> --mcc-resource-name <mymc
 <br>
 <br>
 
-# [Azure CLI for MCC on Windows](#tab/windows)
-
+### Configure Windows MCC
 Use the following command to configure cache node for deployment to a **Windows** host machine.
 
 Replace the following placeholders with your own information:
