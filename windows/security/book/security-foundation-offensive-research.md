@@ -19,7 +19,12 @@ A range of tools and techniques - such as threat modeling, static analysis, fuzz
 
 ## Microsoft Offensive Research and Security Engineering
 
-[Microsoft Offensive Research and Security Engineering](https://github.com/microsoft/WindowsAppSDK-Samples?msclkid=1a6280c6c73d11ecab82868efae04e5c) performs targeted design reviews, audits, and deep penetration testing of Windows features using Microsoft's open-source OneFuzz platform as part of their development and testing cycle.
+Microsoft Offensive Research and Security Engineering (MORSE) performs targeted design reviews, audits, and deep penetration testing of Windows features using Microsoft's open-source OneFuzz platform as part of their development and testing cycle.
+
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+
+- [MORSE security team takes proactive approach to finding bugs][LINK-1]
+- [MORSE Blog][LINK-2]
 
 ## Windows Insider and Bug Bounty program
 
@@ -31,5 +36,12 @@ Through this collaboration with researchers across the globe, our teams identify
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
-- [Windows Insider Program](/windows-insider/get-started)
-- [Microsoft bounty programs](https://www.microsoft.com/msrc/bounty)
+- [Windows Insider Program][LINK-3]
+- [Microsoft bounty programs][LINK-4]
+
+<!--links-->
+
+[LINK-1]: https://news.microsoft.com/source/features/innovation/morse-microsoft-offensive-research-security-engineering
+[LINK-2]: (https://www.microsoft.com/security/blog/author/microsoft-offensive-research-security-engineering-team)
+[LINK-3]: /windows-insider/get-started
+[LINK-4]: https://www.microsoft.com/msrc/bounty
