@@ -16,13 +16,15 @@ capabilities to build in security from the ground up to protect against breaches
 
 Smart App Control prevents users from running malicious applications by blocking untrusted or unsigned applications. Smart App Control goes beyond previous built-in browser protections by adding another layer of security that is woven directly into the core of the OS at the process level. Using AI, Smart App Control only allows processes to run if they're predicted to be safe based on existing and new intelligence updated daily.
 
-Smart App Control builds on top of the same cloud-based AI used in App Control for Business to predict the safety of an application so that users can be confident that their applications are safe and reliable on their new Windows devices. Additionally, Smart App Control blocks unknown script files and macros from the web, greatly improving security for everyday users.
+Smart App Control builds on top of the same cloud-based AI used in App Control for Business to predict the safety of an application so that users can be confident that their applications are safe and reliable on their new Windows devices. Additionally, Smart App Control blocks unknown script files and macros from the web, greatly improving security for everyday users. Smart App Control shipped in evaluation mode for new device starting in Windows 11, version 22H2.
 
 We've been making significant improvements to Smart App Control to increase the security, usability, and cloud intelligence response for apps in the Windows ecosystem. Users can get the latest and best experience with Smart App Control by keeping their PC up to date via Windows Update every month.
 
-Additionally, evaluation mode starts automatically enabling devices that the cloud AI model predicts will have a good experience with Smart App Control in the coming months, first starting with users in North America and eventually expanding to other regions. Note that enterprise-enrolled devices have Smart App Control disabled by default, and we recommend enterprises running line-of-business applications continue to leverage App Control for Business.
+Additionally, evaluation mode starts automatically enabling devices that the cloud AI model predicts will have a good experience with Smart App Control in the coming months, first starting with users in North America and eventually expanding to other regions.
 
-Devices running previous versions of Windows 11, version 22H2 must be reset with a clean installation of Windows 11 to take advantage of this feature.
+As a developer, to ensure that your users have a seamless experience with Smart App Control enabled, we ask that you sign your application with a code signing certificate from the Microsoft Trusted Root Program.  Make sure to include all binaries, such as exe, dll, temp installer files, and uninstallers. Trusted signing makes the process of obtaining, maintaining, and signing with a trusted certificate simple and secure. More on that later in this doc.
+
+Devices running previous versions of Windows 11 will have to be reset with a clean installation of Windows 11, version 22H2 or later to take advantage of this feature. Smart App Control will be disabled on devices enrolled in enterprise management. We suggest enterprises running line-of-business applications continue to leverage App Control for Business.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
