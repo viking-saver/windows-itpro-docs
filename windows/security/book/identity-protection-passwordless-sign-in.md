@@ -178,7 +178,7 @@ Windows 11 supports federated sign-in with external education identity managemen
 
 - [Configure federated sign-in for Windows devices][LINK-14]
 
-## Smart cards
+## Smart cards for Windows
 
 Organizations can also opt for smart cards, an authentication method that existed before biometric authentication. These tamper-resistant, portable storage devices enhance Windows security by authenticating users, signing code, securing e-mails, and signing in with Windows domain accounts.
 
