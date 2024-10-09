@@ -192,7 +192,8 @@ Smart cards can only be used to sign in to domain accounts or Microsoft Entra ID
 
 When a password is used to sign in to a domain account, Windows uses the Kerberos Version 5 (V5) protocol for authentication. If you use a smart card, the operating system uses Kerberos V5 authentication with X.509 V3 certificates. On Microsoft Entra ID joined devices, a smart card can be used with Microsoft Entra ID certificate-based authentication. Smart cards can't be used with local accounts.
 
-[Windows Hello for Business](/windows/security/identity-protection/hello-for-business/) and FIDO2 security keys are modern, two-factor authentication methods for Windows. Customers using virtual smart cards are encouraged to move to Windows Hello for Business or FIDO2. For new Windows installations, we recommend Windows Hello for Business or FIDO2 security keys.
+> [!WARNING]
+> [Windows Hello for Business](/windows/security/identity-protection/hello-for-business/) and FIDO2 security keys are modern, two-factor authentication methods for Windows. Customers using virtual smart cards are encouraged to move to Windows Hello for Business or FIDO2. For new Windows installations, we recommend Windows Hello for Business or FIDO2 security keys.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
