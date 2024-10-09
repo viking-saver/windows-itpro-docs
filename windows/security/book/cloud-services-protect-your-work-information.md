@@ -192,7 +192,7 @@ The security baseline has been enhanced with over 70 new settings, enabling loca
 - [Intune security baseline overview](/mem/intune/protect/security-baselines)
 - [List of the settings in the Windows security baseline in Intune](/mem/intune/protect/security-baseline-settings-mdm-all)
 
-## Local Administrator Password (LAPs)
+## Windows Local Administrator Password Solution (LAPS)
 
 Local Administrator Password solution was a key consideration for many customers when deciding to make the transition from on-premises to cloud-managed devices using Intune. With LAPS, organizations can automatically manage and back up the password of a local administrator account on Microsoft Entra ID joined or Microsoft Entra hybrid joined devices.
 

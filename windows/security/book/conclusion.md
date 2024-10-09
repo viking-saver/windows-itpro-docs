@@ -23,25 +23,16 @@ New:
 
 Enhanced:
 
-- Application Control for Business
-- BitLocker to go
-- Credential guard
-- Device encryption
-- Enhanced Phishing protection
-- Enhanced Sign-in security (ESS)
-- Hardware security user experience
-- Local Security Authority
-- Lockout policies for local admin
-- Microsoft Authenticator
-- Presence Detection
-- Server Message Block direct
-- Smart App Control (SAC) going into Enforcement mode
-- Universal Print
-- Wake on approach, lock on leave
-- Windows Firewall
-- Windows Hello for Business
-- Windows Local Administrator Password Solution (LAPS)
-- Windows Presence sensing
+- [App Control for Business](application-security-application-and-driver-control.md#app-control-for-business)
+- [BitLocker](operating-system-security-encryption-and-data-protection.md#bitlocker)
+- [Credential Guard](identity-protection-advanced-credential-protection.md#credential-guard)
+- [Device Encryption](operating-system-security-encryption-and-data-protection.md#device-encryption)
+- [Enhanced phishing protection with Microsoft Defender SmartScreen](identity-protection-passwordless-sign-in.md#enhanced-phishing-protection-with-microsoft-defender-smartscreen)
+- [Personal data encryption (PDE)](operating-system-security-encryption-and-data-protection.md#personal-data-encryption-pde)
+- [Server Message Block file services](operating-system-security-network-security.md#server-message-block-file-services)
+- [Universal Print](cloud-services-protect-your-work-information.md#universal-print)
+- [Windows Local Administrator Password Solution (LAPS)](cloud-services-protect-your-work-information.md#windows-local-administrator-password-solution-laps)
+- [Windows Subsystem for Linux (WSL)](application-security-application-isolation.md#windows-subsystem-for-linux-wsl)
 
 ## Document revision history
 
