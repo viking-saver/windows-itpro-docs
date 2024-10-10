@@ -133,15 +133,16 @@ Enhanced Sign-in Security is configured by device manufacturers during the manuf
 
 The FIDO Alliance, the Fast Identity Online industry standards body, was established to promote authentication technologies and standards that reduce reliance on passwords. FIDO Alliance and World Wide Web Consortium (W3C) have worked together to define the Client to Authenticator Protocol (CTAP2) and Web Authentication (WebAuthn) specifications, which are the industry standard for providing strong, phishing-resistant, user friendly, and privacy preserving authentication across the web and apps. FIDO standards and certifications are becoming recognized as the leading standard for creating secure authentication solutions across enterprises, governments, and consumer markets.
 
-Windows 11 can also use passkeys from external FIDO2 security keys for authentication alongside or in addition to Windows Hello and Windows Hello for Business, which is also a FIDO2-certified passwordless solution. As a result, Windows 11 can be used as a FIDO authenticator for many popular identity management services.
+Windows 11 can also use external FIDO2 security keys for authentication alongside or in addition to Windows Hello and Windows Hello for Business, which is also a FIDO2-certified passwordless solution. As a result, Windows 11 can be used as a FIDO authenticator for many popular identity management services. 
 
 ### Passkeys
 
 Windows 11 makes it much harder for hackers who exploit stolen passwords via phishing attacks by empowering users to replace passwords with passkeys. Passkeys are the cross-platform future of secure sign-in. Microsoft and other technology leaders are supporting passkeys across their platforms and services.
 
-A passkey is a unique, unguessable cryptographic secret that is securely stored on the device. Instead of using a username and password to sign in to a website or application, Windows 11 users can create and use a passkey with Windows Hello, an external security provider, or their mobile device.
+A passkey is a unique, unguessable cryptographic secret that is securely stored on the device. Instead of using a username and password to sign in to a website or application, Windows 11 users can create and use a passkey with Windows Hello, a third-party passkey provider, an external FIDO2 security key, or their mobile device.
 
-Passkeys on Windows 11 are protected by Windows Hello or Windows Hello for Business. This enables users to sign in to the site or app using their face, fingerprint, or device PIN. Passkeys on Windows work in any browsers or apps that support them for sign in. Users can manage passkeys on their device on Windows 11 account settings.
+Passkeys created and saved with Windows Hello are protected by Windows Hello or Windows Hello for Business and are managed on the Windows 11 device account settings. When a third-party passkey provider is used, passkeys are protected and managed by the third-party. Users can sign in to the site or app using their face, fingerprint, or device PIN. Passkeys on Windows work in any browsers or apps that support them for sign in. 
+
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
@@ -178,7 +179,7 @@ Windows 11 supports federated sign-in with external education identity managemen
 
 - [Configure federated sign-in for Windows devices][LINK-14]
 
-## Smart cards for Windows
+## Smart cards
 
 Organizations can also opt for smart cards, an authentication method that existed before biometric authentication. These tamper-resistant, portable storage devices enhance Windows security by authenticating users, signing code, securing e-mails, and signing in with Windows domain accounts.
 
@@ -192,8 +193,7 @@ Smart cards can only be used to sign in to domain accounts or Microsoft Entra ID
 
 When a password is used to sign in to a domain account, Windows uses the Kerberos Version 5 (V5) protocol for authentication. If you use a smart card, the operating system uses Kerberos V5 authentication with X.509 V3 certificates. On Microsoft Entra ID joined devices, a smart card can be used with Microsoft Entra ID certificate-based authentication. Smart cards can't be used with local accounts.
 
-> [!WARNING]
-> [Windows Hello for Business](/windows/security/identity-protection/hello-for-business/) and FIDO2 security keys are modern, two-factor authentication methods for Windows. Customers using virtual smart cards are encouraged to move to Windows Hello for Business or FIDO2. For new Windows installations, we recommend Windows Hello for Business or FIDO2 security keys.
+[Windows Hello for Business](/windows/security/identity-protection/hello-for-business/) and FIDO2 security keys are modern, two-factor authentication methods for Windows. Customers using virtual smart cards are encouraged to move to Windows Hello for Business or FIDO2. For new Windows installations, we recommend Windows Hello for Business or FIDO2 security keys.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
