@@ -28,6 +28,7 @@ Enhanced:
 - [Credential Guard](identity-protection-advanced-credential-protection.md#credential-guard)
 - [Device Encryption](operating-system-security-encryption-and-data-protection.md#device-encryption)
 - [Enhanced phishing protection with Microsoft Defender SmartScreen](identity-protection-passwordless-sign-in.md#enhanced-phishing-protection-with-microsoft-defender-smartscreen)
+- [Local Security Authority (LSA) protection](identity-protection-advanced-credential-protection.md#local-security-authority-lsa-protection)
 - [Personal data encryption (PDE)](operating-system-security-encryption-and-data-protection.md#personal-data-encryption-pde)
 - [Server Message Block file services](operating-system-security-network-security.md#server-message-block-file-services)
 - [Universal Print](cloud-services-protect-your-work-information.md#universal-print)

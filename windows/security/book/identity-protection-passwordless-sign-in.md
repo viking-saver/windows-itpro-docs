@@ -199,7 +199,7 @@ When a password is used to sign in to a domain account, Windows uses the Kerbero
 
 - [Smart Card technical reference][LINK-12]
 
-## Enhanced phishing protection with Microsoft Defender SmartScreen
+## Enhanced phishing protection in Microsoft Defender SmartScreen
 
 As malware protection and other safeguards evolve, cybercriminals look for new ways to circumvent security measures. Phishing is a leading threat, with apps and websites designed to steal credentials by tricking people into voluntarily entering passwords. As a result, many organizations are transitioning to the ease and security of passwordless sign-in with Windows Hello or Windows Hello for Business.
 

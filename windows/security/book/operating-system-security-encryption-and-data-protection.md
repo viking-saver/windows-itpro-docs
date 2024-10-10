@@ -21,7 +21,7 @@ BitLocker is a data protection feature that integrates with the operating system
 
 ## BitLocker To Go
 
-BitLocker To Go refers to BitLocker Drive Encryption on removable data drives. BitLocker To Go includes the encryption of USB flash drives, SD cards, and external hard disk drives. Drives can be unlocked using a password, certificate on a smart card, or recovery password.
+BitLocker To Go refers to BitLocker on removable data drives. BitLocker To Go includes the encryption of USB flash drives, SD cards, and external hard disk drives. Drives can be unlocked using a password, certificate on a smart card, or recovery password.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
@@ -29,7 +29,11 @@ BitLocker To Go refers to BitLocker Drive Encryption on removable data drives. B
 
 ## Device Encryption
 
-Device Encryption is consumer-level device encryption that can't be managed. Device Encryption is turned on by default for devices with the right hardware components (for example, TPM 2.0, UEFI Secure Boot, Hardware Security Test Interface, and Modern Standby). However, for a commercial scenario, it's possible for organizations to disable Device Encryption in favor of BitLocker.
+Device encryption is a Windows feature that simplifies the process of enabling BitLocker encryption on certain devices. It ensures that only the OS drive and fixed drives are encrypted, while external/USB drives remain unencrypted. Additionally, devices with externally accessible ports that allow DMA access are not eligible for device encryption. Unlike standard BitLocker implementation, device encryption is enabled automatically to ensure continuous protection. Once a clean installation of Windows is completed and the out-of-box experience is finished, the device is prepared for first use with encryption already in place.
+
+Organizations have the option to disable device encryption in favor of a full BitLocker implementation. This allows for more granular control over encryption policies and settings, ensuring that the organization's specific security requirements are met.
+
+Starting with Windows 11, version 24H2, the prerequisites of DMA and HSTI/Modern Standby is removed. This change makes more devices eligible for both automatic and manual device encryption.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
@@ -54,9 +58,9 @@ Encrypted hard drives enable:
 
 ## Personal data encryption (PDE)
 
-Personal Data Encryption refers to a user authenticated encryption mechanism used to protect user content. Windows Hello for Business is the multi-factor authentication mechanism used with PDE. Windows Hello for Business, either with PIN, face, or fingerprint, is used to protect the container, which houses the encryption keys used by Personal Data Encryption (PDE). When the user logs in (either after bootup or unlocking after a lock screen), the container gets authenticated to release the keys in the container to decrypt user content.
+Personal Data Encryption (PDE) is a user-authenticated encryption mechanism designed to protect user's content. PDE uses Windows Hello for Business as its modern authentication scheme, with PIN or biometric authentication methods. The encryption keys used by PDE are securely stored within the Windows Hello container. When a user signs in with Windows Hello, the container is unlocked, making the keys available to decrypt the user's content.
 
-With the first release of PDE (Windows 11, version 22H2), the PDE API was available, which when adopted by applications can protect data under the purview of the applications. With the next Windows platform release, PDE for Folders will be released. This feature doesn't require updates to any applications, and protects the contents in the Known Windows Folders from bootup until first sign-in.
+The initial release of PDE in Windows 11 22H2 introduced a set of public APIs that applications can adopt to safeguard content. In Windows 11, version 24H2, PDE functionality is further enhanced with *PDE for folders*, which extends protection to the known Windows folders: Documents, Pictures, and Desktop.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 

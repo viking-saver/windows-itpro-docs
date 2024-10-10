@@ -13,9 +13,9 @@ In addition to adopting passwordless sign-in, organizations can strengthen secur
 
 ## Local Security Authority (LSA) protection
 
-Windows has several critical processes to verify a user's identity. Verification processes include Local Security Authority (LSA), which is responsible for authenticating users and verifying Windows sign-ins. LSA handles tokens and credentials that are used for single sign-on to a Microsoft account and Entra.
+Windows has several critical processes to verify a user's identity. Verification processes include Local Security Authority (LSA), which is responsible for authenticating users, and verifying Windows sign-ins. LSA handles tokens and credentials that are used for single sign-on to a Microsoft account and Entra ID account.
 
-To help keep these credentials safe, with 24H2 LSA protection is enabled by default on all devices (MSA, Entra joined, hybrid, and local) after an evaluation period. By loading only trusted, signed code, LSA provides significant protection against credential theft. LSA protection supports configuration using group policy and other device management solutions.
+To help keep these credentials safe, starting in Windows 11, version 24H2, LSA protection is enabled by default on all devices (MSA, Entra joined, hybrid, and local) after an evaluation period. By loading only trusted, signed code, LSA provides significant protection against credential theft. LSA protection supports configuration using group policy and other device management solutions.
 
 Users have the ability to manage the LSA protection state in the Windows Security application under **Device Security** > **Core Isolation** > **Local Security Authority protection**.
 
