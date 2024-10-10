@@ -240,6 +240,7 @@ There's a lot more to learn about Windows Autopatch: this [Forrester Consulting 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
 - [Windows Autopatch documentation](/windows/deployment/windows-autopatch/)
+- [Windows updates API overview](/graph/windowsupdates-concept-overview)
 
 ## OneDrive for work or school
 
