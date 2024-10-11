@@ -25,7 +25,7 @@ implements virtual trust level 1 (VTL1), which has higher privilege than the vir
 Since more privileged virtual trust levels (VTLs) can enforce their own memory protections, higher VTLs can effectively protect areas of memory from lower VTLs. In practice, this allows a lower VTL to protect isolated memory regions by securing them with a higher VTL. For example, VTL0 could store a secret in VTL1, at which point only VTL1 could access it. Even if VTL0 is compromised, the secret would be safe.
     :::column-end:::
     :::column:::
-:::image type="content" source="images/vbs-diagram.png" alt-text="Diagram of VBS architecture." lightbox="images/vbs-diagram.png"" border="false":::
+:::image type="content" source="images/vbs-diagram.png" alt-text="Diagram of VBS architecture." lightbox="images/vbs-diagram.png" border="false":::
     :::column-end:::
 :::row-end:::
 
