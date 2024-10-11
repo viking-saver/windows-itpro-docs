@@ -11,12 +11,12 @@ ms.date: 09/06/2024
 
 ## Win32 app isolation
 
-Win32 app isolation is a security feature designed to be the default isolation standard on Windows clients. It's built on [AppContainer](/windows/win32/secauthz/implementing-an-appcontainer), and offers several added security features to help the Windows platform defend against attacks that use vulnerabilities in applications or third-party libraries. To isolate their apps, developers can update their applications using Visual Studio.
+Win32 app isolation is a security feature designed to be the default isolation standard on Windows clients. It's built on [AppContainer][LINK-1], and offers several added security features to help the Windows platform defend against attacks that use vulnerabilities in applications or third-party libraries. To isolate their apps, developers can update their applications using Visual Studio.
 
 Win32 app isolation follows a two-step process:
 
 - In the first step, the Win32 application is launched as a low-integrity process using AppContainer, which is recognized as a security boundary by Windows. The process is limited to a specific set of Windows APIs by default and is unable to inject code into any process operating at a higher integrity level
-- In the second step, least privilege is enforced by granting authorized access to Windows securable objects. This access is determined by capabilities that are added to the application manifest through MSIX packaging. *Securable objects* in this context refers to Windows resources whose access is safeguarded by capabilities. These capabilities enable the implantation of a [Discretionary Access Control List](/windows/win32/secauthz/access-control-lists) on Windows
+- In the second step, least privilege is enforced by granting authorized access to Windows securable objects. This access is determined by capabilities that are added to the application manifest through MSIX packaging. *Securable objects* in this context refers to Windows resources whose access is safeguarded by capabilities. These capabilities enable the implantation of a [Discretionary Access Control List][LINK-2] on Windows
 
 To help ensuring that isolated applications run smoothly, developers must define the access requirements for the application via access capability declarations in the application package manifest. The *Application Capability Profiler (ACP)* simplifies the entire process by allowing the application to run in *learn mode* with low privileges. Instead of denying access if the capability isn't present, ACP allows access and logs additional capabilities required for access if the application were to run isolated.
 
@@ -25,14 +25,14 @@ To create a smooth user experience that aligns with nonisolated, native Win32 ap
 - Approaches for accessing data and privacy information
 - Integrating Win32 apps for compatibility with other Windows interfaces
 
-The first factor relates to implementing methods to manage access to files and privacy information within and outside the isolation boundary ([AppContainer](/windows/win32/secauthz/implementing-an-appcontainer)). The second factor involves integrating Win32 apps with other Windows interfaces in a way that helps enable seamless functionality without causing perplexing user consent prompts.
+The first factor relates to implementing methods to manage access to files and privacy information within and outside the isolation boundary ([AppContainer][LINK-3]). The second factor involves integrating Win32 apps with other Windows interfaces in a way that helps enable seamless functionality without causing perplexing user consent prompts.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
-- [Win32 app isolation](https://github.com/microsoft/win32-app-isolation)
-- [Application Capability Profiler (ACP)](https://github.com/microsoft/win32-app-isolation/blob/main/docs/profiler/application-capability-profiler.md)
-- [Learn how to adopt Win32 app isolation with Visual Studio](https://github.com/microsoft/win32-app-isolation/blob/main/docs/packaging/packaging-with-visual-studio.md)
-- [Sandboxing Python with Win32 app isolation](https://blogs.windows.com/windowsdeveloper/2024/03/06/sandboxing-python-with-win32-app-isolation/)
+- [Win32 app isolation][LINK-4]
+- [Application Capability Profiler (ACP)][LINK-5]
+- [Learn how to adopt Win32 app isolation with Visual Studio][LINK-6]
+- [Sandboxing Python with Win32 app isolation][LINK-7]
 
 ## App containers
 
@@ -42,7 +42,7 @@ Processes that run in app containers operate at a low integrity level, meaning t
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
-- [Windows and app container](/windows/apps/windows-app-sdk/migrate-to-windows-app-sdk/feature-mapping-table?source=recommendations)
+- [Windows and app container][LINK-8]
 
 ## Windows Sandbox
 
@@ -52,23 +52,27 @@ Once Windows Sandbox is closed, nothing persists on the device. All the software
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
-- [Windows Sandbox](/windows/security/threat-protection/windows-sandbox/windows-sandbox-overview)
+- [Windows Sandbox][LINK-9]
 
 ## Windows Subsystem for Linux (WSL)
 
-With Windows Subsystem for Linux (WSL) you can run a Linux environment on your Windows device, without the need for a separate virtual machine or dual booting. WSL is designed to provide a seamless and productive experience for developers who want to use both Windows and Linux at the same time. In 24H2, we added three networking security features and Intune/MDM integration in WSL on Windows 11:
+With Windows Subsystem for Linux (WSL) you can run a Linux environment on a Windows device, without the need for a separate virtual machine or dual booting. WSL is designed to provide a seamless and productive experience for developers who want to use both Windows and Linux at the same time.
+
+🆕 Starting in Windows 11, version 24H2, we added three networking security features:
 
 - **Hyper-V Firewall**: This new firewall setting is a network firewall solution that enables filtering of inbound and outbound traffic to/from WSL containers hosted by Windows
 - **DNS Tunneling**: This new networking setting improves compatibility in different networking environments and makes use of virtualization features to obtain DNS information rather than a networking packet
 - **Auto proxy**: This new networking setting enforces WSL to use Windows' HTTP proxy information. Turn on when using a proxy on Windows, as it makes that proxy automatically apply to WSL distributions
-- **Intune/MDM setting in WSL**: Microsoft Defender for Endpoint (MDE) now integrates with WSL, providing the ability to monitor what's running inside of your WSL distros and report them to your online MDE dashboards
+
+These features can be set up using a device management solution such as Microsoft Intune. Microsoft Defender for Endpoint (MDE) integrates with WSL, allowing it to monitor activities within a WSL distro and report them to the MDE dashboards.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
-- [Hyper-V Firewall](/windows/security/operating-system-security/network-security/windows-firewall/hyper-v-firewall)
-- [DNS Tunneling](/windows/wsl/networking#dns-tunneling)
-- [Auto proxy](/windows/wsl/networking#auto-proxy)
-- [Intune/MDM setting in WSL](/windows/wsl/intune)
+- [Hyper-V Firewall][LINK-10]
+- [DNS Tunneling][LINK-11]
+- [Auto proxy][LINK-12]
+- [Intune setting for WSL][LINK-13]
+- [Microsoft Defender for Endpoint plug-in for WSL][LINK-14]
 
 ## Virtualization-based security enclave
 
@@ -76,4 +80,22 @@ A **Virtualization-based security enclave** is a software-based trusted executio
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
-- [Virtualization-based security enclave](/windows/win32/trusted-execution/vbs-enclaves)
+- [Virtualization-based security enclave][LINK-15]
+
+<!--links-->
+
+[LINK-1]: /windows/win32/secauthz/implementing-an-appcontainer
+[LINK-2]: /windows/win32/secauthz/access-control-lists
+[LINK-3]: /windows/win32/secauthz/implementing-an-appcontainer
+[LINK-4]: https://github.com/microsoft/win32-app-isolation
+[LINK-5]: https://github.com/microsoft/win32-app-isolation/blob/main/docs/profiler/application-capability-profiler.md
+[LINK-6]: https://github.com/microsoft/win32-app-isolation/blob/main/docs/packaging/packaging-with-visual-studio.md
+[LINK-7]: https://blogs.windows.com/windowsdeveloper/2024/03/06/sandboxing-python-with-win32-app-isolation/
+[LINK-8]: /windows/apps/windows-app-sdk/migrate-to-windows-app-sdk/feature-mapping-table?source=recommendations
+[LINK-9]: /windows/security/threat-protection/windows-sandbox/windows-sandbox-overview
+[LINK-10]: /windows/security/operating-system-security/network-security/windows-firewall/hyper-v-firewall
+[LINK-11]: /windows/wsl/networking#dns-tunneling
+[LINK-12]: /windows/wsl/networking#auto-proxy
+[LINK-13]: /windows/wsl/intune
+[LINK-14]: /defender-endpoint/mde-plugin-wsl
+[LINK-15]: /windows/win32/trusted-execution/vbs-enclaves
