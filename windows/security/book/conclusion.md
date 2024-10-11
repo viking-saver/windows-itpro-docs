@@ -16,6 +16,7 @@ We will continue to bring you new features to protect against evolving threats, 
 New:
 
 - [Config Refresh](operating-system-security-system-security.md#config-refresh)
+- [Passkeys](identity-protection-passwordless-sign-in.md#passkeys)
 - [Trusted signing](application-security-application-and-driver-control.md#trusted-signing)
 - [VBS Key Protection](identity-protection-advanced-credential-protection.md#vbs-key-protection)
 - [Virtualization-based security enclave](application-security-application-isolation.md#virtualization-based-security-enclave)

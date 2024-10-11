@@ -25,7 +25,7 @@ To create a smooth user experience that aligns with nonisolated, native Win32 ap
 - Approaches for accessing data and privacy information
 - Integrating Win32 apps for compatibility with other Windows interfaces
 
-The first factor relates to implementing methods to manage access to files and privacy information within and outside the isolation boundary ([AppContainer][LINK-3]). The second factor involves integrating Win32 apps with other Windows interfaces in a way that helps enable seamless functionality without causing perplexing user consent prompts.
+The first factor relates to implementing methods to manage access to files and privacy information within and outside the isolation boundary AppContainer. The second factor involves integrating Win32 apps with other Windows interfaces in a way that helps enable seamless functionality without causing perplexing user consent prompts.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
@@ -86,7 +86,6 @@ A **Virtualization-based security enclave** is a software-based trusted executio
 
 [LINK-1]: /windows/win32/secauthz/implementing-an-appcontainer
 [LINK-2]: /windows/win32/secauthz/access-control-lists
-[LINK-3]: /windows/win32/secauthz/implementing-an-appcontainer
 [LINK-4]: https://github.com/microsoft/win32-app-isolation
 [LINK-5]: https://github.com/microsoft/win32-app-isolation/blob/main/docs/profiler/application-capability-profiler.md
 [LINK-6]: https://github.com/microsoft/win32-app-isolation/blob/main/docs/packaging/packaging-with-visual-studio.md

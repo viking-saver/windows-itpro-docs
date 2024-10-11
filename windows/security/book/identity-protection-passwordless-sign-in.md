@@ -129,27 +129,26 @@ Enhanced Sign-in Security is configured by device manufacturers during the manuf
 
 - [Windows Hello Enhanced Sign-in Security][LINK-5]
 
-
 ### Passkeys
 
 Windows 11 makes it much harder for hackers who exploit stolen passwords via phishing attacks by empowering users to replace passwords with passkeys. Passkeys are the cross-platform future of secure sign-in. Microsoft and other technology leaders are supporting passkeys across their platforms and services.
 
-A passkey is a unique, unguessable cryptographic secret that is securely stored on the device. Instead of using a username and password to sign in to a website or application, Windows 11 users can create and use a passkey with Windows Hello, a third-party passkey provider, an external FIDO2 security key, or their mobile device.
+A passkey is a unique, unguessable cryptographic secret that is securely stored on the device. Instead of using a username and password to sign in to a website or application, Windows 11 users can create and use a passkey with Windows Hello, a third-party passkey provider, an external FIDO2 security key, or their mobile device. Passkeys on Windows work in any browsers or apps that support them for sign in.
 
-Passkeys created and saved with Windows Hello are protected by Windows Hello or Windows Hello for Business and are managed on the Windows 11 device account settings. When a third-party passkey provider is used, passkeys are protected and managed by the third-party. Users can sign in to the site or app using their face, fingerprint, or device PIN. Passkeys on Windows work in any browsers or apps that support them for sign in. 
+Passkeys created and saved with Windows Hello are protected by Windows Hello or Windows Hello for Business. Users can sign in to the site or app using their face, fingerprint, or device PIN. Users can manage their passkeys from **Settings** > **Accounts** > **Passkeys**.
 
+🔜 Coming soon in Windows 11, version 24H2, a plug-in model for 3rd party passkey providers allows users to manage their passkeys with third-party passkey managers. This model is designed to provide a seamless platform experience, whether passkeys are managed directly by Windows or by a third-party authenticator. When a third-party passkey provider is used, passkeys are protected and managed by the third-party.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
 - [Support for passkeys in Windows][LINK-10]
 - [Enable passkeys (FIDO2) for your organization][LINK-9]
 
-
 ## FIDO2
 
 The FIDO Alliance, the Fast Identity Online industry standards body, was established to promote authentication technologies and standards that reduce reliance on passwords. FIDO Alliance and World Wide Web Consortium (W3C) have worked together to define the Client to Authenticator Protocol (CTAP2) and Web Authentication (WebAuthn) specifications, which are the industry standard for providing strong, phishing-resistant, user friendly, and privacy preserving authentication across the web and apps. FIDO standards and certifications are becoming recognized as the leading standard for creating secure authentication solutions across enterprises, governments, and consumer markets.
 
-Windows 11 can also use external FIDO2 security keys for authentication alongside or in addition to Windows Hello and Windows Hello for Business, which is also a FIDO2-certified passwordless solution. As a result, Windows 11 can be used as a FIDO authenticator for many popular identity management services. 
+Windows 11 can also use external FIDO2 security keys for authentication alongside or in addition to Windows Hello and Windows Hello for Business, which is also a FIDO2-certified passwordless solution. As a result, Windows 11 can be used as a FIDO authenticator for many popular identity management services.
 
 
 ## Microsoft Authenticator
