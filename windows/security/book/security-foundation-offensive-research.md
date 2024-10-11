@@ -11,21 +11,13 @@ ms.date: 09/06/2024
 
 ## Secure Future Initiative (SFI)
 
-
-
-:::row:::
-    :::column:::
-        Launched in November 2023, the Microsoft Secure Future Initiative (SFI) is a multiyear commitment dedicated to advancing the way we design, build, test, and operate our technology. Our goal is to ensure that our solutions meet the highest possible standards for security.
+Launched in November 2023, the Microsoft Secure Future Initiative (SFI) is a multiyear commitment dedicated to advancing the way we design, build, test, and operate our technology. Our goal is to ensure that our solutions meet the highest possible standards for security.
 
 The increasing scale and high stakes of cyberattacks prompted the launch of SFI. This program brings together every part of Microsoft to enhance cybersecurity protection across our company and products. We carefully considered our internal observations and feedback from customers, governments, and partners to identify the greatest opportunities to impact the future of security.
 
 To maintain accountability and keep our customers, partners, and the security community informed, Microsoft provides regular updates on the progress of SFI.
-    :::column-end:::
-    :::column:::
-:::image type="content" source="images/sfi.png" alt-text="Diagram of the SFI initiative.":::
-    :::column-end:::
-:::row-end:::
 
+:::image type="content" source="images/sfi.png" alt-text="Diagram of the SFI initiative." lightbox="images/sfi.png" border="false":::
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
