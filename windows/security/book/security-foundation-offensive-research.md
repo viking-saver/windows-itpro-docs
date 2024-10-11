@@ -5,9 +5,32 @@ ms.topic: overview
 ms.date: 09/06/2024
 ---
 
-# Offensive research
+# Secure Future Initiative and offensive research
 
 :::image type="content" source="images/security-foundation.png" alt-text="Diagram containing a list of security features." lightbox="images/security-foundation.png" border="false":::
+
+## Secure Future Initiative (SFI)
+
+
+
+:::row:::
+    :::column:::
+        Launched in November 2023, the Microsoft Secure Future Initiative (SFI) is a multiyear commitment dedicated to advancing the way we design, build, test, and operate our technology. Our goal is to ensure that our solutions meet the highest possible standards for security.
+
+The increasing scale and high stakes of cyberattacks prompted the launch of SFI. This program brings together every part of Microsoft to enhance cybersecurity protection across our company and products. We carefully considered our internal observations and feedback from customers, governments, and partners to identify the greatest opportunities to impact the future of security.
+
+To maintain accountability and keep our customers, partners, and the security community informed, Microsoft provides regular updates on the progress of SFI.
+    :::column-end:::
+    :::column:::
+:::image type="content" source="images/sfi.png" alt-text="Diagram of the SFI initiative.":::
+    :::column-end:::
+:::row-end:::
+
+
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+
+- [Microsoft Secure Future Initiative][LINK-6]
+- [September 2024 progress update on SFI][LINK-5]
 
 ## Microsoft Security Development Lifecycle (SDL)
 
@@ -45,3 +68,5 @@ Through this collaboration with researchers across the globe, our teams identify
 [LINK-2]: https://www.microsoft.com/security/blog/author/microsoft-offensive-research-security-engineering-team
 [LINK-3]: /windows-insider/get-started
 [LINK-4]: https://www.microsoft.com/msrc/bounty
+[LINK-5]: https://www.microsoft.com/security/blog/2024/09/23/securing-our-future-september-2024-progress-update-on-microsofts-secure-future-initiative-sfi/
+[LINK-6]: https://www.microsoft.com/trust-center/security/secure-future-initiative
