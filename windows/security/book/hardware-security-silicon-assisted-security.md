@@ -21,13 +21,13 @@ To secure the kernel, we have two key features: Virtualization-based security (V
     :::column:::
         Virtualization-based security (VBS), also known as core isolation, is a critical building block in a secure system. VBS uses hardware virtualization features to host a secure kernel separated from the operating system. This means that even if the operating system is compromised, the secure kernel is still protected. The isolated VBS environment protects processes, such as security solutions and credential managers, from other processes running in memory. Even if malware gains access to the main OS kernel, the hypervisor and virtualization hardware help prevent the malware from executing unauthorized code or accessing platform secrets in the VBS environment. VBS
 implements virtual trust level 1 (VTL1), which has higher privilege than the virtual trust level 0 (VTL0) implemented in the main kernel.
-
-Since more privileged virtual trust levels (VTLs) can enforce their own memory protections, higher VTLs can effectively protect areas of memory from lower VTLs. In practice, this allows a lower VTL to protect isolated memory regions by securing them with a higher VTL. For example, VTL0 could store a secret in VTL1, at which point only VTL1 could access it. Even if VTL0 is compromised, the secret would be safe.
     :::column-end:::
     :::column:::
 :::image type="content" source="images/vbs-diagram.png" alt-text="Diagram of VBS architecture." lightbox="images/vbs-diagram.png" border="false":::
     :::column-end:::
 :::row-end:::
+
+Since more privileged virtual trust levels (VTLs) can enforce their own memory protections, higher VTLs can effectively protect areas of memory from lower VTLs. In practice, this allows a lower VTL to protect isolated memory regions by securing them with a higher VTL. For example, VTL0 could store a secret in VTL1, at which point only VTL1 could access it. Even if VTL0 is compromised, the secret would be safe.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
