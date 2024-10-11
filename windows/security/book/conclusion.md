@@ -16,7 +16,6 @@ We will continue to bring you new features to protect against evolving threats, 
 New:
 
 - [Config Refresh](operating-system-security-system-security.md#config-refresh)
-- [Passkeys](identity-protection-passwordless-sign-in.md#passkeys)
 - [Trusted signing](application-security-application-and-driver-control.md#trusted-signing)
 - [VBS Key Protection](identity-protection-advanced-credential-protection.md#vbs-key-protection)
 - [Virtualization-based security enclave](application-security-application-isolation.md#virtualization-based-security-enclave)
@@ -28,8 +27,8 @@ Enhanced:
 - [BitLocker](operating-system-security-encryption-and-data-protection.md#bitlocker)
 - [Credential Guard](identity-protection-advanced-credential-protection.md#credential-guard)
 - [Device Encryption](operating-system-security-encryption-and-data-protection.md#device-encryption)
-- [Enhanced phishing protection in Microsoft Defender SmartScreen](identity-protection-passwordless-sign-in.md#enhanced-phishing-protection-in-microsoft-defender-smartscreen)
 - [Local Security Authority (LSA) protection](identity-protection-advanced-credential-protection.md#local-security-authority-lsa-protection)
+- [Passkeys](identity-protection-passwordless-sign-in.md#passkeys)
 - [Personal data encryption (PDE)](operating-system-security-encryption-and-data-protection.md#personal-data-encryption-pde)
 - [Server Message Block file services](operating-system-security-network-security.md#server-message-block-file-services)
 - [Universal Print](cloud-services-protect-your-work-information.md#universal-print)

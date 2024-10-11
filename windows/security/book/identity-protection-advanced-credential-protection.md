@@ -27,11 +27,18 @@ To ensures a seamless transition and enhanced security for all users, the enterp
 
 ## Credential Guard
 
-Credential Guard uses hardware-backed, Virtualization-based security (VBS) to protect against credential theft. With Credential Guard, the Local Security Authority (LSA) stores and protects Active Directory (AD) secrets in an isolated environment that isn't accessible to the rest of the operating system. LSA uses remote procedure calls to communicate with the isolated LSA process.
+:::row:::
+    :::column:::
+        Credential Guard uses hardware-backed, Virtualization-based security (VBS) to protect against credential theft. With Credential Guard, the Local Security Authority (LSA) stores and protects Active Directory (AD) secrets in an isolated environment that isn't accessible to the rest of the operating system. LSA uses remote procedure calls to communicate with the isolated LSA process.
 
 By protecting the LSA process with Virtualization-based security, Credential Guard shields systems from user credential theft attack techniques like Pass-the-Hash or Pass-the-Ticket. It also helps prevent malware from accessing system secrets even if the process is running with admin privileges.
+    :::column-end:::
+    :::column:::
+:::image type="content" source="images/credential-guard-architecture.png" alt-text="Diagram of the Credential Guard's architecture."  lightbox="images/credential-guard-architecture.png" border="false":::
+    :::column-end:::
+:::row-end:::
 
-Protections are now expanded to optionally include machine account passwords for Active Directory joined devices. Administrators can enable audit mode of this capability or enforcement using Credential Guard management policy.
+🆕 Starting in Windows 11, version 24H2, protections are expanded to optionally include machine account passwords for Active Directory-joined devices. Administrators can enable audit mode or enforcement of this capability using Credential Guard policy settings.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
