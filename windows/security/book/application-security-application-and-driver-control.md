@@ -32,23 +32,24 @@ Devices running previous versions of Windows 11 will have to be reset with a cle
 
 ## App Control for Business
 
-Your organization is only as secure as the applications that run on your devices. With application control, apps must earn trust to run, in contrast to an application trust model where all code is assumed trustworthy. By helping prevent unwanted or malicious code from running, application control is an important part of an effective security strategy. Many organizations cite application control as one of the most effective means of defending against executable file-based malware.
+Your organization is only as secure as the applications that run on your devices. With *application control*, apps must earn trust to run, in contrast to an application trust model where all code is assumed trustworthy. By helping prevent unwanted or malicious code from running, application control is an important part of an effective security strategy. Many organizations cite application control as one of the most effective means of defending against executable file-based malware.
 
-Windows 10 and above include App Control for Business (previously called Windows Defender Application Control) as well as AppLocker. App Control for Business is the next-generation app control solution for Windows and provides powerful control over what runs in your environment. Customers who were using AppLocker on previous versions of Windows can continue to use the feature as they consider whether to switch to App Control for Business for stronger protection.
+App Control for Business (previously called *Windows Defender Application Control*) and AppLocker are both included in Windows. App Control for Business is the next-generation app control solution for Windows and provides powerful control over what runs in your environment. Customers who were using AppLocker on previous versions of Windows can continue to use the feature as they consider whether to switch to App Control for Business for stronger protection.
 
-Customers using Microsoft Intune<sup>[\[9\]](conclusion.md#footnote9)</sup> to manage their devices are now able to configure App Control for Business in the admin console, including setting up Intune as a managed installer.
+Customers using Microsoft Intune to manage their devices are now able to configure App Control for Business in the admin console, including setting up Intune as a managed installer.
 
 Customers can use some built-in options for App Control for Business or upload their own policy as an XML file for Intune to package and deploy.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
 - [Application Control for Windows](/windows/security/application-security/application-control/windows-defender-application-control/wdac)
+- [Automatically allow apps deployed by a managed installer with App Control for Business](/windows/security/application-security/application-control/app-control-for-business/design/configure-authorized-apps-deployed-with-a-managed-installer)
 
 ## User Account Control
 
 User Account Control (UAC) helps prevent malware from damaging a PC and enables organizations to deploy a better-managed desktop. With UAC, apps and tasks always run in the security context of a non-administrator account unless an administrator specifically authorizes administrator-level access to the system. UAC can block the automatic installation of unauthorized apps and prevent inadvertent changes to system settings.
 
-Organizations can use a device management solution like Microsoft Intune<sup>[\[9\]](conclusion.md#footnote9)</sup> to remotely configure UAC settings. For those without such a solution, settings can be adjusted directly on the device.
+Organizations can use a device management solution like Microsoft Intune to remotely configure UAC settings. For those without such a solution, settings can be adjusted directly on the device.
 
 Enabling UAC helps prevent malware from altering PC settings and potentially gaining access to networks and sensitive data. UAC can also block the automatic installation of unauthorized
 apps and prevent inadvertent changes to system settings.

@@ -17,9 +17,10 @@ New:
 
 - [Config Refresh](operating-system-security-system-security.md#config-refresh)
 - [Trusted signing](application-security-application-and-driver-control.md#trusted-signing)
-- [VBS Key Protection](identity-protection-advanced-credential-protection.md#vbs-key-protection)
-- [Virtualization-based security enclave](application-security-application-isolation.md#virtualization-based-security-enclave)
+- [VBS key protection](identity-protection-advanced-credential-protection.md#vbs-key-protection)
+- [Virtualization-based security enclaves](application-security-application-isolation.md#virtualization-based-security-enclaves)
 - [Win32 app isolation](application-security-application-isolation.md#win32-app-isolation)
+- [Windows protected print mode](operating-system-security-system-security.md#windows-protected-print-mode)
 
 Enhanced:
 

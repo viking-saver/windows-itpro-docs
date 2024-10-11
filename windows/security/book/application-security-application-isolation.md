@@ -74,7 +74,7 @@ These features can be set up using a device management solution such as Microsof
 - [Intune setting for WSL][LINK-13]
 - [Microsoft Defender for Endpoint plug-in for WSL][LINK-14]
 
-## Virtualization-based security enclave
+## Virtualization-based security enclaves
 
 A **Virtualization-based security enclave** is a software-based trusted execution environment (TEE) inside a host application. VBS enclaves enable developers to use VBS to protect their application's secrets from admin-level attacks. VBS enclaves are available on Windows 10 onwards on both x64 and ARM64.
 
