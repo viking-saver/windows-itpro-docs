@@ -43,11 +43,11 @@ Enhanced:
 |November 2021 |Link updates and formatting.|
 |February 2022 |Revisions to Hardware root-of-trust, Virus and threat protection, and Windows Hello for Business content.|
 |April 2022| Added Upcoming features section.|
-| September 2022| Updates with Windows 11 2022 Update features and enhancements.|
+|September 2022| Updates with Windows 11, version 22H2, features and enhancements.|
 |April 2023| Minor edits and updates to edition availability.|
-|September 2023| Updates with Windows 11 2023 Update features and enhancements.|
+|September 2023| Updates with Windows 11, version 23H2, features and enhancements.|
 |May 2024| Move form PDF format to web format.|
-|November 2024| Updates with Windows 11 2024 Update features and enhancements.|
+|November 2024| Updates with Windows 11, version 24H2, features and enhancements.|
 
 ## Endnotes
 
