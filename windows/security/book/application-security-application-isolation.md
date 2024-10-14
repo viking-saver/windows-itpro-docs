@@ -58,11 +58,11 @@ Once Windows Sandbox is closed, nothing persists on the device. All the software
 
 With Windows Subsystem for Linux (WSL) you can run a Linux environment on a Windows device, without the need for a separate virtual machine or dual booting. WSL is designed to provide a seamless and productive experience for developers who want to use both Windows and Linux at the same time.
 
-🆕 Starting in Windows 11, version 24H2, we added three networking security features:
+[!INCLUDE [new-24h2](includes/new-24h2.md)]
 
-- **Hyper-V Firewall**: This new firewall setting is a network firewall solution that enables filtering of inbound and outbound traffic to/from WSL containers hosted by Windows
-- **DNS Tunneling**: This new networking setting improves compatibility in different networking environments and makes use of virtualization features to obtain DNS information rather than a networking packet
-- **Auto proxy**: This new networking setting enforces WSL to use Windows' HTTP proxy information. Turn on when using a proxy on Windows, as it makes that proxy automatically apply to WSL distributions
+- **Hyper-V Firewall** is a network firewall solution that enables filtering of inbound and outbound traffic to/from WSL containers hosted by Windows
+- **DNS Tunneling** is a networking setting that improves compatibility in different networking environments, making use of virtualization features to obtain DNS information rather than a networking packet
+- **Auto proxy** is a networking setting that enforces WSL to use Windows' HTTP proxy information. Turn on when using a proxy on Windows, as it makes that proxy automatically apply to WSL distributions
 
 These features can be set up using a device management solution such as Microsoft Intune. Microsoft Defender for Endpoint (MDE) integrates with WSL, allowing it to monitor activities within a WSL distro and report them to the MDE dashboards.
 
