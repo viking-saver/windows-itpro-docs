@@ -9,7 +9,7 @@ ms.date: 09/06/2024
 
 :::image type="content" source="images/application-security.png" alt-text="Diagram containing a list of application security features." lightbox="images/application-security.png" border="false":::
 
-## Win32 app isolation
+## :::image type="icon" source="images/new-button-title.svg" border="false"::: Win32 app isolation
 
 Win32 app isolation is a security feature designed to be the default isolation standard on Windows clients. It's built on [AppContainer][LINK-1], and offers several added security features to help the Windows platform defend against attacks that use vulnerabilities in applications or third-party libraries. To isolate their apps, developers can update their applications using Visual Studio.
 
@@ -74,7 +74,7 @@ These features can be set up using a device management solution such as Microsof
 - [Intune setting for WSL][LINK-13]
 - [Microsoft Defender for Endpoint plug-in for WSL][LINK-14]
 
-## Virtualization-based security enclaves
+## :::image type="icon" source="images/new-button-title.svg" border="false"::: Virtualization-based security enclaves
 
 A **Virtualization-based security enclave** is a software-based trusted execution environment (TEE) inside a host application. VBS enclaves enable developers to use VBS to protect their application's secrets from admin-level attacks. VBS enclaves are available on Windows 10 onwards on both x64 and ARM64.
 

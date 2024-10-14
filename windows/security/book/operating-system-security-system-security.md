@@ -112,7 +112,7 @@ Visibility and awareness of device security and health are key to any action tak
 - [Windows security settings][LINK-7]
 - [Windows Security][LINK-8]
 
-## Config Refresh
+## :::image type="icon" source="images/new-button-title.svg" border="false"::: Config Refresh
 
 With traditional group policy, policy settings are refreshed on a PC when a user signs in and every 90 minutes by default. Administrators can adjust that timing to be shorter to ensure that the policy settings are compliant with the management settings set by IT.
 
@@ -134,7 +134,7 @@ With Assigned Access and Shell Launcher, you can configure Windows to restrict f
 
 - [Windows kiosks and restricted user experiences](/windows/configuration/assigned-access)
 
-## Windows protected print mode
+## :::image type="icon" source="images/new-button-title.svg" border="false"::: Windows protected print mode
 
 Windows protected print mode is built to provide a more modern and secure print system that maximizes compatibility and puts users first. It simplifies the printing experience by allowing devices to exclusively print using the Windows modern print stack.
 

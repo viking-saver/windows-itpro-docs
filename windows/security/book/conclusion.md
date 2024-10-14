@@ -15,12 +15,11 @@ We will continue to bring you new features to protect against evolving threats, 
 
 New:
 
-- [Config Refresh](operating-system-security-system-security.md#config-refresh)
-- [Trusted signing](application-security-application-and-driver-control.md#trusted-signing)
+- [Config Refresh](operating-system-security-system-security.md#-config-refresh)
 - [VBS key protection](identity-protection-advanced-credential-protection.md#-vbs-key-protection)
-- [Virtualization-based security enclaves](application-security-application-isolation.md#virtualization-based-security-enclaves)
-- [Win32 app isolation](application-security-application-isolation.md#win32-app-isolation)
-- [Windows protected print mode](operating-system-security-system-security.md#windows-protected-print-mode)
+- [Virtualization-based security enclaves](application-security-application-isolation.md#-virtualization-based-security-enclaves)
+- [Win32 app isolation](application-security-application-isolation.md#-win32-app-isolation)
+- [Windows protected print mode](operating-system-security-system-security.md#-windows-protected-print-mode)
 
 Enhanced:
 
