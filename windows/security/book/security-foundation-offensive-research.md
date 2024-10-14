@@ -19,7 +19,7 @@ To maintain accountability and keep our customers, partners, and the security co
 
 :::image type="content" source="images/sfi.png" alt-text="Diagram of the SFI initiative." lightbox="images/sfi.png" border="false":::
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Microsoft Secure Future Initiative][LINK-6]
 - [September 2024 progress update on SFI][LINK-5]
@@ -36,7 +36,7 @@ A range of tools and techniques - such as threat modeling, static analysis, fuzz
 
 Microsoft Offensive Research and Security Engineering (MORSE) performs targeted design reviews, audits, and deep penetration testing of Windows features using Microsoft's open-source OneFuzz platform as part of their development and testing cycle.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [MORSE security team takes proactive approach to finding bugs][LINK-1]
 - [MORSE Blog][LINK-2]
@@ -49,7 +49,7 @@ The goal of the Windows Insider Preview bounty program is to uncover significant
 
 Through this collaboration with researchers across the globe, our teams identify critical vulnerabilities and quickly fix the issues before releasing our final Windows.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Windows Insider Program][LINK-3]
 - [Microsoft bounty programs][LINK-4]

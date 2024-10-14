@@ -17,7 +17,7 @@ New DNS and TLS protocol versions strengthen the end-to-end protections needed f
 
 In enterprise environments, network protection works best with Microsoft Defender for Endpoint, which provides detailed reporting on protection events as part of larger investigation scenarios.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [How to protect your network](/defender-endpoint/network-protection)
 
@@ -25,7 +25,7 @@ In enterprise environments, network protection works best with Microsoft Defende
 
 Transport Layer Security (TLS) is a popular security protocol, encrypting data in transit to help provide a more secure communication channel between two endpoints. Windows enables the latest protocol versions and strong cipher suites by default and offers a full suite of extensions such as client authentication for enhanced server security, or session resumption for improved application performance. TLS 1.3 is the latest version of the protocol and is enabled by default in Windows. This version helps to eliminate obsolete cryptographic algorithms, enhance security over older versions, and aim to encrypt as much of the TLS handshake as possible. The handshake is more performant with one less round trip per connection on average and supports only strong cipher suites which provide perfect forward secrecy and less operational risk. Using TLS 1.3 provides more privacy and lower latencies for encrypted online connections. If the client or server application on either side of the connection doesn't support TLS 1.3, the connection falls back to TLS 1.2. Windows uses the latest Datagram Transport Layer Security (DTLS) 1.2 for UDP communications.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [TLS/SSL overview (Schannel SSP)](/windows-server/security/tls/tls-ssl-schannel-ssp-overview)
 - [TLS 1.0 and TLS 1.1 soon to be disabled in Windows](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/tls-1-0-and-tls-1-1-soon-to-be-disabled-in-windows/bc-p/3894928/emcs_t/S2h8ZW1haWx8dG9waWNfc3Vic2NyaXB0aW9ufExMM0hCN0VURDk3OU9OfDM4OTQ5Mjh8U1VCU0NSSVBUSU9OU3xoSw#M6180)
@@ -46,7 +46,7 @@ The number of Bluetooth devices connected to Windows 11 continues to increase. W
 
 IT-managed environments have a number policy settings available via configuration service providers, group policy, and PowerShell. These settings can be managed through device management solutions like Microsoft Intune<sup>[\[9\]](conclusion.md#footnote9)</sup>. You can configure Windows to use Bluetooth technology while supporting the security needs of your organization. For example, you can allow input and audio while blocking file transfer, force encryption standards, limit Windows discoverability, or even disable Bluetooth entirely for the most sensitive environments.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Policy CSP - Bluetooth](/windows/client-management/mdm/policy-csp-bluetooth)
 
@@ -64,7 +64,7 @@ Opportunistic Wireless Encryption (OWE), a technology that allows wireless devic
 
 5G networks use stronger encryption and better network segmentation compared to previous generations of cellular protocols. Unlike Wi-Fi, 5G access is always mutually authenticated. Access credentials are stored in an EAL4-certified eSIM that is physically embedded in the device, making it much harder for attackers to tamper with. Together, 5G and eSIM provide a strong foundation for security.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [eSIM configuration of a download server](/mem/intune/configuration/esim-device-configuration-download-server)
 
@@ -88,7 +88,7 @@ support from the Firewall configuration service provider (CSP) and applying thes
 Firewal. rule configuration with Package Family Name (PFN) is a new security feature introduced with the 22H2 release of Windows 11. PFN based rules enforced on an app will include processes request by the app to run on its behalf.
 Currently FW rules can be set on UWP apps with packageSID. However, the processes requested by the app can have different SID and hence the rules applied to the app can be bypassed. The new PFN condition feature ensures the FW rule is uniformly applied to a package and its associated processes.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Windows Firewall overview](../operating-system-security/network-security/windows-firewall/index.md)
 
@@ -106,7 +106,7 @@ With Universal Windows Platform (UWP) VPN apps, end users never get stuck on an 
 
 The Windows VPN platform is tuned and hardened for cloud-based VPN providers like Azure VPN. Features like Microsoft Entra ID authentication, Windows user interface integration, plumbing IKE traffic selectors, and server support are all built into the Windows VPN platform. The integration into the Windows VPN platform leads to a simpler IT admin experience. User authentication is more consistent, and users can easily find and control their VPN.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Windows VPN technical guide](../operating-system-security/network-security/vpn/vpn-guide.md)
 
@@ -116,7 +116,7 @@ Server Message Block (SMB) and file services are the most common Windows workloa
 
 Windows 11 introduced significant security updates to meet today's threats, including AES-256 SMB encryption, accelerated SMB signing, Remote Directory Memory Access (RDMA) network encryption, and SMB over QUIC for untrusted networks. Windows 11, version 24H2, adds far more security options, including required SMB signing by default, NTLM blocking, authentication rate limiting, and many others. Windows 11 24H2 is the state of the art for SMB security for organizations worldwide.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Server Message Block (SMB) protocol changes in Windows 11, version 24H2](/windows/whats-new/whats-new-windows-11-version-24h2#server-message-block-smb-protocol-changes)
 - [File sharing using the SMB 3 protocol](/windows-server/storage/file-server/file-server-smb-overview)

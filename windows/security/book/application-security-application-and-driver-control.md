@@ -26,7 +26,7 @@ As a developer, to ensure that your users have a seamless experience with Smart 
 
 Devices running previous versions of Windows 11 will have to be reset with a clean installation of Windows 11, version 22H2 or later to take advantage of this feature. Smart App Control will be disabled on devices enrolled in enterprise management. We suggest enterprises running line-of-business applications continue to leverage App Control for Business.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Smart App Control](/windows/apps/develop/smart-app-control/overview)
 
@@ -40,7 +40,7 @@ Customers using Microsoft Intune to manage their devices are now able to configu
 
 Customers can use some built-in options for App Control for Business or upload their own policy as an XML file for Intune to package and deploy.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Application Control for Windows](/windows/security/application-security/application-control/windows-defender-application-control/wdac)
 - [Automatically allow apps deployed by a managed installer with App Control for Business](/windows/security/application-security/application-control/app-control-for-business/design/configure-authorized-apps-deployed-with-a-managed-installer)
@@ -58,7 +58,7 @@ Users with standard accounts, or those using administrative accounts with UAC en
 
 Some apps require more permissions and won't work properly (or at all) when running with limited permissions. When an app needs to run with more than standard user rights, UAC allows users to run apps with a *full* administrator token (with administrative groups and privileges) instead of their default user access token. Users continue to operate in the standard user security context while enabling certain executables to run with elevated privileges if needed.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [How User Account Control works](/windows/security/identity-protection/user-account-control/how-user-account-control-works)
 
@@ -66,7 +66,7 @@ Some apps require more permissions and won't work properly (or at all) when runn
 
 The Windows kernel is the most privileged software and is therefore a compelling target for malware authors. Since Windows has strict requirements for code running in the kernel, cybercriminals commonly exploit vulnerabilities in kernel drivers to get access. Microsoft works with ecosystem partners to constantly identify and respond to potentially vulnerable kernel drivers. Prior to the Windows 11 2022 Update, Windows enforced a block policy when hypervisor-protected code integrity (HVCI) was enabled to prevent vulnerable versions of drivers from running. Beginning with the Windows 11 2022 Update, the block policy is now on by default for all new Windows PCs, and users can opt in to enforce the policy from the Windows Security app.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Microsoft recommended driver block rules](/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-driver-block-rules)
 
@@ -74,7 +74,7 @@ The Windows kernel is the most privileged software and is therefore a compelling
 
 It is a Microsoft fully managed end-to-end signing solution that simplifies the signing process and empowers 3rd party developers to easily build and distribute applications. This feature is currently in public preview and is part of Microsoft's commitment to an open, inclusive, and secure ecosystem.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [What is Trusted Signing](/azure/trusted-signing/overview)
 - [Public Preview Blog](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/trusted-signing-is-in-public-preview/ba-p/4103457)

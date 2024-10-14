@@ -29,7 +29,7 @@ implements virtual trust level 1 (VTL1), which has higher privilege than the vir
 
 Since more privileged virtual trust levels (VTLs) can enforce their own memory protections, higher VTLs can effectively protect areas of memory from lower VTLs. In practice, this allows a lower VTL to protect isolated memory regions by securing them with a higher VTL. For example, VTL0 could store a secret in VTL1, at which point only VTL1 could access it. Even if VTL0 is compromised, the secret would be safe.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Virtualization-based security (VBS)](/windows-hardware/design/device-experiences/oem-vbs)
 - [Enable virtualization-based protection of code integrity](../hardware-security/enable-virtualization-based-protection-of-code-integrity.md)
@@ -40,7 +40,7 @@ Hypervisor-protected code integrity (HVCI), also called memory integrity, uses V
 
 With new installs of Windows 11, OS support for VBS and HVCI is turned on by default for all devices that meet prerequisites.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Hypervisor-protected Code Integrity (HVCI)](/windows/security/hardware-security/enable-virtualization-based-protection-of-code-integrity)
 
@@ -52,7 +52,7 @@ Application code includes a program processing stack that hackers seek to corrup
 
 🆕 Starting in windows 11, version 24H2, **Hypervisor-enforced paging translation (HVPT)** is a security enhancement for the system. HVPT protects linear address translations from being tampered with, to protect sensitive system structures from write-what-where attacks.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Understanding Hardware-enforced Stack Protection](https://techcommunity.microsoft.com/t5/windows-os-platform-blog/understanding-hardware-enforced-stack-protection/ba-p/1247815)
 - [Developer Guidance for hardware-enforced stack protection](https://techcommunity.microsoft.com/t5/windows-kernel-internals/developer-guidance-for-hardware-enforced-stack-protection/ba-p/2163340)
@@ -61,7 +61,7 @@ Application code includes a program processing stack that hackers seek to corrup
 
 Windows 11 protects against physical threats such as drive-by Direct Memory Access (DMA) attacks. Peripheral Component Interconnect Express (PCIe) hot-pluggable devices, including Thunderbolt, USB4, and CFexpress, enable users to connect a wide variety of external peripherals to their PCs with the same plug-and-play convenience as USB. These devices encompass graphics cards and other PCI components. Since PCI hot-plug ports are external and easily accessible, PCs are susceptible to drive-by DMA attacks. Memory access protection (also known as Kernel DMA Protection) protects against these attacks by preventing external peripherals from gaining unauthorized access to memory. Drive-by DMA attacks typically happen quickly while the system owner isn't present. The attacks are performed using simple to moderate attacking tools created with affordable, off-the-shelf hardware and software that don't require the disassembly of the PC. For example, a PC owner might leave a device for a quick coffee break. Meanwhile, an attacker plugs an external tool into a port to steal information or inject code that gives the attacker remote control over the PCs, including the ability to bypass the lock screen. With memory access protection built in and enabled, Windows 11 is protected against physical attack wherever people work.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Kernel Direct Memory Access (DMA) protection](/windows/security/hardware-security/kernel-dma-protection-for-thunderbolt)
 
@@ -83,7 +83,7 @@ System Management Mode (SMM) isolation is an execution mode in x86-based process
 
 :::image type="content" source="images/secure-launch.png" alt-text="Diagram of secure launch components." lightbox="images/secure-launch.png" border="false":::
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [System Guard Secure Launch](/windows/security/hardware-security/system-guard-secure-launch-and-smm-protection)
 - [Firmware Attack Surface Reduction](/windows-hardware/drivers/bringup/firmware-attack-surface-reduction)
@@ -95,6 +95,6 @@ In many organizations, IT administrators enforce policies on their corporate dev
 
 Configuration lock is a Secured-core PC feature that prevents users from making unwanted changes to security settings. With configuration lock, Windows monitors supported registry keys and reverts to the IT-desired Secured-core PC's state in seconds after detecting a drift.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Secured-core PC configuration lock](/windows/client-management/mdm/config-lock)

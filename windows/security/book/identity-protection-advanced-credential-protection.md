@@ -21,7 +21,7 @@ Users have the ability to manage the LSA protection state in the Windows Securit
 
 To ensures a seamless transition and enhanced security for all users, the enterprise policy for LSA protection takes precedence over enablement on upgrade.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Configuring additional LSA protection][LINK-2]
 
@@ -40,7 +40,7 @@ By protecting the LSA process with Virtualization-based security, Credential Gua
 
 🆕 Starting in Windows 11, version 24H2, protections are expanded to optionally include machine account passwords for Active Directory-joined devices. Administrators can enable audit mode or enforcement of this capability using Credential Guard policy settings.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Protect derived domain credentials with Credential Guard][LINK-3]
 
@@ -50,7 +50,7 @@ Remote Credential Guard helps organizations protect credentials over a Remote De
 
 Administrator credentials are highly privileged and must be protected. When Remote Credential Guard is configured and enabled to connect during Remote Desktop sessions, the credential and credential derivatives are never passed over the network to the target device. If the target device is compromised, the credentials aren't exposed.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Remote Credential Guard][LINK-4]
 
@@ -62,7 +62,7 @@ VBS key protection enables developers to secure cryptographic keys using Virtual
 
 Token protection attempts to reduce attacks using Microsoft Entra ID token theft. Token protection makes tokens usable only from their intended device by cryptographically binding a token with a device secret. When using the token, both the token and proof of the device secret must be provided. Conditional Access policies<sup>[\[9\]](conclusion.md#footnote9)</sup> can be configured to require token protection when using sign-in tokens for specific services.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Token protection in Entra ID Conditional Access][LINK-5]
 
@@ -76,7 +76,7 @@ New devices with Windows 11 installed will have account lockout policies that ar
 
 The account lockout threshold policy is now set to 10 failed sign-in attempts by default, with the account lockout duration set to 10 minutes. The *Allow Administrator account lockout* is now enabled by default. The Reset account lockout counter after is now set to 10 minutes by default as well.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Account lockout policy][LINK-6]
 
@@ -94,7 +94,7 @@ IT administrators can refine the application and management of access to:
 - Support evolving workplace needs, including access from hybrid or remote locations, or from a rapidly expanding array of devices, including tablets and phones
 - Identify and resolve access issues when legitimate users are unable to access resources that they need to perform their jobs
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Access control][LINK-7]
 

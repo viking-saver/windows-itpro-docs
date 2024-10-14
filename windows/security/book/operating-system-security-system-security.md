@@ -23,7 +23,7 @@ Tampering or malware attacks on the Windows boot sequence are blocked by the sig
 
 For more information about these features and how they help prevent rootkits and bootkits from loading during the startup process, see [Secure the Windows boot process](../operating-system-security/system-security/secure-the-windows-10-boot-process.md)
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Secure Boot and Trusted Boot](../operating-system-security/system-security/trusted-boot.md)
 
@@ -31,7 +31,7 @@ For more information about these features and how they help prevent rootkits and
 
 Cryptography is designed to protect user and system data. The cryptography stack in Windows 11 extends from the chip to the cloud, enabling Windows, applications, and services to protect system and user secrets. For example, data can be encrypted so that only a specific reader with a unique key can read it. As a basis for data security, cryptography helps prevent anyone except the intended recipient from reading data, performs integrity checks to ensure data is free of tampering, and authenticates identity to ensure that communication is secure. Windows 11 cryptography is certified to meet the Federal Information Processing Standard (FIPS) 140. FIPS 140 certification ensures that US government-approved algorithms are correctly implemented.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - FIPS 140 validation
 
@@ -45,7 +45,7 @@ Windows cryptographic modules provide low-level primitives such as:
 
 Application developers can use these cryptographic modules to perform low-level cryptographic operations (Bcrypt), key storage operations (NCrypt), protect static data (DPAPI), and securely share secrets (DPAPI-NG).
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - Cryptography and certificate management
 
@@ -78,7 +78,7 @@ A summary of the steps involved in attestation and Zero-Trust on a Windows devic
 - The TPM is verified by using the keys or cryptographic material available on the chipset with an Azure Certificate Service
 - The above information is sent to the Azure Attestation Service to verify that the device is in a trusted state.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Control the health of Windows devices](/windows/security/operating-system-security/system-security/protect-high-value-assets-by-controlling-the-health-of-windows-10-based-devices)
 
@@ -101,7 +101,7 @@ All auditing categories are disabled when Windows is first installed. Before ena
 1. Test these settings to validate your choices.
 1. Develop plans for deploying and managing your audit policy.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Security policy settings](/windows/security/threat-protection/security-policy-settings/security-policy-settings)
 - [Security auditing](/windows/security/threat-protection/auditing/security-auditing-overview)
@@ -110,7 +110,7 @@ All auditing categories are disabled when Windows is first installed. Before ena
 
 Visibility and awareness of device security and health are key to any action taken. The Windows built-in security settings provide an at-a-glance view of the security status and health of your device. These insights help you identify issues and act to make sure you're protected. You can quickly see the status of your virus and threat protection, firewall and network security, device security controls, and more.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Windows security settings](https://support.microsoft.com/topic/2ae0363d-0ada-c064-8b56-6a39afb6a963)
 - [Windows Security](../operating-system-security/system-security/windows-defender-security-center/windows-defender-security-center.md)
@@ -125,7 +125,7 @@ Config Refresh allows settings in the Policy configuration service provider (CSP
 
 Config Refresh can also be paused for a configurable period of time, after which it will be reenabled. This is to support scenarios where a helpdesk technician might need to reconfigure a device for troubleshooting purposes. It can also be resumed at any time by an administrator.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Config Refresh](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/intro-to-config-refresh-a-refreshingly-new-mdm-feature/ba-p/4176921#:~:text=With%20Config%20Refresh,%20you%20can%20now)
 
@@ -133,7 +133,7 @@ Config Refresh can also be paused for a configurable period of time, after which
 
 With Assigned Access and Shell Launcher, you can configure Windows to restrict functionality to pre-selected applications. These features are ideal for public-facing or shared devices like kiosks. Configuring a device as a kiosk is straightforward and can be done locally on the device or through a cloud-based device management solution like Microsoft Intune.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Windows kiosks and restricted user experiences](/windows/configuration/assigned-access)
 
@@ -149,7 +149,7 @@ The benefits of Windows protected print mode include:
 
 Windows protected print mode is designed to work with Mopria certified printers only. Many existing printers are already compatible.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Windows protected print mode](/windows-hardware/drivers/print/modern-print-platform)
 - [New, modern, and secure print experience from Windows](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/a-new-modern-and-secure-print-experience-from-windows/ba-p/4002645)

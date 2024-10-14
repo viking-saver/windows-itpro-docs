@@ -57,7 +57,7 @@ With tamper protection, malware is prevented from taking actions such as:
 - Altering exclusions
 - Disabling notifications in the Windows Security app
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Tamper protection](/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection)
 
@@ -71,7 +71,7 @@ Microsoft Defender Antivirus always-on protection is integrated with cloud-deliv
 
 :::image type="content" source="images/defender-antivirus.png" alt-text="Diagram of the Microsoft Defender Antivirus components." border="false":::
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Next-generation protection with Microsoft Defender Antivirus](/defender-endpoint/microsoft-defender-antivirus-windows).
 
@@ -88,7 +88,7 @@ For example, an attacker might try to run an unsigned script from a USB drive or
 For Microsoft Edge and reducing the attack surface across applications, folders, device,
 network, and firewall.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Attack surface reduction](/defender-endpoint/overview-attack-surface-reduction)
 
@@ -100,7 +100,7 @@ Controlled folder access works with a list of trusted apps. Apps that are includ
 
 Controlled folder access helps protect user's valuable data from malicious apps and threats such as ransomware.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Controlled folder access](/defender-endpoint/controlled-folders)
 
@@ -120,7 +120,7 @@ detailed investigation outcomes
 Defender for Endpoint is also part of Microsoft Defender XDR, our end-to-end, cloud-native extended detection and response (XDR) solution that combines best-of-breed endpoint, email, and identity security products. It enables organizations to prevent, detect, investigate, and remediate attacks by delivering deep visibility, granular context, and actionable insights generated from raw signals harnessed across the Microsoft 365 environment and other
 platforms, all synthesized into a single dashboard. This solution offers tremendous value to organizations of any size, especially those that are looking to break away from the added complexity of multiple point solutions, keeping them protected from sophisticated attacks and saving IT and security teams' time and resources.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Microsoft Defender for Endpoint](/defender-endpoint/microsoft-defender-endpoint)
 - [Microsoft 365 Defender](/defender-xdr/microsoft-365-defender)
@@ -135,6 +135,6 @@ You can use audit mode to evaluate how exploit protection would impact your orga
 
 Windows 11 provides configuration options for exploit protection. You can prevent users from modifying these specific options with device management solutions like Microsoft Intune or group policy.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Protecting devices from exploits](/defender-endpoint/enable-exploit-protection)

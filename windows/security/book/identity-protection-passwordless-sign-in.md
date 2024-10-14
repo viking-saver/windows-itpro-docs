@@ -25,7 +25,7 @@ PIN and biometric data stay on the device and can't be stored or accessed extern
 
 Windows Hello can authenticate users to a Microsoft account (MSA), identity provider services, or the relying parties that also implement the FIDO2 or WebAuthn standards.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Configure Windows Hello][LINK-1]
 
@@ -43,7 +43,7 @@ Windows devices that support biometric hardware, such as fingerprint or facial r
 
 If a peripheral camera is attached to the device after enrollment, it can be used for facial authentication once validated by signing in with the internal camera. For added security, external cameras can be disabled for use with Windows Hello facial recognition.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Windows Hello biometric requirements][LINK-4]
 
@@ -57,7 +57,7 @@ Privacy is top of mind and more important than ever. Customers want to have grea
 
 Users can also take advantage of more granular settings to easily enable and disable differentiated presence sensing features like wake on approach, lock on leave, and adaptive dimming. We're also supporting developers with new APIs for presence sensing for third-party applications. Third-party applications can now access user presence information on devices with presence sensors.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Presence sensing][LINK-7]
 - [Manage presence sensing settings in Windows 11][LINK-8]
@@ -78,7 +78,7 @@ Windows Hello for Business replaces the username and password by combining a sec
 
 Organizations with hybrid scenarios can eliminate the need for on-premises domain controllers and simplify passwordless adoption by using Windows Hello for Business cloud Kerberos trust<sup>[\[13\]](conclusion.md#footnote13)</sup>. This solution uses security keys and replaces on-premises domain controllers with a cloud-based root-of-trust. As a result, organizations can take advantage of Windows Hello for Business and deploy security keys with minimal extra setup or infrastructure.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Windows Hello for Business overview][LINK-2]
 - [Enable passkeys (FIDO2) for your organization][LINK-9]
@@ -89,7 +89,7 @@ The Microsoft PIN Reset Service allows users to reset their forgotten Windows He
 
 Users can initiate a PIN reset from the Windows lock screen or from the sign-in options in Settings. The process involves authenticating and completing multifactor authentication to reset the PIN.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [PIN reset][LINK-15]
 
@@ -99,7 +99,7 @@ For organizations that need an extra layer of sign-in security, multi-factor unl
 
 Multi-factor unlock is useful for organizations who need to prevent information workers from sharing credentials or need to comply with regulatory requirements for a two-factor authentication policy.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Multi-factor unlock][LINK-6]
 
@@ -111,7 +111,7 @@ IT admins can configure a policy on Microsoft Entra ID joined machines so users 
 
 Users authenticate directly with Microsoft Entra ID, helping speed access to on-premises applications and other resources.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Windows passwordless experience][LINK-3]
 
@@ -125,7 +125,7 @@ These specialized components protect against a class of attacks that includes bi
 
 Enhanced Sign-in Security is configured by device manufacturers during the manufacturing process and is most typically supported in Secured-core PCs. For facial recognition, Enhanced Sign-in Security is supported by specific silicon and camera combinations -  check with the specific device manufacturer. Fingerprint authentication is available across all processor types. Reach out to specific OEMs for support details.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Windows Hello Enhanced Sign-in Security][LINK-5]
 
@@ -139,7 +139,7 @@ Passkeys created and saved with Windows Hello are protected by Windows Hello or 
 
 🔜 Coming soon in Windows 11, version 24H2, a plug-in model for 3rd party passkey providers allows users to manage their passkeys with third-party passkey managers. This model is designed to provide a seamless platform experience, whether passkeys are managed directly by Windows or by a third-party authenticator. When a third-party passkey provider is used, passkeys are protected and managed by the third-party.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Support for passkeys in Windows][LINK-10]
 - [Enable passkeys (FIDO2) for your organization][LINK-9]
@@ -161,7 +161,7 @@ Individual users can back up their credentials to the cloud by enabling the encr
 
 Using this secure app for authentication and authorization enables people to be in control of how, where, and when their credentials are used. To keep up with an ever-changing security landscape, the app is constantly updated, and new capabilities are added to stay ahead of emerging threat vectors.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Authentication methods in Microsoft Entra ID - Microsoft Authenticator app][LINK-11]
 
@@ -169,7 +169,7 @@ Using this secure app for authentication and authorization enables people to be 
 
 With the support of web sign-in, users can sign in without a password using the Microsoft Authenticator app or a Temporary Access Pass (TAP). Web sign in also enables federated sign in with a SAML-P identity provider.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Web sign-in for Windows][LINK-13]
 
@@ -177,7 +177,7 @@ With the support of web sign-in, users can sign in without a password using the 
 
 Windows 11 supports federated sign-in with external education identity management services. For students unable to type easily or remember complex passwords, this capability enables secure sign-in through methods like QR codes or pictures.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Configure federated sign-in for Windows devices][LINK-14]
 
@@ -197,7 +197,7 @@ When a password is used to sign in to a domain account, Windows uses the Kerbero
 
 [Windows Hello for Business](/windows/security/identity-protection/hello-for-business/) and FIDO2 security keys are modern, two-factor authentication methods for Windows. Customers using virtual smart cards are encouraged to move to Windows Hello for Business or FIDO2. For new Windows installations, we recommend Windows Hello for Business or FIDO2 security keys.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Smart Card technical reference][LINK-12]
 
@@ -207,7 +207,7 @@ As malware protection and other safeguards evolve, cybercriminals look for new w
 
 We know that people are in different parts of their passwordless journey. To help on that journey for people still using passwords, Windows 11 offers powerful credential protection. Microsoft Defender SmartScreen now includes enhanced phishing protection to automatically detect when a user's Microsoft password is entered into any app or website. Windows then identifies if the app or site is securely authenticating to Microsoft and warns if the credentials are at risk. Because the user is alerted at the moment of potential credential theft, they can take preemptive action before the password is used against them or their organization.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Enhanced phishing protection in Microsoft Defender SmartScreen][LINK-16]
 

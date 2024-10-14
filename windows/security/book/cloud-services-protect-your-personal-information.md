@@ -18,7 +18,7 @@ You can even go passwordless with your Microsoft Account by removing the passwor
 - Use Windows Hello to eliminate the password sign-in method for an even more secure experience
 - Use the Microsoft Authenticator app on your Android or iOS device
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [What is a Microsoft account?][LINK-1]
 - [Go passwordless with your Microsoft account][LINK-5]
@@ -27,7 +27,7 @@ You can even go passwordless with your Microsoft Account by removing the passwor
 
 When location services and *Find my device* settings are turned on, basic system services like time zone and Find my device are allowed to use the device's location. Find my device can be used to help recover lost or stolen Windows devices, reducing the security threats that rely on physical access.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [How to set up, find, and lock a lost Windows device using a Microsoft Account][LINK-2]
 
@@ -38,7 +38,7 @@ Microsoft OneDrive for personal<sup>[\[17\]](conclusion.md#footnote17)</sup> off
 - If a device is lost or stolen, users can quickly recover all their important files from the cloud
 - If a user is targeted by a ransomware attack, OneDrive enables recovery. With configured backups, users have more options to mitigate and recover from such attacks
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Get started with OneDrive][LINK-6]
 - [How to recover from a ransomware attack using Microsoft 365](/microsoft-365/security/office-365-security/recover-from-ransomware)
@@ -50,7 +50,7 @@ OneDrive Personal Vault offers robust protection for the most important or sensi
 
 Once the Personal Vault is configured, users can access it using a strong authentication method or a second step of identity verification. The second steps of verification include fingerprint, face recognition, PIN, or a code sent via email or text.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Protect your OneDrive files in Personal Vault][LINK-4]
 

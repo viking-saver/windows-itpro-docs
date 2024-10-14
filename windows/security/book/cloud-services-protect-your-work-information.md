@@ -37,7 +37,7 @@ In combination with Microsoft Intune, Microsoft Entra ID offers powerful securit
 
 Every Windows device has a built-in local administrator account that must be secured and protected to mitigate any Pass-the-Hash (PtH) and lateral traversal attacks. Many customers have been using our standalone, on-premises Windows Local Administrator Password Solution (LAPS) to manage their domain-joined Windows machines. We heard from many customers that LAPS support was needed as they modernized their Windows environment to join directly to Microsoft Entra ID.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Microsoft Entra ID documentation](/entra)
 - [Microsoft Entra plans and pricing](https://www.microsoft.com/security/business/microsoft-entra-pricing?rtc=1)
@@ -50,7 +50,7 @@ Microsoft Entra Private Access provides organizations the ability to manage and 
 
 Microsoft Entra Internet Access provides an identity-centric Secure Web Gateway (SWG) solution for Software as a Service (SaaS) applications and other Internet traffic. It protects users, devices, and data from the Internet's wide threat landscape with best-in-class security controls and visibility through Traffic Logs.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Microsoft Entra Internet Access](/entra/global-secure-access/concept-internet-access)
 
@@ -59,7 +59,7 @@ Microsoft Entra Internet Access provides an identity-centric Secure Web Gateway 
 
 Both Microsoft Entra Private Access and Microsoft Entra Internet Access use the *Global Secure Access client for Windows*, which secures and controls the features.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Microsoft Entra Private Access](/entra/global-secure-access/concept-private-access)
 - [Microsoft's Security Service Edge Solution Deployment Guide for Microsoft Entra Internet Access Proof of Concept](/entra/architecture/sse-deployment-guide-internet-access)
@@ -69,7 +69,7 @@ Both Microsoft Entra Private Access and Microsoft Entra Internet Access use the 
 
 Available to any organization with a Microsoft Entra ID Premium<sup>[\[9\]](conclusion.md#footnote9)</sup> `license, Enterprise State Roaming provides users with a unified Windows Settings experience across their Windows devices and reduces the time needed for configuring a new device.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Enterprise State Roaming in Microsoft Entra ID](/entra/identity/devices/enterprise-state-roaming-enable)
 
@@ -85,7 +85,7 @@ Remote attestation helps ensure that devices are compliant with security policie
 
 Once this verification is complete, the attestation service returns a signed report with the security features state to the relying party - such as Microsoft Intune - to assess the trustworthiness of the platform relative to the admin-configured device compliance specifications. Conditional access is then granted or denied based on the device's compliance.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Azure Attestation overview](/azure/attestation/overview)
 
@@ -98,7 +98,7 @@ Windows 11 built-in management features include:
 - The enrollment client, which enrolls and configures the device to securely communicate with the enterprise device management server
 - The management client, which periodically synchronizes with the management server to check for updates and apply the latest policies set by IT
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Mobile device management overview](/windows/client-management/mdm-overview)
 
@@ -112,7 +112,7 @@ Windows 11 supports the Remote Wipe configuration service provider (CSP) so that
 - Reset the device and clean the drive
 - Reset the device but persist user accounts and data
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Remote wipe CSP](/windows/client-management/mdm/remotewipe-csp)
 
@@ -122,7 +122,7 @@ Every organization faces security threats. However, different organizations can 
 
 A security baseline is a group of Microsoft-recommended configuration settings that explains their security implications. These settings are based on feedback from Microsoft security engineering teams, product groups, partners, and customers.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Security baselines](/windows/security/operating-system-security/device-management/windows-security-configuration-framework/windows-security-baselines)
 
@@ -136,7 +136,7 @@ Organizations can cut costs while securing and managing remote devices through t
 
 Windows 11 enables IT professionals to move to the cloud while consistently enforcing security policies. Windows 11 provides expanded support for group policy administrative templates (ADMX-backed policies) in cloud-native device management solutions like Microsoft Intune, enabling IT professionals to easily apply the same security policies to both on-premises and remote devices.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [What is Microsoft Intune](/mem/intune/fundamentals/what-is-intune)
 
@@ -146,7 +146,7 @@ When a device enrolls into device management, the administrator expects it to re
 
 With Windows enrollment attestation, Microsoft Entra and Microsoft Intune certificates are bound to a device using the Trusted Platform Module (TPM). This ensures that the certificates cannot be transferred from one device to another, maintaining the integrity of the enrollment process.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Windows enrollment attestation](/mem/intune/enrollment/windows-enrollment-attestation)
 
@@ -154,7 +154,7 @@ With Windows enrollment attestation, Microsoft Entra and Microsoft Intune certif
 
 Intune Endpoint Privilege Management supports organizations' Zero Trust journeys by helping them achieve a broad user base running with least privilege, while still permitting users to run tasks allowed by the organization to remain productive.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Endpoint Privilege Management](/mem/intune/protect/epm-overview?formCode=MG0AV3)
 
@@ -170,7 +170,7 @@ Microsoft Intune also has policies and settings to configure and manage the flow
 
 With Intune, organizations can also extend MAM App Config, MAM App Protection, and App Protection Conditional Access capabilities to Windows. This enables people to access protected organizational content without having the device managed by IT. The first application to support MAM for Windows is Microsoft Edge.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Data protection for Windows MAM](/mem/intune/apps/protect-mam-windows?formCode=MG0AV3)
 
@@ -187,7 +187,7 @@ The security baseline includes policies for:
 
 The security baseline has been enhanced with over 70 new settings, enabling local user rights assignment, services management, and local security policies that were previously only available through group policy. This enhancement facilitates the adoption of cloud-based device management solutions and ensures closer adherence to industry-standard security benchmarks.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Intune security baseline overview](/mem/intune/protect/security-baselines)
 - [List of the settings in the Windows security baseline in Intune](/mem/intune/protect/security-baseline-settings-mdm-all)
@@ -196,7 +196,7 @@ The security baseline has been enhanced with over 70 new settings, enabling loca
 
 Local Administrator Password solution was a key consideration for many customers when deciding to make the transition from on-premises to cloud-managed devices using Intune. With LAPS, organizations can automatically manage and back up the password of a local administrator account on Microsoft Entra ID joined or Microsoft Entra hybrid joined devices.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Windows LAPS overview](/windows-server/identity/laps/laps-overview)
 
@@ -215,7 +215,7 @@ Windows Autopilot enables you to:
 
 Existing devices can also be quickly prepared for a new user with [Windows Autopilot Reset](/mem/autopilot/windows-autopilot-reset). The reset capability is also useful in break/fix scenarios to quickly bring a device back to a business-ready state.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Windows Autopilot](https://aka.ms/WindowsAutopilot)
 
@@ -227,7 +227,7 @@ Administrators can utilize group policy or a device management solution like Mic
 
 This approach not only provides control over the update process but also ensures a seamless and positive update experience for all users within the organization. By using Windows Update for Business, organizations can achieve a more secure and efficient operational environment.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Windows Update for Business documentation](/windows/deployment/update/waas-manage-updates-wufb)
 
@@ -237,7 +237,7 @@ Cybercriminals commonly exploit obsolete or unpatched software to infiltrate net
 
 There's a lot more to learn about Windows Autopatch: this [Forrester Consulting Total Economic Impact&trade; Study](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RW10vlw) commissioned by Microsoft, features insights from customers who deployed Windows Autopatch and its impact on their organizations. You can also find out more information about new Autopatch features and the future of the service in the regularly published [Windows IT Pro Blog](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/bg-p/Windows-ITPro-blog/label-name/Windows%20Autopatch) and [Windowes Autopatch community](https://techcommunity.microsoft.com/t5/windows-autopatch/bd-p/Windows-Autopatch).
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Windows Autopatch documentation](/windows/deployment/windows-autopatch/)
 - [Windows updates API overview](/graph/windowsupdates-concept-overview)
@@ -257,7 +257,7 @@ There are several ways that OneDrive for work or school is protected at rest:
 - Application security: Engineers who build features follow the security development lifecycle. Automated and manual analyses help identify possible vulnerabilities. The [Microsoft Security Response Center](https://technet.microsoft.com/security/dn440717.aspx) helps triage incoming vulnerability reports and evaluate mitigations. Through the [Microsoft Cloud Bug Bounty Terms](https://technet.microsoft.com/dn800983), people across the world can earn money by reporting vulnerabilities
 - Content protection: Each file is encrypted at rest with a unique AES-256 key. These unique keys are encrypted with a set of master keys that are stored in Azure Key Vault
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [How OneDrive safeguards data in the cloud](https://support.microsoft.com/topic/23c6ea94-3608-48d7-8bf0-80e142edd1e1)
 
@@ -286,7 +286,7 @@ The Universal Print secure release platform ensures user privacy, secures organi
 
 Universal Print has integrated with Administrative Units in Microsoft Entra ID to enable customers to assign a Printer Administrator role to their local IT team in the same way customers assign User Administrator or Groups Administrator roles. The local IT team can configure only the printers that are part of the same Administrative Unit.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Universal Print](https://www.microsoft.com/microsoft-365/windows/universal-print)
 - [Data handling in Universal Print](/universal-print/data-handling)
@@ -294,6 +294,6 @@ Universal Print has integrated with Administrative Units in Microsoft Entra ID t
 
 For customers who want to stay on Print Servers, we recommend using the Microsoft IPP Print driver. For features beyond what's covered in the standard IPP driver, use Print Support Applications (PSA) for Windows from the respective printer OEM.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Print support app design guide](/windows-hardware/drivers/devapps/print-support-app-design-guide)

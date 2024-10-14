@@ -15,7 +15,7 @@ Microsoft is committed to supporting product security standards and certificatio
 
 The Federal Information Processing Standard (FIPS) Publication 140 is a U.S. government standard that specifies the minimum security requirements for cryptographic modules in IT products. Microsoft is dedicated to adhering to the FIPS 140 standard, consistently validating its cryptographic modules against FIPS 140-2 since the standard's inception. Microsoft products, including Windows 11, Windows 10, Windows Server, and many cloud services, use these cryptographic modules.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Windows FIPS 140 validation][LINK-1]
 
@@ -25,7 +25,7 @@ Common Criteria (CC) is an international standard currently maintained by nation
 
 Microsoft ensures that products incorporate the features and functions required by relevant Common Criteria Protection Profiles and completes Common Criteria certifications of Microsoft Windows products.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Common Criteria certifications][LINK-2]
 

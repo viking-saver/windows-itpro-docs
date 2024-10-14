@@ -27,7 +27,7 @@ To create a smooth user experience that aligns with nonisolated, native Win32 ap
 
 The first factor relates to implementing methods to manage access to files and privacy information within and outside the isolation boundary AppContainer. The second factor involves integrating Win32 apps with other Windows interfaces in a way that helps enable seamless functionality without causing perplexing user consent prompts.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Win32 app isolation][LINK-4]
 - [Application Capability Profiler (ACP)][LINK-5]
@@ -40,7 +40,7 @@ In addition to Windows Sandbox for Win32 apps, Universal Windows Platform (UWP) 
 
 Processes that run in app containers operate at a low integrity level, meaning they have limited access to resources they don't own. Because the default integrity level of most resources is medium integrity level, the UWP app can access only a subset of the file system, registry, and other resources. The app container also enforces restrictions on network connectivity. For example, access to a local host isn't allowed. As a result, malware or infected apps have limited footprint for escape.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Windows and app container][LINK-8]
 
@@ -50,7 +50,7 @@ Windows Sandbox provides a lightweight desktop environment to safely run untrust
 
 Once Windows Sandbox is closed, nothing persists on the device. All the software with all its files and state are permanently deleted after the untrusted Win32 application is closed.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Windows Sandbox][LINK-9]
 
@@ -66,7 +66,7 @@ With Windows Subsystem for Linux (WSL) you can run a Linux environment on a Wind
 
 These features can be set up using a device management solution such as Microsoft Intune. Microsoft Defender for Endpoint (MDE) integrates with WSL, allowing it to monitor activities within a WSL distro and report them to the MDE dashboards.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Hyper-V Firewall][LINK-10]
 - [DNS Tunneling][LINK-11]
@@ -78,7 +78,7 @@ These features can be set up using a device management solution such as Microsof
 
 A **Virtualization-based security enclave** is a software-based trusted execution environment (TEE) inside a host application. VBS enclaves enable developers to use VBS to protect their application's secrets from admin-level attacks. VBS enclaves are available on Windows 10 onwards on both x64 and ARM64.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+[!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Virtualization-based security enclave][LINK-15]
 
