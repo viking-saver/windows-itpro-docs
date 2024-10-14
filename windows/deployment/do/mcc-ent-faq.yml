@@ -57,7 +57,7 @@ sections:
       - question: Is it possible to not update the Microsoft Connected Cache software or delay update longer than the timeline provided in the updates configuration?
         answer: No. It's important to keep the Microsoft Connected Cache software up to date, especially when it comes to security issues. Microsoft has validated updates prior to releasing Microsoft releasing to Enterprises Connected Cache updates and will only release updates when it's necessary to keep customers secure or to ensure the continued successful operation of Connected Cache nodes for customers.  
       - question: How do I set up CLI?
-        answer: For more information, see [How to install the Azure CLI](/azure/azure-cli/install).
+        answer: For more information, see [How to install the Azure CLI](/cli/azure/install-azure-cli).
       - question: How do I install MCC extension?
         answer: For more information, see [Install the Microsoft Connected Cache extension](mcc-ent-install-extension.md).
       - question: What do I do if I have to set up or change existing proxy?
