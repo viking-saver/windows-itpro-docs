@@ -38,7 +38,9 @@ By protecting the LSA process with Virtualization-based security, Credential Gua
     :::column-end:::
 :::row-end:::
 
-🆕 Starting in Windows 11, version 24H2, protections are expanded to optionally include machine account passwords for Active Directory-joined devices. Administrators can enable audit mode or enforcement of this capability using Credential Guard policy settings.
+[!INCLUDE [new-24h2](includes/new-24h2.md)]
+
+Credential Guard protections are expanded to optionally include machine account passwords for Active Directory-joined devices. Administrators can enable audit mode or enforcement of this capability using Credential Guard policy settings.
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 

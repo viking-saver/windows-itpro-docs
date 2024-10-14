@@ -68,8 +68,9 @@ Enhanced:
 |**<sup><a name="footnote13"></a>13</sup>**| Requires Microsoft Entra ID Premium; sold separately.|
 |**<sup><a name="footnote14"></a>14</sup>**| Hardware dependent.|
 |**<sup><a name="footnote15"></a>15</sup>**| Microsoft 365 E3 or E5 required; sold separately.|
-|    **<sup><a name="footnote16"></a>16</sup>**| The Total Economic Impact&trade; of Windows Pro Device, Forrester study commissioned by Microsoft, June 2020.|
-|    **<sup><a name="footnote17"></a>17</sup>**|All users with a Microsoft Account get 5GB of OneDrive storage free, and all Microsoft 365 subscriptions include 1TB of OneDrive storage. Additional OneDrive storage is sold separately.|
+|**<sup><a name="footnote16"></a>16</sup>**| The Total Economic Impact&trade; of Windows Pro Device, Forrester study commissioned by Microsoft, June 2020.|
+|**<sup><a name="footnote17"></a>17</sup>**|All users with a Microsoft Account get 5GB of OneDrive storage free, and all Microsoft 365 subscriptions include 1TB of OneDrive storage. Additional OneDrive storage is sold separately.|
+|**<sup><a name="footnote18"></a>17</sup>**|Feature or functionality delivered using [servicing technology](https://support.microsoft.com/topic/b0aa0a27-ea9a-4365-9224-cb155e517f12).|
 
 ---
 

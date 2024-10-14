@@ -33,7 +33,9 @@ Device encryption is a Windows feature that simplifies the process of enabling B
 
 Organizations have the option to disable device encryption in favor of a full BitLocker implementation. This allows for more granular control over encryption policies and settings, ensuring that the organization's specific security requirements are met.
 
-🆕 Starting with Windows 11, version 24H2, the prerequisites of DMA and HSTI/Modern Standby is removed. This change makes more devices eligible for both automatic and manual device encryption.
+[!INCLUDE [new-24h2](includes/new-24h2.md)]
+
+The Device Encryption prerequisites of DMA and HSTI/Modern Standby are removed. This change makes more devices eligible for both automatic and manual device encryption.
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
@@ -62,7 +64,9 @@ Personal Data Encryption (PDE) is a user-authenticated encryption mechanism desi
 
 The initial release of PDE in Windows 11, version 22H2, introduced a set of public APIs that applications can adopt to safeguard content.
 
-🆕 Starting in Windows 11, version 24H2, PDE is further enhanced with *PDE for known folders*, which extends protection to the Windows folders: Documents, Pictures, and Desktop.
+[!INCLUDE [new-24h2](includes/new-24h2.md)]
+
+PDE is further enhanced with *PDE for known folders*, which extends protection to the Windows folders: Documents, Pictures, and Desktop.
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 

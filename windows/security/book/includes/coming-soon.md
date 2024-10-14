@@ -6,4 +6,4 @@ ms.topic: include
 ms.service: windows-client
 ---
 
-:::image type="icon" source="../images/soon-arrow.svg" border="false"::: **Coming soon:**
+:::image type="icon" source="../images/soon-arrow.svg" border="false"::: **Coming soon<sup>[\[18\]](..\conclusion.md#footnote18)</sup>:**

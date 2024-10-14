@@ -50,7 +50,9 @@ Hardware-enforced stack protection integrates software and hardware for a modern
 
 Application code includes a program processing stack that hackers seek to corrupt or disrupt in a type of attack called *stack smashing*. When defenses like executable space protection began thwarting such attacks, hackers turned to new methods like return-oriented programming. Return-oriented programming, a form of advanced stack smashing, can bypass defenses, hijack the data stack, and ultimately force a device to perform harmful operations. To guard against these control-flow hijacking attacks, the Windows kernel creates a separate *shadow stack* for return addresses. Windows 11 extends stack protection capabilities to provide both user mode and kernel mode support.
 
-🆕 Starting in windows 11, version 24H2, **Hypervisor-enforced paging translation (HVPT)** is a security enhancement for the system. HVPT protects linear address translations from being tampered with, to protect sensitive system structures from write-what-where attacks.
+[!INCLUDE [new-24h2](includes/new-24h2.md)]
+
+**Hypervisor-enforced paging translation (HVPT)** is a security feature designed to safeguard linear address translations from tampering. It ensures the integrity of sensitive system structures, protecting them from write-what-where attacks.
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
