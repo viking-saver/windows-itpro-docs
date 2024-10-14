@@ -128,7 +128,7 @@ Config Refresh can also be paused for a configurable period of time, after which
 
 ## Kiosk mode
 
-With Assigned Access and Shell Launcher, you can configure Windows to restrict functionality to preselected applications. These features are ideal for public-facing or shared devices like kiosks. Configuring a device as a kiosk is straightforward and can be done locally on the device or through a cloud-based device management solution like Microsoft Intune.
+With Assigned Access and Shell Launcher, you can configure Windows to restrict functionality to preselected applications. These features are ideal for public-facing or shared devices like kiosks. Configuring a device as a kiosk is straightforward and can be done locally on the device or through a cloud-based device management solution like Microsoft Intune<sup>[\[7\]](conclusion.md#footnote7)</sup>.
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 

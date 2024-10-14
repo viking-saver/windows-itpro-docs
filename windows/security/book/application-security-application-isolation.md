@@ -64,7 +64,7 @@ With Windows Subsystem for Linux (WSL) you can run a Linux environment on a Wind
 - **DNS Tunneling** is a networking setting that improves compatibility in different networking environments, making use of virtualization features to obtain DNS information rather than a networking packet
 - **Auto proxy** is a networking setting that enforces WSL to use Windows' HTTP proxy information. Turn on when using a proxy on Windows, as it makes that proxy automatically apply to WSL distributions
 
-These features can be set up using a device management solution such as Microsoft Intune. Microsoft Defender for Endpoint (MDE) integrates with WSL, allowing it to monitor activities within a WSL distro and report them to the MDE dashboards.
+These features can be set up using a device management solution such as Microsoft Intune<sup>[\[7\]](conclusion.md#footnote7)</sup>. Microsoft Defender for Endpoint (MDE) integrates with WSL, allowing it to monitor activities within a WSL distro and report them to the MDE dashboards.
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 

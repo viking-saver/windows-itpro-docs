@@ -176,7 +176,7 @@ With Intune, organizations can also extend MAM App Config, MAM App Protection, a
 
 ### Security baseline for cloud-based device management solutions
 
-Windows 11 can be configured with Microsoft's security baseline, designed for cloud-based device management solutions like Microsoft Intune. These security baselines function similarly to group policy-based ones and can be easily integrated into existing device management tools.
+Windows 11 can be configured with Microsoft's security baseline, designed for cloud-based device management solutions like Microsoft Intune<sup>[\[7\]](conclusion.md#footnote7)</sup>. These security baselines function similarly to group policy-based ones and can be easily integrated into existing device management tools.
 
 The security baseline includes policies for:
 
@@ -194,7 +194,7 @@ The security baseline has been enhanced with over 70 new settings, enabling loca
 
 ## Windows Local Administrator Password Solution (LAPS)
 
-Local Administrator Password solution was a key consideration for many customers when deciding to make the transition from on-premises to cloud-managed devices using Intune. With LAPS, organizations can automatically manage and back up the password of a local administrator account on Microsoft Entra ID joined or Microsoft Entra hybrid joined devices.
+Local Administrator Password solution was a key consideration for many customers when deciding to make the transition from on-premises to cloud-managed devices using Microsoft Intune<sup>[\[7\]](conclusion.md#footnote7)</sup>. With LAPS, organizations can automatically manage and back up the password of a local administrator account on Microsoft Entra ID joined or Microsoft Entra hybrid joined devices.
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
@@ -209,7 +209,7 @@ With Windows Autopilot, there's no need to reimage or manually set-up devices be
 Windows Autopilot enables you to:
 
 - Automatically join devices to Microsoft Entra ID or Active Directory via Microsoft Entra hybrid join
-- Auto-enroll devices into a device management solution like Microsoft Intune (requires an Microsoft Entra ID Premium subscription for configuration)
+- Auto-enroll devices into a device management solution like Microsoft Intune<sup>[\[7\]](conclusion.md#footnote7)</sup> (requires an Microsoft Entra ID Premium subscription for configuration)
 - Create and auto-assignment of devices to configuration groups based on a device's profile
 - Customize of the out-of-box experience (OOBE) content specific to your organization
 
@@ -223,7 +223,7 @@ Existing devices can also be quickly prepared for a new user with [Windows Autop
 
 Windows Update for Business empowers IT administrators to ensure that their organization's Windows client devices are consistently up to date with the latest security updates and features. By directly connecting these systems to the Windows Update service, administrators can maintain a high level of security and functionality.
 
-Administrators can utilize group policy or a device management solution like Microsoft Intune, to configure Windows Update for Business settings. These settings control the timing and manner in which updates are applied, allowing for thorough reliability and performance testing on a subset of devices before deploying updates across the entire organization.
+Administrators can utilize group policy or a device management solution like Microsoft Intune<sup>[\[7\]](conclusion.md#footnote7)</sup>, to configure Windows Update for Business settings. These settings control the timing and manner in which updates are applied, allowing for thorough reliability and performance testing on a subset of devices before deploying updates across the entire organization.
 
 This approach not only provides control over the update process but also ensures a seamless and positive update experience for all users within the organization. By using Windows Update for Business, organizations can achieve a more secure and efficient operational environment.
 
@@ -276,7 +276,7 @@ Universal Print supports Zero Trust security by requiring that:
 - Each acting application must register with Microsoft Entra ID and specify the set of permission scopes it requires. Microsoft's own acting applications - for example, the Universal Print connector - are registered with the Microsoft Entra ID service. Customer administrators need to provide their consent to the required permission scopes as part of onboarding the application to their tenant
 - Each authentication with Microsoft Entra ID from an acting application cannot extend the permission scope as defined by the acting client app. This prevents the app from requesting additional permissions if the app is breached
 
-Additionally, Windows 11 and Windows 10 include MDM support to simplify printer setup for users. With initial support from Microsoft Intune<sup>[\[7\]](conclusion.md#footnote7)</sup>, admins can now configure policies to provision specific printers onto the user's Windows devices.
+Additionally, Windows 11 includes MDM support to simplify printer setup for users. With initial support from Microsoft Intune<sup>[\[7\]](conclusion.md#footnote7)</sup>, admins can now configure policies to provision specific printers onto the user's Windows devices.
 
 Universal Print stores the print data in cloud securely in Office Storage, the same storage used by other Microsoft Office products.
 

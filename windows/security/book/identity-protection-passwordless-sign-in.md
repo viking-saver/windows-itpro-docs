@@ -85,7 +85,7 @@ Organizations with hybrid scenarios can eliminate the need for on-premises domai
 
 ### PIN reset
 
-The Microsoft PIN Reset Service allows users to reset their forgotten Windows Hello PINs without requiring re-enrollment. After registering the service in the Microsoft Entra ID tenant, the capability must be enabled on the Windwos devices using group policy or a device management solution like Microsoft Intune.
+The Microsoft PIN Reset Service allows users to reset their forgotten Windows Hello PINs without requiring re-enrollment. After registering the service in the Microsoft Entra ID tenant, the capability must be enabled on the Windwos devices using group policy or a device management solution like Microsoft Intune<sup>[\[7\]](conclusion.md#footnote7)</sup>.
 
 Users can initiate a PIN reset from the Windows lock screen or from the sign-in options in Settings. The process involves authenticating and completing multifactor authentication to reset the PIN.
 
