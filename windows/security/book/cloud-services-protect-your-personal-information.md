@@ -41,7 +41,7 @@ Microsoft OneDrive for personal<sup>[\[13\]](conclusion.md#footnote13)</sup> off
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Get started with OneDrive][LINK-6]
-- [How to recover from a ransomware attack using Microsoft 365](/microsoft-365/security/office-365-security/recover-from-ransomware)
+- [How to recover from a ransomware attack using Microsoft 365][LINK-7]
 - [How to restore from OneDrive][LINK-3]
 
 ## OneDrive Personal Vault
@@ -62,3 +62,4 @@ Once the Personal Vault is configured, users can access it using a strong authen
 [LINK-4]: https://support.microsoft.com/topic/6540ef37-e9bf-4121-a773-56f98dce78c4
 [LINK-5]: https://support.microsoft.com/topic/585a71d7-2295-4878-aeac-a014984df856
 [LINK-6]: https://support.microsoft.com/onedrive
+[LINK-7]: /microsoft-365/security/office-365-security/recover-from-ransomware

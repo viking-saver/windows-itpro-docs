@@ -108,6 +108,14 @@ IT administrators can refine the application and management of access to:
 
 - [Access control][LINK-7]
 
+## :::image type="icon" source="images/soon-button-title.svg" border="false"::: Administrator protection
+
+Most people run as full admins on their devices, which means apps and services have the same access to the kernel and other critical services as users. And the problem is that these apps and services can access critical resources without the user knowing. This is why Windows is being updated to require just in time administrative access to the kernel and other critical services as needed, not all the time, and certainly not by default. This makes it harder for an app to unexpectedly abuse admin privileges and secretly put malware or malicious code on Windows.
+
+When Administrator protection is enabled, if an app needs special permissions like administrative rights, you'll be asked for approval. When an approval is needed, Windows Hello provides a secure and easy way to approve or deny these requests, giving you, and only you, full control over your device.
+
+This helps reduce elevation of privilege (EOP) attacks on Windows where admin privileges are abused. The feature is currently in preview available on Windows Insider channel.
+
 <!--links-->
 
 [LINK-2]: /windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection
