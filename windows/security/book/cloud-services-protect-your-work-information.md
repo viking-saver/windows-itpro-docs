@@ -194,7 +194,9 @@ The security baseline has been enhanced with over 70 new settings, enabling loca
 
 ## Windows Local Administrator Password Solution (LAPS)
 
-Local Administrator Password solution was a key consideration for many customers when deciding to make the transition from on-premises to cloud-managed devices using Microsoft Intune<sup>[\[7\]](conclusion.md#footnote7)</sup>. With LAPS, organizations can automatically manage and back up the password of a local administrator account on Microsoft Entra ID joined or Microsoft Entra hybrid joined devices.
+Windows Local Administrator Password Solution (LAPS) is a feature that automatically manages and backs up the password of a local administrator account on Microsoft Entra joined and Active Directory-joined devices. It helps enhance security by regularly rotating and managing local administrator account passwords, protecting against pass-the-hash and lateral-traversal attacks.
+
+Windows LAPS can be configured via group policy or with a device management solution like Microsoft Intune<sup>[\[7\]](conclusion.md#footnote7)</sup>.
 
 [!INCLUDE [new-24h2](includes/new-24h2.md)]
 
