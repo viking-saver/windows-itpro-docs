@@ -16,6 +16,7 @@ We will continue to bring you new features to protect against evolving threats, 
 New:
 
 - [Config Refresh](operating-system-security-system-security.md#-config-refresh)
+- [Rust in Windows](operating-system-security-system-security.md#-rust-in-windows)
 - [VBS key protection](identity-protection-advanced-credential-protection.md#-vbs-key-protection)
 - [Virtualization-based security enclaves](application-security-application-isolation.md#-virtualization-based-security-enclaves)
 - [Win32 app isolation](application-security-application-isolation.md#-win32-app-isolation)
