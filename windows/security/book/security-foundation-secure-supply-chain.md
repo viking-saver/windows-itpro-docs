@@ -53,11 +53,16 @@ Microsoft requires the Windows 11 supply chain to comply with controls including
 
 ## Software bill of materials (SBOM)
 
-In addition to following the supply chain security controls, SBOMs are used to provide the transparency and provenance of the content as it moves through various stages of the Windows supply chain. This enables trust between each supply chain segment, ensures that tampering doesn't take place during ingestion and along the way, and provides a provable chain of custody for the product that we ship to customers.
+In the Windows ecosystem, ensuring the integrity and authenticity of software components is paramount. To achieve this, we utilize Software Bill of Materials (SBOMs) and COSE (CBOR Object Signing and Encryption) sign all evidence. SBOMs provide a comprehensive inventory of software components, including their dependencies and associated metadata. This transparency is crucial for vulnerability management and compliance with security standards.
 
-Code-signing software is the best way to guarantee application integrity and authenticity and helps users distinguish between trusted applications and malware before downloading or installing. Code signing proprietary applications and software from other organizations greatly reduces the complexity of creating and managing application control policies. Code signing enables the creation and deployment of certificate chain-based application control policies, which can then be cryptographically enforced.
+The COSE signing process enhances the trustworthiness of SBOMs by providing cryptographic signatures that verify the integrity and authenticity of the SBOM content. The CoseSignTool, a platform-agnostic command line application, is employed to apply and verify these digital signatures. This tool ensures that all SBOMs and other build evidence are signed and validated, maintaining a high level of security within the software supply chain12.
 
-Traditionally, the task of code signing posed challenges due to the complex steps required to acquire certificates. The secure management of these certificates, the integration of a proper signing process into the development, and the continuous integration and deployment pipelines, added to the difficulty.
+By integrating SBOMs and COSE signing evidence, we offer stakeholders visibility into the components they use, ensuring that all software artifacts are trustworthy and secure. This approach aligns with our commitment to end-to-end supply chain security, providing a robust framework for managing and verifying software components across the Windows ecosystem.
+
+[!INCLUDE [learn-more](includes/learn-more.md)]
+
+- [SBOM tool](https://github.com/microsoft/sbom-tool)
+- [Code Sign Tool](https://github.com/microsoft/CoseSignTool)
 
 ## Windows App software development kit (SDK)
 
