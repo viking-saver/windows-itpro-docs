@@ -25,7 +25,7 @@ SmartScreen also determines whether a downloaded app or app installer is potenti
 - Checking downloaded files against a list of reported malicious software sites and programs known to be unsafe. If it finds a match, SmartScreen warns that the file might be malicious
 - Checking downloaded files against a list of well-known files. If the file is of a dangerous type and not well-known, SmartScreen displays a caution alert
 
-With enhanced phishing protection in Windows 11, SmartScreen also alerts people when they're entering their Microsoft credentials into a potentially risky location, regardless of which application or browser is used. IT can customize which notifications appear through Microsoft Intune<sup>[\[9\]](conclusion.md#footnote9)</sup>. This protection runs in audit mode by default, giving IT admins full control to make decisions around policy creation and enforcement.
+With enhanced phishing protection in Windows 11, SmartScreen also alerts people when they're entering their Microsoft credentials into a potentially risky location, regardless of which application or browser is used. IT can customize which notifications appear through Microsoft Intune<sup>[\[7\]](conclusion.md#footnote7)</sup>. This protection runs in audit mode by default, giving IT admins full control to make decisions around policy creation and enforcement.
 
 Because Windows 11 comes with these enhancements already built in and enabled, users have extra security from the moment they turn on their device.
 
@@ -106,13 +106,13 @@ Controlled folder access helps protect user's valuable data from malicious apps 
 
 ## Microsoft Defender for Endpoint
 
-Microsoft Defender for Endpoint<sup>[\[9\]](conclusion.md#footnote9)</sup> is an enterprise endpoint detection and response solution that helps security teams detect, disrupt, investigate, and respond to advanced threats.
+Microsoft Defender for Endpoint<sup>[\[7\]](conclusion.md#footnote7)</sup> is an enterprise endpoint detection and response solution that helps security teams detect, disrupt, investigate, and respond to advanced threats.
 
 Organizations can use the rich event data and attack insights Defender for Endpoint provides to investigate incidents. Defender for Endpoint brings together the following elements to provide a more complete picture of security incidents:
 
 - Endpoint behavioral sensors: Embedded in Windows, these sensors collect and process behavioral signals from the operating system and send this sensor data to your private, isolated cloud instance of Microsoft Defender for Endpoint
 - With Automatic Attack Disruption uses AI, machine learning, and Microsoft Security Intelligence to analyze the entire attack and respond at the incident level, where it's able to contain a device, and/or a user which reduces the impact of attacks such as ransomware, human-operated attacks, and other advanced attacks.
-- Cloud security analytics: Behavioral signals are translated into insights, detections, and recommended responses to advanced threats. These analytics leverage big data, device learning, and unique Microsoft optics across the Windows ecosystem, enterprise cloud products such as Microsoft 365<sup>[\[9\]](conclusion.md#footnote9)</sup>, and online assets
+- Cloud security analytics: Behavioral signals are translated into insights, detections, and recommended responses to advanced threats. These analytics leverage big data, device learning, and unique Microsoft optics across the Windows ecosystem, enterprise cloud products such as Microsoft 365<sup>[\[7\]](conclusion.md#footnote7)</sup>, and online assets
 - Threat intelligence: Microsoft processes over 43 trillion security signals every 24 hours, yielding a deep and broad view into the evolving threat landscape. Combined with our global team of security experts and cutting-edge artificial intelligence and machine learning, we can see threats that others miss. This threat intelligence helps provide unparalleled protection for our customers. The protections built into our platforms and products blocked attacks that include 31 billion identity threats and 32 billion email threats
 - Rich response capabilities: Defender for Endpoint empowers SecOps teams to isolate, remediate, and remote into machines to further investigate and stop active threats in their environment, as well as block files, network destinations, and create alerts for them. In addition, Automated Investigation and Remediation can help reduce the load on the SOC by automatically performing otherwise manual steps towards remediation and providing
 detailed investigation outcomes
@@ -127,7 +127,7 @@ platforms, all synthesized into a single dashboard. This solution offers tremend
 
 ## Exploit protection
 
-Exploit protection automatically applies several exploit mitigation techniques to operating system processes and apps. Exploit protection works best with Microsoft Defender for Endpoint<sup>[\[9\]](conclusion.md#footnote9)</sup>, which gives organizations detailed reporting into exploit protection events and blocks as part of typical alert investigation scenarios. You can enable exploit protection on an individual device and then use Group Policy in Active Directory or Microsoft Intune<sup>[\[9\]](conclusion.md#footnote9)</sup> to distribute the configuration XML file to multiple devices simultaneously.
+Exploit protection automatically applies several exploit mitigation techniques to operating system processes and apps. Exploit protection works best with Microsoft Defender for Endpoint<sup>[\[7\]](conclusion.md#footnote7)</sup>, which gives organizations detailed reporting into exploit protection events and blocks as part of typical alert investigation scenarios. You can enable exploit protection on an individual device and then use Group Policy in Active Directory or Microsoft Intune<sup>[\[7\]](conclusion.md#footnote7)</sup> to distribute the configuration XML file to multiple devices simultaneously.
 
 When a mitigation is encountered on the device, a notification will be displayed from the Action Center. You can customize the notification with your company details and contact information. You can also enable the rules individually to customize which techniques the feature monitors.
 

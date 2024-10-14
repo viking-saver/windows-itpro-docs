@@ -33,7 +33,7 @@ When location services and *Find my device* settings are turned on, basic system
 
 ## OneDrive for personal
 
-Microsoft OneDrive for personal<sup>[\[17\]](conclusion.md#footnote17)</sup> offers enhanced security, backup, and restore options for important personal files. Users can access their data from anywhere, since their files are stored and protected in the cloud. OneDrive provides an excellent solution for backing up folders, ensuring that:
+Microsoft OneDrive for personal<sup>[\[13\]](conclusion.md#footnote13)</sup> offers enhanced security, backup, and restore options for important personal files. Users can access their data from anywhere, since their files are stored and protected in the cloud. OneDrive provides an excellent solution for backing up folders, ensuring that:
 
 - If a device is lost or stolen, users can quickly recover all their important files from the cloud
 - If a user is targeted by a ransomware attack, OneDrive enables recovery. With configured backups, users have more options to mitigate and recover from such attacks

@@ -1,6 +1,6 @@
 ---
 title: Identity protection
-description: Windows 11 security book -Identity protection chapter.
+description: Windows 11 security book - Identity protection chapter.
 ms.topic: overview
 ms.date: 09/06/2024
 ---

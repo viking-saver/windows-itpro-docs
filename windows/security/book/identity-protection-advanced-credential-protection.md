@@ -1,6 +1,6 @@
 ---
 title: Identity protection - Advanced credential protection
-description: Windows 11 security book -Identity protection chapter.
+description: Windows 11 security book - Identity protection chapter.
 ms.topic: overview
 ms.date: 09/06/2024
 ---
@@ -62,7 +62,7 @@ VBS key protection enables developers to secure cryptographic keys using Virtual
 
 ## Token protection
 
-Token protection attempts to reduce attacks using Microsoft Entra ID token theft. Token protection makes tokens usable only from their intended device by cryptographically binding a token with a device secret. When using the token, both the token and proof of the device secret must be provided. Conditional Access policies<sup>[\[9\]](conclusion.md#footnote9)</sup> can be configured to require token protection when using sign-in tokens for specific services.
+Token protection attempts to reduce attacks using Microsoft Entra ID token theft. Token protection makes tokens usable only from their intended device by cryptographically binding a token with a device secret. When using the token, both the token and proof of the device secret must be provided. Conditional Access policies<sup>[\[7\]](conclusion.md#footnote7)</sup> can be configured to require token protection when using sign-in tokens for specific services.
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 

@@ -44,7 +44,7 @@ Support for DNS encryption integrates with existing Windows DNS configurations s
 
 The number of Bluetooth devices connected to Windows 11 continues to increase. Windows users connect their Bluetooth headsets, mice, keyboards, and other accessories and improve their day-to-day PC experience by enjoying streaming, productivity, and gaming. Windows supports all standard Bluetooth pairing protocols, including classic and LE Secure connections, secure simple pairing, and classic and LE legacy pairing. Windows also implements host-based LE privacy. Windows updates help users stay current with OS and driver security features in accordance with the Bluetooth Special Interest Group (SIG) and Standard Vulnerability Reports, as well as issues beyond those required by the Bluetooth core industry standards. Microsoft strongly recommends that Bluetooth accessories' firmware and software are kept up to date.
 
-IT-managed environments have a number policy settings available via configuration service providers, group policy, and PowerShell. These settings can be managed through device management solutions like Microsoft Intune<sup>[\[9\]](conclusion.md#footnote9)</sup>. You can configure Windows to use Bluetooth technology while supporting the security needs of your organization. For example, you can allow input and audio while blocking file transfer, force encryption standards, limit Windows discoverability, or even disable Bluetooth entirely for the most sensitive environments.
+IT-managed environments have a number policy settings available via configuration service providers, group policy, and PowerShell. These settings can be managed through device management solutions like Microsoft Intune<sup>[\[7\]](conclusion.md#footnote7)</sup>. You can configure Windows to use Bluetooth technology while supporting the security needs of your organization. For example, you can allow input and audio while blocking file transfer, force encryption standards, limit Windows discoverability, or even disable Bluetooth entirely for the most sensitive environments.
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
@@ -82,7 +82,7 @@ ports, or program paths. This functionality increases manageability and decrease
 
 Windows 11 makes the Windows Firewall easier to analyze and debug. IPSec behavior is integrated with Packet Monitor, an in-box, cross-component network diagnostic tool for Windows. Additionally, the Windows Firewall event logs are enhanced to ensure an audit can identify the specific filter that was responsible for any given event. This enables analysis of firewall behavior and rich packet capture without relying on third-party tools.
 
-Admins can now configure more settings through the Firewall and Firewall Rule policy templates in the Endpoint Security node in Microsoft Intune<sup>[\[9\]](conclusion.md#footnote9)</sup>, using the platform
+Admins can now configure more settings through the Firewall and Firewall Rule policy templates in the Endpoint Security node in Microsoft Intune<sup>[\[7\]](conclusion.md#footnote7)</sup>, using the platform
 support from the Firewall configuration service provider (CSP) and applying these settings to Windows endpoints.
 
 Firewal. rule configuration with Package Family Name (PFN) is a new security feature introduced with the 22H2 release of Windows 11. PFN based rules enforced on an app will include processes request by the app to run on its behalf.
@@ -100,7 +100,7 @@ consumer VPNs, including apps for the most popular enterprise VPN gateways.
 
 In Windows 11, we've integrated the most commonly used VPN controls right into the Windows 11 Quick Actions pane. From the Quick Actions pane, users can verify the status of their VPN, start and stop the connection, and easily open Settings for more controls.
 
-The Windows VPN platform connects to Microsoft Entra ID<sup>[\[9\]](conclusion.md#footnote9)</sup> and Conditional Access for single sign-on, including multifactor authentication (MFA) through Microsoft Entra ID. The VPN platform also supports classic domain-joined authentication. It's supported by Microsoft Intune and other device management solutions. The flexible VPN profile supports both built-in protocols and custom protocols. It can configure multiple authentication methods and can be automatically started as needed or manually started by the end user. It also supports split-tunnel VPN and exclusive VPN with exceptions for trusted external sites.
+The Windows VPN platform connects to Microsoft Entra ID<sup>[\[7\]](conclusion.md#footnote7)</sup> and Conditional Access for single sign-on, including multifactor authentication (MFA) through Microsoft Entra ID. The VPN platform also supports classic domain-joined authentication. It's supported by Microsoft Intune and other device management solutions. The flexible VPN profile supports both built-in protocols and custom protocols. It can configure multiple authentication methods and can be automatically started as needed or manually started by the end user. It also supports split-tunnel VPN and exclusive VPN with exceptions for trusted external sites.
 
 With Universal Windows Platform (UWP) VPN apps, end users never get stuck on an old version of their VPN client. VPN apps from the store will be automatically updated as needed. Naturally, the updates are in the control of your IT admins.
 

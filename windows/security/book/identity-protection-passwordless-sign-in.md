@@ -1,6 +1,6 @@
 ---
 title: Identity protection - Passwordless sign-in
-description: Windows 11 security book -Identity protection chapter.
+description: Windows 11 security book - Identity protection chapter.
 ms.topic: overview
 ms.date: 09/06/2024
 ---
@@ -76,7 +76,7 @@ Provisioning methods include:
 
 Windows Hello for Business replaces the username and password by combining a security key or certificate with a PIN or biometric data and then mapping the credentials to a user account during setup. There are multiple ways to deploy Windows Hello for Business depending on an organization's needs. Organizations that rely on certificates typically use on-premises public key infrastructure (PKI) to support authentication through Certificate Trust. Organizations using key trust deployment require root-of-trust provided by certificates on domain controllers.
 
-Organizations with hybrid scenarios can eliminate the need for on-premises domain controllers and simplify passwordless adoption by using Windows Hello for Business cloud Kerberos trust<sup>[\[13\]](conclusion.md#footnote13)</sup>. This solution uses security keys and replaces on-premises domain controllers with a cloud-based root-of-trust. As a result, organizations can take advantage of Windows Hello for Business and deploy security keys with minimal extra setup or infrastructure.
+Organizations with hybrid scenarios can eliminate the need for on-premises domain controllers and simplify passwordless adoption by using Windows Hello for Business cloud Kerberos trust. This solution uses security keys and replaces on-premises domain controllers with a cloud-based root-of-trust. As a result, organizations can take advantage of Windows Hello for Business and deploy security keys with minimal extra setup or infrastructure.
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
@@ -107,7 +107,7 @@ Multi-factor unlock is useful for organizations who need to prevent information 
 
 **Windows Hello for Business now support a fully passwordless experience.**
 
-IT admins can configure a policy on Microsoft Entra ID joined machines so users no longer see the option to enter a password when accessing company resources<sup>[\[12\]](conclusion.md#footnote12)</sup>. Once the policy is configured, passwords are removed from the Windows user experience, both for device unlock and in-session authentication scenarios. However, passwords aren't eliminated from the identity directory yet. Users are expected to navigate through their core authentication scenarios using strong, phish-resistant, possession-based credentials like Windows Hello for Business and FIDO2 security keys. If necessary, users can use passwordless recovery mechanisms such as Microsoft PIN reset service or web sign-in.
+IT admins can configure a policy on Microsoft Entra ID joined machines so users no longer see the option to enter a password when accessing company resources. Once the policy is configured, passwords are removed from the Windows user experience, both for device unlock and in-session authentication scenarios. However, passwords aren't eliminated from the identity directory yet. Users are expected to navigate through their core authentication scenarios using strong, phish-resistant, possession-based credentials like Windows Hello for Business and FIDO2 security keys. If necessary, users can use passwordless recovery mechanisms such as Microsoft PIN reset service or web sign-in.
 
 Users authenticate directly with Microsoft Entra ID, helping speed access to on-premises applications and other resources.
 
@@ -139,7 +139,7 @@ Passkeys created and saved with Windows Hello are protected by Windows Hello or 
 
 [!INCLUDE [coming-soon](includes/coming-soon.md)]
 
-A plug-in model for 3rd party passkey providers allows users to manage their passkeys with third-party passkey managers. This model is designed to provide a seamless platform experience, whether passkeys are managed directly by Windows or by a third-party authenticator. When a third-party passkey provider is used, passkeys are protected and managed by the third-party.
+The plug-in model for third-party passkey providers enables users to manage their passkeys with third-party passkey managers. This model ensures a seamless platform experience, regardless of whether passkeys are managed directly by Windows or by a third-party authenticator. When a third-party passkey provider is used, the passkeys are securely protected and managed by the third-party provider.
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
@@ -151,7 +151,6 @@ A plug-in model for 3rd party passkey providers allows users to manage their pas
 The FIDO Alliance, the Fast Identity Online industry standards body, was established to promote authentication technologies and standards that reduce reliance on passwords. FIDO Alliance and World Wide Web Consortium (W3C) have worked together to define the Client to Authenticator Protocol (CTAP2) and Web Authentication (WebAuthn) specifications, which are the industry standard for providing strong, phishing-resistant, user friendly, and privacy preserving authentication across the web and apps. FIDO standards and certifications are becoming recognized as the leading standard for creating secure authentication solutions across enterprises, governments, and consumer markets.
 
 Windows 11 can also use external FIDO2 security keys for authentication alongside or in addition to Windows Hello and Windows Hello for Business, which is also a FIDO2-certified passwordless solution. As a result, Windows 11 can be used as a FIDO authenticator for many popular identity management services.
-
 
 ## Microsoft Authenticator
 
@@ -197,7 +196,7 @@ Smart cards can only be used to sign in to domain accounts or Microsoft Entra ID
 
 When a password is used to sign in to a domain account, Windows uses the Kerberos Version 5 (V5) protocol for authentication. If you use a smart card, the operating system uses Kerberos V5 authentication with X.509 V3 certificates. On Microsoft Entra ID joined devices, a smart card can be used with Microsoft Entra ID certificate-based authentication. Smart cards can't be used with local accounts.
 
-[Windows Hello for Business](/windows/security/identity-protection/hello-for-business/) and FIDO2 security keys are modern, two-factor authentication methods for Windows. Customers using virtual smart cards are encouraged to move to Windows Hello for Business or FIDO2. For new Windows installations, we recommend Windows Hello for Business or FIDO2 security keys.
+Windows Hello for Business and FIDO2 security keys are modern, two-factor authentication methods for Windows. Customers using virtual smart cards are encouraged to move to Windows Hello for Business or FIDO2. For new Windows installations, we recommend Windows Hello for Business or FIDO2 security keys.
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 

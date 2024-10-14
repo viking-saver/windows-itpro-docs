@@ -28,7 +28,7 @@ Devices running previous versions of Windows 11 will have to be reset with a cle
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
-- [Smart App Control](/windows/apps/develop/smart-app-control/overview)
+- [Smart App Control][LINK-1]
 
 ## App Control for Business
 
@@ -42,8 +42,8 @@ Customers can use some built-in options for App Control for Business or upload t
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
-- [Application Control for Windows](/windows/security/application-security/application-control/windows-defender-application-control/wdac)
-- [Automatically allow apps deployed by a managed installer with App Control for Business](/windows/security/application-security/application-control/app-control-for-business/design/configure-authorized-apps-deployed-with-a-managed-installer)
+- [Application Control for Windows][LINK-2]
+- [Automatically allow apps deployed by a managed installer with App Control for Business][LINK-3]
 
 ## User Account Control
 
@@ -78,3 +78,9 @@ It is a Microsoft fully managed end-to-end signing solution that simplifies the 
 
 - [What is Trusted Signing](/azure/trusted-signing/overview)
 - [Public Preview Blog](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/trusted-signing-is-in-public-preview/ba-p/4103457)
+
+<!--links-->
+
+[LINK-1]: /windows/apps/develop/smart-app-control/overview
+[LINK-2]: /windows/security/application-security/application-control/windows-defender-application-control/wdac
+[LINK-3]: /windows/security/application-security/application-control/app-control-for-business/design/configure-authorized-apps-deployed-with-a-managed-installer
