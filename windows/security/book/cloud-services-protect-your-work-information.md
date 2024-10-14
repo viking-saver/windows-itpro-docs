@@ -15,7 +15,7 @@ Microsoft Entra ID is a comprehensive cloud-based identity management solution t
 
 Organizations can deploy Microsoft Entra ID joined devices to enable access to both cloud and on-premises apps and resources. Access to resources can be controlled based on the Microsoft Entra ID account and Conditional Access policies applied to the device. For the most seamless and delightful end to end single sign-on (SSO) experience, we recommend users configure Windows Hello for Business during the out of box experience for easy passwordless sign-in to Entra ID .
 
-For people wanting to connect to Microsoft Entra on their personal devices, they can do so by using *workplace join* or *add account*.  These two actions registers that user's personal device with Microsoft Entra ID, allowing IT admins to support users in bring your own device (BYOD) scenarios. Credentials are authenticated and bound to the joined device, and cannot be copied to another device without explicit reverification.
+For people wanting to connect to Microsoft Entra on their personal devices, they can do so by using *workplace join* or *add account*.  These two actions registers that user's personal device with Microsoft Entra ID, allowing IT admins to support users in bring your own device (BYOD) scenarios. Credentials are authenticated and bound to the joined device, and can't be copied to another device without explicit reverification.
 
 To provide more security and control for IT and a seamless experience for end users, Microsoft Entra ID works with apps and services, including on-premises software and thousands of software-as-a-service (SaaS) applications. Microsoft Entra ID protections include single sign-on, multifactor authentication, conditional access policies, identity protection, identity governance, and privileged identity management.
 
@@ -75,7 +75,7 @@ Available to any organization with a Microsoft Entra ID Premium<sup>[\[7\]](conc
 
 ## Microsoft Azure Attestation Service
 
-Remote attestation helps ensure that devices are compliant with security policies and are operating in a trusted state before they are allowed to access resources. Microsoft Intune<sup>[\[7\]](conclusion.md#footnote7)</sup> integrates with [Microsoft Azure Attestation Service](/azure/attestation/overview) to review Windows device health comprehensively and connect this information with Microsoft Entra ID<sup>[\[7\]](conclusion.md#footnote7)</sup> Conditional Access.
+Remote attestation helps ensure that devices are compliant with security policies and are operating in a trusted state before they're allowed to access resources. Microsoft Intune<sup>[\[7\]](conclusion.md#footnote7)</sup> integrates with [Microsoft Azure Attestation Service](/azure/attestation/overview) to review Windows device health comprehensively and connect this information with Microsoft Entra ID<sup>[\[7\]](conclusion.md#footnote7)</sup> Conditional Access.
 
 **Attestation policies are configured in the Microsoft Azure Attestation Service which can then:**
 
@@ -144,7 +144,7 @@ Windows 11 enables IT professionals to move to the cloud while consistently enfo
 
 When a device enrolls into device management, the administrator expects it to receive the appropriate policies to secure and manage the PC. However, in some cases, malicious actors can remove enrollment certificates and use them on unmanaged PCs, making them appear enrolled but without the intended security and management policies.
 
-With Windows enrollment attestation, Microsoft Entra and Microsoft Intune certificates are bound to a device using the Trusted Platform Module (TPM). This ensures that the certificates cannot be transferred from one device to another, maintaining the integrity of the enrollment process.
+With Windows enrollment attestation, Microsoft Entra and Microsoft Intune certificates are bound to a device using the Trusted Platform Module (TPM). This ensures that the certificates can't be transferred from one device to another, maintaining the integrity of the enrollment process.
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
@@ -180,7 +180,7 @@ Windows 11 can be configured with Microsoft's security baseline, designed for cl
 
 The security baseline includes policies for:
 
-- Microsoft inbox security technologies such as BitLocker, Microsoft Defender SmartScreen, virtualization-based security, Exploit Guard, Microsoft Defender Antivirus, and Windows Firewall
+- Microsoft inbox security technologies such as BitLocker, Microsoft Defender SmartScreen, Virtualization-based security, Exploit Guard, Microsoft Defender Antivirus, and Windows Firewall
 - Restricting remote access to devices
 - Setting credential requirements for passwords and PINs
 - Restricting the use of legacy technology
@@ -200,7 +200,7 @@ Windows LAPS can be configured via group policy or with a device management solu
 
 [!INCLUDE [new-24h2](includes/new-24h2.md)]
 
-Several enhancements have been made to improve manageability and security. Administrators can now configure LAPS to automatically create managed local accounts, integrating with existing policies to enhance security and efficiency. Policy settings have been updated to generate more readable passwords by ignoring certain characters and to support the generation of readable passphrases, with options to choose from three-word lists and control passphrase length. Additionally, LAPS can detect when a computer rolls back to a previous image, ensuring password consistency between the computer and Active Directory.
+Several enhancements have been made to improve manageability and security. Administrators can now configure LAPS to automatically create managed local accounts, integrating with existing policies to enhance security and efficiency. Policy settings have been updated to generate more readable passwords by ignoring certain characters and to support the generation of readable passphrases, with options to choose from three separate word source list and control passphrase length. Additionally, LAPS can detect when a computer rolls back to a previous image, ensuring password consistency between the computer and Active Directory.
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
@@ -210,13 +210,13 @@ Several enhancements have been made to improve manageability and security. Admin
 
 Traditionally, IT professionals spend significant time building and customizing images that will later be deployed to devices. If you're purchasing new devices or managing device refresh cycles, you can use Windows Autopilot to set up and preconfigure new devices, getting them ready for productive use. Autopilot helps you ensure your devices are delivered locked down and compliant with corporate security policies. The solution can also be used to reset, repurpose, and recover devices with zero touch by your IT team and no infrastructure to manage, enhancing efficiency with a process that's both easy and simple.
 
-With Windows Autopilot, there's no need to reimage or manually set-up devices before giving them to the users. Your hardware vendor can ship them, ready to go, directly to the users. From a user perspective, they turn their device on, go online, and Windows Autopilot delivers apps and settings.
+With Windows Autopilot, there's no need to reimage or manually set-up devices before giving them to the users. Your hardware vendor can ship them, ready to go, directly to the users. From a user perspective, they turn on their device, go online, and Windows Autopilot delivers apps and settings.
 
 Windows Autopilot enables you to:
 
 - Automatically join devices to Microsoft Entra ID or Active Directory via Microsoft Entra hybrid join
-- Auto-enroll devices into a device management solution like Microsoft Intune<sup>[\[7\]](conclusion.md#footnote7)</sup> (requires an Microsoft Entra ID Premium subscription for configuration)
-- Create and auto-assignment of devices to configuration groups based on a device's profile
+- Autoenroll devices into a device management solution like Microsoft Intune<sup>[\[7\]](conclusion.md#footnote7)</sup> (requires a Microsoft Entra ID Premium subscription for configuration)
+- Create and autoassignment of devices to configuration groups based on a device's profile
 - Customize of the out-of-box experience (OOBE) content specific to your organization
 
 Existing devices can also be quickly prepared for a new user with [Windows Autopilot Reset](/mem/autopilot/windows-autopilot-reset). The reset capability is also useful in break/fix scenarios to quickly bring a device back to a business-ready state.
@@ -280,7 +280,7 @@ Universal Print supports Zero Trust security by requiring that:
 - Each printer registered with Universal Print is created as a device object in the customer's Microsoft Entra ID tenant and issued its own device certificate. Every connection from the printer is authenticated using this certificate. The printer can access only its own data and no other device's data
 - Applications can connect to Universal Print using either user, device, or application authentication. To ensure data security, it is highly recommended that only cloud applications use application authentication
 - Each acting application must register with Microsoft Entra ID and specify the set of permission scopes it requires. Microsoft's own acting applications - for example, the Universal Print connector - are registered with the Microsoft Entra ID service. Customer administrators need to provide their consent to the required permission scopes as part of onboarding the application to their tenant
-- Each authentication with Microsoft Entra ID from an acting application cannot extend the permission scope as defined by the acting client app. This prevents the app from requesting additional permissions if the app is breached
+- Each authentication with Microsoft Entra ID from an acting application can't extend the permission scope as defined by the acting client app. This prevents the app from requesting additional permissions if the app is breached
 
 Additionally, Windows 11 includes MDM support to simplify printer setup for users. With initial support from Microsoft Intune<sup>[\[7\]](conclusion.md#footnote7)</sup>, admins can now configure policies to provision specific printers onto the user's Windows devices.
 
