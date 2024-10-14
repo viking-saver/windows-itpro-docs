@@ -6,4 +6,4 @@ ms.topic: include
 ms.service: windows-client
 ---
 
-:::image type="icon" source="../images/new-button.svg" border="false"::: **New in Windows 11, version 24H2:**
+:::image type="icon" source="../images/new-button.svg" border="false"::: **New in Windows 11, version 24H2**
