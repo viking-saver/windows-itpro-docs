@@ -70,9 +70,9 @@ The Windows kernel is the most privileged software and is therefore a compelling
 
 - [Microsoft recommended driver block rules](/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-driver-block-rules)
 
-## Trusted signing
+## :::image type="icon" source="images/new-button-title.svg" border="false"::: Trusted signing
 
-Trsuted Signing is a Microsoft fully managed, end-to-end signing solution that simplifies the signing process and empowers third-party developers to easily build and distribute applications.
+Trusted Signing is a Microsoft fully managed, end-to-end signing solution that simplifies the signing process and empowers third-party developers to easily build and distribute applications.
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
