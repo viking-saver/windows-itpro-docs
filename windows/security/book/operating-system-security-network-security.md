@@ -114,7 +114,11 @@ The Windows VPN platform is tuned and hardened for cloud-based VPN providers lik
 
 Server Message Block (SMB) and file services are the most common Windows workloads in the commercial and public sector ecosystem. Users and applications rely on SMB to access the files that run organizations of all sizes.
 
-Windows 11 introduced significant security updates to meet today's threats, including AES-256 SMB encryption, accelerated SMB signing, Remote Directory Memory Access (RDMA) network encryption, and SMB over QUIC for untrusted networks. Windows 11, version 24H2, adds far more security options, including required SMB signing by default, NTLM blocking, authentication rate limiting, and many others. Windows 11 24H2 is the state of the art for SMB security for organizations worldwide.
+Windows 11 introduced significant security updates to meet today's threats, including AES-256 SMB encryption, accelerated SMB signing, Remote Directory Memory Access (RDMA) network encryption, and SMB over QUIC for untrusted networks.
+
+[!INCLUDE [new-24h2](includes/new-24h2.md)]
+
+New security options include mandatory SMB signing by default, NTLM blocking, authentication rate limiting, and several other enhancements.
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
