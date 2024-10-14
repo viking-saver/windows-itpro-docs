@@ -13,13 +13,19 @@ When people travel with their PCs, their confidential information travels with t
 
 ## BitLocker
 
-BitLocker is a data protection feature that integrates with the operating system and addresses the threats of data theft or exposure from lost, stolen, or inappropriately decommissioned devices. BitLocker uses the AES algorithm in XTS or CBC mode of operation with 128-bit or 256-bit key length to encrypt data on the volume. BitLocker can save its recovery password to a Microsoft account for retrieval if needed. This happens automatically during the initial setup when BitLocker is enabled in OOE (Out of Box Experience) on modern devices and the user signs into their Microsoft account for the first time. Additionally, users have the option to export the recovery password if they have manually enabled BitLocker. Cloud storage on Microsoft OneDrive or Azure<sup>[\[7\]](conclusion.md#footnote7)</sup> can be used to save recovery key content. BitLocker can be managed by a device management solution like Microsoft Intune<sup>[\[7\]](conclusion.md#footnote7)</sup> using a configuration service provider (CSP). BitLocker provides encryption for the OS, fixed data, and removable data drives (BitLocker To Go), using technologies like Hardware Security Test Interface (HSTI), Modern Standby, UEFI Secure Boot, and TPM.
+BitLocker is a data protection feature that integrates with the operating system to address the threats of data theft or exposure from lost, stolen, or improperly decommissioned devices. It uses the AES algorithm in XTS or CBC mode with 128-bit or 256-bit key lengths to encrypt data on the volume. During the initial setup, when BitLocker is enabled during OOBE and the user signs into their Microsoft account for the first time, BitLocker automatically saves its recovery password to the Microsoft account for retrieval if needed. Users also have the option to export the recovery password if they manually enable BitLocker. Recovery key content can be saved to cloud storage on OneDrive or Azure<sup>[\[7\]](conclusion.md#footnote7)</sup>.
+
+For organizations, BitLocker can be managed via group policy or with a device management solution like Microsoft Intune<sup>[\[7\]](conclusion.md#footnote7)</sup>. It provides encryption for the OS, fixed data, and removable data drives (BitLocker To Go), using technologies such as Hardware Security Test Interface (HSTI), Modern Standby, UEFI Secure Boot, and TPM.
+
+[!INCLUDE [new-24h2](includes/new-24h2.md)]
+
+The BitLocker preboot recovery screen includes the Microsoft account (MSA) hint, if the recovery password is saved to an MSA. This hint helps the user to understand which MSA account was used to store recovery key information.
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [BitLocker overview](../operating-system-security/data-protection/bitlocker/index.md)
 
-## BitLocker To Go
+### BitLocker To Go
 
 BitLocker To Go refers to BitLocker on removable data drives. BitLocker To Go includes the encryption of USB flash drives, SD cards, and external hard disk drives. Drives can be unlocked using a password, certificate on a smart card, or recovery password.
 
