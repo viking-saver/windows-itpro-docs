@@ -68,6 +68,8 @@ The initial release of PDE in Windows 11, version 22H2, introduced a set of publ
 
 PDE is further enhanced with *PDE for known folders*, which extends protection to the Windows folders: Documents, Pictures, and Desktop.
 
+:::image type="content" source="images/pde.png" alt-text="Screenshot of files encrypted with PDE showing a padlock." border="false":::
+
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Personal Data Encryption (PDE)](../operating-system-security/data-protection/personal-data-encryption/index.md)
