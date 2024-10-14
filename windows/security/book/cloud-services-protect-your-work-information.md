@@ -196,6 +196,10 @@ The security baseline has been enhanced with over 70 new settings, enabling loca
 
 Local Administrator Password solution was a key consideration for many customers when deciding to make the transition from on-premises to cloud-managed devices using Microsoft Intune<sup>[\[7\]](conclusion.md#footnote7)</sup>. With LAPS, organizations can automatically manage and back up the password of a local administrator account on Microsoft Entra ID joined or Microsoft Entra hybrid joined devices.
 
+[!INCLUDE [new-24h2](includes/new-24h2.md)]
+
+Several enhancements have been made to improve manageability and security. Administrators can now configure LAPS to automatically create managed local accounts, integrating with existing policies to enhance security and efficiency. Policy settings have been updated to generate more readable passwords by ignoring certain characters and to support the generation of readable passphrases, with options to choose from three-word lists and control passphrase length. Additionally, LAPS can detect when a computer rolls back to a previous image, ensuring password consistency between the computer and Active Directory.
+
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Windows LAPS overview](/windows-server/identity/laps/laps-overview)
