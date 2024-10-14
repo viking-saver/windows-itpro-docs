@@ -35,6 +35,10 @@ The Windows Hello PIN, which can only be entered by someone with physical access
 
 The TPM protects against threats including PIN brute-force attacks on lost or stolen devices. After too many incorrect guesses, the device locks. IT admins can set security policies for PINs, such as complexity, length, and expiration requirements.
 
+[!INCLUDE [new-24h2](includes/new-24h2.md)]
+
+If you're using a device without built-in biometrics, Windows Hello has been further strengthened by default to use Virtualization-based Security (VBS) to isolate credentials. This added layer of protection safeguards against admin-level attacks. Even if you sign in with a PIN, your credentials remain secure thanks to VBS.
+
 ### Windows Hello biometric
 
 Windows Hello biometric sign-in enhances both security and productivity with a quick and convenient sign-in experience. There's no need to enter your PIN; simply use your biometric data for an easy and delightful sign-in.

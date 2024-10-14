@@ -33,6 +33,7 @@ Enhanced:
 - [Personal data encryption (PDE)](operating-system-security-encryption-and-data-protection.md#personal-data-encryption-pde)
 - [Server Message Block file services](operating-system-security-network-security.md#server-message-block-file-services)
 - [Universal Print](cloud-services-protect-your-work-information.md#universal-print)
+- [Windows Hello PIN](identity-protection-passwordless-sign-in.md#windows-hello-pin)
 - [Windows Local Administrator Password Solution (LAPS)](cloud-services-protect-your-work-information.md#windows-local-administrator-password-solution-laps)
 - [Windows Subsystem for Linux (WSL)](application-security-application-isolation.md#windows-subsystem-for-linux-wsl)
 
