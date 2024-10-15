@@ -52,7 +52,7 @@ Application code includes a program processing stack that hackers seek to corrup
 
 [!INCLUDE [new-24h2](includes/new-24h2.md)]
 
-**Hypervisor-enforced paging translation (HVPT)** is a security feature designed to safeguard linear address translations from tampering. It ensures the integrity of sensitive system structures, protecting them from write-what-where attacks.
+Hypervisor-Enforced Paging Translation (HVPT) - formerly HLAT - is a security feature designed to safeguard linear address translations from tampering. It ensures the integrity of sensitive system structures, protecting them from write-what-where attacks.
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 

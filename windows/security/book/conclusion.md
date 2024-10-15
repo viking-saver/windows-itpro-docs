@@ -15,6 +15,7 @@ We will continue to bring you new features to protect against evolving threats, 
 
 New:
 
+- [Administrator protection](operating-system-security-system-security.md#-administrator-protection)
 - [Config Refresh](operating-system-security-system-security.md#-config-refresh)
 - [Rust in Windows](operating-system-security-system-security.md#-rust-in-windows)
 - [Trusted signing](application-security-application-and-driver-control.md#-trusted-signing)
@@ -25,13 +26,13 @@ New:
 
 Enhanced:
 
-- [App Control for Business](application-security-application-and-driver-control.md#app-control-for-business)
 - [BitLocker](operating-system-security-encryption-and-data-protection.md#bitlocker)
 - [Credential Guard](identity-protection-advanced-credential-protection.md#credential-guard)
 - [Device Encryption](operating-system-security-encryption-and-data-protection.md#device-encryption)
 - [Local Security Authority (LSA) protection](identity-protection-advanced-credential-protection.md#local-security-authority-lsa-protection)
 - [Passkeys](identity-protection-passwordless-sign-in.md#passkeys)
 - [Personal data encryption (PDE)](operating-system-security-encryption-and-data-protection.md#personal-data-encryption-pde)
+- [Secured kernel](hardware-security-silicon-assisted-security.md#secured-kernel)
 - [Server Message Block file services](operating-system-security-network-security.md#server-message-block-file-services)
 - [Windows Hello PIN](identity-protection-passwordless-sign-in.md#windows-hello-pin)
 - [Windows Firewall](operating-system-security-network-security.md#windows-firewall)
