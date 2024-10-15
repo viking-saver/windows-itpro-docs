@@ -39,8 +39,8 @@ Every Windows device has a built-in local administrator account that must be sec
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
-- [Microsoft Entra ID documentation](/entra)
-- [Microsoft Entra plans and pricing](https://www.microsoft.com/security/business/microsoft-entra-pricing?rtc=1)
+- [Microsoft Entra ID documentation][LINK-1]
+- [Microsoft Entra plans and pricing][LINK-2]
 
 ### Microsoft Entra Private Access
 
@@ -52,7 +52,7 @@ Microsoft Entra Internet Access provides an identity-centric Secure Web Gateway 
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
-- [Microsoft Entra Internet Access](/entra/global-secure-access/concept-internet-access)
+- [Microsoft Entra Internet Access][LINK-3]
 
 > [!NOTE]
 > Both Microsoft Entra Private Access and Microsoft Entra Internet Access requires Microsoft Entra ID and Microsoft Entra Joined devices and for deployment.
@@ -61,9 +61,9 @@ Both Microsoft Entra Private Access and Microsoft Entra Internet Access use the 
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
-- [Microsoft Entra Private Access](/entra/global-secure-access/concept-private-access)
-- [Microsoft's Security Service Edge Solution Deployment Guide for Microsoft Entra Internet Access Proof of Concept](/entra/architecture/sse-deployment-guide-internet-access)
-- [Global Secure Access client for Windows](/entra/global-secure-access/how-to-install-windows-client)
+- [Microsoft Entra Private Access][LINK-4]
+- [Microsoft's Security Service Edge Solution Deployment Guide for Microsoft Entra Internet Access Proof of Concept][LINK-5]
+- [Global Secure Access client for Windows][LINK-6]
 
 ### Enterprise State Roaming
 
@@ -71,11 +71,11 @@ Available to any organization with a Microsoft Entra ID Premium<sup>[\[7\]](conc
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
-- [Enterprise State Roaming in Microsoft Entra ID](/entra/identity/devices/enterprise-state-roaming-enable)
+- [Enterprise State Roaming in Microsoft Entra ID][LINK-7]
 
 ## Microsoft Azure Attestation Service
 
-Remote attestation helps ensure that devices are compliant with security policies and are operating in a trusted state before they're allowed to access resources. Microsoft Intune<sup>[\[7\]](conclusion.md#footnote7)</sup> integrates with [Microsoft Azure Attestation Service](/azure/attestation/overview) to review Windows device health comprehensively and connect this information with Microsoft Entra ID<sup>[\[7\]](conclusion.md#footnote7)</sup> Conditional Access.
+Remote attestation helps ensure that devices are compliant with security policies and are operating in a trusted state before they're allowed to access resources. Microsoft Intune<sup>[\[7\]](conclusion.md#footnote7)</sup> integrates with Microsoft Azure Attestation Service to review Windows device health comprehensively and connect this information with Microsoft Entra ID<sup>[\[7\]](conclusion.md#footnote7)</sup> Conditional Access.
 
 **Attestation policies are configured in the Microsoft Azure Attestation Service which can then:**
 
@@ -87,7 +87,7 @@ Once this verification is complete, the attestation service returns a signed rep
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
-- [Azure Attestation overview](/azure/attestation/overview)
+- [Azure Attestation overview][LINK-8]
 
 ## Cloud-native device management
 
@@ -100,7 +100,7 @@ Windows 11 built-in management features include:
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
-- [Mobile device management overview](/windows/client-management/mdm-overview)
+- [Mobile device management overview][LINK-9]
 
 ### Remote wipe
 
@@ -114,7 +114,7 @@ Windows 11 supports the Remote Wipe configuration service provider (CSP) so that
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
-- [Remote wipe CSP](/windows/client-management/mdm/remotewipe-csp)
+- [Remote wipe CSP][LINK-10]
 
 ## Microsoft security baselines
 
@@ -124,7 +124,7 @@ A security baseline is a group of Microsoft-recommended configuration settings t
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
-- [Security baselines](/windows/security/operating-system-security/device-management/windows-security-configuration-framework/windows-security-baselines)
+- [Security baselines][LINK-11]
 
 ## Microsoft Intune
 
@@ -138,7 +138,7 @@ Windows 11 enables IT professionals to move to the cloud while consistently enfo
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
-- [What is Microsoft Intune](/mem/intune/fundamentals/what-is-intune)
+- [What is Microsoft Intune][LINK-12]
 
 ### Windows enrollment attestation
 
@@ -148,7 +148,7 @@ With Windows enrollment attestation, Microsoft Entra and Microsoft Intune certif
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
-- [Windows enrollment attestation](/mem/intune/enrollment/windows-enrollment-attestation)
+- [Windows enrollment attestation][LINK-13]
 
 ### Endpoint Privilege Management (EPM)
 
@@ -156,7 +156,7 @@ Intune Endpoint Privilege Management supports organizations' Zero Trust journeys
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
-- [Endpoint Privilege Management](/mem/intune/protect/epm-overview?formCode=MG0AV3)
+- [Endpoint Privilege Management][LINK-14]
 
 ### Mobile Application Management (MAM)
 
@@ -172,7 +172,7 @@ With Intune, organizations can also extend MAM App Config, MAM App Protection, a
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
-- [Data protection for Windows MAM](/mem/intune/apps/protect-mam-windows?formCode=MG0AV3)
+- [Data protection for Windows MAM][LINK-15]
 
 ### Security baseline for cloud-based device management solutions
 
@@ -189,8 +189,8 @@ The security baseline has been enhanced with over 70 new settings, enabling loca
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
-- [Intune security baseline overview](/mem/intune/protect/security-baselines)
-- [List of the settings in the Windows security baseline in Intune](/mem/intune/protect/security-baseline-settings-mdm-all)
+- [Intune security baseline overview][LINK-16]
+- [List of the settings in the Windows security baseline in Intune][LINK-17]
 
 ## Windows Local Administrator Password Solution (LAPS)
 
@@ -204,7 +204,7 @@ Several enhancements have been made to improve manageability and security. Admin
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
-- [Windows LAPS overview](/windows-server/identity/laps/laps-overview)
+- [Windows LAPS overview][LINK-18]
 
 ## Windows Autopilot
 
@@ -219,11 +219,12 @@ Windows Autopilot enables you to:
 - Create and autoassignment of devices to configuration groups based on a device's profile
 - Customize of the out-of-box experience (OOBE) content specific to your organization
 
-Existing devices can also be quickly prepared for a new user with [Windows Autopilot Reset](/mem/autopilot/windows-autopilot-reset). The reset capability is also useful in break/fix scenarios to quickly bring a device back to a business-ready state.
+Existing devices can also be quickly prepared for a new user with Windows Autopilot Reset. The reset capability is also useful in break/fix scenarios to quickly bring a device back to a business-ready state.
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
-- [Windows Autopilot](https://aka.ms/WindowsAutopilot)
+- [Windows Autopilot][LINK-19]
+- [Windows Autopilot Reset][LINK-20]
 
 ## Windows Update for Business
 
@@ -235,18 +236,20 @@ This approach not only provides control over the update process but also ensures
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
-- [Windows Update for Business documentation](/windows/deployment/update/waas-manage-updates-wufb)
+- [Windows Update for Business documentation][LINK-21]
 
 ## Windows Autopatch
 
 Cybercriminals commonly exploit obsolete or unpatched software to infiltrate networks. It's essential to maintain current updates to seal security gaps. Windows Autopatch is a cloud service that automates Windows, Microsoft 365 Apps for enterprise, Microsoft Edge, and Microsoft Teams updates to improve security and productivity across your organization. Autopatch helps you minimize the involvement of your scarce IT resources in the planning and deployment of updates so your IT Admins can focus on other activities and tasks.
 
-There's a lot more to learn about Windows Autopatch: this [Forrester Consulting Total Economic Impact&trade; Study](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RW10vlw) commissioned by Microsoft, features insights from customers who deployed Windows Autopatch and its impact on their organizations. You can also find out more information about new Autopatch features and the future of the service in the regularly published [Windows IT Pro Blog](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/bg-p/Windows-ITPro-blog/label-name/Windows%20Autopatch) and [Windowes Autopatch community](https://techcommunity.microsoft.com/t5/windows-autopatch/bd-p/Windows-Autopatch).
+There's a lot more to learn about Windows Autopatch: this [Forrester Consulting Total Economic Impact&trade; Study][LINK-22] commissioned by Microsoft, features insights from customers who deployed Windows Autopatch and its impact on their organizations. You can also find out more information about new Autopatch features and the future of the service in the regularly published Windows IT Pro Blog and Windows Autopatch community.
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Windows Autopatch documentation](/windows/deployment/windows-autopatch/)
 - [Windows updates API overview](/graph/windowsupdates-concept-overview)
+- [Windows IT Pro Blog](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/bg-p/Windows-ITPro-blog/label-name/Windows%20Autopatch)
+- [Windowes Autopatch community](https://techcommunity.microsoft.com/t5/windows-autopatch/bd-p/Windows-Autopatch).
 
 ## OneDrive for work or school
 
@@ -303,3 +306,28 @@ For customers who want to stay on Print Servers, we recommend using the Microsof
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Print support app design guide](/windows-hardware/drivers/devapps/print-support-app-design-guide)
+
+<!--links-->
+
+[LINK-1]: /entra
+[LINK-2]: https://www.microsoft.com/security/business/microsoft-entra-pricing
+[LINK-3]: /entra/global-secure-access/concept-internet-acces]
+[LINK-4]: /entra/global-secure-access/concept-private-access
+[LINK-5]: /entra/architecture/sse-deployment-guide-internet-access
+[LINK-6]: /entra/global-secure-access/how-to-install-windows-client
+[LINK-7]: /entra/identity/devices/enterprise-state-roaming-enable
+[LINK-8]: /azure/attestation/overview
+[LINK-9]: /windows/client-management/mdm-overview
+[LINK-10]: /windows/client-management/mdm/remotewipe-csp
+[LINK-11]: /windows/security/operating-system-security/device-management/windows-security-configuration-framework/windows-security-baselines
+[LINK-12]: /mem/intune/fundamentals/what-is-intune
+[LINK-13]: /mem/intune/enrollment/windows-enrollment-attestation
+[LINK-14]: /mem/intune/protect/epm-overview?formCode=MG0AV3
+[LINK-15]: /mem/intune/apps/protect-mam-windows?formCode=MG0AV3
+[LINK-16]: /mem/intune/protect/security-baselines
+[LINK-17]: /mem/intune/protect/security-baseline-settings-mdm-all
+[LINK-18]: /windows-server/identity/laps/laps-overview
+[LINK-19]: /microsoft-365/windows/windows-autopilot
+[LINK-20]: /mem/autopilot/windows-autopilot-reset
+[LINK-21]: /windows/deployment/update/waas-manage-updates-wufb
+[LINK-22]: https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RW10vlw

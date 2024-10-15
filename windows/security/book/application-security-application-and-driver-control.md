@@ -54,9 +54,9 @@ Administrator protection is a new security feature in Windows 11 designed to saf
 When administrator protection is enabled, if an app needs special permissions like administrative rights, the user is asked for approval. When an approval is needed, Windows Hello provides a secure and easy way to approve or deny these requests.
 
 > [!NOTE]
-> Administrator protection is currently in preview, and it will be released to Windows 11, version 24H2 devices using [servicing technology](https://support.microsoft.com/topic/b0aa0a27-ea9a-4365-9224-cb155e517f12).
+> Administrator protection is currently in preview, and it will be released to Windows 11, version 24H2 devices using [servicing technology][LINK-5].
 >
-> For devices running previous versions of Windows, refer to [User Account Control (UAC)](/windows/security/identity-protection/user-account-control/how-user-account-control-works).
+> For devices running previous versions of Windows, refer to [User Account Control (UAC)][LINK-6].
 
 ## Microsoft vulnerable driver blocklist
 
@@ -64,7 +64,7 @@ The Windows kernel is the most privileged software and is therefore a compelling
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
-- [Microsoft recommended driver block rules](/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-driver-block-rules)
+- [Microsoft recommended driver block rules][LINK-4]
 
 ## :::image type="icon" source="images/new-button-title.svg" border="false"::: Trusted signing
 
@@ -79,3 +79,6 @@ Trusted Signing is a Microsoft fully managed, end-to-end signing solution that s
 [LINK-1]: /windows/apps/develop/smart-app-control/overview
 [LINK-2]: /windows/security/application-security/application-control/windows-defender-application-control/wdac
 [LINK-3]: /windows/security/application-security/application-control/app-control-for-business/design/configure-authorized-apps-deployed-with-a-managed-installer
+[LINK-4]: /windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-driver-block-rules
+[LINK-5]: https://support.microsoft.com/topic/b0aa0a27-ea9a-4365-9224-cb155e517f12
+[LINK-6]: /windows/security/identity-protection/user-account-control/how-user-account-control-works
