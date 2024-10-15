@@ -37,7 +37,7 @@ The TPM protects against threats including PIN brute-force attacks on lost or st
 
 [!INCLUDE [new-24h2](includes/new-24h2.md)]
 
-If you're using a device without built-in biometrics, Windows Hello has been further strengthened by default to use Virtualization-based Security (VBS) to isolate credentials. This added layer of protection safeguards against admin-level attacks. Even if you sign in with a PIN, your credentials remain secure thanks to VBS.
+If your device doesn't have built-in biometrics, Windows Hello has been enhanced to use Virtualization-based Security (VBS) by default to isolate credentials. This added layer of protection helps guard against admin-level attacks. Even when you sign in with a PIN, your credentials are stored in a secure container, ensuring protection on devices with or without built-in biometric sensors.
 
 ### Windows Hello biometric
 
