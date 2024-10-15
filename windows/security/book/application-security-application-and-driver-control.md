@@ -47,13 +47,16 @@ Customers can use some built-in options for App Control for Business or upload t
 
 ## :::image type="icon" source="images/soon-button-title.svg" border="false"::: Administrator protection
 
-Most people run as full admins on their devices, which means apps and services have the same access to the kernel and other critical services as users. And the problem is that these apps and services can access critical resources without the user knowing. This is why Windows is being updated to require just in time administrative access to the kernel and other critical services as needed, not all the time, and certainly not by default. This makes it harder for an app to unexpectedly abuse admin privileges and secretly put malware or malicious code on Windows.
+When users sign in with administrative rights to Windows, they have the power to make significant changes to the system, which can impact its overall security. These rights can be a target for malicious software.
 
-When Administrator protection is enabled, if an app needs special permissions like administrative rights, you'll be asked for approval. When an approval is needed, Windows Hello provides a secure and easy way to approve or deny these requests, giving you, and only you, full control over your device.
+Administrator protection is a new security feature in Windows 11 designed to safeguard these administrative rights. It allows administrators to perform all necessary functions with **just-in-time administrative rights**, while running most tasks without administrative privileges. The goal of administrator protection is to provide a secure and seamless experience, ensuring users operate with the least required privileges. Administrators can switch to a privileged user for tasks that need administrative rights and then return to standard privileges for other tasks.
 
-This helps reduce elevation of privilege (EOP) attacks on Windows where admin privileges are abused. The feature is currently in preview available on Windows Insider channel.
+When administrator protection is enabled, if an app needs special permissions like administrative rights, the user is asked for approval. When an approval is needed, Windows Hello provides a secure and easy way to approve or deny these requests.
 
-Replacement for [User Account Control](/windows/security/identity-protection/user-account-control/how-user-account-control-works).
+> [!NOTE]
+> Administrator protection is currently in preview, and it will be released to Windows 11, version 24H2 devices using [servicing technology](https://support.microsoft.com/topic/b0aa0a27-ea9a-4365-9224-cb155e517f12).
+>
+> For devices on previous Windows version, refer to [User Account Control (UAC)](/windows/security/identity-protection/user-account-control/how-user-account-control-works).
 
 ## Microsoft vulnerable driver blocklist
 
