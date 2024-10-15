@@ -15,7 +15,7 @@ We will continue to innovate with security by design and security by default at 
 
 New:
 
-- [Administrator protection](operating-system-security-system-security.md#-administrator-protection)
+- [Administrator protection](application-security-application-and-driver-control.md#-administrator-protection)
 - [Config Refresh](operating-system-security-system-security.md#-config-refresh)
 - [Rust in Windows](operating-system-security-system-security.md#-rust-in-windows)
 - [Trusted signing](application-security-application-and-driver-control.md#-trusted-signing)
