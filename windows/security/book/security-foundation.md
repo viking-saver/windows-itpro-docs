@@ -9,10 +9,6 @@ ms.date: 09/06/2024
 
 :::image type="content" source="images/security-foundation-cover.png" alt-text="Cover of the security foundation chapter." border="false":::
 
-Microsoft is committed to continuously investing in improving our software development process, building highly secure-by-design software, and addressing security compliance requirements. At Microsoft, we embed security and privacy considerations from the earliest lifecycle phases of all our product design and software development processes. We build in security from the ground up for powerful defense in today's threat environment and have the infrastructure to protect and react quickly to future threats.
-
-Every component of the Windows 11 technology stack, from chip-to-cloud, is purposefully built secure by design. Windows 11 meets the modern threats of today's flexible work environments by delivering hardware-based isolation, end-to-end encryption, and advanced malware protection.
-
-With Windows 11, organizations can improve productivity and gain intuitive new experiences without compromising security.
+Microsoft is committed to continuously investing in improving the development process, building highly secure-by-design software, and addressing security compliance requirements. Security and privacy considerations informed by offensive research are built into each phase of our product design and software development process. Microsoft’s security foundation includes not only our development and certification processes, but also our end-to-end supply chain. The comprehensive Windows 11 security foundation also reflects our deep commitment to principles of security by design and security by default.
 
 :::image type="content" source="images/security-foundation-on.png" alt-text="Diagram containing a list of security features." lightbox="images/security-foundation.png" border="false":::
