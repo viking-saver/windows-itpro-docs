@@ -7,7 +7,7 @@ ms.date: 09/06/2024
 
 # Conclusion
 
-We will continue to bring you new features to protect against evolving threats, simplify management, and securely enable new workstyles. With Windows 11 devices, organizations of all sizes can benefit from the security and performance to thrive anywhere.
+We will continue to innovate with security by design and security by default at the heart of every new Windows 11 PC and feature. This commitment ensures that our products not only meet, but exceed, the security expectations of our customers by providing robust protection against modern cyber threats while maintaining ease-of-use and performance. By integrating advanced security measures from the ground up, we aim to create a safer digital environment for everyone.
 
 :::image type="content" source="images/chip-to-cloud.png" alt-text="Diagram of chip-to-cloud containing a list of security features." lightbox="images/chip-to-cloud.png" border="false":::
 
