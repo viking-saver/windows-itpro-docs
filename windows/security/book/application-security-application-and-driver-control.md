@@ -56,7 +56,7 @@ When administrator protection is enabled, if an app needs special permissions li
 > [!NOTE]
 > Administrator protection is currently in preview, and it will be released to Windows 11, version 24H2 devices using [servicing technology](https://support.microsoft.com/topic/b0aa0a27-ea9a-4365-9224-cb155e517f12).
 >
-> For devices on previous Windows version, refer to [User Account Control (UAC)](/windows/security/identity-protection/user-account-control/how-user-account-control-works).
+> For devices running previous versions of Windows, refer to [User Account Control (UAC)](/windows/security/identity-protection/user-account-control/how-user-account-control-works).
 
 ## Microsoft vulnerable driver blocklist
 
