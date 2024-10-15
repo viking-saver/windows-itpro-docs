@@ -311,7 +311,7 @@ For customers who want to stay on Print Servers, we recommend using the Microsof
 
 [LINK-1]: /entra
 [LINK-2]: https://www.microsoft.com/security/business/microsoft-entra-pricing
-[LINK-3]: /entra/global-secure-access/concept-internet-acces]
+[LINK-3]: /entra/global-secure-access/concept-internet-access
 [LINK-4]: /entra/global-secure-access/concept-private-access
 [LINK-5]: /entra/architecture/sse-deployment-guide-internet-access
 [LINK-6]: /entra/global-secure-access/how-to-install-windows-client
@@ -327,7 +327,7 @@ For customers who want to stay on Print Servers, we recommend using the Microsof
 [LINK-16]: /mem/intune/protect/security-baselines
 [LINK-17]: /mem/intune/protect/security-baseline-settings-mdm-all
 [LINK-18]: /windows-server/identity/laps/laps-overview
-[LINK-19]: /microsoft-365/windows/windows-autopilot
+[LINK-19]: /autopilot/overview
 [LINK-20]: /mem/autopilot/windows-autopilot-reset
 [LINK-21]: /windows/deployment/update/waas-manage-updates-wufb
 [LINK-22]: https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RW10vlw
