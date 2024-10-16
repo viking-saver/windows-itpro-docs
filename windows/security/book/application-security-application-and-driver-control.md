@@ -22,9 +22,9 @@ We've been making significant improvements to Smart App Control to increase the 
 
 Additionally, evaluation mode starts automatically enabling devices that the cloud AI model predicts will have a good experience with Smart App Control in the coming months, first starting with users in North America and eventually expanding to other regions.
 
-As a developer, to ensure that your users have a seamless experience with Smart App Control enabled, we ask that you sign your application with a code signing certificate from the Microsoft Trusted Root Program.  Make sure to include all binaries, such as exe, dll, temp installer files, and uninstallers. Trusted signing makes the process of obtaining, maintaining, and signing with a trusted certificate simple and secure. More on that later in this doc.
+As a developer, to ensure that your users have a seamless experience with Smart App Control enabled, we ask that you sign your application with a code signing certificate from the Microsoft Trusted Root Program. Make sure to include all binaries, such as exe, dll, temp installer files, and uninstallers. Trusted signing makes the process of obtaining, maintaining, and signing with a trusted certificate simple and secure. More on that later in this doc.
 
-Devices running previous versions of Windows 11 will have to be reset with a clean installation of Windows 11, version 22H2 or later to take advantage of this feature. Smart App Control will be disabled on devices enrolled in enterprise management. We suggest enterprises running line-of-business applications continue to leverage App Control for Business.
+Devices running previous versions of Windows 11 must be reset with a clean installation of the operating system to take advantage of this feature. Smart App Control is disabled on devices enrolled in enterprise management. We suggest enterprises running line-of-business applications continue to leverage App Control for Business.
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
@@ -36,9 +36,7 @@ Your organization is only as secure as the applications that run on your devices
 
 App Control for Business (previously called *Windows Defender Application Control*) and AppLocker are both included in Windows. App Control for Business is the next-generation app control solution for Windows and provides powerful control over what runs in your environment. Customers who were using AppLocker on previous versions of Windows can continue to use the feature as they consider whether to switch to App Control for Business for stronger protection.
 
-Customers using Microsoft Intune<sup>[\[7\]](conclusion.md#footnote7)</sup> to manage their devices are now able to configure App Control for Business in the admin console, including setting up Intune as a managed installer.
-
-Customers can use some built-in options for App Control for Business or upload their own policy as an XML file for Intune to package and deploy.
+Microsoft Intune<sup>[\[7\]](conclusion.md#footnote7)</sup> can configure App Control for Business in the admin console, including setting up Intune as a managed installer. Intune includes built-in options for App Control for Business and the possibility to upload policies as an XML file for Intune to package and deploy.
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 

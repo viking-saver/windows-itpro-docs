@@ -9984,6 +9984,36 @@
       "source_path": "windows/security/application-security/application-control/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md",
       "redirect_url": "/windows/security/application-security/application-control/introduction-to-virtualization-based-security-and-appcontrol.md",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/application-security/index.md",
+      "redirect_url": "/windows/security/book/application-security.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/hardware-security/index.md",
+      "redirect_url": "/windows/security/book/hardware-security.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/cloud-services/index.md",
+      "redirect_url": "/windows/security/book/cloud-services.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/index.md",
+      "redirect_url": "/windows/security/book/identity-protection.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/index.md",
+      "redirect_url": "/windows/security/book/operating-system-security.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/security-foundations/index.md",
+      "redirect_url": "/windows/security/book/security-foundation.md",
+      "redirect_document_id": false
     }
   ]
 }
