@@ -13,30 +13,17 @@ ms.date: 09/06/2024
 
 Today’s organizations face a world of accelerated change, from marketplace fluctuation and sociopolitical events to the rapid adoption of new AI technologies. However, as organizations and industries innovate, so do increasingly sophisticated cybercriminals. Research shows that employees, including their devices, services, and identities, are at the center of attacks on businesses of all sizes. Some leading threats include identity attacks, ransomware, targeted phishing attempts, and business email compromise. <sup>[\[1\]](conclusion.md#footnote1)</sup>.
 
-To address the ever-growing and changing threat landscape, we announced the [Secure Future Initiative in November 2023]. The SFI endeavors to advance cybersecurity protection across all our company and products. 
+To address the ever-growing and changing threat landscape, we announced the [Secure Future Initiative in November 2023][LINK-1]. The SFI endeavors to advance cybersecurity protection across all our company and products. 
 
-Microsoft is committed to putting security above all else, with products and services that are secure by design and secure by default. We synthesize more than [65 trillion signals daily] to understand digital threats and criminal cyberactivity. <sup>[\[1\]](conclusion.md#footnote1)</sup>. Through the SFI initiative we’ve dedicated the equivalent of 34,000 full-time engineers to the highest priority security tasks.  We continuously apply what we learn from incidents to improve our security and privacy models, security architecture, and technical controls.
-
-All Remove below
-In the past, a corporate network and software-based security were the first lines of defense. With an increasingly distributed and mobile workforce, attention shifted to hardware-based endpoint security. People are now the top target for cybercriminals, with 74% of all breaches due to human error, privilege misuses, stolen credentials, or social engineering. Most attacks are financially motivated, and credential theft, phishing, and exploitation of vulnerabilities are the primary attack vectors. Credential theft is the most prevalent attack vector, accounting for 50% of breaches.
-
-At Microsoft, we work hard to help organizations evolve and stay agile while protecting against modern threats. We help businesses and their users get secure, and stay secure. to understand and protect against digital threats. We have more than 8,500 dedicated security professionals across 77 countries and over 15,000 partners in our security ecosystem striving to increase resilience for our customers<sup>[\[2\]](conclusion.md#footnote2)</sup>.
-
-Businesses worldwide are moving toward [secure-by-design and secure-by-default strategies][LINK-3]. With these models, organizations choose products from manufacturers that consider security as a business requirement, not just a technical feature. With a secure-by-default strategy, businesses can proactively reduce risk and exposure to threats across their organization because products are shipped with security features already built-in and enabled.
-
-To help businesses transform and thrive in a new era, we built Windows 11 to be secure by design and secure by default. Windows 11 devices arrive with more security features enabled out of the box. In contrast, Windows 10 devices came with many safeguards turned off unless enabled by IT or users. The default security provided by Windows 11 elevates protection without needing to configure settings. In addition, Windows 11 devices increase malware resistance without impacting performance<sup>[\[3\]](conclusion.md#footnote3)</sup>. Windows 11 is the most secure Windows ever, built in deep partnership with original equipment manufacturers (OEMs) and silicon manufacturers.
-
-Discover why organizations of all sizes, including 90% of Fortune 500 companies, are taking advantage of the powerful default protection of Windows 11<sup>[\[4\]](conclusion.md#footnote4)</sup>.
-
-remove
-
-## Security priorities and benefits
+Microsoft is committed to putting security above all else, with products and services that are secure by design and secure by default. We synthesize more than [65 trillion signals daily][LINK-2] to understand digital threats and criminal cyberactivity. <sup>[\[1\]](conclusion.md#footnote1)</sup>. Through the SFI initiative we’ve dedicated the equivalent of 34,000 full-time engineers to the highest priority security tasks.  We continuously apply what we learn from incidents to improve our security and privacy models, security architecture, and technical controls.
 
 ### Security by design and security by default
 
-Windows 11 is designed with layers of security enabled by default, so you can focus on your work, not your security settings. **Out-of-the-box features such as credential safeguards, malware shields, and application protection led to a reported 58% drop in security incidents, including a 3.1x reduction in firmware attacks**<sup>[\[5\]](conclusion.md#footnote5)</sup>.
+Working together with a shared focus is key to improving global security, from individuals and organizations to governments and industries. The world is moving toward a [secure by design and secure by default][LINK-3] approach, where technology producers are tasked with incorporating security during the initial design phase, and offering products that deliver protection right out of the box. As part of our commitment to making the world a safer place, we build security into every innovation. Windows 11 is secure by design and secure by default, with layers of defense enabled on day one to enhance your protection without the need to first configure settings. Copilot+ PCs are the fastest, most intelligent Windows devices ever, and they are also the most secure. These groundbreaking AI PCs come with Secured-core PC protection and the latest safeguards like Microsoft Pluton and Windows Enhanced Sign-in Security enabled by default.
 
-### Feature overview
+Support for Windows 10 is ending soon on October 14, 2025. Upgrading or replacing outdated devices before Windows 10 support ends is a critical priority for building a strong security posture. Discover why organizations of all sizes, including 90% of Fortune 500 companies are relying on Windows 11.
+
+### Security priorities and benefits
 
 In Windows 11, hardware and software work together to shrink the attack surface, protect system integrity, and shield valuable data. New and enhanced features are designed for security by default. For example, Win32 apps in isolation<sup>[\[6\]](conclusion.md#footnote6)</sup>, token protection<sup>[\[6\]](conclusion.md#footnote6)</sup>, and Microsoft Intune Endpoint Privilege Management<sup>[\[7\]](conclusion.md#footnote7)</sup> are some of the latest capabilities that help protect your organization and users against attack. Windows Hello and Windows Hello for Business work with hardware-based features like Trusted Platform Module (TPM) 2.0 and biometric scanners for credential protection and easier, secure sign-on. Existing security features like BitLocker encryption are enhanced to optimize both security and performance.
 
@@ -64,4 +51,4 @@ In Windows 11, hardware and software work together to protect sensitive data fro
 
 [LINK-1]: https://www.microsoft.com/en-us/trust-center/security/secure-future-initiative
 [LINK-2]: https://www.microsoft.com/en-us/security/security-insider/microsoft-digital-defense-report-2023
-[LINK-3]: https://www.cisa.gov/securebydesign
+[LINK-3]: https://www.cisa.gov/resources-tools/resources/secure-by-design
