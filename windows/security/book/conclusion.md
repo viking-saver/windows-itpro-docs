@@ -56,8 +56,8 @@ Enhanced:
 
 ||Details|
 |-|-|
-|**<sup><a name="footnote1"></a>1</sup>**|*Microsoft digital defense report, CISO executive summary, October 2023.|
-|**<sup><a name="footnote2"></a>2</sup>**|*Microsoft Digital Defense Report 2022* - Microsoft, 2022.|
+|**<sup><a name="footnote1"></a>1</sup>**|Microsoft digital defense report, CISO executive summary, October 2023.|
+|**<sup><a name="footnote2"></a>2</sup>**|Windows 11 Survey Report. Techaisle, September 2024. Windows 11 results are in comparison with Windows 10 devices.|
 |**<sup><a name="footnote3"></a>3</sup>**| Compared to Windows 10 devices. *Improve your day-to-day experience with Windows 11 Pro laptops* - Principled Technologies, February 2023.|
 |**<sup><a name="footnote4"></a>4</sup>**| Based on Monthly Active Device data. *Earnings Release FY23 Q3* - Microsoft, April 2023.|
 |**<sup><a name="footnote5"></a>5</sup>**| Windows 11 results are in comparison with Windows 10 devices. *Windows 11 Survey Report*, Techaisle, February 2022.|

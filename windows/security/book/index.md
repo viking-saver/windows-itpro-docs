@@ -25,7 +25,11 @@ Support for Windows 10 is ending soon on October 14, 2025. Upgrading or replacin
 
 ### Security priorities and benefits
 
-In Windows 11, hardware and software work together to shrink the attack surface, protect system integrity, and shield valuable data. New and enhanced features are designed for security by default. For example, Win32 apps in isolation<sup>[\[6\]](conclusion.md#footnote6)</sup>, token protection<sup>[\[6\]](conclusion.md#footnote6)</sup>, and Microsoft Intune Endpoint Privilege Management<sup>[\[7\]](conclusion.md#footnote7)</sup> are some of the latest capabilities that help protect your organization and users against attack. Windows Hello and Windows Hello for Business work with hardware-based features like Trusted Platform Module (TPM) 2.0 and biometric scanners for credential protection and easier, secure sign-on. Existing security features like BitLocker encryption are enhanced to optimize both security and performance.
+Windows 11 enables you to focus on your work, not your security settings. Out-of-the-box features such as credential safeguards, malware shields, and application protection led to a reported 62% drop in security incidents, including a 3.0x reduction in firmware attacks. <sup>[\[2\]](conclusion.md#footnote2)</sup>
+
+In Windows 11, hardware and software work together to shrink the attack surface, protect system integrity, and shield valuable data. New and enhanced features are designed for security by default. For example, Win32 apps in isolation<sup>[\[6\]](conclusion.md#footnote6)</sup>, token protection<sup>[\[6\]](conclusion.md#footnote6)</sup>, passkeys and Microsoft Intune Endpoint Privilege Management<sup>[\[7\]](conclusion.md#footnote7)</sup> are some of the latest capabilities that help protect organizations and individual users against attack. Windows Hello and Windows Hello for Business work with hardware-based features like Trusted Platform Module (TPM) 2.0 and biometric scanners and Windows presence sensing to enable easier, secure sign-on and protection of your data and credentials.
+
+Existing security features are also continuously enhanced across Windows 11.  For example, Bitlocker encryption has been optimized for additional security and performance and is available on more devices.
 
 ### Protect users against evolving threats
 
