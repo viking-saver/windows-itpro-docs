@@ -11,7 +11,7 @@ ms.date: 09/06/2024
 
 ## Introduction
 
-Today’s organizations face a world of accelerated change, from marketplace fluctuation and sociopolitical events to the rapid adoption of new AI technologies. However, as organizations and industries innovate, so do increasingly sophisticated cybercriminals. Research shows that employees, including their devices, services, and identities, are at the center of attacks on businesses of all sizes. Some leading threats include identity attacks, ransomware, targeted phishing attempts, and business email compromise. <sup>[\[1\]](conclusion.md#footnote1)</sup>.
+Today’s organizations face a world of accelerated change, from marketplace fluctuation and sociopolitical events to the rapid adoption of new AI technologies. However, as organizations and industries innovate, so do increasingly sophisticated cybercriminals. Research shows that employees, including their devices, services, and identities, are at the center of attacks on businesses of all sizes. Some leading threats include identity attacks, ransomware, targeted phishing attempts, and business email compromise. <sup>[\[1\]](conclusion.md#footnote1)</sup>
 
 To address the ever-growing and changing threat landscape, we announced the [Secure Future Initiative in November 2023][LINK-1]. The SFI endeavors to advance cybersecurity protection across all our company and products. 
 
