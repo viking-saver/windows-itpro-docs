@@ -31,7 +31,9 @@ In Windows 11, hardware and software work together to shrink the attack surface,
 
 Existing security features are also continuously enhanced across Windows 11.  For example, Bitlocker encryption has been optimized for additional security and performance and is available on more devices.
 
-### Protect users against evolving threats
+### Identity protection
+
+Attackers are increasingly targeting employees and their devices, so organizations need stronger security against increasingly sophisticated cyberthreats. Windows 11 provides proactive protection against credential theft. Windows Hello and TPM 2.0 work together to shield identities, and features like passkeys and secure biometric sign-in virtually eliminate the risk of lost or stolen passwords. <sup>[\[3\]](conclusion.md#footnote3)</sup> Enhanced phishing protection also increases safety; in fact, businesses reported 2.9x fewer instances of identity theft with the hardware-backed protection in Windows 11. <sup>[\[2\]](conclusion.md#footnote2)</sup>
 
 With attackers targeting employees and their devices, organizations need stronger security against increasingly sophisticated cyberthreats. Windows 11 provides proactive protection against credential theft. Windows Hello and TPM 2.0 work together to shield identities. Secure biometric sign-in virtually eliminates the risk of lost or stolen passwords. And enhanced phishing protection increases safety. In fact, **businesses reported 2.8x fewer instances of identity theft with the hardware-backed protection in Windows 11**<sup>[\[5\]](conclusion.md#footnote5)</sup>.
 
