@@ -17,7 +17,7 @@ To address the ever-growing and changing threat landscape, we announced the [Sec
 
 Microsoft is committed to putting security above all else, with products and services that are secure by design and secure by default. We synthesize more than [65 trillion signals daily][LINK-2] to understand digital threats and criminal cyberactivity. <sup>[\[1\]](conclusion.md#footnote1)</sup> Through the SFI initiative we’ve dedicated the equivalent of 34,000 full-time engineers to the highest priority security tasks.  We continuously apply what we learn from incidents to improve our security and privacy models, security architecture, and technical controls.
 
-### Security by design and security by default
+### Security by design. Ssecurity by default.
 
 Working together with a shared focus is key to improving global security, from individuals and organizations to governments and industries. The world is moving toward a [secure by design and secure by default][LINK-3] approach, where technology producers are tasked with incorporating security during the initial design phase, and offering products that deliver protection right out of the box. As part of our commitment to making the world a safer place, we build security into every innovation. Windows 11 is secure by design and secure by default, with layers of defense enabled on day one to enhance your protection without the need to first configure settings. Copilot+ PCs are the fastest, most intelligent Windows devices ever, and they are also the most secure. These groundbreaking AI PCs come with Secured-core PC protection and the latest safeguards like Microsoft Pluton and Windows Enhanced Sign-in Security enabled by default.
 
