@@ -13,7 +13,7 @@ Microsoft is committed to supporting product security standards and certificatio
 
 ## Federal Information Processing Standard (FIPS)
 
-The Federal Information Processing Standard (FIPS) Publication 140 is a U.S. government standard that specifies the minimum security requirements for cryptographic modules in IT products. Microsoft is dedicated to adhering to the FIPS 140 standard, consistently validating its cryptographic modules against FIPS 140-2 since the standard's inception. Microsoft products, including Windows 11, Windows 10, Windows Server, and many cloud services, use these cryptographic modules.
+The Federal Information Processing Standard (FIPS) Publication 140 is a U.S. government standard that specifies the minimum security requirements for cryptographic modules in IT products. Microsoft is dedicated to adhering to the requirements in the FIPS 140 standard, consistently validating its cryptographic modules against FIPS 140 since the standard's inception. Microsoft products, including Windows 11, Windows 10, Windows Server, and many cloud services, use these cryptographic modules.
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
