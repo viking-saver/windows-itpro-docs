@@ -59,7 +59,7 @@ Enhanced:
 |**<sup><a name="footnote1"></a>1</sup>**| Microsoft digital defense report, CISO executive summary, October 2023.|
 |**<sup><a name="footnote2"></a>2</sup>**| Windows 11 Survey Report. Techaisle, September 2024. Windows 11 results are in comparison with Windows 10 devices.|
 |**<sup><a name="footnote3"></a>3</sup>**| The Passkey can be saved locally to the Windows device and authenticated via Windows Hello or Windows Hello for Business. Hardware dependent.|
-|**<sup><a name="footnote4"></a>4</sup>**| Based on Monthly Active Device data. *Earnings Release FY23 Q3* - Microsoft, April 2023.|
+|**<sup><a name="footnote4"></a>4</sup>**| Commissioned study delivered by Forrester Consulting “The Total Economic Impact™ of Windows 11 Pro Devices”, December 2022. Note, quantified benefits reflect results over three years combined into a single composite organization that generates $1 billion in annual revenue, has 2,000 employees, refreshes hardware on a four-year cycle, and migrates the entirety of its workforce to Windows 11 devices.|
 |**<sup><a name="footnote5"></a>5</sup>**| Windows 11 results are in comparison with Windows 10 devices. *Windows 11 Survey Report*, Techaisle, February 2022.|
 |**<sup><a name="footnote6"></a>6</sup>**| Requires developer enablement.|
 |**<sup><a name="footnote7"></a>7</sup>**| Sold separately.|
