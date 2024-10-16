@@ -15,7 +15,7 @@ Today’s organizations face a world of accelerated change, from marketplace flu
 
 To address the ever-growing and changing threat landscape, we announced the [Secure Future Initiative in November 2023][LINK-1]. The SFI endeavors to advance cybersecurity protection across all our company and products. 
 
-Microsoft is committed to putting security above all else, with products and services that are secure by design and secure by default. We synthesize more than [65 trillion signals daily][LINK-2] to understand digital threats and criminal cyberactivity. <sup>[\[1\]](conclusion.md#footnote1)</sup>. Through the SFI initiative we’ve dedicated the equivalent of 34,000 full-time engineers to the highest priority security tasks.  We continuously apply what we learn from incidents to improve our security and privacy models, security architecture, and technical controls.
+Microsoft is committed to putting security above all else, with products and services that are secure by design and secure by default. We synthesize more than [65 trillion signals daily][LINK-2] to understand digital threats and criminal cyberactivity. <sup>[\[1\]](conclusion.md#footnote1)</sup> Through the SFI initiative we’ve dedicated the equivalent of 34,000 full-time engineers to the highest priority security tasks.  We continuously apply what we learn from incidents to improve our security and privacy models, security architecture, and technical controls.
 
 ### Security by design and security by default
 
