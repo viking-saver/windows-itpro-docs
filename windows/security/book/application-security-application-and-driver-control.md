@@ -36,7 +36,7 @@ Your organization is only as secure as the applications that run on your devices
 
 App Control for Business (previously called *Windows Defender Application Control*) and AppLocker are both included in Windows. App Control for Business is the next-generation app control solution for Windows and provides powerful control over what runs in your environment. Customers who were using AppLocker on previous versions of Windows can continue to use the feature as they consider whether to switch to App Control for Business for stronger protection.
 
-Microsoft Intune<sup>[\[7\]](conclusion.md#footnote7)</sup> can configure App Control for Business in the admin console, including setting up Intune as a managed installer. Intune includes built-in options for App Control for Business and the possibility to upload policies as an XML file for Intune to package and deploy.
+Microsoft Intune<sup>[\[4\]](conclusion.md#footnote4)</sup> can configure App Control for Business in the admin console, including setting up Intune as a managed installer. Intune includes built-in options for App Control for Business and the possibility to upload policies as an XML file for Intune to package and deploy.
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 

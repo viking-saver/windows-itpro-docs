@@ -23,7 +23,7 @@ Windows 11 works with Microsoft Entra ID to provide secure access, identity mana
 
 :::image type="content" source="images/access-work-or-school.png" alt-text="Screenshot of the add work or school account in Settings." border="false":::
 
-When a device is Microsoft Entra ID joined and managed with Microsoft Intune<sup>[\[7\]](conclusion.md#footnote7)</sup>, it receives the following security benefits:
+When a device is Microsoft Entra ID joined and managed with Microsoft Intune<sup>[\[4\]](conclusion.md#footnote4)</sup>, it receives the following security benefits:
 
 - Default managed user and device settings and policies
 - Single sign-in to all Microsoft Online Services
@@ -67,7 +67,7 @@ Both Microsoft Entra Private Access and Microsoft Entra Internet Access use the 
 
 ### Enterprise State Roaming
 
-Available to any organization with a Microsoft Entra ID Premium<sup>[\[7\]](conclusion.md#footnote7)</sup> `license, Enterprise State Roaming provides users with a unified Windows Settings experience across their Windows devices and reduces the time needed for configuring a new device.
+Available to any organization with a Microsoft Entra ID Premium<sup>[\[4\]](conclusion.md#footnote4)</sup> `license, Enterprise State Roaming provides users with a unified Windows Settings experience across their Windows devices and reduces the time needed for configuring a new device.
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
@@ -75,7 +75,7 @@ Available to any organization with a Microsoft Entra ID Premium<sup>[\[7\]](conc
 
 ## Microsoft Azure Attestation Service
 
-Remote attestation helps ensure that devices are compliant with security policies and are operating in a trusted state before they're allowed to access resources. Microsoft Intune<sup>[\[7\]](conclusion.md#footnote7)</sup> integrates with Microsoft Azure Attestation Service to review Windows device health comprehensively and connect this information with Microsoft Entra ID<sup>[\[7\]](conclusion.md#footnote7)</sup> Conditional Access.
+Remote attestation helps ensure that devices are compliant with security policies and are operating in a trusted state before they're allowed to access resources. Microsoft Intune<sup>[\[4\]](conclusion.md#footnote4)</sup> integrates with Microsoft Azure Attestation Service to review Windows device health comprehensively and connect this information with Microsoft Entra ID<sup>[\[4\]](conclusion.md#footnote4)</sup> Conditional Access.
 
 **Attestation policies are configured in the Microsoft Azure Attestation Service which can then:**
 
@@ -91,7 +91,7 @@ Once this verification is complete, the attestation service returns a signed rep
 
 ## Cloud-native device management
 
-Microsoft recommends cloud-based device management so that IT professionals can manage company security policies and business applications without compromising user privacy on corporate or employee-owned devices. With cloud-native device management solutions like Microsoft Intune<sup>[\[7\]](conclusion.md#footnote7)</sup>, IT can manage Windows 11 using industry standard protocols. To simplify setup for users, management features are built directly into Windows, eliminating the need for a separate device management client.
+Microsoft recommends cloud-based device management so that IT professionals can manage company security policies and business applications without compromising user privacy on corporate or employee-owned devices. With cloud-native device management solutions like Microsoft Intune<sup>[\[4\]](conclusion.md#footnote4)</sup>, IT can manage Windows 11 using industry standard protocols. To simplify setup for users, management features are built directly into Windows, eliminating the need for a separate device management client.
 
 Windows 11 built-in management features include:
 
@@ -196,7 +196,7 @@ The security baseline has been enhanced with over 70 new settings, enabling loca
 
 Windows Local Administrator Password Solution (LAPS) is a feature that automatically manages and backs up the password of a local administrator account on Microsoft Entra joined and Active Directory-joined devices. It helps enhance security by regularly rotating and managing local administrator account passwords, protecting against pass-the-hash and lateral-traversal attacks.
 
-Windows LAPS can be configured via group policy or with a device management solution like Microsoft Intune<sup>[\[7\]](conclusion.md#footnote7)</sup>.
+Windows LAPS can be configured via group policy or with a device management solution like Microsoft Intune<sup>[\[4\]](conclusion.md#footnote4)</sup>.
 
 [!INCLUDE [new-24h2](includes/new-24h2.md)]
 
@@ -215,7 +215,7 @@ With Windows Autopilot, there's no need to reimage or manually set-up devices be
 Windows Autopilot enables you to:
 
 - Automatically join devices to Microsoft Entra ID or Active Directory via Microsoft Entra hybrid join
-- Autoenroll devices into a device management solution like Microsoft Intune<sup>[\[7\]](conclusion.md#footnote7)</sup> (requires a Microsoft Entra ID Premium subscription for configuration)
+- Autoenroll devices into a device management solution like Microsoft Intune<sup>[\[4\]](conclusion.md#footnote4)</sup> (requires a Microsoft Entra ID Premium subscription for configuration)
 - Create and autoassignment of devices to configuration groups based on a device's profile
 - Customize of the out-of-box experience (OOBE) content specific to your organization
 
@@ -230,7 +230,7 @@ Existing devices can also be quickly prepared for a new user with Windows Autopi
 
 Windows Update for Business empowers IT administrators to ensure that their organization's Windows client devices are consistently up to date with the latest security updates and features. By directly connecting these systems to the Windows Update service, administrators can maintain a high level of security and functionality.
 
-Administrators can utilize group policy or a device management solution like Microsoft Intune<sup>[\[7\]](conclusion.md#footnote7)</sup>, to configure Windows Update for Business settings. These settings control the timing and manner in which updates are applied, allowing for thorough reliability and performance testing on a subset of devices before deploying updates across the entire organization.
+Administrators can utilize group policy or a device management solution like Microsoft Intune<sup>[\[4\]](conclusion.md#footnote4)</sup>, to configure Windows Update for Business settings. These settings control the timing and manner in which updates are applied, allowing for thorough reliability and performance testing on a subset of devices before deploying updates across the entire organization.
 
 This approach not only provides control over the update process but also ensures a seamless and positive update experience for all users within the organization. By using Windows Update for Business, organizations can achieve a more secure and efficient operational environment.
 
@@ -278,14 +278,14 @@ Unlike traditional print solutions that rely on Windows print servers, Universal
 
 Universal Print supports Zero Trust security by requiring that:
 
-- Each connection and API call to Universal Print cloud service requires authentication validated by Microsoft Entra ID<sup>[\[7\]](conclusion.md#footnote7)</sup>. A hacker would have to have knowledge of the right credentials to successfully connect to the Universal Print service
+- Each connection and API call to Universal Print cloud service requires authentication validated by Microsoft Entra ID<sup>[\[4\]](conclusion.md#footnote4)</sup>. A hacker would have to have knowledge of the right credentials to successfully connect to the Universal Print service
 - Every connection established by the user's device (client), the printer, or another cloud service to the Universal Print cloud service uses SSL with TLS 1.2 protection. This protects network snooping of traffic to gain access to sensitive data
 - Each printer registered with Universal Print is created as a device object in the customer's Microsoft Entra ID tenant and issued its own device certificate. Every connection from the printer is authenticated using this certificate. The printer can access only its own data and no other device's data
 - Applications can connect to Universal Print using either user, device, or application authentication. To ensure data security, it's highly recommended that only cloud applications use application authentication
 - Each acting application must register with Microsoft Entra ID and specify the set of permission scopes it requires. Microsoft's own acting applications - for example, the Universal Print connector - are registered with the Microsoft Entra ID service. Customer administrators need to provide their consent to the required permission scopes as part of onboarding the application to their tenant
 - Each authentication with Microsoft Entra ID from an acting application can't extend the permission scope as defined by the acting client app. This prevents the app from requesting additional permissions if the app is breached
 
-Additionally, Windows 11 includes device management support to simplify printer setup for users. With support from Microsoft Intune<sup>[\[7\]](conclusion.md#footnote7)</sup>, admins can now configure policy settings to provision specific printers onto the user's Windows devices.
+Additionally, Windows 11 includes device management support to simplify printer setup for users. With support from Microsoft Intune<sup>[\[4\]](conclusion.md#footnote4)</sup>, admins can now configure policy settings to provision specific printers onto the user's Windows devices.
 
 Universal Print stores the print data in cloud securely in Office Storage, the same storage used by other Microsoft 365 products.
 
