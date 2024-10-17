@@ -128,7 +128,7 @@ A security baseline is a group of Microsoft-recommended configuration settings t
 
 ## Microsoft Intune
 
-Microsoft Intune<sup>[\[7\]](conclusion.md#footnote7)</sup> is a comprehensive cloud-native endpoint management solution that helps secure, deploy, and manage users, apps, and devices. Intune brings together technologies like Microsoft Configuration Manager and Windows Autopilot to simplify provisioning, configuration management, and software updates across the organization.
+Microsoft Intune<sup>[\[4\]](conclusion.md#footnote4)</sup> is a comprehensive cloud-native endpoint management solution that helps secure, deploy, and manage users, apps, and devices. Intune brings together technologies like Microsoft Configuration Manager and Windows Autopilot to simplify provisioning, configuration management, and software updates across the organization.
 
 Intune works with Microsoft Entra ID to manage security features and processes, including multifactor authentication and conditional access.
 
