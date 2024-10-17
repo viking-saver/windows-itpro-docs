@@ -11,7 +11,7 @@ ms.date: 10/17/2024
 
 ## :::image type="icon" source="images/new-button-title.svg" border="false"::: Win32 app isolation
 
-Win32 app isolation is a security feature designed to be the default isolation standard on Windows clients. It's built on [AppContainer][LINK-1], and offers several added security features to help the Windows platform defend against attacks that use vulnerabilities in applications or third-party libraries. To isolate their apps, developers can update their applications using Visual Studio.
+Win32 app isolation is a security feature designed to be the default isolation standard on Windows clients. It's built on [AppContainer][LINK-1], and offers several added security features to help the Windows platform defend against attacks that use vulnerabilities in applications or third-party libraries. To isolate their applications, developers can update them using Visual Studio.
 
 Win32 app isolation follows a two-step process:
 
@@ -46,7 +46,7 @@ Processes that run in app containers operate at a low integrity level, meaning t
 
 ## Windows Sandbox
 
-Windows Sandbox provides a lightweight desktop environment to safely run untrusted Win32 applications in isolation using the same hardware-based Hyper-V virtualization technology without fear of lasting impact to the PC. Any untrusted Win32 app installed in Windows Sandbox stays only in the sandbox and can't affect the host.
+Windows Sandbox provides a lightweight desktop environment to safely run untrusted Win32 applications in isolation, using the same hardware-based virtualization technology as Hyper-V. Any untrusted Win32 app installed in Windows Sandbox stays only in the sandbox and can't affect the host.
 
 Once Windows Sandbox is closed, nothing persists on the device. All the software with all its files and state are permanently deleted after the untrusted Win32 application is closed.
 
