@@ -66,7 +66,8 @@ Enhanced:
 |**<sup><a name="footnote8"></a>8</sup>**| Email encryption is supported on products such as Microsoft Exchange Server and Microsoft Exchange Online.|
 |**<sup><a name="footnote9"></a>9</sup>**| Microsoft internal data.|
 |**<sup><a name="footnote10"></a>10</sup>**| Hardware dependent.|
-|**<sup><a name="footnote13"></a>11</sup>**|All users with a Microsoft Account get 5GB of OneDrive storage free, and all Microsoft 365 subscriptions include 1TB of OneDrive storage. Additional OneDrive storage is sold separately.|
+|**<sup><a name="footnote11"></a>11</sup>**|All users with a Microsoft Account get 5GB of OneDrive storage free, and all Microsoft 365 subscriptions include 1TB of OneDrive storage. Additional OneDrive storage is sold separately.|
+|**<sup><a name="footnote12"></a>12</sup>**|The Total Economic Impact™ of Windows Pro Device, Forrester study commissioned by Microsoft, June 2020.|
 
 
 ---
