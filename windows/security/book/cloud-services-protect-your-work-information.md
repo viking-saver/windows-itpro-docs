@@ -46,24 +46,22 @@ Every Windows device has a built-in local administrator account that must be sec
 
 Microsoft Entra Private Access provides organizations the ability to manage and give users access to private or internal fully qualified domain names (FQDNs) and IP addresses. With Private Access, you can modernize how your organization's users access private apps and resources. Remote workers don't need to use a VPN to access these resources if they have the Global Secure Access Client installed. The client quietly and seamlessly connects them to the resources they need.
 
+[!INCLUDE [learn-more](includes/learn-more.md)]
+
+- [Microsoft Entra Private Access][LINK-4]
+
 ### Microsoft Entra Internet Access
 
 Microsoft Entra Internet Access provides an identity-centric Secure Web Gateway (SWG) solution for Software as a Service (SaaS) applications and other Internet traffic. It protects users, devices, and data from the Internet's wide threat landscape with best-in-class security controls and visibility through Traffic Logs.
 
+> [!NOTE]
+> Both Microsoft Entra Private Access and Microsoft Entra Internet Access requires Microsoft Entra ID and Microsoft Entra Joined devices for deployment. The two solutions use the Global Secure Access client for Windows, which secures and controls the features.
+
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Microsoft Entra Internet Access][LINK-3]
-
-> [!NOTE]
-> Both Microsoft Entra Private Access and Microsoft Entra Internet Access requires Microsoft Entra ID and Microsoft Entra Joined devices and for deployment.
-
-Both Microsoft Entra Private Access and Microsoft Entra Internet Access use the *Global Secure Access client for Windows*, which secures and controls the features.
-
-[!INCLUDE [learn-more](includes/learn-more.md)]
-
-- [Microsoft Entra Private Access][LINK-4]
-- [Microsoft's Security Service Edge Solution Deployment Guide for Microsoft Entra Internet Access Proof of Concept][LINK-5]
 - [Global Secure Access client for Windows][LINK-6]
+- [Microsoft's Security Service Edge Solution Deployment Guide for Microsoft Entra Internet Access Proof of Concept][LINK-5]
 
 ### Enterprise State Roaming
 
