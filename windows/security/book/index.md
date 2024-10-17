@@ -11,11 +11,11 @@ ms.date: 09/06/2024
 
 ## Introduction
 
-Today’s organizations face a world of accelerated change, from marketplace fluctuation and sociopolitical events to the rapid adoption of new AI technologies. However, as organizations and industries innovate, so do increasingly sophisticated cybercriminals. Research shows that employees, including their devices, services, and identities, are at the center of attacks on businesses of all sizes. Some leading threats include identity attacks, ransomware, targeted phishing attempts, and business email compromise. <sup>[\[1\]](conclusion.md#footnote1)</sup>
+Today's organizations face a world of accelerated change, from marketplace fluctuation and sociopolitical events to the rapid adoption of new AI technologies. However, as organizations and industries innovate, so do increasingly sophisticated cybercriminals. Research shows that employees, including their devices, services, and identities, are at the center of attacks on businesses of all sizes. Some leading threats include identity attacks, ransomware, targeted phishing attempts, and business email compromise<sup>[\[1\]](conclusion.md#footnote1)</sup>.
 
-To address the ever-growing and changing threat landscape, we announced the [Secure Future Initiative in November 2023][LINK-1]. The SFI endeavors to advance cybersecurity protection across all our company and products. 
+To address the ever-growing and changing threat landscape, we announced the [Secure Future Initiative in November 2023][LINK-1]. The SFI endeavors to advance cybersecurity protection across all our company and products.
 
-Microsoft is committed to putting security above all else, with products and services that are secure by design and secure by default. We synthesize more than [65 trillion signals daily][LINK-2] to understand digital threats and criminal cyberactivity. <sup>[\[1\]](conclusion.md#footnote1)</sup> Through the SFI initiative we’ve dedicated the equivalent of 34,000 full-time engineers to the highest priority security tasks.  We continuously apply what we learn from incidents to improve our security and privacy models, security architecture, and technical controls.
+Microsoft is committed to putting security above all else, with products and services that are secure by design and secure by default. We synthesize more than [65 trillion signals daily][LINK-2] to understand digital threats and criminal cyberactivity<sup>[\[1\]](conclusion.md#footnote1)</sup>. Through the SFI initiative we've dedicated the equivalent of 34,000 full-time engineers to the highest priority security tasks.  We continuously apply what we learn from incidents to improve our security and privacy models, security architecture, and technical controls.
 
 ### Security by design. Security by default.
 
@@ -25,7 +25,7 @@ Support for Windows 10 is ending soon on October 14, 2025. Upgrading or replacin
 
 ### Security priorities and benefits
 
-Windows 11 enables you to focus on your work, not your security settings. Out-of-the-box features such as credential safeguards, malware shields, and application protection led to a reported 62% drop in security incidents, including a 3.0x reduction in firmware attacks. <sup>[\[2\]](conclusion.md#footnote2)</sup>
+Windows 11 enables you to focus on your work, not your security settings. Out-of-the-box features such as credential safeguards, malware shields, and application protection led to a reported 62% drop in security incidents, including a 3.0x reduction in firmware attacks<sup>[\[2\]](conclusion.md#footnote2)</sup>.
 
 In Windows 11, hardware and software work together to shrink the attack surface, protect system integrity, and shield valuable data. New and enhanced features are designed for security by default. For example, Win32 apps in isolation<sup>[\[3\]](conclusion.md#footnote3)</sup>, token protection<sup>[\[3\]](conclusion.md#footnote3)</sup>, passkeys and Microsoft Intune Endpoint Privilege Management<sup>[\[4\]](conclusion.md#footnote4)</sup> are some of the latest capabilities that help protect organizations and individual users against attack. Windows Hello and Windows Hello for Business work with hardware-based features like Trusted Platform Module (TPM) 2.0 and biometric scanners and Windows presence sensing to enable easier, secure sign-on and protection of your data and credentials.
 
@@ -33,7 +33,7 @@ Existing security features are also continuously enhanced across Windows 11.  Fo
 
 ### Identity protection
 
-Attackers are increasingly targeting employees and their devices, so organizations need stronger security against increasingly sophisticated cyberthreats. Windows 11 provides proactive protection against credential theft. Windows Hello and TPM 2.0 work together to shield identities, and features like passkeys and secure biometric sign-in virtually eliminate the risk of lost or stolen passwords. <sup>[\[5\]](conclusion.md#footnote5)</sup> Enhanced phishing protection also increases safety; in fact, businesses reported 2.9x fewer instances of identity theft with the hardware-backed protection in Windows 11. <sup>[\[2\]](conclusion.md#footnote2)</sup>
+Attackers are increasingly targeting employees and their devices, so organizations need stronger security against increasingly sophisticated cyberthreats. Windows 11 provides proactive protection against credential theft. Windows Hello and TPM 2.0 work together to shield identities, and features like passkeys and secure biometric sign-in virtually eliminate the risk of lost or stolen passwords<sup>[\[5\]](conclusion.md#footnote5)</sup>. Enhanced phishing protection also increases safety; in fact, businesses reported 2.9x fewer instances of identity theft with the hardware-backed protection in Windows 11<sup>[\[2\]](conclusion.md#footnote2)</sup>.
 
 ### Application safeguards
 
@@ -41,7 +41,7 @@ Help keep business data secure and employees productive with robust safeguards a
 
 ### Device health and access control
 
-Increase protection and efficiency with Windows 11 and chip-to-cloud security. Microsoft provides the tools needed to attest that the devices connecting to your network, or accessing your data and resources, are trustworthy. You can enforce security policies and conditional access with modern device management (MDM) solutions such as Microsoft Intune, Microsoft Entra ID, and a comprehensive MDM security baseline. Security by default not only enables people to work securely anywhere, but it also simplifies IT. A streamlined, chip-to-cloud security solution based on Windows 11 improves productivity for IT and security teams by a reported 25%. <sup>[\[6\]](conclusion.md#footnote6)</sup>
+Increase protection and efficiency with Windows 11 and chip-to-cloud security. Microsoft provides the tools needed to attest that the devices connecting to your network, or accessing your data and resources, are trustworthy. You can enforce security policies and conditional access with modern device management (MDM) solutions such as Microsoft Intune, Microsoft Entra ID, and a comprehensive MDM security baseline. Security by default not only enables people to work securely anywhere, but it also simplifies IT. A streamlined, chip-to-cloud security solution based on Windows 11 improves productivity for IT and security teams by a reported 25%<sup>[\[6\]](conclusion.md#footnote6)</sup>.
 
 ### Chip-to-cloud security
 
