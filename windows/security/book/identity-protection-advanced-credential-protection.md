@@ -19,11 +19,11 @@ By loading only trusted, signed code, LSA provides significant protection agains
 
 [!INCLUDE [new-24h2](includes/new-24h2.md)]
 
-To help keep these credentials safe, LSA protection is enabled by default on all devices (MSA, Entra joined, hybrid, and local). For new installs, it's enabled immediately, and for upgrades, it's enabled after an evaluation period.
+To help keep these credentials safe, LSA protection is enabled by default on all devices (MSA, Microsoft Entra joined, hybrid, and local). For new installs, LSA protection is enabled immediately, and for upgrades, it's enabled after an evaluation period.
 
 Users have the ability to manage the LSA protection state in the Windows Security application under **Device Security** > **Core Isolation** > **Local Security Authority protection**.
 
-To ensures a seamless transition and enhanced security for all users, the enterprise policy for LSA protection takes precedence over enablement on upgrade.
+To ensure a seamless transition and enhanced security for all users, the enterprise policy for LSA protection takes precedence over enablement on upgrade.
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
@@ -54,7 +54,7 @@ Credential Guard protections are expanded to optionally include machine account 
 
 Remote Credential Guard helps organizations protect credentials over a Remote Desktop connection by redirecting the Kerberos requests back to the device that is requesting the connection. It also provides single sign-on experiences for Remote Desktop sessions.
 
-Administrator credentials are highly privileged and must be protected. When Remote Credential Guard is configured and enabled to connect during Remote Desktop sessions, the credential and credential derivatives are never passed over the network to the target device. If the target device is compromised, the credentials aren't exposed.
+Administrator credentials are highly privileged and must be protected. When Remote Credential Guard is configured to connect during Remote Desktop sessions, the credential and credential derivatives are never passed over the network to the target device. If the target device is compromised, the credentials aren't exposed.
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
@@ -92,7 +92,7 @@ The account lockout threshold policy is now set to 10 failed sign-in attempts by
 
 ## Access management and control
 
-Access control in Windows ensures that shared resources are available to users and groups other than the resource's owner and are protected from unauthorized use. IT administrators can manage users', groups', and computers' access to objects and assets on a network or computer. After a user is authenticated, the Windows operating system implements the second phase of protecting resources by using built-in authorization and access control technologies to determine if an authenticated user has the correct permissions.
+Access control in Windows ensures that shared resources are available to users and groups other than the resource's owner and are protected from unauthorized use. IT administrators can manage the access of users, groups, and computers to objects and assets on a network or computer. After a user is authenticated, Windows implements the second phase of protecting resources with built-in authorization and access control technologies. These technologies determine if an authenticated user has the correct permissions.
 
 Access Control Lists (ACLs) describe the permissions for a specific object and can also contain System Access Control Lists (SACLs). SACLs provide a way to audit specific system level events, such as when a user attempts to access file system objects. These events are essential for tracking activity for objects that are sensitive or valuable and require extra monitoring. Being able to audit when a resource attempts to read or write part of the operating system is critical to understanding a potential attack.
 

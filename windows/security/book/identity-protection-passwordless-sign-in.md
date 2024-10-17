@@ -13,7 +13,7 @@ Passwords are a fundamental part of digital security, but they're often inconven
 
 ## Windows Hello
 
-Too often, passwords are weak, stolen, or forgotten. Organizations are moving toward passwordless sign-in to reduce the risk of breaches, lower the cost of managing passwords, and improve productivity and satisfaction for their employees and customers. Microsoft is committed to helping organizations move toward a secure, passwordless future with Windows Hello, a cornerstone of Windows security and identity protection.
+Too often, passwords are weak, stolen, or forgotten. Organizations are moving toward passwordless sign-in to reduce the risk of breaches, lower the cost of managing passwords, and improve productivity and satisfaction for their users and customers. Microsoft is committed to helping organizations move toward a secure, passwordless future with Windows Hello, a cornerstone of Windows security and identity protection.
 
 Windows Hello can enable passwordless sign-in using biometric or PIN verification and provides built-in support for the FIDO2 passwordless industry standard. As a result, people no longer need to carry external hardware like a security key for authentication.
 
@@ -41,7 +41,7 @@ If your device doesn't have built-in biometrics, Windows Hello has been enhanced
 
 ### Windows Hello biometric
 
-Windows Hello biometric sign-in enhances both security and productivity with a quick and convenient sign-in experience. There's no need to enter your PIN; simply use your biometric data for an easy and delightful sign-in.
+Windows Hello biometric sign-in enhances both security and productivity with a quick and convenient sign-in experience. There's no need to enter your PIN; just use your biometric data for an easy and delightful sign-in.
 
 Windows devices that support biometric hardware, such as fingerprint or facial recognition cameras, integrate directly with Windows Hello, enabling access to Windows client resources and services. Biometric readers for both face and fingerprint must comply with Windows Hello biometric requirements. Windows Hello facial recognition is designed to authenticate only from trusted cameras used at the time of enrollment.
 
@@ -89,7 +89,7 @@ Organizations with hybrid scenarios can eliminate the need for on-premises domai
 
 ### PIN reset
 
-The Microsoft PIN Reset Service allows users to reset their forgotten Windows Hello PINs without requiring re-enrollment. After registering the service in the Microsoft Entra ID tenant, the capability must be enabled on the Windwos devices using group policy or a device management solution like Microsoft Intune<sup>[\[4\]](conclusion.md#footnote4)</sup>.
+The Microsoft PIN Reset Service allows users to reset their forgotten Windows Hello PINs without requiring re-enrollment. After registering the service in the Microsoft Entra ID tenant, the capability must be enabled on the Windows devices using group policy or a device management solution like Microsoft Intune<sup>[\[4\]](conclusion.md#footnote4)</sup>.
 
 Users can initiate a PIN reset from the Windows lock screen or from the sign-in options in Settings. The process involves authenticating and completing multifactor authentication to reset the PIN.
 
@@ -152,13 +152,13 @@ The plug-in model for third-party passkey providers enables users to manage thei
 
 ## FIDO2
 
-The FIDO Alliance, the Fast Identity Online industry standards body, was established to promote authentication technologies and standards that reduce reliance on passwords. FIDO Alliance and World Wide Web Consortium (W3C) have worked together to define the Client to Authenticator Protocol (CTAP2) and Web Authentication (WebAuthn) specifications, which are the industry standard for providing strong, phishing-resistant, user friendly, and privacy preserving authentication across the web and apps. FIDO standards and certifications are becoming recognized as the leading standard for creating secure authentication solutions across enterprises, governments, and consumer markets.
+The FIDO Alliance, the Fast Identity Online industry standards body, was established to promote authentication technologies and standards that reduce reliance on passwords. FIDO Alliance and World Wide Web Consortium (W3C) worked together to define the Client to Authenticator Protocol (CTAP2) and Web Authentication (WebAuthn) specifications. These specifications are the industry standard for providing strong, phishing-resistant, user friendly, and privacy preserving authentication across the web and apps. FIDO standards and certifications are becoming recognized as the leading standard for creating secure authentication solutions across enterprises, governments, and consumer markets.
 
 Windows 11 can also use external FIDO2 security keys for authentication alongside or in addition to Windows Hello and Windows Hello for Business, which is also a FIDO2-certified passwordless solution. As a result, Windows 11 can be used as a FIDO authenticator for many popular identity management services.
 
 ## Microsoft Authenticator
 
-The Microsoft Authenticator app, which runs on iOS and Android devices, helps keeping Windows 11 users secure and productive. Microsoft Authenticator with Entra Passkeys can be used as a phish-resistant method to bootstrap Windows Hello for Business.
+The Microsoft Authenticator app, which runs on iOS and Android devices, helps keeping Windows 11 users secure and productive. Microsoft Authenticator with Microsoft Entra passkeys can be used as a phish-resistant method to bootstrap Windows Hello for Business.
 
 Microsoft Authenticator also enables easy, secure sign-in for all online accounts using multifactor authentication, passwordless phone sign-in, phishing-resistant authentication (passkeys), or password autofill. The accounts in the Authenticator app are secured with a public/private key pair in hardware-backed storage such as the Keychain in iOS and Keystore on Android. IT admins can use different tools to nudge their users to set up the Authenticator app, provide them with extra context about where the authentication is coming from, and ensure that they're actively using it.
 

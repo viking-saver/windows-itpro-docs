@@ -53,7 +53,7 @@ Microsoft requires the Windows 11 supply chain to comply with controls including
 
 ## Software bill of materials (SBOM)
 
-In the Windows ecosystem, ensuring the integrity and authenticity of software components is paramount. To achieve this, we utilize Software Bill of Materials (SBOMs) and COSE (CBOR Object Signing and Encryption) sign all evidence. SBOMs provide a comprehensive inventory of software components, including their dependencies and associated metadata. This transparency is crucial for vulnerability management and compliance with security standards.
+In the Windows ecosystem, ensuring the integrity and authenticity of software components is paramount. To achieve this, we utilize Software Bill of Materials (SBOMs) and COSE (CBOR Object Signing and Encryption) sign all evidence. SBOMs provide a comprehensive inventory of software components, including their dependencies and associated metadata. Transparency is crucial for vulnerability management and compliance with security standards.
 
 The COSE signing process enhances the trustworthiness of SBOMs by providing cryptographic signatures that verify the integrity and authenticity of the SBOM content. The CoseSignTool, a platform-agnostic command line application, is employed to apply and verify these digital signatures. This tool ensures that all SBOMs and other build evidence are signed and validated, maintaining a high level of security within the software supply chain.
 
