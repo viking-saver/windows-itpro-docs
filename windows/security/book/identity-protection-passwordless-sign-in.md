@@ -53,7 +53,7 @@ If a peripheral camera is attached to the device after enrollment, it can be use
 
 ## Windows presence sensing
 
-Windows presence sensing<sup>[\[14\]](conclusion.md#footnote14)</sup> provides another layer of data security protection for hybrid workers. Windows 11 devices can intelligently adapt to a user's presence to help them stay secure and productive, whether they're working at home, the office, or a public environment.
+Windows presence sensing<sup>[\[10\]](conclusion.md#footnote10)</sup> provides another layer of data security protection for hybrid workers. Windows 11 devices can intelligently adapt to a user's presence to help them stay secure and productive, whether they're working at home, the office, or a public environment.
 
 Windows presence sensing combines presence detection sensors with Windows Hello facial recognition to sign the user in hands-free and automatically locks the device when the user leaves. With adaptive dimming, the PC dims the screen when the user looks away on compatible devices with presence sensors. It's also easier than ever to configure presence sensors on devices, with easy enablement in the out-of-the-box experience and new links in Settings to help find presence sensing features. Device manufacturers can customize and build extensions for the presence sensor.
 
