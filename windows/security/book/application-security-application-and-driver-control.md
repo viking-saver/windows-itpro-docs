@@ -47,14 +47,14 @@ Microsoft Intune<sup>[\[4\]](conclusion.md#footnote4)</sup> can configure App Co
 
 When users sign in with administrative rights to Windows, they have the power to make significant changes to the system, which can impact its overall security. These rights can be a target for malicious software.
 
-Administrator protection is a new security feature in Windows 11 designed to safeguard these administrative rights. It allows administrators to perform all necessary functions with **just-in-time administrative rights**, while running most tasks without administrative privileges. The goal of administrator protection is to provide a secure and seamless experience, ensuring users operate with the least required privileges. Administrators can switch to a privileged user for tasks that need administrative rights and then return to standard privileges for other tasks.
+Administrator protection is a new security feature in Windows 11 designed to safeguard these administrative rights. It allows administrators to perform all necessary functions with **just-in-time administrative rights**, while running most tasks without administrative privileges. The goal of administrator protection is to provide a secure and seamless experience, ensuring users operate with the least required privileges.
 
 When administrator protection is enabled, if an app needs special permissions like administrative rights, the user is asked for approval. When an approval is needed, Windows Hello provides a secure and easy way to approve or deny these requests.
 
 > [!NOTE]
-> Administrator protection is currently in preview, and it will be released to Windows 11, version 24H2 devices using [servicing technology][LINK-5].
+> Administrator protection is currently in preview.
 >
-> For devices running previous versions of Windows, refer to [User Account Control (UAC)][LINK-6].
+> For devices running previous versions of Windows, refer to [User Account Control (UAC)][LINK-5].
 
 ## Microsoft vulnerable driver blocklist
 
@@ -78,5 +78,4 @@ Trusted Signing is a Microsoft fully managed, end-to-end signing solution that s
 [LINK-2]: /windows/security/application-security/application-control/windows-defender-application-control/wdac
 [LINK-3]: /windows/security/application-security/application-control/app-control-for-business/design/configure-authorized-apps-deployed-with-a-managed-installer
 [LINK-4]: /windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-driver-block-rules
-[LINK-5]: https://support.microsoft.com/topic/b0aa0a27-ea9a-4365-9224-cb155e517f12
-[LINK-6]: /windows/security/identity-protection/user-account-control/how-user-account-control-works
+[LINK-5]: /windows/security/identity-protection/user-account-control/how-user-account-control-works
