@@ -2,7 +2,7 @@
 title: Privacy
 description: Windows 11 security book - Privacy chapter.
 ms.topic: overview
-ms.date: 09/06/2024
+ms.date: 10/17/2024
 ---
 
 # Privacy controls

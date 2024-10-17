@@ -2,7 +2,7 @@
 title: Hardware root-of-trust
 description: Windows 11 security book - Hardware root-of-trust.
 ms.topic: overview
-ms.date: 09/06/2024
+ms.date: 10/17/2024
 ---
 
 # Hardware root-of-trust

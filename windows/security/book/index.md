@@ -2,7 +2,7 @@
 title: Windows security book introduction
 description: Windows security book introduction
 ms.topic: overview
-ms.date: 09/06/2024
+ms.date: 10/17/2024
 ---
 
 # Windows 11 Security Book
