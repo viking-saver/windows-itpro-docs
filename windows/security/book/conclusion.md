@@ -62,8 +62,8 @@ Enhanced:
 |**<sup><a name="footnote4"></a>4</sup>**| Sold separately.|
 |**<sup><a name="footnote5"></a>5</sup>**| The Passkey can be saved locally to the Windows device and authenticated via Windows Hello or Windows Hello for Business. Hardware dependent.|
 |**<sup><a name="footnote6"></a>6</sup>**| Commissioned study delivered by Forrester Consulting “The Total Economic Impact™ of Windows 11 Pro Devices”, December 2022. Note, quantified benefits reflect results over three years combined into a single composite organization that generates $1 billion in annual revenue, has 2,000 employees, refreshes hardware on a four-year cycle, and migrates the entirety of its workforce to Windows 11 devices.|
-|**<sup><a name="footnote7"></a>7</sup>**| Sold separately.|
-|**<sup><a name="footnote8"></a>8</sup>**| Commissioned study delivered by Forrester Consulting. *The Total Economic Impact&trade; of Windows 11 Pro Devices*, December 2022. Note: quantified benefits reflect results over three years combined into a single composite organization that generates $1 billion in annual revenue, has 2,000 employees, refreshes hardware on a four-year cycle, and migrates the entirety of its workforce to Windows 11 devices.|
+|**<sup><a name="footnote7"></a>7</sup>**| Feature or functionality delivered using servicing technology.|
+|**<sup><a name="footnote8"></a>8</sup>**| Email encryption is supported on products such as Microsoft Exchange Server and Microsoft Exchange Online.|
 |**<sup><a name="footnote9"></a>9</sup>**|Feature or functionality delivered using [servicing technology](https://support.microsoft.com/topic/b0aa0a27-ea9a-4365-9224-cb155e517f12).|
 |**<sup><a name="footnote10"></a>10</sup>**| Email encryption is supported on products such as Microsoft Exchange Server and Microsoft Exchange Online.|
 |**<sup><a name="footnote11"></a>11</sup>**| Microsoft internal data.|

@@ -82,7 +82,7 @@ PDE is further enhanced with *PDE for known folders*, which extends protection t
 
 ## Email encryption
 
-Email encryption allows users to secure email messages and attachments so that only the intended recipients with a digital identification (ID), or certificate, can read them<sup>[\[10\]](conclusion.md#footnote10)</sup>. Users can also *digitally sign* a message, which verifies the sender's identity and ensures the message hasn't been tampered with.
+Email encryption allows users to secure email messages and attachments so that only the intended recipients with a digital identification (ID), or certificate, can read them<sup>[\[8\]](conclusion.md#footnote8)</sup>. Users can also *digitally sign* a message, which verifies the sender's identity and ensures the message hasn't been tampered with.
 
 The new Outlook app included in Windows 11 supports various types of email encryption, including Microsoft Purview Message Encryption, S/MIME, and Information Rights Management (IRM).
 
