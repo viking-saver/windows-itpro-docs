@@ -33,7 +33,7 @@ BitLocker To Go refers to BitLocker on removable data drives. BitLocker To Go in
 
 - [BitLocker FAQ](../operating-system-security/data-protection/bitlocker/faq.yml)
 
-## Device Encryption
+## Device encryption
 
 Device encryption is a Windows feature that simplifies the process of enabling BitLocker encryption on certain devices. It ensures that only the OS drive and fixed drives are encrypted, while external/USB drives remain unencrypted. Additionally, devices with externally accessible ports that allow DMA access are not eligible for device encryption. Unlike standard BitLocker implementation, device encryption is enabled automatically to ensure continuous protection. Once a clean installation of Windows is completed and the out-of-box experience is finished, the device is prepared for first use with encryption already in place.
 
@@ -41,7 +41,7 @@ Organizations have the option to disable device encryption in favor of a full Bi
 
 [!INCLUDE [new-24h2](includes/new-24h2.md)]
 
-The Device Encryption prerequisites of DMA and HSTI/Modern Standby are removed. This change makes more devices eligible for both automatic and manual device encryption.
+The Device encryption prerequisites of DMA and HSTI/Modern Standby are removed. This change makes more devices eligible for both automatic and manual device encryption.
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
@@ -49,7 +49,7 @@ The Device Encryption prerequisites of DMA and HSTI/Modern Standby are removed. 
 
 ## Encrypted hard drive
 
-Encrypted hard drives are a class of hard drives that are self-encrypted at the hardware level. They allow for full-disk hardware encryption and are transparent to the user. These drives combine the security and management benefits provided by BitLocker Drive Encryption, with the power of self-encrypting drives.
+Encrypted hard drives are a class of hard drives that are self-encrypted at the hardware level. They allow for full-disk hardware encryption and are transparent to the user. These drives combine the security and management benefits provided by BitLocker, with the power of self-encrypting drives.
 
 By offloading the cryptographic operations to hardware, encrypted hard drives increase BitLocker performance and reduce CPU usage and power consumption. Because encrypted hard drives encrypt data quickly, BitLocker deployment can be expanded across enterprise devices with little to no impact on productivity.
 

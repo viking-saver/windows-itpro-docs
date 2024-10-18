@@ -28,7 +28,7 @@ Enhanced:
 
 - [BitLocker](operating-system-security-encryption-and-data-protection.md#bitlocker)
 - [Credential Guard](identity-protection-advanced-credential-protection.md#credential-guard)
-- [Device Encryption](operating-system-security-encryption-and-data-protection.md#device-encryption)
+- [Device encryption](operating-system-security-encryption-and-data-protection.md#device-encryption)
 - [Local Security Authority (LSA) protection](identity-protection-advanced-credential-protection.md#local-security-authority-lsa-protection)
 - [Passkeys](identity-protection-passwordless-sign-in.md#passkeys)
 - [Personal data encryption (PDE)](operating-system-security-encryption-and-data-protection.md#personal-data-encryption-pde)

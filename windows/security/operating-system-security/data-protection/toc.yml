@@ -7,5 +7,3 @@ items:
   href: personal-data-encryption/toc.yml
 - name: Email Encryption (S/MIME)
   href: configure-s-mime.md
-- name: Windows Information Protection (WIP)
-  href: /previous-versions/windows/it-pro/windows-10/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip
