@@ -10,11 +10,32 @@ metadata:
   author: paolomatarazzo
   ms.author: paoloma
   manager: aaroncz
-  ms.date: 03/12/2024
+  ms.date: 10/18/2024
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | tutorial | overview | quickstart | reference | sample | tutorial | video | whats-new
 
 landingContent:
+
+  - title: Windows 11 security book
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Introduction
+            url: /windows/security/book
+          - text: Hardware security
+            url: /windows/security/book/hardware-security
+          - text: Operating system security
+            url: /windows/security/book/operating-system-security
+          - text: Application security
+            url: /windows/security/book/application-security
+          - text: Identity protection
+            url: /windows/security/book/identity-protection
+          - text: Privacy
+            url: /windows/security/book/privacy
+          - text: Cloud services
+            url: /windows/security/book/cloud-services
+          - text: Security foundation
+            url: /windows/security/book/security-foundation
 
   - title: Learn about hardware security
     linkLists:
