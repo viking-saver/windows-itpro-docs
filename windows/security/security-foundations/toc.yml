@@ -1,6 +1,4 @@
 items:
-- name: Zero Trust and Windows
-  href: zero-trust-windows-device-health.md
 - name: Offensive research
   items:
   - name: Microsoft Security Development Lifecycle 🔗

@@ -18,7 +18,7 @@ landingContent:
 
   - title: Windows 11 security book
     linkLists:
-      - linkListType: get-started
+      - linkListType: overview
         links:
           - text: Introduction
             url: /windows/security/book
@@ -39,7 +39,7 @@ landingContent:
 
   - title: Learn about hardware security
     linkLists:
-      - linkListType: overview
+      - linkListType: get-started
         links:
           - text: Trusted Platform Module (TPM)
             url: /windows/security/hardware-security/tpm/trusted-platform-module-overview
@@ -54,7 +54,7 @@ landingContent:
 
   - title: Learn about OS security
     linkLists:
-      - linkListType: overview
+      - linkListType: get-started
         links:
           - text: Trusted boot
             url: /windows/security/operating-system-security
@@ -87,7 +87,7 @@ landingContent:
 
   - title: Learn about identity protection
     linkLists:
-      - linkListType: overview
+      - linkListType: get-started
         links:
           - text: Passwordless strategy
             url: /windows/security/identity-protection/passwordless-strategy
@@ -120,7 +120,7 @@ landingContent:
 
   - title: Learn about application security
     linkLists:
-      - linkListType: overview
+      - linkListType: get-started
         links:
           - text: App Control for Business
             url: /windows/security/application-security/application-control/windows-defender-application-control/
@@ -139,7 +139,7 @@ landingContent:
 
   - title: Learn about security foundations
     linkLists:
-      - linkListType: overview
+      - linkListType: get-started
         links:
           - text: Zero trust
             url: /windows/security/security-foundations/zero-trust-windows-device-health
@@ -162,7 +162,7 @@ landingContent:
 
   - title: Learn about cloud security
     linkLists:
-      - linkListType: overview
+      - linkListType: get-started
         links:
           - text: Security baselines with Intune
             url: /mem/intune/protect/security-baselines
