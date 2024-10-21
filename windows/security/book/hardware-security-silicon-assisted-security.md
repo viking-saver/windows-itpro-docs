@@ -13,7 +13,7 @@ In addition to a modern hardware root-of-trust, there are multiple capabilities 
 
 ## Secured kernel
 
-To secure the kernel, we have two key features: Virtualization-based security (VBS) and hypervisor-protected code integrity (HVCI). All Windows 11 devices support HVCI and most new devices come with VBS and HVCI protection turned on by default.
+To secure the kernel, we have two key features: Virtualization-based security (VBS) and hypervisor-protected code integrity (HVCI). All Windows 11 devices support HVCI and come with VBS and HVCI protection turned on by default on most/all devices.
 
 ### Virtualization-based security (VBS)
 
