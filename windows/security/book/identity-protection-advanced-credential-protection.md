@@ -19,7 +19,7 @@ By loading only trusted, signed code, LSA provides significant protection agains
 
 [!INCLUDE [new-24h2](includes/new-24h2.md)]
 
-To help keep these credentials safe, LSA protection is enabled by default on all devices (MSA, Microsoft Entra joined, hybrid, and local). For new installs, LSA protection is enabled immediately, and for upgrades, it's enabled after an evaluation period.
+To help keep these credentials safe, LSA protection is enabled by default on all devices (MSA, Microsoft Entra joined, hybrid, and local). For new installs, it is enabled immediately. For upgrades, it is enabled after rebooting after an evaluation period of 10 days.
 
 Users have the ability to manage the LSA protection state in the Windows Security application under **Device Security** > **Core Isolation** > **Local Security Authority protection**.
 
