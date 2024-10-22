@@ -29,6 +29,10 @@ As with other TPMs, credentials, encryption keys, and other sensitive informatio
 
 Pluton also solves the major security challenge of keeping its own security processor firmware up to date across the entire PC ecosystem. Today customers receive security firmware updates from different sources, which might make it difficult to get alerts about security updates, and keeping systems in a vulnerable state. Pluton provides a flexible, updateable platform for its firmware that implements end-to-end security functionality authored, maintained, and updated by Microsoft. Pluton is integrated with the Windows Update service, benefiting from over a decade of operational experience in reliably delivering updates across over a billion endpoint systems. Microsoft Pluton is available with select new Windows PCs.
 
+Pluton aims to ensure long-term security resilience. With the rising threat landscape influenced by artificial intelligence, memory safety will become ever more critical. To meet these demands, in addition to facilitating reliable updates to security processor firmware, we chose the open-source Tock system as the Rust-based foundation to develop the Pluton security processor firmware and actively contribute back to the Tock community. This collaboration with an open community ensures rigorous security scrutiny, and using Rust mitigates memory safety threats.
+
+Ultimately, Pluton establishes the security backbone for Copilot + PC, thanks to tight partnerships with our silicon collaborators and OEMs. The Qualcomm Snapdragon X, AMD Ryzen AI, and Intel Core Ultra 200V mobile processors (codenamed Lunar Lake) processor platforms all incorporate Pluton as their security subsystem . 
+
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Microsoft Pluton processor - The security chip designed for the future of Windows PCs][LINK-4]
