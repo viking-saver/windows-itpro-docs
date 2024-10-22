@@ -23,10 +23,18 @@ summary: |
 sections:
   - name: Ignored
     questions:
-      - question: Is this product a free service?
-        answer: Yes. Microsoft Connected Cache is a free service.  
+      - question: What are the licesning requirement?
+        answer: Microsoft Connected Cache for Enterprise and Education is available to all Windows E3, E5 and F3 and Education A3 and A5 customers.
+      - question: Will I be charged to create MCC resources and cache node on Azure?
+        answer: No. You will not be charged to create MCC resource and cache nodes on Azure. However, you will need an Azure pay-as-you-go subscription to create the resources but there is no charge for the resource itself.
       - question: Is there a nondisclosure agreement to sign?
         answer: No, a nondisclosure agreement isn't required.
+      - question: What will Microsoft Connected Cache for Enterprise and Education do for me? 
+        answer: "[Delivery Optimization](waas-delivery-optimization-reference.md) and Microsoft Connected Cache are Microsoft’s comprehensive solutions for minimizing enterprises’ internet bandwidth consumption, with Delivery Optimization acting as the distributed content source and Connected Cache as a dedicated content source. Microsoft customers have benefited from these solutions, seeing savings of more than 90% of bandwidth when managing Windows 11 upgrades, Autopilot device provisioning, Intune application installations, and monthly update deployments."
+      - question: Can I deploy Connected Cache to a production environment?
+        answer: The core caching engine of Microsoft Connected Cache is deployed to hundreds of ISPs globally and has been reliably delivering Microsoft content to customers. Connected Cache relies on production Azure services for the deployment and management of Connected Cache nodes and for Windows installations Windows Subsystem for Linux. Microsoft support has been fully onboarded to support your organization whether you deploy Connected Cache in a lab for testing or in production.
+      - question: When will Microsoft Connected Cache for Enterprise and Education be made generally available (GA)?
+        answer: "[Delivery Optimization](waas-delivery-optimization-reference.md) and Microsoft Connected Cache are Microsoft’s comprehensive solutions for minimizing enterprises’ internet bandwidth consumption. Microsoft is committed to making Connected Cache generally available soon. Additionally, Microsoft support has been fully onboarded to support your organization in whatever capacity you have deployed Connected Cache."
       - question: What are the prerequisites and hardware requirements?
         answer:  | 
          - [Azure pay-as-you-go subscription](https://azure.microsoft.com/offers/ms-azr-0003p/).
@@ -48,8 +56,6 @@ sections:
         answer: For more information, see [Learn how to provision a Local User Account](https://support.microsoft.com/topic/104dc19f-6430-4b49-6a2b-e4dbd1dcdf32). Make sure that your gMSA has been granted permissions to "Log on as batch job" within the host machine's [local security policies](/previous-versions/windows/it-pro/windows-10/security/threat-protection/security-policy-settings/how-to-configure-security-policy-settings).
       - question: Where can I monitor cache node usage?
         answer: You can monitor your cache node usage on Azure portal. For more information, see [Monitor cache node usage Info on Reporting Capabilities](mcc-ent-monitoring.md).
-      - question: Does Microsoft Connected Cache support Xbox or Microsoft Teams content?
-        answer: Currently, Microsoft Connected Cache doesn't support Xbox or Microsoft Teams content. However, supporting Xbox content is of high priority, and we expect this feature soon. We'll let you know as soon as it becomes available!
       - question: How does Microsoft Connected Cache populate its content? Can I precache content?
         answer: Microsoft Connected Cache is a cold cache warmed by client requests at the byte range level so your clients only request the content they need. The client requests content and that is what fills the cache which means there's no cache fill necessary. "Preseeding" can be achieved but use of update rings. A test ring or early adopter ring can be used to fill the cache and all subsequent requests by other clients will come from cache.
       - question: How long would a piece of content live within the Microsoft Connected Cache? Is content purged from the cache?

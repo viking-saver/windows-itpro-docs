@@ -25,7 +25,7 @@ Microsoft Connected Cache (MCC) for Enterprise and Education (preview) is a soft
 
 Microsoft Connected Cache (MCC) for Enterprise and Education (preview) is a standalone cache for customers moving towards modern management and away from Configuration Manager distribution points. For information about Microsoft Connected Cache in Configuration Manager (generally available, starting Configuration Manager version 2111), see [Microsoft Connected Cache in Configuration Manager](/configmgr/core/plan-design/hierarchy/microsoft-connected-cache).
 
-Microsoft Connected Cache deployed directly to Windows relies on [Windows Subsystem for Linux] (windows/wsl/about) and either a [Group Managed Service Account](/windows-server/identity/ad-ds/manage/group-managed-service-accounts/group-managed-service-accounts/getting-started-with-group-managed-service-accounts), local user account, or domain user account are required to run WSL. WSL needs to run in a user context and any user, even if the currently logged-in user, could be used to run WSL and Microsoft Connected Cache.<br>
+Microsoft Connected Cache deployed directly to Windows relies on [Windows Subsystem for Linux](/windows/wsl/about) and either a [Group Managed Service Account](/windows-server/identity/ad-ds/manage/group-managed-service-accounts/group-managed-service-accounts/getting-started-with-group-managed-service-accounts), local user account, or domain user account are required to run WSL. WSL needs to run in a user context and any user, even if the currently logged-in user, could be used to run WSL and Microsoft Connected Cache.<br>
 
 ### Supported scenarios and deployments
 
