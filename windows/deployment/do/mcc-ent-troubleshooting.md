@@ -1,6 +1,6 @@
 ---
-title: MCC support and troubleshooting
-description: Details on how to troubleshoot and seek support for Microsoft Connected Cache for Enterprise (MCC).
+title: MCC troubleshooting
+description: Details on how to troubleshoot common issues for Microsoft Connected Cache for Enterprise (MCC).
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: how-to
