@@ -63,7 +63,7 @@ For more information on sizing and OS requirements, see [the prerequisites for u
 #### Create MCC Azure resource
 
 Replace the following placeholders with your own information:
-* *\<resource-group>*: An existing resource group in your subscription.
+* *\<resource-group>*: Name of an existing resource group in your subscription.
 * *\<mcc-resource-name>*: A name for your Microsoft Connected Cache for Enterprise resource.
 * *\<location>*: The Azure region where your Microsoft Connected Cache will be located.
 
@@ -94,9 +94,9 @@ To know more about different cache node state, see [Cache node states](#cache-no
 Use the following command to create a new cache node if you don't already have one.
 
 Replace the following placeholders with your own information:
-* *\<resource-group>*: An existing resource group in your subscription.
-* *\<mcc-resource-name>*: A name for your Microsoft Connected Cache for Enterprise resource.
-* *\<cache-node-name>*: The Azure region where your Microsoft Connected Cache will be located.
+* *\<resource-group>*: Name of existing resource group in your subscription.
+* *\<mcc-resource-name>*: Name of the Microsoft Connected Cache for Enterprise resource.
+* *\<cache-node-name>*: A name for your Microsoft Connected Cache node.
 * *\<host-os>*: The OS on which cache node will be provisioned.
   Accepted values: windows, linux
 
@@ -131,9 +131,9 @@ Use the following command to configure cache node for deployment to a **Linux** 
 
 Replace the following placeholders with your own information:
 
-* *\<resource-group>*: An existing resource group in your subscription.
-* *\<mcc-resource-name>*: A name for your Microsoft Connected Cache for Enterprise resource.
-* *\<cache-node-name>*: The Azure region where your Microsoft Connected Cache will be located.
+* *\<resource-group>*: Name of the resource group in your subscription.
+* *\<mcc-resource-name>*: Name of your Microsoft Connected Cache for Enterprise resource.
+* *\<cache-node-name>*: Name for your Microsoft Connected Cache node.
 * *\<physical-path>*: The cache drive path. You can add upto nine cache drives.
 * *\<size-in-gb>*: The size of cache drive. Must be at least 50 Gb.
 * *\<proxy>*: If proxy needs to be enabled or not.<br>
@@ -163,9 +163,9 @@ Use the following command to configure cache node for deployment to a **Windows*
 
 Replace the following placeholders with your own information:
   
-* *\<resource-group>*: An existing resource group in your subscription.
-* *\<mcc-resource-name>*: A name for your Microsoft Connected Cache for Enterprise resource.
-* *\<cache-node-name>*: The Azure region where your Microsoft Connected Cache will be located.
+* *\<resource-group>*: Name of the resource group in your subscription.
+* *\<mcc-resource-name>*: Name of your Microsoft Connected Cache for Enterprise resource.
+* *\<cache-node-name>*: Name for your Microsoft Connected Cache node.
 * *\<physical-path>*: The cache drive path.<br>
   Accepted value: /var/mcc
 * *\<size-in-gb>*: The size of cache drive. Must be at least 50 Gb.
@@ -253,11 +253,93 @@ You can choose to enable or disable proxy settings on your cache node. Proxy sho
 |**Proxy port**|	Integer|	Proxy port
 
 <br>
+<br>
+
+## Other operations on resource and cache nodes
+<br>
+
+### List all MCC resource
+
+# [Azure portal](#tab/portal)
+Navigate to the resource group under which you would like to see the MCC resources.
+
+
+# [Azure CLI](#tab/cli)
+Use the following command to list all the MCC resources under the resource group. 
+
+Replace the following placeholders with your own information:
+* *\<resource-group>*: An existing resource group in your subscription.
+
+
+```azurecli-interactive
+az mcc ent resource list  --resource-group <myrg>
+```
+---
+
+### List all cache nodes
+
+# [Azure portal](#tab/portal)
+On the left pane, click on 'Cache Nodes' under 'Cache Node Management' to see all the cache nodes under the MCC resource.
+
+
+# [Azure CLI](#tab/cli)
+Use the following command to list all the cache nodes under the resource. 
+
+Replace the following placeholders with your own information:
+* *\<resource-group>*: Name of the resource group in your subscription.
+* *\<mcc-resource-name>*: Name of your Microsoft Connected Cache for Enterprise resource.
+
+```azurecli-interactive
+az mcc ent node list --mcc-resource-name <mymccresource> --resource-group <myrg>
+```
+
+---
+<br>
+
+### Delete MCC resource
+
+# [Azure portal](#tab/portal)
+Navigate to the MCC resource to delete and click on the delete button on top.
+
+
+# [Azure CLI](#tab/cli)
+Use the following command to delete the MCC resource. 
+
+Replace the following placeholders with your own information:
+* *\<resource-group>*: Name of the resource group in your subscription.
+* *\<mcc-resource-name>*: Name of your Microsoft Connected Cache for Enterprise resource.
+* *\<cache-node-name>*: The name for your Microsoft Connected Cache node.
+
+
+```azurecli-interactive
+az mcc ent node delete --cache-node-name <mycachenode> --mcc-resource-name <mymccresource> --resource-group <myrg> 
+```
+---
+
+### Delete cache node
+
+# [Azure portal](#tab/portal)
+On the left pane, click on 'Cache Nodes' under 'Cache Node Management' to see all the cache nodes under the MCC resource. Select the cache node you wish to delete and click delete button on top of the page.
+
+
+# [Azure CLI](#tab/cli)
+Use the following command to delete the cache node under the resource. 
+
+Replace the following placeholders with your own information:
+* *\<resource-group>*: Name of the resource group in your subscription.
+* *\<mcc-resource-name>*: Name of your Microsoft Connected Cache for Enterprise resource.
+
+```azurecli-interactive
+az mcc ent node delete --mcc-resource-name <mymccresource> --resource-group <myrg>
+```
+
+---
+<br>
 
 ##### Cache node states
 | Cache node state |Description|
 |---|---|
-|Creation in progress| Cache node is being created|
+|Operation in progress| An operation is being done on the cache node|
 |Registration in progress| Cache node is being registered|
 |Not configured| Cache node is ready to be configured|
 |Not provisioned| Cache node is ready to be provisioned on host machine|
