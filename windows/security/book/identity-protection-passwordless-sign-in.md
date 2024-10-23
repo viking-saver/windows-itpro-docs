@@ -80,7 +80,9 @@ Provisioning methods include:
 
 Windows Hello for Business replaces the username and password by combining a security key or certificate with a PIN or biometric data and then mapping the credentials to a user account during setup. There are multiple ways to deploy Windows Hello for Business depending on an organization's needs. Organizations that rely on certificates typically use on-premises public key infrastructure (PKI) to support authentication through Certificate Trust. Organizations using key trust deployment require root-of-trust provided by certificates on domain controllers.
 
-Organizations with hybrid scenarios can eliminate the need for on-premises domain controllers and simplify passwordless adoption by using Windows Hello for Business cloud Kerberos trust. This solution uses security keys and replaces on-premises domain controllers with a cloud-based root-of-trust. As a result, organizations can take advantage of Windows Hello for Business and deploy security keys with minimal extra setup or infrastructure.
+Hybrid cloud Kerberos trust is the simplest deployment model for the organizations with hybrid scenarios, as it reduces any additional deployment requirements. It uses the same infrastructure required for FIDO2 security sign-in. This is for enterprises who do not want to issue end-user certificates and have deployed 2016 domain controllers in each site to support authentication. It is simpler to deploy than key trust and does not require Active Directory Certificate Services. As a result, organization can take advantage of Windows Hello for Business and deploy passwordless credentials with minimal additional setup or infrastructure. 
+
+This is the recommended deployment model when compared to the key trust. It is also preferred deployment model if you do not need to support certificate authentication scenarios.
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
