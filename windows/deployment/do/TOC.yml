@@ -50,7 +50,7 @@
           - name: Deploy MCC to Windows
             href: mcc-ent-deploy-to-windows.md
         - name: Using CLI to create and manage cache nodes
-          href: mcc-ent-manage-cache-using-cli.md 
+          href: mcc-ent-manage-using-cli.md 
         - name: Verify cache node functionality
           href: mcc-ent-verify-cache-node.md
         - name: Monitor cache node
@@ -64,7 +64,7 @@
         - name: Frequent Asked Questions
           href: mcc-ent-faq.yml
         - name: Support and troubleshooting
-          href: mcc-ent-support-and-troubleshooting.md
+          href: mcc-ent-troubleshooting.md
         - name: MCC for Enterprise and Education (early preview)
           href: mcc-ent-private-preview.md
       - name: Release notes
