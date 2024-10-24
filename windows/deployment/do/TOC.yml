@@ -33,7 +33,7 @@
   items:
     - name: What is Microsoft Connected Cache?
       href: waas-microsoft-connected-cache.md
-    - name: Connected Cache for Enterprise and Education
+    - name: Microsoft Connected Cache for Enterprise and Education
       items:
       - name: Connected Cache for Enterprise and Education Overview
         href: mcc-ent-edu-overview.md
@@ -45,7 +45,7 @@
         href: mcc-enterprise-update-uninstall.md
       - name: Appendix
         href: mcc-enterprise-appendix.md
-    - name: Connected Cache for ISPs
+    - name: Microsoft Connected Cache for ISPs
       items:
       - name: Connected Cache for ISPs Overview
         href: mcc-isp-overview.md

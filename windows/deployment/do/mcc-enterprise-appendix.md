@@ -82,7 +82,7 @@ communication operations. The runtime performs several functions:
 
 For more information on Azure IoT Edge, see the [Azure IoT Edge documentation](/azure/iot-edge/about-iot-edge).
 
-## Routing local Windows clients to an Connected Cache
+## Routing local Windows clients to a Connected Cache
 
 ### Get the IP address of your Connected Cache using ifconfig
 

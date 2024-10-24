@@ -173,13 +173,13 @@ If you get the error message "Validation failed" in the Azure portal, it's likel
 
 If you get the error message "Could not create marketplace item" in the Azure portal, use the following steps to troubleshoot:
 
-- Make sure that you've selected **Microsoft Connected Cache** and not *Connected Cache resources* while trying to create an Connected Cache resource.
+- Make sure that you've selected **Microsoft Connected Cache** and not *Connected Cache resources* while trying to create a Connected Cache resource.
 
 - Make sure that you're using the same subscription that you provided to Microsoft and you have privileges to create an Azure resource.
 
 - If the issue persists, clear your browser cache and start in a new window.
 
-### Create an Connected Cache node in Azure
+### Create a Connected Cache node in Azure
 
 1. After you successfully create the resource, select **Go to resource**.
 
@@ -347,7 +347,7 @@ Before you start, make sure that you have a data drive configured on your server
 
     - If this process is for your *first Connected Cache deployment*, enter `n`.
 
-    - If you already have an Connected Cache deployment, you can use an existing IoT Hub from your previous installation. Select `Y` to see your existing IoT Hubs. You can copy and paste the resulting IoT Hub name to continue.
+    - If you already have a Connected Cache deployment, you can use an existing IoT Hub from your previous installation. Select `Y` to see your existing IoT Hubs. You can copy and paste the resulting IoT Hub name to continue.
 
     :::image type="content" source="./images/mcc-isp-bash-iot-prompt.png" alt-text="Screenshot of the Bash script output with steps for existing IoT Hub." lightbox="./images/mcc-isp-bash-iot-prompt.png":::
 
@@ -550,7 +550,7 @@ sudo ./updatemcc.sh version="msconnectedcacheprod.azurecr.io/mcc/linux/iot/mcc-u
 
 <!-- ### Configure BGP on an Existing Connected Cache
 
-If you have an Connected Cache that's already active and running, follow the steps below to configure BGP.
+If you have a Connected Cache that's already active and running, follow the steps below to configure BGP.
 
 1. Run the Update commands as described above.
 

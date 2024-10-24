@@ -164,7 +164,7 @@ One or more values can be added as either fully qualified domain names (FQDN) or
 <!-- DOCacheHost-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> Clients don't talk to multiple Microsoft Connected Cache servers at the same time. If you configure a list of Connected Cache servers in this policy, the clients will round robin until they successfully connect to an Connected Cache server. The clients have no way to determine if the Connected Cache server has the content or not. If the Connected Cache server doesn't have the content, it caches the content as it is handing the content back to the client.
+> Clients don't talk to multiple Microsoft Connected Cache servers at the same time. If you configure a list of Connected Cache servers in this policy, the clients will round robin until they successfully connect to a Connected Cache server. The clients have no way to determine if the Connected Cache server has the content or not. If the Connected Cache server doesn't have the content, it caches the content as it is handing the content back to the client.
 <!-- DOCacheHost-Editable-End -->
 
 <!-- DOCacheHost-DFProperties-Begin -->
