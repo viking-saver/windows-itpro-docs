@@ -70,7 +70,7 @@ The following steps describe how Connected Cache is provisioned and used:
 
 1. Microsoft clients make the range requests for content from the Connected Cache node.
 
-1. An Connected Cache node gets content from the CDN, seeds its local cache stored on disk, and delivers the content to the client.
+1. A Connected Cache node gets content from the CDN, seeds its local cache stored on disk, and delivers the content to the client.
 
 1. Subsequent requests from end-user devices for content will be served from cache.
 
