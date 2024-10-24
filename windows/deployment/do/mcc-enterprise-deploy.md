@@ -26,7 +26,7 @@ To deploy Connected Cache to your server:
 
 1. [Provide Microsoft with the Azure subscription ID](#provide-microsoft-with-the-azure-subscription-id)
 1. [Create the Connected Cache Resource in Azure](#create-the-connected-cache-resource-in-azure)
-1. [Create an Connected Cache Node](#create-an-connected-cache-node-in-azure)
+1. [Create a Connected Cache Node](#create-an-connected-cache-node-in-azure)
 1. [Edit Cache Node Information](#edit-cache-node-information)
 1. [Install Connected Cache on a physical server or VM](#install-connected-cache-on-windows)
 1. [Verify Connected Cache functionality](#verify-connected-cache-server-functionality)
@@ -87,9 +87,9 @@ Once you take the survey above and the Connected Cache team adds your subscripti
 
     :::image type="content" source="./images/ent-mcc-create-cache-failed.png" alt-text="Screenshot of a failed cache deployment due to an incorrect location.":::
 
-### Create an Connected Cache node in Azure
+### Create a Connected Cache node in Azure
 
-Creating an Connected Cache node is a multi-step process and the first step is to access the Connected Cache early preview management portal.
+Creating a Connected Cache node is a multi-step process and the first step is to access the Connected Cache early preview management portal.
 
 1. After the successful resource creation, select  **Go to resource**.
 1. Under **Cache Node Management** section on the leftmost panel, select **Cache Nodes**.
