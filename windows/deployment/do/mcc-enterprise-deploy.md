@@ -25,11 +25,11 @@ This article describes how to deploy a Microsoft Connected Cache for Enterprise 
 To deploy Connected Cache to your server:
 
 1. [Provide Microsoft with the Azure subscription ID](#provide-microsoft-with-the-azure-subscription-id)
-1. [Create the Connected Cache Resource in Azure](#create-the-mcc-resource-in-azure)
-1. [Create an Connected Cache Node](#create-an-mcc-node-in-azure)
+1. [Create the Connected Cache Resource in Azure](#create-the-connected-cache-resource-in-azure)
+1. [Create an Connected Cache Node](#create-an-connected-cache-node-in-azure)
 1. [Edit Cache Node Information](#edit-cache-node-information)
-1. [Install Connected Cache on a physical server or VM](#install-mcc-on-windows)
-1. [Verify Connected Cache functionality](#verify-mcc-server-functionality)
+1. [Install Connected Cache on a physical server or VM](#install-connected-cache-on-windows)
+1. [Verify Connected Cache functionality](#verify-connected-cache-server-functionality)
 1. [Review common Issues](#common-issues) if needed.
 
 ### Provide Microsoft with the Azure subscription ID
@@ -112,7 +112,7 @@ Creating an Connected Cache node is a multi-step process and the first step is t
 
 If there are errors, the form will provide guidance on how to correct the errors.
 
-Once the Connected Cache node has been created, the installer instructions will be exposed. More details on the installer instructions will be addressed later in this article, in the [Install Connected Cache](#install-mcc-on-windows) section.
+Once the Connected Cache node has been created, the installer instructions will be exposed. More details on the installer instructions will be addressed later in this article, in the [Install Connected Cache](#install-connected-cache-on-windows) section.
 
 :::image type="content" source="./images/ent-mcc-connected-cache-installer-download.png" alt-text="Screenshot of the Connected Cache installer download button, installer instructions, and script.":::
 
