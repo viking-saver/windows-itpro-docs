@@ -19,7 +19,7 @@ ms.date: 05/09/2023
 # Microsoft Connected Cache for Enterprise and Education Overview
 
 > [!IMPORTANT]
-> - Microsoft Connected Cache is currently a preview feature. For more information, see [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
+> Microsoft Connected Cache is currently a preview feature. For more information, see [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
 
 Microsoft Connected Cache for Enterprise and Education (preview) is a software-only caching solution that delivers Microsoft content within Enterprise and Education networks. Connected Cache can be managed from an Azure portal or through Azure CLI and can be deployed to as many Windows devices, Linux devices, or VMs as needed. Managed Windows devices can be configured to download cloud content from a Connected Cache server by applying the client policy using management tools such as Intune.
 
@@ -68,6 +68,7 @@ See [Connected Cache node host machine requirements](mcc-ent-prerequisites.md) f
 |Medium to Large Enterprises/Autopilot Provisioning Center (500 - 5,000 devices in a single location) |5 - 101 Gbps Peak|   9 Gbps => 32,400 GB </br></br> 5 Gbps => 18,000 GB </br></br>3 Gbps => 10,800 GB|
 
 ## Supported content types
+
 When clients download cloud-managed content, they use Delivery Optimization from the cache server installed on a Windows server or VM. Cloud-managed content includes the following types:
 
 - Windows updates: Windows feature and quality updates
