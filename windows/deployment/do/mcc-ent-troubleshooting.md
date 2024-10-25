@@ -17,7 +17,7 @@ ms.date: 09/27/2024
 
 # Troubleshoot Microsoft Connected Cache for Enterprise and Education
 
-This article contains instructions on how to troubleshoot different issues you may encounter while using Connected Cache. These issues are categorized by the task in which they may be encountered. For example, this next section covers troubleshooting [Connected Cache Azure resource creation](mcc-ent-create-resource-and-cache.md).
+This article contains instructions on how to troubleshoot different issues you may encounter while using Connected Cache. These issues are categorized by the task in which they may be encountered.
 
 ## Steps to obtain an Azure subscription ID
 
@@ -26,49 +26,66 @@ This article contains instructions on how to troubleshoot different issues you m
 
 ## Troubleshooting Azure resource creation
 
-Connected Cache Azure resource creation can be initiated using either the Azure portal or the Azure CLI command set. If you're encountering an error during resource creation, check that you have the necessary RPaaS permissions and have filled out all required fields.
+[Connected Cache Azure resource creation](mcc-ent-create-resource-and-cache.md) can be initiated using either the Azure portal user interface or the Azure CLI command set.
 
-## Troubleshooting cache node issue
+If you're encountering an error during resource creation, check that you have the necessary RPaaS permissions and have filled out all required fields during the resource creation process.
 
-If you're facing issues with your cache node, it could be due to cache node being on the early preview version of Connected Cache. Cache nodes belonging to early preview version will be under Connected Cache resource that will have 'early preview' in its name. Please delete these cache nodes and associated Connected Cache resource and create a new Connected Cache resource on the new version.
-For detailed instructions on creating Connected Cache resource, see [Create Connected Cache Azure resources](mcc-ent-create-resource-and-cache.md)
+## Troubleshooting cache node configuration
 
-## Troubleshooting cache node deployment
+[Configuration of your Connected Cache node](mcc-ent-create-resource-and-cache.md) can be done using either the Azure portal user interface or the Azure CLI command set.
 
-TODO: Add introduction sentence(s)
-[Include a sentence or two to explain only what is needed to complete the procedure.]
-TODO: Add ordered list of procedure steps
+If you're encountering a validation error, check that you have filled out all required configuration fields.
 
-1. Step 1
-1. Step 2
-1. Step 3
+If your configuration doesn't appear to be taking effect, check that you have clicked the "Save" button at the top of the configuration page in the Azure portal user interface.
+
+## Troubleshooting cache nodes created during early preview
+
+Cache nodes created and deployed during the [Microsoft Connected Cache for Enterprise and Education early preview](mcc-ent-private-preview.md) should continue to function but can no longer be managed or monitored remotely via the Connected Cache Azure service.
+
+As such, we strongly recommend you [recreate your existing resources in Azure](mcc-ent-create-resource-and-cache.md) and then [redeploy the Connected Cache software to your host machines](mcc-ent-deploy-to-windows.md) using the latest OS-specific installer.
+
+## Troubleshooting cache node deployment to Windows host machine
+
+[Deploying a Connected Cache node to a Windows host machine](mcc-ent-deploy-to-windows.md) involves running a series of PowerShell scripts contained within the Windows provisioning package. These scripts will attempt to write log files to the installation directory specified in the provisioning command (`C:\mccwsl01\InstallLogs` by default).
+
+There are three types of installation log files:
+
+1. **WSL_Mcc_Install_Transcript**: This log file records the lines printed to the PowerShell window when running the installation script
+1. **WSL_Mcc_Install_FromRegisteredTask_Status**: This log file records the high level status that is written during the registered tasks install
+1. **WSL_Mcc_Install_FromRegisteredTask_Transcript**: This log file records the detailed status that is written during the registered tasks install
+
+The Registered Task Transcript is usually the most useful for diagnosing the installation issue.
+
+Once the Connected Cache software has been successfully deployed to the Windows host machine, you can check if the cache node is running properly by doing the following on the Windows host machine:
+
+1. Launch a PowerShell process as the account specified as the runtime account during the Connected Cache install
+1. Run `wsl -d Ubuntu-22.04-Mcc-Base` to access the Linux distribution that hosts the Connected Cache container
+1. Run `sudo iotedge list` to show which containers are running within the IoT Edge runtime
+
+If it shows the **edgeAgent** and **edgeHub** containers but doesn't show **MCC**, you can view the status of the IoT Edge security manager using `sudo iotedge system logs --f`.
+
+You can also reboot the IoT Edge runtime using `sudo iotedge restart`.
+
+## Troubleshooting cache node deployment to Linux host machine
+
+[Deploying a Connected Cache node to a Linux host machine](mcc-ent-deploy-to-linux.md) involves running a series of Bash scripts contained within the Linux provisioning package.
+
+Once the Connected Cache software has been successfully deployed to the Linux host machine, you can check if the cache node is running properly by doing the following on the Linux host machine:
+
+1. Run `sudo iotedge list` to show which containers are running within the IoT Edge runtime
+
+If it shows the **edgeAgent** and **edgeHub** containers but doesn't show **MCC**, you can view the status of the IoT Edge security manager using `sudo iotedge system logs --f`.
+
+You can also reboot the IoT Edge runtime using `sudo iotedge restart`.
 
 ## Troubleshooting cache node monitoring
 
-TODO: Add introduction sentence(s)
-[Include a sentence or two to explain only what is needed to complete the procedure.]
-TODO: Add ordered list of procedure steps
+Connected Cache node status and performance can be [monitored using the Azure portal user interface](mcc-ent-monitoring.md).
 
-1. Step 1
-1. Step 2
-1. Step 3
+If the [basic monitoring](mcc-ent-monitoring.md#basic-monitoring) visuals on the Overview tab are showing unexpected or erroneous values, refresh the browser window.
 
-<!-- 5. Next step/Related content------------------------------------------------------------------------
-
-Optional: You have two options for manually curated links in this pattern: Next step and Related content. You don't have to use either, but don't use both.
-  - For Next step, provide one link to the next step in a sequence. Use the blue box format
-  - For Related content provide 1-3 links. Include some context so the customer can determine why they would click the link. Add a context sentence for the following links.
-
--->
+If the issue persists, check that you have configured the Timespan and Cache nodes as desired.
 
 ## Diagnose and Solve
 
-If this article isn't resolving the issue you're facing with your cache node, you can use the **Diagnose and solve problems** functionality within your Connected Cache resource to continue troubleshooting. **Diagnose and solve problems** contains solutions to most common problems that users might face as they onboard.
-
-You can find **Diagnose and solve problems** on the left pane within your Connected Cache resource.
-
-Within **Diagnose and solve problems**, select **Troubleshoot** under the type of problem you're facing and follow the prompts that narrow down the solution to the issue.
-
-## Filing a support request
-
-TODO: Add steps for filling out a CSS ticket.
+You can also use the **Diagnose and solve problems** functionality provided by the Azure portal interface. This tab within the Microsoft Connected Cache Azure resource will walk you through a few prompts to help narrow down the solution to your issue.
