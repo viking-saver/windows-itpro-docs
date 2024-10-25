@@ -48,7 +48,7 @@ To deploy a cache node programmatically, you'll need to use Azure CLI to get the
    ```
 
 1. Save the resulting output. These values will be passed as parameters within the provisioning command.
-1. Download and extract the [Connected Cache provisioning package for Windows](https://aka.ms/MCC-Ent-InstallScript-WSL) to your host machine.
+1. Download and extract the [Connected Cache provisioning package for Windows](https://aka.ms/MCC-Ent-InstallScript-WSL) to your host machine. **Note**: The installer should be in a folder that is not synced to OneDrive, as this will interfere with the installation process.
 1. Open a PowerShell window *as administrator* on the host machine, then change directory to the extracted provisioning package.
 1. Set the Execution Policy to "Unrestricted" to allow the provisioning scripts to run.
 1. Create a `$User` environment variable containing the username of the account you intend to designate as the Connected Cache runtime account. 
