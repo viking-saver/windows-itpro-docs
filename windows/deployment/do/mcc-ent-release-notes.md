@@ -26,14 +26,19 @@ This article contains details about the latest releases of MCC. Since MCC is a P
 - Contains client changes
 - Affects Linux, Windows host machines
 
-### Changenotes
+### Feature updates
 
-- Added new "Outbound egress" and "Volume by Content type" monitoring charts to Azure portal user interface
-- Added ability to create custom monitoring charts under the Metrics tab in the Azure portal user interface
-- Added support for creating both Windows-hosted and Linux-hosted cache nodes under the same MCC Azure resource
-- Added Azure CLI support for programmatic creation and management of MCC Azure resources and cache nodes
-- Added support for unauthenticated proxy and cloud proxy integration
-- Added ability to set each cache node's Update Ring to govern cadence of MCC container updates
+- **Metrics and charts in Azure portal**: You can now visualize "Outbound egress" and "Volume by Content type" charts for your cache node on Azure portal. You can also create custom monitoring charts for your cache nodes. You will find this capability under the Metrics tab on Azure portal.
+- **Cache nodes for Windows or Linux host machines**: Cache nodes can now be created and deployed to Windows host machine or Linux host machines by simply choosing the OS when creating cache nodes.
+- **Azure CLI support**: Cache nodes can now be created and managed via Azure CLI.
+- **Proxy**: We added support for unauthenticated proxy and cloud proxy integration.
+- **Updates**: Your cache nodes will now be updated automatically and we also added capability to set each cache node's Update Ring to govern cadence of MCC container updates.
+
+### Fixes
+- We fixed various bugs to achieve smoother install experience.
+
+
+<br>
 
 ## Related content
 
