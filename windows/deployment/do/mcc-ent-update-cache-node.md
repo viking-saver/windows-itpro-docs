@@ -31,9 +31,11 @@ In other words, configuring cache nodes to update as part of the Slow ring provi
 >In the event of a critical security patch, Microsoft may elect to initiate an Connected Cache update to your cache node as soon as possible (even if the cache node has been set to the Slow Ring). Visit the [Release notes](mcc-ent-release-notes.md) page for a detailed changelog of each Connected Cache update.
 
 #### Fast Ring
+
 All Connected Cache nodes are configured to update as part of the Fast ring by default. Connected Cache nodes in the Fast ring will be updated soon after an update is made available. Microsoft will silently update cache nodes at a time of day when update traffic is likely to be minimal, such as 3:00 AM (local time) on Saturday.
 
 #### Slow Ring
+
 Configuring an Connected Cache node to update as part of the Slow ring provides users with the option to delay Connected Cache software updates until the update can be validated. There are three settings that control when Connected Cache updates will be applied to Connected Cache nodes. All update ring settings can be managed from the Azure portal or through Azure CLI.
 
 | Setting | Description |

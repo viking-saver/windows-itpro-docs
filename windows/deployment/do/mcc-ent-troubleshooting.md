@@ -29,11 +29,12 @@ This article contains instructions on how to troubleshoot different issues you m
 Connected Cache Azure resource creation can be initiated using either the Azure portal or the Azure CLI command set. If you're encountering an error during resource creation, check that you have the necessary RPaaS permissions and have filled out all required fields.
 
 ## Troubleshooting cache node issue
+
 If you are facing issues with your cache node, it could be due to cache node being on the early preview version of Connected Cache. Cache nodes belonging to early preview version will be under Connected Cache resource that will have 'early preview' in its name. Please delete these cache nodes and associated Connected Cache resource and create a new Connected Cache resource on the new version.
 For detailed instructions on creating Connected Cache resource, see [Create Connected Cache Azure resources](mcc-ent-create-resource-and-cache.md)
 
-
 ## Troubleshooting cache node deployment
+
 TODO: Add introduction sentence(s)
 [Include a sentence or two to explain only what is needed to complete the procedure.]
 TODO: Add ordered list of procedure steps
@@ -43,6 +44,7 @@ TODO: Add ordered list of procedure steps
 1. Step 3
 
 ## Troubleshooting cache node monitoring
+
 TODO: Add introduction sentence(s)
 [Include a sentence or two to explain only what is needed to complete the procedure.]
 TODO: Add ordered list of procedure steps
@@ -66,7 +68,6 @@ If this article isn't resolving the issue you're facing with your cache node, yo
 You can find **Diagnose and solve problems** on the left pane within your Connected Cache resource.
 
 Within **Diagnose and solve problems**, select **Troubleshoot** under the type of problem you're facing and follow the prompts that narrow down the solution to the issue.
-
 
 ## Filing a support request
 
