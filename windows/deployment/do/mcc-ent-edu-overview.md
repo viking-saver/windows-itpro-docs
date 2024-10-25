@@ -23,7 +23,7 @@ ms.date: 05/09/2023
 
 Microsoft Connected Cache for Enterprise and Education (preview) is a software-only caching solution that delivers Microsoft content within Enterprise and Education networks. Connected Cache can be managed from an Azure portal or through Azure CLI and can be deployed to as many Windows devices, Linux devices, or VMs as needed. Managed Windows devices can be configured to download cloud content from a Connected Cache server by applying the client policy using management tools such as Intune.
 
-Microsoft Connected Cache for Enterprise and Education (preview) is a standalone cache for customers moving towards modern management and away from Configuration Manager distribution points. For information about Microsoft Connected Cache in Configuration Manager (generally available, starting Configuration Manager version 2111), see [Microsoft Connected Cache in Configuration Manager](/configmgr/core/plan-design/hierarchy/microsoft-connected-cache).
+For information about Microsoft Connected Cache in Configuration Manager (generally available, starting Configuration Manager version 2111), see [Microsoft Connected Cache in Configuration Manager](/configmgr/core/plan-design/hierarchy/microsoft-connected-cache).
 
 Microsoft Connected Cache deployed directly to Windows relies on [Windows Subsystem for Linux](/windows/wsl/about) and either a [Group Managed Service Account](/windows-server/identity/ad-ds/manage/group-managed-service-accounts/group-managed-service-accounts/getting-started-with-group-managed-service-accounts), local user account, or domain user account are required to run WSL. WSL needs to run in a user context and any user, even if the currently logged-in user, could be used to run WSL and Microsoft Connected Cache.
 
@@ -95,4 +95,6 @@ Customers can view data regarding Microsoft Connected Cache downloads on managem
 ## Next steps
 
 >[!div class="nextstepaction"]
+
 >[Create Connected Cache Azure resources](mcc-ent-create-resource-and-cache.md)
+>
