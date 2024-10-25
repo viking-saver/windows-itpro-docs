@@ -20,7 +20,7 @@ This article contains details about the latest releases of MCC. Since MCC is a P
 
 ## Release v0.1.0 (Public Preview launch)
 
-- Released on **10/17/2024**
+- Released on **10/30/2024**
 - Contains breaking changes
 - Contains service changes
 - Contains client changes
