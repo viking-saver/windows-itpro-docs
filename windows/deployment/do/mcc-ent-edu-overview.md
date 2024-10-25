@@ -1,6 +1,6 @@
 ---
-title: MCC Overview
-description: Overview, supported scenarios, and content types for Microsoft Connected Cache for Enterprise and Education (MCC).
+title: Microsoft Connected Cache for Enterprise and Education Overview
+description: Overview, supported scenarios, and content types for Microsoft Connected Cache for Enterprise and Education.
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: conceptual
@@ -21,9 +21,9 @@ ms.date: 05/09/2023
 > [!IMPORTANT]
 > - Microsoft Connected Cache is currently a preview feature. For more information, see [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
 
-Microsoft Connected Cache (MCC) for Enterprise and Education (preview) is a software-only caching solution that delivers Microsoft content within Enterprise and Education networks. MCC can be managed from an Azure portal or through Azure CLI and can be deployed to as many Windows devices, Linux devices, or VMs as needed. Managed Windows devices can be configured to download cloud content from a Connected Cache server by applying the client policy using management tools such as Intune.<br>
+Microsoft Connected Cache for Enterprise and Education (preview) is a software-only caching solution that delivers Microsoft content within Enterprise and Education networks. Connected Cache can be managed from an Azure portal or through Azure CLI and can be deployed to as many Windows devices, Linux devices, or VMs as needed. Managed Windows devices can be configured to download cloud content from a Connected Cache server by applying the client policy using management tools such as Intune.<br>
 
-Microsoft Connected Cache (MCC) for Enterprise and Education (preview) is a standalone cache for customers moving towards modern management and away from Configuration Manager distribution points. For information about Microsoft Connected Cache in Configuration Manager (generally available, starting Configuration Manager version 2111), see [Microsoft Connected Cache in Configuration Manager](/configmgr/core/plan-design/hierarchy/microsoft-connected-cache).
+Microsoft Connected Cache for Enterprise and Education (preview) is a standalone cache for customers moving towards modern management and away from Configuration Manager distribution points. For information about Microsoft Connected Cache in Configuration Manager (generally available, starting Configuration Manager version 2111), see [Microsoft Connected Cache in Configuration Manager](/configmgr/core/plan-design/hierarchy/microsoft-connected-cache).
 
 Microsoft Connected Cache deployed directly to Windows relies on [Windows Subsystem for Linux](/windows/wsl/about) and either a [Group Managed Service Account](/windows-server/identity/ad-ds/manage/group-managed-service-accounts/group-managed-service-accounts/getting-started-with-group-managed-service-accounts), local user account, or domain user account are required to run WSL. WSL needs to run in a user context and any user, even if the currently logged-in user, could be used to run WSL and Microsoft Connected Cache.<br>
 
@@ -75,9 +75,9 @@ See [Host machine requirements](mcc-ent-prerequisites.md) for complete details.
 
 ## How it works
 
-The following diagram displays an overview of how MCC functions:<br>
+The following diagram displays an overview of how Connected Cache functions:<br>
 
-:::image type="content" source="./images/mcc_ent_publicpreview.png" alt-text="Diagram displaying the components of MCC." lightbox="./images/mcc_ent_publicpreview.png":::
+:::image type="content" source="./images/mcc_ent_publicpreview.png" alt-text="Diagram displaying the components of Connected Cache." lightbox="./images/mcc_ent_publicpreview.png":::
 
 
 1. The Azure management portal for Microsoft Connected Cache or CLI are used to create cache nodes, configure deployments, including unauthenticated proxy settings.
@@ -92,4 +92,4 @@ Customers can view data regarding Microsoft Connected Cache downloads on managem
 ## Next step
 
 >[!div class="nextstepaction"]
->[Create MCC Azure resources](mcc-ent-create-resource-and-cache.md)
+>[Create Connected Cache Azure resources](mcc-ent-create-resource-and-cache.md)

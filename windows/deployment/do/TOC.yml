@@ -33,21 +33,21 @@
   items:
     - name: What is Microsoft Connected Cache?
       href: waas-microsoft-connected-cache.md
-    - name: MCC for Enterprise and Education
+    - name: Microsoft Connected Cache for Enterprise and Education
       items:
-      - name: MCC for Enterprise and Education Overview
+      - name: Connected Cache for Enterprise and Education Overview
         href: mcc-ent-edu-overview.md
       - name: Requirements
         href: mcc-ent-prerequisites.md
       - name: How-to guides
         items:
-        - name: Create MCC resource and cache node
+        - name: Create Connected Cache resource and cache node
           href: mcc-ent-create-resource-and-cache.md
         - name: Configure, provision and deploy cache node
           items:
-          - name: Deploy MCC to Linux
+          - name: Deploy Connected Cache to Linux
             href: mcc-ent-deploy-to-linux.md
-          - name: Deploy MCC to Windows
+          - name: Deploy Connected Cache to Windows
             href: mcc-ent-deploy-to-windows.md
         - name: Using CLI to create and manage cache nodes
           href: mcc-ent-manage-cache-using-cli.md 
@@ -55,7 +55,7 @@
           href: mcc-ent-verify-cache-node.md
         - name: Monitor cache node
           href: mcc-ent-monitoring.md
-        - name: Update MCC
+        - name: Update Connected Cache
           href: mcc-ent-update-cache-node.md 
         - name: Uninstall cache node
           href: mcc-ent-uninstall-cache-node.md     
@@ -65,13 +65,13 @@
           href: mcc-ent-faq.yml
         - name: Support and troubleshooting
           href: mcc-ent-support-and-troubleshooting.md
-        - name: MCC for Enterprise and Education (early preview)
+        - name: Connected Cache for Enterprise and Education (early preview)
           href: mcc-ent-private-preview.md
       - name: Release notes
         href: mcc-ent-release-notes.md        
-    - name: MCC for ISPs
+    - name: Microsoft Connected Cache for ISPs
       items:
-      - name: MCC for ISPs Overview
+      - name: Connected Cache for ISPs Overview
         href: mcc-isp-overview.md
       - name: How-to guides
         items:  
@@ -91,9 +91,8 @@
           href: mcc-isp-vm-performance.md
         - name: Support and troubleshooting
           href: mcc-isp-support.md
-        - name: MCC for ISPs (early preview)
+        - name: Connected Cache for ISPs (early preview)
           href: mcc-isp.md
 - name: Endpoints for Microsoft Connected Cache content and services
   href: delivery-optimization-endpoints.md 
-
   
