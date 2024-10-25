@@ -1,6 +1,6 @@
 ---
-title: Appendix for MCC for Enterprise and Education
-description: This article contains reference information for Microsoft Connected Cache (MCC) for Enterprise and Education.
+title: Appendix for Microsoft Connected Cache for Enterprise and Education
+description: This article contains reference information for Microsoft Connected Cache for Enterprise and Education.
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: reference
@@ -49,11 +49,11 @@ To learn more about how to configure Intel and AMD processors to support nested 
 
 ## Diagnostics Script
 
-If you're having issues with your MCC, we included a diagnostics script. The script collects all your logs and zips them into a single file. You can then send us these logs via email for the MCC team to debug.
+If you're having issues with your Microsoft Connected Cache, we included a diagnostics script. The script collects all your logs and zips them into a single file. You can then send us these logs via email for the Connected Cache team to debug.
 
 To run this script:
 
-1. Navigate to the following folder in the MCC installation files:
+1. Navigate to the following folder in the Connected Cache installation files:
 
     mccinstaller > Eflow > Diagnostics
 
@@ -66,7 +66,7 @@ To run this script:
 
 1. The script stores all the debug files into a folder and then creates a tar file. After the script is finished running, it will output the path of the tar file, which you can share with us. The location should be **\<currentpath\>**\mccdiagnostics\support_bundle_\$timestamp.tar.gz
 
-1. [Email the MCC team](mailto:mccforenterprise@microsoft.com?subject=Debugging%20Help%20Needed%20for%20MCC%20for%20Enterprise) and attach this file asking for debugging support. Screenshots of the error along with any other warnings you saw will be helpful during out debugging process.
+1. [Email the Connected Cache team](mailto:mccforenterprise@microsoft.com?subject=Debugging%20Help%20Needed%20for%20MCC%20for%20Enterprise) and attach this file asking for debugging support. Screenshots of the error along with any other warnings you saw will be helpful during out debugging process.
 
 ## IoT Edge runtime
 
@@ -82,15 +82,15 @@ communication operations. The runtime performs several functions:
 
 For more information on Azure IoT Edge, see the [Azure IoT Edge documentation](/azure/iot-edge/about-iot-edge).
 
-## Routing local Windows clients to an MCC
+## Routing local Windows clients to a Connected Cache
 
-### Get the IP address of your MCC using ifconfig
+### Get the IP address of your Connected Cache using ifconfig
 
-There are multiple methods that can be used to apply a policy to PCs that should participate in downloading from the MCC.
+There are multiple methods that can be used to apply a policy to PCs that should participate in downloading from the Connected Cache.
 
 #### Registry key
 
-You can either set your MCC IP address or FQDN using:
+You can either set your Connected Cache IP address or FQDN using:
 
 1. Registry key (version 1709 and later):  
     `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization`
@@ -107,19 +107,19 @@ You can either set your MCC IP address or FQDN using:
 
     `.Vendor/MSFT/Policy/Config/DeliveryOptimization/DOCacheHost`
 
-1. In Windows (release version 1809 and later), you can apply the policy via Group Policy Editor. The policy to apply is **DOCacheHost**. To configure the clients to pull content from the MCC using Group Policy, go to **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Delivery Optimization**. Set the **Cache Server Hostname** to the IP address of your MCC, such as `10.137.187.38`.
+1. In Windows (release version 1809 and later), you can apply the policy via Group Policy Editor. The policy to apply is **DOCacheHost**. To configure the clients to pull content from the Connected Cache using Group Policy, go to **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Delivery Optimization**. Set the **Cache Server Hostname** to the IP address of your Connected Cache, such as `10.137.187.38`.
 
    :::image type="content" source="./images/ent-mcc-group-policy-hostname.png" alt-text="Screenshot of the Group Policy editor showing the Cache Server Hostname Group Policy setting." lightbox="./images/ent-mcc-group-policy-hostname.png":::
 
 ## Verify content using the DO client
 
-To verify that the Delivery Optimization client can download content using MCC, you can use the following steps:
+To verify that the Delivery Optimization client can download content using Connected Cache, you can use the following steps:
 
 1. Download a game or application from the Microsoft Store.
 
    :::image type="content" source="./images/ent-mcc-store-example-download.png" alt-text="Screenshot of the Microsoft Store with the game, Angry Birds 2, selected.":::
 
-1. Verify downloads came from MCC by one of two methods:
+1. Verify downloads came from Connected Cache by one of two methods:
 
     - Using the PowerShell Cmdlet Get-DeliveryOptimizationStatus you should see *BytesFromCacheServer*.
 

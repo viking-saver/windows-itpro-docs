@@ -1,6 +1,6 @@
 ---
 title: Deploying your cache node
-description: How to deploy a Microsoft Connected Cache (MCC) for Enterprise and Education cache node from the Azure portal.
+description: How to deploy a Microsoft Connected Cache for Enterprise and Education cache node from the Azure portal.
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: how-to
@@ -18,34 +18,34 @@ ms.date: 05/23/2024
 
 # Deploy your cache node
 
-This article describes how to deploy a Microsoft Connected Cache (MCC) for Enterprise and Education cache node.
+This article describes how to deploy a Microsoft Connected Cache for Enterprise and Education cache node.
 
-## Steps to deploy MCC
+## Steps to deploy Connected Cache
 
-To deploy MCC to your server:
+To deploy Connected Cache to your server:
 
 1. [Provide Microsoft with the Azure subscription ID](#provide-microsoft-with-the-azure-subscription-id)
-1. [Create the MCC Resource in Azure](#create-the-mcc-resource-in-azure)
-1. [Create an MCC Node](#create-an-mcc-node-in-azure)
+1. [Create the Connected Cache Resource in Azure](#create-the-connected-cache-resource-in-azure)
+1. [Create a Connected Cache Node](#create-a-connected-cache-node-in-azure)
 1. [Edit Cache Node Information](#edit-cache-node-information)
-1. [Install MCC on a physical server or VM](#install-mcc-on-windows)
-1. [Verify MCC functionality](#verify-mcc-server-functionality)
+1. [Install Connected Cache on a physical server or VM](#install-connected-cache-on-windows)
+1. [Verify Connected Cache functionality](#verify-connected-cache-server-functionality)
 1. [Review common Issues](#common-issues) if needed.
 
 ### Provide Microsoft with the Azure subscription ID
 
-As part of the MCC preview onboarding process an Azure subscription ID must be provided to Microsoft.
+As part of the Connected Cache preview onboarding process an Azure subscription ID must be provided to Microsoft.
 
 > [!IMPORTANT]
 > As we near the release of public preview, we have paused onboarding. Please continue to submit the form to express interest so we can follow up with you once public preview of Microsoft Connected Cache for Enteprise and Education is available. To register your interest, fill out the form located at [https://aka.ms/MSConnectedCacheSignup](https://aka.ms/MSConnectedCacheSignup).
 
 For information about creating or locating your subscription ID, see [Steps to obtain an Azure subscription ID](mcc-enterprise-appendix.md#steps-to-obtain-an-azure-subscription-id).
 
-### Create the MCC resource in Azure
+### Create the Connected Cache resource in Azure
 
-The MCC Azure management portal is used to create and manage MCC nodes. An Azure subscription ID is used to grant access to the preview and to create the MCC resource in Azure and Cache nodes.
+The Connected Cache Azure management portal is used to create and manage Connected Cache nodes. An Azure subscription ID is used to grant access to the preview and to create the Connected Cache resource in Azure and Cache nodes.
 
-Once you take the survey above and the MCC team adds your subscription ID to the allowlist, you'll be given a link to the Azure portal where you can create the resource described below.
+Once you take the survey above and the Connected Cache team adds your subscription ID to the allowlist, you'll be given a link to the Azure portal where you can create the resource described below.
 
 1. In the Azure portal home page, choose **Create a resource**:  
 
@@ -56,23 +56,23 @@ Once you take the survey above and the MCC team adds your subscription ID to the
    > [!NOTE]
    > You won't see Microsoft Connected Cache in the drop-down list. You'll need to type the string and press enter to see the result.
 
-1. Select **Microsoft Connected Cache Enterprise** and choose **Create** on the next screen to start the process of creating the MCC resource.
+1. Select **Microsoft Connected Cache Enterprise** and choose **Create** on the next screen to start the process of creating the Connected Cache resource.
 
    :::image type="content" source="./images/ent-mcc-azure-search-result.png" alt-text="Screenshot of the Azure portal search results for Microsoft Connected Cache.":::
 
    :::image type="content" source="./images/ent-mcc-azure-marketplace.png" alt-text="Screenshot of Microsoft Connected Cache Enterprise within the Azure Marketplace.":::
 
-1. Fill in the required fields to create the MCC resource.
+1. Fill in the required fields to create the Connected Cache resource.
 
     - Choose the subscription that you provided to Microsoft.
     - Azure resource groups are logical groups of resources. Create a new resource group and choose a name for your resource group.
-    - Choose **(US) West US** for the location of the resource. This choice won't impact MCC if the physical location isn't in the West US, it's just a limitation of the preview.
+    - Choose **(US) West US** for the location of the resource. This choice won't impact Connected Cache if the physical location isn't in the West US, it's just a limitation of the preview.
 
        > [!IMPORTANT]
-       > Your MCC resource will not be created properly if you do not select **(US) West US**
+       > Your Connected Cache resource will not be created properly if you do not select **(US) West US**
 
-    - Choose a name for the MCC resource.
-      - Your MCC resource must not contain the word **Microsoft** in it.
+    - Choose a name for the Connected Cache resource.
+      - Your Connected Cache resource must not contain the word **Microsoft** in it.
 
       :::image type="content" source="./images/ent-mcc-azure-create-connected-cache.png" alt-text="Screenshot of the Create a Connected Cache page within the Azure Marketplace.":::
 
@@ -87,9 +87,9 @@ Once you take the survey above and the MCC team adds your subscription ID to the
 
     :::image type="content" source="./images/ent-mcc-create-cache-failed.png" alt-text="Screenshot of a failed cache deployment due to an incorrect location.":::
 
-### Create an MCC node in Azure
+### Create a Connected Cache node in Azure
 
-Creating an MCC node is a multi-step process and the first step is to access the MCC early preview management portal.
+Creating a Connected Cache node is a multi-step process and the first step is to access the Connected Cache early preview management portal.
 
 1. After the successful resource creation, select  **Go to resource**.
 1. Under **Cache Node Management** section on the leftmost panel, select **Cache Nodes**.
@@ -112,7 +112,7 @@ Creating an MCC node is a multi-step process and the first step is to access the
 
 If there are errors, the form will provide guidance on how to correct the errors.
 
-Once the MCC node has been created, the installer instructions will be exposed. More details on the installer instructions will be addressed later in this article, in the [Install Connected Cache](#install-mcc-on-windows) section.
+Once the Connected Cache node has been created, the installer instructions will be exposed. More details on the installer instructions will be addressed later in this article, in the [Install Connected Cache](#install-connected-cache-on-windows) section.
 
 :::image type="content" source="./images/ent-mcc-connected-cache-installer-download.png" alt-text="Screenshot of the Connected Cache installer download button, installer instructions, and script.":::
 
@@ -122,18 +122,18 @@ Cache nodes can be deleted here by selecting the check box to the left of a **Ca
 
 :::image type="content" source="./images/ent-mcc-delete-cache-node.png" alt-text="Screenshot of deleting a cache node from the Cache Nodes page.":::
 
-### Install MCC on Windows
+### Install Connected Cache on Windows
 
-Installing MCC on your Windows device is a simple process. A PowerShell script performs the following tasks:
+Installing Connected Cache on your Windows device is a simple process. A PowerShell script performs the following tasks:
 
 - Installs the Azure CLI
 - Downloads, installs, and deploys EFLOW
 - Enables Microsoft Update so EFLOW can stay up to date
 - Creates a virtual machine
-- Enables the firewall and opens ports 80 and 22 for inbound and outbound traffic. Port 80 is used by MCC, and port 22 is used for SSH communications.
+- Enables the firewall and opens ports 80 and 22 for inbound and outbound traffic. Port 80 is used by Connected Cache, and port 22 is used for SSH communications.
 - Configures Connected Cache tuning settings.
 - Creates the necessary *FREE* Azure resource - IoT Hub/IoT Edge.
-- Deploys the MCC container to server.
+- Deploys the Connected Cache container to server.
 
 #### Run the installer
 
@@ -145,9 +145,9 @@ Installing MCC on your Windows device is a simple process. A PowerShell script p
 
    - **installmcc.ps1**: Main installer file.
    - **installEflow.ps1**: Installs the necessary prerequisites such as the Linux VM, IoT Edge runtime, and Docker, and makes necessary host OS settings to optimize caching performance.
-   - **resourceDeploymentForConnectedCache.ps1**: Creates Azure cloud resources required to support MCC control plane.
-   - **mccdeployment.json**: Deployment manifest used by IoT Edge to deploy the MCC container and configure settings on the container, such as cache drive location sizes.
-   - **updatemcc.ps1**: The update script used to upgrade MCC to a particular version.
+   - **resourceDeploymentForConnectedCache.ps1**: Creates Azure cloud resources required to support Connected Cache control plane.
+   - **mccdeployment.json**: Deployment manifest used by IoT Edge to deploy the Connected Cache container and configure settings on the container, such as cache drive location sizes.
+   - **updatemcc.ps1**: The update script used to upgrade Connected Cache to a particular version.
    - **mccupdate.json**: Used as part of the update script
 
 1. Open Windows PowerShell as administrator then navigate to the location of these files.
@@ -159,7 +159,7 @@ Installing MCC on your Windows device is a simple process. A PowerShell script p
    >
    > Don't use PowerShell ISE, PowerShell 6.x, or PowerShell 7.x. Only Windows PowerShell version 5.x is supported.
 
-1. **If you're installing MCC on a local virtual machine**, turn the virtual machine **off** while you enable nested virtualization and MAC spoofing.
+1. **If you're installing Connected Cache on a local virtual machine**, turn the virtual machine **off** while you enable nested virtualization and MAC spoofing.
    1. Enable nested virtualization:
 
       ```powershell
@@ -215,7 +215,7 @@ Installing MCC on your Windows device is a simple process. A PowerShell script p
     :::image type="content" source="./images/ent-mcc-script-dynamic-address.png" alt-text="Screenshot of the installer script running in PowerShell asking if you'd like to use a dynamic address." lightbox="./images/ent-mcc-script-dynamic-address.png":::
 
     > [!NOTE]
-    > Choosing a dynamic IP address might assign a different IP address when the MCC restarts. A static IP address is recommended so you don't have to change this value in your management solution when MCC restarts.
+    > Choosing a dynamic IP address might assign a different IP address when the Connected Cache restarts. A static IP address is recommended so you don't have to change this value in your management solution when Connected Cache restarts.
 
    The IP address you assign to the EFLOW VM should be within the same subnet as the host server (based on the subnet mask) and not used by any other machine on the network.
    For example, for host configuration where the server IP Address is 192.168.1.202 and the subnet mask is 255.255.255.0, the static IP can be anything 192.168.1.* except 192.168.1.202.
@@ -239,7 +239,7 @@ Installing MCC on your Windows device is a simple process. A PowerShell script p
 
    <!-- Insert Image 5 -->
    :::image type="content" source="./images/memory-storage-5.png" alt-text="Screenshot of multiple installer questions about memory and storage." lightbox="./images/memory-storage-5.png":::
-   <!-- Remove: If this is your first MCC deployment, select **n** so that a new IoT Hub can be created. If you have already configured MCC before, choose **y** so that your MCCs are grouped in the same IoT Hub.
+   <!-- Remove: If this is your first Connected Cache deployment, select **n** so that a new IoT Hub can be created. If you have already configured Connected Cache before, choose **y** so that your Connected Caches are grouped in the same IoT Hub.
 
     1. You'll be shown a list of existing IoT Hubs in your Azure subscription. Enter the number corresponding to the IoT Hub to select it. **You'll likely have only 1 IoT Hub in your subscription, in which case you want to enter "1"**
 
@@ -252,17 +252,17 @@ Installing MCC on your Windows device is a simple process. A PowerShell script p
 
     :::image type="content" source="./images/installation-complete-7.png" alt-text="Screenshot of expected output when installation is complete." lightbox="./images/installation-complete-7.png":::
 
-1. Your MCC deployment is now complete.
+1. Your Connected Cache deployment is now complete.
 
-   If you don't see any errors, continue to the next section to validate your MCC deployment. Your VM will not appear in Hyper-V Manager as it is an EFLOW VM.
-   - After validating your MCC is properly functional, review your management solution documentation, such as [Intune](/mem/intune/configuration/delivery-optimization-windows), to set the cache host policy to the IP address of your MCC.
+   If you don't see any errors, continue to the next section to validate your Connected Cache deployment. Your VM will not appear in Hyper-V Manager as it is an EFLOW VM.
+   - After validating your Connected Cache is properly functional, review your management solution documentation, such as [Intune](/mem/intune/configuration/delivery-optimization-windows), to set the cache host policy to the IP address of your Connected Cache.
    - If you had errors during your deployment, see the [Common Issues](#common-issues) section in this article.
 
-## Verify MCC server functionality
+## Verify Connected Cache server functionality
 
 #### Verify client side
 
-Connect to the EFLOW VM and check if MCC is properly running:
+Connect to the EFLOW VM and check if Connected Cache is properly running:
 
 1. Open PowerShell as an Administrator.
 2. Enter the following commands:
@@ -275,7 +275,7 @@ Connect to the EFLOW VM and check if MCC is properly running:
 
    :::image type="content" source="./images/ent-mcc-connect-eflowvm.png" alt-text="Screenshot of running connect-EflowVm, sudo -s, and iotedge list from PowerShell." lightbox="./images/ent-mcc-connect-eflowvm.png":::
 
-You should see MCC, edgeAgent, and edgeHub running. If you see edgeAgent or edgeHub but not MCC, try this command in a few minutes. The MCC container can take a few minutes to deploy. If iotedge list times out, you can run docker ps -a to list the running containers.
+You should see Connected Cache, edgeAgent, and edgeHub running. If you see edgeAgent or edgeHub but not Connected Cache, try this command in a few minutes. The Connected Cache container can take a few minutes to deploy. If iotedge list times out, you can run docker ps -a to list the running containers.
 If the 3 containers are still not running, run the following commands to check if DNS resolution is working correctly:
 
 ```bash
@@ -287,7 +287,7 @@ See the [common issues](#common-issues) section for more information.
 
 #### Verify server side
 
-To validate that MCC is properly functioning, execute the following command in the EFLOW VM or any device in the network. Replace <CacheServerIP\> with the IP address of the cache server.
+To validate that Connected Cache is properly functioning, execute the following command in the EFLOW VM or any device in the network. Replace <CacheServerIP\> with the IP address of the cache server.
 
 ```powershell
 wget http://<CacheServerIP>/mscomtest/wuidt.gif?cacheHostOrigin=au.download.windowsupdate.com
@@ -305,7 +305,7 @@ Similarly, enter the following URL from a browser in the network:
 
 If the test fails, see the [common issues](#common-issues) section for more information.
 
-### Intune (or other management software) configuration for MCC
+### Intune (or other management software) configuration for Connected Cache
 
 For an [Intune](/mem/intune/) deployment, create a **Configuration Profile** and include the Cache Host eFlow IP Address or FQDN:
 
@@ -327,7 +327,7 @@ If you're seeing errors similar to this error: `The term Get-<Something> isn't r
 
    **Windows Server:** [Install the Hyper-V role on Windows Server](/windows-server/virtualization/hyper-v/get-started/install-the-hyper-v-role-on-windows-server)
 
-#### Verify Running MCC Container
+#### Verify Running Connected Cache Container
 
 Connect to the Connected Cache server and check the list of running IoT Edge modules using the following commands:
 
