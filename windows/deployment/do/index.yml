@@ -32,7 +32,7 @@ landingContent:
             url: waas-delivery-optimization.md
           - text: What's new in Delivery Optimization
             url: whats-new-do.md
-          - text: Microsoft Connected Cache (MCC) overview
+          - text: Microsoft Connected Cache overview
             url: waas-microsoft-connected-cache.md
 
 
@@ -63,25 +63,25 @@ landingContent:
             url: /mem/intune/configuration/delivery-optimization-windows
 
   # Card
-  - title: Microsoft Connected Cache (MCC) for Enterprise and Education
+  - title: Microsoft Connected Cache for Enterprise and Education
     linkLists:
       - linkListType: deploy
         links:
-          - text: MCC for Enterprise and Education (early preview)
+          - text: Connected Cache for Enterprise and Education (early preview)
             url: waas-microsoft-connected-cache.md
           - text: Sign up
             url: https://aka.ms/MSConnectedCacheSignup
 
   # Card
-  - title: Microsoft Connected Cache (MCC) for Internet Service Providers (ISPs)
+  - title: Microsoft Connected Cache for Internet Service Providers (ISPs)
     linkLists:
       - linkListType: deploy
         links:
-          - text: MCC for ISPs (public preview)
+          - text: Connected Cache for ISPs (public preview)
             url: mcc-isp-signup.md
           - text: Sign up
             url: https://aka.ms/MCCForISPSurvey
-          - text: MCC for ISPs (early preview)
+          - text: Connected Cache for ISPs (early preview)
             url: mcc-isp.md
 
 
