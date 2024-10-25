@@ -26,14 +26,14 @@ Before deploying Connected Cache to a Windows host machine, ensure that the host
 # [Azure portal](#tab/portal)
 
 1. Within the Azure portal, navigate to the "Provisioning" tab of your cache node and copy the provisioning command.
-1. Download the provisioning package using the button at the top of the Cache Node Configuration page and extract the package onto the host machine. **Note**: The installer should be in a folder that is not synced to OneDrive, as this will interfere with the installation process.
+1. Download the provisioning package using the button at the top of the Cache Node Configuration page and extract the package onto the host machine. **Note**: The installer should be in a folder that isn't synced to OneDrive, as this will interfere with the installation process.
 1. Open a PowerShell window *as administrator* on the host machine, then change directory to the extracted provisioning package.
 1. Set the Execution Policy to "Unrestricted" to allow the provisioning scripts to run.
 1. Create a `$User` environment variable containing the username of the account you intend to designate as the Connected Cache runtime account. 
 
     For gMSAs, the value should be formatted as `"Domain\Username$"`. For Local User accounts, `$User` should be formatted as `"LocalMachineName\Username"`.
 
-   If you're using a Local User account as the Connected Cache runtime account, you'll also need to create a [PSCredential Object](/dotnet/api/system.management.automation.pscredential) named `$myLocalAccountCredential`. **Note**: You will need to apply a local security policy to permit the Local User account to "Log on as a batch job".
+   If you're using a Local User account as the Connected Cache runtime account, you'll also need to create a [PSCredential Object](/dotnet/api/system.management.automation.pscredential) named `$myLocalAccountCredential`. **Note**: You'll need to apply a local security policy to permit the Local User account to `Log on as a batch job`.
 
 1. Run the provisioning command on the host machine.
 
@@ -48,14 +48,14 @@ To deploy a cache node programmatically, you'll need to use Azure CLI to get the
    ```
 
 1. Save the resulting output. These values will be passed as parameters within the provisioning command.
-1. Download and extract the [Connected Cache provisioning package for Windows](https://aka.ms/MCC-Ent-InstallScript-WSL) to your host machine. **Note**: The installer should be in a folder that is not synced to OneDrive, as this will interfere with the installation process.
+1. Download and extract the [Connected Cache provisioning package for Windows](https://aka.ms/MCC-Ent-InstallScript-WSL) to your host machine. **Note**: The installer should be in a folder that isn't synced to OneDrive, as this will interfere with the installation process.
 1. Open a PowerShell window *as administrator* on the host machine, then change directory to the extracted provisioning package.
 1. Set the Execution Policy to "Unrestricted" to allow the provisioning scripts to run.
 1. Create a `$User` environment variable containing the username of the account you intend to designate as the Connected Cache runtime account. 
 
     For gMSAs, the value should be formatted as `"Domain\Username$"`. For Local User accounts, `$User` should be formatted as `"LocalMachineName\Username"`.
 
-   If you're using a Local User account as the Connected Cache runtime account, you'll also need to create a [PSCredential Object](/dotnet/api/system.management.automation.pscredential) named `$myLocalAccountCredential`. **Note**: You will need to apply a local security policy to permit the Local User account to "Log on as a batch job".
+   If you're using a Local User account as the Connected Cache runtime account, you'll also need to create a [PSCredential Object](/dotnet/api/system.management.automation.pscredential) named `$myLocalAccountCredential`. **Note**: You'll need to apply a local security policy to permit the Local User account to `Log on as a batch job`.
 
 1. Replace the values in the following provisioning command before running it on the host machine. **Note**:  `-mccLocalAccountCredential $myLocalAccountCredential` is only needed if you're using a Local User account as the Connected Cache runtime account.
 
