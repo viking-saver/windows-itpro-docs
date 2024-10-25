@@ -43,4 +43,4 @@ These steps should be taken after deploying Connected Cache software to a [Windo
 ## Related content
 
 - [Monitor cache node usage](mcc-ent-monitoring.md)
-- [Troubleshoot cache node](mcc-ent-support-and-troubleshooting.md)
+- [Troubleshoot cache node](mcc-ent-troubleshooting.md)

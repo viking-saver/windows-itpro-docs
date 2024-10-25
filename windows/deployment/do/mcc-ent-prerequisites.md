@@ -65,7 +65,7 @@ This article details the requirements and recommended specifications for using M
 
 Based on your [enterprise configuration](mcc-ent-edu-overview.md), it's recommended to deploy your Connected Cache nodes to host machines that meet the following recommended hardware specifications.
 
-|   | Branch Office | Small Enterprise | Large Enterprise |
+| Component | Branch Office | Small / Medium Enterprise | Large Enterprise |
 | --- | --- | --- | --- |
 | CPU cores | 4 | 8 | 16 |
 | Memory | 8 GB, 4 GB free | 16 GB, 4 GB free | 32 GB, 4 GB free |

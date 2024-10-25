@@ -204,7 +204,7 @@ To deploy the cache node to a **Linux** host machine, see
 ### [Azure CLI](#tab/cli)
 To deploy cache nodes using Azure CLI, see 
 >[!div class="nextstepaction"]
->[Manage cache nodes using CLI](mcc-ent-manage-cache-using-CLI.md)
+>[Manage cache nodes using CLI](mcc-ent-manage-using-CLI.md)
 
 ---
 <br>
