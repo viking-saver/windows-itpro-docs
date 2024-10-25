@@ -25,7 +25,7 @@ This article details the requirements and recommended specifications for using M
 
     The Azure resources used for Connected Cache will be free to you during this public preview.
 
-- **E3/E5 or A3/A5 license**: Your organization must have one of the following license subscriptions for each device that downloads content from an Connected Cache node.
+- **E3/E5 or A3/A5 license**: Your organization must have one of the following license subscriptions for each device that downloads content from a Connected Cache node.
 
     - [Windows Enterprise E3 or E5](/windows/whats-new/windows-licensing#windows-11-enterprise), included in [Microsoft 365 F3, E3, or E5](https://www.microsoft.com/microsoft-365/enterprise/microsoft365-plans-and-pricing?msockid=32c407b43d5968050f2b13443c746916)
     - Windows Education A3 or A5, included in [Microsoft 365 A3 or A5](https://www.microsoft.com/education/products/microsoft-365?msockid=32c407b43d5968050f2b13443c746916#Education-plans)
@@ -63,11 +63,11 @@ This article details the requirements and recommended specifications for using M
 
 ### Recommended host machine hardware specifications
 
-Based on your [enterprise configuration](mcc-ent-edu-overview.md), it is recommended to deploy your Connected Cache nodes to host machines that meet the following recommended hardware specifications.
+Based on your [enterprise configuration](mcc-ent-edu-overview.md), it's recommended to deploy your Connected Cache nodes to host machines that meet the following recommended hardware specifications.
 
 |   | Branch Office | Small Enterprise | Large Enterprise |
 | --- | --- | --- | --- |
 | CPU cores | 4 | 8 | 16 |
-| Memory | 8 GB, 4GB free | 16 GB, 4GB free | 32 GB, 4GB free |
+| Memory | 8 GB, 4 GB free | 16 GB, 4 GB free | 32 GB, 4 GB free |
 | Disk storage | 100 GB free  | 500 GB free | 2x 200-500 GB free |
 | NIC | 1 Gbps | 5 Gbps | 10 Gbps |

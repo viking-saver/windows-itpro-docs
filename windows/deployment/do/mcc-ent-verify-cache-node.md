@@ -36,9 +36,9 @@ These steps should be taken after deploying Connected Cache software to a [Windo
 
     If successful, the Windows client device should begin to download a small image file from the Connected Cache node.
 
-1. To check how much content an individual Windows client has pulled from an Connected Cache node, open the [Delivery Optimization activity monitor](/microsoft-365-apps/updates/delivery-optimization#viewing-data-about-the-use-of-delivery-optimization) on the Windows client device.
+1. To check how much content an individual Windows client has downloaded from a Connected Cache node, open the [Delivery Optimization activity monitor](/microsoft-365-apps/updates/delivery-optimization#viewing-data-about-the-use-of-delivery-optimization) on the Windows client device.
 
-    You should see a donut chart titled Download Statistics. If the Windows client has pulled content from the cache node, you'll see a segment of the donut labeled "From Microsoft cache server".
+    You should see a donut chart titled Download Statistics. If the Windows client has downloaded content from the cache node, you'll see a segment of the donut labeled "From Microsoft cache server".
 
 ## Related content
 

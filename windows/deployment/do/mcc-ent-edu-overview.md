@@ -4,9 +4,9 @@ description: Overview, supported scenarios, and content types for Microsoft Conn
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: conceptual
-ms.author: carmenf
-author: cmknox
-manager: aaroncz
+ms.author: andyriv
+author: chrisjlin
+manager: naengler
 ms.reviewer: mstewart
 ms.collection: tier3
 appliesto: 
@@ -35,27 +35,27 @@ Microsoft Connected Cache for Enterprise and Education (preview) is intended to 
 - Co-managed clients that get monthly updates and Win32 apps from Microsoft Intune
 - Cloud-only managed devices, such as Intune-enrolled devices without the Configuration Manager client, that get monthly updates and Win32 apps from Microsoft Intune
 
-Microsoft Connected Cache is built for flexible deployments to support a number of enterprise configurations:
+Microsoft Connected Cache is built for flexible deployments to support several different enterprise configurations:
 
 ### Branch office
 
-Customers may have globally dispersed offices that meet the following parameters:
+Customers may have globally dispersed offices that meet some or all of the following parameters:
 
-- 10 – 50 Windows Clients
-- No dedicated server hardware
-- Internet bandwidth is great to limited (satellite internet)
-- Possibly intermittent connectivity
+- Have 10 – 50 Windows devices on-site
+- Don't have dedicated server hardware
+- Have Internet bandwidth that is limited (satellite internet)
+- Have intermittent Internet connectivity
 
 To support the branch office scenario, customers can deploy a Connected Cache node to a Windows 11 client device.
 
 ### Large Enterprise
 
-Customers may have office spaces, data centers, or Azure deployments that meet the following parameters:  
+Customers may have office spaces, data centers, or Azure deployments that meet some or all of the following parameters:  
 
-- 100's or 1,000's of Windows devices (client or server).
-- Existing hardware – Decommissioned DP, file server, cloud print server
-- Azure VMs and Azure Virtual Desktop
-- Internet bandwidth is great to limited (T1)
+- Have 100s or 1,000s of Windows devices (desktop or server)
+- Have some existing server hardware (Decommissioned Distribution Point, file server, cloud print server)
+- Have Azure VMs and/or Azure Virtual Desktop deployed
+- Have Internet bandwidth that is mediocre (T1 or T3 lines)
 
 To support the large enterprise scenario, customers can deploy a Connected Cache node to a server running Windows Server 2022 or Ubuntu 22.04.
 
@@ -88,8 +88,8 @@ The following diagram displays an overview of how Connected Cache functions:
 1. Prepare Windows or Linux devices. If deploying to Windows devices, prepare accounts - gMSA, local user account, domain account. Deploy to Windows or Linux devices using scripts.
 1. The Microsoft Connected Cache container is deployed to the device using Azure IoT Edge container management services and the cache server begins reporting status and metrics to Delivery Optimization services.
 1. The DOCacheHost setting is configured using Intune or other MDM, DHCP custom option, or registry key.
-1. Devices request content from the cache server, the cache server forwards the requests to the CDN and fills the cache, the cache server delivers the content requested to the devices, and uses Peer to Peer (depending on DO Download mode settings) for all DO content. 
-1. Devices can fallback to CDN if cache server is unavailable for any reason or use Delivery Optimization delay fallback to http (CDN )settings to prefer the local cache server.
+1. Devices request content from the cache server, the cache server forwards the requests to the CDN and fills the cache, the cache server delivers the content requested to the devices, and uses Peer to Peer (depending on DO Download mode settings) for all DO content.
+1. Devices can fall back to CDN if cache server is unavailable for any reason or use Delivery Optimization delay fallback to http (CDN) settings to prefer the local cache server.
 Customers can view data regarding Microsoft Connected Cache downloads on management portal and Windows Update for Business reports
 
 ## Next steps

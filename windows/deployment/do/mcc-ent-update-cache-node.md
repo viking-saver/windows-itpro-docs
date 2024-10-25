@@ -36,25 +36,25 @@ All Connected Cache nodes are configured to update as part of the Fast ring by d
 
 #### Slow Ring
 
-Configuring an Connected Cache node to update as part of the Slow ring provides users with the option to delay Connected Cache software updates until the update can be validated. There are three settings that control when Connected Cache updates will be applied to Connected Cache nodes. All update ring settings can be managed from the Azure portal or through Azure CLI.
+Configuring a Connected Cache node to update as part of the Slow ring provides users with the option to delay Connected Cache software updates until the update can be validated. There are three settings that control when Connected Cache updates will be applied to Connected Cache nodes. All update ring settings can be managed from the Azure portal or through Azure CLI.
 
 | Setting | Description |
 | --- | --- |
-| Week of the month | 1st to 4th week can be selected. There are three to four months in a year that could have a 5th week. If there's a 5th week, the update could be applied during that 5th week if the day of the week falls near the last day of the month.|
+| Week of the month | 1st to 4th week can be selected. There are three to four months in a year that could have a fifth week. If there's a fifth week, the update could be applied during that fifth week if the day of the week falls near the last day of the month.|
 | Day of the week | Monday through Sunday can be selected. |
 | Time of day | Time of day is based on UTC and a 24 hour clock. |
 
 ## Update process
 
-When Microsoft publishes an Connected Cache update, the Connected Cache service attempts to update all Connected Cache nodes based on their Update Ring membership. If a cache node can't complete the silent Connected Cache update within 6 hours of starting, an error message is surfaced in the Azure portal.
+When Microsoft publishes a Connected Cache update, the Connected Cache service attempts to update all Connected Cache nodes based on their Update Ring membership. If a cache node can't complete the silent Connected Cache update within 6 hours of starting, an error message is surfaced in the Azure portal.
 
 ## Update terminology, criteria, and SLA
 
-Connected Cache updates will be released based on need instead of on a set cadence.
+Connected Cache updates are released based on need instead of on a set cadence.
 
 | Update type | Criteria and SLA |
 | --- | --- |
-| Security | Security updates are the highest priority and will be released based on the severity rating of the vulnerability. [Critical and High](https://nvd.nist.gov/vuln-metrics/cvss) vulnerabilities will be released by Microsoft within 60 days of discovery. [Medium and Low](https://nvd.nist.gov/vuln-metrics/cvss) vulnerabilities will be released by Microsoft within 120 days |
+| Security | Security updates are the highest priority and are released based on the severity rating of the vulnerability. Patches for [Critical and High](https://nvd.nist.gov/vuln-metrics/cvss) vulnerabilities are released by Microsoft within 60 days of discovery. Patches for [Medium and Low](https://nvd.nist.gov/vuln-metrics/cvss) vulnerabilities are released by Microsoft within 120 days. |
 | Quality | Quality updates fix a specific problem and addresses a noncritical, non-security-related bug. Quality updates could include performance fixes for a specific problem or changes related to cache efficiency or maximum egress for example. Quality updates are released along with security updates or when necessary to ensure proper functioning of the Microsoft Connected Cache software. |
 
 For information on all released Microsoft Connected Cache updates, see the [Connected Cache release notes](mcc-ent-release-notes.md).

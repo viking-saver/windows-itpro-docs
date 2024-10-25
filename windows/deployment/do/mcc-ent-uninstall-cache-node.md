@@ -14,7 +14,7 @@ appliesto:
 ms.date: 09/27/2024
 ---
 
-# Uninstall Connected Cache caching software from a host machine
+# Uninstall Connected Cache software from a host machine
 
 This article describes how to uninstall Microsoft Connected Cache for Enterprise and Education caching software from a host machine. These steps should be taken after deleting the cache node in the Azure portal.
 

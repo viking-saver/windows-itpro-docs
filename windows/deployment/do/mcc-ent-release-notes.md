@@ -26,7 +26,7 @@ This article contains details about the latest releases of Connected Cache. Sinc
 - Contains client changes
 - Affects Linux, Windows host machines
 
-### Changenotes
+### Change notes
 
 - Added new "Outbound egress" and "Volume by Content type" monitoring charts to Azure portal user interface
 - Added ability to create custom monitoring charts under the Metrics tab in the Azure portal user interface

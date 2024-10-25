@@ -53,15 +53,15 @@ To deploy a cache node programmatically, you'll need to use Azure CLI to get the
 
    If you're using a Local User account as the Connected Cache runtime account, you'll also need to create a [PSCredential Object](/dotnet/api/system.management.automation.pscredential) named `$myLocalAccountCredential`.
 
-1. Replace the values in the following provisioning command before running it on the host machine. Note that `-mccLocalAccountCredential $myLocalAccountCredential` is only needed if you are using a Local User account as the Connected Cache runtime account.
+1. Replace the values in the following provisioning command before running it on the host machine. Note that `-mccLocalAccountCredential $myLocalAccountCredential` is only needed if you're using a Local User account as the Connected Cache runtime account.
 
    ```powershell-interactive
    ./provisionmcconwsl.ps1 -installationFolder c:\mccwsl01 -customerid [enter mccResourceId here] -cachenodeid [enter cacheNodeId here] -customerkey [enter customerKey here] -registrationkey [enter registration key] -cacheDrives "/var/mcc,enter drive size"  -shouldUseProxy [enter true if present, enter false if not] -proxyurl "http://[enter proxy host name]:[enter port]"  -mccRunTimeAccount $User -mccLocalAccountCredential $myLocalAccountCredential
    ```
 
-## Steps to point Windows client devices at Connnected Cache node
+## Steps to point Windows client devices at Connected Cache node
 
-Once you have successfully deployed Connected Cache to your Windows host machine, you will need to configure your Windows client device(s) to request Microsoft content from the Connected Cache node.
+Once you have successfully deployed Connected Cache to your Windows host machine, you'll need to configure your Windows client devices to request Microsoft content from the Connected Cache node.
 
 You can do this by setting the [DOCacheHost or DOCacheHostSource policies via Intune](./waas-delivery-optimization-reference.md#cache-server-hostname).
 

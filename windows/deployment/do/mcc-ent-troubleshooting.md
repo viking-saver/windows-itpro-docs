@@ -30,7 +30,7 @@ Connected Cache Azure resource creation can be initiated using either the Azure 
 
 ## Troubleshooting cache node issue
 
-If you are facing issues with your cache node, it could be due to cache node being on the early preview version of Connected Cache. Cache nodes belonging to early preview version will be under Connected Cache resource that will have 'early preview' in its name. Please delete these cache nodes and associated Connected Cache resource and create a new Connected Cache resource on the new version.
+If you're facing issues with your cache node, it could be due to cache node being on the early preview version of Connected Cache. Cache nodes belonging to early preview version will be under Connected Cache resource that will have 'early preview' in its name. Please delete these cache nodes and associated Connected Cache resource and create a new Connected Cache resource on the new version.
 For detailed instructions on creating Connected Cache resource, see [Create Connected Cache Azure resources](mcc-ent-create-resource-and-cache.md)
 
 ## Troubleshooting cache node deployment

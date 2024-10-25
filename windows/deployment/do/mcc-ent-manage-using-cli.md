@@ -31,7 +31,7 @@ This article outlines how to create, configure, and deploy Microsoft Connected C
 az extension add --name mcc
 ```
 
-To learn more about installting extensions, visit [Install the Connected Cache extension.](/cli/azure/azure-cli-extensions-overview#how-to-install-extensions)
+To learn more about installing extensions, visit [Install the Connected Cache extension.](/cli/azure/azure-cli-extensions-overview#how-to-install-extensions)
 
 <br>
 <br>
@@ -54,7 +54,7 @@ Once the resource group is created, you'll need to create a Microsoft Connected 
 
 A Connected Cache Azure resource is a top-level Azure resource under which cache nodes can be created.
 
-To create an Connected Cache Azure resource, use `az mcc ent resource create`
+To create a Connected Cache Azure resource, use `az mcc ent resource create`
 
 ```azurecli-interactive
 az mcc ent resource create --mcc-resource-name mymccresource --resource-group myrg
