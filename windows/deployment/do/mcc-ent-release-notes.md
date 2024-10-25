@@ -1,6 +1,6 @@
 ---
-title: MCC Release Notes
-description: Release Notes for Microsoft Connected Cache for Enterprise and Education (MCC).
+title: Microsoft Connected Cache Release Notes
+description: Release Notes for Microsoft Connected Cache for Enterprise and Education.
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: conceptual
@@ -14,9 +14,9 @@ appliesto:
 ms.date: 09/27/2024
 ---
 
-# Release Notes for Microsoft Connected Cache for Enterprise and Education (MCC)
+# Release Notes for Microsoft Connected Cache for Enterprise and Education
 
-This article contains details about the latest releases of MCC. Since MCC is a Preview service, some releases may contain breaking changes that will be highlighted as such.
+This article contains details about the latest releases of Connected Cache. Since Connected Cache is a Preview service, some releases may contain breaking changes that will be highlighted as such.
 
 ## Release v0.1.0 (Public Preview launch)
 
@@ -30,11 +30,11 @@ This article contains details about the latest releases of MCC. Since MCC is a P
 
 - Added new "Outbound egress" and "Volume by Content type" monitoring charts to Azure portal user interface
 - Added ability to create custom monitoring charts under the Metrics tab in the Azure portal user interface
-- Added support for creating both Windows-hosted and Linux-hosted cache nodes under the same MCC Azure resource
-- Added Azure CLI support for programmatic creation and management of MCC Azure resources and cache nodes
+- Added support for creating both Windows-hosted and Linux-hosted cache nodes under the same Connected Cache Azure resource
+- Added Azure CLI support for programmatic creation and management of Connected Cache Azure resources and cache nodes
 - Added support for unauthenticated proxy and cloud proxy integration
-- Added ability to set each cache node's Update Ring to govern cadence of MCC container updates
+- Added ability to set each cache node's Update Ring to govern cadence of Connected Cache container updates
 
 ## Related content
 
-- [Overview of MCC](mcc-ent-edu-overview.md)
+- [Overview of Connected Cache](mcc-ent-edu-overview.md)

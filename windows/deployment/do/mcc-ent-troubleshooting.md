@@ -1,6 +1,6 @@
 ---
-title: MCC troubleshooting
-description: Details on how to troubleshoot common issues for Microsoft Connected Cache for Enterprise (MCC).
+title: Microsoft Connected Cache for Enterprise and Education troubleshooting
+description: Details on how to troubleshoot common issues for Microsoft Connected Cache for Enterprise.
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: how-to
@@ -15,9 +15,9 @@ ms.date: 09/27/2024
 ---
 
 
-# Troubleshoot Microsoft Connected Cache for Enterprise and Education (MCC)
+# Troubleshoot Microsoft Connected Cache for Enterprise and Education
 
-This article contains instructions on how to troubleshoot different issues you may encounter while using MCC. These issues are categorized by the task in which they may be encountered. For example, this next section covers troubleshooting [MCC Azure resource creation](mcc-ent-create-resource-and-cache.md).
+This article contains instructions on how to troubleshoot different issues you may encounter while using Connected Cache. These issues are categorized by the task in which they may be encountered. For example, this next section covers troubleshooting [Connected Cache Azure resource creation](mcc-ent-create-resource-and-cache.md).
 
 ## Steps to obtain an Azure subscription ID
 
@@ -26,11 +26,11 @@ This article contains instructions on how to troubleshoot different issues you m
 
 ## Troubleshooting Azure resource creation
 
-MCC Azure resource creation can be initiated using either the Azure portal or the Azure CLI command set. If you're encountering an error during resource creation, check that you have the necessary RPaaS permissions and have filled out all required fields.
+Connected Cache Azure resource creation can be initiated using either the Azure portal or the Azure CLI command set. If you're encountering an error during resource creation, check that you have the necessary RPaaS permissions and have filled out all required fields.
 
 ## Troubleshooting cache node issue
-If you are facing issues with your cache node, it could be due to cache node being on the early preview version of MCC. Cache nodes belonging to early preview version will be under MCC resource that will have 'early preview' in its name. Please delete these cache nodes and associated MCC resource and create a new MCC resource on the new version.
-For detailed instructions on creating MCC resource, see [Create MCC Azure resources](mcc-ent-create-resource-and-cache.md)
+If you are facing issues with your cache node, it could be due to cache node being on the early preview version of Connected Cache. Cache nodes belonging to early preview version will be under Connected Cache resource that will have 'early preview' in its name. Please delete these cache nodes and associated Connected Cache resource and create a new Connected Cache resource on the new version.
+For detailed instructions on creating Connected Cache resource, see [Create Connected Cache Azure resources](mcc-ent-create-resource-and-cache.md)
 
 
 ## Troubleshooting cache node deployment
@@ -61,9 +61,9 @@ Optional: You have two options for manually curated links in this pattern: Next 
 
 ## Diagnose and Solve
 
-If this article isn't resolving the issue you're facing with your cache node, you can use the **Diagnose and solve problems** functionality within your MCC resource to continue troubleshooting. **Diagnose and solve problems** contains solutions to most common problems that users might face as they onboard.
+If this article isn't resolving the issue you're facing with your cache node, you can use the **Diagnose and solve problems** functionality within your Connected Cache resource to continue troubleshooting. **Diagnose and solve problems** contains solutions to most common problems that users might face as they onboard.
 
-You can find **Diagnose and solve problems** on the left pane within your MCC resource.
+You can find **Diagnose and solve problems** on the left pane within your Connected Cache resource.
 
 Within **Diagnose and solve problems**, select **Troubleshoot** under the type of problem you're facing and follow the prompts that narrow down the solution to the issue.
 
