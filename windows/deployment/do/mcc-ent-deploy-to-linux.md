@@ -24,7 +24,7 @@ Before deploying Connected Cache to a Linux host machine, ensure that the host m
 # [Azure portal](#tab/portal)
 
 1. Within the Azure portal, navigate to the **Provisioning** tab of your cache node and copy the provisioning command.
-1. Download the provisioning package using the button at the top of the Cache Node Configuration page and extract the package onto the host machine.
+1. Download the provisioning package using the option at the top of the Cache Node Configuration page and extract the package onto the host machine.
 1. Open a command line window *as administrator* on the host machine, then change directory to the extracted provisioning package.
 1. Set access permissions to allow the `provisionmcc.sh` script within the provisioning package directory to execute.
 1. Run the provisioning command on the host machine.
