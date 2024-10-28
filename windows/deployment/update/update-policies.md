@@ -194,4 +194,4 @@ Updates** rather than setting a deferral policy. You can choose a longer period 
 - **Pause Quality Updates Start Time**. Set to **Disabled** unless there's a known issue requiring time for a resolution.
 - **Deadline No Auto Reboot**. Default is **Disabled - Set to 0** . We recommend that devices automatically try to restart when an update is received. Windows uses user interactions to dynamically identify the least disruptive time to restart.
 
-There are also additional policies are no longer supported or have been superseded.
+There are also additional policies that are no longer supported or have been superseded.
