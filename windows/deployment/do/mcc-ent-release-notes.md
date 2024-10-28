@@ -31,12 +31,12 @@ These changes affect Linux and Windows host machines.
 
 ### Feature updates
 
-- **Metrics and charts in Azure portal**: You can now visualize "Outbound egress" and "Volume by Content type" charts for your cache node on Azure portal. You can also create custom monitoring charts for your cache nodes. This capability is under the **Metrics** tab on Azure portal.
+- **Metrics and charts in Azure portal**: You can now visualize *Outbound egress* and *Volume by Content type* charts for your cache node on Azure portal. You can also create custom monitoring charts for your cache nodes. This capability is under the **Metrics** tab on Azure portal.
 - **Cache nodes for Windows or Linux host machines**: Cache nodes can now be created and deployed to Windows host machine or Linux host machines by simply choosing the OS when creating cache nodes.
 - **Ubuntu 22.04 LTS**: Cache nodes can now be deployed on Ubuntu 22.04 LTS.
 - **Azure CLI support**: Cache nodes can now be created and managed via Azure CLI.
 - **Proxy**: We added support for unauthenticated proxy and cloud proxy integration.
-- **Updates**: Your cache nodes are now updated automatically and we also added the capability to set each cache node's update ring to govern the cadence of Micoroft Connected Cache container updates.
+- **Updates**: Your cache nodes are now updated automatically and we also added the capability to set each cache node's update ring to govern the cadence of Microsoft Connected Cache container updates.
 
 ### Fixes
 - We fixed various bugs to achieve smoother install experience.

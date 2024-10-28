@@ -23,7 +23,7 @@ Before deploying Connected Cache to a Linux host machine, ensure that the host m
 
 # [Azure portal](#tab/portal)
 
-1. Within the Azure portal, navigate to the "Provisioning" tab of your cache node and copy the provisioning command.
+1. Within the Azure portal, navigate to the **Provisioning** tab of your cache node and copy the provisioning command.
 1. Download the provisioning package using the button at the top of the Cache Node Configuration page and extract the package onto the host machine.
 1. Open a command line window *as administrator* on the host machine, then change directory to the extracted provisioning package.
 1. Set access permissions to allow the `provisionmcc.sh` script within the provisioning package directory to execute.
@@ -46,7 +46,7 @@ To deploy a cache node programmatically, you'll need to use Azure CLI to get the
 1. Replace the values in the following provisioning command before running it on the host machine.
 
    ```azurepowershell-interactive
-   sudo ./provisionmcc.sh customerid="enter mccResourceId here" cachenodeid=" enter cacheNodeId here " customerkey=" enter customerKey here " registrationkey="enter registrationKey here" drivepathandsizeingb="enter physicalPath value,enter sizeInGb value here" shoulduseproxy="enter true if present, enter false if not" proxyurl=http://enter proxy hostname:enter port
+   sudo ./provisionmcc.sh customerid="enter mccResourceId here" cachenodeid="enter cacheNodeId here" customerkey=" enter customerKey here " registrationkey="enter registrationKey here" drivepathandsizeingb="enter physicalPath value,enter sizeInGb value here" shoulduseproxy="enter true if present, enter false if not" proxyurl=http://enter proxy hostname:enter port
    ```
 
 ## Steps to point Windows client devices at Connected Cache node

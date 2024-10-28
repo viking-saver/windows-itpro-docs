@@ -18,9 +18,9 @@ ms.date: 09/04/2024
 
 Tracking the status and performance of your Connected Cache node is essential to making sure you're getting the most out of the service.
 
-For basic monitoring, navigate to the "Overview" tab. Here you'll be able to view a collection of predefined metrics and charts. All the monitoring in this section will function right after your Connected Cache node has been deployed.
+For basic monitoring, navigate to the **Overview** tab. Here you'll be able to view a collection of predefined metrics and charts. All the monitoring in this section will function right after your Connected Cache node has been deployed.
 
-For advanced monitoring, navigate to the "Metrics" section under the "Monitoring" tab. Here you'll be able to access more sampled metrics (hits, misses, inbound traffic) and specify different aggregations (count, avg, min, max, sum). You can then use this data to create customized charts and configure alerts.
+For advanced monitoring, navigate to the **Metrics** section under the **Monitoring** tab. Here you'll be able to access more sampled metrics (hits, misses, inbound traffic) and specify different aggregations (count, avg, min, max, sum). You can then use this data to create customized charts and configure alerts.
 
 Between the two monitoring sections, you'll be able to gather essential insights into the health, performance, and efficiency of your Connected Cache nodes.
 
@@ -28,7 +28,7 @@ Between the two monitoring sections, you'll be able to gather essential insights
 
 ### Cache node summary
 
-Below are the metrics you'll find in the "Cache Node Summary" dashboard, along with their descriptions. This dashboard only reflects data received from cache nodes in the last 24 hours.
+Below are the metrics you'll find in the **Cache Node Summary** dashboard, along with their descriptions. This dashboard only reflects data received from cache nodes in the last 24 hours.
 
 ![Screenshot of cache node summary in the Azure portal interface.](../images/mcc-ent-cache-node-summary.png)
 
@@ -67,7 +67,7 @@ The content types displayed in the chart each have a distinct color and are sort
 
 ## Advanced Monitoring
 
-To expand upon the metrics shown in the Overview tab, navigate to the "Metrics" tab in the left side toolbar of Azure portal.
+To expand upon the metrics shown in the Overview tab, navigate to the **Metrics** tab in the left side toolbar of Azure portal.
 
 Listed below are the metrics you can access in this section:
 
