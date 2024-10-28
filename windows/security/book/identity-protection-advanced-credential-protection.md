@@ -78,7 +78,7 @@ Token protection attempts to reduce attacks using Microsoft Entra ID token theft
 
 ### Sign-in session token protection policy
 
-At the inaugural Microsoft Secure event in March 2023, we announced the public preview of token protection for sign-ins. This feature allows applications and services to cryptographically bind security tokens to the device, restricting attackers' ability to impersonate users on a different device if tokens are stolen.
+This feature allows applications and services to cryptographically bind security tokens to the device, restricting attackers' ability to impersonate users on a different device if tokens are stolen.
 
 ## Account lockout policies
 
