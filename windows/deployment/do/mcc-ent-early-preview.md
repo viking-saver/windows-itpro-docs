@@ -1,6 +1,6 @@
 ---
-title: Microsoft Connected Cache for Enterprise and Education Private Preview
-description: Details on Microsoft Connected Cache for Enterprise Private Preview
+title: Microsoft Connected Cache for Enterprise and Education early preview
+description: Details on Microsoft Connected Cache for Enterprise early preview
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: conceptual
@@ -19,10 +19,10 @@ If you participated in the early preview program, thank you for your collaborati
 
 To continue using supported version of Microsoft Connected Cache, we strongly recommend that you upgrade your existing cache nodes to the new release. Cache nodes created and deployed during early preview should still function but can no longer be managed or monitored remotely via the Microsoft Connected Cache Azure service.
 
-We strongly recommend you [recreate your existing resources in Azure](mcc-ent-create-resource-and-cache.md) and then [redeploy the MCC caching software to your host machines](mcc-ent-deploy-to-windows.md) using the latest OS-specific installer.
+We strongly recommend you [recreate your existing resources in Azure](mcc-ent-create-resource-and-cache.md) and then [redeploy the caching software to your host machines](mcc-ent-deploy-to-windows.md) using the latest OS-specific installer.
 
 
 ## Next step
 
 > [!div class="nextstepaction"]
-> [View documentation for Connected Cache Public Preview](mcc-ent-edu-overview.md)
+> [View documentation for Connected Cache public preview](mcc-ent-edu-overview.md)
