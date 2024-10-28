@@ -12,13 +12,15 @@ appliesto:
 ms.date: 06/03/2024
 ---
 
-# Microsoft Connected Cache for Enterprise and Education Private Preview
 
-If you participated in the Connected Cache early preview, thank you for your collaboration and feedback.
+# Microsoft Connected Cache for Enterprise and Education (early preview)
 
-To continue using Connected Cache, we strongly recommend that you upgrade your existing cache nodes to the Public Preview release. Cache nodes created and deployed during early preview should still function but can no longer be managed or monitored remotely via the Connected Cache Azure service.
+If you participated in the early preview program, thank you for your collaboration and feedback.
 
-As such, we strongly recommend you [recreate your existing resources in Azure](mcc-ent-create-resource-and-cache.md) and then [redeploy the Connected Cache software to your host machines](mcc-ent-deploy-to-windows.md) using the latest OS-specific installer.
+To continue using supported version of Microsoft Connected Cache, we strongly recommend that you upgrade your existing cache nodes to the new release. Cache nodes created and deployed during early preview should still function but can no longer be managed or monitored remotely via the Microsoft Connected Cache Azure service.
+
+We strongly recommend you [recreate your existing resources in Azure](mcc-ent-create-resource-and-cache.md) and then [redeploy the MCC caching software to your host machines](mcc-ent-deploy-to-windows.md) using the latest OS-specific installer.
+
 
 ## Next step
 

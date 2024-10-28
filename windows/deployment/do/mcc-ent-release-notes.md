@@ -16,24 +16,30 @@ ms.date: 09/27/2024
 
 # Release Notes for Microsoft Connected Cache for Enterprise and Education
 
-This article contains details about the latest releases of Connected Cache. Since Connected Cache is a Preview service, some releases may contain breaking changes that will be highlighted as such.
+This article contains details about the latest releases of Connected Cache. Since Connected Cache is a preview service, some releases may contain breaking changes.
 
-## Release v0.1.0 (Public Preview launch)
+## Release v0.1.0 (public preview launch)
 
-- Released on **10/17/2024**
-- Contains breaking changes
-- Contains service changes
-- Contains client changes
-- Affects Linux, Windows host machines
+The public preview released on **10/30/2024**
 
-### Change notes
+For customers that installed earlier versions of Connected Cache, this release contains:   
+- Breaking changes 
+- Service changes
+- Client changes
+These changes affect Linux and Windows host machines.
 
-- Added new "Outbound egress" and "Volume by Content type" monitoring charts to Azure portal user interface
-- Added ability to create custom monitoring charts under the Metrics tab in the Azure portal user interface
-- Added support for creating both Windows-hosted and Linux-hosted cache nodes under the same Connected Cache Azure resource
-- Added Azure CLI support for programmatic creation and management of Connected Cache Azure resources and cache nodes
-- Added support for unauthenticated proxy and cloud proxy integration
-- Added ability to set each cache node's Update Ring to govern cadence of Connected Cache container updates
+
+### Feature updates
+
+- **Metrics and charts in Azure portal**: You can now visualize "Outbound egress" and "Volume by Content type" charts for your cache node on Azure portal. You can also create custom monitoring charts for your cache nodes. This capability is under the **Metrics** tab on Azure portal.
+- **Cache nodes for Windows or Linux host machines**: Cache nodes can now be created and deployed to Windows host machine or Linux host machines by simply choosing the OS when creating cache nodes.
+- **Ubuntu 22.04 LTS**: Cache nodes can now be deployed on Ubuntu 22.04 LTS.
+- **Azure CLI support**: Cache nodes can now be created and managed via Azure CLI.
+- **Proxy**: We added support for unauthenticated proxy and cloud proxy integration.
+- **Updates**: Your cache nodes are now updated automatically and we also added the capability to set each cache node's update ring to govern the cadence of Micoroft Connected Cache container updates.
+
+### Fixes
+- We fixed various bugs to achieve smoother install experience.
 
 ## Related content
 
