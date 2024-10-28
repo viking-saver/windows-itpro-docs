@@ -65,8 +65,8 @@
           href: mcc-ent-faq.yml
         - name: Troubleshooting
           href: mcc-ent-troubleshooting.md
-        - name: Microsoft Connected Cache for Enterprise and Education Early Preview
-          href: mcc-ent-private-preview.md
+        - name: Microsoft Connected Cache for Enterprise and Education early preview
+          href: mcc-ent-early-preview.md
       - name: Release notes
         href: mcc-ent-release-notes.md        
     - name: Microsoft Connected Cache for ISPs

@@ -279,7 +279,7 @@ az mcc ent resource list  --resource-group <myrg>
 ### List all cache nodes
 
 # [Azure portal](#tab/portal)
-On the left pane, click on 'Cache Nodes' under 'Cache Node Management' to see all the cache nodes under the Connected Cache resource.
+On the left pane, select **Cache Nodes** under **Cache Node Management** to see all the cache nodes under the Connected Cache resource.
 
 
 # [Azure CLI](#tab/cli)
@@ -299,7 +299,7 @@ az mcc ent node list --mcc-resource-name <mymccresource> --resource-group <myrg>
 ### Delete Connected Cache resource
 
 # [Azure portal](#tab/portal)
-Navigate to the Connected Cache resource to delete and click on the delete button on top.
+Navigate to the Connected Cache resource to delete, then select the **Delete** button on top.
 
 
 # [Azure CLI](#tab/cli)
@@ -319,7 +319,7 @@ az mcc ent node delete --cache-node-name <mycachenode> --mcc-resource-name <mymc
 ### Delete cache node
 
 # [Azure portal](#tab/portal)
-On the left pane, click on 'Cache Nodes' under 'Cache Node Management' to see all the cache nodes under the Connected Cache resource. Select the cache node you wish to delete and click delete button on top of the page.
+On the left pane, select **Cache Nodes** under **Cache Node Management** to see all the cache nodes under the Connected Cache resource. Select the cache node you wish to delete and select the **Delete** button on top of the page.
 
 
 # [Azure CLI](#tab/cli)

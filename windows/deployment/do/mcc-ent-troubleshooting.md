@@ -36,13 +36,13 @@ If you're encountering an error during resource creation, check that you have th
 
 If you're encountering a validation error, check that you have filled out all required configuration fields.
 
-If your configuration doesn't appear to be taking effect, check that you have clicked the "Save" button at the top of the configuration page in the Azure portal user interface.
+If your configuration doesn't appear to be taking effect, check that you have selected the **Save** option at the top of the configuration page in the Azure portal user interface.
 
 If you have changed the proxy configuration, you will need to re-provision the Connected Cache software on the host machine for the proxy configuration to take effect.
 
 ## Troubleshooting cache nodes created during early preview
 
-Cache nodes created and deployed during the [Microsoft Connected Cache for Enterprise and Education early preview](mcc-ent-private-preview.md) should continue to function but can no longer be managed or monitored remotely via the Connected Cache Azure service.
+Cache nodes created and deployed during the [Microsoft Connected Cache for Enterprise and Education early preview](mcc-ent-early-preview.md) should continue to function but can no longer be managed or monitored remotely via the Connected Cache Azure service.
 
 As such, we strongly recommend you [recreate your existing resources in Azure](mcc-ent-create-resource-and-cache.md) and then [redeploy the Connected Cache software to your host machines](mcc-ent-deploy-to-windows.md) using the latest OS-specific installer.
 
@@ -83,9 +83,9 @@ Once the Connected Cache container is running, a scheduled task is periodically 
 You can use Task Scheduler on the host machine to check the status of this scheduled task.
 
 1. Open Task Scheduler on the host machine
-1. Navigate to the Active Tasks section and double-click on "MCC_Monitor_Task"
-1. Select the scheduled task "MCC_Monitor_Task"
-1. Select the "Triggers" tab and confirm that the Status is "Enabled"
+1. Navigate to the Active Tasks section and double-click on **MCC_Monitor_Task**
+1. Select the scheduled task **MCC_Monitor_Task**
+1. Select the **Triggers** tab and confirm that the Status is **Enabled**
 
 ## Troubleshooting cache node deployment to Linux host machine
 

@@ -119,7 +119,7 @@ az mcc ent node update --cache-node-name <mycachenode> --mcc-resource-name <mymc
 
 >[!Note]
 >* For a cache node that is to be deployed on Windows host OS, the physical path of the cache drive <u>must</u> be **/var/mcc**.<br>
->* In the output, look for operationStatus. **operationStatus = Succeeded** indicates that our services have successfully updated the cache node. You will also see that cacheNodeState will show "Not Provisioned". <br>
+>* In the output, look for operationStatus. **operationStatus = Succeeded** indicates that our services have successfully updated the cache node. You will also see that cacheNodeState will show *Not Provisioned*. <br>
 >* Please save values for <u>physicalPath, sizeInGb, proxyPort, proxyHostName</u> as these values will be needed to construct the provisioning script.
 
 
@@ -170,7 +170,7 @@ $proxyHost = "myProxy.com"
 $proxyPort = "8080"
 $waitTime = 3
 
-#Create MCC Az resource
+# Create Microsoft Connected Cache Azure resource
 az mcc ent resource create --mcc-resource-name $mccResourceName --location $resourceLocation --resource-group $resourceGroup
 
 #Loop through $cacheNodesToCreate iterations
