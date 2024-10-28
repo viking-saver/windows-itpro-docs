@@ -141,14 +141,14 @@ A passkey is a unique, unguessable cryptographic secret that is securely stored 
 
 Passkeys created and saved with Windows Hello are protected by Windows Hello or Windows Hello for Business. Users can sign in to the site or app using their face, fingerprint, or device PIN. Users can manage their passkeys from **Settings** > **Accounts** > **Passkeys**.
 
+:::row:::
+    :::column span="3":::
 [!INCLUDE [coming-soon](includes/coming-soon.md)]
 
-:::row:::
-    :::column:::
 The plug-in model for third-party passkey providers enables users to manage their passkeys with third-party passkey managers. This model ensures a seamless platform experience, regardless of whether passkeys are managed directly by Windows or by a third-party authenticator. When a third-party passkey provider is used, the passkeys are securely protected and managed by the third-party provider.
     :::column-end:::
-    :::column:::
-:::image type="content" border="false" source="images/passkey-save-3p.png" alt-text="Screenshot of the save passkey dialog box showing third-party providers.":::
+    :::column span="1":::
+:::image type="content" border="false" source="images/passkey-save-3p.png" alt-text="Screenshot of the save passkey dialog box showing third-party providers."  lightbox="images/passkey-save-3p.png":::
     :::column-end:::
 :::row-end:::
 
