@@ -11,7 +11,7 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ Supported Linux distributions
 - ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-microsoft-connected-cache target=_blank>Microsoft Connected Cache for Enterprise</a>	
-ms.date: 06/03/2024
+ms.date: 10/30/2024
 ---
 
 # Create Microsoft Connected Cache Azure resource and cache nodes
@@ -299,7 +299,7 @@ az mcc ent node list --mcc-resource-name <mymccresource> --resource-group <myrg>
 ### Delete Connected Cache resource
 
 # [Azure portal](#tab/portal)
-Navigate to the Connected Cache resource to delete, then select the **Delete** button on top.
+Navigate to the Connected Cache resource to delete, then select the **Delete** option on top.
 
 
 # [Azure CLI](#tab/cli)
@@ -319,7 +319,7 @@ az mcc ent node delete --cache-node-name <mycachenode> --mcc-resource-name <mymc
 ### Delete cache node
 
 # [Azure portal](#tab/portal)
-On the left pane, select **Cache Nodes** under **Cache Node Management** to see all the cache nodes under the Connected Cache resource. Select the cache node you wish to delete and select the **Delete** button on top of the page.
+On the left pane, select **Cache Nodes** under **Cache Node Management** to see all the cache nodes under the Connected Cache resource. Select the cache node you wish to delete and select the **Delete** option on top of the page.
 
 
 # [Azure CLI](#tab/cli)

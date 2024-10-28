@@ -7,7 +7,7 @@ manager: naengler
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: how-to
-ms.date: 09/27/2024
+ms.date: 10/30/2024
 appliesto: 
 - ✅ Supported Linux distributions
 - ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-microsoft-connected-cache target=_blank>Microsoft Connected Cache for Enterprise and Education</a>	
@@ -24,7 +24,7 @@ Before deploying Connected Cache to a Linux host machine, ensure that the host m
 # [Azure portal](#tab/portal)
 
 1. Within the Azure portal, navigate to the **Provisioning** tab of your cache node and copy the provisioning command.
-1. Download the provisioning package using the button at the top of the Cache Node Configuration page and extract the package onto the host machine.
+1. Download the provisioning package using the option at the top of the Cache Node Configuration page and extract the package onto the host machine.
 1. Open a command line window *as administrator* on the host machine, then change directory to the extracted provisioning package.
 1. Set access permissions to allow the `provisionmcc.sh` script within the provisioning package directory to execute.
 1. Run the provisioning command on the host machine.

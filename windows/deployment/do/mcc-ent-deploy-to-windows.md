@@ -7,7 +7,7 @@ manager: naengler
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: how-to
-ms.date: 09/27/2024
+ms.date: 10/30/2024
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-microsoft-connected-cache target=_blank>Microsoft Connected Cache for Enterprise and Education</a>	
@@ -26,7 +26,7 @@ Before deploying Connected Cache to a Windows host machine, ensure that the host
 # [Azure portal](#tab/portal)
 
 1. Within the Azure portal, navigate to the **Provisioning** tab of your cache node and copy the provisioning command.
-1. Download the provisioning package using the button at the top of the Cache Node Configuration page and extract the package onto the host machine. **Note**: The installer should be in a folder that isn't synced to OneDrive, as this will interfere with the installation process.
+1. Download the provisioning package using the option at the top of the Cache Node Configuration page and extract the package onto the host machine. **Note**: The installer should be in a folder that isn't synced to OneDrive, as this will interfere with the installation process.
 1. Open a PowerShell window *as administrator* on the host machine, then change directory to the extracted provisioning package.
 1. Set the Execution Policy to *Unrestricted* to allow the provisioning scripts to run.
 1. Create a `$User` environment variable containing the username of the account you intend to designate as the Connected Cache runtime account. 
