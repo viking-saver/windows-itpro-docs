@@ -1,7 +1,7 @@
 ### YamlMime:FAQ
 metadata:
-  title: MCC Frequently Asked Questions
-  description: The following article is a list of frequently asked questions for Microsoft Connected Cache for Enterprise (MCC).
+  title: Microsoft Connected Cache for Enterprise and Education Frequently Asked Questions
+  description: The following article is a list of frequently asked questions for Microsoft Connected Cache for Enterprise.
   ms.service: windows-client
   ms.subservice: itpro-updates
   ms.topic: faq
@@ -25,8 +25,8 @@ sections:
     questions:
       - question: What are the licesning requirement?
         answer: Microsoft Connected Cache for Enterprise and Education is available to all Windows E3, E5 and F3 and Education A3 and A5 customers.
-      - question: Is there a charge to create MCC resources and cache node on Azure?
-        answer: No. You won't be charged to create MCC resource and cache nodes on Azure. However, you need an Azure pay-as-you-go subscription to create the resources but there is no charge for the resource itself.
+      - question: Is there a charge to create Connected Cache resources and cache node on Azure?
+        answer: No. You won't be charged to create Connected Cache resource and cache nodes on Azure. However, you need an Azure pay-as-you-go subscription to create the resources but there is no charge for the resource itself.
       - question: Is there a nondisclosure agreement to sign?
         answer: No, a nondisclosure agreement isn't required.
       - question: What will Microsoft Connected Cache for Enterprise and Education do for me? 
@@ -40,7 +40,7 @@ sections:
          - [Azure pay-as-you-go subscription](https://azure.microsoft.com/offers/ms-azr-0003p/).
          - [Hardware to host Microsoft Connected Cache](mcc-ent-edu-overview.md)
          - [Host machine requirements](mcc-ent-prerequisites.md)
-      - question: What host OS do I need to deploy MCC?
+      - question: What host OS do I need to deploy Connected Cache?
         answer: You can use Linux or Windows OS. Depending on the OS, the provisioning script and certain provisioning steps are different. 
       - question: What content is cached by Microsoft Connected Cache?
         answer: For more information about content cached, see [Delivery Optimization and Microsoft Connected Cache content endpoints](delivery-optimization-endpoints.md).
@@ -64,8 +64,8 @@ sections:
         answer: No. It's important to keep the Microsoft Connected Cache software up to date, especially when it comes to security issues. Microsoft validates updates prior to releasing Enterprises Connected Cache updates and only releases updates when it's necessary to keep customers secure or to ensure the continued successful operation of Connected Cache nodes for customers.  
       - question: How do I set up CLI?
         answer: For more information, see [How to install the Azure CLI](/cli/azure/install-azure-cli).
-      - question: How do I install MCC extension?
-        answer: For more information, see [Install the Microsoft Connected Cache extension](mcc-ent-manage-cache-using-cli.md#prerequisites).
+      - question: How do I install the Microsoft Connected Cache Azure CLI extension?
+        answer: For more information, see [Install the Microsoft Connected Cache extension](mcc-ent-manage-using-cli.md#prerequisites).
       - question: What do I do if I have to set up or change existing proxy?
         answer: You can enable proxy and provide proxy information on Azure portal or use the CLI. Don't forget to rerun the provisioning script after making any proxy changes. For more information, see [Set up or change existing proxy](mcc-ent-create-resource-and-cache.md#proxy-settings).
       - question: How do we set up Microsoft Connected Cache if we support multiple countries or regions?
@@ -75,4 +75,4 @@ sections:
       - question: Does the user have to be logged using the account that installed Microsoft Connected Cache on Windows or Linux?
         answer: No. As part of the installation on Windows a scheduled task is created using the account used to install Connected Cache. Regardless of which user is logged in or not logged in, the scheduled task remains running. On Linux, Connected Cache is installed by the user and remains running regardless of which user is logged in to the OS.
       - question: What do I do if I need more support and have more questions even after reading this FAQ page?
-        answer: For further support for Microsoft Connected Cache, see [Troubleshooting issues for Microsoft Connected Cache for Enterprise and Education](mcc-ent-support-and-troubleshooting.md). If you still need more support, you can contact customer support.
+        answer: For further support for Microsoft Connected Cache, see [Troubleshooting issues for Microsoft Connected Cache for Enterprise and Education](mcc-ent-troubleshooting.md). If you still need more support, you can contact customer support.

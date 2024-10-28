@@ -1,6 +1,6 @@
 ---
-title: MCC Release Notes
-description: Release Notes for Microsoft Connected Cache for Enterprise and Education (MCC).
+title: Microsoft Connected Cache Release Notes
+description: Release Notes for Microsoft Connected Cache for Enterprise and Education.
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: conceptual
@@ -14,22 +14,26 @@ appliesto:
 ms.date: 09/27/2024
 ---
 
-# Release Notes for Microsoft Connected Cache for Enterprise and Education (MCC)
+# Release Notes for Microsoft Connected Cache for Enterprise and Education
 
-This article contains details about the latest releases of MCC. Since MCC is a Preview service, some releases may contain breaking changes that will be highlighted as such.
+This article contains details about the latest releases of Connected Cache. Since Connected Cache is a preview service, some releases may contain breaking changes that will be highlighted as such.
 
-## Release v0.1.0 (Public Preview launch)
+## Release v0.1.0 (public preview launch)
 
-- Released on **10/30/2024**
-- Contains breaking changes
-- Contains service changes
-- Contains client changes
-- Affects Linux, Windows host machines
+The public preview released on **10/30/2024**
+
+For customers that installed earlier versions of Connected Cache, this release contains:   
+- Breaking changes 
+- Service changes
+- Client changes
+These changes affect Linux and Windows host machines.
+
 
 ### Feature updates
 
 - **Metrics and charts in Azure portal**: You can now visualize "Outbound egress" and "Volume by Content type" charts for your cache node on Azure portal. You can also create custom monitoring charts for your cache nodes. You will find this capability under the Metrics tab on Azure portal.
 - **Cache nodes for Windows or Linux host machines**: Cache nodes can now be created and deployed to Windows host machine or Linux host machines by simply choosing the OS when creating cache nodes.
+- **Ubuntu 22.04 LTS**: Cache nodes can now be delployed on Ubuntu 22.04 LTS.
 - **Azure CLI support**: Cache nodes can now be created and managed via Azure CLI.
 - **Proxy**: We added support for unauthenticated proxy and cloud proxy integration.
 - **Updates**: Your cache nodes will now be updated automatically and we also added capability to set each cache node's Update Ring to govern cadence of MCC container updates.
@@ -37,9 +41,6 @@ This article contains details about the latest releases of MCC. Since MCC is a P
 ### Fixes
 - We fixed various bugs to achieve smoother install experience.
 
-
-<br>
-
 ## Related content
 
-- [Overview of MCC](mcc-ent-edu-overview.md)
+- [Overview of Connected Cache](mcc-ent-edu-overview.md)

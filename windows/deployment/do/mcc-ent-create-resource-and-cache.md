@@ -1,6 +1,6 @@
 ---
-title: Create and configure MCC cache nodes
-description: Details on how to create and configure Microsoft Connected Cache for Enterprise and Education (MCC) cache nodes.
+title: Create and configure Microsoft Connected Cache nodes
+description: Details on how to create and configure Microsoft Connected Cache for Enterprise and Education cache nodes.
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: how-to
@@ -16,17 +16,17 @@ ms.date: 06/03/2024
 
 # Create Microsoft Connected Cache Azure resource and cache nodes
 
-This article outlines how to create and configure your Microsoft Connected Cache for Enterprise and Education (MCC) cache nodes. The creation and configuration of your cache node takes place in Azure. The deployment of your cache node requires downloading and running an OS-specific provisioning package on your host machine.
+This article outlines how to create and configure your Microsoft Connected Cache for Enterprise and Education cache nodes. The creation and configuration of your cache node takes place in Azure. The deployment of your cache node requires downloading and running an OS-specific provisioning package on your host machine.
 
 ## Prerequisites
 
 1. **Azure Pay-As-You-Go subscription**: Microsoft Connected Cache is a free-of-charge service hosted in Azure. You'll need a pay-as-you-go Azure subscription in order to onboard to our service. To create a subscription, go to [pay-as-you-go subscription page](https://azure.microsoft.com/offers/ms-azr-0003p/).
-2. **Hardware to host MCC**: The recommended configuration serves approximately 35,000 managed devices, downloading a 2-GB payload in 24-hour timeframe at a sustained rate of 6.5 Gbps.
+2. **Hardware to host Connected Cache**: The recommended configuration serves approximately 35,000 managed devices, downloading a 2-GB payload in 24-hour timeframe at a sustained rate of 6.5 Gbps.
 
-For more information on sizing and OS requirements, see [the prerequisites for using MCC](mcc-ent-prerequisites.md).
+For more information on sizing and OS requirements, see [the prerequisites for using Connected Cache](mcc-ent-prerequisites.md).
 
 
-## Create MCC Azure resource
+## Create Connected Cache Azure resource
 
 # [Azure portal](#tab/portal)
 
@@ -58,9 +58,9 @@ For more information on sizing and OS requirements, see [the prerequisites for u
 
     * Install Azure CLI extension **mcc** by following the instructions [here](/cli/azure/azure-cli-extensions-overview#how-to-install-extensions).
 
-    * Resource group under which an MCC resource can be created. Use the [az group create](/cli/azure/group#az-group-create) command to create a new Resource group if you don't already have one.
+    * Resource group under which a Connected Cache resource can be created. Use the [az group create](/cli/azure/group#az-group-create) command to create a new Resource group if you don't already have one.
 
-#### Create MCC Azure resource
+#### Create Connected Cache Azure resource
 
 Replace the following placeholders with your own information:
 * *\<resource-group>*: Name of an existing resource group in your subscription.
@@ -73,7 +73,7 @@ az mcc ent resource create --mcc-resource-name <mymccresource> --resource-group 
 
 ---
 
-## Create MCC cache node
+## Create Connected Cache cache node
 
 # [Azure portal](#tab/portal)
 
@@ -117,7 +117,7 @@ az mcc ent node create --cache-node-name <mycachenode> --mcc-resource-name <mymc
 
 ---
 
-## Configure MCC cache node
+## Configure Connected Cache node
 
 # [Azure portal](#tab/portal)
 Enter required values to configure your cache node. To learn more about the definitions of each field, review the [Configuration](#general-configuration-fields) fields at the bottom of this article.
@@ -126,7 +126,7 @@ Don't forget to select save after adding configuration information.
 
 # [Azure CLI](#tab/cli)
 
-### Configure Linux MCC
+### Configure Linux-hosted Connected Cache node
 Use the following command to configure cache node for deployment to a **Linux** host machine.
 
 Replace the following placeholders with your own information:
@@ -138,7 +138,7 @@ Replace the following placeholders with your own information:
 * *\<size-in-gb>*: The size of cache drive. Must be at least 50 Gb.
 * *\<proxy>*: If proxy needs to be enabled or not.<br>
   Accepted values: enabled, disabled<br>
-  Proxy should be set to enabled if the cache node will need to pass through a network proxy to download content. The provided proxy will also be used during deployment of the MCC cache node to your host machine.
+  Proxy should be set to enabled if the cache node will need to pass through a network proxy to download content. The provided proxy will also be used during deployment of the Connected Cache cache node to your host machine.
 * *\<proxy-host>*: The proxy host name or ip address. Required if proxy is set to enabled.
 * *\<proxy-port>*: Proxy port number. Required if proxy is set to enabled.
 * *\<auto-update-ring>*: Update ring the cache node should have.<br>
@@ -158,7 +158,7 @@ az mcc ent node update --cache-node-name <mycachenode> --mcc-resource-name <mymc
 <br>
 <br>
 
-### Configure Windows MCC
+### Configure Windows-hosted Connected Cache node
 Use the following command to configure cache node for deployment to a **Windows** host machine.
 
 Replace the following placeholders with your own information:
@@ -171,7 +171,7 @@ Replace the following placeholders with your own information:
 * *\<size-in-gb>*: The size of cache drive. Must be at least 50 Gb.
 * *\<proxy>*: If proxy needs to be enabled or not.<br>
   Accepted values: enabled, disabled<br>
-  Proxy should be set to enabled if the cache node will need to pass through a network proxy to download content. The provided proxy will also be used during deployment of the MCC cache node to your host machine.
+  Proxy should be set to enabled if the cache node will need to pass through a network proxy to download content. The provided proxy will also be used during deployment of the Connected Cache cache node to your host machine.
 * *\<proxy-host>*: The proxy host name or ip address. Required if proxy is set to enabled.
 * *\<proxy-port>*: Proxy port number. Required if proxy is set to enabled.
 * *\<auto-update-ring>*: Update ring the cache node should have.<br>
@@ -204,7 +204,7 @@ To deploy the cache node to a **Linux** host machine, see
 ### [Azure CLI](#tab/cli)
 To deploy cache nodes using Azure CLI, see 
 >[!div class="nextstepaction"]
->[Manage cache nodes using CLI](mcc-ent-manage-cache-using-CLI.md)
+>[Manage cache nodes using CLI](mcc-ent-manage-using-CLI.md)
 
 ---
 <br>
@@ -240,7 +240,7 @@ To deploy cache nodes using Azure CLI, see
 
 #### Proxy settings
 <br>
-You can choose to enable or disable proxy settings on your cache node. Proxy should be set to enabled if the cache node will need to pass through a network proxy to download content. The provided proxy will also be used during deployment of the MCC cache node to your host machine.
+You can choose to enable or disable proxy settings on your cache node. Proxy should be set to enabled if the cache node will need to pass through a network proxy to download content. The provided proxy will also be used during deployment of the Connected Cache node to your host machine.
 
 <br>
 
@@ -258,14 +258,14 @@ You can choose to enable or disable proxy settings on your cache node. Proxy sho
 ## Other operations on resource and cache nodes
 <br>
 
-### List all MCC resource
+### List all Connected Cache resources
 
 # [Azure portal](#tab/portal)
-Navigate to the resource group under which you would like to see the MCC resources.
+Navigate to the resource group under which you would like to see the Connected Cache resources.
 
 
 # [Azure CLI](#tab/cli)
-Use the following command to list all the MCC resources under the resource group. 
+Use the following command to list all the Connected Cache resources under the resource group. 
 
 Replace the following placeholders with your own information:
 * *\<resource-group>*: An existing resource group in your subscription.
@@ -279,7 +279,7 @@ az mcc ent resource list  --resource-group <myrg>
 ### List all cache nodes
 
 # [Azure portal](#tab/portal)
-On the left pane, click on 'Cache Nodes' under 'Cache Node Management' to see all the cache nodes under the MCC resource.
+On the left pane, click on 'Cache Nodes' under 'Cache Node Management' to see all the cache nodes under the Connected Cache resource.
 
 
 # [Azure CLI](#tab/cli)
@@ -296,14 +296,14 @@ az mcc ent node list --mcc-resource-name <mymccresource> --resource-group <myrg>
 ---
 <br>
 
-### Delete MCC resource
+### Delete Connected Cache resource
 
 # [Azure portal](#tab/portal)
-Navigate to the MCC resource to delete and click on the delete button on top.
+Navigate to the Connected Cache resource to delete and click on the delete button on top.
 
 
 # [Azure CLI](#tab/cli)
-Use the following command to delete the MCC resource. 
+Use the following command to delete the Connected Cache resource.
 
 Replace the following placeholders with your own information:
 * *\<resource-group>*: Name of the resource group in your subscription.
@@ -319,7 +319,7 @@ az mcc ent node delete --cache-node-name <mycachenode> --mcc-resource-name <mymc
 ### Delete cache node
 
 # [Azure portal](#tab/portal)
-On the left pane, click on 'Cache Nodes' under 'Cache Node Management' to see all the cache nodes under the MCC resource. Select the cache node you wish to delete and click delete button on top of the page.
+On the left pane, click on 'Cache Nodes' under 'Cache Node Management' to see all the cache nodes under the Connected Cache resource. Select the cache node you wish to delete and click delete button on top of the page.
 
 
 # [Azure CLI](#tab/cli)

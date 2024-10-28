@@ -1,6 +1,6 @@
 ---
-title: Manage MCC cache nodes using CLI
-description: Details on how to manage Microsoft Connected Cache for Enterprise (MCC) cache nodes via Azure CLI commands.
+title: Manage Microsoft Connected Cache nodes using CLI
+description: Details on how to manage Microsoft Connected Cache for Enterprise cache nodes via Azure CLI commands.
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: how-to
@@ -20,18 +20,18 @@ ms.date: 06/03/2024
 
 <br>
 
-This article outlines how to create, configure, and deploy Microsoft Connected Cache for Enterprise (MCC) cache nodes using Azure CLI.
+This article outlines how to create, configure, and deploy Microsoft Connected Cache for Enterprise cache nodes using Azure CLI.
 
  
 ## Prerequisites:
 1. **Install Azure CLI**: [How to install the Azure CLI](/cli/azure/install-azure-cli)
-1. **Install MCC extension**: Install MCC extension via the command below
+1. **Install Connected Cache extension**: Install Connected Cache extension via the command below
 
 ```azurecli-interactive
 az extension add --name mcc
 ```
 
-To learn more about installting extensions, visit [Install the MCC extension.](/cli/azure/azure-cli-extensions-overview#how-to-install-extensions)
+To learn more about installing extensions, visit [Install the Connected Cache extension.](/cli/azure/azure-cli-extensions-overview#how-to-install-extensions)
 
 <br>
 <br>
@@ -50,11 +50,11 @@ az group create --name myrg --location westus
 
 Once the resource group is created, you'll need to create a Microsoft Connected Cache for Enterprise resource.
 
-### 2. Create an MCC Azure resource
+### 2. Create a Connected Cache Azure resource
 
-An MCC Azure resource is a top-level Azure resource under which cache nodes can be created.
+A Connected Cache Azure resource is a top-level Azure resource under which cache nodes can be created.
 
-To create an MCC Azure resource, use `az mcc ent resource create`
+To create a Connected Cache Azure resource, use `az mcc ent resource create`
 
 ```azurecli-interactive
 az mcc ent resource create --mcc-resource-name mymccresource --resource-group myrg
@@ -63,7 +63,7 @@ az mcc ent resource create --mcc-resource-name mymccresource --resource-group my
 <br>
 
 >[!IMPORTANT]
->In the output, look for operationStatus. **operationStatus = Succeeded** indicates that our services have successfully started creating MCC resource.
+>In the output, look for operationStatus. **operationStatus = Succeeded** indicates that our services have successfully started creating your Connected Cache resource.
 
 <br>
 
@@ -142,7 +142,7 @@ az mcc ent node get-provisioning-details --cache-node-name mycachenode --mcc-res
 
 ### Example script:
 
-Below is a pseudocode example of how to script bulk creation and configuration of an MCC Azure resource and multiple MCC cache nodes.
+Below is a pseudocode example of how to script bulk creation and configuration of a Connected Cache Azure resource and multiple Connected Cache cache nodes.
 
 <!--# [Bash](#tab/bash)
 
