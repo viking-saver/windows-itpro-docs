@@ -78,9 +78,9 @@ Provisioning methods include:
 - Temporary Access Pass (TAP), a time-limited passcode with strong authentication requirements issued through Microsoft Entra ID
 - Existing multifactor authentication with Microsoft Entra ID, including the Microsoft Authenticator app
 
-Windows Hello for Business replaces the username and password by combining a security key or certificate with a PIN or biometric data and then mapping the credentials to a user account during setup. There are multiple ways to deploy Windows Hello for Business depending on an organization's needs. Organizations that rely on certificates typically use on-premises public key infrastructure (PKI) to support authentication through Certificate Trust. Organizations using key trust deployment require root-of-trust provided by certificates on domain controllers.
+Windows Hello for Business enhances security by replacing traditional usernames and passwords with a combination of a security key or certificate and a PIN or biometric data. This setup securely maps the credentials to a user account.
 
-Organizations with hybrid scenarios can eliminate the need for on-premises domain controllers and simplify passwordless adoption by using Windows Hello for Business cloud Kerberos trust. This solution uses security keys and replaces on-premises domain controllers with a cloud-based root-of-trust. As a result, organizations can take advantage of Windows Hello for Business and deploy security keys with minimal extra setup or infrastructure.
+There are various deployment models available for Windows Hello for Business, providing flexibility to meet the diverse needs of different organizations. Among these, the *Hybrid cloud Kerberos trust* model is recommended and considered the simplest for organizations operating in hybrid environments.
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
@@ -143,7 +143,14 @@ Passkeys created and saved with Windows Hello are protected by Windows Hello or 
 
 [!INCLUDE [coming-soon](includes/coming-soon.md)]
 
+:::row:::
+    :::column:::
 The plug-in model for third-party passkey providers enables users to manage their passkeys with third-party passkey managers. This model ensures a seamless platform experience, regardless of whether passkeys are managed directly by Windows or by a third-party authenticator. When a third-party passkey provider is used, the passkeys are securely protected and managed by the third-party provider.
+    :::column-end:::
+    :::column:::
+:::image type="content" border="false" source="images/passkey-save-3p.png" alt-text="Screenshot of the save passkey dialog box showing third-party providers.":::
+    :::column-end:::
+:::row-end:::
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
