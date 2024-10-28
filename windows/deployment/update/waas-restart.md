@@ -65,7 +65,7 @@ You can also specify the max active hours range. The specified range is counted 
 
 To configure active hours using group policy, go to **Computer Configuration\Administrative Templates\Windows Components\Windows Update** and open the **Turn off auto-restart for updates during active hours** policy setting. When the policy is enabled, you can set the start and end times for active hours.
 
-:::image type="content" source="images/waas-active-hours-policy.png" alt-text="A screenshot of the group policy setting to 'Turn off auto-restart for updates during active hours' set to Enabled and the default active hours specified.":::
+:::image type="content" source="images/waas-active-hours-policy.png" alt-text="A screenshot of the group policy setting to 'Turn off auto-restart for updates during active hours' set to Enabled and the default active hours specified." lightbox="images/waas-active-hours-policy.png":::
 
 ### Configure active hours with MDM
 
