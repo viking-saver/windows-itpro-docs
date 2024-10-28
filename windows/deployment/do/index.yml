@@ -70,7 +70,7 @@ landingContent:
           - text: Connected Cache for Enterprise and Education overview
             url: mcc-ent-edu-overview.md
           - text: Connected Cache for Enterprise and Education requirements
-            url: mcc-ent-edu-mcc-ent-prerequisites.md
+            url: mcc-ent-prerequisites.md
           - text: Create the Microsoft Connected Cache Azure resource and cache nodes
             url: mcc-ent-create-resource-and-cache.md
 

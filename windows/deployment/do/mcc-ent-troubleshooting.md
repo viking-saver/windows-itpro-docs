@@ -42,7 +42,7 @@ If you have changed the proxy configuration, you will need to re-provision the C
 
 ## Troubleshooting cache nodes created during early preview
 
-Cache nodes created and deployed during the [Microsoft Connected Cache for Enterprise and Education early preview](mcc-ent-private-preview.md) should continue to function but can no longer be managed or monitored remotely via the Connected Cache Azure service.
+Cache nodes created and deployed during the [Microsoft Connected Cache for Enterprise and Education early preview](mcc-ent-early-preview.md) should continue to function but can no longer be managed or monitored remotely via the Connected Cache Azure service.
 
 As such, we strongly recommend you [recreate your existing resources in Azure](mcc-ent-create-resource-and-cache.md) and then [redeploy the Connected Cache software to your host machines](mcc-ent-deploy-to-windows.md) using the latest OS-specific installer.
 
