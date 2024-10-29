@@ -21,11 +21,11 @@ ms.date: 10/30/2024
 > [!IMPORTANT]
 > Microsoft Connected Cache is currently a preview feature. For more information, see [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
 
-Microsoft Connected Cache for Enterprise and Education (preview) is a software-only caching solution that delivers Microsoft content within Enterprise and Education networks. Connected Cache can be managed from an Azure portal or through Azure CLI and can be deployed to as many Windows devices, Linux devices, or VMs as needed. Managed Windows devices can be configured to download cloud content from a Connected Cache server by applying the client policy using management tools such as Intune.
+Microsoft Connected Cache for Enterprise and Education (preview) is a software-only caching solution that delivers Microsoft content within enterprise and education networks. Connected Cache can be managed from the Azure portal or through Azure CLI. It can be deployed to as many Windows devices, Linux devices, or VMs as needed. Managed Windows devices can be configured to download cloud content from a Connected Cache server by applying the client policy using management tools such as Microsoft Intune.
 
-For information about Microsoft Connected Cache in Configuration Manager (generally available, starting Configuration Manager version 2111), see [Microsoft Connected Cache in Configuration Manager](/configmgr/core/plan-design/hierarchy/microsoft-connected-cache).
+For information about Microsoft Connected Cache in Configuration Manager<!-- version 2111-->, see [Microsoft Connected Cache in Configuration Manager](/configmgr/core/plan-design/hierarchy/microsoft-connected-cache).
 
-Microsoft Connected Cache deployed directly to Windows relies on [Windows Subsystem for Linux](/windows/wsl/about) and either a [Group Managed Service Account](/windows-server/identity/ad-ds/manage/group-managed-service-accounts/group-managed-service-accounts/getting-started-with-group-managed-service-accounts), local user account, or domain user account are required to run WSL. WSL needs to run in a user context and any user, even if the currently logged-in user, could be used to run WSL and Microsoft Connected Cache.
+Microsoft Connected Cache deployed directly to Windows relies on [Windows Subsystem for Linux (WSL](/windows/wsl/about) and either a [Group Managed Service Account](/windows-server/identity/ad-ds/manage/group-managed-service-accounts/group-managed-service-accounts/getting-started-with-group-managed-service-accounts), local user account, or domain user account are required to run WSL. WSL needs to run in a user context and any user, even if the currently logged-in user, could be used to run WSL and Microsoft Connected Cache.
 
 ## Supported scenarios and configurations
 
@@ -41,10 +41,10 @@ Microsoft Connected Cache is built for flexible deployments to support several d
 
 Customers may have globally dispersed offices that meet some or all of the following parameters:
 
-- Have 10 – 50 Windows devices on-site
+- Have 10 to 50 Windows devices on-site
 - Don't have dedicated server hardware
-- Have Internet bandwidth that is limited (satellite internet)
-- Have intermittent Internet connectivity
+- Have internet bandwidth that is limited (satellite internet)
+- Have intermittent internet connectivity
 
 To support the branch office scenario, customers can deploy a Connected Cache node to a Windows 11 client device.
 
@@ -55,7 +55,7 @@ Customers may have office spaces, data centers, or Azure deployments that meet s
 - Have 100s or 1,000s of Windows devices (desktop or server)
 - Have some existing server hardware (Decommissioned Distribution Point, file server, cloud print server)
 - Have Azure VMs and/or Azure Virtual Desktop deployed
-- Have Internet bandwidth that is mediocre (T1 or T3 lines)
+- Have limited internet bandwidth (T1 or T3 lines)
 
 To support the large enterprise scenario, customers can deploy a Connected Cache node to a server running Windows Server 2022 or Ubuntu 22.04.
 
@@ -63,9 +63,9 @@ See [Connected Cache node host machine requirements](mcc-ent-prerequisites.md) f
 
 | Enterprise configuration | Download speed range | Download speeds and approximate content volume delivered in 8 Hours |
 |---|---|---|
-|Branch Office|< 1 Gbps Peak| 500 Mbps => 1,800 GB </br></br> 250 Mbps => 900 GB </br></br> 100 Mbps => 360 GB </br></br> 50 Mbps => 180 GB|
-|Small to Medium Enterprises/Autopilot Provisioning Center (50 - 500 devices in a single location) |1 - 5 Gbps| 5 Gbps => 18,000 GB </br></br>3 Gbps => 10,800 GB </br></br>1 Gbps => 3,600 GB|
-|Medium to Large Enterprises/Autopilot Provisioning Center (500 - 5,000 devices in a single location) |5 - 101 Gbps Peak|   9 Gbps => 32,400 GB </br></br> 5 Gbps => 18,000 GB </br></br>3 Gbps => 10,800 GB|
+|Branch office|< 1 Gbps Peak| 500 Mbps => 1,800 GB </br></br> 250 Mbps => 900 GB </br></br> 100 Mbps => 360 GB </br></br> 50 Mbps => 180 GB|
+|Small to medium enterprises/Autopilot provisioning center (50 - 500 devices in a single location) |1 - 5 Gbps| 5 Gbps => 18,000 GB </br></br>3 Gbps => 10,800 GB </br></br>1 Gbps => 3,600 GB|
+|Medium to large enterprises/Autopilot provisioning center (500 - 5,000 devices in a single location) |5 - 101 Gbps Peak|   9 Gbps => 32,400 GB </br></br> 5 Gbps => 18,000 GB </br></br>3 Gbps => 10,800 GB|
 
 ## Supported content types
 
@@ -89,8 +89,8 @@ The following diagram displays an overview of how Connected Cache functions:
 1. The Microsoft Connected Cache container is deployed to the device using Azure IoT Edge container management services and the cache server begins reporting status and metrics to Delivery Optimization services.
 1. The DOCacheHost setting is configured using Intune or other MDM, DHCP custom option, or registry key.
 1. Devices request content from the cache server, the cache server forwards the requests to the CDN and fills the cache, the cache server delivers the content requested to the devices, and uses Peer to Peer (depending on DO Download mode settings) for all DO content.
-1. Devices can fall back to CDN if cache server is unavailable for any reason or use Delivery Optimization delay fallback to http (CDN) settings to prefer the local cache server.
-Customers can view data regarding Microsoft Connected Cache downloads on management portal and Windows Update for Business reports
+1. Devices can fall back to CDN if the cache server is unavailable for any reason or use Delivery Optimization delay fallback to http (CDN) settings to prefer the local cache server.
+You can view data about Microsoft Connected Cache downloads on management portal and Windows Update for Business reports.
 
 ## Next steps
 

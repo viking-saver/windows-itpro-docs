@@ -31,7 +31,7 @@ This article outlines how to create, configure, and deploy Microsoft Connected C
 az extension add --name mcc
 ```
 
-To learn more about installing extensions, visit [Install the Connected Cache extension.](/cli/azure/azure-cli-extensions-overview#how-to-install-extensions)
+To learn more about installing extensions, see [Install the Connected Cache extension.](/cli/azure/azure-cli-extensions-overview#how-to-install-extensions)
 
 <br>
 <br>
@@ -138,11 +138,11 @@ az mcc ent node get-provisioning-details --cache-node-name mycachenode --mcc-res
 >[!IMPORTANT]
 >* Save the resulting values for cacheNodeId, customerKey, mccResourceId, registrationKey. These GUIDs are needed to create the provisioning script.
 >* In the output look for cacheNodeState. If **cacheNodeState = Not Provisioned**, you can continue with cache node provisioning.
->* If **cacheNodeState = Not Configured**, then the cache node has not been configured. Please configure the cache node before provisioning.
+>* If **cacheNodeState = Not Configured**, then the cache node has not been configured. Configure the cache node before provisioning.
 
 ### Example script:
 
-Below is a pseudocode example of how to script bulk creation and configuration of a Connected Cache Azure resource and multiple Connected Cache cache nodes.
+Below is a pseudocode example of how to script bulk creation and configuration of a Connected Cache Azure resource and multiple Connected Cache cache nodes:
 
 <!--# [Bash](#tab/bash)
 
@@ -197,6 +197,7 @@ for ($cacheNodeNumber = 1; $cacheNodeNumber -le $cacheNodesToCreate; $cacheNodeN
     az mcc ent node update --cache-node-name $iteratedCacheNodeName --mcc-resource-name $mccResourceName --resource-group $resourceGroup --cache-drive  "[{physical-path:/var/mcc,size-in-gb:50}]" --proxy enabled --proxy-host $proxyHost --proxy-port $proxyPort
 }
 ```
+---
 
 ## Next step
 

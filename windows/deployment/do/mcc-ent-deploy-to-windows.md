@@ -63,6 +63,8 @@ To deploy a cache node programmatically, you'll need to use Azure CLI to get the
    ./provisionmcconwsl.ps1 -installationFolder c:\mccwsl01 -customerid [enter mccResourceId here] -cachenodeid [enter cacheNodeId here] -customerkey [enter customerKey here] -registrationkey [enter registration key] -cacheDrives "/var/mcc,enter drive size"  -shouldUseProxy [enter true if present, enter false if not] -proxyurl "http://[enter proxy host name]:[enter port]"  -mccRunTimeAccount $User -mccLocalAccountCredential $myLocalAccountCredential
    ```
 
+--- 
+
 ## Steps to point Windows client devices at Connected Cache node
 
 Once you have successfully deployed Connected Cache to your Windows host machine, you'll need to configure your Windows client devices to request Microsoft content from the Connected Cache node.
