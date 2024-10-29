@@ -49,6 +49,8 @@ To deploy a cache node programmatically, you'll need to use Azure CLI to get the
    sudo ./provisionmcc.sh customerid="enter mccResourceId here" cachenodeid="enter cacheNodeId here" customerkey=" enter customerKey here " registrationkey="enter registrationKey here" drivepathandsizeingb="enter physicalPath value,enter sizeInGb value here" shoulduseproxy="enter true if present, enter false if not" proxyurl=http://enter proxy hostname:enter port
    ```
 
+---
+
 ## Steps to point Windows client devices at Connected Cache node
 
 Once you have successfully deployed Connected Cache to your Linux host machine, you'll need to configure your Windows client devices to request Microsoft content from the Connected Cache node.

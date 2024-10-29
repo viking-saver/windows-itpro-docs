@@ -25,7 +25,7 @@ This article details the requirements and recommended specifications for using M
 
     The Azure resources used for Connected Cache will be free to you during this public preview.
 
-- **E3/E5 or A3/A5 license**: Your organization must have one of the following license subscriptions for each device that downloads content from a Connected Cache node.
+- **E3/E5 or A3/A5 license**: Your organization must have one of the following license subscriptions for each device that downloads content from a Connected Cache node:
 
     - [Windows Enterprise E3 or E5](/windows/whats-new/windows-licensing#windows-11-enterprise), included in [Microsoft 365 F3, E3, or E5](https://www.microsoft.com/microsoft-365/enterprise/microsoft365-plans-and-pricing?msockid=32c407b43d5968050f2b13443c746916)
     - Windows Education A3 or A5, included in [Microsoft 365 A3 or A5](https://www.microsoft.com/education/products/microsoft-365?msockid=32c407b43d5968050f2b13443c746916#Education-plans)
@@ -36,21 +36,21 @@ This article details the requirements and recommended specifications for using M
 
 - Any previous installations of Connected Cache must be [uninstalled](mcc-ent-uninstall-cache-node.md) from the host machine before installing the latest version of Connected Cache.
 - [These listed endpoints](delivery-optimization-endpoints.md) must be reachable by the host machine.
-- The host machine must have no other services / applications utilizing port 80 (for example, ConfigManager or Distribution Point).
+- The host machine must have no other services / applications utilizing port 80 (for example, Configuration Manager or a distribution point).
 - The host machine must have at least 4 GB of free memory.
 
 ### Additional requirements for Windows host machines
 
-- The Windows host machine must be using Windows 11 or Windows Server 2022 with the Latest Cumulative Update (LCU) applied.
+- The Windows host machine must be using Windows 11 or Windows Server 2022 with the latest cumulative update applied.
     - Windows 11 must have [OS Build 22631.3296](https://support.microsoft.com/topic/march-12-2024-kb5035853-os-builds-22621-3296-and-22631-3296-a69ac07f-e893-4d16-bbe1-554b7d9dd39b) or later
     - Windows Server 2022 must have [OS Build 20348.2227](https://support.microsoft.com/topic/january-9-2024-kb5034129-os-build-20348-2227-6958a36f-efaf-4ef5-a576-c5931072a89a) or later
 
 - The Windows host machine must support nested virtualization.
-- The Windows host machine must have [WSL2 installed](/windows/wsl/install#install-wsl-command). You can install this on Windows 11 and Windows Server 2022 by running the PowerShell command `wsl.exe --install --no-distribution`.
+- The Windows host machine must have [WSL 2 installed](/windows/wsl/install#install-wsl-command). You can install this on Windows 11 and Windows Server 2022 by running the PowerShell command `wsl.exe --install --no-distribution`.
 
 ### Additional requirements for Linux host machines
 
-- The Linux host machine must be using one of the following Operating Systems:
+- The Linux host machine must be using one of the following operating systems:
 
     - Ubuntu 20.04
     - Red Hat Enterprise Linux (RHEL) 8.* or 9.*
@@ -64,9 +64,9 @@ This article details the requirements and recommended specifications for using M
 
 ### Recommended host machine hardware specifications
 
-Based on your [enterprise configuration](mcc-ent-edu-overview.md), it's recommended to deploy your Connected Cache nodes to host machines that meet the following recommended hardware specifications.
+Based on your [enterprise configuration](mcc-ent-edu-overview.md), it's recommended to deploy your Connected Cache nodes to host machines that meet the following recommended hardware specifications:
 
-| Component | Branch Office | Small / Medium Enterprise | Large Enterprise |
+| Component | Branch office | Small / medium enterprise | Large enterprise |
 | --- | --- | --- | --- |
 | CPU cores | 4 | 8 | 16 |
 | Memory | 8 GB, 4 GB free | 16 GB, 4 GB free | 32 GB, 4 GB free |

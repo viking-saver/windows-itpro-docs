@@ -35,7 +35,7 @@
       href: waas-microsoft-connected-cache.md
     - name: Microsoft Connected Cache for Enterprise and Education
       items:
-      - name: Connected Cache for Enterprise and Education Overview
+      - name: Connected Cache for Enterprise and Education overview
         href: mcc-ent-edu-overview.md
       - name: Requirements
         href: mcc-ent-prerequisites.md

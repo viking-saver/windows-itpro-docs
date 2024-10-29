@@ -30,16 +30,16 @@ For more information on sizing and OS requirements, see [the prerequisites for u
 
 # [Azure portal](#tab/portal)
 
-1. In the [Azure portal](https://portal.azure.com), select **Create a Resource** and search for "Microsoft Connected Cache for Enterprise and Education".
+1. In the [Azure portal](https://portal.azure.com), select **Create a Resource** and search for `Microsoft Connected Cache for Enterprise and Education`.
 <!--
     :::image type="content" source="images/mcc-isp-provision-cache-node-numbered.png" alt-text="Screenshot of the Azure portal depicting the cache node configuration page of a cache node. This screenshot shows all of the fields you can choose to configure the cache node." lightbox="./images/mcc-isp-provision-cache-node-numbered.png":::  
 -->
 
-1. Select the Microsoft Connected Cache for Enterprise resource. When prompted, choose the subscription, resource group, and location for the resource. Then enter a name for the resource and select Review + Create.
+1. Select the Microsoft Connected Cache for Enterprise resource. When prompted, choose the subscription, resource group, and location for the resource. Then enter a name for the resource, then select Review + Create.
 
 1. After a few moments, you'll see a "Validation successful" message, indicating you can move onto the next step and select Create.
 
-1. The creation of the resource might take a few minutes. After a successful creation, you'll see a Deployment complete page as below. Select Go to resource to create cache nodes.
+1. The creation of the resource might take a few minutes. After a successful creation, you'll see a page stating the deployment is complete. Select **Go to resource** to create cache nodes.
 
 
 # [Azure CLI](#tab/cli)
@@ -78,15 +78,15 @@ az mcc ent resource create --mcc-resource-name <mymccresource> --resource-group 
 # [Azure portal](#tab/portal)
 
   1. Open Azure portal and navigate to the Microsoft Connected Cache for Enterprise resource that you created.<br>
-  1. Under Cache Node Management, select on Cache Nodes and then on + Create Cache Node.<br>
+  1. Under Cache Node Management, select **Cache Nodes** then **Create Cache Node**.<br>
   
-  1. Provide a name for your cache node and select the host OS you plan to deploy the cache node on and select create. Note, cache node names have to be unique under the Microsoft Connected Cache resource.
+  1. Provide a name for your cache node and select the host OS you plan to deploy the cache node on, then select **Create**. Note, cache node names have to be unique under the Microsoft Connected Cache resource.
   <!--
     :::image type="content" source="images/mcc-isp-provision-cache-node-numbered.png" alt-text="Screenshot of the Azure portal depicting the cache node configuration page of a cache node. This screenshot shows all of the fields you can choose to configure the cache node." lightbox="./images/mcc-isp-provision-cache-node-numbered.png":::  
     -->
-  The creation of cache node might take a few minutes. Select Refresh to see your recently created cache node.
+  The creation of the cache node might take a few minutes. Select **Refresh** to see your recently created cache node.
 Once the cache node state changes to **Not Configured**, you can now configure your cache node.<br>
-To know more about different cache node state, see [Cache node states](#cache-node-states).
+For more information about different cache node states, see [Cache node states](#cache-node-states).
 
 
 # [Azure CLI](#tab/cli)
@@ -98,7 +98,7 @@ Replace the following placeholders with your own information:
 * *\<mcc-resource-name>*: Name of the Microsoft Connected Cache for Enterprise resource.
 * *\<cache-node-name>*: A name for your Microsoft Connected Cache node.
 * *\<host-os>*: The OS on which cache node will be provisioned.
-  Accepted values: windows, linux
+  Accepted values: `windows`, `linux`
 
 ```azurecli-interactive
 az mcc ent node create --cache-node-name <mycachenode> --mcc-resource-name <mymccresource> --resource-group <myrg> --host-os <linux>
@@ -107,12 +107,12 @@ az mcc ent node create --cache-node-name <mycachenode> --mcc-resource-name <mymc
 <br>
 
 >[!NOTE]
->To ensure cache node has been created successfully, please run the following command before continuing with cache node configuration.
+>To ensure cache node has been created successfully, run the following command before continuing with cache node configuration.
 >```azurecli-interactive
 >az mcc ent node show --cache-node-name <mycachenode> --mcc-resource-name <mymccresource> --resource-group <myrg>  
 >```
->In the output look for cacheNodeState. If ***cacheNodeState = Not Configured***, you can continue with cache node configuration.
->If ***cacheNodeState = Registration in Progress***, then the cache node is still in process of being created. Please wait for a minute or two more and run the command again.
+>In the output look for **cacheNodeState**. If ***cacheNodeState = Not Configured***, you can continue with cache node configuration.
+>If ***cacheNodeState = Registration in Progress***, then the cache node is still in process of being created. Wait a couple of minutes and run the command again.
 >To know more about different cache node state, see [Cache node states](#cache-node-states).
 
 ---
@@ -120,7 +120,7 @@ az mcc ent node create --cache-node-name <mycachenode> --mcc-resource-name <mymc
 ## Configure Connected Cache node
 
 # [Azure portal](#tab/portal)
-Enter required values to configure your cache node. To learn more about the definitions of each field, review the [Configuration](#general-configuration-fields) fields at the bottom of this article.
+Enter required values to configure your cache node. For more information about the definitions of each field, review the [Configuration fields](#general-configuration-fields) at the bottom of this article.
 Don't forget to select save after adding configuration information.
 
 
@@ -134,15 +134,15 @@ Replace the following placeholders with your own information:
 * *\<resource-group>*: Name of the resource group in your subscription.
 * *\<mcc-resource-name>*: Name of your Microsoft Connected Cache for Enterprise resource.
 * *\<cache-node-name>*: Name for your Microsoft Connected Cache node.
-* *\<physical-path>*: The cache drive path. You can add upto nine cache drives.
+* *\<physical-path>*: The cache drive path. You can add up to nine cache drives.
 * *\<size-in-gb>*: The size of cache drive. Must be at least 50 Gb.
 * *\<proxy>*: If proxy needs to be enabled or not.<br>
-  Accepted values: enabled, disabled<br>
+  Accepted values: `enabled`, `disabled`<br>
   Proxy should be set to enabled if the cache node will need to pass through a network proxy to download content. The provided proxy will also be used during deployment of the Connected Cache cache node to your host machine.
 * *\<proxy-host>*: The proxy host name or ip address. Required if proxy is set to enabled.
 * *\<proxy-port>*: Proxy port number. Required if proxy is set to enabled.
 * *\<auto-update-ring>*: Update ring the cache node should have.<br>
-  Accepted values: slow, fast.<br>
+  Accepted values: `slow`, `fast`.<br>
   If update ring is set to slow, you must provide the day of week, time of day and week of month the cache node should be updated.
 * *\<auto-update-day>*: The day of the week cache node should be updated. Week starts from Monday.<br>
   Accepted values: 1,2,3,4,5,6,7
@@ -170,12 +170,12 @@ Replace the following placeholders with your own information:
   Accepted value: /var/mcc
 * *\<size-in-gb>*: The size of cache drive. Must be at least 50 Gb.
 * *\<proxy>*: If proxy needs to be enabled or not.<br>
-  Accepted values: enabled, disabled<br>
+  Accepted values: `enabled`, `disabled`<br>
   Proxy should be set to enabled if the cache node will need to pass through a network proxy to download content. The provided proxy will also be used during deployment of the Connected Cache cache node to your host machine.
 * *\<proxy-host>*: The proxy host name or ip address. Required if proxy is set to enabled.
 * *\<proxy-port>*: Proxy port number. Required if proxy is set to enabled.
 * *\<auto-update-ring>*: Update ring the cache node should have.<br>
-  Accepted values: slow, fast.<br>
+  Accepted values: `slow`, `fast`.<br>
   If update ring is set to slow, you must provide the day of week, time of day and week of month the cache node should be updated.
 * *\<auto-update-day>*: The day of the week cache node should be updated. Week starts from Monday.<br>
   Accepted values: 1,2,3,4,5,6,7
