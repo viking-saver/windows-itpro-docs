@@ -19,7 +19,7 @@ The following figure shows the flow of the certificate propagation service. The 
 1. The arrow labeled **2** indicates the certification to the reader
 1. The arrow labeled **3** indicates the access to the certificate store during the client session
 
-![Certificate propagation service.](images/sc-image302.gif)
+   ![Certificate propagation service.](images/sc-image302.gif)
 
 1. A signed-in user inserts a smart card
 1. CertPropSvc is notified that a smart card was inserted
