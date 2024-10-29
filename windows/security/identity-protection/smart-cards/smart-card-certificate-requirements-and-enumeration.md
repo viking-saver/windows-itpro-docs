@@ -1,8 +1,8 @@
 ---
-title: Certificate Requirements and Enumeration 
+title: Certificate Requirements and Enumeration
 description: This topic for the IT professional and smart card developers describes how certificates are managed and used for smart card sign-in.
 ms.topic: concept-article
-ms.date: 01/16/2024
+ms.date: 10/29/2024
 ---
 
 # Certificate Requirements and Enumeration

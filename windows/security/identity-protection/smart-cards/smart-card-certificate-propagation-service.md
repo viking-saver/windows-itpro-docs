@@ -1,8 +1,8 @@
 ---
-title: Certificate propagation service 
+title: Certificate propagation service
 description: Learn about the certificate propagation service (CertPropSvc), which is used in smart card implementation.
 ms.topic: concept-article
-ms.date: 01/16/2024
+ms.date: 10/29/2024
 ---
 
 # Certificate propagation service
