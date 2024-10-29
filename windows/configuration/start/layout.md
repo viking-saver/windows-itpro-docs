@@ -304,10 +304,10 @@ Column="2"/>
 
 You can use the `start:SecondaryTile` tag to pin a web link through a Microsoft Edge secondary tile. This method doesn't require more actions compared to the method of using legacy `.url` shortcuts (through the `start:DesktopApplicationTile` tag).
 
-The following example shows how to create a tile of the Web site's URL using the Microsoft Edge secondary tile:
+The following example shows how to create a tile of the Web site's URL using the Microsoft Edge secondary tile. Ensure to replace `<--Microsoft Edge AUMID-->` with the AUMID of Microsoft Edge (learn how to [Find the Application User Model ID of an installed app](../store/find-aumid.md)):
 
 ```XML
-<start:SecondaryTile AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge"
+<start:SecondaryTile AppUserModelID="<--Microsoft Edge AUMID-->"
 TileID="MyWeblinkTile"
 Arguments="http://msn.com"
 DisplayName="MySite"
