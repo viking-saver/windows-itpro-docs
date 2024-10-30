@@ -20,7 +20,7 @@ appliesto:
 # Microsoft Connected Cache for Internet Service Providers (early preview)
 
 > [!IMPORTANT]
-> Microsoft Connected Cache for ISPs is now in Public Preview - for our early preview customers, and early preview version is no longer supported. We highly encourage you to onboard onto our Public Preview program. For instructions on signing up and onboarding, visit [Operator sign up and service onboarding for Microsoft Connected Cache](mcc-isp-signup.md).
+> Microsoft Connected Cache for ISPs is now in Public Preview - for our early preview customers, the early preview version is no longer supported. We highly encourage you to onboard onto our Public Preview program. For instructions on signing up and onboarding, visit [Operator sign up and service onboarding for Microsoft Connected Cache](mcc-isp-signup.md).
 
 ## Overview
 
