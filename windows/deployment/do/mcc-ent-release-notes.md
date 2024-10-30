@@ -18,16 +18,11 @@ ms.date: 10/30/2024
 
 This article contains details about the latest releases of Connected Cache. Since Connected Cache is a preview service, some releases may contain breaking changes.
 
-## Release v0.1.0 (public preview launch)
+## Release v1.2.1.2076_E (public preview launch)
 
 The public preview released on **10/30/2024**
 
-For customers that installed earlier versions of Connected Cache, this release contains:   
-- Breaking changes 
-- Service changes
-- Client changes
-These changes affect Linux and Windows host machines.
-
+For customers that installed earlier versions of Connected Cache, this release contains breaking changes that affect both Linux and Windows host machines. Please see the [early preview documentation page](mcc-ent-early-preview.md) for more details.
 
 ### Feature updates
 
@@ -39,7 +34,7 @@ These changes affect Linux and Windows host machines.
 - **Updates**: Your cache nodes are now updated automatically and we also added the capability to set each cache node's update ring to govern the cadence of Microsoft Connected Cache container updates.
 
 ### Fixes
-- We fixed various bugs to achieve smoother install experience.
+- We fixed various bugs to achieve a smoother installation experience.
 
 ## Related content
 
