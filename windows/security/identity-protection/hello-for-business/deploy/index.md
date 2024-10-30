@@ -1,7 +1,7 @@
 ---
 title: Plan a Windows Hello for Business Deployment
 description: Learn about the role of each component within Windows Hello for Business and how certain deployment decisions affect other aspects of your infrastructure.
-ms.date: 05/16/2024
+ms.date: 10/30/2024
 ms.topic: concept-article
 ---
 
@@ -269,7 +269,7 @@ All supported Windows Server versions can be used with Windows Hello for Busines
 |  | Deployment model | Trust type | Domain Controller OS version |
 |--|--|--|--|
 | **🔲** | **Cloud-only** | n/a | All supported versions |
-| **🔲** | **Hybrid** | Cloud Kerberos | - Windows Server 2016, with [KB3534307][KB-3] and later<br>- Windows Server 2019, with [KB4534321][KB-4] and later<br>- Windows Server 2022 |
+| **🔲** | **Hybrid** | Cloud Kerberos | - Windows Server 2016, with [KB3534307][KB-3] and later<br>- Windows Server 2019, with [KB4534321][KB-4] and later<br>- Windows Server 2022<br>- Windows Server 2025|
 | **🔲** | **Hybrid** | Key | All supported versions |
 | **🔲** | **Hybrid** | Certificate | All supported versions |
 | **🔲** | **On-premises** | Key | All supported versions |
