@@ -88,7 +88,7 @@ You can use Task Scheduler on the host machine to check the status of this sched
 1. Select the **Triggers** tab and confirm that the Status is **Enabled**
 
 > [!Note]
->  If the password of the runtime account changes, you'll need to update the user in all of the Connected Cache scheduled tasks in order for the Connected Cache node to continue functioning properly.
+> If the password of the runtime account changes, you'll need to update the user in all of the Connected Cache scheduled tasks in order for the Connected Cache node to continue functioning properly.
 
 ## Troubleshooting cache node deployment to Linux host machine
 
