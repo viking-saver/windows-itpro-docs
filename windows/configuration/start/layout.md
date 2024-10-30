@@ -427,13 +427,13 @@ You can edit the JSON file to make any modifications to the **Pinned** section o
 1. Open the `LayoutModification.json` file in a JSON editor, such as Visual Studio Code or Notepad
 1. The `pinnedList` section includes all the pins that are applied to the Start layout
 
-You can add more apps to the section using the following keys:
+    You can add more apps to the section using the following keys:
 
-| Key | Description |
-|--|--|
-| `packagedAppID` | Used for Universal Windows Platform (UWP) apps. To pin a UWP app, use the app's AUMID. |
-| `desktopAppID` | Used for desktop apps. To pin a desktop app, use the app's AUMID. If the app doesn't have an AUMID, use the `desktopAppLink` instead. |
-| `desktopAppLink` | Used for desktop apps that don't have an associated AUMID. To pin this type of app, use the path to the `.lnk` shortcut that points to the app. |
+    | Key | Description |
+    |--|--|
+    | `packagedAppID` | Used for Universal Windows Platform (UWP) apps. To pin a UWP app, use the app's AUMID. |
+    | `desktopAppID` | Used for desktop apps. To pin a desktop app, use the app's AUMID. If the app doesn't have an AUMID, use the `desktopAppLink` instead. |
+    | `desktopAppLink` | Used for desktop apps that don't have an associated AUMID. To pin this type of app, use the path to the `.lnk` shortcut that points to the app. |
 
 ::: zone-end
 
