@@ -52,7 +52,7 @@ This article details the requirements and recommended specifications for using M
 
 - The Linux host machine must be using one of the following operating systems:
 
-    - Ubuntu 20.04
+    - Ubuntu 22.04
     - Red Hat Enterprise Linux (RHEL) 8.* or 9.*
         - If using RHEL, the default container engine (Podman) must be replaced with [Moby](https://github.com/moby/moby#readme)
 
