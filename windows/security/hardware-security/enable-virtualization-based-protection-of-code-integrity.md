@@ -32,15 +32,9 @@ appliesto:
 
 To enable memory integrity on Windows devices with supporting hardware throughout an enterprise, use any of these options:
 
-- [Windows Security settings](#windows-security)
-- [Microsoft Intune (or another MDM provider)](#enable-memory-integrity-using-intune)
-- [Group Policy](#enable-memory-integrity-using-group-policy)
-- [Microsoft Configuration Manager](https://cloudblogs.microsoft.com/enterprisemobility/2015/10/30/managing-windows-10-device-guard-with-configuration-manager/)
-- [Registry](#use-registry-keys-to-enable-memory-integrity)
-
 ### [:::image type="icon" source="../images/icons/security-app.svg" border="false"::: **Security**](#tab/security)
 
-### Windows Security
+### Enable memory integrity using Windows Security
 
 **Memory integrity** can be turned on in **Windows Security** settings and found at **Windows Security** > **Device security** > **Core isolation details** > **Memory integrity**. For more information, see [Device protection in Windows Security](https://support.microsoft.com/help/4096339/windows-10-device-protection-in-windows-defender-security-center).
 
@@ -69,7 +63,7 @@ To apply the new policy on a domain-joined computer, either restart or run `gpup
 
 ### [:::image type="icon" source="../images/icons/registry.svg" border="false"::: **Registry**](#tab/reg)
 
-### Use registry keys to enable memory integrity
+### Enable memory integrity using registry
 
 Set the following registry keys to enable memory integrity. These keys provide similar set of configuration options provided by Group Policy
 
@@ -176,6 +170,8 @@ You can use App Control policy to turn on memory integrity using any of the foll
 
 > [!NOTE]
 > If your App Control policy is set to turn memory integrity on, it will be turned on even if the policy is in audit mode.
+
+---
 
 ### Validate enabled VBS and memory integrity features
 
