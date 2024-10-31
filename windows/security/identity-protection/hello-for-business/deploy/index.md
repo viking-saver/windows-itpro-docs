@@ -65,7 +65,7 @@ Windows Hello for Business authentication to Microsoft Entra ID always uses the 
 
 The trust type determines whether you issue authentication certificates to your users. One trust model isn't more secure than the other.
 
-The deployment of certificates to users and Domain Controllers requires more configuration and infrastructure, which could also be a factor to consider in your decision. More infrastructure needed for certificate-trust deployments includes a certificate registration authority. In a federated environment, you must activate the Device Writeback option in Microsoft Entra Connect.
+The deployment of certificates to users and domain controllers requires more configuration and infrastructure, which could also be a factor to consider in your decision. More infrastructure needed for certificate-trust deployments includes a certificate registration authority. In a federated environment, you must activate the Device Writeback option in Microsoft Entra Connect.
 
 There are three trust types from which you can choose:
 
@@ -264,9 +264,9 @@ All supported Windows versions can be used with Windows Hello for Business. Howe
 
 ### Windows Server requirements
 
-All supported Windows Server versions can be used with Windows Hello for Business as Domain Controller. However, cloud Kerberos trust requires minimum versions:
+Windows Hello for Business can be used to authenticate against all supported Windows Server versions as a domain controller. However, cloud Kerberos trust requires minimum versions:
 
-|  | Deployment model | Trust type | Domain Controller OS version |
+|  | Deployment model | Trust type | Domain controller OS version |
 |--|--|--|--|
 | **🔲** | **Cloud-only** | n/a | All supported versions |
 | **🔲** | **Hybrid** | Cloud Kerberos | - Windows Server 2016, with [KB3534307][KB-3] and later<br>- Windows Server 2019, with [KB4534321][KB-4] and later<br>- Windows Server 2022<br>- Windows Server 2025|

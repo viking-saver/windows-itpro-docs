@@ -41,7 +41,7 @@ If you haven't deployed Microsoft Entra Kerberos, follow the instructions in the
 
 When Microsoft Entra Kerberos is enabled in an Active Directory domain, an *AzureADKerberos* computer object is created in the domain. This object:
 
-- Appears as a Read Only Domain Controller (RODC) object, but isn't associated with any physical servers
+- Appears as a read only domain controller (RODC) object, but isn't associated with any physical servers
 - Is only used by Microsoft Entra ID to generate TGTs for the Active Directory domain
 
   > [!NOTE]
