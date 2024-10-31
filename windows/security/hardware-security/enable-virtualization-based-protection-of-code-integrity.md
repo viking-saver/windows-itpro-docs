@@ -53,7 +53,7 @@ Use the **Virtualization Based Technology** > **Hypervisor Enforced Code Integri
 1. Use Group Policy Editor (gpedit.msc) to either edit an existing GPO or create a new one.
 1. Navigate to **Computer Configuration** > **Administrative Templates** > **System** > **Device Guard**.
 1. Double-click **Turn on Virtualization Based Security**.
-1. Select **Enabled** and under **Virtualization Based Protection of Code Integrity**, select **Enabled without UEFI lock**. Only select **Enabled with UEFI lock** if you want to prevent memory integrity from being disabled remotely or by policy update. Once enabled with UEFI lock, you must have access to the UEFI BIOS menu to turn off Secure Boot if you want to turn off memory integrity.
+1. Select **Enabled**. Under **Virtualization Based Protection of Code Integrity**, select **Enabled without UEFI lock**. Only select **Enabled with UEFI lock** if you want to prevent memory integrity from being disabled remotely or by policy update. Once enabled with UEFI lock, you must have access to the UEFI BIOS menu to turn off Secure Boot if you want to turn off memory integrity.
 
    ![Enable memory integrity using Group Policy.](images/enable-hvci-gp.png)
 
@@ -146,7 +146,7 @@ If you want to customize the preceding recommended settings, use the following r
     > [!IMPORTANT]
     > Special care should be used before enabling this mode, since, in case of any failure of the virtualization modules, the system will refuse to boot.
 
-- To gray out the memory integrity UI and display the message "This setting is managed by your administrator":
+- To gray out the memory integrity UI and display the message `This setting is managed by your administrator`:
 
     ```cmd
     reg delete HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity /v "WasEnabledBy" /f
@@ -188,82 +188,98 @@ Get-CimInstance -ClassName Win32_DeviceGuard -Namespace root\Microsoft\Windows\D
 
 The output of this command provides details of the available hardware-based security features and those features that are currently enabled.
 
-##### AvailableSecurityProperties
+- **InstanceIdentifier**: A string that is unique to a particular device and set by WMI.
 
-This field helps to enumerate and report state on the relevant security properties for VBS and memory integrity.
+- **Version**: This field lists the version of this WMI class. The only valid value now is **1.0**.
 
-| Value | Description                                             |
-|-------|---------------------------------------------------------|
-| **0** | If present, no relevant properties exist on the device. |
-| **1** | If present, hypervisor support is available.            |
-| **2** | If present, Secure Boot is available.                   |
-| **3** | If present, DMA protection is available.                |
-| **4** | If present, Secure Memory Overwrite is available.       |
-| **5** | If present, NX protections are available.               |
-| **6** | If present, SMM mitigations are available.              |
-| **7** | If present, MBEC/GMET is available.                     |
-| **8** | If present, APIC virtualization is available.           |
+- **AvailableSecurityProperties**: This field helps to enumerate and report state on the relevant security properties for VBS and memory integrity.
 
-##### InstanceIdentifier
+    | Value | Description                                             |
+    |-------|---------------------------------------------------------|
+    | **0** | If present, no relevant properties exist on the device. |
+    | **1** | If present, hypervisor support is available.            |
+    | **2** | If present, Secure Boot is available.                   |
+    | **3** | If present, DMA protection is available.                |
+    | **4** | If present, Secure Memory Overwrite is available.       |
+    | **5** | If present, NX protections are available.               |
+    | **6** | If present, SMM mitigations are available.              |
+    | **7** | If present, MBEC/GMET is available.                     |
+    | **8** | If present, APIC virtualization is available.           |
 
-A string that is unique to a particular device and set by WMI.
+- **CodeIntegrityPolicyEnforcementStatus**: This field indicates the code integrity policy enforcement status.
 
-##### RequiredSecurityProperties
+    | Value | Description |
+    |-------|-------------|
+    | **0** | Off         |
+    | **1** | Audit.      |
+    | **2** | Enforced.   |
 
-This field describes the required security properties to enable VBS.
+- **RequiredSecurityProperties**: This field describes the required security properties to enable VBS.
 
-| Value | Description                                    |
-|-------|------------------------------------------------|
-| **0** | Nothing is required.                           |
-| **1** | If present, hypervisor support is needed.      |
-| **2** | If present, Secure Boot is needed.             |
-| **3** | If present, DMA protection is needed.          |
-| **4** | If present, Secure Memory Overwrite is needed. |
-| **5** | If present, NX protections are needed.         |
-| **6** | If present, SMM mitigations are needed.        |
-| **7** | If present, MBEC/GMET is needed.               |
+    | Value | Description                                    |
+    |-------|------------------------------------------------|
+    | **0** | Nothing is required.                           |
+    | **1** | If present, hypervisor support is needed.      |
+    | **2** | If present, Secure Boot is needed.             |
+    | **3** | If present, DMA protection is needed.          |
+    | **4** | If present, Secure Memory Overwrite is needed. |
+    | **5** | If present, NX protections are needed.         |
+    | **6** | If present, SMM mitigations are needed.        |
+    | **7** | If present, MBEC/GMET is needed.               |
 
-##### SecurityServicesConfigured
+- **SecurityServicesConfigured**: This field indicates whether Credential Guard or memory integrity is configured.
 
-This field indicates whether Credential Guard or memory integrity is configured.
+    | Value | Description                                           |
+    |-------|-------------------------------------------------------|
+    | **0** | No services are configured.                           |
+    | **1** | If present, Credential Guard is configured.           |
+    | **2** | If present, memory integrity is configured.           |
+    | **3** | If present, System Guard Secure Launch is configured. |
+    | **4** | If present, SMM Firmware Measurement is configured.   |
+    | **5** | If present, Kernel-mode Hardware-enforced Stack Protection is configured. |
+    | **6** | If present, Kernel-mode Hardware-enforced Stack Protection is configured in Audit mode. |
+    | **7** | If present, Hypervisor-Enforced Paging Translation is configured. |
 
-| Value | Description                                           |
-|-------|-------------------------------------------------------|
-| **0** | No services are configured.                           |
-| **1** | If present, Credential Guard is configured.           |
-| **2** | If present, memory integrity is configured.           |
-| **3** | If present, System Guard Secure Launch is configured. |
-| **4** | If present, SMM Firmware Measurement is configured.   |
+- **SecurityServicesRunning**: This field indicates whether Credential Guard or memory integrity is running.
 
-##### SecurityServicesRunning
+    | Value | Description                                        |
+    |-------|----------------------------------------------------|
+    | **0** | No services running.                               |
+    | **1** | If present, Credential Guard is running.           |
+    | **2** | If present, memory integrity is running.           |
+    | **3** | If present, System Guard Secure Launch is running. |
+    | **4** | If present, SMM Firmware Measurement is running.   |
+    | **5** | If present, Kernel-mode Hardware-enforced Stack Protection is running. |
+    | **6** | If present, Kernel-mode Hardware-enforced Stack Protection is running in Audit mode. |
+    | **7** | If present, Hypervisor-Enforced Paging Translation is running. |
 
-This field indicates whether Credential Guard or memory integrity is running.
+- **SmmIsolationLevel**: This field indicates the SMM isolation level.
 
-| Value | Description                                        |
-|-------|----------------------------------------------------|
-| **0** | No services running.                               |
-| **1** | If present, Credential Guard is running.           |
-| **2** | If present, memory integrity is running.           |
-| **3** | If present, System Guard Secure Launch is running. |
-| **4** | If present, SMM Firmware Measurement is running.   |
+- **UsermodeCodeIntegrityPolicyEnforcementStatus**: This field indicates the user mode code integrity policy enforcement status.
 
-##### Version
+    | Value | Description |
+    |-------|-------------|
+    | **0** | Off         |
+    | **1** | Audit.      |
+    | **2** | Enforced.   |
 
-This field lists the version of this WMI class. The only valid value now is **1.0**.
+- **VirtualizationBasedSecurityStatus**: This field indicates whether VBS is enabled and running.
 
-##### VirtualizationBasedSecurityStatus
+    | Value | Description                     |
+    |-------|---------------------------------|
+    | **0** | VBS isn't enabled.              |
+    | **1** | VBS is enabled but not running. |
+    | **2** | VBS is enabled and running.     |
 
-This field indicates whether VBS is enabled and running.
+- **VirtualMachineIsolation**: This field indicates whether virtual machine isolation is enabled.
 
-| Value | Description                     |
-|-------|---------------------------------|
-| **0** | VBS isn't enabled.              |
-| **1** | VBS is enabled but not running. |
-| **2** | VBS is enabled and running.     |
+- **VirtualMachineIsolationProperties**: This field indicates the set of virtual machine isolation properties that are available.
 
-##### PSComputerName
-
-This field lists the computer name. All valid values for computer name.
+    | Value | Description                   |
+    |-------|-------------------------------|
+    | **1** | AMD SEV-SNP                   |
+    | **2** | Virtualization-based Security |
+    | **3** | Intel TDX                     |
 
 #### Use msinfo32.exe
 
