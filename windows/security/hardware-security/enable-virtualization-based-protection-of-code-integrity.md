@@ -32,7 +32,7 @@ appliesto:
 
 To enable memory integrity on Windows devices with supporting hardware throughout an enterprise, use any of these options:
 
-### [:::image type="icon" source="../images/icons/security-app.svg" border="false"::: **Security**](#tab/security)
+### [:::image type="icon" source="../images/icons/security-app.svg" border="false"::: **Windows Security**](#tab/security)
 
 ### Enable memory integrity using Windows Security
 
