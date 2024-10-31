@@ -13,15 +13,15 @@ appliesto:
 
 # Enable virtualization-based protection of code integrity
 
+> [!WARNING]
+> Some applications and hardware device drivers may be incompatible with memory integrity. This incompatibility can cause devices or software to malfunction and in rare cases may result in a boot failure (blue screen). Such issues may occur after memory integrity has been turned on or during the enablement process itself. If compatibility issues occur, see [Troubleshooting](#troubleshooting) for remediation steps.
+
 **Memory integrity** is a Virtualization-based security (VBS) feature available in Windows. Memory integrity and VBS improve the threat model of Windows and provide stronger protections against malware trying to exploit the Windows kernel. VBS uses the Windows hypervisor to create an isolated virtual environment that becomes the root of trust of the OS that assumes the kernel can be compromised. Memory integrity is a critical component that protects and hardens Windows by running kernel mode code integrity within the isolated virtual environment of VBS. Memory integrity also restricts kernel memory allocations that could be used to compromise the system.
 
 > [!NOTE]
 >
 > - Memory integrity is sometimes referred to as *hypervisor-protected code integrity (HVCI)* or *hypervisor enforced code integrity*, and was originally released as part of *Device Guard*. Device Guard is no longer used except to locate memory integrity and VBS settings in Group Policy or the Windows registry.
 > - Memory integrity works better with Intel Kabylake and higher processors with *Mode-Based Execution Control*, and AMD Zen 2 and higher processors with *Guest Mode Execute Trap* capabilities. Older processors rely on an emulation of these features, called *Restricted User Mode*, and will have a bigger impact on performance. When nested virtualization is enabled, memory integrity works better when the VM is version >= 9.3.
-
-> [!WARNING]
-> Some applications and hardware device drivers may be incompatible with memory integrity. This incompatibility can cause devices or software to malfunction and in rare cases may result in a boot failure (blue screen). Such issues may occur after memory integrity has been turned on or during the enablement process itself. If compatibility issues occur, see [Troubleshooting](#troubleshooting) for remediation steps.
 
 ## Memory integrity features
 
@@ -38,15 +38,21 @@ To enable memory integrity on Windows devices with supporting hardware throughou
 - [Microsoft Configuration Manager](https://cloudblogs.microsoft.com/enterprisemobility/2015/10/30/managing-windows-10-device-guard-with-configuration-manager/)
 - [Registry](#use-registry-keys-to-enable-memory-integrity)
 
+### [:::image type="icon" source="../images/icons/security-app.svg" border="false"::: **Security**](#tab/security)
+
 ### Windows Security
 
 **Memory integrity** can be turned on in **Windows Security** settings and found at **Windows Security** > **Device security** > **Core isolation details** > **Memory integrity**. For more information, see [Device protection in Windows Security](https://support.microsoft.com/help/4096339/windows-10-device-protection-in-windows-defender-security-center).
 
 Beginning with Windows 11 22H2, **Windows Security** shows a warning if memory integrity is turned off. The warning indicator also appears on the Windows Security icon in the Windows Taskbar and in the Windows Notification Center. The user can dismiss the warning from within **Windows Security**.
 
+### [:::image type="icon" source="../images/icons/intune.svg" border="false"::: **Intune/CSP**](#tab/intune)
+
 ### Enable memory integrity using Intune
 
 Use the **Virtualization Based Technology** > **Hypervisor Enforced Code Integrity** setting using the [settings catalog](/mem/intune/configuration/settings-catalog) to enable memory integrity. You can also use the HypervisorEnforcedCodeIntegrity node in the [VirtualizationBasedTechnology CSP](/windows/client-management/mdm/policy-csp-virtualizationbasedtechnology).
+
+### [:::image type="icon" source="../images/icons/group-policy.svg" border="false"::: **GPO**](#tab/gpo)
 
 ### Enable memory integrity using Group Policy
 
@@ -60,6 +66,8 @@ Use the **Virtualization Based Technology** > **Hypervisor Enforced Code Integri
 1. Select **Ok** to close the editor.
 
 To apply the new policy on a domain-joined computer, either restart or run `gpupdate /force` in an elevated Command Prompt.
+
+### [:::image type="icon" source="../images/icons/registry.svg" border="false"::: **Registry**](#tab/reg)
 
 ### Use registry keys to enable memory integrity
 
@@ -85,74 +93,78 @@ reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorE
 
 If you want to customize the preceding recommended settings, use the following registry keys.
 
-**To enable VBS only (no memory integrity)**
+- To enable VBS only (no memory integrity):
 
-```cmd
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "EnableVirtualizationBasedSecurity" /t REG_DWORD /d 1 /f
-```
+    ```cmd
+    reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "EnableVirtualizationBasedSecurity" /t REG_DWORD /d 1 /f
+    ```
 
-**To enable VBS and require Secure boot only (value 1)**
+- To enable VBS and require Secure boot only (value 1):
 
-```cmd
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "RequirePlatformSecurityFeatures" /t REG_DWORD /d 1 /f
-```
+    ```cmd
+    reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "RequirePlatformSecurityFeatures" /t REG_DWORD /d 1 /f
+    ```
 
-**To enable VBS with Secure Boot and DMA protection (value 3)**
+- To enable VBS with Secure Boot and DMA protection (value 3):
 
-```cmd
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "RequirePlatformSecurityFeatures" /t REG_DWORD /d 3 /f
-```
+    ```cmd
+    reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "RequirePlatformSecurityFeatures" /t REG_DWORD /d 3 /f
+    ```
 
-**To enable VBS without UEFI lock (value 0)**
+- To enable VBS without UEFI lock (value 0):
 
-```cmd
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "Locked" /t REG_DWORD /d 0 /f
-```
+    ```cmd
+    reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "Locked" /t REG_DWORD /d 0 /f
+    ```
 
-**To enable VBS with UEFI lock (value 1)**
+- To enable VBS with UEFI lock (value 1):
 
-```cmd
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "Locked" /t REG_DWORD /d 1 /f
-```
+    ```cmd
+    reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "Locked" /t REG_DWORD /d 1 /f
+    ```
 
-**To enable memory integrity**
+- To enable memory integrity:
 
-```cmd
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity" /v "Enabled" /t REG_DWORD /d 1 /f
-```
+    ```cmd
+    reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity" /v "Enabled" /t REG_DWORD /d 1 /f
+    ```
 
-**To enable memory integrity without UEFI lock (value 0)**
+- To enable memory integrity without UEFI lock (value 0):
 
-```cmd
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity" /v "Locked" /t REG_DWORD /d 0 /f
-```
+    ```cmd
+    reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity" /v "Locked" /t REG_DWORD /d 0 /f
+    ```
 
-**To enable memory integrity with UEFI lock (value 1)**
+- To enable memory integrity with UEFI lock (value 1):
 
-```cmd
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity" /v "Locked" /t REG_DWORD /d 1 /f
-```
+    ```cmd
+    reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity" /v "Locked" /t REG_DWORD /d 1 /f
+    ```
 
-**To enable VBS (and memory integrity) in mandatory mode**
+- To enable VBS (and memory integrity) in mandatory mode:
 
-```cmd
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "Mandatory" /t REG_DWORD /d 1 /f
-```
+    ```cmd
+    reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "Mandatory" /t REG_DWORD /d 1 /f
+    ```
 
-The **Mandatory** setting prevents the OS loader from continuing to boot in case the Hypervisor, Secure Kernel or one of their dependent modules fails to load.
+    The **Mandatory** setting prevents the OS loader from continuing to boot in case the Hypervisor, Secure Kernel or one of their dependent modules fails to load.
 
-> [!IMPORTANT]
-> Special care should be used before enabling this mode, since, in case of any failure of the virtualization modules, the system will refuse to boot.
+    > [!IMPORTANT]
+    > Special care should be used before enabling this mode, since, in case of any failure of the virtualization modules, the system will refuse to boot.
 
-**To gray out the memory integrity UI and display the message "This setting is managed by your administrator"**
-```cmd
-reg delete HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity /v "WasEnabledBy" /f
-```
+- To gray out the memory integrity UI and display the message "This setting is managed by your administrator":
 
-**To let memory integrity UI behave normally (Not grayed out)**
-```cmd
-reg add HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity /v "WasEnabledBy" /t REG_DWORD /d 2 /f
-```
+    ```cmd
+    reg delete HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity /v "WasEnabledBy" /f
+    ```
+
+- To let memory integrity UI behave normally (Not grayed out):
+
+    ```cmd
+    reg add HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity /v "WasEnabledBy" /t REG_DWORD /d 2 /f
+    ```
+
+### [:::image type="icon" source="../images/icons/app-control.svg" border="false"::: **App Control**](#tab/appcontrol)
 
 ### Enable memory integrity using App Control for Business
 
