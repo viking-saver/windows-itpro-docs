@@ -1,6 +1,6 @@
 ---
 title: Customize Windows PE boot images
-description: This article describes how to customize a Windows PE (WinPE) boot image including updating it with the latest cumulative update, adding drivers, and adding optional components.
+description: This article describes how to customize a Windows PE (WinPE) boot image, including updating it with the latest cumulative update, adding drivers, and adding optional components.
 ms.service: windows-client
 ms.localizationpriority: medium
 author: frankroj
@@ -29,7 +29,7 @@ Microsoft recommends updating Windows PE boot images with the latest cumulative 
 >
 > The boot images from the [ADK 10.1.26100.1 (May 2024)](/windows-hardware/get-started/adk-install) and later already contain the cumulative update to address the BlackLotus UEFI bootkit vulnerability.
 
-This walkthrough describes how to customize a Windows PE boot image including updating with the latest cumulative update, adding drivers, and adding optional components. Additionally this walkthrough goes over how customizations in boot images affect several different popular products that utilize boot images, such as Microsoft Configuration Manager, Microsoft Deployment Toolkit (MDT), and Windows Deployment Services (WDS).
+This walkthrough describes how to customize a Windows PE boot image, including updating with the latest cumulative update, adding drivers, and adding optional components. Additionally this walkthrough goes over how customizations in boot images affect several different popular products that utilize boot images, such as Microsoft Configuration Manager, Microsoft Deployment Toolkit (MDT), and Windows Deployment Services (WDS).
 
 ## Prerequisites
 
