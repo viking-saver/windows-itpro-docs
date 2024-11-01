@@ -65,7 +65,7 @@ See [Connected Cache node host machine requirements](mcc-ent-prerequisites.md) f
 |---|---|---|
 |Branch office|< 1 Gbps Peak| 500 Mbps => 1,800 GB </br></br> 250 Mbps => 900 GB </br></br> 100 Mbps => 360 GB </br></br> 50 Mbps => 180 GB|
 |Small to medium enterprises/Autopilot provisioning center (50 - 500 devices in a single location) |1 - 5 Gbps| 5 Gbps => 18,000 GB </br></br>3 Gbps => 10,800 GB </br></br>1 Gbps => 3,600 GB|
-|Medium to large enterprises/Autopilot provisioning center (500 - 5,000 devices in a single location) |5 - 101 Gbps Peak|   9 Gbps => 32,400 GB </br></br> 5 Gbps => 18,000 GB </br></br>3 Gbps => 10,800 GB|
+|Medium to large enterprises/Autopilot provisioning center (500 - 5,000 devices in a single location) |5 - 10 Gbps Peak|   9 Gbps => 32,400 GB </br></br> 5 Gbps => 18,000 GB </br></br>3 Gbps => 10,800 GB|
 
 ## Supported content types
 
