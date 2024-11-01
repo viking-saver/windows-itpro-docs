@@ -66,6 +66,7 @@ In the following example:
 | Day 16 | Grace period expires.<p>Once the two-day grace period expired, the user is forced to restart with a 15-minute warning notification.</p> |
 
 :::image type="content" source="../media/windows-quality-update-grace-period.png" alt-text="Windows quality update grace period" lightbox="../media/windows-quality-update-grace-period.png":::
+For an optimal end-user experience, the recommeded settings are a 2-day Deadline and a 3-day Grace Period for update deployments.
 
 ## Minimize user disruption due to updates
 
