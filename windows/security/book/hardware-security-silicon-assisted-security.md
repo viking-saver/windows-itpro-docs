@@ -67,7 +67,7 @@ Windows 11 protects against physical threats such as drive-by Direct Memory Acce
 
 - [Kernel Direct Memory Access (DMA) protection](/windows/security/hardware-security/kernel-dma-protection-for-thunderbolt)
 
-## secured-core PC
+## Secured-core PC
 
 The March 2021 Security Signals report found that more than 80% of enterprises have experienced at least one firmware attack in the past two years. For customers in data-sensitive industries like financial services, government, and healthcare, Microsoft has worked with OEM partners to offer a special category of devices called secured-core PCs (SCPCs). The devices ship with more security measures enabled at the firmware layer, or device core, that underpins Windows.
 
