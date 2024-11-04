@@ -1,7 +1,7 @@
 ---
 title: Windows quality update end user experience
 description: This article explains the Windows quality update end user experience
-ms.date: 10/07/2024
+ms.date: 11/04/2024
 ms.service: windows-client
 ms.subservice: autopatch
 ms.topic: conceptual
@@ -66,6 +66,9 @@ In the following example:
 | Day 16 | Grace period expires.<p>Once the two-day grace period expired, the user is forced to restart with a 15-minute warning notification.</p> |
 
 :::image type="content" source="../media/windows-quality-update-grace-period.png" alt-text="Windows quality update grace period" lightbox="../media/windows-quality-update-grace-period.png":::
+
+> [!TIP]
+> For optimal end-user experience, the recommeded settings are 2-day Deadline and 3-day Grace Period for update deployments.
 
 ## Minimize user disruption due to updates
 
