@@ -71,4 +71,4 @@ In the following example:
 
 Windows Autopatch understands the importance of not disrupting end users but also updating the devices quickly. To achieve this goal, updates are automatically downloaded and installed at an optimal time determined by the device. By default, [Active hours](/windows/client-management/mdm/policy-csp-update#activehoursstart) are configured dynamically based on device usage patterns. Device restarts occur outside of active hours until the deadline is reached. 
 Windows Autopatch does not modify the existing Windows Update notifications for the end-user. 
-If you wish to modify the end-user update notification experience, access the following link to learn more [Use CSPs and MDMs to configure Windows Update for Business](https://learn.microsoft.com/en-us/windows/deployment/update/waas-wufb-csp-mdm#user-settings-for-notifications)
+If you wish to modify the end-user update notification experience, access the following link to learn more [Use CSPs and MDMs to configure Windows Update for Business](https://learn.microsoft.com/windows/deployment/update/waas-wufb-csp-mdm#user-settings-for-notifications)
