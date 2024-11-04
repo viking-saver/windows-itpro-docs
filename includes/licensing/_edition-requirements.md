@@ -5,7 +5,7 @@ ms.date: 09/18/2023
 ms.topic: include
 ---
 
-| Feature name | Windows Pro | Windows Enterprise | Windows Pro Education/SE | Windows Education |
+| Feature name | Windows Pro | Windows Enterprise/IoT Enterprise | Windows Pro Education/SE | Windows Education |
 |:---|:---:|:---:|:---:|:---:|
 |**[Access Control (ACL/SACL)](/windows/security/identity-protection/access-control/access-control)**|Yes|Yes|Yes|Yes|
 |**[Account Lockout Policy](/windows/security/threat-protection/security-policy-settings/account-lockout-policy)**|Yes|Yes|Yes|Yes|
