@@ -15,7 +15,7 @@ This policy controls the notifications to Microsoft account (MSA) and local user
 Notifications include getting users to:
 
 - reauthenticate
-- backup their device
+- back up their device
 - manage cloud storage quotas
 - manage their Microsoft 365 or XBOX subscription
 
