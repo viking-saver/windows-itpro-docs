@@ -1,7 +1,7 @@
 ---
 title: Prerequisites
 description: This article details the prerequisites needed for Windows Autopatch
-ms.date: 09/16/2024
+ms.date: 10/30/2024
 ms.service: windows-client
 ms.subservice: autopatch
 ms.topic: concept-article
@@ -18,6 +18,9 @@ ms.collection:
 # Prerequisites
 
 ## Licenses and entitlements
+
+> [!IMPORTANT]
+> Microsoft 365 Business Premium and Windows 10/11 Education A3 or A5 (included in Microsoft 365 A3 or A5) do **not** have access to all Windows Autopatch features. For more information, see [Features and capabilities](../overview/windows-autopatch-overview.md#features-and-capabilities).
 
 ### [Business Premium and A3+](#tab/business-premium-a3-entitlements)
 
@@ -41,7 +44,7 @@ For more information about specific service plans, see [Windows 10/11 Enterprise
 
 ### Feature entitlement
 
-For more information about feature entitlement, see [Features and capabilities](../overview/windows-autopatch-overview.md#features-and-capabilities).
+For more information about feature entitlement, see [Features and capabilities](../overview/windows-autopatch-overview.md#features-and-capabilities). Features are accessed through the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 | Symbol | Meaning |
 | --- | --- |
@@ -132,12 +135,15 @@ For more information about feature entitlement, see [Features and capabilities](
 The following Windows 10/11 editions, build version, and architecture are supported when [devices are registered with Windows Autopatch](../deploy/windows-autopatch-register-devices.md):
 
 - Windows 11 Professional, Education, Enterprise, Pro Education, or Pro for Workstations editions
+- Windows 11 IoT Enterprise edition
 - Windows 10 Professional, Education, Enterprise, Pro Education, or Pro for Workstations editions
+- Windows 10 IoT Enterprise edition
 
 Windows Autopatch service supports Windows client devices on the **General Availability Channel**.
 
-> [!NOTE]
-> Windows Autopatch supports registering [Windows 10 Long-Term Servicing Channel (LTSC)](/windows/whats-new/ltsc/) devices that are being currently serviced by the [Windows LTSC](/windows/release-health/release-information). The service only supports managing the [Windows quality updates](../operate/windows-autopatch-windows-quality-update-overview.md) workload for devices currently serviced by the LTSC. Windows Update for Business service and Windows Autopatch don't offer Windows feature updates for devices that are part of the LTSC. You must either use [LTSC media](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise) or the [Configuration Manager Operating System Deployment capabilities to perform an in-place upgrade](/windows/deployment/deploy-windows-cm/upgrade-to-windows-10-with-configuration-manager) for Windows devices that are part of the LTSC.
+
+> [!IMPORTANT]
+> Windows Autopatch supports registering [Windows 10 and Windows 11 Long-Term Servicing Channel (LTSC)](/windows/whats-new/ltsc/overview) devices that are being currently serviced by the [Windows 10 LTSC](/windows/release-health/release-information) or [Windows 11 LTSC](/windows/release-health/windows11-release-information). The service only supports managing the [Windows quality updates](../operate/windows-autopatch-windows-quality-update-overview.md) workload for devices currently serviced by the LTSC. Windows Update for Business service and Windows Autopatch don't offer Windows feature updates for devices that are part of the LTSC. You must either use [LTSC media](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise) or the [Configuration Manager Operating System Deployment capabilities to perform an in-place upgrade](/windows/deployment/deploy-windows-cm/upgrade-to-windows-10-with-configuration-manager) for Windows devices that are part of the LTSC.
 
 ## Configuration Manager co-management requirements
 
