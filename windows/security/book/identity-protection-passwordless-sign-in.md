@@ -127,7 +127,7 @@ Enhanced Sign-in Security biometrics uses Virtualization-based security (VBS) an
 
 These specialized components protect against a class of attacks that includes biometric sample injection, replay, and tampering. For example, fingerprint readers must implement Secure Device Connection Protocol, which uses key negotiation and a Microsoft-issued certificate to protect and securely store user authentication data. For facial recognition, components such as the Secure Devices (SDEV) table and process isolation with trustlets help prevent more attack classes.
 
-Enhanced Sign-in Security is configured by device manufacturers during the manufacturing process and is most typically supported in Secured-core PCs. For facial recognition, Enhanced Sign-in Security is supported by specific silicon and camera combinations -  check with the specific device manufacturer. Fingerprint authentication is available across all processor types. Reach out to specific OEMs for support details.
+Enhanced Sign-in Security is configured by device manufacturers during the manufacturing process and is most typically supported in secured-core PCs. For facial recognition, Enhanced Sign-in Security is supported by specific silicon and camera combinations -  check with the specific device manufacturer. Fingerprint authentication is available across all processor types. Reach out to specific OEMs for support details.
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
