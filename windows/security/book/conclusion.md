@@ -7,7 +7,7 @@ ms.date: 10/17/2024
 
 # Conclusion
 
-We will continue to innovate with security by design and security by default at the heart of every new Windows 11 PC and feature. This commitment ensures that our products not only meet, but exceed, the security expectations of our customers by providing robust protection against modern cyber threats while maintaining ease-of-use and performance. By integrating advanced security measures from the ground up, we aim to create a safer digital environment for everyone.
+We will continue to innovate with security by design and security by default at the heart of every new Windows 11 PC and Windows 11 IoT device. This commitment ensures that our products not only meet, but exceed, the security expectations of our customers by providing robust protection against modern cyber threats while maintaining ease-of-use and performance. By integrating advanced security measures from the ground up, we aim to create a safer digital environment for everyone.
 
 :::image type="content" source="images/chip-to-cloud.png" alt-text="Diagram of chip-to-cloud containing a list of security features." lightbox="images/chip-to-cloud.png" border="false":::
 
