@@ -60,6 +60,10 @@ There are three types of installation log files:
 
 The Registered Task Transcript is usually the most useful for diagnosing the installation issue.
 
+### WSL2 fails to install with message "A specified logon session does not exist"
+
+If you are encountering this failure message when attempting to run the PowerShell command `wsl.exe --install --no-distribution` on your Windows host machine, verify that you are logged on as a local administrator and running the command from an elevated PowerShell window.
+
 ### Updating the WSL2 kernel
 
 If the Connected Cache installation is failing due to WSL-related issues, try running `wsl.exe --update` to get the latest version of the WSL kernel.
