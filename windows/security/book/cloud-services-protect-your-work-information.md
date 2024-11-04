@@ -114,16 +114,6 @@ Windows 11 supports the Remote Wipe configuration service provider (CSP) so that
 
 - [Remote wipe CSP][LINK-10]
 
-## Microsoft security baselines
-
-Every organization faces security threats. However, different organizations can be concerned with different types of security threats. For example, an e-commerce company might focus on protecting its internet-facing web apps, while a hospital on confidential patient information. The one thing that all organizations have in common is a need to keep their apps and devices secure. These devices must be compliant with the security standards (or security baselines) defined by the organization.
-
-A security baseline is a group of Microsoft-recommended configuration settings that explains their security implications. These settings are based on feedback from Microsoft security engineering teams, product groups, partners, and customers.
-
-[!INCLUDE [learn-more](includes/learn-more.md)]
-
-- [Security baselines][LINK-11]
-
 ## Microsoft Intune
 
 Microsoft Intune<sup>[\[4\]](conclusion.md#footnote4)</sup> is a comprehensive cloud-native endpoint management solution that helps secure, deploy, and manage users, apps, and devices. Intune brings together technologies like Microsoft Configuration Manager and Windows Autopilot to simplify provisioning, configuration management, and software updates across the organization.
@@ -189,6 +179,16 @@ With Intune, organizations can also extend MAM App Config, MAM App Protection, a
 
 - [Data protection for Windows MAM][LINK-15]
 
+## Microsoft security baselines
+
+Every organization faces security threats. However, different organizations can be concerned with different types of security threats. For example, an e-commerce company might focus on protecting its internet-facing web apps, while a hospital on confidential patient information. The one thing that all organizations have in common is a need to keep their apps and devices secure. These devices must be compliant with the security standards (or security baselines) defined by the organization.
+
+A security baseline is a group of Microsoft-recommended configuration settings that explains their security implications. These settings are based on feedback from Microsoft security engineering teams, product groups, partners, and customers.
+
+[!INCLUDE [learn-more](includes/learn-more.md)]
+
+- [Security baselines][LINK-11]
+
 ### Security baseline for cloud-based device management solutions
 
 Windows 11 can be configured with Microsoft's security baseline, designed for cloud-based device management solutions like Microsoft Intune<sup>[\[4\]](conclusion.md#footnote4)</sup>. These security baselines function similarly to group policy-based ones and can be easily integrated into existing device management tools.
@@ -199,8 +199,6 @@ The security baseline includes policies for:
 - Restricting remote access to devices
 - Setting credential requirements for passwords and PINs
 - Restricting the use of legacy technology
-
-The security baseline has been enhanced with over 70 new settings, enabling local user rights assignment, services management, and local security policies that were previously only available through group policy. This enhancement facilitates the adoption of cloud-based device management solutions and ensures closer adherence to industry-standard security benchmarks.
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
