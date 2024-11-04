@@ -2,7 +2,7 @@
 title: Cloud services - Protect your work information
 description: Windows 11 security book - Cloud services chapter - Protect your work information.
 ms.topic: overview
-ms.date: 10/17/2024
+ms.date: 11/04/2024
 ---
 
 # Protect your work information
@@ -147,6 +147,23 @@ With Windows enrollment attestation, Microsoft Entra and Microsoft Intune certif
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Windows enrollment attestation][LINK-13]
+
+### Microsoft Cloud PKI
+
+Microsoft Cloud PKI is a cloud-based service included in the Microsoft Intune Suite<sup>[\[4\]](conclusion.md#footnote4)</sup> that simplifies and automates the management of a Public Key Infrastructure (PKI) for organizations. It eliminates the need for on-premises servers, hardware, and connectors, making it easier to set up and manage a PKI compared to, for instance, Microsoft Active Directory Certificate Services (AD CS) combined with the Certificate Connector for Microsoft Intune.
+
+Key features include:
+
+- Certificate lifecycle management: automates the lifecycle of certificates, including issuance, renewal, and revocation, for all devices managed by Intune
+- Multi-platform support: supports certificate management for Windows, iOS/iPadOS, macOS, and Android devices
+- Enhanced security: enables certificate-based authentication for Wi-Fi, VPN, and other scenarios, improving security over traditional password-based methods. All certificate requests leverage Simple Certificate Enrollment Protocol (SCEP), making sure that the private key never leaves the requesting client
+- Simplified management: provides easy management of certification authorities (CAs), registration authorities (RAs), certificate revocation lists (CRLs), monitoring, and reporting
+
+With Microsoft Cloud PKI, organizations can accelerate their digital transformation and achieve a fully managed cloud PKI service with minimal effort.
+
+[!INCLUDE [learn-more](includes/learn-more.md)]
+
+- [Overview of Microsoft Cloud PKI for Microsoft Intune](/mem/intune/protect/microsoft-cloud-pki-overview)
 
 ### Endpoint Privilege Management (EPM)
 
