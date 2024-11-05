@@ -124,6 +124,8 @@ Organizations can cut costs while securing and managing remote devices through t
 
 Windows 11 enables IT professionals to move to the cloud while consistently enforcing security policies. Windows 11 provides expanded support for group policy administrative templates (ADMX-backed policies) in cloud-native device management solutions like Microsoft Intune, enabling IT professionals to easily apply the same security policies to both on-premises and remote devices.
 
+Customers have asked for App Control for Business (previously called *Windows Defender Application Control*) to support manage installer for a long time. Now it's possible to enable allowlisting of Win32 apps to proactively reduce the number of malware infections.
+
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [What is Microsoft Intune][LINK-12]
@@ -157,21 +159,13 @@ With Microsoft Cloud PKI, organizations can accelerate their digital transformat
 
 ### Endpoint Privilege Management (EPM)
 
-Intune Endpoint Privilege Management supports organizations' Zero Trust journeys by helping them achieve a broad user base running with least privilege, while still permitting users to run tasks allowed by the organization to remain productive.
+Intune Endpoint Privilege Management supports organizations' Zero Trust journeys by helping them achieve a broad user base running with least privilege, while still permitting users to run elevated tasks allowed by the organization to remain productive.
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Endpoint Privilege Management][LINK-14]
 
 ### Mobile Application Management (MAM)
-
-With Intune, organizations can also extend MAM App Config, MAM App Protection, and App Protection Conditional Access capabilities to Windows. This enables people to access protected organizational content without having the device managed by IT. The first application to support MAM for Windows is Microsoft Edge.
-
-Customers have asked for App Control for Business (previously called Windows Defender Application Control) to manage Installer support for a long time. Now customers will be able to enable allowlisting of Win32 apps within their enterprise to proactively reduce the number of malware infections.
-
-Finally, Config Refresh helps organizations move to cloud from on-premises by protecting against settings deviating from the admin's intent.
-
-Microsoft Intune also has policies and settings to configure and manage the flow of operating system updates to devices, working with WUfB and WUfB-DS and giving admins great control over their deployments
 
 With Intune, organizations can also extend MAM App Config, MAM App Protection, and App Protection Conditional Access capabilities to Windows. This enables people to access protected organizational content without having the device managed by IT. The first application to support MAM for Windows is Microsoft Edge.
 
