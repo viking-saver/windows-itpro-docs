@@ -2,7 +2,7 @@
 title: Operating System security
 description: Windows 11 security book - Operating System security chapter.
 ms.topic: overview
-ms.date: 10/17/2024
+ms.date: 11/18/2024
 ---
 
 # Network security

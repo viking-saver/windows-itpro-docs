@@ -2,7 +2,7 @@
 title: Conclusion
 description: Windows 11 security book conclusion.
 ms.topic: overview
-ms.date: 10/17/2024
+ms.date: 11/18/2024
 ---
 
 # Conclusion

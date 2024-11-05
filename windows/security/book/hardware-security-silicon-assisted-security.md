@@ -2,7 +2,7 @@
 title: Silicon assisted security
 description: Windows 11 security book - Silicon assisted security.
 ms.topic: overview
-ms.date: 10/17/2024
+ms.date: 11/18/2024
 ---
 
 # Silicon assisted security

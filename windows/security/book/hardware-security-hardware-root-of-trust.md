@@ -2,7 +2,7 @@
 title: Hardware root-of-trust
 description: Windows 11 security book - Hardware root-of-trust.
 ms.topic: overview
-ms.date: 10/17/2024
+ms.date: 11/18/2024
 ---
 
 # Hardware root-of-trust
@@ -31,7 +31,7 @@ Pluton also solves the major security challenge of keeping its own security proc
 
 Pluton aims to ensure long-term security resilience. With the rising threat landscape influenced by artificial intelligence, memory safety will become ever more critical. To meet these demands, in addition to facilitating reliable updates to security processor firmware, we chose the open-source Tock system as the Rust-based foundation to develop the Pluton security processor firmware and actively contribute back to the Tock community. This collaboration with an open community ensures rigorous security scrutiny, and using Rust mitigates memory safety threats.
 
-Ultimately, Pluton establishes the security backbone for Copilot + PC, thanks to tight partnerships with our silicon collaborators and OEMs. The Qualcomm Snapdragon X, AMD Ryzen AI, and Intel Core Ultra 200V mobile processors (codenamed Lunar Lake) processor platforms all incorporate Pluton as their security subsystem . 
+Ultimately, Pluton establishes the security backbone for Copilot + PC, thanks to tight partnerships with our silicon collaborators and OEMs. The Qualcomm Snapdragon X, AMD Ryzen AI, and Intel Core Ultra 200V mobile processors (codenamed Lunar Lake) processor platforms all incorporate Pluton as their security subsystem .
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 

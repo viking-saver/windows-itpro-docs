@@ -2,7 +2,7 @@
 title: Cloud services - Protect your personal information
 description: Windows 11 security book - Cloud services chapter - Protect your personal information.
 ms.topic: overview
-ms.date: 10/17/2024
+ms.date: 11/18/2024
 ---
 
 # Protect your personal information

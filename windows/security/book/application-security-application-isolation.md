@@ -2,7 +2,7 @@
 title: Application isolation
 description: Windows 11 security book - Application isolation.
 ms.topic: overview
-ms.date: 10/17/2024
+ms.date: 11/18/2024
 ---
 
 # Application isolation

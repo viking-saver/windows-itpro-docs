@@ -2,7 +2,7 @@
 title: Features index
 description: Windows security book features index.
 ms.topic: overview
-ms.date: 10/17/2024
+ms.date: 11/18/2024
 ---
 
 # Features index
