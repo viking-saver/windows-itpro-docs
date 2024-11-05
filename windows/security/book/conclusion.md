@@ -56,7 +56,7 @@ Enhanced:
 
 ||Details|
 |-|-|
-|**<sup><a name="footnote1"></a>1</sup>**| Microsoft digital defense report, CISO executive summary, October 2023.|
+|**<sup><a name="footnote1"></a>1</sup>**| [Microsoft digital defense report, CISO executive summary, October 2023](https://www.microsoft.com/security/security-insider/microsoft-digital-defense-report-2023).|
 |**<sup><a name="footnote2"></a>2</sup>**| Windows 11 Survey Report. Techaisle, September 2024. Windows 11 results are in comparison with Windows 10 devices.|
 |**<sup><a name="footnote3"></a>3</sup>**| Requires developer enablement.|
 |**<sup><a name="footnote4"></a>4</sup>**| Sold separately.|
@@ -67,7 +67,6 @@ Enhanced:
 |**<sup><a name="footnote9"></a>9</sup>**| Hardware dependent.|
 |**<sup><a name="footnote10"></a>10</sup>**|All users with a Microsoft Account get 5GB of OneDrive storage free, and all Microsoft 365 subscriptions include 1TB of OneDrive storage. Additional OneDrive storage is sold separately.|
 |**<sup><a name="footnote11"></a>11</sup>**|The Total Economic Impact&trade; of Windows Pro Device, Forrester study commissioned by Microsoft, June 2020.|
-
 
 ---
 

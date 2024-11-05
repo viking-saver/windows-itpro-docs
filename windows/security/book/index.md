@@ -15,13 +15,13 @@ Today's organizations face a world of accelerated change, from marketplace fluct
 
 To address the ever-growing and changing threat landscape, we announced the [Secure Future Initiative (SFI)][LINK-1] in November 2023. The SFI endeavors to advance cybersecurity protection across all our company and products.
 
-Microsoft is committed to putting security above all else, with products and services that are secure by design and secure by default. We synthesize more than [65 trillion signals daily][LINK-2] to understand digital threats and criminal cyberactivity<sup>[\[1\]](conclusion.md#footnote1)</sup>. Through the SFI initiative we've dedicated the equivalent of 34,000 full-time engineers to the highest priority security tasks.  We continuously apply what we learn from incidents to improve our security and privacy models, security architecture, and technical controls.
+Microsoft is committed to putting security above all else, with products and services that are secure by design and secure by default. We synthesize more than 65 trillion signals daily to understand digital threats and criminal cyberactivity<sup>[\[1\]](conclusion.md#footnote1)</sup>. Through the SFI initiative, we've dedicated the equivalent of 34,000 full-time engineers to the highest priority security tasks. We continuously apply what we learn from incidents to improve our security and privacy models, security architecture, and technical controls.
 
 ### Security by design. Security by default.
 
-Working together with a shared focus is key to improving global security, from individuals and organizations to governments and industries. The world is moving toward a [secure by design and secure by default][LINK-3] approach, where technology producers are tasked with incorporating security during the initial design phase, and offering products that deliver protection right out of the box. As part of our commitment to making the world a safer place, we build security into every innovation. Windows 11 is secure by design and secure by default, with layers of defense enabled on day one to enhance your protection without the need to first configure settings. This secure-by-design approach spans the Windows edition range including Pro, Enterprise, Enterprise IoT, and Education editions. Copilot+ PCs are the fastest, most intelligent Windows devices ever, and they are also the most secure. These groundbreaking AI PCs come with secured-core PC protection and the latest safeguards like Microsoft Pluton and Windows Enhanced Sign-in Security enabled by default.
+Working together with a shared focus is key to improving global security, from individuals and organizations to governments and industries. The world is moving toward a [secure by design and secure by default][LINK-2] approach, where technology producers are tasked with incorporating security during the initial design phase, and offering products that deliver protection right out of the box. As part of our commitment to making the world a safer place, we build security into every innovation. Windows 11 is secure by design and secure by default, with layers of defense enabled on day one to enhance your protection without the need to first configure settings. This secure-by-design approach spans the Windows edition range including Pro, Enterprise, Enterprise IoT, and Education editions. Copilot+ PCs are the fastest, most intelligent Windows devices ever, and they're also the most secure. These groundbreaking AI PCs come with secured-core PC protection and the latest safeguards like Microsoft Pluton and Windows Enhanced Sign-in Security enabled by default.
 
-With the exception of Windows IoT Long-Term Servicing Channel (LTSC) editions, support for Windows 10 is ending soon on October 14, 2025. Upgrading or replacing outdated devices before Windows 10 support ends is a critical priority for building a strong security posture. Discover why organizations of all sizes, including 90% of Fortune 500 companies, are relying on Windows 11.
+Except for Windows IoT Long-Term Servicing Channel (LTSC) editions, support for Windows 10 is ending soon on October 14, 2025. Upgrading or replacing outdated devices before Windows 10 support ends is a critical priority for building a strong security posture. Discover why organizations of all sizes, including 90% of Fortune 500 companies, are relying on Windows 11.
 
 ### Security priorities and benefits
 
@@ -29,7 +29,7 @@ Windows 11 enables you to focus on your work, not your security settings. Out-of
 
 In Windows 11, hardware and software work together to shrink the attack surface, protect system integrity, and shield valuable data. New and enhanced features are designed for security by default. For example, Win32 apps in isolation<sup>[\[3\]](conclusion.md#footnote3)</sup>, token protection<sup>[\[3\]](conclusion.md#footnote3)</sup>, passkeys, and Microsoft Intune Endpoint Privilege Management<sup>[\[4\]](conclusion.md#footnote4)</sup> are some of the latest capabilities that help protect organizations and individual users against attack. Windows Hello and Windows Hello for Business work with hardware-based features like Trusted Platform Module (TPM) 2.0, biometric scanners, and Windows presence sensing to enable easier, secure sign-on and protection of your data and credentials.
 
-Existing security features are also continuously enhanced across Windows 11.  For example, BitLocker encryption has been optimized for additional security and performance and is available on more devices.
+Existing security features are also continuously enhanced across Windows 11.  For example, BitLocker encryption has been optimized for additional security and performance, and is available on more devices.
 
 ### Identity protection
 
@@ -41,7 +41,7 @@ Help keep business data secure and employees productive with robust safeguards a
 
 ### Device health and access control
 
-Increase protection and efficiency with Windows 11 and chip-to-cloud security. Microsoft provides the tools needed to attest that the devices connecting to your network, or accessing your data and resources, are trustworthy. You can enforce security policies and conditional access with modern device management (MDM) solutions such as Microsoft Intune, Microsoft Entra ID, and a comprehensive MDM security baseline. Security by default not only enables people to work securely anywhere, but it also simplifies IT. A streamlined, chip-to-cloud security solution based on Windows 11 improves productivity for IT and security teams by a reported 25%<sup>[\[6\]](conclusion.md#footnote6)</sup>.
+Increase protection and efficiency with Windows 11 and chip-to-cloud security. Microsoft provides the tools needed to attest that the devices connecting to your network, or accessing your data and resources, are trustworthy. You can enforce security policies and conditional access with cloud-based device management solutions such as Microsoft Intune, Microsoft Entra ID, and a comprehensive security baseline. Security by default not only enables people to work securely anywhere, but it also simplifies IT. A streamlined, chip-to-cloud security solution based on Windows 11 improves productivity for IT and security teams by a reported 25%<sup>[\[6\]](conclusion.md#footnote6)</sup>.
 
 ### Chip-to-cloud security
 
@@ -55,6 +55,5 @@ In Windows 11, hardware and software work together to protect sensitive data, fr
 
 <!--links-->
 
-[LINK-1]: https://www.microsoft.com/en-us/trust-center/security/secure-future-initiative
-[LINK-2]: https://www.microsoft.com/en-us/security/security-insider/microsoft-digital-defense-report-2023
-[LINK-3]: https://www.cisa.gov/resources-tools/resources/secure-by-design
+[LINK-1]: https://www.microsoft.com/trust-center/security/secure-future-initiative
+[LINK-2]: https://www.cisa.gov/resources-tools/resources/secure-by-design
