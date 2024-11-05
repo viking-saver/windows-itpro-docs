@@ -137,14 +137,9 @@ This article lists the policies that are applicable for Windows Insider Preview 
 
 ## WindowsAI
 
-- [SetDenyAppListForRecall](policy-csp-windowsai.md#setdenyapplistforrecall)
-- [SetDenyUriListForRecall](policy-csp-windowsai.md#setdenyurilistforrecall)
-- [SetMaximumStorageSpaceForRecallSnapshots](policy-csp-windowsai.md#setmaximumstoragespaceforrecallsnapshots)
-- [SetMaximumStorageDurationForRecallSnapshots](policy-csp-windowsai.md#setmaximumstoragedurationforrecallsnapshots)
-- [AllowRecallExport](policy-csp-windowsai.md#allowrecallexport)
+- [SetCopilotHardwareKey](policy-csp-windowsai.md#setcopilothardwarekey)
 - [DisableImageCreator](policy-csp-windowsai.md#disableimagecreator)
 - [DisableCocreator](policy-csp-windowsai.md#disablecocreator)
-- [AllowRecallEnablement](policy-csp-windowsai.md#allowrecallenablement)
 
 ## WindowsLicensing CSP
 
