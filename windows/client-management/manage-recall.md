@@ -3,7 +3,7 @@ title: Manage Recall for Windows clients
 description: Learn how to manage Recall for commercial environments using MDM and group policy. Learn about Recall features.
 ms.topic: how-to
 ms.subservice: windows-copilot
-ms.date: 09/23/2024
+ms.date: 10/14/2024
 ms.author: mstewart
 author: mestew
 ms.collection:
@@ -18,12 +18,16 @@ appliesto:
 <!--8908044-->
 >**Looking for consumer information?** See [Retrace your steps with Recall](https://support.microsoft.com/windows/retrace-your-steps-with-recall-aa03f8a0-a78b-4b3e-b0a1-2eb8ac48701c).
 
-Recall allows you to search across time to find the content you need. Just describe how you remember it, and Recall retrieves the moment you saw it. Windows periodically saves snapshots of your screen while the content on the screen is different from the previous snapshot. The snapshots of your screen are organized into a timeline. Snapshots are locally stored and locally analyzed on your PC. Recall's analysis allows you to search for content, including both images and text, using natural language.
+Recall (preview) allows you to search across time to find the content you need. Just describe how you remember it, and Recall retrieves the moment you saw it. Snapshots are taken periodically while content on the screen is different from the previous snapshot. The snapshots of your screen are organized into a timeline. Snapshots are locally stored and locally analyzed on your PC. Recall's analysis allows you to search for content, including both images and text, using natural language. 
+
+By default, Recall is removed from commercially managed devices except for devices running Windows Home edition. IT admins, on their own, can't enable Recall for users. Recall is an opt-in experience that requires user consent to save snapshots. Users can choose to enable or disable Recall at any time. IT admins can only give users the option to enable snapshots and configure certain policies for Recall.
 
 > [!NOTE]
-> Recall is coming soon through a post-launch Windows update. See [aka.ms/copilotpluspcs](https://aka.ms/copilotpluspcs). 
+> - Recall is coming soon through a post-launch Windows update. See [aka.ms/copilotpluspcs](https://aka.ms/copilotpluspcs). 
+>    - For Copilot+ PCs that are running Windows Insiders, Recall (preview) is now available. For more information, see [<Placeholder WIP Blog link>](https://aka.ms/windowsinsiders).
+> - Recall is optimized for select languages (English, Chinese (simplified), French, German, Japanese, and Spanish. Content-based and storage limitations apply. For more information, see https://aka.ms/nextgenaipcs.
 
-When Recall opens a snapshot you selected, it enables screenray, which runs on top of the saved snapshot. Screenray analyzes what's in the snapshot and allows you to interact with individual elements in the snapshot. For instance, you can copy text from the snapshot or send pictures from the snapshot to an app that supports `jpeg` files.
+When Recall opens a snapshot you selected, it enables Click to Do, which runs on top of the saved snapshot. Click to Do analyzes what's in the snapshot and allows you to interact with individual elements in the snapshot. For instance, you can copy text from the snapshot or send pictures from the snapshot to an app that supports `jpeg` files.
 
 :::image type="content" source="images/8908044-recall.png" alt-text="Screenshot of Recall with search results displayed for a query about a restaurant that the user's friend sent them." lightbox="images/8908044-recall.png":::
 
