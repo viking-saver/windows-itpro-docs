@@ -83,7 +83,7 @@ To check the Windows Hello for Business policy settings applied at enrollment ti
 1. Select **Windows Hello for Business**
 1. Verify the status of **Configure Windows Hello for Business** and any settings that might be configured
 
-:::image type="content" source="deploy/images/whfb-intune-disable.png" alt-text="Disablement of Windows Hello for Business from Microsoft Intune admin center." lightbox="deploy/images/whfb-intune-disable.png":::
+    :::image type="content" source="deploy/images/whfb-intune-disable.png" alt-text="Disablement of Windows Hello for Business from Microsoft Intune admin center." lightbox="deploy/images/whfb-intune-disable.png":::
 
 ## Policy conflicts from multiple policy sources
 
