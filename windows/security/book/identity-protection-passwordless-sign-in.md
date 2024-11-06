@@ -68,7 +68,7 @@ Users can also take advantage of more granular settings to easily enable and dis
 
 ## Windows Hello for Business
 
-Windows Hello for Business extends Windows Hello to work with an organization's Active Directory and Microsoft Entra ID accounts. It provides single sign-on access to work or school resources such as OneDrive, work email, and other business apps. Windows Hello for Business also give IT admins the ability to manage PIN and other sign-in requirements for devices connecting to work or school resources.
+Windows Hello for Business extends Windows Hello to work with an organization's Active Directory and Microsoft Entra ID accounts. It provides single sign-on access to work or school resources such as OneDrive, work email, and other business apps. Windows Hello for Business also gives IT admins the ability to manage PIN and other sign-in requirements for devices connecting to work or school resources.
 
 After Windows Hello for Business is provisioned, users can use a PIN, face, or fingerprint to unlock credentials and sign into their Windows device.
 

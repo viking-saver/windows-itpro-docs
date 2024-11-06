@@ -15,9 +15,11 @@ Microsoft Entra ID is a comprehensive cloud-based identity management solution t
 
 Organizations can deploy Microsoft Entra ID joined devices to enable access to both cloud and on-premises apps and resources. Access to resources can be controlled based on the Microsoft Entra ID account and Conditional Access policies applied to the device. For the most seamless and delightful end to end single sign-on (SSO) experience, we recommend users configure Windows Hello for Business during the out of box experience for easy passwordless sign-in to Entra ID .
 
-For people wanting to connect to Microsoft Entra on their personal devices, they can do so by using *workplace join* or *add account*.  These two actions registers that user's personal device with Microsoft Entra ID, allowing IT admins to support users in bring your own device (BYOD) scenarios. Credentials are authenticated and bound to the joined device, and can't be copied to another device without explicit reverification.
+For users wanting to connect to Microsoft Entra on their personal devices, they can do so by adding their work or school account to Windows. This action registers the user's personal device with Microsoft Entra ID, allowing IT admins to support users in bring your own device (BYOD) scenarios. Credentials are authenticated and bound to the joined device, and can't be copied to another device without explicit reverification.
 
-To provide more security and control for IT and a seamless experience for end users, Microsoft Entra ID works with apps and services, including on-premises software and thousands of software-as-a-service (SaaS) applications. Microsoft Entra ID protections include single sign-on, multifactor authentication, conditional access policies, identity protection, identity governance, and privileged identity management.
+:::image type="content" source="images/device-registration.png" alt-text="Screenshot of the Entra account registration page." border="false":::
+
+To provide more security and control for IT and a seamless experience for users, Microsoft Entra ID works with apps and services, including on-premises software and thousands of software-as-a-service (SaaS) applications. Microsoft Entra ID protections include single sign-on, multifactor authentication, conditional access policies, identity protection, identity governance, and privileged identity management.
 
 Windows 11 works with Microsoft Entra ID to provide secure access, identity management, and single sign-on to apps and services from anywhere. Windows has built-in settings to add work or school accounts by syncing the device configuration to an Active Directory domain or Microsoft Entra ID tenant.
 
@@ -256,7 +258,7 @@ There's a lot more to learn about Windows Autopatch: this [Forrester Consulting 
 - [Windows Autopatch documentation](/windows/deployment/windows-autopatch/)
 - [Windows updates API overview](/graph/windowsupdates-concept-overview)
 - [Windows IT Pro Blog](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/bg-p/Windows-ITPro-blog/label-name/Windows%20Autopatch)
-- [Windows Autopatch community](https://techcommunity.microsoft.com/t5/windows-autopatch/bd-p/Windows-Autopatch).
+- [Windows Autopatch community](https://techcommunity.microsoft.com/t5/windows-autopatch/bd-p/Windows-Autopatch)
 
 ## OneDrive for work or school
 
