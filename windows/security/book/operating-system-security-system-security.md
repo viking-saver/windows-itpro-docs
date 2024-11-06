@@ -170,7 +170,7 @@ We're expanding the integration of Rust into the Windows kernel to enhance the s
 [LINK-6]: /windows/security/threat-protection/auditing/security-auditing-overview
 [LINK-7]: https://support.microsoft.com/topic/2ae0363d-0ada-c064-8b56-6a39afb6a963
 [LINK-8]:  /windows/security/operating-system-security/system-security/windows-defender-security-center/windows-defender-security-center
-[LINK-9]: https://techcommunity.microsoft.com/t5/windows-it-pro-blog/intro-to-config-refresh-a-refreshingly-new-mdm-feature/ba-p/4176921#:~:text=With%20Config%20Refresh,%20you%20can%20now
+[LINK-9]: https://techcommunity.microsoft.com/blog/windows-itpro-blog/intro-to-config-refresh-%e2%80%93-a-refreshingly-new-mdm-feature/4176921
 [LINK-10]: /windows-hardware/drivers/print/modern-print-platform
 [LINK-11]: https://techcommunity.microsoft.com/t5/security-compliance-and-identity/a-new-modern-and-secure-print-experience-from-windows/ba-p/4002645
 [LINK-12]: /windows/dev-environment/rust/rust-for-windows

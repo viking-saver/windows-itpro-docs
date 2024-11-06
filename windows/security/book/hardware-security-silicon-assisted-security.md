@@ -31,8 +31,7 @@ Since more privileged virtual trust levels (VTLs) can enforce their own memory p
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
-- [Virtualization-based security (VBS)](/windows-hardware/design/device-experiences/oem-vbs)
-- [Enable virtualization-based protection of code integrity](../hardware-security/enable-virtualization-based-protection-of-code-integrity.md)
+- [Virtualization-based security (VBS)][LINK-1]
 
 ### Hypervisor-protected code integrity (HVCI)
 
@@ -42,7 +41,7 @@ With new installs of Windows 11, OS support for VBS and HVCI is turned on by def
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
-- [Hypervisor-protected Code Integrity (HVCI)](/windows/security/hardware-security/enable-virtualization-based-protection-of-code-integrity)
+- [Enable virtualization-based protection of code integrity][LINK-2]
 
 ### Hardware-enforced stack protection
 
@@ -56,8 +55,8 @@ Hypervisor-Enforced Paging Translation (HVPT) - formerly HLAT - is a security fe
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
-- [Understanding Hardware-enforced Stack Protection](https://techcommunity.microsoft.com/t5/windows-os-platform-blog/understanding-hardware-enforced-stack-protection/ba-p/1247815)
-- [Developer Guidance for hardware-enforced stack protection](https://techcommunity.microsoft.com/t5/windows-kernel-internals/developer-guidance-for-hardware-enforced-stack-protection/ba-p/2163340)
+- [Understanding Hardware-enforced Stack Protection][LINK-3]
+- [Developer Guidance for hardware-enforced stack protection][LINK-4]
 
 ## Kernel Direct Memory Access (DMA) protection
 
@@ -65,7 +64,7 @@ Windows 11 protects against physical threats such as drive-by Direct Memory Acce
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
-- [Kernel Direct Memory Access (DMA) protection](/windows/security/hardware-security/kernel-dma-protection-for-thunderbolt)
+- [Kernel Direct Memory Access (DMA) protection][LINK-5]
 
 ## Secured-core PC and Edge Secured-Core
 
@@ -87,10 +86,10 @@ System Management Mode (SMM) isolation is an execution mode in x86-based process
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
-- [System Guard Secure Launch](/windows/security/hardware-security/system-guard-secure-launch-and-smm-protection)
-- [Firmware Attack Surface Reduction](/windows-hardware/drivers/bringup/firmware-attack-surface-reduction)
-- [Windows 11 secured-core PCs](/windows-hardware/design/device-experiences/oem-highly-secure-11)
-- [Edge Secured-Core](/en-us/azure/certification/overview)
+- [System Guard Secure Launch][LINK-6]
+- [Firmware Attack Surface Reduction][LINK-7]
+- [Windows 11 secured-core PCs][LINK-8]
+- [Edge Secured-Core][LINK-9]
 
 ### Configuration lock
 
@@ -100,4 +99,17 @@ Configuration lock is a secured-core PC and edge device feature that prevents us
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
-- [Secured-core PC configuration lock](/windows/client-management/mdm/config-lock)
+- [Secured-core PC configuration lock][LINK-10]
+
+<!--links-->
+
+[LINK-1]: /windows-hardware/design/device-experiences/oem-vbs
+[LINK-2]: /windows/security/hardware-security/enable-virtualization-based-protection-of-code-integrity
+[LINK-3]: https://techcommunity.microsoft.com/blog/windowsosplatform/understanding-hardware-enforced-stack-protection/1247815
+[LINK-4]: https://techcommunity.microsoft.com/blog/windowsosplatform/developer-guidance-for-hardware-enforced-stack-protection/2163340
+[LINK-5]: /windows/security/hardware-security/kernel-dma-protection-for-thunderbolt
+[LINK-6]: /windows/security/hardware-security/system-guard-secure-launch-and-smm-protection
+[LINK-7]: /windows-hardware/drivers/bringup/firmware-attack-surface-reduction
+[LINK-8]: /windows-hardware/design/device-experiences/oem-highly-secure-11
+[LINK-9]: /en-us/azure/certification/overview
+[LINK-10]: /windows/client-management/mdm/config-lock

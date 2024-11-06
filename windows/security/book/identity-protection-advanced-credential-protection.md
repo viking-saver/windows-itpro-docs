@@ -116,4 +116,4 @@ IT administrators can refine the application and management of access to:
 [LINK-5]: /azure/active-directory/conditional-access/concept-token-protection
 [LINK-6]: /windows/security/threat-protection/security-policy-settings/account-lockout-policy
 [LINK-7]: /windows/security/identity-protection/access-control/access-control
-[LINK-8]: https://techcommunity.microsoft.com/t5/windows-it-pro-blog/advancing-key-protection-in-windows-using-vbs/ba-p/4050988
+[LINK-8]: https://techcommunity.microsoft.com/blog/windows-itpro-blog/advancing-key-protection-in-windows-using-vbs/4050988

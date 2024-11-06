@@ -19,7 +19,7 @@ In enterprise environments, network protection works best with Microsoft Defende
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
-- [How to protect your network](/defender-endpoint/network-protection)
+- [How to protect your network][LINK-1]
 
 ## Transport Layer Security (TLS)
 
@@ -27,8 +27,8 @@ Transport Layer Security (TLS) is a popular security protocol, encrypting data i
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
-- [TLS/SSL overview (Schannel SSP)](/windows-server/security/tls/tls-ssl-schannel-ssp-overview)
-- [TLS 1.0 and TLS 1.1 soon to be disabled in Windows](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/tls-1-0-and-tls-1-1-soon-to-be-disabled-in-windows/bc-p/3894928/emcs_t/S2h8ZW1haWx8dG9waWNfc3Vic2NyaXB0aW9ufExMM0hCN0VURDk3OU9OfDM4OTQ5Mjh8U1VCU0NSSVBUSU9OU3xoSw#M6180)
+- [TLS/SSL overview (Schannel SSP)][LINK-2]
+- [TLS 1.0 and TLS 1.1 soon to be disabled in Windows][LINK-3]
 
 ## Domain Name System (DNS) security
 
@@ -48,7 +48,7 @@ IT-managed environments have a number policy settings available via configuratio
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
-- [Policy CSP - Bluetooth](/windows/client-management/mdm/policy-csp-bluetooth)
+- [Policy CSP - Bluetooth][LINK-4]
 
 ## Wi-Fi connections
 
@@ -66,7 +66,7 @@ Opportunistic Wireless Encryption (OWE), a technology that allows wireless devic
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
-- [eSIM configuration of a download server](/mem/intune/configuration/esim-device-configuration-download-server)
+- [eSIM configuration of a download server][LINK-5]
 
 ## Windows Firewall
 
@@ -89,8 +89,8 @@ The Firewall Configuration Service Provider (CSP) in Windows now enforces an all
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
-- [Windows Firewall overview](../operating-system-security/network-security/windows-firewall/index.md)
-- [Firewall CSP](/windows/client-management/mdm/firewall-csp)
+- [Windows Firewall overview][LINK-6]
+- [Firewall CSP][LINK-7]
 
 ## Virtual private networks (VPN)
 
@@ -108,7 +108,7 @@ The Windows VPN platform is tuned and hardened for cloud-based VPN providers lik
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
-- [Windows VPN technical guide](../operating-system-security/network-security/vpn/vpn-guide.md)
+- [Windows VPN technical guide][LINK-8]
 
 ## Server Message Block file services
 
@@ -122,5 +122,18 @@ New security options include mandatory SMB signing by default, NTLM blocking, au
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
-- [Server Message Block (SMB) protocol changes in Windows 11, version 24H2](/windows/whats-new/whats-new-windows-11-version-24h2#server-message-block-smb-protocol-changes)
-- [File sharing using the SMB 3 protocol](/windows-server/storage/file-server/file-server-smb-overview)
+- [Server Message Block (SMB) protocol changes in Windows 11, version 24H2][LINK-9]
+- [File sharing using the SMB 3 protocol][LINK-10]
+
+<!--links-->
+
+[LINK-1]: /defender-endpoint/network-protection
+[LINK-2]: /windows-server/security/tls/tls-ssl-schannel-ssp-overview
+[LINK-3]: https://techcommunity.microsoft.com/blog/windows-itpro-blog/tls-1-0-and-tls-1-1-soon-to-be-disabled-in-windows/3887947
+[LINK-4]: /windows/client-management/mdm/policy-csp-bluetooth
+[LINK-5]: /mem/intune/configuration/esim-device-configuration-download-server
+[LINK-6]: /windows/security/operating-system-security/network-security/windows-firewall
+[LINK-7]: /windows/client-management/mdm/firewall-csp
+[LINK-8]: /windows/security/operating-system-security/network-security/vpn/vpn-guide
+[LINK-9]: /windows/whats-new/whats-new-windows-11-version-24h2#server-message-block-smb-protocol-changes
+[LINK-10]: /windows-server/storage/file-server/file-server-smb-overview
