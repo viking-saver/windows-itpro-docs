@@ -41,6 +41,8 @@ Privacy and security are built into Recall's design. With Copilot+ PCs, you get 
 
 Recall doesn't share snapshots with other users that are signed into Windows on the same device. Microsoft can't access or view the snapshots. Recall requires users to confirm their identity with [Windows Hello](https://support.microsoft.com/windows/configure-windows-hello-dae28983-8242-bb2a-d3d1-87c9d265a5f0) before it launches and before accessing snapshots. At least one biometric sign-in option must be enabled for Windows Hello, either facial recognition or a fingerprint, to launch and use Recall. Before snapshots start getting saved the device, users need to open Recall and authenticate. Recall takes advantage of just in time decryption protected by Windows [Hello Enhanced Sign-in Security (ESS)](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security). Snapshots and any associated information in the vector database are always encrypted. Encryption keys are protected via Trusted Platform Module (TPM), which is tied to the user's Windows Hello ESS identity, and can be used by operations within a secure environment called a [Virtualization-based Security Enclave (VBS Enclave)](/windows/win32/trusted-execution/vbs-enclaves). This means that other users can't access these keys and thus can't decrypt this information. Device Encryption or BitLocker are enabled by default on Windows 11. For more information, see [Recall security and privacy architecture in the Windows Experience Blog](https://blogs.windows.com/windowsexperience/?p=179096).
 
+When using Recall, the [**Sensitive Information Filtering**](#user-controlled-settings-for-recall) setting is enabled by default to help ensure your data's confidentiality. This feature operates directly on the device, utilizing the NPU and the Microsoft Classification Engine (MCE), which is the same technology leveraged by Microsoft Purview for detecting and labeling sensitive information. When this setting is enabled, snapshots won't be saved when potentially sensitive information is detected. Most importantly, the sensitive information remains on the device at all times, regardless of whether the **Sensitive Information Filtering setting** is enabled or disabled. For more information about the types of potentially sensitive information, see [Reference for sensitive information filtering in Recall](#sensitive-information-filtering-in-recall).
+
 In keeping with Microsoft's commitment to data privacy and security, all captured images and processed data are kept on the device and processed locally. However, Click to Do allows users to choose if they want to perform additional actions on their content. 
 
 Click to Do allows users to choose to get more information about their selected content online. When users choose one of the following Click to Do actions, the selected content is sent to the online provider from the local device to complete the request:
@@ -79,7 +81,7 @@ Users need a supported browser for Recall to [filter websites](#user-controlled-
 
 ## Configure policies for Recall
 
-By default, Recall is removed on commercially managed devices except for devices running Windows Home edition. Many of the policies for Recall are available for both the device and the user scope to give you more flexibility. Policies for Recall fall into the following general areas:
+By default, Recall is removed on commercially managed devices except for devices running Windows Home edition. If you want to allow Recall to be available for your users and allow them to choose to save snapshots, you need to configure both the **Allow Recall to be enabled** and **Turn off saving snapshots for Windows** policies. Policies for Recall fall into the following general areas:
 
 - [Allow Recall and snapshots policies](#allow-recall-and-snapshots-policies)
 - [Storage policies](#storage-policies)
@@ -89,9 +91,8 @@ By default, Recall is removed on commercially managed devices except for devices
 
 ### Allow Recall and snapshots policies
 
-If you want to allow Recall to be available for your users and allow them to choose to save snapshots, you need to configure both the **Allow Recall to be enabled** and **Turn off saving snapshots for Windows** policies. 
+The **Allow Recall to be enabled** policy setting allows you to determine whether the Recall optional component is available for end users to enable on their device. By default, Recall is disabled for managed commercial devices. Recall isn't available on managed devices by default, and individual users can't enable Recall on their own. 
 
-**Allow Recall to be enabled**:
 | &nbsp; | Setting  |
 |---|---|
 | **CSP** | ./Device/Vendor/MSFT/Policy/Config/WindowsAI/[AllowRecallEnablement](mdm/policy-csp-windowsai.md#allowrecallenablement) |
@@ -102,24 +103,28 @@ The **Turn off saving snapshots for Windows** policy allows you to give the user
 
 | &nbsp; | Setting  |
 |---|---|
-| **CSP** | ./Device/Vendor/MSFT/Policy/Config/WindowsAI/[DisableAIDataAnalysis](mdm/policy-csp-windowsai.md#disableaidataanalysis) </br> ./User/Vendor/MSFT/Policy/Config/WindowsAI/[DisableAIDataAnalysis](mdm/policy-csp-windowsai.md#disableaidataanalysis)|
-| **Group policy** | Computer Configuration > Administrative Templates > Windows Components > Windows AI > **Turn off saving snapshots for Windows** </br>User Configuration > Administrative Templates > Windows Components > Windows AI > **Turn off saving snapshots for Windows** |
+| **CSP** | ./Device/Vendor/MSFT/Policy/Config/WindowsAI/[DisableAIDataAnalysis](mdm/policy-csp-windowsai.md#disableaidataanalysis) </br> </br> ./User/Vendor/MSFT/Policy/Config/WindowsAI/[DisableAIDataAnalysis](mdm/policy-csp-windowsai.md#disableaidataanalysis)|
+| **Group policy** | Computer Configuration > Administrative Templates > Windows Components > Windows AI > **Turn off saving snapshots for Windows** </br></br>User Configuration > Administrative Templates > Windows Components > Windows AI > **Turn off saving snapshots for Windows** |
 
 ### Storage policies
 
+You can define how much disk space Recall can use by using the **Set maximum storage for snapshots used by Recall** policy. You can set the maximum amount of disk space for snapshots to be 10, 25, 50, 75, 100, or 150 GB. When the storage limit is reached, the oldest snapshots are deleted first. When this setting is not configured, the OS configures the storage allocation for snapshots based on the device storage capacity. 25 GB is allocated when the device storage capacity is 256 GB. 75 GB is allocated when the device storage capacity is 512 GB. 150 GB is allocated when the device storage capacity is 1 TB or higher.	
 
-#### Storage allocation
-
-The amount of disk space users can allocate to Recall varies depending on how much storage the device has. The following chart shows the storage space options for Recall:
-
-| Device storage capacity | Storage allocation options for Recall |
+| &nbsp; | Setting  |
 |---|---|
-| 256 GB | 25 GB (default), 10 GB |
-| 512 GB | 75 GB (default), 50 GB, 25 GB |
-| 1 TB, or more | 150 GB (default), 100 GB, 75 GB, 50 GB, 25 GB |
+| **CSP** | ./Device/Vendor/MSFT/Policy/Config/WindowsAI/[SetMaximumStorageSpaceForRecallSnapshots](mdm/policy-csp-windowsai.md#setmaximumstoragespaceforrecallsnapshots) </br> </br> ./User/Vendor/MSFT/Policy/Config/WindowsAI/[SetMaximumStorageSpaceForRecallSnapshots](mdm/policy-csp-windowsai.md#setmaximumstoragespaceforrecallsnapshots)|
+| **Group policy** | Computer Configuration > Administrative Templates > Windows Components > Windows AI > **Set maximum storage for snapshots used by Recall** </br></br> User Configuration > Administrative Templates > Windows Components > Windows AI > **Set maximum storage for snapshots used by Recall** |
+
+You can define how long snapshots can be retained on the device by using the **Set maximum duration for storing snapshots used by Recall** policy. You can configure the maximum storage duration to be 30, 60, 90, or 180 days. If the policy is not configured, snapshots aren't deleted until the maximum storage allocation is reached, and then the oldest snapshots are deleted first.
+
+| &nbsp; | Setting  |
+|---|---|
+| **CSP** | ./Device/Vendor/MSFT/Policy/Config/WindowsAI/[SetMaximumStorageDurationForRecallSnapshots](mdm/policy-csp-windowsai.md#SetMaximumStorageDurationForRecallSnapshots) </br></br> ./User/Vendor/MSFT/Policy/Config/WindowsAI/[SetMaximumStorageDurationForRecallSnapshots](mdm/policy-csp-windowsai.md#sSetMaximumStorageDurationForRecallSnapshots)|
+| **Group policy** | Computer Configuration > Administrative Templates > Windows Components > Windows AI > **Set maximum storage for snapshots used by Recall** </br></br>User Configuration > Administrative Templates > Windows Components > Windows AI > **Set maximum duration for storing snapshots used by Recall** |
 
 
 ### App and website filtering policies
+
 
 
 #### Applications that are automatically excluded from snapshots
