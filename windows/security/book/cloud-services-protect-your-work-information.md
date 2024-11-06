@@ -15,9 +15,14 @@ Microsoft Entra ID is a comprehensive cloud-based identity management solution t
 
 Organizations can deploy Microsoft Entra ID joined devices to enable access to both cloud and on-premises apps and resources. Access to resources can be controlled based on the Microsoft Entra ID account and Conditional Access policies applied to the device. For the most seamless and delightful end to end single sign-on (SSO) experience, we recommend users configure Windows Hello for Business during the out of box experience for easy passwordless sign-in to Entra ID .
 
-For users wanting to connect to Microsoft Entra on their personal devices, they can do so by adding their work or school account to Windows. This action registers the user's personal device with Microsoft Entra ID, allowing IT admins to support users in bring your own device (BYOD) scenarios. Credentials are authenticated and bound to the joined device, and can't be copied to another device without explicit reverification.
-
-:::image type="content" source="images/device-registration.png" alt-text="Screenshot of the Entra account registration page." border="false":::
+:::row:::
+    :::column:::
+        For users wanting to connect to Microsoft Entra on their personal devices, they can do so by adding their work or school account to Windows. This action registers the user's personal device with Microsoft Entra ID, allowing IT admins to support users in bring your own device (BYOD) scenarios. Credentials are authenticated and bound to the joined device, and can't be copied to another device without explicit reverification.
+    :::column-end:::
+    :::column:::
+:::image type="content" source="images/device-registration.png" alt-text="Screenshot of the Entra account registration page." border="false" lightbox="images/device-registration.png":::
+    :::column-end:::
+:::row-end:::
 
 To provide more security and control for IT and a seamless experience for users, Microsoft Entra ID works with apps and services, including on-premises software and thousands of software-as-a-service (SaaS) applications. Microsoft Entra ID protections include single sign-on, multifactor authentication, conditional access policies, identity protection, identity governance, and privileged identity management.
 
