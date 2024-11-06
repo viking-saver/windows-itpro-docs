@@ -77,6 +77,16 @@ Users need a supported browser for Recall to [filter websites](#user-controlled-
 
 ## Configure policies for Recall
 
+Policy list: 
+| &nbsp; | Setting  |
+|---|---|
+| **CSP** | ./Device/Vendor/MSFT/Policy/Config/WindowsAI/[AllowRecallEnablement](mdm/policy-csp-windowsai.md#allowrecallenablement) |
+| **Group policy** | User Configuration > Administrative Templates > Windows Components > Windows AI > **Allow Recall to be enabled** |
+
+
+
+
+
 Organizations that aren't ready to use AI for historical analysis can disable it until they're ready with the **Turn off saving snapshots for Windows** policy. If snapshots were previously saved on a device, they'll be deleted when this policy is enabled. Administrators can't enable saving snapshots on behalf of their users. The choice to enable saving snapshots requires individual user opt-in consent.
 
 The following policy allows you to disable analysis of user content:
@@ -85,6 +95,36 @@ The following policy allows you to disable analysis of user content:
 |---|---|
 | **CSP** | ./User/Vendor/MSFT/Policy/Config/WindowsAI/[DisableAIDataAnalysis](mdm/policy-csp-windowsai.md#disableaidataanalysis) |
 | **Group policy** | User Configuration > Administrative Templates > Windows Components > Windows AI > **Turn off saving snapshots for Windows** |
+
+### Storage policies
+
+#### Storage allocation
+
+The amount of disk space users can allocate to Recall varies depending on how much storage the device has. The following chart shows the storage space options for Recall:
+
+| Device storage capacity | Storage allocation options for Recall |
+|---|---|
+| 256 GB | 25 GB (default), 10 GB |
+| 512 GB | 75 GB (default), 50 GB, 25 GB |
+| 1 TB, or more | 150 GB (default), 100 GB, 75 GB, 50 GB, 25 GB |
+
+
+### App and website filtering policies
+
+
+#### Applications that are automatically excluded from snapshots
+
+Snapshots won't be saved when certain applications are being used. The following apps are automatically excluded from snapshots:<!--9119193-->
+
+-	[Supported web browsers](#supported-browsers) when using private browsing
+-	Like other Windows apps such as the Snipping Tool, Recall will not store digital rights management (DRM) content
+- Some remote desktop connection apps:
+   - [mstsc.exe](/windows-server/administration/windows-commands/mstsc)
+   - [VMConnect.exe](/windows-server/virtualization/hyper-v/learn-more/hyper-v-virtual-machine-connect) 
+      - [Microsoft Remote Desktop from the Microsoft Store](/windows-server/remote/remote-desktop-services/clients/windows) is saved in snapshots. To prevent the app from being saved in snapshots, add it to the app filtering list.
+   - [Azure Virtual Desktop (MSI)](/azure/virtual-desktop/users/connect-windows) 
+      - [Azure Virtual Desktop apps from the Microsoft Store](/azure/virtual-desktop/users/connect-remote-desktop-client) are saved in snapshots. To prevent these apps from being saved in snapshots, add then to the app filtering list.
+  - [remote applications integrated locally (RAIL)](/openspecs/windows_protocols/ms-rdperp/485e6f6d-2401-4a9c-9330-46454f0c5aba) windows
 
 
 
@@ -100,29 +140,6 @@ The following options are user controlled in Recall from the **Settings** > **Pr
 - Deleting snapshots
     - Delete all snapshots
     - Delete snapshots within a specific time frame
-
-### Applications that are automatically excluded from snapshots
-
-snapshots won't be saved when certain applications are being used. The following apps are automatically excluded from snapshots:<!--9119193-->
-
-- [mstsc.exe](/windows-server/administration/windows-commands/mstsc)
-- [VMConnect.exe](/windows-server/virtualization/hyper-v/learn-more/hyper-v-virtual-machine-connect) 
-   - Microsoft Remote Desktop from the Microsoft Store is saved in snapshots. To prevent the app from being saved in snapshots, add it to the app filtering list.
-- [Azure Virtual Desktop (MSI)](/azure/virtual-desktop/users/connect-windows) 
-   - Azure Virtual Desktop apps from the Microsoft Store are saved in snapshots. To prevent these apps from being saved in snapshots, add then to the app filtering list.
-- [remote applications integrated locally (RAIL)](/openspecs/windows_protocols/ms-rdperp/485e6f6d-2401-4a9c-9330-46454f0c5aba) windows
-
-
-### Storage allocation
-
-The amount of disk space users can allocate to Recall varies depending on how much storage the device has. The following chart shows the storage space options for Recall:
-
-| Device storage capacity | Storage allocation options for Recall |
-|---|---|
-| 256 GB | 25 GB (default), 10 GB |
-| 512 GB | 75 GB (default), 50 GB, 25 GB |
-| 1 TB, or more | 150 GB (default), 100 GB, 75 GB, 50 GB, 25 GB |
-
 
 
 ## Information for developers
