@@ -70,7 +70,7 @@ Recall has the following minimum requirements:
 
 ## Supported browsers
 
-Users need a supported browser for Recall to [filter websites](#user-controlled-settings-for-recall) and to automatically filter private browsing activity. Supported browsers, and their capabilities include:
+Users need a supported browser for Recall to [filter websites](#app-and-website-filtering-policies) and to automatically filter private browsing activity. Supported browsers, and their capabilities include:
 
 - **Microsoft Edge**: blocks websites and filters private browsing activity
 - **Firefox**: blocks websites and filters private browsing activity
