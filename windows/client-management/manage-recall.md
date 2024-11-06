@@ -18,7 +18,9 @@ appliesto:
 <!--8908044-->
 >**Looking for consumer information?** See [Retrace your steps with Recall](https://support.microsoft.com/windows/retrace-your-steps-with-recall-aa03f8a0-a78b-4b3e-b0a1-2eb8ac48701c).
 
-Recall (preview) allows users to search locally saved and locally analyzed snapshots of their screen using natural language. By default, Recall is removed from commercially managed devices except for devices running Windows Home edition. IT admins, on their own, can't enable Recall for users. Recall is an opt-in experience that requires user consent to save snapshots. Users can choose to enable or disable Recall at any time. IT admins can only give users the option to enable snapshots and configure certain policies for Recall. This article provides information about Recall and how to manage it in a commercial environment.
+Recall (preview) allows users to search locally saved and locally analyzed snapshots of their screen using natural language. By default, Recall is removed on commercially managed devices except for devices running Windows Home edition. IT admins, on their own, can't enable Recall for users. Recall is an opt-in experience that requires user consent to save snapshots. Users can choose to enable or disable Recall at any time. IT admins can only set policies that give users the option to enable snapshots and configure certain policies for Recall. 
+
+This article provides information about Recall and how to manage it in a commercial environment.
 
 > [!NOTE]
 > - Recall is coming soon through a post-launch Windows update. See [aka.ms/copilotpluspcs](https://aka.ms/copilotpluspcs). 
@@ -35,7 +37,7 @@ When Recall opens a snapshot you selected, it enables Click to Do, which runs on
 
 ### Recall security and privacy architecture
 
-We built privacy and security into Recall's design from the ground up. With Copilot+ PCs, you get powerful AI that runs locally on the device. No internet or cloud connections are required or used to save and analyze snapshots. Snapshots aren't sent to Microsoft. Recall AI processing occurs locally, and snapshots are securely stored on the local device only.
+Privacy and security are built into Recall's design. With Copilot+ PCs, you get powerful AI that runs locally on the device. No internet or cloud connections are required or used to save and analyze snapshots. Snapshots aren't sent to Microsoft. Recall AI processing occurs locally, and snapshots are securely stored on the local device only.
 
 Recall doesn't share snapshots with other users that are signed into Windows on the same device. Microsoft can't access or view the snapshots. Recall requires users to confirm their identity with [Windows Hello](https://support.microsoft.com/windows/configure-windows-hello-dae28983-8242-bb2a-d3d1-87c9d265a5f0) before it launches and before accessing snapshots. At least one biometric sign-in option must be enabled for Windows Hello, either facial recognition or a fingerprint, to launch and use Recall. Before snapshots start getting saved the device, users need to open Recall and authenticate. Recall takes advantage of just in time decryption protected by Windows [Hello Enhanced Sign-in Security (ESS)](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security). Snapshots and any associated information in the vector database are always encrypted. Encryption keys are protected via Trusted Platform Module (TPM), which is tied to the user's Windows Hello ESS identity, and can be used by operations within a secure environment called a [Virtualization-based Security Enclave (VBS Enclave)](/windows/win32/trusted-execution/vbs-enclaves). This means that other users can't access these keys and thus can't decrypt this information. Device Encryption or BitLocker are enabled by default on Windows 11. For more information, see [Recall security and privacy architecture in the Windows Experience Blog](https://blogs.windows.com/windowsexperience/?p=179096).
 
@@ -77,26 +79,34 @@ Users need a supported browser for Recall to [filter websites](#user-controlled-
 
 ## Configure policies for Recall
 
-Policy list: 
+By default, Recall is removed on commercially managed devices except for devices running Windows Home edition. Many of the policies for Recall are available for both the device and the user scope to give you more flexibility. Policies for Recall fall into the following general areas:
+
+- [Allow Recall and snapshots policies](#allow-recall-and-snapshots-policies)
+- [Storage policies](#storage-policies)
+- [App and website filtering policies](#app-and-website-filtering-policies)
+
+
+
+### Allow Recall and snapshots policies
+
+If you want to allow Recall to be available for your users and allow them to choose to save snapshots, you need to configure both the **Allow Recall to be enabled** and **Turn off saving snapshots for Windows** policies. 
+
+**Allow Recall to be enabled**:
 | &nbsp; | Setting  |
 |---|---|
 | **CSP** | ./Device/Vendor/MSFT/Policy/Config/WindowsAI/[AllowRecallEnablement](mdm/policy-csp-windowsai.md#allowrecallenablement) |
-| **Group policy** | User Configuration > Administrative Templates > Windows Components > Windows AI > **Allow Recall to be enabled** |
+| **Group policy** | Computer Configuration > Administrative Templates > Windows Components > Windows AI > **Allow Recall to be enabled** |
 
 
-
-
-
-Organizations that aren't ready to use AI for historical analysis can disable it until they're ready with the **Turn off saving snapshots for Windows** policy. If snapshots were previously saved on a device, they'll be deleted when this policy is enabled. Administrators can't enable saving snapshots on behalf of their users. The choice to enable saving snapshots requires individual user opt-in consent.
-
-The following policy allows you to disable analysis of user content:
+The **Turn off saving snapshots for Windows** policy allows you to give the users the choice to save snapshots of their screen for use with Recall. If snapshots were previously saved on a device, they'll be deleted when this policy is enabled. Administrators can't enable saving snapshots on behalf of their users. The choice to enable saving snapshots requires individual user opt-in consent. 
 
 | &nbsp; | Setting  |
 |---|---|
-| **CSP** | ./User/Vendor/MSFT/Policy/Config/WindowsAI/[DisableAIDataAnalysis](mdm/policy-csp-windowsai.md#disableaidataanalysis) |
-| **Group policy** | User Configuration > Administrative Templates > Windows Components > Windows AI > **Turn off saving snapshots for Windows** |
+| **CSP** | ./User/Vendor/MSFT/Policy/Config/WindowsAI/[DisableAIDataAnalysis](mdm/policy-csp-windowsai.md#disableaidataanalysis) </br> ./User/Vendor/MSFT/Policy/Config/WindowsAI/[DisableAIDataAnalysis](mdm/policy-csp-windowsai.md#disableaidataanalysis)|
+| **Group policy** | Computer Configuration > Administrative Templates > Windows Components > Windows AI > **Turn off saving snapshots for Windows** </br>User Configuration > Administrative Templates > Windows Components > Windows AI > **Turn off saving snapshots for Windows** |
 
 ### Storage policies
+
 
 #### Storage allocation
 
@@ -117,7 +127,7 @@ The amount of disk space users can allocate to Recall varies depending on how mu
 Snapshots won't be saved when certain applications are being used. The following apps are automatically excluded from snapshots:<!--9119193-->
 
 -	[Supported web browsers](#supported-browsers) when using private browsing
--	Like other Windows apps such as the Snipping Tool, Recall will not store digital rights management (DRM) content
+-	Like other Windows apps such as the Snipping Tool, Recall won't store digital rights management (DRM) content
 - Some remote desktop connection apps:
    - [mstsc.exe](/windows-server/administration/windows-commands/mstsc)
    - [VMConnect.exe](/windows-server/virtualization/hyper-v/learn-more/hyper-v-virtual-machine-connect) 
