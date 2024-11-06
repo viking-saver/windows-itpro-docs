@@ -16,7 +16,7 @@ appliesto:
 
 # Reference for sensitive information filtering in Recall
 
-This article provides information about the types of potentially sensitive information that [Recall](manage-recall.md) detects.
+This article provides information about the types of potentially sensitive information that [Recall](manage-recall.md) detects when the **Sensitive Information Filtering** setting is enabled.
 
 ## Types of potentially sensitive information
 
