@@ -3,7 +3,7 @@ title: Manage Recall for Windows clients
 description: Learn how to manage Recall for commercial environments and about Recall features.
 ms.topic: how-to
 ms.subservice: windows-copilot
-ms.date: 10/14/2024
+ms.date: 11/14/2024
 ms.author: mstewart
 author: mestew
 ms.collection:
