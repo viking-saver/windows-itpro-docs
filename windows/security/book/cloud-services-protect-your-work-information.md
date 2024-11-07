@@ -302,7 +302,14 @@ There's a lot more to learn about Windows Autopatch: this [Forrester Consulting 
 
 ## OneDrive for work or school
 
-Data in OneDrive for work or school is protected both in transit and at rest.
+:::row:::
+    :::column span="1":::
+:::image type="content" source="images/onedrive.png" alt-text="Logo of Onedrive." border="false":::
+    :::column-end:::
+    :::column span="3":::
+        OneDrive for work or school is a cloud storage service that allows users to store, share, and collaborate on files. It's a part of Microsoft 365 and is designed to help organizations protect their data and comply with regulations. OneDrive for work or school is protected both in transit and at rest.
+    :::column-end:::
+:::row-end:::
 
 When data transits either into the service from clients or between datacenters, it's protected using transport layer security (TLS) encryption. OneDrive only permits secure access.
 
