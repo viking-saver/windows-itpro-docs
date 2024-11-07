@@ -194,7 +194,14 @@ With Microsoft Cloud PKI, organizations can accelerate their digital transformat
 
 ### Endpoint Privilege Management (EPM)
 
-Intune Endpoint Privilege Management supports organizations' Zero Trust journeys by helping them achieve a broad user base running with least privilege, while still permitting users to run elevated tasks allowed by the organization to remain productive.
+:::row:::
+    :::column span="1":::
+:::image type="content" source="images/endpoint-privilege-management.png" alt-text="Logo of Endpoint Privilege Management." border="false":::
+    :::column-end:::
+    :::column span="3":::
+        Intune Endpoint Privilege Management supports organizations' Zero Trust journeys by helping them achieve a broad user base running with least privilege, while still permitting users to run elevated tasks allowed by the organization to remain productive.
+    :::column-end:::
+:::row-end:::
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
