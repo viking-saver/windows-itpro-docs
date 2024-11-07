@@ -93,7 +93,7 @@ Every Windows device has a built-in local administrator account that must be sec
 
 ### Enterprise State Roaming
 
-Available to any organization with a Microsoft Entra ID Premium<sup>[\[4\]](conclusion.md#footnote4)</sup> `license, Enterprise State Roaming provides users with a unified Windows Settings experience across their Windows devices and reduces the time needed for configuring a new device.
+Available to any organization with a Microsoft Entra ID Premium<sup>[\[4\]](conclusion.md#footnote4)</sup> license, Enterprise State Roaming provides users with a unified Windows Settings experience across their Windows devices and reduces the time needed for configuring a new device.
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
