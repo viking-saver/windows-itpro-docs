@@ -335,7 +335,14 @@ There are several ways that OneDrive for work or school is protected at rest:
 
 ## Universal Print
 
-Universal Print eliminates the need for on-premises print servers. It also eliminates the need for print drivers from the users' Windows devices and makes the devices secure, reducing the malware attacks that typically exploit vulnerabilities in driver model. It enables Universal Print-ready printers (with native support) to connect directly to the Microsoft Cloud. All major printer OEMs have these [models][LINK-23]. It also supports existing printers by using the connector software that comes with Universal Print.
+:::row:::
+    :::column span="1":::
+:::image type="content" source="images/universal-print.png" alt-text="Logo of Universal Print." border="false":::
+    :::column-end:::
+    :::column span="3":::
+       Universal Print eliminates the need for on-premises print servers. It also eliminates the need for print drivers from the users' Windows devices and makes the devices secure, reducing the malware attacks that typically exploit vulnerabilities in driver model. It enables Universal Print-ready printers (with native support) to connect directly to the Microsoft Cloud. All major printer OEMs have these [models][LINK-23]. It also supports existing printers by using the connector software that comes with Universal Print.
+    :::column-end:::
+:::row-end:::
 
 Unlike traditional print solutions that rely on Windows print servers, Universal Print is a Microsoft-hosted cloud subscription service that supports a Zero Trust security model when using the Universal Print-ready printers. Customers can enable network isolation of printers, including the Universal Print connector software, from the rest of the organization's resources. Users and their devices don't need to be on the same local network as the printers or the Universal Print connector.
 
