@@ -1,8 +1,8 @@
 ---
-title: Configure the applications pinned to the taskbar
+title: Configure the Windows Taskbar Pinned Apps with Policy Settings
 description: Learn how to configure the applications pinned to the Windows taskbar.
 ms.topic: how-to
-ms.date: 04/17/2024
+ms.date: 11/07/2024
 appliesto:
 zone_pivot_groups: windows-versions-11-10
 ---
