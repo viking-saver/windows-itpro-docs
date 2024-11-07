@@ -144,7 +144,14 @@ Windows 11 supports the Remote Wipe configuration service provider (CSP) so that
 
 ## Microsoft Intune
 
-Microsoft Intune<sup>[\[4\]](conclusion.md#footnote4)</sup> is a comprehensive cloud-native endpoint management solution that helps secure, deploy, and manage users, apps, and devices. Intune brings together technologies like Microsoft Configuration Manager and Windows Autopilot to simplify provisioning, configuration management, and software updates across the organization.
+:::row:::
+    :::column span="1":::
+:::image type="content" source="images/microsoft-intune.png" alt-text="Logo of Microsoft Intune." border="false":::
+    :::column-end:::
+    :::column span="3":::
+        Microsoft Intune<sup>[\[4\]](conclusion.md#footnote4)</sup> is a comprehensive cloud-native endpoint management solution that helps secure, deploy, and manage users, apps, and devices. Intune brings together technologies like Microsoft Configuration Manager and Windows Autopilot to simplify provisioning, configuration management, and software updates across the organization.
+    :::column-end:::
+:::row-end:::
 
 Intune works with Microsoft Entra ID to manage security features and processes, including multifactor authentication and conditional access.
 
