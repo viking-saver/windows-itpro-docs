@@ -163,7 +163,14 @@ With Windows enrollment attestation, Microsoft Entra and Microsoft Intune certif
 
 ### Microsoft Cloud PKI
 
-Microsoft Cloud PKI is a cloud-based service included in the Microsoft Intune Suite<sup>[\[4\]](conclusion.md#footnote4)</sup> that simplifies and automates the management of a Public Key Infrastructure (PKI) for organizations. It eliminates the need for on-premises servers, hardware, and connectors, making it easier to set up and manage a PKI compared to, for instance, Microsoft Active Directory Certificate Services (AD CS) combined with the Certificate Connector for Microsoft Intune.
+:::row:::
+    :::column span="1":::
+:::image type="content" source="images/microsoft-cloud-pki.png" alt-text="Logo of Microsoft Cloud PKI." border="false":::
+    :::column-end:::
+    :::column span="3":::
+        Microsoft Cloud PKI is a cloud-based service included in the Microsoft Intune Suite<sup>[\[4\]](conclusion.md#footnote4)</sup> that simplifies and automates the management of a Public Key Infrastructure (PKI) for organizations. It eliminates the need for on-premises servers, hardware, and connectors, making it easier to set up and manage a PKI compared to, for instance, Microsoft Active Directory Certificate Services (AD CS) combined with the Certificate Connector for Microsoft Intune.
+    :::column-end:::
+:::row-end:::
 
 Key features include:
 
