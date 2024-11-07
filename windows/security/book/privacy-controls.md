@@ -7,7 +7,7 @@ ms.date: 11/18/2024
 
 # Privacy controls
 
-## Privacy dashboard and report
+## Microsoft Privacy Dashboard
 
 Customers can use the Microsoft Privacy dashboard to view, export, and delete their information, giving them further transparency and control. They can also use the Microsoft Privacy Report to learn more about Windows data collection and how to manage it. For organizations, we provide a guide for Windows Privacy Compliance that includes more details on the available controls and transparency.
 

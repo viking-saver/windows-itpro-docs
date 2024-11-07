@@ -36,7 +36,7 @@ When a device is Microsoft Entra ID joined and managed with Microsoft Intune<sup
 - Single sign-in to all Microsoft Online Services
 - Full suite of authentication management capabilities using Windows Hello for Business
 - Single sign-on (SSO) to enterprise and SaaS applications
-- No use of consumer Microsoft Account identity
+- No use of consumer Microsoft account identity
 
 Organizations and users can join or register their Windows devices with Microsoft Entra ID to get a seamless experience to both native and web applications. In addition, users can setup Windows Hello for Business or FIDO2 security keys with Microsoft Entra ID and benefit from greater security with passwordless authentication.
 
@@ -78,11 +78,11 @@ Available to any organization with a Microsoft Entra ID Premium<sup>[\[4\]](conc
 
 - [Enterprise State Roaming in Microsoft Entra ID][LINK-7]
 
-## Microsoft Azure Attestation Service
+## Azure Attestation service
 
-Remote attestation helps ensure that devices are compliant with security policies and are operating in a trusted state before they're allowed to access resources. Microsoft Intune<sup>[\[4\]](conclusion.md#footnote4)</sup> integrates with Microsoft Azure Attestation Service to review Windows device health comprehensively and connect this information with Microsoft Entra ID<sup>[\[4\]](conclusion.md#footnote4)</sup> Conditional Access.
+Remote attestation helps ensure that devices are compliant with security policies and are operating in a trusted state before they're allowed to access resources. Microsoft Intune<sup>[\[4\]](conclusion.md#footnote4)</sup> integrates with Azure Attestation service to review Windows device health comprehensively and connect this information with Microsoft Entra ID<sup>[\[4\]](conclusion.md#footnote4)</sup> Conditional Access.
 
-**Attestation policies are configured in the Microsoft Azure Attestation Service which can then:**
+**Attestation policies are configured in the Azure Attestation service which can then:**
 
 - Verify the integrity of evidence provided by the Windows Attestation component by validating the signature and ensuring the Platform Configuration Registers (PCRs) match the values recomputed by replaying the measured boot log
 - Verify that the TPM has a valid Attestation Identity Key issued by the authenticated TPM
@@ -172,7 +172,7 @@ Intune Endpoint Privilege Management supports organizations' Zero Trust journeys
 
 - [Endpoint Privilege Management][LINK-14]
 
-### Mobile Application Management (MAM)
+### Mobile application management (MAM)
 
 With Intune, organizations can also extend MAM App Config, MAM App Protection, and App Protection Conditional Access capabilities to Windows. This enables people to access protected organizational content without having the device managed by IT. The first application to support MAM for Windows is Microsoft Edge.
 
@@ -180,7 +180,7 @@ With Intune, organizations can also extend MAM App Config, MAM App Protection, a
 
 - [Data protection for Windows MAM][LINK-15]
 
-## Microsoft security baselines
+## Security baselines
 
 Every organization faces security threats. However, different organizations can be concerned with different types of security threats. For example, an e-commerce company might focus on protecting its internet-facing web apps, while a hospital on confidential patient information. The one thing that all organizations have in common is a need to keep their apps and devices secure. These devices must be compliant with the security standards (or security baselines) defined by the organization.
 

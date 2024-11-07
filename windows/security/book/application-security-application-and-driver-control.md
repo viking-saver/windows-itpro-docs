@@ -20,7 +20,7 @@ Smart App Control builds on top of the same cloud-based AI used in *App Control 
 
 We've been making significant improvements to Smart App Control to increase the security, usability, and cloud intelligence response for apps in the Windows ecosystem. Users can get the latest and best experience with Smart App Control by keeping their devices up to date via Windows Update every month.
 
-To ensure that users have a seamless experience with Smart App Control enabled, we ask developers to sign their applications with a code signing certificate from the Microsoft Trusted Root Program. Developers should include all binaries, such as exe, dll, temp installer files, and uninstallers. Trusted signing makes the process of obtaining, maintaining, and signing with a trusted certificate simple and secure.
+To ensure that users have a seamless experience with Smart App Control enabled, we ask developers to sign their applications with a code signing certificate from the Microsoft Trusted Root Program. Developers should include all binaries, such as exe, dll, temp installer files, and uninstallers. Trusted Signing makes the process of obtaining, maintaining, and signing with a trusted certificate simple and secure.
 
 Smart App Control is disabled on devices enrolled in enterprise management. We suggest enterprises running line-of-business applications continue to use *App Control for Business*.
 
@@ -60,9 +60,9 @@ The Windows kernel is the most privileged software and is therefore a compelling
 
 - [Microsoft recommended driver block rules][LINK-4]
 
-## :::image type="icon" source="images/new-button-title.svg" border="false"::: Trusted signing
+## :::image type="icon" source="images/new-button-title.svg" border="false"::: Trusted Signing
 
-Trusted signing is a Microsoft fully managed, end-to-end signing solution that simplifies the signing process and empowers third-party developers to easily build and distribute applications.
+Trusted Signing is a Microsoft fully managed, end-to-end signing solution that simplifies the signing process and empowers third-party developers to easily build and distribute applications.
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 

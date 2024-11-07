@@ -53,7 +53,7 @@ exchange, opportunities to engage with technical content about Microsoft's produ
 
 ## Certificates
 
-To help safeguard and authenticate information, Windows provides comprehensive support for certificates and certificate management. The built-in certificate management command-line utility (certmgr.exe) or Microsoft Management Console (MMC) snap-in (certmgr.msc) can be used to view and manage certificates, certificate trust lists (CTLs), and certificate revocation lists (CRLs). Whenever a certificate is used in Windows, we validate that the leaf certificate and all the certificates in its chain of trust haven't been revoked or compromised. The trusted root and intermediate certificates and publicly revoked certificates on the machine are used as a reference for Public Key Infrastructure (PKI) trust and are updated monthly by the Microsoft Trusted Root program. If a trusted certificate or root is revoked, all global devices are updated, meaning users can trust that Windows will automatically protect against vulnerabilities in public key infrastructure. For cloud and enterprise deployments, Windows also offers users the ability to autoenroll and renew certificates in Active Directory with Group Policy to reduce the risk of potential outages due to certificate expiration or misconfiguration.
+To help safeguard and authenticate information, Windows provides comprehensive support for certificates and certificate management. The built-in certificate management command-line utility (certmgr.exe) or Microsoft Management Console (MMC) snap-in (certmgr.msc) can be used to view and manage certificates, certificate trust lists (CTLs), and certificate revocation lists (CRLs). Whenever a certificate is used in Windows, we validate that the leaf certificate and all the certificates in its chain of trust haven't been revoked or compromised. The trusted root and intermediate certificates and publicly revoked certificates on the machine are used as a reference for Public Key Infrastructure (PKI) trust and are updated monthly by the Microsoft Trusted Root program. If a trusted certificate or root is revoked, all global devices are updated, meaning users can trust that Windows will automatically protect against vulnerabilities in public key infrastructure. For cloud and enterprise deployments, Windows also offers users the ability to autoenroll and renew certificates in Active Directory with group policy to reduce the risk of potential outages due to certificate expiration or misconfiguration.
 
 ## Code signing and integrity
 
@@ -61,17 +61,16 @@ To ensure that Windows files haven't been tampered with, the Windows Code Integr
 
 The digital signature is evaluated across the Windows environment on Windows boot code, Windows kernel code, and Windows user mode applications. Secure Boot and Code Integrity verify the signature on bootloaders, Option ROMs, and other boot components to ensure that it's trusted and from a reputable publisher. For drivers not published by Microsoft, Kernel Code Integrity verifies the signature on kernel drivers and requires that drivers be signed by Windows or certified by the [Windows Hardware Compatibility Program (WHCP)][LINK-3]. This program ensures that third-party drivers are compatible with various hardware and Windows and that the drivers are from vetted driver developers.
 
-## Device health attestation
+## Device Health Attestation
 
-The Windows device health attestation process supports a Zero Trust paradigm that shifts the focus from static, network-based perimeters to users, assets, and resources. The attestation process confirms the device, firmware, and boot process are in a good state and haven't been tampered with before they can access corporate resources. These
-determinations are made with data stored in the TPM, which provides a secure root-of-trust. The information is sent to an attestation service such as Azure Attestation to verify that the device is in a trusted state. Then a cloud-native device management solution like Microsoft Intune<sup>[\[4\]](conclusion.md#footnote4)</sup> reviews device health and connects this information with Microsoft Entra ID<sup>[\[4\]](conclusion.md#footnote4)</sup> for conditional access.
+The Windows Device Health Attestation process supports a Zero Trust paradigm that shifts the focus from static, network-based perimeters to users, assets, and resources. The attestation process confirms the device, firmware, and boot process are in a good state and haven't been tampered with before they can access corporate resources. These determinations are made with data stored in the TPM, which provides a secure root-of-trust. The information is sent to an attestation service such as Azure Attestation to verify that the device is in a trusted state. Then a cloud-native device management solution like Microsoft Intune<sup>[\[4\]](conclusion.md#footnote4)</sup> reviews device health and connects this information with Microsoft Entra ID<sup>[\[4\]](conclusion.md#footnote4)</sup> for conditional access.
 
 Windows includes many security features to help protect users from malware and attacks. However, security components are trustworthy only if the platform boots as expected and isn't tampered with. As noted above, Windows relies on Unified Extensible Firmware Interface (UEFI) Secure Boot, ELAM, DRTM, Trusted Boot, and other low-level hardware and firmware security features to protect your PC from attacks. From the moment you power on your PC until your anti-malware starts, Windows is backed with the appropriate hardware configurations that help keep you safe. Measured Boot, implemented by bootloaders and BIOS, verifies and cryptographically records each step of the boot in a chained manner. These events are bound to the TPM, that functions as a hardware root-of-trust. Remote attestation is the mechanism by which these events are read and verified by a service to provide a verifiable, unbiased, and tamper-resilient report. Remote attestation is the trusted auditor of your system's boot, allowing reliant parties to bind trust to the device and its security.
 
 A summary of the steps involved in attestation and Zero-Trust on a Windows device are as follows:
 
 - During each step of the boot process - such as a file load, update of special variables, and more - information such as file hashes and signature(s) are measured in the TPM Platform Configuration Register (PCRs). The measurements are bound by a Trusted Computing Group specification that dictates which events can be recorded and the format of each event. The data provides important information about device security from the moment it powers on
-- Once Windows has booted, the attestor (or verifier) requests the TPM get the measurements stored in its PCRs alongside the Measured Boot log. Together, these form the attestation evidence that's sent to the Microsoft Azure Attestation Service
+- Once Windows has booted, the attestor (or verifier) requests the TPM get the measurements stored in its PCRs alongside the Measured Boot log. Together, these form the attestation evidence that's sent to the Azure Attestation service
 - The TPM is verified by using the keys or cryptographic material available on the chipset with an Azure Certificate Service
 - The above information is sent to the Azure Attestation Service to verify that the device is in a trusted state.
 
@@ -134,21 +133,21 @@ Windows allows you to restrict functionality to specific applications using buil
 
 - [Windows kiosks and restricted user experiences](/windows/configuration/assigned-access)
 
-## :::image type="icon" source="images/new-button-title.svg" border="false"::: Windows protected print mode
+## :::image type="icon" source="images/new-button-title.svg" border="false"::: Windows protected print
 
-Windows protected print mode is built to provide a more modern and secure print system that maximizes compatibility and puts users first. It simplifies the printing experience by allowing devices to exclusively print using the Windows modern print stack.
+Windows protected print is built to provide a more modern and secure print system that maximizes compatibility and puts users first. It simplifies the printing experience by allowing devices to exclusively print using the Windows modern print stack.
 
-The benefits of Windows protected print mode include:
+The benefits of Windows protected print include:
 
 - Increased PC security
 - Simplified and consistent printing experience, regardless of PC architecture
 - Removes the need to manage print drivers
 
-Windows protected print mode is designed to work with Mopria certified printers only. Many existing printers are already compatible.
+Windows protected print is designed to work with Mopria certified printers only. Many existing printers are already compatible.
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
-- [Windows protected print mode][LINK-10]
+- [Windows protected print][LINK-10]
 - [New, modern, and secure print experience from Windows][LINK-11]
 
 ## :::image type="icon" source="images/new-button-title.svg" border="false"::: Rust in Windows

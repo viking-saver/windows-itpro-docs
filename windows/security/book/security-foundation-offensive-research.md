@@ -41,18 +41,18 @@ Microsoft Offensive Research and Security Engineering (MORSE) performs targeted 
 - [MORSE security team takes proactive approach to finding bugs][LINK-1]
 - [MORSE Blog][LINK-2]
 
-## Windows Insider and Bug Bounty program
+## Windows Insider and Microsoft Bug Bounty Programs
 
-As part of our secure development process, the Microsoft Windows Insider Preview bounty program invites eligible researchers across the globe to find and submit vulnerabilities that reproduce in the latest Windows Insider Preview (WIP) Dev Channel.
+As part of our secure development process, the Windows Insider Preview Program invites eligible researchers across the globe to find and submit vulnerabilities that reproduce in the latest Windows Insider Preview (WIP) Dev Channel.
 
-The goal of the Windows Insider Preview bounty program is to uncover significant vulnerabilities that have a direct and demonstrable impact on the security of customers using the latest version of Windows.
+The goal of the Windows Insider Preview Program is to uncover significant vulnerabilities that have a direct and demonstrable impact on the security of customers using the latest version of Windows.
 
 Through this collaboration with researchers across the globe, our teams identify critical vulnerabilities and quickly fix the issues before releasing our final Windows.
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Windows Insider Program][LINK-3]
-- [Microsoft bounty programs][LINK-4]
+- [Microsoft Bug Bounty Programs][LINK-4]
 
 <!--links-->
 

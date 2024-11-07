@@ -9,11 +9,11 @@ ms.date: 11/18/2024
 
 :::image type="content" source="images/cloud-security.png" alt-text="Diagram containing a list of security features for cloud security." lightbox="images/cloud-security.png" border="false":::
 
-## Microsoft Account
+## Microsoft account
 
-Your Microsoft Account (MSA) provides seamless access to Microsoft products and services with just one sign-in, allowing you to manage everything in one place. You can easily keep track of your subscriptions and order history, update your privacy and security settings, monitor the health and safety of your devices, and earn rewards. Your information stays with you in the cloud, accessible across devices and operating systems, including iOS and Android.
+Your Microsoft account (MSA) provides seamless access to Microsoft products and services with just one sign-in, allowing you to manage everything in one place. You can easily keep track of your subscriptions and order history, update your privacy and security settings, monitor the health and safety of your devices, and earn rewards. Your information stays with you in the cloud, accessible across devices and operating systems, including iOS and Android.
 
-You can even go passwordless with your Microsoft Account by removing the password from your MSA:
+You can even go passwordless with your Microsoft account by removing the password from your MSA:
 
 - Use Windows Hello to eliminate the password sign-in method for an even more secure experience
 - Use the Microsoft Authenticator app on your Android or iOS device
@@ -29,7 +29,7 @@ When location services and *Find my device* settings are turned on, basic system
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
-- [How to set up, find, and lock a lost Windows device using a Microsoft Account][LINK-2]
+- [How to set up, find, and lock a lost Windows device using a Microsoft account][LINK-2]
 
 ## OneDrive for personal
 
@@ -44,9 +44,9 @@ Microsoft OneDrive for personal<sup>[\[10\]](conclusion.md#footnote10)</sup> off
 - [How to recover from a ransomware attack using Microsoft 365][LINK-7]
 - [How to restore from OneDrive][LINK-3]
 
-## OneDrive Personal Vault
+## Personal Vault
 
-OneDrive Personal Vault offers robust protection for the most important or sensitive files, without sacrificing the convenience of anywhere access. Secure digital copies of crucial documents in OneDrive Personal Vault, where they're protected by identity verification and are easily accessible across devices.
+Personal Vault offers robust protection for the most important or sensitive files, without sacrificing the convenience of anywhere access. Secure digital copies of crucial documents in Personal Vault, where they're protected by identity verification and are easily accessible across devices.
 
 Once the Personal Vault is configured, users can access it using a strong authentication method or a second step of identity verification. The second steps of verification include fingerprint, face recognition, PIN, or a code sent via email or text.
 

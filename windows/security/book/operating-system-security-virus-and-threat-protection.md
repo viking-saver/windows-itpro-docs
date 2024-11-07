@@ -125,15 +125,15 @@ platforms, all synthesized into a single dashboard. This solution offers tremend
 - [Microsoft Defender for Endpoint](/defender-endpoint/microsoft-defender-endpoint)
 - [Microsoft 365 Defender](/defender-xdr/microsoft-365-defender)
 
-## Exploit protection
+## Exploit Protection
 
-Exploit protection automatically applies several exploit mitigation techniques to operating system processes and apps. Exploit protection works best with Microsoft Defender for Endpoint<sup>[\[4\]](conclusion.md#footnote4)</sup>, which gives organizations detailed reporting into exploit protection events and blocks as part of typical alert investigation scenarios. You can enable exploit protection on an individual device and then use Group Policy in Active Directory or Microsoft Intune<sup>[\[4\]](conclusion.md#footnote4)</sup> to distribute the configuration XML file to multiple devices simultaneously.
+Exploit Protection automatically applies several exploit mitigation techniques to operating system processes and apps. Exploit Protection works best with Microsoft Defender for Endpoint<sup>[\[4\]](conclusion.md#footnote4)</sup>, which gives organizations detailed reporting into Exploit Protection events and blocks as part of typical alert investigation scenarios. You can enable Exploit Protection on an individual device and then use policy settings to distribute the configuration XML file to multiple devices simultaneously.
 
 When a mitigation is encountered on the device, a notification will be displayed from the Action Center. You can customize the notification with your company details and contact information. You can also enable the rules individually to customize which techniques the feature monitors.
 
-You can use audit mode to evaluate how exploit protection would impact your organization if it were enabled. And go through safe deployment practices (SDP).
+You can use audit mode to evaluate how Exploit Protection would impact your organization if it were enabled. And go through safe deployment practices (SDP).
 
-Windows 11 provides configuration options for exploit protection. You can prevent users from modifying these specific options with device management solutions like Microsoft Intune or group policy.
+Windows 11 provides configuration options for Exploit Protection. You can prevent users from modifying these specific options with device management solutions like Microsoft Intune or group policy.
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 

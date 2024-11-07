@@ -18,11 +18,11 @@ New:
 - [Administrator protection](application-security-application-and-driver-control.md#-administrator-protection)
 - [Config Refresh](operating-system-security-system-security.md#-config-refresh)
 - [Rust in Windows](operating-system-security-system-security.md#-rust-in-windows)
-- [Trusted signing](application-security-application-and-driver-control.md#-trusted-signing)
+- [Trusted Signing](application-security-application-and-driver-control.md#-trusted-signing)
 - [VBS key protection](identity-protection-advanced-credential-protection.md#-vbs-key-protection)
 - [Virtualization-based security enclaves](application-security-application-isolation.md#-virtualization-based-security-enclaves)
 - [Win32 app isolation](application-security-application-isolation.md#-win32-app-isolation)
-- [Windows protected print mode](operating-system-security-system-security.md#-windows-protected-print-mode)
+- [Windows protected print](operating-system-security-system-security.md#-windows-protected-print-mode)
 
 Enhanced:
 
@@ -65,7 +65,7 @@ Enhanced:
 |**<sup><a name="footnote7"></a>7</sup>**| Feature or functionality delivered using [servicing technology](https://support.microsoft.com/topic/b0aa0a27-ea9a-4365-9224-cb155e517f12).|
 |**<sup><a name="footnote8"></a>8</sup>**| Email encryption is supported on products such as Microsoft Exchange Server and Microsoft Exchange Online.|
 |**<sup><a name="footnote9"></a>9</sup>**| Hardware dependent.|
-|**<sup><a name="footnote10"></a>10</sup>**|All users with a Microsoft Account get 5GB of OneDrive storage free, and all Microsoft 365 subscriptions include 1TB of OneDrive storage. Additional OneDrive storage is sold separately.|
+|**<sup><a name="footnote10"></a>10</sup>**|All users with a Microsoft account get 5GB of OneDrive storage free, and all Microsoft 365 subscriptions include 1TB of OneDrive storage. Additional OneDrive storage is sold separately.|
 |**<sup><a name="footnote11"></a>11</sup>**|The Total Economic Impact&trade; of Windows Pro Device, Forrester study commissioned by Microsoft, June 2020.|
 
 ---
