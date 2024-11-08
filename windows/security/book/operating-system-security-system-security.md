@@ -164,7 +164,7 @@ Windows protected print is designed to work with Mopria certified printers only.
 - [Windows protected print][LINK-10]
 - [New, modern, and secure print experience from Windows][LINK-11]
 
-## :::image type="icon" source="images/new-button-title.svg" border="false"::: Rust in Windows
+## :::image type="icon" source="images/new-button-title.svg" border="false"::: Rust for Windows
 
 Rust is a modern programming language known for its focus on safety, performance, and concurrency. It was designed to prevent common programming errors such as null pointer dereferencing and buffer overflows, which can lead to security vulnerabilities and crashes. Rust achieves this through its unique ownership system, which ensures memory safety without needing a garbage collector.
 We're expanding the integration of Rust into the Windows kernel to enhance the safety and reliability of Windows' codebase. This strategic move underscores our commitment to adopting modern technologies to improve the quality and security of Windows.

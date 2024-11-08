@@ -17,7 +17,7 @@ New:
 
 - [Administrator protection](application-security-application-and-driver-control.md#-administrator-protection)
 - [Config Refresh](operating-system-security-system-security.md#-config-refresh)
-- [Rust in Windows](operating-system-security-system-security.md#-rust-in-windows)
+- [Rust for Windows](operating-system-security-system-security.md#-rust-for-windows)
 - [Trusted Signing](application-security-application-and-driver-control.md#-trusted-signing)
 - [VBS key protection](identity-protection-advanced-credential-protection.md#-vbs-key-protection)
 - [Virtualization-based security enclaves](application-security-application-isolation.md#-virtualization-based-security-enclaves)
