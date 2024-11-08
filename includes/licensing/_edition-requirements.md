@@ -53,7 +53,7 @@ ms.topic: include
 |**[OneFuzz service](https://www.microsoft.com/security/blog/2020/09/15/microsoft-onefuzz-framework-open-source-developer-tool-fix-bugs/)**|Yes|Yes|Yes|Yes|
 |**Opportunistic Wireless Encryption (OWE)**|Yes|Yes|Yes|Yes|
 |**[Passkeys](/windows/security/identity-protection/passkeys)**|Yes|Yes|Yes|Yes|
-|**[Personal data encryption (PDE)](/windows/security/operating-system-security/data-protection/personal-data-encryption/)**|❌|Yes|❌|Yes|
+|**[Personal Data Encryption (PDE)](/windows/security/operating-system-security/data-protection/personal-data-encryption/)**|❌|Yes|❌|Yes|
 |**Privacy Resource Usage**|Yes|Yes|Yes|Yes|
 |**Privacy Transparency and Controls**|Yes|Yes|Yes|Yes|
 |**[Remote Credential Guard](/windows/security/identity-protection/remote-credential-guard)**|Yes|Yes|Yes|Yes|
