@@ -140,7 +140,21 @@ az mcc ent node get-provisioning-details --cache-node-name mycachenode --mcc-res
 >* In the output look for cacheNodeState. If **cacheNodeState = Not Provisioned**, you can continue with cache node provisioning.
 >* If **cacheNodeState = Not Configured**, then the cache node has not been configured. Configure the cache node before provisioning.
 
-### Example script:
+<br>
+
+## Next step
+
+To deploy the cache node to a **Windows** host machine, see 
+>[!div class="nextstepaction"]
+>[Deploy cache node to Windows](mcc-ent-deploy-to-windows.md)
+
+To deploy the cache node to a **Linux** host machine, see 
+>[!div class="nextstepaction"]
+>[Deploy cache node to Linux](mcc-ent-deploy-to-linux.md)
+
+<br>
+
+### Example script to bulk create and configure multiple cache nodes:
 
 Below is a pseudocode example of how to script bulk creation and configuration of a Connected Cache Azure resource and multiple Connected Cache cache nodes:
 
@@ -199,12 +213,3 @@ for ($cacheNodeNumber = 1; $cacheNodeNumber -le $cacheNodesToCreate; $cacheNodeN
 ```
 ---
 
-## Next step
-
-To deploy the cache node to a **Windows** host machine, see 
->[!div class="nextstepaction"]
->[Deploy cache node to Windows](mcc-ent-deploy-to-windows.md)
-
-To deploy the cache node to a **Linux** host machine, see 
->[!div class="nextstepaction"]
->[Deploy cache node to Linux](mcc-ent-deploy-to-linux.md)
