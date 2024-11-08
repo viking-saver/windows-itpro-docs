@@ -73,7 +73,7 @@ Microsoft Defender Antivirus always-on protection is integrated with cloud-deliv
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
-- [Next-generation protection with Microsoft Defender Antivirus](/defender-endpoint/microsoft-defender-antivirus-windows).
+- [Microsoft Defender Antivirus in Windows Overview](/defender-endpoint/microsoft-defender-antivirus-windows).
 
 ## Attack surface reduction rules
 
