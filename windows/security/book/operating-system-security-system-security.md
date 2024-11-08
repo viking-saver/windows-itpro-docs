@@ -109,7 +109,7 @@ All auditing categories are disabled when Windows is first installed. Before ena
         Visibility and awareness of device security and health are key to any action taken. The Windows built-in security settings provide an at-a-glance view of the security status and health of your device. These insights help you identify issues and act to make sure you're protected. You can quickly see the status of your virus and threat protection, firewall and network security, device security controls, and more.
     :::column-end:::
     :::column span="2":::
-:::image type="content" source="images/windows-security.png" alt-text=Screenshot of the Windows Security app." border="false" lightbox="images/windows-security.png" :::
+:::image type="content" source="images/windows-security.png" alt-text="Screenshot of the Windows Security app." border="false" lightbox="images/windows-security.png" :::
     :::column-end:::
 :::row-end:::
 
@@ -134,7 +134,14 @@ Config Refresh can also be paused for a configurable period of time, after which
 
 ## Kiosk mode
 
-Windows allows you to restrict functionality to specific applications using built-in features, making it ideal for public-facing or shared devices like kiosks. You can set up Windows as a kiosk either locally on the device, or through a cloud-based device management solution like Microsoft Intune<sup>[\[7\]](conclusion.md#footnote7)</sup>.
+:::row:::
+    :::column span="2":::
+        Windows allows you to restrict functionality to specific applications using built-in features, making it ideal for public-facing or shared devices like kiosks. You can set up Windows as a kiosk either locally on the device, or through a cloud-based device management solution like Microsoft Intune<sup>[\[7\]](conclusion.md#footnote7)</sup>. Kiosk mode can be configured to run a single app, multiple apps, or a full-screen web browser. You can also configure the device to automatically sign in and launch the designated kiosk app at startup.
+    :::column-end:::
+    :::column span="2":::
+:::image type="content" source="images/windows-security.png" alt-text="Screenshot of the Windows Security app." border="false" lightbox="images/kiosk.png" :::
+    :::column-end:::
+:::row-end:::
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
