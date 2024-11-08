@@ -39,6 +39,8 @@ Attackers are increasingly targeting employees and their devices, so organizatio
 
 Help keep business data secure and employees productive with robust safeguards and control for applications. Windows 11 has multiple layers of security that shield critical data and defend code integrity. Application protection, privacy controls, and least-privilege principles enable developers to build in security by design. This integrated defense helps protect against breaches and malware, assists in keeping data private, and gives IT administrators the controls they need. As a result, organizations and regulators can be confident that critical data is protected.
 
+With Trusted Signing, developers can effortlessly sign their applications. This process ensures the authenticity and integrity of the applications while enhancing security features to prevent and mitigate the impacts of malware on Windows.
+
 ### Device health and access control
 
 Increase protection and efficiency with Windows 11 and chip-to-cloud security. Microsoft provides the tools needed to attest that the devices connecting to your network, or accessing your data and resources, are trustworthy. You can enforce security policies and conditional access with cloud-based device management solutions such as Microsoft Intune, Microsoft Entra ID, and a comprehensive security baseline. Security by default not only enables people to work securely anywhere, but it also simplifies IT. A streamlined, chip-to-cloud security solution based on Windows 11 improves productivity for IT and security teams by a reported 25%<sup>[\[6\]](conclusion.md#footnote6)</sup>.
