@@ -102,11 +102,11 @@ All auditing categories are disabled when Windows is first installed. Before ena
 - [Security policy settings][LINK-5]
 - [Security auditing][LINK-6]
 
-## Windows security settings
+## Windows Security
 
 :::row:::
     :::column span="2":::
-        Visibility and awareness of device security and health are key to any action taken. The Windows built-in security settings provide an at-a-glance view of the security status and health of your device. These insights help you identify issues and act to make sure you're protected. You can quickly see the status of your virus and threat protection, firewall and network security, device security controls, and more.
+        Visibility and awareness of device security and health are key to any action taken. The Windows Security app provides an at-a-glance view of the security status and health of your device. These insights help you identify issues and act to make sure you're protected. You can quickly see the status of your virus and threat protection, firewall and network security, device security controls, and more.
     :::column-end:::
     :::column span="2":::
 :::image type="content" source="images/windows-security.png" alt-text="Screenshot of the Windows Security app." border="false" lightbox="images/windows-security.png" :::
@@ -115,7 +115,7 @@ All auditing categories are disabled when Windows is first installed. Before ena
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
-- [Windows security settings][LINK-7]
+- [Stay protected with Windows Security][LINK-7]
 - [Windows Security][LINK-8]
 
 ## :::image type="icon" source="images/new-button-title.svg" border="false"::: Config Refresh
