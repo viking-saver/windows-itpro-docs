@@ -303,16 +303,14 @@ Navigate to the Connected Cache resource to delete, then select the **Delete** o
 
 
 # [Azure CLI](#tab/cli)
-Use the following command to delete the Connected Cache resource.
+Use the following command to delete the cache node under the resource. 
 
 Replace the following placeholders with your own information:
 * *\<resource-group>*: Name of the resource group in your subscription.
 * *\<mcc-resource-name>*: Name of your Microsoft Connected Cache for Enterprise resource.
-* *\<cache-node-name>*: The name for your Microsoft Connected Cache node.
-
 
 ```azurecli-interactive
-az mcc ent node delete --cache-node-name <mycachenode> --mcc-resource-name <mymccresource> --resource-group <myrg> 
+az mcc ent resource delete --mcc-resource-name <mymccresource> --resource-group <myrg>
 ```
 ---
 
@@ -323,15 +321,18 @@ On the left pane, select **Cache Nodes** under **Cache Node Management** to see 
 
 
 # [Azure CLI](#tab/cli)
-Use the following command to delete the cache node under the resource. 
+Use the following command to delete the Connected Cache node.
 
 Replace the following placeholders with your own information:
 * *\<resource-group>*: Name of the resource group in your subscription.
 * *\<mcc-resource-name>*: Name of your Microsoft Connected Cache for Enterprise resource.
+* *\<cache-node-name>*: The name for your Microsoft Connected Cache node.
+
 
 ```azurecli-interactive
-az mcc ent node delete --mcc-resource-name <mymccresource> --resource-group <myrg>
+az mcc ent node delete --cache-node-name <mycachenode> --mcc-resource-name <mymccresource> --resource-group <myrg> 
 ```
+
 
 ---
 <br>
