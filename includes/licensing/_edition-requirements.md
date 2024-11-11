@@ -5,7 +5,7 @@ ms.date: 11/06/2024
 ms.topic: include
 ---
 
-| Feature name | Windows Pro | Windows Enterprise/IoT Enterprise | Windows Pro Education/SE | Windows Education |
+| Feature name | Windows Pro | Windows Enterprise/IoT Enterprise | Windows Pro Education | Windows Education |
 |:---|:---:|:---:|:---:|:---:|
 |**[Access Control (ACL/SACL)](/windows/security/identity-protection/access-control/access-control)**|Yes|Yes|Yes|Yes|
 |**[Account Lockout Policy](/windows/security/threat-protection/security-policy-settings/account-lockout-policy)**|Yes|Yes|Yes|Yes|
@@ -13,7 +13,7 @@ ms.topic: include
 |**[Always On VPN (device tunnel)](/Windows-server/remote/remote-access/overview-always-on-vpn)**|❌|Yes|❌|Yes|
 |**[App containers](/virtualization/windowscontainers/about/)**|Yes|Yes|Yes|Yes|
 |**[AppLocker](/windows/security/application-security/application-control/windows-defender-application-control/applocker/applocker-overview)**|Yes|Yes|Yes|Yes|
-|**[Assigned Access (kiosk mode)](/windows/configuration/kiosk-methods)**|Yes|Yes|Yes|Yes|
+|**[Assigned Access (kiosk mode)](/windows/configuration/assigned-access)**|Yes|Yes|Yes|Yes|
 |**[Attack surface reduction (ASR)](/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction)**|Yes|Yes|Yes|Yes|
 |**[Azure Code Signing](/windows/security/application-security/application-control/windows-defender-application-control/deployment/use-code-signing-for-better-control-and-protection)**|Yes|Yes|Yes|Yes|
 |**[BitLocker enablement](/windows/security/operating-system-security/data-protection/bitlocker/)**|Yes|Yes|Yes|Yes|
@@ -84,6 +84,7 @@ ms.topic: include
 |**[Windows Firewall](/windows/security/operating-system-security/network-security/windows-firewall)**|Yes|Yes|Yes|Yes|
 |**[Windows Hello for Business](/windows/security/identity-protection/hello-for-business/)**|Yes|Yes|Yes|Yes|
 |**[Windows Hello for Business Enhanced Security Sign-in (ESS)](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security)**|Yes|Yes|Yes|Yes|
+|**Windows Hotpatch**|❌|Yes|❌|❌|
 |**[Windows LAPS](/windows-server/identity/laps/laps-overview)**|Yes|Yes|Yes|Yes|
 |**[Windows passwordless experience](/windows/security/identity-protection/passwordless-experience)**|Yes|Yes|Yes|Yes|
 |**[Windows presence sensing](https://support.microsoft.com/windows/managing-presence-sensing-settings-in-windows-11-82285c93-440c-4e15-9081-c9e38c1290bb)**|Yes|Yes|Yes|Yes|
