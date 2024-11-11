@@ -61,7 +61,8 @@ Depending on the method you use to configure the taskbar, the configuration is r
 | Group policy (GPO) | In case of a group policy change. |
 
 > [!CAUTION]
-> The use of the `Import-StartLayout` PowerShell cmdlet to provision the Taskbar layout is no longer supported in Windows 11. The only supported configuration in Windows 11 is to use a provisioning package.
+> The use of the `Import-StartLayout` PowerShell cmdlet to provision the Taskbar layout is no longer supported in Windows 11.
+
 ::: zone pivot="windows-10"
 
 >[!NOTE]
