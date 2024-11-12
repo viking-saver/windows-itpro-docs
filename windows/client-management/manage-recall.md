@@ -34,7 +34,7 @@ Recall (preview) allows you to search across time to find the content you need. 
 
 When Recall opens a snapshot you selected, it enables Click to Do, which runs on top of the saved snapshot. Click to Do analyzes what's in the snapshot and allows you to interact with individual elements in the snapshot. For instance, you can copy text from the snapshot or send pictures from the snapshot to an app that supports `jpeg` files.
 
-:::image type="content" source="images/8908044-recall.png" alt-text="Screenshot of Recall with search results displayed for a query about a restaurant that the user's friend sent them." lightbox="images/8908044-recall.png":::
+:::image type="content" border="true" source="images/8908044-recall.png" alt-text="Screenshot of Recall with search results displayed for a query for a presentation with a red barn." lightbox="images/8908044-recall.png":::
 
 ### Recall security and privacy architecture
 
