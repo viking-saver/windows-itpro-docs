@@ -132,7 +132,7 @@ You can filter both apps and websites from being saved in snapshots. Users are a
 To filter apps from being saved in snapshots, use the **Set a list of URIs to be filtered from snapshots for Recall** policy. Define the list using a semicolon to separate URIs. Make sure you include the URL scheme such as `http://`, `file://`, `https://www.`. Sites local to a supported browser like `edge://`, or `chrome://`, are filtered by default. For example: `https://www.Contoso.com;https://www.WoodgroveBank.com;https://www.Adatum.com`
 
 > [!NOTE]
-> Private browsing activity is filtered by default when using [Supported web browsers](#supported-browsers). 
+> Private browsing activity is filtered by default when using [supported web browsers](#supported-browsers). 
 
 | &nbsp; | Setting  |
 |---|---|
