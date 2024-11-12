@@ -1,7 +1,7 @@
 ---
 title: WindowsAI Policy CSP
 description: Learn more about the WindowsAI Area in Policy CSP.
-ms.date: 11/07/2024
+ms.date: 11/11/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -366,7 +366,7 @@ The list can include Application User Model IDs (AUMID) or name of the executabl
 
 Use a semicolon-separated list of apps to define the deny app list for Recall.
 
-For example: code.exe;Microsoft. WindowsNotepad_8wekyb3d8bbwe!App;ms-teams.exe.
+For example: `code.exe;Microsoft. WindowsNotepad_8wekyb3d8bbwe!App;ms-teams.exe`
 
 > [!IMPORTANT]
 > When configuring this policy setting, changes won't take effect until the device restarts.
@@ -429,9 +429,9 @@ For example: code.exe;Microsoft. WindowsNotepad_8wekyb3d8bbwe!App;ms-teams.exe.
 <!-- Description-Source-ADMX -->
 This policy setting lets you define a list of URIs that won't be included in snapshots for Recall when a supported browser is used. People within your organization can use Recall settings to add more websites to the list. Define the list using a semicolon to separate URIs.
 
-For example: <https://www. Contoso.com>;<https://www. WoodgroveBank.com>;https://www. Adatum.com.
+For example: `https://www.Contoso.com;https://www.WoodgroveBank.com;https://www.Adatum.com`.
 
-Adding <https://www. WoodgroveBank.com> to the list would also filter <https://Account. WoodgroveBank.com> and <https://www. WoodgroveBank.com>/Account.
+Adding `https://www.WoodgroveBank.com` to the list would also filter `https://Account.WoodgroveBank.com` and `https://www.WoodgroveBank.com/Account`.
 
 > [!IMPORTANT]
 > Changes to this policy take effect after device restart.
