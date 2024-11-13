@@ -23,8 +23,7 @@ Recall (preview) allows users to search locally saved and locally analyzed snaps
 This article provides information about Recall and how to manage it in a commercial environment.
 
 > [!NOTE]
-> - Recall is coming soon through a post-launch Windows update. See [https://aka.ms/copilotpluspcs](https://aka.ms/copilotpluspcs). 
->    - For Copilot+ PCs that are running Windows Insiders, Recall (preview) is now available. For more information, see [**Placeholder WIP Blog link**>](https://aka.ms/windowsinsiders).
+> - For Copilot+ PCs that are running Windows Insiders, Recall (preview) is now available. For more information, see [**Placeholder WIP Blog link**>](https://aka.ms/windowsinsiders).
 > - In-market commercial devices are defined as devices with an Enterprise (ENT) or Education (EDU) SKU or any premium SKU device that is managed by an IT administrator (whether via Microsoft Endpoint Manager or other endpoint management solution), has a volume license key, or is joined to a domain. Commercial devices during Out of Box Experience (OOBE) are defined as those with ENT or EDU SKU or any premium SKU device that has a volume license key or is Microsoft Entra joined. 
 > - Recall is optimized for select languages English, Chinese (simplified), French, German, Japanese, and Spanish. Content-based and storage limitations apply. For more information, see [https://aka.ms/copilotpluspcs](https://aka.ms/copilotpluspcs).
 
@@ -75,11 +74,11 @@ Recall has the following minimum requirements:
 
 Users need a supported browser for Recall to [filter websites](#app-and-website-filtering-policies) and to automatically filter private browsing activity. Supported browsers, and their capabilities include:
 
-- **Microsoft Edge**: blocks websites and filters private browsing activity
-- **Firefox**: blocks websites and filters private browsing activity
-- **Opera**: blocks websites and filters private browsing activity
-- **Google Chrome**: blocks websites and filters private browsing activity
-- **Chromium based browsers** (124 or later): For Chromium-based browsers not listed, filters private browsing activity only, doesn't block specific websites
+- **Microsoft Edge**: filters specified websites and filters private browsing activity
+- **Firefox**: filters specified websites and filters private browsing activity
+- **Opera**: filtered specified websites and filters private browsing activity
+- **Google Chrome**: filters specified websites and filters private browsing activity
+- **Chromium based browsers** (124 or later): For Chromium-based browsers not listed, filters private browsing activity only, doesn't filter specific websites
 
 
 ## Configure policies for Recall
@@ -93,7 +92,7 @@ By default, Recall is removed on commercially managed devices. If you want to al
 
 ### Allow Recall and snapshots policies
 
-The **Allow Recall to be enabled** policy setting allows you to determine whether the Recall optional component is available for end users to enable on their device. By default, Recall is disabled and removed for managed devices. Recall isn't available on managed devices by default, and individual users can't enable Recall on their own.
+The **Allow Recall to be enabled** policy setting allows you to determine whether the Recall optional component is available for end users to enable on their device. By default, Recall is disabled and removed for managed devices. Recall isn't available on managed devices by default, and individual users can't enable Recall on their own. If you disable this policy, the Recall component will be in disabled state and the bits for Recall will be removed from the device. If snapshots were previously saved on the device, they will be deleted when this policy is disabled. Removing Recall requires a device restart. If the policy is enabled, end users will have Recall available on their device. Depending on the state of the DenyAIDataAnalysis policy (Turn off saving snapshots for use with Recall), end users will be able to choose if they want to save snapshots of their screen and use Recall to find things they've seen on their device.
 
 | &nbsp; | Setting  |
 |---|---|
@@ -129,10 +128,12 @@ You can define how long snapshots can be retained on the device by using the **S
 
 You can filter both apps and websites from being saved in snapshots. Users are able to add to these filter lists from the **Recall & Snapshots** settings page. Some remote desktop connection clients are filtered by default from snapshots. For more information, see the [Remote desktop connection clients filtered from snapshots](#remote-desktop-connection-clients-filtered-from-snapshots) section.
 
-To filter apps from being saved in snapshots, use the **Set a list of URIs to be filtered from snapshots for Recall** policy. Define the list using a semicolon to separate URIs. Make sure you include the URL scheme such as `http://`, `file://`, `https://www.`. Sites local to a supported browser like `edge://`, or `chrome://`, are filtered by default. For example: `https://www.Contoso.com;https://www.WoodgroveBank.com;https://www.Adatum.com`
+To filter websites from being saved in snapshots, use the **Set a list of URIs to be filtered from snapshots for Recall** policy. Define the list using a semicolon to separate URIs. Make sure you include the URL scheme such as `http://`, `file://`, `https://www.`. Sites local to a supported browser like `edge://`, or `chrome://`, are filtered by default. For example: `https://www.Contoso.com;https://www.WoodgroveBank.com;https://www.Adatum.com`
 
 > [!NOTE]
-> Private browsing activity is filtered by default when using [supported web browsers](#supported-browsers). 
+> - Private browsing activity is filtered by default when using [supported web browsers](#supported-browsers). 
+> - Be aware that websites are filtered when they are in the foreground or are in the currently opened tab of a supported browser. Parts of filtered websites can still appear in snapshots such as embedded content, the browser's history, or an opened tab that isn't in the foreground.
+> - Filtering doesn't prevent browsers, internet service providers (ISPs), websites, organizations, or others from knowing that the website was accessed and building a history.
 
 | &nbsp; | Setting  |
 |---|---|
@@ -142,6 +143,8 @@ To filter apps from being saved in snapshots, use the **Set a list of URIs to be
 
 **Set a list of apps to be filtered from snapshots for Recall** policy allows you to filter apps from being saved in snapshots. Define the list using a semicolon to separate apps. The list can include Application User Model IDs (AUMID) or the name of the executable file. For example: `code.exe;Microsoft. WindowsNotepad_8wekyb3d8bbwe!App;ms-teams.exe`
 
+> [!Note]
+>	Like other Windows apps, such as the Snipping Tool, Recall won't store digital rights management (DRM) content.
 
 | &nbsp; | Setting  |
 |---|---|
@@ -160,8 +163,6 @@ Snapshots won't be saved when some remote desktop connection clients are used. T
       - [Azure Virtual Desktop apps from the Microsoft Store](/azure/virtual-desktop/users/connect-remote-desktop-client) are saved in snapshots. To prevent these apps from being saved in snapshots, add then to the app filtering list.
   - [Remote applications integrated locally (RAIL)](/openspecs/windows_protocols/ms-rdperp/485e6f6d-2401-4a9c-9330-46454f0c5aba) windows
 
-> [!Note]
->	Like other Windows apps, such as the Snipping Tool, Recall won't store digital rights management (DRM) content.
 
 
 
