@@ -44,7 +44,7 @@ Recall doesn't share snapshots with other users that are signed into Windows on 
 
 When using Recall, the **Sensitive information filtering** setting is enabled by default to help ensure your data's confidentiality. Recall leverages the libraries that [power Microsoft's Purview information protection product](/purview/sit-learn-about-exact-data-match-based-sits), which is deployed in enterprises globally. When this setting is enabled, snapshots won't be saved when potentially sensitive information is detected. Most importantly, the sensitive information remains on the device at all times, regardless of whether the Sensitive Information Filtering setting is enabled or disabled. For more information about the types of potentially sensitive information, see [Reference for sensitive information filtering in Recall](recall-sensitive-information-filtering.md).
 
-In keeping with Microsoft's commitment to data privacy and security, all captured images and processed data are kept on the device and processed locally. However, Click to Do allows users to choose if they want to perform additional actions on their content.
+In keeping with Microsoft's commitment to data privacy and security, all saved images and processed data are kept on the device and processed locally. However, Click to Do allows users to choose if they want to perform additional actions on their content.
 
 Click to Do allows users to choose to get more information about their selected content online. When users choose one of the following Click to Do actions, the selected content is sent to the online provider from the local device to complete the request:
 
@@ -68,7 +68,7 @@ Recall has the following minimum requirements:
 - 8 logical processors
 - 256 GB storage capacity
   - To enable Recall, you need at least 50 GB of space free
-  - Snapshot capture automatically pauses once the device has less than 25 GB of disk space
+  - Saving snapshots automatically pauses once the device has less than 25 GB of disk space
 - Users need to enroll into [Windows Hello](/windows/security/identity-protection/hello-for-business/) with at least one biometric sign-in option enabled in order to authenticate.
 
 ## Supported browsers
