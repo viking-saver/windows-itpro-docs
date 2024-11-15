@@ -66,6 +66,9 @@ For the deployment rings that pass quality updates deferral date, the OOB releas
 
 ## Pause and resume a release
 
+> [!IMPORTANT]
+> **Due to a recent change, we have identified an issue that prevents the Paused and Pause status columns from being displayed** in reporting. Until a fix is deployed, **you must keep track of your paused releases so you can resume them at a later date**. The team is actively working on resolving this issue and we'll provide an update when a fix is deployed.
+
 The service-level pause is driven by the various software update deployment-related signals. Windows Autopatch receives from Windows Update for Business, and several other product groups within Microsoft.
 
 If Windows Autopatch detects a significant issue with a release, we might decide to pause that release.
