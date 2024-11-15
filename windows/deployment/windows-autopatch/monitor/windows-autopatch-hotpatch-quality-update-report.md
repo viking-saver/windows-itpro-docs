@@ -40,6 +40,9 @@ The Hotpatch quality update report provides a visual representation of the updat
 
 ### Default columns
 
+> [!IMPORTANT]
+> **Due to a recent change, we have identified an issue that prevents the Paused column from being displayed**. Until a fix is deployed, **you must keep track of your Paused releases so you can resume them at a later date**. The team is actively working on resolving this issue and we'll provide an update when a fix is deployed.
+
 The following information is available as default columns in the Hotpatch quality update report:
 
 | Column name | Description |
