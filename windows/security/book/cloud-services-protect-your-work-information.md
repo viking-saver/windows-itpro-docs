@@ -342,8 +342,6 @@ There's a lot more to learn about Windows Autopatch: this [Forrester Consulting 
 - [Windows IT Pro Blog](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/bg-p/Windows-ITPro-blog/label-name/Windows%20Autopatch)
 - [Windows Autopatch community](https://techcommunity.microsoft.com/t5/windows-autopatch/bd-p/Windows-Autopatch)
 
-<!--
-
 ## :::image type="icon" source="images/soon-button-title.svg" border="false"::: Windows Hotpatch
 
 Windows Hotpatch is a feature designed to enhance security and minimize disruptions. With Windows Hotpatch, organizations can apply critical security updates without requiring a system restart, reducing the time to adopt a security update by 60% from the moment the update is offered. Hotpatch updates streamline the installation process, enhance compliance efficiency, and provide a per-policy level view of update statuses for all devices.
@@ -353,8 +351,6 @@ By utilizing hotpatching through Windows Autopatch, the number of system restart
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
 - [Windows Autopatch documentation](/windows/deployment/windows-autopatch/)
-
--->
 
 ## OneDrive for work or school
 
