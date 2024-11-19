@@ -20,11 +20,10 @@ The following table lists the main authentication and security differences betwe
 |**Authentication**|Users can authenticate to:<br>- A Microsoft account (MSA)<br>- Identity providers (IdPs) that support [Fast ID Online (FIDO) v2.0](https://fidoalliance.org/) authentication|Users can authenticate to:<br>- A Microsoft Entra ID account<br>- An Active Directory account<br>- Identity provider (IdP) or relying party (RP) services that support [Fast ID Online (FIDO) v2.0](https://fidoalliance.org/) authentication|
 |**Security**|It uses **key-based** authentication.<br>There's no symmetric secret (password) which can be stolen from a server or phished from a user and used remotely. |It uses **key-based** or **certificate-based** authentication.<br>There's no symmetric secret (password) which can be stolen from a server or phished from a user and used remotely.|
 
-> [!IMPORTANT]
-> Although Windows Hello can be used with local accounts, it doesn't offer the same level of security as key-based or certificate-based authentication. For enhanced security, it's recommended to use Windows Hello with a Microsoft account (MSA) or identity providers (IdPs) that support FIDO2 authentication.
+Windows Hello can also be used with local accounts for convenient sign-ins, instead of entering a password. This configuration isn't backed by asymmetric (public/private) key, so it doesn't offer the same level of security as key-based or certificate-based authentication that is available with MSA or Microsoft Entra accounts. In all other aspects, using Windows Hello with a local account is like using it with MSA or Entra ID. For enhanced security, it's recommended to use Windows Hello with a Microsoft account (MSA) or identity providers (IdPs) that support FIDO2 authentication.
 
 > [!NOTE]
-> FIDO2 (Fast Identity Online) authentication is an open standard for passwordless authentication. It allows users to sign in to their devices and apps using biometric authentication or a physical security key, without the need for a traditional password. FIDO2 support in Windows Hello for Business provides an additional layer of security and convenience for users, while also reducing the risk of password-related attacks.
+> FIDO2 (Fast Identity Online) authentication is an open standard for passwordless authentication. It allows users to sign in to their devices and apps using biometric authentication or a physical security key, without the need for a traditional password. FIDO2 support in Windows Hello and Windows Hello for Business provides an additional layer of security and convenience for users, while also reducing the risk of password-related attacks.
 
 ## Benefits
 
