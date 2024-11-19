@@ -1,11 +1,11 @@
 ---
-title: Personal Data Encryption (PDE)
+title: Personal Data Encryption
 description: Personal Data Encryption unlocks user encrypted files at user sign-in instead of at boot.
 ms.topic: how-to
 ms.date: 09/24/2024
 ---
 
-# Personal Data Encryption (PDE)
+# Personal Data Encryption
 
 Starting in Windows 11, version 22H2, Personal Data Encryption (PDE) is a security feature that provides file-based data encryption capabilities to Windows.
 
@@ -106,8 +106,8 @@ Certain Windows applications support PDE out of the box. If PDE is enabled on a 
 
 ## Next steps
 
-- Learn about the available options to configure Personal Data Encryption (PDE) and how to configure them via Microsoft Intune or configuration Service Provider (CSP): [PDE settings and configuration](configure.md)
-- Review the [Personal Data Encryption (PDE) FAQ](faq.yml)
+- Learn about the available options to configure Personal Data Encryption and how to configure them via Microsoft Intune or configuration Service Provider (CSP): [PDE settings and configuration](configure.md)
+- Review the [Personal Data Encryption FAQ](faq.yml)
 
 <!--links used in this document-->
 
