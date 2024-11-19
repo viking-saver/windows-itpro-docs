@@ -1,7 +1,7 @@
 ---
 title: Windows quality update summary dashboard
 description: Provides a summary view of the current update status for all Windows Autopatch managed devices.
-ms.date: 09/16/2024
+ms.date: 11/19/2024
 ms.service: windows-client
 ms.subservice: autopatch
 ms.topic: how-to
@@ -27,7 +27,7 @@ The Summary dashboard provides a summary view of the current update status for a
 1. Navigate to **Reports** > **Windows Autopatch** > **Windows quality updates**.
 
 > [!NOTE]
-> The data in this report is refreshed every 24 hours with data received by your Windows Autopatch managed devices. The last refreshed on date/time can be seen at the top of the page. For more information about how often Windows Autopatch receives data from your managed devices, see [Data latency](../operate/windows-autopatch-groups-windows-quality-and-feature-update-reports-overview.md#about-data-latency).
+> The data in this report is refreshed every four hours with data received by your Windows Autopatch managed devices. The last refreshed on date/time can be seen at the top of the page. For more information about how often Windows Autopatch receives data from your managed devices, see [Data latency](../operate/windows-autopatch-groups-windows-quality-and-feature-update-reports-overview.md#about-data-latency).
 
 ## Report information
 
