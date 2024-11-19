@@ -1,7 +1,7 @@
 ---
 title: Feature update status report
 description: Provides a per device view of the current Windows OS upgrade status for all devices registered with Windows Autopatch.
-ms.date: 11/18/2024
+ms.date: 11/19/2024
 ms.service: windows-client
 ms.subservice: autopatch
 ms.topic: how-to

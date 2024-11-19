@@ -1,7 +1,7 @@
 ---
 title: Windows feature updates overview
 description: This article explains how Windows feature updates are managed
-ms.date: 11/18/2024
+ms.date: 11/19/2024
 ms.service: windows-client
 ms.subservice: autopatch
 ms.topic: overview

@@ -1,7 +1,7 @@
 ---
 title: Quality update status report
 description: Provides a per device view of the current update status for all Windows Autopatch managed devices.
-ms.date: 11/18/2024
+ms.date: 11/19/2024
 ms.service: windows-client
 ms.subservice: autopatch
 ms.topic: how-to
