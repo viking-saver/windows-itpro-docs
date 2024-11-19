@@ -34,7 +34,7 @@ The following list shows the Personal Data Encryption configuration service prov
 
 <!-- User-EnablePersonalDataEncryption-OmaUri-Begin -->
 ```User
-./User/Vendor/MSFT/Personal Data Encryption/EnablePersonalDataEncryption
+./User/Vendor/MSFT/PDE/EnablePersonalDataEncryption
 ```
 <!-- User-EnablePersonalDataEncryption-OmaUri-End -->
 
