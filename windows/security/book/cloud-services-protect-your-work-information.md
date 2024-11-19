@@ -342,7 +342,7 @@ There's a lot more to learn about Windows Autopatch: this [Forrester Consulting 
 - [Windows IT Pro Blog](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/bg-p/Windows-ITPro-blog/label-name/Windows%20Autopatch)
 - [Windows Autopatch community](https://techcommunity.microsoft.com/t5/windows-autopatch/bd-p/Windows-Autopatch)
 
-<!-->
+<!--
 
 ## :::image type="icon" source="images/soon-button-title.svg" border="false"::: Windows Hotpatch
 
