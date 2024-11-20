@@ -9,6 +9,15 @@ ms.date: 11/04/2024
 
 :::image type="content" source="images/cloud-security.png" alt-text="Diagram containing a list of security features for cloud security." lightbox="images/cloud-security.png" border="false":::
 
+:::row:::
+    :::column:::
+        ### Microsoft Entra ID2
+    :::column-end:::
+    :::column:::
+    :::image type="icon" source="images/microsoft-entra-id.svg" border="false":::
+    :::column-end:::
+:::row-end:::
+
 ## Microsoft Entra ID
 
 :::image type="icon" source="images/microsoft-entra-id.svg" border="false":::
@@ -50,6 +59,15 @@ Every Windows device has a built-in local administrator account that must be sec
 
 - [Microsoft Entra ID documentation][LINK-1]
 - [Microsoft Entra plans and pricing][LINK-2]
+
+:::row:::
+    :::column:::
+        ### Microsoft Entra Private Access2
+    :::column-end:::
+    :::column:::
+    :::image type="icon" source="images/microsoft-entra-private-access.svg" border="false":::
+    :::column-end:::
+:::row-end:::
 
 ### Microsoft Entra Private Access
 
