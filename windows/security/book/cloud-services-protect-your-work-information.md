@@ -11,14 +11,9 @@ ms.date: 11/04/2024
 
 ## Microsoft Entra ID
 
-:::row:::
-    :::column span="1":::
-    :::image type="icon" source="images/microsoft-entra-id.svg" border="false":::
-    :::column-end:::
-    :::column span="3":::
-        Microsoft Entra ID is a comprehensive cloud-based identity management solution that helps enable secure access to applications, networks, and other resources and guard against threats. Microsoft Entra ID can also be used with Windows Autopilot for zero-touch provisioning of devices preconfigured with corporate security policies.
-    :::column-end:::
-:::row-end:::
+:::image type="icon" source="images/microsoft-entra-id.svg" border="false":::
+
+Microsoft Entra ID is a comprehensive cloud-based identity management solution that helps enable secure access to applications, networks, and other resources and guard against threats. Microsoft Entra ID can also be used with Windows Autopilot for zero-touch provisioning of devices preconfigured with corporate security policies.
 
 Organizations can deploy Microsoft Entra ID joined devices to enable access to both cloud and on-premises apps and resources. Access to resources can be controlled based on the Microsoft Entra ID account and Conditional Access policies applied to the device. For the most seamless and delightful end to end single sign-on (SSO) experience, we recommend users configure Windows Hello for Business during the out of box experience for easy passwordless sign-in to Entra ID .
 
@@ -380,14 +375,11 @@ There are several ways that OneDrive for work or school is protected at rest:
 
 ## Universal Print
 
-:::row:::
-    :::column span="1":::
 :::image type="content" source="images/universal-print.svg" alt-text="Logo of Universal Print." border="false":::
-    :::column-end:::
-    :::column span="3":::
-       Universal Print eliminates the need for on-premises print servers. It also eliminates the need for print drivers from the users' Windows devices and makes the devices secure, reducing the malware attacks that typically exploit vulnerabilities in driver model. It enables Universal Print-ready printers (with native support) to connect directly to the Microsoft Cloud. All major printer OEMs have these [models][LINK-23]. It also supports existing printers by using the connector software that comes with Universal Print.
-    :::column-end:::
-:::row-end:::
+
+:::image type="icon" source="images/universal-print.svg" border="false":::
+
+Universal Print eliminates the need for on-premises print servers. It also eliminates the need for print drivers from the users' Windows devices and makes the devices secure, reducing the malware attacks that typically exploit vulnerabilities in driver model. It enables Universal Print-ready printers (with native support) to connect directly to the Microsoft Cloud. All major printer OEMs have these [models][LINK-23]. It also supports existing printers by using the connector software that comes with Universal Print.
 
 Unlike traditional print solutions that rely on Windows print servers, Universal Print is a Microsoft-hosted cloud subscription service that supports a Zero Trust security model when using the Universal Print-ready printers. Customers can enable network isolation of printers, including the Universal Print connector software, from the rest of the organization's resources. Users and their devices don't need to be on the same local network as the printers or the Universal Print connector.
 
