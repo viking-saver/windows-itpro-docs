@@ -1,7 +1,7 @@
 ---
 title: Quality update status report
-description: Provides a per device view of the current update status for all Windows Autopatch managed devices.
-ms.date: 11/19/2024
+description: Provides a per device view of the current update status for all Intune devices.
+ms.date: 11/20/2024
 ms.service: windows-client
 ms.subservice: autopatch
 ms.topic: how-to
@@ -19,7 +19,7 @@ ms.collection:
 
 [!INCLUDE [windows-autopatch-enterprise-e3-f3-licenses](../includes/windows-autopatch-enterprise-e3-f3-licenses.md)]
 
-The Quality update status report provides a per device view of the current update status for all Windows Autopatch managed devices.
+The Quality update status report provides a per device view of the current update status for all Intune devices.
 
 **To view the Quality update status report:**
 
@@ -29,7 +29,7 @@ The Quality update status report provides a per device view of the current updat
 1. Select **Quality update status**.
 
 > [!NOTE]
-> The data in this report is refreshed every 24 hours with data received by your Windows Autopatch managed devices. The last refreshed on date/time can be seen at the top of the page. For more information about how often Windows Autopatch receives data from your managed devices, see [Data latency](../operate/windows-autopatch-groups-windows-quality-and-feature-update-reports-overview.md#about-data-latency).
+> The data in this report is refreshed every 24 hours with data received by your managed devices. The last refreshed on date/time can be seen at the top of the page. For more information about how often Windows Autopatch receives data from your managed devices, see [Data latency](../operate/windows-autopatch-groups-windows-quality-and-feature-update-reports-overview.md#about-data-latency).
 
 ## Report information
 
