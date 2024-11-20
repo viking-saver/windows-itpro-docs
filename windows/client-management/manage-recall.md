@@ -61,14 +61,15 @@ The temporary file is deleted once the app is finished with the content.
 
 Recall has the following minimum requirements:
 
-- A [Copilot+ PC](https://www.microsoft.com/windows/business/devices/copilot-plus-pcs#copilot-plus-pcs)
-- 40 TOPs Neural Processing Unit (NPU)
+- A [Copilot+ PC](https://www.microsoft.com/windows/business/devices/copilot-plus-pcs#copilot-plus-pcs) that meets the [Secure-core standard](/windows-hardware/design/device-experiences/oem-highly-secure-11)
+- 40 TOPs [neural processing unit (NPU)](https://support.microsoft.com/windows/all-about-neural-processing-units-npus-e77a5637-7705-4915-96c8-0c6a975f9db4)
 - 16 GB RAM
 - 8 logical processors
 - 256 GB storage capacity
   - To enable Recall, you need at least 50 GB of space free
-  - Saving snapshots automatically pauses once the device has less than 25 GB of disk space
-- Users need to enroll into [Windows Hello](/windows/security/identity-protection/hello-for-business/) with at least one biometric sign-in option enabled in order to authenticate.
+  - Saving snapshots automatically pauses once the device has less than 25 GB of storage space
+- Users need to enable Device Encryption or BitLocker
+- Users need to enroll into [Windows Hello Enhanced Sign-in Security](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security) with at least one biometric sign-in option enabled in order to authenticate.
 
 ## Supported browsers
 
