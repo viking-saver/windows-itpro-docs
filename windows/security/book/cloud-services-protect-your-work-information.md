@@ -16,6 +16,7 @@ ms.date: 11/04/2024
 :::image type="content" source="images/microsoft-entra-id.png" alt-text="Logo of Microsoft Entra ID." border="false":::
     :::column-end:::
     :::column span="3":::
+        :::image type="icon" source="images/entra-id.svg" border="false":::
         Microsoft Entra ID is a comprehensive cloud-based identity management solution that helps enable secure access to applications, networks, and other resources and guard against threats. Microsoft Entra ID can also be used with Windows Autopilot for zero-touch provisioning of devices preconfigured with corporate security policies.
     :::column-end:::
 :::row-end:::
