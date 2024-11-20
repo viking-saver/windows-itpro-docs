@@ -10,13 +10,17 @@ ms.date: 11/04/2024
 :::image type="content" source="images/cloud-security.png" alt-text="Diagram containing a list of security features for cloud security." lightbox="images/cloud-security.png" border="false":::
 
 :::row:::
-    :::column:::
-        ### Microsoft Entra ID2
+    :::column span="3":::
+        ## Microsoft Entra ID2
     :::column-end:::
-    :::column:::
+    :::column span="1":::
     :::image type="icon" source="images/microsoft-entra-id.svg" border="false":::
     :::column-end:::
 :::row-end:::
+
+Microsoft Entra ID is a comprehensive cloud-based identity management solution that helps enable secure access to applications, networks, and other resources and guard against threats. Microsoft Entra ID can also be used with Windows Autopilot for zero-touch provisioning of devices preconfigured with corporate security policies.
+
+Organizations can deploy Microsoft Entra ID joined devices to enable access to both cloud and on-premises apps and resources. Access to resources can be controlled based on the Microsoft Entra ID account and Conditional Access policies applied to the device. For the most seamless and delightful end to end single sign-on (SSO) experience, we recommend users configure Windows Hello for Business during the out of box experience for easy passwordless sign-in to Entra ID .
 
 ## Microsoft Entra ID
 
@@ -61,13 +65,19 @@ Every Windows device has a built-in local administrator account that must be sec
 - [Microsoft Entra plans and pricing][LINK-2]
 
 :::row:::
-    :::column:::
+    :::column span="3":::
         ### Microsoft Entra Private Access2
     :::column-end:::
-    :::column:::
+    :::column span="1":::
     :::image type="icon" source="images/microsoft-entra-private-access.svg" border="false":::
     :::column-end:::
 :::row-end:::
+
+Microsoft Entra Private Access provides organizations the ability to manage and give users access to private or internal fully qualified domain names (FQDNs) and IP addresses. With Private Access, you can modernize how your organization's users access private apps and resources. Remote workers don't need to use a VPN to access these resources if they have the Global Secure Access Client installed. The client quietly and seamlessly connects them to the resources they need.
+
+[!INCLUDE [learn-more](includes/learn-more.md)]
+
+- [Microsoft Entra Private Access][LINK-4]
 
 ### Microsoft Entra Private Access
 
