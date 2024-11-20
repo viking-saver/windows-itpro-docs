@@ -38,7 +38,7 @@ This policy setting allows you to determine whether the Recall optional componen
 
 - If this policy is disabled, the Recall component will be in disabled state and the bits for Recall will be removed from the device. If snapshots were previously saved on the device, they will be deleted when this policy is disabled. Removing Recall requires a device restart.
 
-- If the policy is enabled, end users will have Recall available on their device. Depending on the state of the DenyAIDataAnalysis policy (Turn off saving snapshots for use with Recall), end users will be able to choose if they want to save snapshots of their screen and use Recall to find things they've seen on their device.
+- If the policy is enabled, end users will have Recall available on their device. Depending on the state of the DisableAIDataAnalysis policy (Turn off saving snapshots for use with Recall), end users will be able to choose if they want to save snapshots of their screen and use Recall to find things they've seen on their device.
 <!-- AllowRecallEnablement-Description-End -->
 
 <!-- AllowRecallEnablement-Editable-Begin -->
@@ -366,7 +366,7 @@ The list can include Application User Model IDs (AUMID) or name of the executabl
 
 Use a semicolon-separated list of apps to define the deny app list for Recall.
 
-For example: `code.exe;Microsoft. WindowsNotepad_8wekyb3d8bbwe!App;ms-teams.exe`
+For example: `code.exe;Microsoft.WindowsNotepad_8wekyb3d8bbwe!App;ms-teams.exe`
 
 > [!IMPORTANT]
 > When configuring this policy setting, changes won't take effect until the device restarts.
