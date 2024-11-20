@@ -1,7 +1,7 @@
 ---
 title: Windows quality update summary dashboard
-description: Provides a summary view of the current update status for all Windows Autopatch managed devices.
-ms.date: 11/19/2024
+description: Provides a summary view of the current update status for all Intune devices.
+ms.date: 11/20/2024
 ms.service: windows-client
 ms.subservice: autopatch
 ms.topic: how-to
@@ -19,7 +19,7 @@ ms.collection:
 
 [!INCLUDE [windows-autopatch-enterprise-e3-f3-licenses](../includes/windows-autopatch-enterprise-e3-f3-licenses.md)]
 
-The Summary dashboard provides a summary view of the current update status for all Windows Autopatch managed devices.
+The Summary dashboard provides a summary view of the current update status for all Intune devices.
 
 **To view the current update status for all your enrolled devices:**
 
@@ -27,15 +27,18 @@ The Summary dashboard provides a summary view of the current update status for a
 1. Navigate to **Reports** > **Windows Autopatch** > **Windows quality updates**.
 
 > [!NOTE]
-> The data in this report is refreshed every four hours with data received by your Windows Autopatch managed devices. The last refreshed on date/time can be seen at the top of the page. For more information about how often Windows Autopatch receives data from your managed devices, see [Data latency](../operate/windows-autopatch-groups-windows-quality-and-feature-update-reports-overview.md#about-data-latency).
+> The data in this report is refreshed every four hours with data received by your managed devices. The last refreshed on date/time can be seen at the top of the page. For more information about how often Windows Autopatch receives data from your managed devices, see [Data latency](../operate/windows-autopatch-groups-windows-quality-and-feature-update-reports-overview.md#about-data-latency).
 
 ## Report information
+
+> [!IMPORTANT]
+> **Due to a recent change, we have identified an issue that prevents the Paused column from being displayed**. Until a fix is deployed, **you must keep track of your paused releases so you can resume them at a later date**. The team is actively working on resolving this issue and we'll provide an update when a fix is deployed.
 
 The following information is available in the Summary dashboard:
 
 | Column name | Description |
 | ----- | ----- |
-| Autopatch group | The Autopatch group and deployment ring. For more information, see [Windows Autopatch groups](../deploy/windows-autopatch-groups-overview.md). |
+| Autopatch group | The Autopatch group and deployment ring. If the device isn't in an Autopatch group or policy, the device appears as "Unassigned". For more information, see [Windows Autopatch groups](../deploy/windows-autopatch-groups-overview.md). |
 | Device count | Total device count per Autopatch group or deployment ring. |
 | Up to date | Total device count reporting a status of Up to date. For more information, see [Up to Date](../operate/windows-autopatch-groups-windows-quality-and-feature-update-reports-overview.md#up-to-date-devices). |
 | Not up to Date | Total device count reporting a status of Not Up to date. For more information, see [Not Up to Date](../operate/windows-autopatch-groups-windows-quality-and-feature-update-reports-overview.md#not-up-to-date-devices). |

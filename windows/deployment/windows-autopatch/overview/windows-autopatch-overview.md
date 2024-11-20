@@ -1,7 +1,7 @@
 ---
 title: What is Windows Autopatch?
 description: Details what the service is and shortcuts to articles.
-ms.date: 11/19/2024
+ms.date: 11/20/2024
 ms.service: windows-client
 ms.subservice: autopatch
 ms.topic: overview
@@ -72,7 +72,7 @@ In addition to the features included in [Business Premium and A3+ licenses](#bus
 | [Microsoft Edge updates](../manage/windows-autopatch-edge.md) | Windows Autopatch configures eligible devices to benefit from Microsoft Edge's progressive rollouts on the Stable channel. |
 | [Microsoft Teams updates](../manage/windows-autopatch-teams.md) | Windows Autopatch allows eligible devices to benefit from the standard automatic update channel. |
 | [Policy health and remediation](../monitor/windows-autopatch-policy-health-and-remediation.md) | When Windows Autopatch detects policies in the tenant are either missing or modified that affects the service, Windows Autopatch raises alerts and detailed recommended actions to ensure healthy operation of the service. |
-| Enhanced [Windows quality and feature update reports](../monitor/windows-autopatch-windows-quality-and-feature-update-reports-overview.md) and [device alerts](../monitor/windows-autopatch-device-alerts.md) | Using Windows quality and feature update reports, you can monitor and remediate Windows Autopatch managed devices that are Not up to Date and resolve any device alerts to bring Windows Autopatch managed devices back into compliance. |
+| Enhanced [Windows quality and feature update reports](../monitor/windows-autopatch-windows-quality-and-feature-update-reports-overview.md) and [device alerts](../monitor/windows-autopatch-device-alerts.md) | Using Windows quality and feature update reports, you can monitor and remediate managed devices that are Not up to Date and resolve any device alerts to bring managed devices back into compliance. |
 | [Submit support requests](../manage/windows-autopatch-support-request.md) with the Windows Autopatch Service Engineering Team | When you activate additional Autopatch features, you can submit, manage, and edit support requests. |
 
 ## Communications
