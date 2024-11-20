@@ -135,6 +135,7 @@ To filter websites from being saved in snapshots, use the **Set a list of URIs t
 > - Private browsing activity is filtered by default when using [supported web browsers](#supported-browsers). 
 > - Be aware that websites are filtered when they are in the foreground or are in the currently opened tab of a supported browser. Parts of filtered websites can still appear in snapshots such as embedded content, the browser's history, or an opened tab that isn't in the foreground.
 > - Filtering doesn't prevent browsers, internet service providers (ISPs), websites, organizations, or others from knowing that the website was accessed and building a history.
+> - Changes to this policy take effect after device restart.
 
 | &nbsp; | Setting  |
 |---|---|
@@ -145,7 +146,8 @@ To filter websites from being saved in snapshots, use the **Set a list of URIs t
 **Set a list of apps to be filtered from snapshots for Recall** policy allows you to filter apps from being saved in snapshots. Define the list using a semicolon to separate apps. The list can include Application User Model IDs (AUMID) or the name of the executable file. For example: `code.exe;Microsoft. WindowsNotepad_8wekyb3d8bbwe!App;ms-teams.exe`
 
 > [!Note]
->	Like other Windows apps, such as the Snipping Tool, Recall won't store digital rights management (DRM) content.
+> -	Like other Windows apps, such as the Snipping Tool, Recall won't store digital rights management (DRM) content.
+> - Changes to this policy take effect after device restart.
 
 | &nbsp; | Setting  |
 |---|---|
