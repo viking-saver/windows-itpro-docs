@@ -182,4 +182,5 @@ Recall uses optical character recognition (OCR), local to the PC, to analyze sna
 - [Update on Recall security and privacy architecture](https://blogs.windows.com/windowsexperience/2024/09/27/update-on-recall-security-and-privacy-architecture/)
 - [Retrace your steps with Recall](https://support.microsoft.com/windows/aa03f8a0-a78b-4b3e-b0a1-2eb8ac48701c)
 - [Privacy and control over your Recall experience](https://support.microsoft.com/windows/d404f672-7647-41e5-886c-a3c59680af15)
+- [Click to Do in Recall](https://support.microsoft.com/topic/967304a8-32d1-4812-a904-fad59b5e6abf)
 - [<PLACEHOLDER WIP BLOG>](https://aka.ms/wip)
