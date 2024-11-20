@@ -61,8 +61,8 @@ The temporary file is deleted once the app is finished with the content.
 
 Recall has the following minimum requirements:
 
-- A [Copilot+ PC](https://www.microsoft.com/windows/business/devices/copilot-plus-pcs#copilot-plus-pcs) that meets the [Secure-core standard](/windows-hardware/design/device-experiences/oem-highly-secure-11)
-- 40 TOPs [neural processing unit (NPU)](https://support.microsoft.com/windows/all-about-neural-processing-units-npus-e77a5637-7705-4915-96c8-0c6a975f9db4)
+- A [Copilot+ PC](https://www.microsoft.com/windows/business/devices/copilot-plus-pcs#copilot-plus-pcs) that meets the [Secured-core standard](/windows-hardware/design/device-experiences/oem-highly-secure-11)
+- 40 TOPs NPU ([neural processing unit](https://support.microsoft.com/windows/all-about-neural-processing-units-npus-e77a5637-7705-4915-96c8-0c6a975f9db4))
 - 16 GB RAM
 - 8 logical processors
 - 256 GB storage capacity
