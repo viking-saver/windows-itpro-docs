@@ -23,7 +23,7 @@ Recall (preview) allows users to search locally saved and locally analyzed snaps
 This article provides information about Recall and how to manage it in a commercial environment.
 
 > [!NOTE]
-> - For Copilot+ PCs that are running Windows Insiders, Recall (preview) is now available. For more information, see [**Placeholder WIP Blog link**>](https://aka.ms/windowsinsiders).
+> - Recall is now available in preview to Copilot+ PCs through the Windows Insider Program. For more information, see [**Placeholder WIP Blog link**>](https://aka.ms/windowsinsiders).
 > - In-market commercial devices are defined as devices with an Enterprise (ENT) or Education (EDU) SKU or any premium SKU device that is managed by an IT administrator (whether via Microsoft Endpoint Manager or other endpoint management solution), has a volume license key, or is joined to a domain. Commercial devices during Out of Box Experience (OOBE) are defined as those with ENT or EDU SKU or any premium SKU device that has a volume license key or is Microsoft Entra joined. 
 > - Recall is optimized for select languages English, Chinese (simplified), French, German, Japanese, and Spanish. Content-based and storage limitations apply. For more information, see [https://aka.ms/copilotpluspcs](https://aka.ms/copilotpluspcs).
 
