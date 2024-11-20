@@ -53,14 +53,9 @@ Every Windows device has a built-in local administrator account that must be sec
 
 ### Microsoft Entra Private Access
 
-:::row:::
-    :::column span="1":::
-:::image type="content" source="images/microsoft-entra-private-access.png" alt-text="Logo of Microsoft Entra Private Access." border="false":::
-    :::column-end:::
-    :::column span="3":::
-        Microsoft Entra Private Access provides organizations the ability to manage and give users access to private or internal fully qualified domain names (FQDNs) and IP addresses. With Private Access, you can modernize how your organization's users access private apps and resources. Remote workers don't need to use a VPN to access these resources if they have the Global Secure Access Client installed. The client quietly and seamlessly connects them to the resources they need.
-    :::column-end:::
-:::row-end:::
+:::image type="icon" source="images/microsoft-entra-private-access.svg" border="false":::
+
+Microsoft Entra Private Access provides organizations the ability to manage and give users access to private or internal fully qualified domain names (FQDNs) and IP addresses. With Private Access, you can modernize how your organization's users access private apps and resources. Remote workers don't need to use a VPN to access these resources if they have the Global Secure Access Client installed. The client quietly and seamlessly connects them to the resources they need.
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
@@ -68,14 +63,9 @@ Every Windows device has a built-in local administrator account that must be sec
 
 ### Microsoft Entra Internet Access
 
-:::row:::
-    :::column span="1":::
-:::image type="content" source="images/microsoft-entra-internet-access.png" alt-text="Logo of Microsoft Entra Internet Access." border="false":::
-    :::column-end:::
-    :::column span="3":::
-        Microsoft Entra Internet Access provides an identity-centric Secure Web Gateway (SWG) solution for Software as a Service (SaaS) applications and other Internet traffic. It protects users, devices, and data from the Internet's wide threat landscape with best-in-class security controls and visibility through Traffic Logs.
-    :::column-end:::
-:::row-end:::
+:::image type="icon" source="images/microsoft-entra-internet-access.svg" border="false":::
+
+Microsoft Entra Internet Access provides an identity-centric Secure Web Gateway (SWG) solution for Software as a Service (SaaS) applications and other Internet traffic. It protects users, devices, and data from the Internet's wide threat landscape with best-in-class security controls and visibility through Traffic Logs.
 
 > [!NOTE]
 > Both Microsoft Entra Private Access and Microsoft Entra Internet Access requires Microsoft Entra ID and Microsoft Entra Joined devices for deployment. The two solutions use the Global Secure Access client for Windows, which secures and controls the features.
@@ -96,14 +86,9 @@ Available to any organization with a Microsoft Entra ID Premium<sup>[\[4\]](conc
 
 ## Azure Attestation service
 
-:::row:::
-    :::column span="1":::
-:::image type="content" source="images/azure-attestation.png" alt-text="Logo of Azure Attestation service." border="false":::
-    :::column-end:::
-    :::column span="3":::
-        Remote attestation helps ensure that devices are compliant with security policies and are operating in a trusted state before they're allowed to access resources. Microsoft Intune<sup>[\[4\]](conclusion.md#footnote4)</sup> integrates with Azure Attestation service to review Windows device health comprehensively and connect this information with Microsoft Entra ID<sup>[\[4\]](conclusion.md#footnote4)</sup> Conditional Access.
-    :::column-end:::
-:::row-end:::
+:::image type="icon" source="images/azure-attestation.svg" border="false":::
+
+Remote attestation helps ensure that devices are compliant with security policies and are operating in a trusted state before they're allowed to access resources. Microsoft Intune<sup>[\[4\]](conclusion.md#footnote4)</sup> integrates with Azure Attestation service to review Windows device health comprehensively and connect this information with Microsoft Entra ID<sup>[\[4\]](conclusion.md#footnote4)</sup> Conditional Access.
 
 **Attestation policies are configured in the Azure Attestation service which can then:**
 
@@ -119,14 +104,9 @@ Once this verification is complete, the attestation service returns a signed rep
 
 ## Microsoft Defender for Endpoint
 
-:::row:::
-    :::column span="1":::
-:::image type="content" source="images/defender-for-endpoint.png" alt-text="Logo of Microsoft Defender for Endpoint." border="false":::
-    :::column-end:::
-    :::column span="3":::
-        Microsoft Defender for Endpoint<sup>[\[4\]](conclusion.md#footnote4)</sup> is an enterprise endpoint detection and response solution that helps security teams detect, disrupt, investigate, and respond to advanced threats. Organizations can use the rich event data and attack insights Defender for Endpoint provides to investigate incidents.
-    :::column-end:::
-:::row-end:::
+:::image type="icon" source="images/defender-for-endpoint.svg" border="false":::
+
+Microsoft Defender for Endpoint<sup>[\[4\]](conclusion.md#footnote4)</sup> is an enterprise endpoint detection and response solution that helps security teams detect, disrupt, investigate, and respond to advanced threats. Organizations can use the rich event data and attack insights Defender for Endpoint provides to investigate incidents.
 
 Defender for Endpoint brings together the following elements to provide a more complete picture of security incidents:
 
@@ -174,14 +154,9 @@ Windows 11 supports the Remote Wipe configuration service provider (CSP) so that
 
 ## Microsoft Intune
 
-:::row:::
-    :::column span="1":::
-:::image type="content" source="images/microsoft-intune.png" alt-text="Logo of Microsoft Intune." border="false":::
-    :::column-end:::
-    :::column span="3":::
-        Microsoft Intune<sup>[\[4\]](conclusion.md#footnote4)</sup> is a comprehensive cloud-native endpoint management solution that helps secure, deploy, and manage users, apps, and devices. Intune brings together technologies like Microsoft Configuration Manager and Windows Autopilot to simplify provisioning, configuration management, and software updates across the organization.
-    :::column-end:::
-:::row-end:::
+:::image type="icon" source="images/microsoft-intune.svg" border="false":::
+
+Microsoft Intune<sup>[\[4\]](conclusion.md#footnote4)</sup> is a comprehensive cloud-native endpoint management solution that helps secure, deploy, and manage users, apps, and devices. Intune brings together technologies like Microsoft Configuration Manager and Windows Autopilot to simplify provisioning, configuration management, and software updates across the organization.
 
 Intune works with Microsoft Entra ID to manage security features and processes, including multifactor authentication and conditional access.
 
@@ -207,14 +182,9 @@ With Windows enrollment attestation, Microsoft Entra and Microsoft Intune certif
 
 ### Microsoft Cloud PKI
 
-:::row:::
-    :::column span="1":::
-:::image type="content" source="images/microsoft-cloud-pki.png" alt-text="Logo of Microsoft Cloud PKI." border="false":::
-    :::column-end:::
-    :::column span="3":::
-        Microsoft Cloud PKI is a cloud-based service included in the Microsoft Intune Suite<sup>[\[4\]](conclusion.md#footnote4)</sup> that simplifies and automates the management of a Public Key Infrastructure (PKI) for organizations. It eliminates the need for on-premises servers, hardware, and connectors, making it easier to set up and manage a PKI compared to, for instance, Microsoft Active Directory Certificate Services (AD CS) combined with the Certificate Connector for Microsoft Intune.
-    :::column-end:::
-:::row-end:::
+:::image type="icon" source="images/microsoft-cloud-pki.svg" border="false":::
+
+Microsoft Cloud PKI is a cloud-based service included in the Microsoft Intune Suite<sup>[\[4\]](conclusion.md#footnote4)</sup> that simplifies and automates the management of a Public Key Infrastructure (PKI) for organizations. It eliminates the need for on-premises servers, hardware, and connectors, making it easier to set up and manage a PKI compared to, for instance, Microsoft Active Directory Certificate Services (AD CS) combined with the Certificate Connector for Microsoft Intune.
 
 Key features include:
 
@@ -231,14 +201,9 @@ With Microsoft Cloud PKI, organizations can accelerate their digital transformat
 
 ### Endpoint Privilege Management (EPM)
 
-:::row:::
-    :::column span="1":::
-:::image type="content" source="images/endpoint-privilege-management.png" alt-text="Logo of Endpoint Privilege Management." border="false":::
-    :::column-end:::
-    :::column span="3":::
-        Intune Endpoint Privilege Management supports organizations' Zero Trust journeys by helping them achieve a broad user base running with least privilege, while still permitting users to run elevated tasks allowed by the organization to remain productive.
-    :::column-end:::
-:::row-end:::
+:::image type="icon" source="images/endpoint-privilege-management.svg" border="false":::
+
+Intune Endpoint Privilege Management supports organizations' Zero Trust journeys by helping them achieve a broad user base running with least privilege, while still permitting users to run elevated tasks allowed by the organization to remain productive.
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
@@ -349,14 +314,9 @@ By utilizing hotpatching through Windows Autopatch, the number of system restart
 
 ## OneDrive for work or school
 
-:::row:::
-    :::column span="1":::
-:::image type="content" source="images/onedrive.png" alt-text="Logo of Onedrive." border="false":::
-    :::column-end:::
-    :::column span="3":::
-        OneDrive for work or school is a cloud storage service that allows users to store, share, and collaborate on files. It's a part of Microsoft 365 and is designed to help organizations protect their data and comply with regulations. OneDrive for work or school is protected both in transit and at rest.
-    :::column-end:::
-:::row-end:::
+:::image type="icon" source="images/onedrive.svg" border="false":::
+
+OneDrive for work or school is a cloud storage service that allows users to store, share, and collaborate on files. It's a part of Microsoft 365 and is designed to help organizations protect their data and comply with regulations. OneDrive for work or school is protected both in transit and at rest.
 
 When data transits either into the service from clients or between datacenters, it's protected using transport layer security (TLS) encryption. OneDrive only permits secure access.
 
@@ -374,8 +334,6 @@ There are several ways that OneDrive for work or school is protected at rest:
 - [How OneDrive safeguards data in the cloud](https://support.microsoft.com/topic/23c6ea94-3608-48d7-8bf0-80e142edd1e1)
 
 ## Universal Print
-
-:::image type="content" source="images/universal-print.svg" alt-text="Logo of Universal Print." border="false":::
 
 :::image type="icon" source="images/universal-print.svg" border="false":::
 
