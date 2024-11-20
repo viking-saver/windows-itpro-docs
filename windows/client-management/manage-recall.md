@@ -3,7 +3,7 @@ title: Manage Recall for Windows clients
 description: Learn how to manage Recall for commercial environments and about Recall features.
 ms.topic: how-to
 ms.subservice: windows-copilot
-ms.date: 11/15/2024
+ms.date: 11/21/2024
 ms.author: mstewart
 author: mestew
 ms.collection:
@@ -18,7 +18,7 @@ appliesto:
 <!--8908044-->
 >**Looking for consumer information?** See [Retrace your steps with Recall](https://support.microsoft.com/windows/retrace-your-steps-with-recall-aa03f8a0-a78b-4b3e-b0a1-2eb8ac48701c).
 
-Recall (preview) allows users to search locally saved and locally analyzed snapshots of their screen using natural language. By default, Recall is disabled and removed on managed devices. IT admins can choose if they want to allow Recall to be used in their organizations and users, on their own, won't be able to install or enable it on their managed device if the Allow Recall policy is disabled. IT admins, on their own, can't start saving snapshots for end users. Recall is an opt-in experience that requires end user consent to save snapshots. Users can choose to enable or disable saving snapshots for themselves anytime. IT admins can only set policies that give users the option to enable saving snapshots and configure certain policies for Recall.
+Recall (preview) allows users to search locally saved and locally analyzed snapshots of their screen using natural language. By default, Recall is disabled and removed on managed devices. IT admins can choose if they want to allow Recall to be used in their organizations and users, on their own, won't be able to enable it on their managed device if the Allow Recall policy is disabled. IT admins, on their own, can't start saving snapshots for end users. Recall is an opt-in experience that requires end user consent to save snapshots. Users can choose to enable or disable saving snapshots for themselves anytime. IT admins can only set policies that give users the option to enable saving snapshots and configure certain policies for Recall.
 
 This article provides information about Recall and how to manage it in a commercial environment.
 
@@ -92,7 +92,7 @@ By default, Recall is removed on commercially managed devices. If you want to al
 
 ### Allow Recall and snapshots policies
 
-The **Allow Recall to be enabled** policy setting allows you to determine whether the Recall optional component is available for end users to enable on their device. By default, Recall is disabled and removed for managed devices. Recall isn't available on managed devices by default, and individual users can't enable Recall on their own. If you disable this policy, the Recall component will be in disabled state and the bits for Recall will be removed from the device. If snapshots were previously saved on the device, they'll be deleted when this policy is disabled. Removing Recall requires a device restart. If the policy is enabled, end users will have Recall available on their device. Depending on the state of the DenyAIDataAnalysis policy (Turn off saving snapshots for use with Recall), end users will be able to choose if they want to save snapshots of their screen and use Recall to find things they've seen on their device.
+The **Allow Recall to be enabled** policy setting allows you to determine whether the Recall optional component is available for end users to enable on their device. By default, Recall is disabled and removed for managed devices. Recall isn't available on managed devices by default, and individual users can't enable Recall on their own. If you disable this policy, the Recall component will be in disabled state and the bits for Recall will be removed from the device. If snapshots were previously saved on the device, they'll be deleted when this policy is disabled. Removing Recall requires a device restart. If the policy is enabled, end users will have Recall available on their device. Depending on the state of the DisableAIDataAnalysis policy (Turn off saving snapshots for use with Recall), end users will be able to choose if they want to save snapshots of their screen and use Recall to find things they've seen on their device.
 
 | &nbsp; | Setting  |
 |---|---|
