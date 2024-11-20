@@ -1,7 +1,7 @@
 ---
 title: Windows quality updates overview
 description: This article explains how Windows quality updates are managed
-ms.date: 11/19/2024
+ms.date: 11/20/2024
 ms.service: windows-client
 ms.subservice: autopatch
 ms.topic: conceptual
