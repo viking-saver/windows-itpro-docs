@@ -9,21 +9,7 @@ ms.date: 11/04/2024
 
 :::image type="content" source="images/cloud-security.png" alt-text="Diagram containing a list of security features for cloud security." lightbox="images/cloud-security.png" border="false":::
 
-## :::image type="icon" source="images/microsoft-entra-id.svg" border="false"::: Microsoft Entra ID2
-
-Microsoft Entra ID is a comprehensive cloud-based identity management solution that helps enable secure access to applications, networks, and other resources and guard against threats. Microsoft Entra ID can also be used with Windows Autopilot for zero-touch provisioning of devices preconfigured with corporate security policies.
-
-Organizations can deploy Microsoft Entra ID joined devices to enable access to both cloud and on-premises apps and resources. Access to resources can be controlled based on the Microsoft Entra ID account and Conditional Access policies applied to the device. For the most seamless and delightful end to end single sign-on (SSO) experience, we recommend users configure Windows Hello for Business during the out of box experience for easy passwordless sign-in to Entra ID .
-
-## Microsoft Entra ID3 :::image type="icon" source="images/microsoft-entra-id.svg" border="false":::
-
-Microsoft Entra ID is a comprehensive cloud-based identity management solution that helps enable secure access to applications, networks, and other resources and guard against threats. Microsoft Entra ID can also be used with Windows Autopilot for zero-touch provisioning of devices preconfigured with corporate security policies.
-
-Organizations can deploy Microsoft Entra ID joined devices to enable access to both cloud and on-premises apps and resources. Access to resources can be controlled based on the Microsoft Entra ID account and Conditional Access policies applied to the device. For the most seamless and delightful end to end single sign-on (SSO) experience, we recommend users configure Windows Hello for Business during the out of box experience for easy passwordless sign-in to Entra ID .
-
-## Microsoft Entra ID
-
-:::image type="icon" source="images/microsoft-entra-id.svg" border="false":::
+## :::image type="icon" source="images/microsoft-entra-id.svg" border="false"::: Microsoft Entra ID
 
 Microsoft Entra ID is a comprehensive cloud-based identity management solution that helps enable secure access to applications, networks, and other resources and guard against threats. Microsoft Entra ID can also be used with Windows Autopilot for zero-touch provisioning of devices preconfigured with corporate security policies.
 
@@ -78,9 +64,7 @@ Microsoft Entra Private Access provides organizations the ability to manage and 
 
 - [Microsoft Entra Private Access][LINK-4]
 
-### Microsoft Entra Private Access
-
-:::image type="icon" source="images/microsoft-entra-private-access.svg" border="false":::
+### :::image type="icon" source="images/microsoft-entra-private-access.svg" border="false":::  Microsoft Entra Private Access
 
 Microsoft Entra Private Access provides organizations the ability to manage and give users access to private or internal fully qualified domain names (FQDNs) and IP addresses. With Private Access, you can modernize how your organization's users access private apps and resources. Remote workers don't need to use a VPN to access these resources if they have the Global Secure Access Client installed. The client quietly and seamlessly connects them to the resources they need.
 
@@ -88,9 +72,7 @@ Microsoft Entra Private Access provides organizations the ability to manage and 
 
 - [Microsoft Entra Private Access][LINK-4]
 
-### Microsoft Entra Internet Access
-
-:::image type="icon" source="images/microsoft-entra-internet-access.svg" border="false":::
+### :::image type="icon" source="images/microsoft-entra-internet-access.svg" border="false":::  Microsoft Entra Internet Access
 
 Microsoft Entra Internet Access provides an identity-centric Secure Web Gateway (SWG) solution for Software as a Service (SaaS) applications and other Internet traffic. It protects users, devices, and data from the Internet's wide threat landscape with best-in-class security controls and visibility through Traffic Logs.
 
@@ -111,9 +93,7 @@ Available to any organization with a Microsoft Entra ID Premium<sup>[\[4\]](conc
 
 - [Enterprise State Roaming in Microsoft Entra ID][LINK-7]
 
-## Azure Attestation service
-
-:::image type="icon" source="images/azure-attestation.svg" border="false":::
+## :::image type="icon" source="images/azure-attestation.svg" border="false":::  Azure Attestation service
 
 Remote attestation helps ensure that devices are compliant with security policies and are operating in a trusted state before they're allowed to access resources. Microsoft Intune<sup>[\[4\]](conclusion.md#footnote4)</sup> integrates with Azure Attestation service to review Windows device health comprehensively and connect this information with Microsoft Entra ID<sup>[\[4\]](conclusion.md#footnote4)</sup> Conditional Access.
 
