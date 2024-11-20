@@ -78,7 +78,7 @@ Available to any organization with a Microsoft Entra ID Premium<sup>[\[4\]](conc
 
 - [Enterprise State Roaming in Microsoft Entra ID][LINK-7]
 
-## :::image type="icon" source="images/azure-attestation.svg" border="false":::  Azure Attestation service
+## :::image type="icon" source="images/azure-attestation.svg" border="false"::: Azure Attestation service
 
 Remote attestation helps ensure that devices are compliant with security policies and are operating in a trusted state before they're allowed to access resources. Microsoft Intune<sup>[\[4\]](conclusion.md#footnote4)</sup> integrates with Azure Attestation service to review Windows device health comprehensively and connect this information with Microsoft Entra ID<sup>[\[4\]](conclusion.md#footnote4)</sup> Conditional Access.
 
