@@ -38,7 +38,7 @@ The following information is available in the Summary dashboard:
 
 | Column name | Description |
 | ----- | ----- |
-| Autopatch group | The Autopatch group and deployment ring, or the device is labelled as "Unassigned" if it isn't in an Autopatch group or policy. For more information, see [Windows Autopatch groups](../deploy/windows-autopatch-groups-overview.md). |
+| Autopatch group | The Autopatch group and deployment ring> If the device isn't in an Autopatch group or policy, the device appears as "Unassigned". For more information, see [Windows Autopatch groups](../deploy/windows-autopatch-groups-overview.md). |
 | Device count | Total device count per Autopatch group or deployment ring. |
 | Up to date | Total device count reporting a status of Up to date. For more information, see [Up to Date](../operate/windows-autopatch-groups-windows-quality-and-feature-update-reports-overview.md#up-to-date-devices). |
 | Not up to Date | Total device count reporting a status of Not Up to date. For more information, see [Not Up to Date](../operate/windows-autopatch-groups-windows-quality-and-feature-update-reports-overview.md#not-up-to-date-devices). |
