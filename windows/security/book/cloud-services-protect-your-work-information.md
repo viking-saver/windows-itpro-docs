@@ -49,21 +49,6 @@ Every Windows device has a built-in local administrator account that must be sec
 - [Microsoft Entra ID documentation][LINK-1]
 - [Microsoft Entra plans and pricing][LINK-2]
 
-:::row:::
-    :::column span="3":::
-        ### Microsoft Entra Private Access2
-    :::column-end:::
-    :::column span="1":::
-    :::image type="icon" source="images/microsoft-entra-private-access.svg" border="false":::
-    :::column-end:::
-:::row-end:::
-
-Microsoft Entra Private Access provides organizations the ability to manage and give users access to private or internal fully qualified domain names (FQDNs) and IP addresses. With Private Access, you can modernize how your organization's users access private apps and resources. Remote workers don't need to use a VPN to access these resources if they have the Global Secure Access Client installed. The client quietly and seamlessly connects them to the resources they need.
-
-[!INCLUDE [learn-more](includes/learn-more.md)]
-
-- [Microsoft Entra Private Access][LINK-4]
-
 ### :::image type="icon" source="images/microsoft-entra-private-access.svg" border="false":::  Microsoft Entra Private Access
 
 Microsoft Entra Private Access provides organizations the ability to manage and give users access to private or internal fully qualified domain names (FQDNs) and IP addresses. With Private Access, you can modernize how your organization's users access private apps and resources. Remote workers don't need to use a VPN to access these resources if they have the Global Secure Access Client installed. The client quietly and seamlessly connects them to the resources they need.
@@ -109,9 +94,7 @@ Once this verification is complete, the attestation service returns a signed rep
 
 - [Azure Attestation overview][LINK-8]
 
-## Microsoft Defender for Endpoint
-
-:::image type="icon" source="images/defender-for-endpoint.svg" border="false":::
+## :::image type="icon" source="images/defender-for-endpoint.svg" border="false"::: Microsoft Defender for Endpoint
 
 Microsoft Defender for Endpoint<sup>[\[4\]](conclusion.md#footnote4)</sup> is an enterprise endpoint detection and response solution that helps security teams detect, disrupt, investigate, and respond to advanced threats. Organizations can use the rich event data and attack insights Defender for Endpoint provides to investigate incidents.
 
@@ -159,9 +142,7 @@ Windows 11 supports the Remote Wipe configuration service provider (CSP) so that
 
 - [Remote wipe CSP][LINK-10]
 
-## Microsoft Intune
-
-:::image type="icon" source="images/microsoft-intune.svg" border="false":::
+## :::image type="icon" source="images/microsoft-intune.svg" border="false"::: Microsoft Intune
 
 Microsoft Intune<sup>[\[4\]](conclusion.md#footnote4)</sup> is a comprehensive cloud-native endpoint management solution that helps secure, deploy, and manage users, apps, and devices. Intune brings together technologies like Microsoft Configuration Manager and Windows Autopilot to simplify provisioning, configuration management, and software updates across the organization.
 
@@ -187,9 +168,7 @@ With Windows enrollment attestation, Microsoft Entra and Microsoft Intune certif
 
 - [Windows enrollment attestation][LINK-13]
 
-### Microsoft Cloud PKI
-
-:::image type="icon" source="images/microsoft-cloud-pki.svg" border="false":::
+### :::image type="icon" source="images/microsoft-cloud-pki.svg" border="false"::: Microsoft Cloud PKI
 
 Microsoft Cloud PKI is a cloud-based service included in the Microsoft Intune Suite<sup>[\[4\]](conclusion.md#footnote4)</sup> that simplifies and automates the management of a Public Key Infrastructure (PKI) for organizations. It eliminates the need for on-premises servers, hardware, and connectors, making it easier to set up and manage a PKI compared to, for instance, Microsoft Active Directory Certificate Services (AD CS) combined with the Certificate Connector for Microsoft Intune.
 
@@ -206,9 +185,7 @@ With Microsoft Cloud PKI, organizations can accelerate their digital transformat
 
 - [Overview of Microsoft Cloud PKI for Microsoft Intune](/mem/intune/protect/microsoft-cloud-pki-overview)
 
-### Endpoint Privilege Management (EPM)
-
-:::image type="icon" source="images/endpoint-privilege-management.svg" border="false":::
+### :::image type="icon" source="images/endpoint-privilege-management.svg" border="false"::: Endpoint Privilege Management (EPM)
 
 Intune Endpoint Privilege Management supports organizations' Zero Trust journeys by helping them achieve a broad user base running with least privilege, while still permitting users to run elevated tasks allowed by the organization to remain productive.
 
@@ -319,9 +296,7 @@ By utilizing hotpatching through Windows Autopatch, the number of system restart
 
 - [Windows Autopatch documentation](/windows/deployment/windows-autopatch/)
 
-## OneDrive for work or school
-
-:::image type="icon" source="images/onedrive.svg" border="false":::
+## :::image type="icon" source="images/onedrive.svg" border="false"::: OneDrive for work or school
 
 OneDrive for work or school is a cloud storage service that allows users to store, share, and collaborate on files. It's a part of Microsoft 365 and is designed to help organizations protect their data and comply with regulations. OneDrive for work or school is protected both in transit and at rest.
 
@@ -340,9 +315,7 @@ There are several ways that OneDrive for work or school is protected at rest:
 
 - [How OneDrive safeguards data in the cloud](https://support.microsoft.com/topic/23c6ea94-3608-48d7-8bf0-80e142edd1e1)
 
-## Universal Print
-
-:::image type="icon" source="images/universal-print.svg" border="false":::
+## :::image type="icon" source="images/universal-print.svg" border="false"::: Universal Print
 
 Universal Print eliminates the need for on-premises print servers. It also eliminates the need for print drivers from the users' Windows devices and makes the devices secure, reducing the malware attacks that typically exploit vulnerabilities in driver model. It enables Universal Print-ready printers (with native support) to connect directly to the Microsoft Cloud. All major printer OEMs have these [models][LINK-23]. It also supports existing printers by using the connector software that comes with Universal Print.
 
