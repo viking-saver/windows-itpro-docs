@@ -1,7 +1,7 @@
 ---
 title: What is Windows Autopatch?
 description: Details what the service is and shortcuts to articles.
-ms.date: 09/27/2024
+ms.date: 11/19/2024
 ms.service: windows-client
 ms.subservice: autopatch
 ms.topic: overview
@@ -49,7 +49,9 @@ The goal of Windows Autopatch is to deliver software updates to registered devic
 | [Windows quality updates](../manage/windows-autopatch-windows-quality-update-overview.md) | With Windows Autopatch, you can manage Windows quality update profiles for Windows 10 and later devices. You can expedite a specific Windows quality update using targeted policies. |
 | [Windows feature updates](../manage/windows-autopatch-windows-feature-update-overview.md) | Windows Autopatch provides tools to assist with the controlled roll out of annual Windows feature updates. |
 | [Driver and firmware updates](../manage/windows-autopatch-manage-driver-and-firmware-updates.md) | You can manage and control your driver and firmware updates with Windows Autopatch.|
+| [Hotpatch updates](../manage/windows-autopatch-hotpatch-updates.md) | Install [Monthly B release security updates](/windows/deployment/update/release-cycle#monthly-security-update-release) without requiring you to restart the device. |
 | [Intune reports](/mem/intune/fundamentals/reports) | Use Intune reports to monitor the health and activity of endpoints in your organization.|
+| [Hotpatch quality update report](../monitor/windows-autopatch-hotpatch-quality-update-report.md) | Hotpatch quality update report provides a per policy level view of the current update statuses for all devices that receive Hotpatch updates. |
 
 > [!IMPORTANT]
 > Microsoft 365 Business Premium and Windows 10/11 Education A3 or A5 (included in Microsoft 365 A3 or A5) do **not** have access to all Windows Autopatch features. For more information, see [Features and capabilities](../overview/windows-autopatch-overview.md#features-and-capabilities).
