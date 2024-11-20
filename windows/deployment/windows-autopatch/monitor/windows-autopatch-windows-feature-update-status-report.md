@@ -1,7 +1,7 @@
 ---
 title: Feature update status report
 description: Provides a per device view of the current Windows OS upgrade status for all devices registered with Windows Autopatch.
-ms.date: 11/19/2024
+ms.date: 11/20/2024
 ms.service: windows-client
 ms.subservice: autopatch
 ms.topic: how-to
@@ -19,7 +19,7 @@ ms.collection:
 
 [!INCLUDE [windows-autopatch-enterprise-e3-f3-licenses](../includes/windows-autopatch-enterprise-e3-f3-licenses.md)]
 
-The Feature update status report provides a per device view of the current Windows OS upgrade status for all devices registered with Windows Autopatch.
+The Feature update status report provides a per device view of the current Windows OS upgrade status for all Intune devices.
 
 **To view the Feature update status report:**
 
