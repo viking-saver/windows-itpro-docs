@@ -1,7 +1,7 @@
 ---
 title: Quality update status report
-description: Provides a per device view of the current update status for all Windows Autopatch managed devices.
-ms.date: 11/19/2024
+description: Provides a per device view of the current update status for all Intune devices.
+ms.date: 11/20/2024
 ms.service: windows-client
 ms.subservice: autopatch
 ms.topic: how-to
@@ -19,7 +19,7 @@ ms.collection:
 
 [!INCLUDE [windows-autopatch-enterprise-e3-f3-licenses](../includes/windows-autopatch-enterprise-e3-f3-licenses.md)]
 
-The Quality update status report provides a per device view of the current update status for all Windows Autopatch managed devices.
+The Quality update status report provides a per device view of the current update status for all Intune devices.
 
 **To view the Quality update status report:**
 
@@ -34,6 +34,9 @@ The Quality update status report provides a per device view of the current updat
 ## Report information
 
 ### Default columns
+
+> [!IMPORTANT]
+> **Due to a recent change, we have identified an issue that prevents the Pause status column from being displayed**. Until a fix is deployed, **you must keep track of your paused releases so you can resume them at a later date**. The team is actively working on resolving this issue and we'll provide an update when a fix is deployed.
 
 The following information is available as default columns in the Quality update status report:
 

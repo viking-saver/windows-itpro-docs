@@ -1,7 +1,7 @@
 ---
 title: Windows quality and feature update reports overview
 description: This article details the types of reports available and info about update device eligibility, device update health, device update trends in Windows Autopatch.
-ms.date: 11/19/2024
+ms.date: 11/20/2024
 ms.service: windows-client
 ms.subservice: autopatch
 ms.topic: overview
@@ -27,7 +27,7 @@ The Windows quality reports provide you with information about:
 - Device update health
 - Device update alerts
 
-Together, these reports provide insight into the quality update state and compliance of Windows devices that are enrolled into Windows Autopatch.
+Together, these reports provide insight into the quality update state and compliance of Intune devices.
 
 The Windows quality report types are organized into the following focus areas:
 
