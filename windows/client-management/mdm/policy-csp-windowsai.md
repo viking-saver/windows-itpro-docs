@@ -36,9 +36,9 @@ This policy setting allows you to determine whether the Recall optional componen
 
 - If this policy isn't configured, end users will have the Recall component in a disabled state.
 
-- If this policy is disabled, the Recall component will be in disabled state and the bits for Recall will be removed from the device. If snapshots were previously saved on the device, they will be deleted when this policy is disabled. Removing Recall requires a device restart.
+- If this policy is disabled, the Recall component will be in disabled state and the bits for Recall will be removed from the device. If snapshots were previously saved on the device, they'll be deleted when this policy is disabled. Removing Recall requires a device restart.
 
-- If the policy is enabled, end users will have Recall available on their device. Depending on the state of the DisableAIDataAnalysis policy (Turn off saving snapshots for use with Recall), end users will be able to choose if they want to save snapshots of their screen and use Recall to find things they've seen on their device.
+- If the policy is enabled, end users will have Recall available on their device. Depending on the state of the DisableAIDataAnalysis policy (Turn off saving snapshots for use with Recall), end users are able to choose if they want to save snapshots of their screen and use Recall to find things they've seen on their device.
 <!-- AllowRecallEnablement-Description-End -->
 
 <!-- AllowRecallEnablement-Editable-Begin -->
@@ -105,11 +105,11 @@ This policy setting allows you to determine whether the Recall optional componen
 
 <!-- DisableAIDataAnalysis-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to determine whether snapshots of the screen can be saved for use with Recall. By default, snapshots for Recall aren't enabled. IT administrators cannot, on their own, enable saving snapshots on behalf of their users. The choice to enable saving snapshots requires individual user opt-in consent.
+This policy setting allows you to determine whether snapshots of the screen can be saved for use with Recall. By default, snapshots for Recall aren't enabled. IT administrators can't, on their own, enable saving snapshots on behalf of their users. The choice to enable saving snapshots requires individual user opt-in consent.
 
 - If the policy isn't configured, snapshots won't be saved for use with Recall.
 
-- If you enable this policy, snapshots won't be saved for use with Recall. If snapshots were previously saved on the device, they will be deleted when this policy is enabled.
+- If you enable this policy, snapshots won't be saved for use with Recall. If snapshots were previously saved on the device, they'll be deleted when this policy is enabled.
 
 If you set this policy to disabled, end users will have a choice to save snapshots of their screen and use Recall to find things they've seen on their device.
 <!-- DisableAIDataAnalysis-Description-End -->
@@ -360,7 +360,7 @@ This policy setting determines which app opens when the user presses the Copilot
 <!-- Description-Source-ADMX -->
 This policy allows you to define a list of apps that won't be included in snapshots for Recall.
 
-Users will be able to add additional applications to exclude from snapshots using Recall settings.
+Users are able to add additional applications to exclude from snapshots using Recall settings.
 
 The list can include Application User Model IDs (AUMID) or name of the executable file.
 
@@ -646,7 +646,7 @@ This policy setting allows you to turn off Windows Copilot.
 
 - If you enable this policy setting, users won't be able to use Copilot. The Copilot icon won't appear on the taskbar either.
 
-- If you disable or don't configure this policy setting, users will be able to use Copilot when it's available to them.
+- If you disable or don't configure this policy setting, users are able to use Copilot when it's available to them.
 <!-- TurnOffWindowsCopilot-Description-End -->
 
 <!-- TurnOffWindowsCopilot-Editable-Begin -->
