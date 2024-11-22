@@ -1,7 +1,7 @@
 ---
 title: How Windows Hello for Business authentication works
 description: Learn about the Windows Hello for Business authentication flows.
-ms.date: 04/23/2024
+ms.date: 11/22/2024
 ms.topic: reference
 ---
 # Windows Hello for Business authentication

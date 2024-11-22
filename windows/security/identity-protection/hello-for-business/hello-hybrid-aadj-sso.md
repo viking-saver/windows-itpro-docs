@@ -1,7 +1,7 @@
 ---
 title: Configure single sign-on (SSO) for Microsoft Entra joined devices
 description: Learn how to configure single sign-on to on-premises resources for Microsoft Entra joined devices, using Windows Hello for Business.
-ms.date: 04/23/2024
+ms.date: 11/22/2024
 ms.topic: how-to
 ---
 

@@ -96,7 +96,7 @@ For detailed information about the certificate, use `Certutil -q -v <certificate
 > - Confirm all certificate templates were properly published to the appropriate issuing certificate authorities
 > - Confirm the AD FS service account has the allow enroll permission for the Windows Hello Business authentication certificate template
 > - Confirm the AD FS certificate registration authority is properly configured using the `Get-AdfsCertificateAuthority` Windows PowerShell cmdlet
-> Confirm you restarted the AD FS service
+> - Confirm you restarted the AD FS service
 > - Confirm you properly configured load-balancing (hardware or software)
 > - Confirm you created a DNS A Record for the federation service and the IP address used is the load-balanced IP address
 > - Confirm you created and deployed the Intranet Zone settings to prevent double authentication to the federation server

@@ -1,7 +1,7 @@
 ---
 title: Use Certificates to enable SSO for Microsoft Entra join devices
 description: If you want to use certificates for on-premises single-sign on for Microsoft Entra joined devices, then follow these additional steps.
-ms.date: 04/24/2024
+ms.date: 11/22/2024
 ms.topic: how-to
 ---
 
