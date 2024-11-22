@@ -1,5 +1,5 @@
 ---
-title: Features index
+title: Windows 11 security book - Features index
 description: Windows security book features index.
 ms.topic: overview
 ms.date: 11/18/2024

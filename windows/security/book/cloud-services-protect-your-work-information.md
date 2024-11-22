@@ -1,6 +1,6 @@
 ---
-title: Cloud services - Protect your work information
-description: Windows 11 security book - Cloud services chapter - Protect your work information.
+title: Windows 11 security book - Cloud services - Protect your work information
+description: Cloud services chapter - Protect your work information.
 ms.topic: overview
 ms.date: 11/04/2024
 ---

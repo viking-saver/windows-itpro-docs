@@ -1,6 +1,6 @@
 ---
-title: Privacy controls
-description: Windows 11 security book - Privacy chapter - Privacy controls.
+title: Windows 11 security book - Privacy controls
+description: Privacy chapter - Privacy controls.
 ms.topic: overview
 ms.date: 11/18/2024
 ---
