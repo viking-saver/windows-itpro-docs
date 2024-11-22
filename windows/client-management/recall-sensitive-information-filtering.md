@@ -3,7 +3,7 @@ title: Sensitive information filtering in Recall
 description: Learn about the types of potentially sensitive information Recall detects.
 ms.topic: reference
 ms.subservice: windows-copilot
-ms.date: 11/21/2024
+ms.date: 11/22/2024
 ms.author: mstewart
 author: mestew
 ms.collection:

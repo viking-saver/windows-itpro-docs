@@ -3,7 +3,7 @@ title: Manage Recall for Windows clients
 description: Learn how to manage Recall for commercial environments and about Recall features.
 ms.topic: how-to
 ms.subservice: windows-copilot
-ms.date: 11/21/2024
+ms.date: 11/22/2024
 ms.author: mstewart
 author: mestew
 ms.collection:
@@ -165,6 +165,7 @@ Snapshots won't be saved when remote desktop connection clients are used. The fo
    - [Azure Virtual Desktop (MSI)](/azure/virtual-desktop/users/connect-windows) 
       - [Azure Virtual Desktop apps from the Microsoft Store](/azure/virtual-desktop/users/connect-remote-desktop-client) are saved in snapshots. To prevent these apps from being saved in snapshots, add them to the app filtering list.
   - [Remote applications integrated locally (RAIL)](/openspecs/windows_protocols/ms-rdperp/485e6f6d-2401-4a9c-9330-46454f0c5aba) windows
+  - [Windows App from the Microsoft Store](/windows-app/get-started-connect-devices-desktops-apps) is saved in snapshots. To prevent the app from being saved in snapshots, add it to the app filtering list.
 
 
 
