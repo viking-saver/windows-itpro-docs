@@ -51,11 +51,11 @@ Click to Do allows users to choose to get more information about their selected 
 -	**Open website**: Opens the selected website in the default browser
 -	**Visual search with Bing**: Sends the selected content to Bing visual search using the default browser. 
 
-When users choose to send content from Click to Do to an app, like Paint, Click to Do will temporarily save the selected content in order to complete the transfer. Click to Do creates a temporary file in one of the following locations: 
-- `C:\Users\[username]\AppData\Local\Temp` 
-- `C:\Users\{username}\AppData\Local\Packages\MicrosoftWindows.Client.AIX_cw5n1h2txyewy\TempState`
+When you choose to send info from Click to Do to an app, like Paint, Click to Do will temporarily save this info in order to complete the transfer. Click to Do creates a temporary file in the following location: 
 
-The temporary file is deleted once the app is finished with the content.
+- `C:\Users\[username]\AppData\Local\Temp` 
+- 
+Temporary files may also be saved when you choose send feedback. These temporary files aren't saved long term. Click to Do doesn't keep any content from your screen after completing the requested action, but some basic telemetry is gathered to keep Click to Do secure, up to date, and working.
 
 ## System requirements
 
