@@ -1,5 +1,5 @@
 ---
-title: Identity protection - Passwordless sign-in
+title: Passwordless sign-in
 description: Windows 11 security book - Identity protection chapter - Passwordless sign-in.
 ms.topic: overview
 ms.date: 11/18/2024

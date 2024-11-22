@@ -1,5 +1,5 @@
 ---
-title: Operating System security
+title: Encryption and data protection
 description: Windows 11 security book - Operating System security chapter - Encryption and data protection.
 ms.topic: overview
 ms.date: 11/18/2024
