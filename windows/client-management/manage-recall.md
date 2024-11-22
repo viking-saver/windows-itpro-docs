@@ -157,7 +157,7 @@ To filter websites from being saved in snapshots, use the **Set a list of URIs t
 
 #### Remote desktop connection clients filtered from snapshots
 
-Snapshots won't be saved when some remote desktop connection clients are used. The following remote desktop connection clients are filtered by default from snapshots:<!--9119193-->
+Snapshots won't be saved when remote desktop connection clients are used. The following remote desktop connection clients are filtered from snapshots:<!--9119193-->
 
    - [Remote Desktop Connection (mstsc.exe)](/windows-server/administration/windows-commands/mstsc)
    - [VMConnect.exe](/windows-server/virtualization/hyper-v/learn-more/hyper-v-virtual-machine-connect) 
