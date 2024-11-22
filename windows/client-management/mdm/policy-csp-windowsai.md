@@ -1,7 +1,7 @@
 ---
 title: WindowsAI Policy CSP
 description: Learn more about the WindowsAI Area in Policy CSP.
-ms.date: 11/11/2024
+ms.date: 11/22/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
