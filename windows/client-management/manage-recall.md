@@ -23,7 +23,7 @@ Recall (preview) allows users to search locally saved and locally analyzed snaps
 This article provides information about Recall and how to manage it in a commercial environment.
 
 > [!NOTE]
-> - Recall is now available in preview to Copilot+ PCs through the Windows Insider Program. For more information, see [**Placeholder WIP Blog link**>](https://aka.ms/windowsinsiders).
+> - Recall is now available in preview to Copilot+ PCs through the Windows Insider Program. For more information, see [Previewing Recall with Click to Do on Copilot+ PCs with Windows Insiders in the Dev Channel](https://blogs.windows.com/windows-insider/2024/11/22/previewing-recall-with-click-to-do-on-copilot-pcs-with-windows-insiders-in-the-dev-channel/).
 > - In-market commercial devices are defined as devices with an Enterprise (ENT) or Education (EDU) SKU or any premium SKU device that is managed by an IT administrator (whether via Microsoft Endpoint Manager or other endpoint management solution), has a volume license key, or is joined to a domain. Commercial devices during Out of Box Experience (OOBE) are defined as those with ENT or EDU SKU or any premium SKU device that has a volume license key or is Microsoft Entra joined. 
 > - Recall is optimized for select languages English, Chinese (simplified), French, German, Japanese, and Spanish. Content-based and storage limitations apply. For more information, see [https://aka.ms/copilotpluspcs](https://aka.ms/copilotpluspcs).
 
@@ -186,4 +186,4 @@ Recall uses optical character recognition (OCR), local to the PC, to analyze sna
 - [Retrace your steps with Recall](https://support.microsoft.com/windows/aa03f8a0-a78b-4b3e-b0a1-2eb8ac48701c)
 - [Privacy and control over your Recall experience](https://support.microsoft.com/windows/d404f672-7647-41e5-886c-a3c59680af15)
 - [Click to Do in Recall](https://support.microsoft.com/topic/967304a8-32d1-4812-a904-fad59b5e6abf)
-- [<PLACEHOLDER WIP BLOG>](https://aka.ms/wip)
+- [Previewing Recall with Click to Do on Copilot+ PCs with Windows Insiders in the Dev Channel](https://blogs.windows.com/windows-insider/2024/11/22/previewing-recall-with-click-to-do-on-copilot-pcs-with-windows-insiders-in-the-dev-channel/)
