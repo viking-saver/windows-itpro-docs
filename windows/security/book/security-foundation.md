@@ -5,7 +5,7 @@ ms.topic: overview
 ms.date: 11/18/2024
 ---
 
-# Security foundation
+# Security foundation in Windows 11
 
 :::image type="content" source="images/security-foundation-cover.png" alt-text="Cover of the security foundation chapter." border="false":::
 

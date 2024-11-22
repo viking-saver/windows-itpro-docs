@@ -5,7 +5,7 @@ ms.topic: overview
 ms.date: 11/18/2024
 ---
 
-# Virus and threat protection
+# Virus and threat protection in Windows 11
 
 :::image type="content" source="images/operating-system.png" alt-text="Diagram containing a list of security features." lightbox="images/operating-system.png" border="false":::
 
